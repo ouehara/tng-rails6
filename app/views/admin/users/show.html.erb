@@ -1,0 +1,133 @@
+<%= render 'page_title' %>
+
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Show</h2>
+      <%= link_to admin_users_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-list"></i>
+      Index
+      <% end %>
+      <%= link_to new_admin_user_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add another
+      <% end %>
+      <%= link_to edit_admin_user_path(@user), class: "pull-right btn btn-info" do %>
+      <i class="icon-pencil"></i>
+      Edit
+      <% end %>
+      <%= link_to [:admin, @user], method: "DELETE", data: { confirm: "Are you sure?" }, class: "pull-right btn btn-danger" do %>
+      <i class="icon-trash"></i>
+      Delete
+      <% end %>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <h1>
+      <%= @user.email %>
+    </h1>
+    <div class="table-responsive">
+      <table class="table">
+        <tbody>
+          <tr>
+            <th style="width:130px;">
+              ID
+            </th>
+            <td>
+              <%= @user.id %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Avatar
+            </th>
+            <td>
+              <%= image_tag @user.avatar.url(:thumb) if @user.avatar.exists? %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Role
+            </th>
+            <td>
+              <%= @user.role.to_s.capitalize %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Username
+            </th>
+            <td>
+              <%= @user.username %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Connected SNS
+            </th>
+            <td>
+              <% @user.social_identities.each do |identity| %>
+              <span class="label label-info"> <%= identity.provider.capitalize %></span> <br>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Articles count
+            </th>
+            <td>
+              <%= @user.articles.count %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Sign In Count
+            </th>
+            <td>
+              <%= @user.sign_in_count %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Last Sign In At
+            </th>
+            <td>
+              <% if @user.last_sign_in_at %>
+              <%= @user.last_sign_in_at.strftime('%F %T') %>
+              <% else %>
+              Not signed in.
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Current Sign In IP
+            </th>
+            <td>
+              <% if @user.current_sign_in_ip %>
+              <%= @user.current_sign_in_ip %>
+              <% else %>
+              Not signed in.
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Created At
+            </th>
+            <td>
+              <%= @user.created_at.strftime('%F %T') %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Updated At
+            </th>
+            <td>
+              <%= @user.updated_at.strftime('%F %T') %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

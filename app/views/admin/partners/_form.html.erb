@@ -1,0 +1,47 @@
+<%= form_for([:admin, @partner], html: { class: "form", :multipart => true }) do |f| %>
+<% if @partner.errors.any? %>
+<%= render partial: 'admin/shared/error_message', locals: { resource: @partner } %>
+<% end %>
+<select class="lang-select">
+<% selected_locale = I18n.locale%>
+<% I18n.available_locales.each do |locale| %>
+  <%I18n.with_locale(locale) do%>
+  <%= locale%>
+    <option <%= locale == selected_locale ? "selected" : "" %> value="<%= url_for(locale: locale) %>"><%=locale%></option>
+  <%end%>
+<%end%>
+</select>
+<script type="text/javascript">
+$(".lang-select").on("change", function(ev){
+  window.location.href = $(this).val()
+})
+</script>
+<div class="form-group">
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control", placeholder: "Title", autocomplete: "off" %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :link %>
+  <%= f.text_field :link, class: "form-control", placeholder: "url", autocomplete: "off" %>
+</div>
+
+
+<div>
+<div class="form-group">
+<%= f.label :banner, "Image", class: "control-label" %>
+<div>
+<img src="<%=f.object.banner.url(:thumb) %>" width='200' %>
+</div>
+  
+  <div class="row">
+    <div class="col-sm-12">
+      <%= f.file_field :banner %>
+    </div>
+  </div>
+</div>
+</div>
+<%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

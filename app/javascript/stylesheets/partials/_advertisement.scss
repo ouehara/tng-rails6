@@ -1,0 +1,161 @@
+.advertisement {
+  margin: rem(70) 0;
+  padding-bottom: 30px;
+  overflow: hidden;
+
+  .carousel.carousel-slider {
+    margin: 0 auto;
+
+    .control-arrow {
+      margin-top: -25px;
+    }
+  }
+
+  @include mq(sm) {
+    padding: 100px 20px;
+    // width: 100%;
+    max-width: $base_width_pc;
+    margin: 0 auto;
+  }
+
+  @at-root .top & {
+    margin: rem(70) 0;
+
+    @include mq(sm) {
+      margin: 0 auto;
+      padding: 100px 20px;
+    }
+  }
+
+  @at-root .sidebar & {
+    padding: 0;
+
+    @include mq(sm) {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+
+    .ad_item {
+      &+.ad_item {
+        @include mq(sm) {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+
+    .swiper-container {
+      width: 94vw;
+      width: calc(100% - 24px);
+      overflow: visible;
+
+      @include mq(sm) {
+        width: 100%;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      background-size: contain;
+
+      @include mq(sm) {
+        width: 38px;
+        height: 38px;
+        margin-top: -19px;
+      }
+    }
+
+    .swiper-button-prev {
+      background-image: url("../images/shared/icon_slider_prev.png");
+      left: -8px;
+
+      @include mq(sm) {
+        left: -19px;
+      }
+    }
+
+    .swiper-button-next {
+      background-image: url("../images/shared/icon_slider_next.png");
+      right: -8px;
+
+      @include mq(sm) {
+        right: -19px;
+      }
+    }
+
+    .swiper-pagination {
+      bottom: -32px;
+
+      @include mq(sm) {
+        display: none;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background: #e8e8e8;
+      opacity: 1;
+
+      &-active {
+        background: $color_yellow;
+      }
+    }
+
+    a {
+      display: block;
+      background-color: #000;
+      margin-bottom: 10px;
+
+      img {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: opacity ease-out 0.2s;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .sidebar-ad {
+    @include mq(sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .video-slider {
+    margin: 0;
+    padding: 0 20px;
+
+    a {
+      background: none;
+
+      h4 {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &_ads {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+    .ads_img {
+      width: 300px;
+      height: 250px;
+    }
+  }
+}

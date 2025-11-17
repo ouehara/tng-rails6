@@ -1,0 +1,1404 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available aOkint http://guides.rubyonrails.org/i18n.html.
+
+vi:
+  langAttribute: "vi"
+  helpers:
+    label:
+      hotel_landingpage:
+        official_text: "Great deals if you use their official website!"
+        recommend_text: "Lodgings that tsunagu Japan highly recommend!"
+        published: "Publish"
+  hello: "Hello world"
+  site_name: "tsunagu Japan"
+  site_top:
+    title_prefix: "Trang thông tin du lịch Nhật Bản"
+    page_desc: "tsunagu Japan là trang thông tin về du lịch Nhật Bản cho du khách nước ngoài. Bạn có thể tìm thấy những thông tin về các địa điểm tham quan, món ăn ngon, cơ sở lưu trú, mua sắm, trải nghiệm, văn hóa và mẹo đi du lịch tại đây."
+    breadcrumb: "Trang chủ"
+  page_title: "tsunagu Japan"
+  page_prefix: "tsunagu Japan"
+  page_desc: "Trang này tổng hợp các bài viết về những điều bạn có thể làm ở Nhật, những thông tin chi tiết về các địa điểm du lịch, các tour được đề xuất, giúp bạn khám phá Nhật Bản một cách trọn vẹn nhất."
+  confirm: "confirm"
+  more_btn: "More"
+  more_details: "chi tiết"
+  menu_more: "Xem thêm"
+  partner: "Đối tác"
+  newest_article_on: "Bài viết mới về %{area}"
+  none: "none"
+  search_map: "Tìm kiếm từ bản đồ"
+  search_region: "Tìm kiếm theo khu vực"
+  narrow_by_area: "Thu hẹp phạm vi theo khu vực"
+  see_other_areas: "Xem các khu vực khác"
+  narrow_down_by_interest: "Thu hẹp phạm vi theo danh mục"
+  other_interests: "Xem bài viết của các mục khác"
+  related_interest: "Các mục liên quan"
+  popular_articles: "Bài viết nổi bật"
+  narrow_down_by_int_area: "Tìm kiếm theo khu vực và danh mục"
+  newest_top: "Bài viết mới nhất"
+  img_source: "Ảnh:"
+  video: "Video"
+  video_desc: "Tổng hợp các video cung cấp thông tin liên quan đến Nhật Bản như ẩm thực, điểm ngắm cảnh, nghệ thuật truyền thống, các hoạt động ngoài trời, mẹo du lịch,..."
+  view_videos: "Xem thêm video"
+  toc: "Mục lục"
+  related_label: 'Bài viết liên quan'
+  search_in: "tìm kiếm trong"
+  sort_by: "Sắp xếp theo khu vực"
+  coupon_headline: "Phiếu giảm giá"
+  coupon_desc: "Thông tin về các loại vé ưu đãi, giảm giá bạn có thể sử dụng khi mua sắm, đặt phòng khách sạn, hoặc đặt tour du lịch."
+  coupon_none: "Hiện tại không có phiếu giảm giá có sẵn."
+  about_author: "Người viết"
+  date_published_article: "Ngày xuất bản"
+  date_updated_article: "Cập nhật"
+  disclaimer_article: "Thông tin trong bài viết được cập nhật tại thời điểm công bố"
+  area_banner:
+    rentalcars:
+      desc: "Rent the car you want at the price you want. Rental Cars. Perfect if you're looking to rent a car in Japan! Learn more. "
+      link: "https://www.klook.com/vi/car-rentals/?aid=30900"
+  clip_desc: "Trang này hiển thị theo danh sách các bài viết bạn đã đánh dấu. Bạn hãy tham khảo những bài viết được đánh dấu này trong chuyến du lịch của mình để tận hưởng một chuyến đi thật thoải mái!"
+  clip_none: "Không có gì được cắt."
+  empty_state: "Xin lỗi, chúng tôi chưa có nội dung cho trang này. Chúng tôi liên tục cho ra những nội dung mới, vì vậy hãy theo dõi những thông tin cập nhật! "
+  search_by: "Tìm kiếm theo điểm đến, hoạt động hoặc điểm hấp dẫn ..."
+  recommended_area: "Những khu vực khuyến khích"
+  view_area: "Xem tất cả các khu vực"
+  view_restaurant: "Xem tất cả các nhà hàng"
+  travel_tips: "Những mẹo khi du lịch"
+  transportation: "Phương tiện đi lại"
+  manners: "Cách cư xử"
+  budget_travel: "Du lịch tiết kiệm"
+  climate: "Khí hậu & thời tiết"
+  top_travel: "Hành trình du lịch xếp hạng đầu"
+  things: "Ngắm cảnh"
+  fooddrink: "Đồ ăn"
+  hotels: "Khách sạn"
+  shopping: "Mua sắm"
+  travel_tip: "Mẹo du lịch"
+  in_depth: "Văn hoá Nhật Bản"
+  festival: "Lễ hội & Sự kiện"
+  view_tips: "Xem tất cả các mẹo"
+  featured_topics: "Chủ đề nổi bật"
+  japan: "Nhật Bản"
+  latest: "Latest Posts"
+  media_partner: "MEDIA PARTNER"
+  sushi: "#Sushi"
+  onsen: "#Suối nước nóng"
+  ramen: "#Mì Ramen"
+  activites: "#Hoạt động/Trải nghiệm"
+  souvenier: "#Quà lưu niệm"
+  beauty: "#Làm đẹp & Thời trang"
+  history: "#Lịch sử & Văn hóa"
+  hotels_ryokan: "#Khách sạn và Ryokan (nhà trọ kiểu Nhật)"
+  popular_restaurants: "Nhà hàng nổi tiếng theo khu vực"
+  related_articles_title: "Liên quan"
+  buttons:
+    btn-default: "default"
+    btn-cust-blue: "blue"
+    btn-cust-green: "green"
+    book-with: "orange button"
+    btn-ads: "red ad button"
+    savor-button-booking: "savor button"
+    btn-3d-orange: "orange with shadow"
+  tours:
+    recommended: 'Recommended Tours'
+    currency: 'JPY'
+    from: 'from'
+    desc: 'Trang này giới thiệu thông tin về các tour du lịch bạn có thể trải nghiệm ở Nhật Bản'
+    tour: "Các tour du lịch"
+    details: 'Chi tiết'
+  savor:
+    search_title: "Try Out One of Japan's Most Popular Search Engines!"
+    search_results: "%{start} - %{end} of %{all}"
+    sort_price: "Giá"
+    sort_price_ask: "Low to High"
+    sort_price_desc: "High to Low"
+    sidebar_headline: "Japanese Restaurant Guide"
+    slogan: "Savor Japan is an exhaustive restaurant<br> guide for restaurants in Japan."
+    tokyo: "Tokyo"
+    tokyo_sub:
+      kanagawa: "Kanagawa"
+      chiba: "Chiba"
+      tochigi: "Tochigi"
+      gunma: "Gunma"
+      saitama: "Saitama"
+      ibaraki: "Ibaraki"
+      shizuoka: "Shizuoka"
+      yamanashi: "Yamanashi"
+    kyoto_sub:
+      kyoto: "Kyoto"
+      osaka: "Osaka"
+      hyogo: "Hyogo"
+      nara: "Nara"
+      shiga: "Shiga"
+      wakayama: "Wakayama"
+      mie: "Mie"
+    honshu_sub:
+      miyagi: "Miyagi"
+      fukushima: "Fukushima"
+      yamagata: "Yamagata"
+      iwate: "Iwate"
+      akita: "Akita"
+      aomori: "Aomori"
+      aichi: "Aichi"
+      shizuoka: "Shizuoka"
+      gifu: "Gifu"
+      ishikawa: "Ishikawa"
+      nagano: "Nagano"
+      niigata: "Niigata"
+      toyama: "Toyama"
+      fukui: "Fukui"
+      yamanashi: "Yamanashi"
+      hiroshima: "Hiroshima"
+      okayama: "Okayama"
+      shimane: "Shimane"
+      tottori: "Tottori"
+      yamaguchi: "Yamaguchi"
+    shikoku_sub:
+      ehime: "Ehime"
+      kagawa: "Kagawa"
+      kochi: "Kochi"
+      tokushima: "Tokushima"
+    kyushu_sub:
+      fukuoka: "Fukuoka"
+      kagoshima: "Kagoshima"
+      kumamoto: "Kumamoto"
+      miyazaki: "Miyazaki"
+      nagasaki: "Nagasaki"
+      oita: "Oita"
+      saga: "Saga"
+    near_tokyo: "Near Tokyo"
+    kyoto: "Kyoto and Osaka area"
+    hokkaido: "Hokkaido"
+    chubu: "Chubu"
+    kanto: "Kanto"
+    kansai: "Kansai"
+    tohoku: "Tohoku"
+    chugoku: "Chugoku"
+    northern_honshu: "Tohoku"
+    central_honshu: "Chubu"
+    western_honshu: "Chugoku"
+    shikoku: "Shikoku"
+    kyushu: "Kyushu/Okinawa"
+    okinawa: "Okinawa"
+    learn_more: "learn more"
+    show_less: "show less"
+    restaurant_search: "Tìm kiếm nhà hàng"
+    search_by: "Search by Popular Area"
+    no_searchresult: "Restaurants were not found. Please try different search criteria."
+    sidebar:
+      s_keyword: "Search by Keywords"
+      search: "Tìm kiếm nhà hàng"
+      location: "Địa điểm"
+      cuisine: "Ẩm thực"
+      filter: "Filter"
+      budget: "Budget"
+      dinner: "Dinner"
+      lunch: "Lunch"
+      extras: "Extras"
+      cc: "Credit Card"
+      coupons: "Coupons / Vouchers"
+      keywords: "Keywords"
+      search: "Search"
+      placeholder_keyword: "e.g. city, station,cuisine or specific restaurant"
+      placeholder_city: "e.g. city, landmark"
+      placeholder_cuisine: "e.g. sushi, ramen"
+    filter:
+      no_smoking: "No Smoking"
+      menu: "English menu"
+      staff: "English-speaking staff"
+      languages_available: "English-speaking staff"
+      late_night: "Late-night service"
+      late_night_service: "Late-night service"
+      diet: "Special dietry requests"
+      special_diet: "Special dietry requests"
+      western_cutlery: "Western cutlery"
+      lunch: "Lunch"
+      lunch_menu: "Lunch"
+      wifi: "Free Wi-Fi"
+      free_wifi_available: "Free Wi-Fi"
+      visa: "Visa"
+      mastercard: "MasterCard"
+      anex: "American Express"
+      diners: "Diners Club"
+      coupons: "Coupons / Vouchers"
+  hotel-lp:
+    meta_title: "tsunagu Japan's Top Picks for Japanese Hotels & Inns"
+    meta_desc: "Using our vast network, we have picked out the best Japanese hotels and inns to showcase. Many can’t be found on other websites, so take a look!"
+    breadcrumb: "Editorial Picks"
+    title_html: "tsunagu Japan <br> editorial department carefully selected!<br>Special homepage introduction"
+    desc_headline: "A noteworthy trip starts with exceptional lodging."
+    desc: "Japan has around 50,000 hotels and inns, which makes coming to a decision incredibly hard. Using our vast network, our editorial team has scoured through lodgings all over Japan and picked out a select few to introduce to you! There are several that you won’t find on other websites, so it’s definitely worth a look!"
+    starting: "Starting from"
+    pickup: "New Pickup"
+    website: "Official Website"
+    website_sub_html: "Great deals if you use their official website!"
+    website_sub_recommend_text: "We highly recommend this lodge!"
+    related: "Liên quan"
+    hotel_price_tax_html: "Excluding taxes and fees <br> It is a charge for two people in one room."
+    notice:
+      change: "The information on this website may change even after the publish date."
+      estimated: "The estimated accommodation fee is based on the fee for 1 person renting a room that can accommodate 2 people during the off-season. It includes meals, but does not include consumption tax, bathing tax, or service charges. Depending on factors like how many people use 1 room, the season, the type of room, and the accommodation plan, the overall accommodation fee can differ."
+      communication: "Staff members who can communicate in languages other than Japanese may not always be present."
+    features:
+      bar: "Bar"
+      parking: "Parking"
+      bus: "Pick Up Service"
+      wifi: "Wi-Fi"
+      onsen: "Onsen (suối nước nóng)"
+      smoking: "Smoking Room"
+      nosmoking: "Non-smoking Room"
+      smokingspace: "Smoking Spaces"
+      english: "English OK"
+      chinese: "Chinese Ok"
+  edion:
+    title: "Special Feature: Best-selling Home Electronics in Japan!! [With Discount Coupon]"
+    website_html: "Official Homepage (Japanese Only) <a href='https://www.edion.com/' target='_blank'>https://www.edion.com/</a>"
+    address: "Địa chỉ"
+    further: "For details on other stores across Japan, click below. "
+    phone: "Phone"
+    tokyo: "EDION AKIBA / Tokyo"
+    tokyo_a: "1-2-9 Sotokanda, Chiyoda-ku, Tokyo"
+    tokyo_p: "03-3257-1100"
+    osaka: "EDION Dotonbori Store / Osaka"
+    osaka_a: "Dotonbori Benisu Bldg. 12F, 1-4-27 Dotonbori, Chuo-ku, Osaka-shi, Osaka"
+    osaka_p: "06-6212-3035"
+    osaka2: "EDION Universal CityWalk Osaka Store / Osaka"
+    osaka2_a: "Universal CityWalk Osaka 4F, 6-2-61 Shimaya, Konohana-ku, Osaka-shi, Osaka"
+    osaka2_p: "06-6469-1211"
+    only_headline_html: "Only for tsunagu Japan readers!!<br>
+Discount coupon for EDION (home electronics retailer)"
+    consumer_electronics: "Consumer electronics help make your life easier. In Japan, there are many different types of home electronics, as well as a ton of stores that specialize in and sell them. This special feature introduces not only the standard home electronics, but also the ones that are extremely popular in Japan right now. "
+    popular_headline: "5 Popular Salon Products"
+    top10: "Top 10 Popular & Recommended Products for 2017"
+    what_is_headline: "What is EDION?"
+    what_is: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    readers_discount: "For All Our Readers, Here's an EDION Discount Coupon!"
+    readers_discount_text_html: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    popular:
+      1_headline: "1.SHARP Plasmacluster Dryer (Ruby Red) (IBHP9R)"
+      1_desc_html: "The plasmacluster ions moisturize the hair and reduce static electricity. The built-in “Beauty Mode” automatically adjusts the temperature to suit the season, and the lukewarm air that comes out alternately will make your hair beautiful, shiny, and smooth.
+<br><br>
+<span class='price'>Example Price: 19,880 yen (before tax)</span>"
+      2_headline: "2.Panasonic Ladies’ Shaver Salashe (Blue) (ES2235PPA)"
+      2_desc_html: "This is an all-purpose shaver that can handle your armpits, legs, arms, and even your bikini line! It has a grip that was engineered to be easy to hold, as well as a compact head. It’s waterproof, so you can use it in the shower. Another perk is its bright color scheme!
+<br><br>
+<span class='price'>Example Price: 2,480 yen (before tax)</span>"
+      3_headline: "3.Panasonic Face Shaver Ferrier (Green) (ESWF50G)"
+      3_desc_html: "This extraordinary shaver comes with a pivoting head that can follow the natural contours of the skin, turning at angles that make it easy to shave. Its rounded blade edges make it safe for anyone to use, and it can easily shave off peach fuzz. Applying your make-up will get a lot easier! If you want something easy to carry, its compact size will be convenient for you.
+<br><br>
+<span class='price'>Example Price: 3,480 yen (before tax)</span>"
+      4_headline: "4.YA-MAN Body Esthetic Original Acetino Quattro Impact Evolution (Red) (IB250RED)"
+      4_desc_html: "The 8 rollers rotate at an incredible speed, and they’ll thoroughly massage any fleshy parts that you’re worried about, so you can receive great esthetic care from home. You can use it on your body and face. It’s also waterproof, so you can even use it in the bath!
+<br><br>
+<span class='price'>Example Price: 14,800 yen (before tax)</span>"
+      5_headline: "5.Panasonic Eyelash Curler (Natural Curls) Matsuge Kurun (Pink) (EHSE10PPP)"
+      5_desc_html: "This is a heated eyelash curler that will give you long-lasting natural curls. Equipped with dual heating pads, it’ll give your eyelashes the proper curl and boost they need!
+<br><br>
+<span class='price'>Example Price: 1,700 yen (before tax)</span>"
+    top:
+      other: "Other Popular Products"
+      best_selling: "Best-selling Among Travelers #%{number} (EDION)"
+      1_headline: "1. MTG ReFa Carat (PECL1706)"
+      1_desc_html: "This face roller takes in light with a solar panel and releases it as a microcurrent. With its unique form and diamond cut design, it gently tightens your delicate skin and helps improve your skin texture. It’s also made from waterproof materials, so you can rest easy.
+<br><br>
+<span class='price'>Example Price: 23,800 yen (before tax)</span>"
+      2_headline: "2. TIGER Stainless Bottle Colobockle (MBRB06GRL)"
+      2_desc_html: "You can wash every part of this stainless bottle. Just by changing the bottle’s mouthpiece, you can either directly drink from the bottle with one finger push, or you can pour your drink into a cup. They’re popular for their cute designs!
+<br><br>
+<span class='price'>Example Price: 5,980 yen (before tax)</span>"
+      3_headline: "3. Panasonic Hair Dryer Nano Care (Rouge Pink) (EHCNA99RP)"
+      3_desc_html: "Quickly dries your hair and improves your hair quality – this is a hair dryer that’ll really take care of your hair! It can help reduce damage caused from friction or ultraviolet (UV) light. It’s highly recommended for its 5 modes that you can mix and match to suit your type of hair, such as its Hair Ends Care Mode or its Hot-Cold Rhythm Mode.
+<br><br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      4_headline: "4. ATEX Lourdes Premium Massage Cushion Double Massage (Mint Black) (AXHCL188MB)"
+      4_desc_html: "This massage cushion is perfect for rooms with stylish interiors. Using random movements, it can massage a variety of places, such as your neck, shoulders, waist, back, and back of the foot. You’ll be happy to know that you can easily remove the cover for a quick wash!
+<br>
+<span class='price'>Example Price: 9,800 yen (before tax)</span>"
+      5_headline: "5. Philips Nose, Ear & Eyebrow Trimmer Nosetrimmer Series 3000 (Black/Grey) (NT316210)"
+      5_desc_html: "Every single part of this product is washable. With just this trimmer, you can tidy up your nose, ears, and eyebrows. Its long-lasting sharpness is what makes it special. But don’t worry, because the blade tips are rounded, and the blade itself is ultrathin to ensure that it doesn’t nick the skin!
+<br>
+<span class='price'>Example Price: 2,980 yen (before tax)</span>"
+      6_headline: "6. Braun Electric Toothbrush Oral-B Genius 9000 (Black) (D7015256XCBK)"
+      6_desc_html: "This electric toothbrush cleans your teeth just as well as a dentist in a dental clinic. The smartphone app that comes with it can tell you what parts of your mouth still need to be brushed, so you can properly brush every part of your mouth, including the corners!
+<br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      7_headline: "7. Sharp Plasmacluster Dehumidifier (White) (CVG71W)"
+      7_desc_html: "Not only does this dehumidifier help dry hung up clothes while getting rid of the funky smell that comes with the drying process, but it also prevents mold from growing in the room! It’s designed to block out large dust balls. Its handle makes it easy to move around, and it makes drainage easy too!
+<br>
+<span class='price'>Example Price: 26,800 yen (before tax)</span>"
+      8_headline: "8. Vitantonio Yogurt Maker (White x Silver) (VYG11)"
+      8_desc_html: "With this device, you’ll finally be able to easily make yogurt at home! It’s popular for being able to make a wide variety of things, such as cheese and other fermented foods, along with any foods that require low-temperature cooking.
+<br>
+<span class='price'>Example Price: 6,880 yen (before tax)</span>"
+      9_headline: "9. TESCOM Negative Ion Curl Dryer (Pink) (TIC750P)"
+      9_desc_html: "Regardless of whether you have short or long hair, this curl dryer will not only fluff up your hair, but it’ll also tidy every bit of it, including the tips! Made from aluminum, it evenly distributes heat, ensuring that you get the exact hairstyle that you want.
+<br>
+<span class='price'>Example Price: 2,580 yen (before tax)</span>"
+      10_headline: "10. YA-MAN RF Beaute Photo PLUS (Champagne Bronze) (HRF10T) "
+      10_desc_html: "Warming, cleansing, moisturizing, facial muscle care, cooling – this is a one-in-all salon device that can play 5 different roles! Deeply penetrating your skin, it’ll make your skin as supple as it can be!
+<br>
+<span class='price'>Example Price: 37,000 yen (before tax)</span>"
+  weather:
+    1: "Sunny"
+    2: "Sun, followed by clouds"
+    3: "Sun, followed by rain"
+    4: "Sun, followed by snow"
+    5: "Sunny with passing clouds"
+    6: "Sunny with occasional rain"
+    7: "Sunny with occasional snow"
+    8: "Cloudy"
+    9: "Clouds followed by sun"
+    10: "Clouds followed by rain"
+    11: "Clouds followed by snow"
+    12: "Cloudy with some sun"
+    13: "Cloudy with occasional rain"
+    14: "Cloudy with occasional snow"
+    15: "Rainy"
+    16: "Rain gives way to clouds"
+    17: "Rain followed by sun"
+    18: "Rain followed by snow"
+    19: "Scattered rain"
+    20: "Mostly rainy with some sun"
+    21: "Mostly rainy with some snow"
+    22: "Snowy"
+    23: "Snow gives way to clouds"
+    24: "Snow followed by sun"
+    25: "Snow followed by rain"
+    26: "Scattered snow"
+    27: "Mostly snowy with some sun"
+    28: "Mostly snowy with some rain"
+  map:
+    search_from: "Search from list"
+    headline: "Search from Map"
+    information1: "※ Sendai is included in Miyagi"
+    information2: "※ Yokohama, Kamakura, Hakone is included in Kanagawa"
+    information3: "※ Kanazawa is included in Ishikawa"
+    information4: "※ Nagoya is included in Aichi"
+    hokkaido: "1. Hokkaido"
+    sendai: "5. Sendai"
+    tokyo: "13. Tokyo"
+    yokohama: "14. Yokohama"
+    kamakura: "14. Kamakura"
+    hakone: "14. Hakone"
+    kanazawa: "17. Kanazawa"
+    nagoya: "23. Nagoya"
+    kyoto: "25. Kyoto"
+    osaka: "29. Osaka"
+    fukuoka: "40. Fukuoka"
+    okinawa: "Okinawa"
+    popular: "Popular cities for tourists"
+  basic-information:
+    name: "Tên"
+    hours: "Giờ mở cửa"
+    closed: "Ngày nghỉ"
+    price: "Giá"
+    address: "Địa chỉ"
+    access: "Cách đi"
+    url-ja: "Trang web (tiếng Nhật)"
+    url-en: "Trang Web (tiếng Anh)"
+    url-th: "Trang Web (tiếng Thái)"
+    url-zh-hant: "Trang web (tiếng Trung - phồn thể)"
+    url-zh-hans: "Trang web (tiếng Trung - giản thể)"
+    others: "Khác"
+    checkin: "Check-in"
+    checkout: "Check-out"
+  sidebar:
+    finder: "Restaurant finder"
+    rental: "Rental Car"
+    weekly: "Dự báo thời tiết hàng tuần"
+    Xếp hạng: "Bài viết được chú ý"
+    connect: "Connect"
+    more: "Cho xem nhiều hơn"
+    hide: "hide"
+    featured: "Featured"
+    book_agoda: "ĐẶT KHÁCH SẠN CHO BẠN"
+    spotlight: "Spotlight"
+  toc: "Mục lục"
+  search:
+    title: "Tìm kiếm"
+    desc: "%{num} kết quả tìm kiếm cho \"%{term}\""
+  views:
+    pagination:
+      previous: "<i class='icon-arrow-left icons'></i>"
+      next: "<i class='icon-arrow-right icons'></i>"
+  rankings:
+    title: "Xếp hạng bài viết"
+    desc: ""
+  tags:
+    title: "%{param}"
+    desc: ""
+    list_title: "Bài viết %{tag} mới"
+    meta_title: "%{tag} ở Nhật Bản"
+    single_meta_desc: "Đọc về %{tag} tại Nhật Bản. Tìm các bài viết với thông tin về du lịch và cuộc sống ở Nhật Bản trên tsunagu Japan."
+    multi_meta_desc: "Đọc %{N} bài viết %{tag} tại Nhật Bản. Tìm các bài viết với thông tin về du lịch và cuộc sống ở Nhật Bản trên tsunagu Japan."
+  category:
+    cat2_with_child_cat3_desc: "Đọc %{N} bài viết về %{cat2_alias}. Tìm thấy %{cat3}, v.v."
+    cat2_without_child_cat3_desc: "Đọc %{N} bài viết về %{cat2_alias}. Bạn cũng có thể tìm kiếm các bài viết khác về %{parent_cat1} tại Nhật Bản."
+    cat3_with_only_1_article: "Đọc về %{cat3_alias}. Bạn cũng có thể tìm kiếm các bài viết khác về %{parent_cat2} tại Nhật Bản."
+    cat3_with_2_and_more_articles: "Đọc %{N} bài viết về %{cat3_alias}. Bạn cũng có thể tìm kiếm các bài viết khác về %{parent_cat2} tại Nhật Bản."
+  area:
+    index_title: "Khu vực của Nhật Bản"
+    index_desc: "Lướt qua các khu vực của Nhật Bản để tìm các bài viết về những việc cần làm, đặc sản địa phương, mẹo du lịch, mua sắm, và những thông tin khác."
+    area_intro: "Trên trang này, bạn có thể tìm kiếm các bài viết liên quan đến các vùng của Nhật Bản. Bạn chỉ cần nhấp vào vùng muốn tìm hiểu trên bản đồ là có thể di chuyển tới trang danh sách các bài viết liên quan đến vùng đó."
+    banner_section_title: "Du lịch theo từng khu vực"
+    top_link:
+      hokkaido: "Hokkaido"
+      tohoku: "Tohoku"
+      kanto: "Kanto"
+      chubu: "Chubu"
+      kansai: "Kansai"
+      chugoku: "Chugoku"
+      shikoku: "Shikoku"
+      setouchi: "Setouchi"
+      kyushu: "Kyushu"
+      okinawa: "Okinawa"
+    breadcrumb: "Khu vực"
+    title: "%{param}"
+    desc: ""
+    area: "Khu vực"
+    title_prefix: "Tất cả về "
+    child_area_desc: "%{prefecture} %{child_area}"
+    feature:
+      hokkaido:
+        title: "Tuyển tập Hokkaido"
+        description: "Trang này tổng hợp những bài viết về Hokkaido. Tại đây bạn có thể tìm thấy những thông tin hữu ích về các cơ sở lưu trú, vườn quốc gia, các món ăn ngon, hoạt động du lịch để khám phá trọn vẹn vùng đất này."
+        top: "Hokkaido"
+        article:
+          1:
+            title_html: "Vài nét về Hokkaido"
+            text_html: "Hokkaido nằm ở cực Bắc của Nhật Bản, là một điểm đến du lịch nơi bạn có thể tận hưởng thiên nhiên rộng lớn với Di sản Thiên nhiên thế giới Shiretoko, những ngọn núi hùng vĩ, và vùng đầm lầy Kushiro - nơi sinh sống của nhiều loài động, thực vật khác nhau. Ngoài ra, do có diện tích rộng lớn nên khí hậu và thổ nhưỡng của từng khu vực rất khác biệt. Đây cũng là một nét hấp dẫn của Hokkaido giúp du khách có thể trải nghiệm sự đa dạng của văn hóa truyền thống, ẩm thực địa phương, cũng như các lễ hội và hoạt động trải nghiệm khác."
+            url: "https://www.tsunagujapan.com/vi/all-about-hokkaido/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Có rất nhiều cơ sở lưu trú sang trọng cho phép du khách hòa mình vào thiên nhiên hùng vĩ tại Hokkaido. Từ những cơ sở lưu trú độc đáo nằm rải rác ở mỗi khu vực như khu nghỉ dưỡng trượt tuyết Niseko, khu trang trại Furano - nơi bạn được hòa mình vào khung cảnh vùng nông thôn tuyệt đẹp suốt 4 mùa, hay cửa ngõ vào Hokkaido -  Hakodate, cho đến những khu biệt thự cao cấp. Chỉ cần hòa mình vào không gian thiên nhiên ở Hokkaido là bạn sẽ cảm thấy thư giãn, không một chút vướng bận."
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-hokkaido-area/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Du lịch mạo hiểm là một trải nghiệm bao gồm hai trong ba yếu tố: thiên nhiên, sự khác biệt văn hóa và các hoạt động. Đây là loại hình du lịch thế hệ mới đang nhận được nhiều sự quan tâm do tác động của Mục tiêu phát triển bền vững (SDGs) và đại dịch Covid-19. Với thiên nhiên biến đổi theo từng mùa, văn hóa của người Ainu và nhiều hoạt động hấp dẫn để truyền tải những sức hút đó đến du khách, Hokkaido hứa hẹn là một miền đất tiềm năng cho loại hình du lịch này."
+            url: "https://www.tsunagujapan.com/vi/adventure-tourism_in_hokkaido/"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Nằm ở cực Bắc của Nhật Bản và được bao quanh bởi biển, Hokkaido có một hệ sinh thái độc đáo khác với đảo chính Honshu. Tại đây có 6 vườn quốc gia đó là Di sản thế giới \"Vườn quốc gia Shiretoko\", \"Vườn quốc gia Rishiri Rebun Sarobetsu\" với những cánh đồng hoa thuộc hệ sinh thái trên núi cao và \"Vườn quốc gia Akan Mashu\" nổi tiếng với hồ Mashu - một trong những hồ nước trong suốt nhất thế giới. Du khách đến đây chắc chắn sẽ ngỡ ngàng trước vẻ đẹp độc đáo của những khu vườn này."
+            url: "https://www.tsunagujapan.com/vi/national-park-in-hokkaido/"
+          5:
+            title_html: "Ẩm thực địa phương"
+            text_html: "Hokkaido là \"kho thực phẩm\" tươi sống của Nhật Bản với hải sản được đánh bắt ở các thị trấn cảng hướng ra biển; rau, thịt và các sản phẩm từ sữa được thu hoạch trong đất liền. Mỗi món ăn lại được chế biến theo nhiều cách khác nhau của mỗi vùng, ví dụ như mì ramen với rất nhiều hương vị khác nhau. Ngoài ra, còn có các món đặc sản khác như Jingisukan với thịt cừu và rau, súp cà ri khoai tây. Đừng quên thưởng thức những món ăn này khi đến thăm Hokkaido nhé!"
+            url: "https://www.tsunagujapan.com/vi/12-local-foods-not-to-be-missed-in-hokkaido/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều bài viết thú vị khác về khu vực Hokkaido. Các bạn hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/10-recommended-sightseeing-spots-sapporo/"
+            text: "10 địa điểm du lịch tuyệt vời không thể bỏ qua khi đến Sapporo, Hokkaido"
+          2:
+            url: "https://www.tsunagujapan.com/vi/hokkaido-gourmet-crab/"
+            text: "Ẩm thực Hokkaido – chuyên đề cua"
+          3:
+            url: "https://www.tsunagujapan.com/vi/a-guide-on-hokkaido-s-weather-climate/"
+            text: "Tất cả những gì bạn cần biết về thời tiết và khí hậu của Hokkaido"
+          4:
+            url: "https://www.tsunagujapan.com/vi/hokkaido-furano-20-recommended-tourist-attractions/"
+            text: "Tuyển chọn 20 địa điểm du lịch tại Furano, Hokkaido"
+          5:
+            url: "https://www.tsunagujapan.com/vi/50-things-to-do-in-hokkaido/"
+            text: "50 hoạt động thú vị bạn có thể làm khi đến Hokkaido"
+          6:
+            url: "https://www.tsunagujapan.com/vi/2-days-itinerary-in-sapporo-hokkaido/"
+            text: "Hành trình 2 ngày 1 đêm ở Sapporo, Hokkaido: Gợi ý những điểm tham quan thú vị và những món ăn nổi tiếng"
+      tohoku:
+        title: "Tuyển tập Tohoku"
+        description: "Trang này tổng hợp những bài viết về Tohoku. Tại đây bạn có thể tìm thấy thông tin hữu ích về các cơ sở lưu trú, vườn quốc gia, các địa danh du lịch và các hoạt động trải nghiệm để khám phá trọn vẹn vùng đất này."
+        top: "Tohoku"
+        article:
+          1:
+            title_html: "Vài nét về Tohoku"
+            text_html: "Tohoku nằm ở cực Bắc của đảo Honshu, bao gồm 6 tỉnh là Aomori, Iwate, Akita, Miyagi, Yamagata và Fukushima. Do nằm ở vĩ độ cao nên khu vực này có nhiệt độ thấp hơn so với các vùng khác ở Honshu, và có mùa đông tuyệt đẹp với tuyết phủ trắng xóa. Đây là một vùng đất đầy bí ẩn và quyến rũ với thiên nhiên trù phú, nhiều sự kiện truyền thống độc đáo, các sản phẩm thủ công truyền thống, và ẩm thực địa phương phong phú."
+            url: "https://www.tsunagujapan.com/vi/all-about-tohoku/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Tohoku tập trung nhiều thị trấn suối nước nóng nổi tiếng như \"Sukayu Onsen\" ở Aomori, nổi tiếng với các bồn tắm chung lớn dành cho cả nam và nữ, \"Nyuto Onsen\" ở Akita nơi có 7 dòng suối với tinh chất nước khác nhau, và \"Ginzan Onsen\" ở Yamagata mang phong cách hoài cổ. Du khách đến đây có thể lưu trú tại các khu nhà trọ hoặc biệt thự biệt lập để hạn chế tiếp xúc với những người khác, trong khi vẫn có thể nghỉ ngơi thư giãn giữa bốn bề thiên nhiên hoang sơ của Tohoku."
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-tohoku-area/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Thiên nhiên ở Tohoku vô cùng trù phú với khu rừng sồi nguyên sinh rộng lớn Shirakami Sanchi, bờ biển Sanriku với khung cảnh thiên nhiên tuyệt đẹp, hồ Towada và Tazawa, cùng các khu vực khác như Oze và Zao. Du khách cũng sẽ có dịp hiểu hơn về văn hóa đặc trưng của Nhật Bản thông qua các điểm du lịch tâm linh tại đây như Dewa Sanzan và Matagi ở Akita. Tohoku chính là vùng đất tuyệt vời để trải nghiệm du lịch mạo hiểm, khám phá thiên nhiên và văn hóa."
+            url: "https://www.tsunagujapan.com/vi/adventure-tourism-in-tohoku/"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Tohoku có 3 vườn quốc gia là \"Vườn quốc gia Towada-Hachimantai\" với khung cảnh tuyệt đẹp của núi lửa và suối nước nóng, \"Vườn quốc gia Sanriku Fukko\" được xây dựng để tái thiết lại khu vực Sanriku đã bị tàn phá trong thảm họa động đất sóng thần Tohoku (2011), và \"Vườn quốc gia Bandai Asahi\" với nhiều hồ nước và đầm lầy tuyệt đẹp cùng với những dãy núi linh thiêng. Đặt chân đến đây du khách sẽ được trải nghiệm vẻ đẹp cũng như sự khắc nghiệt của thiên nhiên, khám phá các cung đường hành hương và suối nước nóng lâu đời ở Nhật Bản."
+            url: "https://www.tsunagujapan.com/vi/national-park-in-tohoku/"
+          5:
+            title_html: "Địa danh du lịch"
+            text_html: "Tohoku có rất nhiều địa điểm du lịch nổi tiếng với thiên nhiên phong phú và đậm chất lịch sử như Matsushima - một trong ba danh thắng đẹp nhất Nhật Bản, lâu đài Hirosaki tràn ngập sắc hồng của hoa anh đào vào mùa xuân, thung lũng Naruko - một trong những điểm ngắm lá mùa thu đẹp nhất ở Tohoku. Ngoài ra, còn có đền Rissyakuji - địa điểm từng xuất hiện trong thơ haiku của nhà thơ nổi tiếng Matsuo Basho, hay thị trấn bưu điện \"Ouchi-juku\" đã được xây dựng từ khoảng 400 năm trước. Hãy tìm hiểu về các địa danh du lịch tại 6 tỉnh ở Tohoku để lên kế hoạch cho chuyến du lịch khám phá vùng đất này nhé."
+            url: "https://www.tsunagujapan.com/vi/10-recommended-spots-in-tohoku/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều các bài viết thú vị khác liên quan đến khu vực Tohoku. Hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/akita-yamagata-niigata-tohoku-travel-guide/"
+            text: "[Hành trình khám phá Tohoku, Hokuriku] Chiêm ngưỡng cảnh đẹp nguyên sơ của Nhật Bản tại Nigata, Yamagata, Akita"
+          2:
+            url: "https://www.tsunagujapan.com/vi/tohoku-solo-travel-attractions/"
+            text: "20 điểm tham quan nổi tiếng khu vực Tohoku cho những người đi du lịch một mình!"
+          3:
+            url: "https://www.tsunagujapan.com/vi/8-best-hot-springs-in-tohoku-region/"
+            text: "8 khu tắm suối nước nóng tuyệt nhất vùng Tohoku"
+          4:
+            url: "https://www.tsunagujapan.com/vi/10-must-see-places-yamagata-prefecture-1/"
+            text: "10 địa danh nhất định bạn phải ghé qua khi đến Yamagata"
+          5:
+            url: "https://www.tsunagujapan.com/vi/top-10-sightseeing-spots-miyagi-tohoku/"
+            text: "10 địa điểm tham quan hàng đầu tại tỉnh Miyagi vùng Tohoku"
+          6:
+            url: "https://www.tsunagujapan.com/vi/6-must-try-foods-in-tohoku/"
+            text: "6 món đặc sản bạn phải ăn thử một lần khi đến Tohoku"
+      kyushu:
+        title: "Tuyển tập Kyushu"
+        description: "Trang này tổng hợp những bài viết về Kyushu. Tại đây bạn có thể tìm thấy những thông tin hữu ích về các cơ sở lưu trú, công viên quốc gia, hoạt động trải nghiệm, suối nước nóng để khám phá trọn vẹn vùng đất này."
+        top: "Kyushu"
+        article:
+          1:
+            title_html: "Vài nét về Kyushu"
+            text_html: "Kyushu là khu vực có khí hậu ấm áp, nằm ở phía Tây Nam và là một trong những hòn đảo cấu thành nên quốc đảo Nhật Bản. Kyushu gồm 7 tỉnh là Fukuoka, Saga, Nagasaki, Oita, Kumamoto, Miyazaki và Kagoshima, trong đó Fukuoka nằm ở phía Bắc Kyushu được coi là cửa ngõ kết nối Kyushu với khu vực châu Á khi tại đây có cảng hàng không nội địa và quốc tế, cùng ga tàu Shinkansen.<br>Kyushu nổi tiếng với nhiều thắng cảnh thiên nhiên, suối nước nóng, di tích lịch sử nổi tiếng, các hoạt động ngoài trời, cùng nhiều món ăn ngon như mì ramen Hakata."
+            url: "https://www.tsunagujapan.com/vi/why-is-it-called-kyushu-9-provinces-when-there-are-only-7-prefectures/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Kyushu có nhiều khu nghỉ dưỡng suối nước nóng nổi tiếng Nhật Bản. Được bao quanh bởi biển và thiên nhiên trù phú như núi Aso và đảo Yakushima, nơi đây có rất nhiều khu nghỉ dưỡng sang trọng để bạn có thể ngâm mình trong suối nước nóng và tận hưởng phong cảnh tuyệt mỹ vào mỗi mùa. Bạn có thể an tâm dành thời gian nghỉ ngơi tại những phòng nghỉ cao cấp, hạn chế tiếp xúc với người lạ vì các khu nghỉ dưỡng và nhà trọ kiểu Nhật ở đây được xây trong từng khu đất riêng biệt nằm cách xa nhau."
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-kyushu-area/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Du lịch mạo hiểm là một trải nghiệm bao gồm hai trong ba yếu tố: thiên nhiên, sự khác biệt văn hóa và các hoạt động. Đây là loại hình du lịch thế hệ mới đang nhận được nhiều sự quan tâm, đặc biệt ở khu vực trung tâm Hokkaido do tác động của Mục tiêu phát triển bền vững (SDGs) và đại dịch Covid-19. Với tài nguyên thiên nhiên phong phú, Kyushu hứa hẹn là một miền đất tiềm năng cho hoạt động này. Hãy cùng chúng tôi khám phá những thông tin về du lịch mạo hiểm ở Kyushu qua phần này nhé!"
+            url: "https://www.tsunagujapan.com/vi/adventuretravel_in_kumamoto"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Có 6 vườn quốc gia ở Kyushu. Di sản thế giới \"Vườn quốc gia Yakushima\" và \"Vườn quốc gia quần đảo Amami\" - nơi có rừng ngập mặn lớn thứ hai ở Nhật Bản là những địa điểm còn rất hoang sơ. Ngoài ra, còn rất nhiều khu vườn mà bạn có thể cảm nhận được nguồn năng lượng từ núi lửa ở gần đó, chẳng hạn như \"Vườn quốc gia Kirishima Kinkowan\" với núi lửa Sakurajima. Tại sao bạn không thử ghé thăm các địa danh này và trải nghiệm những cảm xúc chỉ có thể có được ở đây?"
+            url: "https://www.tsunagujapan.com/vi/national-park-in-kyushu/"
+          5:
+            title_html: "Du lịch trực tuyến"
+            text_html: "Du lịch trực tuyến giúp bạn có thể chạm tới những điểm tham quan hấp dẫn ngay cả khi đang ở nhà. Đây là hình thức trải nghiệm du lịch mới, không thể thiếu trong thời đại ngày nay. Đặc biệt, việc kết hợp các tour du lịch trực tuyến với dịch vụ chuyển phát các sản phẩm địa phương đang trở nên được yêu thích. Với mục đích giúp du khách cảm nhận bầu không khí của các địa phương trước khi thực sự đặt chân đến, du lịch trực tuyến đang ngày càng phát triển hơn nữa với nhiều hình thức trải nghiệm đa dạng."
+            url: "https://www.tsunagujapan.com/vi/kyushu-online-tours/"
+          6:
+            title_html: "Suối nước nóng"
+            text_html: "Kyushu được coi là thiên đường suối nước nóng ở Nhật Bản, sở hữu 3 trong 5 suối nước nóng hàng đầu xứ sở hoa anh đào về lượng nước nóng và số nguồn nước. Nơi đây tập trung các khu suối nước nóng nổi tiếng nhất Nhật Bản như Beppu, Yufuin, thu hút những người yêu thích thư giãn tại suối nước nóng ghé thăm. Với nguồn nước và công năng khác nhau, những suối nước nóng lộ thiên ẩn mình giữa khung cảnh thiên nhiên hay những thị trấn suối nước nóng mang vẻ hoài cổ sẽ giúp xoa dịu tâm trí và thư giãn cơ thể cho những người ghé thăm."
+            url: "https://www.tsunagujapan.com/vi/onsen-in-kyushu-top10/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều các bài viết thú vị khác liên quan đến khu vực Kyushu. Hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/3-day-kyushu-travel-itinerary-fukuoka-oita-kumamoto/"
+            text: "Kyushu - Điểm du lịch không thể bỏ qua khi đến Nhật Bản: Hành trình 3 ngày khám phá Fukuoka, Oita và Kumamoto"
+          2:
+            url: "https://www.tsunagujapan.com/vi/50-things-to-do-in-fukuoka/"
+            text: "50 điều nhất định phải làm khi đến Fukuoka"
+          3:
+            url: "https://www.tsunagujapan.com/vi/7-popular-picturesque-spots-kumamoto/"
+            text: "25 điều nhất định phải làm ở Kumamoto - một trong những vùng đẹp nhất Nhật Bản"
+          4:
+            url: "https://www.tsunagujapan.com/vi/nagasaki-recommended-tourist-attractions/"
+            text: "Cẩm nang du lịch Nagasaki: Các điểm ngắm cảnh, di sản thế giới và những món ăn ngon"
+          5:
+            url: "https://www.tsunagujapan.com/vi/5-mystical-shrines-in-miyazaki-prefecture/"
+            text: "5 ngôi đền thần bí ở tỉnh Miyazaki: Vùng đất linh thiêng bậc nhất Nhật Bản"
+          6:
+            url: "https://www.tsunagujapan.com/vi/10-famous-hot-springs-that-you-want-to-visit-in-kyushu-region/"
+            text: "10 khu suối nước nóng nổi tiếng bạn không thể bỏ qua khi đến Kyushu"
+      okinawa:
+        title: "Tuyển tập Okinawa"
+        description: "Trang này tổng hợp những bài viết về Okinawa. Tại đây bạn có thể tìm thấy thông tin hữu ích về các cơ sở lưu trú, vườn quốc gia, các bãi biển đẹp và các hoạt động trải nghiệm để khám phá trọn vẹn vùng đất này."
+        top: "Okinawa"
+        article:
+          1:
+            title_html: "Vài nét về Okinawa"
+            text_html: "Okinawa là điểm cực Nam của Nhật Bản, bao gồm 160 hòn đảo nằm rải rác trong một vùng biển rộng lớn. Đây là khu vực duy nhất ở Nhật Bản có hệ sinh thái và văn hóa riêng vì toàn bộ tỉnh nằm trong khu vực khí hậu cận nhiệt đới hải dương. Tại đây bạn sẽ được khám phá và trải nghiệm những điều thú vị chỉ có ở riêng khu vực này như tận mắt trông thấy các loài cá nhiệt đới và san hô dưới làn nước biển trong xanh, những khu rừng với hệ sinh thái độc đáo, trải nghiệm văn hóa truyền thống có từ lâu đời, và tham gia các hoạt động thể thao trên biển."
+            url: "https://www.tsunagujapan.com/vi/beginners-guide-to-okinawa/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Tại 4 khu vực chính trên đảo Okinawa (khu phía Bắc, khu trung tâm, Naha, khu phía Nam), đảo Ishigaki và đảo Miyako có rất nhiều căn nhà và biệt thự riêng dành cho các du khách muốn hạn chế tiếp xúc với những người xung quanh. Mỗi cơ sở đều lắp đặt hồ bơi riêng và bồn tắm với tầm nhìn hướng ra biển để bạn có thể cảm nhận trọn vẹn thiên nhiên rộng lớn của Okinawa. Với mỗi cơ sở lưu trú hãy kiểm tra các điểm du lịch gần đó để lên kế hoạch cho một chuyến đi hoàn hảo nhé!"
+            url: "https://www.tsunagujapan.com/vi/10-okinawa-accommodations-that-can-be-rented-out/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Okinawa được hình thành từ nhiều hòn đảo bao gồm đảo chính Okinawa, Miyako, Ishigaki và Iriomote. Những bãi cát trắng và biển xanh chính là đặc trưng của nơi này, tuy nhiên bên cạnh đó cũng có những môi trường tự nhiên khác chỉ có riêng tại đây như rừng mưa nhiệt đới. Chính vì thế, Okinawa có rất nhiều thuận lợi để tổ chức các tour du lịch trải nghiệm thiên nhiên chẳng hạn như khám phá hang động, trải nghiệm cưỡi ngựa “Yonaguni” (giống ngựa đặc trưng của Okinawa), và tham quan bằng thuyền Sabani truyền thống."
+            url: "https://www.tsunagujapan.com/vi/adventuretourism-in-okinawa/"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Được bao quanh bởi vùng biển xinh đẹp, Okinawa có 3 vườn quốc gia là \"Vườn quốc gia Yanbaru\", \"Vườn quốc gia quần đảo Kerama\" và \"Vườn quốc gia Iriomote-Ishigaki\". Đến đây bạn sẽ được chiêm ngưỡng những khu rừng lá rộng thường xanh cận nhiệt đới lớn nhất Nhật Bản, rừng ngập mặn, nước biển trong suốt, các rạn san hô với nhiều loài san hô đa dạng, các loại động thực vật đặc trưng và những ngôi làng có mái ngói đỏ truyền thống. Hãy ghé thăm công viên để tận hưởng không gian ngoài trời tuyệt vời và nền văn hóa đặc trưng của vùng đất này nhé!"
+            url: "https://www.tsunagujapan.com/vi/national-park-in-okinawa/"
+          5:
+            title_html: "Biển"
+            text_html: "Okinawa nổi tiếng là một khu nghỉ mát vì ở đây có nhiệt độ trung bình năm cao nhất Nhật Bản do có khí hậu cận nhiệt đới nóng ẩm. Biển ở Okinawa vô cùng đẹp với đặc trưng là những bãi cát trắng và nước biển trong xanh. Trong phần này chúng tôi sẽ giới thiệu đến bạn những bãi biển đẹp nhất nằm trên đảo chính và các đảo xa bờ của Okinawa được nhiều du khách lui tới. Bạn có thể xem thông tin về các địa điểm nổi bật, các điểm du lịch ít người biết tới, cách thưởng ngoạn, phương pháp di chuyển để lên kế hoạch cho chuyến đi của mình."
+            url: "https://www.tsunagujapan.com/vi/top-okinawa-beaches/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều bài viết thú vị khác về khu vực Okinawa. Các bạn hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/50-things-to-do-in-okinawa/"
+            text: "50 điều thú vị không thể bỏ qua khi đến Okinawa"
+          2:
+            url: "https://www.tsunagujapan.com/vi/a-guide-to-traveling-to-and-around-okinawa/"
+            text: "Khám phá Okinawa - Hành trình di chuyển và những địa điểm thú vị tại hòn đảo nhiệt đới của Nhật Bản"
+          3:
+            url: "https://www.tsunagujapan.com/vi/a-year-s-guide-on-the-weather-in-okinawa-is-it-really-always-summer-in-okinawa/"
+            text: "Hướng dẫn về thời tiết trong một năm ở Okinawa - Nơi đây có thật sự chỉ có mùa hè?"
+          4:
+            url: "https://www.tsunagujapan.com/vi/food-that-you-must-try-in-okinawa-15-awesome-food-places-with-great-reviews/"
+            text: "Những món bạn nhất định phải thử khi đến Okinawa! 15 địa điểm ăn uống ngon được đánh giá cao tại Okinawa"
+          5:
+            url: "https://www.tsunagujapan.com/vi/historical-okinawa-townhouse-inns-15/"
+            text: "Tận hưởng bầu không khí nhiệt đới tại 15 khu nhà trọ cổ ở Okinawa"
+          6:
+            url: "https://www.tsunagujapan.com/vi/top-20-popular-okinawa-souvenirs/"
+            text: "20 món quà lưu niệm nổi tiếng nhất Okinawa bạn không thể bỏ qua!"
+      shikoku:
+        title: "Tuyển tập Shikoku"
+        description: "Trang này tổng hợp các bài viết về Shikoku. Tại đây bạn có thể tìm thấy thông tin hữu ích về các cơ sở lưu trú, vườn quốc gia, tour du lịch trải nghiệm và các cung đường hành hương để khám phá trọn vẹn vùng đất này."
+        top: "Shikoku"
+        article:
+          1:
+            title_html: "Vài nét về Shikoku"
+            text_html: "Shikoku nằm ở phía Tây Nam của đảo Honshu, bao gồm 4 tỉnh là Tokushima, Kagawa, Ehime và Kochi. Phía Bắc tiếp giáp với Biển nội địa Seto và phía Nam tiếp giáp với Thái Bình Dương. Nơi đây có khí hậu tương đối ấm áp ngay cả vào mùa đông và có mưa nhiều. Khu vực này có địa hình dốc tương đối hiểm trở, có nhiều hòn đảo trong vùng Biển nội Seto và nhiều khu rừng rộng lớn mang đến vẻ đẹp thiên nhiên đầy sức hấp dẫn. Ngoài ra, hoạt động sản xuất rau, trái cây và ngành ngư nghiệp tại đây đang phát triển mạnh đem đến nguồn thực phẩm phong phú cho Shikoku."
+            url: "https://www.tsunagujapan.com/vi/all-about-shikoku/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Shikoku có nhiều cơ sở lưu trú được bao quanh bởi thiên nhiên trù phú, chẳng hạn như biệt thự được cải tạo từ một ngôi nhà cổ gần sông Shimanto trong vắt, hay một nhà trọ có tầm nhìn đặc biệt ra Shodoshima nổi trên Biển Nội địa Seto. Ngoài ra, du khách cũng có thể ghé qua \"Dogo Onsen\" - một trong những ngôi làng suối nước nóng hàng đầu Nhật Bản, hoặc \"Iya Onsen\" - một khu vực chưa được khám phá. Hãy chọn những cơ sở lưu trú mà bạn có thể đảm bảo việc hạn chế tiếp xúc với những người xung quanh chẳng hạn như biệt thự, nhà nghỉ riêng biệt áp dụng các biện pháp kiểm soát dịch bệnh tốt để đảm bảo an toàn cho chuyến đi."
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-shikoku-area/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Được bao quanh bởi biển, Shikoku có khí hậu ấm áp và nhiều hoạt động ngoài trời vô cùng tuyệt vời. Bạn có thể chèo thuyền trên dòng sông Shimanto trong vắt, chèo thuyền kayak trên Biển nội Seto, chèo thuyền vượt thác trên Oboke Koboke, lặn ở Kashiwajima, hay ngắm cá voi ở Kochi,… Cùng tìm hiểu thêm các hoạt động du lịch mạo hiểm tại Shikoku để có một chuyến hành trình thú vị hơn nhé."
+            url: "https://www.tsunagujapan.com/vi/adventure-tourism-in-shikoku"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Shikoku có 2 vườn quốc gia. \"Vườn quốc gia Setonaikai\" là vườn quốc gia lớn nhất ở Nhật Bản, với khung cảnh quần đảo của vùng biển nội địa được cấu thành bởi nhiều hòn đảo lớn nhỏ khác nhau. Tại Vườn Quốc gia Ashizuri-Uwakai, bạn có thể nhìn thấy khung cảnh tuyệt đẹp được tạo nên bởi các sinh vật biển cận nhiệt đới chịu ảnh hưởng của dòng hải lưu đen, các rạn san hô và các cửa cắt khía. Hãy ghé thăm nơi đây để chiêm ngưỡng khung cảnh thiên nhiên này cũng như tham gia vào các hoạt động thú vị từ đài quan sát."
+            url: "https://www.tsunagujapan.com/vi/national-park-in-shikoku/"
+          5:
+            title_html: "Đi hành hương"
+            text_html: "\"Shikoku Ohenro\" là cung đường hành hương đến 88 địa điểm linh thiêng nằm rải rác trong khu vực Shikoku, mà nhà sư Kobo Daishi (hay còn gọi là Kukai) sống ở đầu thời Heian (794-1185) được cho là đã từng đi qua đây. Với tổng chiều dài khoảng 1.200km, cung đường này không chỉ phục vụ mục đích tôn giáo mà còn là tuyến đường lý tưởng để ngắm cảnh đẹp của Shikoku trên đường đi, thưởng thức những món ăn đặc sản của địa phương và cảm nhận bầu không khí tự do. Nơi đây hiện đã và đang thu hút rất nhiều khách hành hương từ trong và ngoài nước ghé thăm."
+            url: "https://www.tsunagujapan.com/vi/ohenro-shikoku-pilgrimage/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều các bài viết thú vị khác liên quan đến khu vực Shikoku. Hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/top-12-photogenic-spots-shikoku/"
+            text: "12 địa điểm chụp hình tuyệt đẹp ở đảo Shikoku"
+          2:
+            url: "https://www.tsunagujapan.com/vi/10-must-see-sights-in-shikoku-s-kochi-prefecture/"
+            text: "10 danh thắng nhất định phải ghé thăm khi đến Kochi, Shikoku"
+          3:
+            url: "https://www.tsunagujapan.com/vi/19-recommendations-for-sightseeing-and-udon-in-takamatsu-kagawa/"
+            text: "19 điểm tham quan và những \"thiên đường\" Udon tuyệt vời nhất tại thành phố Takamatsu, Kagawa"
+          4:
+            url: "https://www.tsunagujapan.com/vi/12-places-to-visit-in-kagawa-shikoku/"
+            text: "12 địa điểm nhất định phải ghé thăm khi đến Kagawa, Shikoku"
+          5:
+            url: "https://www.tsunagujapan.com/vi/top-10-tourist-destinations-ehime-prefecture-shikoku/"
+            text: "10 địa điểm du lịch không thể bỏ qua khi đến Ehime, Shikoku"
+          6:
+            url: "https://www.tsunagujapan.com/vi/discover-shodoshima-the-beautiful-olive-island-in-kagawa/"
+            text: "Khám phá Shodoshima - Đảo Olive xinh đẹp ở Kagawa"
+      kanto:
+        title: "Tuyển tập Kanto"
+        description: "Trang này tổng hợp những bài viết về Kanto. Tại đây bạn có thể tìm thấy những thông tin hữu ích về các cơ sở lưu trú, công viên quốc gia, hoạt động trải nghiệm, và suối nước nóng để khám phá trọn vẹn vùng đất này."
+        top: "Kanto"
+        article:
+          1:
+            title_html: "Vài nét về Kanto"
+            text_html: "Kanto là khu vực trung tâm kinh tế, chính trị Nhật Bản, là nơi có hơn 1/3 tổng dân số Nhật Bản sinh sống. Khu vực này cũng tập trung nhiều thành phố du lịch nổi tiếng như thủ đô Tokyo - một trong những thành phố lớn nhất thế giới, thành phố cảng quốc tế Yokohama, thành phố cổ Kamakura, hay Di sản thế giới Nikko Toshogu. Hãy cùng khám phá những thông tin cơ bản về khu vực này để chuẩn bị cho hành trình đến Kanto trong tương lai nhé."
+            url: "https://www.tsunagujapan.com/vi/all-about-kanto/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Khu vực Kanto có rất nhiều khách sạn cao cấp với dịch vụ hoàn hảo chỉ có ở thành phố lớn Tokyo. Ngoài ra, bạn cũng có thể đến nghỉ dưỡng ở các khu nhà trọ truyền thống tại một số khu suối nước nóng hàng đầu Nhật Bản như Kusatsu Onsen và Ikaho Onsen ở Gunma, hay Hakone Onsen ở Kanagawa. Trong phần này, chúng tôi sẽ giới thiệu các khách sạn, biệt thự và nhà trọ bạn có thể dễ dàng đi và đến từ Tokyo, hãy lựa chọn cho mình một nơi dừng chân thích hợp nhé."
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-kanto-area"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Khu vực Kanto, bao gồm cả Tokyo có rất nhiều hoạt động để bạn hòa mình vào thiên nhiên. Đặc biệt, các khu vực như Tochigi và Gunma có thiên nhiên trù phú, và bạn có thể tham gia các hoạt động ngoài trời như vượt thác trên sông và cưỡi ngựa trên núi. Bạn cũng có thể dễ dàng di chuyển trong ngày đến những nơi này từ Tokyo, vì vậy đừng quên trải nghiệm chúng trong thời gian ghé thăm Tokyo nhé."
+            url: "https://www.tsunagujapan.com/vi/adventure-tourism-in-kanto"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Tại Vườn quốc gia Nikko, bạn có thể thưởng thức vẻ đẹp tự nhiên của núi, hồ, thác nước và đầm lầy cũng như tham quan các ngôi đền và các địa danh được công nhận là Di sản văn hóa thế giới. Tại Vườn quốc gia Oze bạn có thể đi bộ dọc theo những con đường bằng gỗ được xây dựng trong đầm lầy. Hoặc di chuyển dễ dàng từ Tokyo đến Vườn quốc gia Chichibu Tama Kai - công viên quốc gia gần khu vực đô thị nhất. Tìm hiểu thêm thông tin về các vườn quốc gian ở khu vực Kanto để hiểu hơn về tự nhiên của khu vực này nhé."
+            url: "https://www.tsunagujapan.com/vi/national-park-in-kanto/"
+          5:
+            title_html: "Suối nước nóng"
+            text_html: "Có rất nhiều khu suối nước nóng ở khu vực Kanto mà bạn có thể dễ dàng di chuyển từ thủ đô Tokyo, chẳng hạn như \"Kusatsu Onsen\" - nơi có lượng suối tự nhiên lớn nhất Nhật Bản, \"Hakone Yumoto Onsen\" - nơi bạn có thể thưởng thức nghệ thuật, hay \"Kamogawa Onsen\" - khu suối nước nóng nằm trong khu nghỉ mát ven biển. Kết hợp với tham quan Tokyo bạn có thể dành 1 ngày 1 đêm để nghỉ dưỡng tại đây. Chúng tôi cũng sẽ giới thiệu những đặc điểm nổi bật của từng suối nước nóng và tác dụng của suối nước nóng, để bạn có thể lựa chọn một nơi phù hợp nhất để nghỉ ngơi, thư giãn."
+            url: "https://www.tsunagujapan.com/vi/10-kanto-onsen/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều bài viết thú vị khác về khu vực Kanto. Các bạn hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/one-day-sightseeing-spot/"
+            text: "10 địa điểm du lịch trong ngày chỉ cách Tokyo 2 giờ di chuyển"
+          2:
+            url: "https://www.tsunagujapan.com/vi/13-things-you-didn-t-know-about-the-yamanote-line/"
+            text: "13 sự thật thú vị về Yamanote - Tuyến đường sắt trọng điểm ở Tokyo"
+          3:
+            url: "https://www.tsunagujapan.com/vi/chiba-travel-sightseeing-spots/"
+            text: "20 thắng cảnh không thể bỏ qua khi đến Chiba - Đừng quên mang theo camera"
+          4:
+            url: "https://www.tsunagujapan.com/vi/13-must-visit-spots-in-nikko/"
+            text: "13 điểm ngắm cảnh bạn sẽ không muốn bỏ lỡ khi đến Nikko"
+          5:
+            url: "https://www.tsunagujapan.com/vi/kawagoe-4-amazing-places/"
+            text: "Nhật ký một ngày lang thang ở Kawagoe: 4 địa điểm tuyệt vời nhất định phải có trong lịch trình"
+          6:
+            url: "https://www.tsunagujapan.com/vi/10-sightseeing-spots-in-odaiba-tokyo/"
+            text: "10 địa điểm bạn nhất định phải ghé thăm khi tới thiên đường giải trí Odaiba"
+      kansai:
+        title: "Tuyển tập Kansai"
+        description: "Trang này tổng hợp những bài viết về Kansai. Tại đây bạn có thể tìm thấy những thông tin hữu ích về các cơ sở lưu trú, công viên quốc gia, hoạt động trải nghiệm, và những thông tin thú vị về phương ngữ Kansai để có thể khám phá trọn vẹn vùng đất này."
+        top: "Kansai"
+        article:
+          1:
+            title_html: "Vài nét về Kansai"
+            text_html: "Kansai nằm gần như ở khu vực trung tâm Nhật Bản, là một điểm đến du lịch nổi tiếng với những vùng đất mang đặc trưng riêng biệt như Kyoto và Nara - nơi lưu giữ nhiều nét văn hóa truyền thống có từ xa xưa, hay Osaka, và thành phố cảng Kobe - nơi vốn được biết đến là trung tâm kinh tế và công nghiệp của Nhật Bản. Hãy cùng khám phá những thông tin cơ bản về khu vực này để chuẩn bị cho hành trình đến Kansai trong tương lai nhé."
+            url: "https://www.tsunagujapan.com/vi/all-about-kansai/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Tại Kansai bạn sẽ có vô vàn các lựa chọn cho một nơi lưu trú lý tưởng, đó có thể là khách sạn 5 sao ở trung tâm Osaka, một khách sạn cao cấp nơi bạn có thể thưởng thức thịt bò Kobe và ngắm cảnh đêm, một khu nhà trọ sang trọng tại Kinosaki Onsen ở Hyogo, quán trọ Kyomachiya đã được tân trang lại, hay một nơi có thể nhìn ra tòa tháp của ngôi chùa từ bồn tắm ngoài trời và thưởng thức ẩm thực chay và kaiseki truyền thống. Tại bất kỳ đâu bạn cũng sẽ được trải nghiệm những dịch vụ tốt nhất."
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-kansai-area/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Tại Kansai có rất nhiều hoạt động ngoài trời thú vị bạn có thể tham gia như ghé thăm Di sản thế giới Kumano Kodo để vừa tìm hiểu văn hóa vừa tham gia các hoạt động thú vị, chèo thuyền kayak trên đảo Awaji ở Biển nội Seto, cưỡi ngựa đi dạo ở thị trấn Kyotamba và ngắm nhìn khung cảnh đồi núi ở xung quanh, hoặc nhảy bungee tại các điểm du lịch tâm linh ở Nara,..."
+            url: "https://www.tsunagujapan.com/vi/adventure-tourism-in-kansai/"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Tại \"Vườn quốc gia Yoshino Kumano\" bạn sẽ có dịp ghé thăm Di sản thế giới \"Con đường hành hương\" hiếm có trên thế giới và núi Yoshino nơi có khoảng 30.000 cây hoa anh đào sẽ nở hoa vào mùa xuân. \"Vườn quốc gia Biển Sanin\" với địa hình ven biển đa dạng và Cồn cát Tottori là nơi tuyệt vời để hòa mình vào thiên nhiên rộng lớn, trong khi đó \"Vườn quốc gia Setonaikai\" lại nổi bật với nhiều hòn đảo đẹp. "
+            url: "https://www.tsunagujapan.com/vi/national-park-in-kansai/"
+          5:
+            title_html: "Phương ngữ Kansai"
+            text_html: "Phương ngữ Kansai có các từ và cách diễn đạt khác với tiếng Nhật tiêu chuẩn, và đặc trưng bởi ngữ điệu và sự biến đổi ở các âm tiết cuối. Nếu có thể ghi nhớ một vài từ Kansai và sử dụng trong chuyến du lịch đến đây bạn sẽ dễ dàng làm quen với người dân bản địa và khiến chuyến đi trở nên dễ dàng và thú vị hơn đó."
+            url: "https://www.tsunagujapan.com/vi/all-about-kansai-dialect/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều bài viết thú vị khác về khu vực Kansai. Các bạn hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/kansai-useful-one-day-transport-passes/"
+            text: "Hướng dẫn đầy đủ về các phương tiện di chuyển ở Kansai: 9 loại vé tàu trọn gói trong một ngày vô cùng tiện lợi"
+          2:
+            url: "https://www.tsunagujapan.com/vi/9-essential-day-trips-from-kyoto-city/"
+            text: "9 địa điểm tham quan trong ngày từ thành phố Kyoto - chỉ mất từ 1 đến 3 tiếng đồng hồ di chuyển"
+          3:
+            url: "https://www.tsunagujapan.com/vi/50-things-to-do-in-nara/"
+            text: "50 điều thú vị để làm ở Nara - Vùng đất yên bình với nhiều đền, chùa cổ kính"
+          4:
+            url: "https://www.tsunagujapan.com/vi/20-must-buy-souvenirs-in-osaka/"
+            text: "20 món quà nhất định phải mua khi đến Osaka! Từ những món đồ ngọt nổi tiếng cho đến những món quà lưu niệm ngộ nghĩnh"
+          5:
+            url: "https://www.tsunagujapan.com/vi/25-things-to-do-in-kyoto/"
+            text: "25 điều nhất định phải làm khi đến Kyoto: Khám phá Arashiyama, Đền thờ Fushimi Inari-Taisha, Gion và nhiều địa danh khác"
+          6:
+            url: "https://www.tsunagujapan.com/vi/kobe-2-day-sightseeing-course/"
+            text: "2 ngày ở Kobe: Cuộc hành trình đáng nhớ với những địa điểm không thể bỏ qua"
+      chubu:
+        title: "Tuyển tập Chubu"
+        description: "Trang này tổng hợp những loại bài viết về Chubu. Tại đây bạn có thể tìm thấy những thông tin hữu ích về các cơ sở lưu trú, công viên quốc gia, hoạt động trải nghiệm, và những khu phố cổ để có thể khám phá trọn vẹn vùng đất này."
+        top: "Chubu"
+        article:
+          1:
+            title_html: "Vài nét về Chubu"
+            text_html: "Chubu nằm ở trung tâm của đảo chính Honshu, được biết đến với nhiều điểm tham quan nổi tiếng như núi Phú Sĩ, thị trấn lâu đài cổ Kanazawa, những ngôi làng mái tranh gassho-zukuri Shirakawa-go và Gokayama đã được UNESCO công nhận là Di sản thế giới và khu nghỉ mát trên núi hàng đầu Nhật Bản Kamikochi. Hãy cùng tìm hiểu những thông tin hứu ích về những điểm tham quan tiêu biểu, khí hậu, cách di chuyển đến những địa điểm này để khám phá trọn vẹn Chubu nhé."
+            url: "https://www.tsunagujapan.com/vi/all-about-chubu/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Tại Chubu bạn có thể tìm thấy nhiều địa điểm lưu trú khác nhau như những khu nhà trọ truyền thống \"ryokan\" lâu đời nằm ở khu phố Chaya thuộc Kanazawa, Ishikawa, thưởng thức những bữa ăn buffet hải sản tươi sống tại những khu nhà trọ suối nước nóng ở Toyama, chiêm ngưỡng lối thiết kế nội thất và nghệ thuật trang trí hiện đại của một nhà trọ ở Niigata vốn được tân trang từ một ngôi nhà cổ, hay ngắm nhìn núi Phú Sĩ từ căn phòng của một khách sạn nghỉ dưỡng nằm bên hồ Kawaguchi ở Yamanashi!"
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-chubu-area/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Bạn có thể tham gia những chuyến tham quan mạo hiểm kì thú ở vùng Chubu với những hoạt động vui chơi ngoài trời và ngắm nhìn phong cảnh thiên nhiên tuyệt đẹp tại đây! Chiêm ngưỡng khung cảnh thiên nhiên vùng Mie khi chèo ván đứng (SUP), đi bè trên sông Nagara ở Gifu, trải nghiệm câu cá trên biển và thưởng thức thành quả của mình sau khi đánh bắt, nhảy bungee ở độ cao 215m, hay đi xe trượt tuyết ở Hida Takayama để trải nghiệm mùa đông ở Chubu."
+            url: "https://www.tsunagujapan.com/vi/adventure-tourism-in-chubu/"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Các vườn quốc gia ở khu vực Chubu nằm ở những vùng núi cao, nên nơi đây trở thành những địa điểm tuyệt vời để tham gia các hoạt động leo núi, địa điểm tránh nóng vào mùa hè, trượt tuyết vào mùa đông và ngâm mình thư giãn trong suối nước nóng. Trong phần này, chúng tôi sẽ giới thiệu chi tiết về 5 vườn quốc gia ở khu vực Chubu như vườn vuốc gia Joshinetsu Kogen - nơi bạn có thể gặp gỡ những chú khỉ tuyết vô cùng đáng yêu, Vườn Quốc gia Chubu Sangaku với khu nghỉ dưỡng Kamikochi trên núi hàng đầu Nhật Bản, hay ghé thăm đền thờ Ise Jingu 2.000 năm tuổi tại Vườn Quốc gia Ise-Shima."
+            url: "https://www.tsunagujapan.com/vi/national-park-in-chubu/"
+          5:
+            title_html: "Những khu phố cổ kính"
+            text_html: "Vùng Chubu có rất nhiều cảnh quan thị trấn cổ đẹp mắt, tiêu biểu như khu phố Higashi Chaya ở Kanazawa, Ishikawa, nổi bật với lối kiến trúc cổ tuyệt đẹp và con đường lát đá, Di sản thế giới làng gassho-zukuri Gokayama ở Toyama, hay Arimatsu ở Nagoya - thị trấn buôn bán nổi tiếng với nghề nhuộm vải truyền thống và thị trấn bưu điện Kumagawa-juku tại Fukui, được phát triển từ đầu mối giao thương với Kyoto trước đây."
+            url: "https://www.tsunagujapan.com/vi/chubu-area-traditional-retro-townscapes/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều bài viết thú vị khác về khu vực Chubu. Các bạn hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/7-must-see-places-in-kanazawa/"
+            text: "10 địa điểm nhất định phải ghé thăm khi đến Kanazawa"
+          2:
+            url: "https://www.tsunagujapan.com/vi/22-must-go-places-in-nagoya/"
+            text: "22 điều thú vị để làm ở Nagoya - Điểm đến với vô vàn những thắng cảnh và món ăn ngon không thể bỏ qua!"
+          3:
+            url: "https://www.tsunagujapan.com/vi/shirakawago-recommended-10-spot-world-heritage/"
+            text: "Khám phá làng Shiragawago - Di sản thế giới với những điểm tham quan không thể bỏ lỡ"
+          4:
+            url: "https://www.tsunagujapan.com/vi/12-little-known-secrets-on-mt-fuji/"
+            text: "12 sự thật thú vị về núi Phú Sĩ ngay cả người Nhật cũng không biết"
+          5:
+            url: "https://www.tsunagujapan.com/vi/25-must-see-tourist-spots-karuizawa/"
+            text: "25 điểm du lịch nhất định phải đến ở thị trấn nghỉ dưỡng Karuizawa, Nagano"
+          6:
+            url: "https://www.tsunagujapan.com/vi/toyama-9-scenic-locales/"
+            text: "Hòa mình vào thiên nhiên của Toyama với 9 danh thắng không thể bỏ qua"
+      chugoku:
+        title: "Tuyển tập Chugoku"
+        description: "Trang này tổng hợp tất cả các bài viết về Chugoku. Tại đây bạn có thể tìm thấy những thông tin hữu ích về các cơ sở lưu trú, vườn quốc gia, hoạt động trải nghiệm, và các công trình kiến trúc lịch sử để có thể khám phá trọn vẹn vùng đất này."
+        top: "Chugoku"
+        article:
+          1:
+            title_html: "Vài nét về Chugoku"
+            text_html: "Chugoku nằm ở cực Tây của đảo chính Honshu, được biết đến với nhiều cảnh quan thiên nhiên tuyệt đẹp và các di tích văn hóa, lịch sử như Di sản văn hóa thế giới đền Itsukushima, thị trấn lâu đài Hagi nơi vẫn còn lưu giữ cảnh quan đường phố cổ kính, hay cồn cát lớn nhất Nhật Bản Tottori. Hãy cùng tìm hiểu những thông tin hữu ích về những điểm tham quan tiêu biểu, khí hậu, cách di chuyển đến những địa điểm này để khám phá trọn vẹn Chugoku nhé."
+            url: "https://www.tsunagujapan.com/vi/all-about-chugoku/"
+          2:
+            title_html: "Cơ sở lưu trú cao cấp"
+            text_html: "Tại Chugoku bạn có thể tìm thấy nhiều địa điểm lưu trú khác nhau như khách sạn nghỉ dưỡng 400 năm tuổi gần đền Itsukushima, hay một ryokan truyền thống với tất cả các phòng nghỉ đều có bồn tắm suối nước nóng lộ thiên. Ngoài ra, bạn cũng có thể tìm thấy một khu nhà trọ lâu đời ở Khu phố Lịch sử Kurashiki Bikan, tỉnh Okayama, một khu nhà trọ suối nước nóng ở Yamaguchi với bồn tắm lớn nhìn ra dòng suối chảy từ vách núi, hoặc một quán trọ ở Tottori nơi bạn sẽ được thưởng thức hải sản tươi sống từ Biển Nhật Bản như cua. Hãy đến Chugoku và tìm cho mình một nơi nghỉ ngơi lý tưởng nhé!"
+            url: "https://www.tsunagujapan.com/vi/trustworthy-luxury-accommodations-in-japans-chugoku-area/"
+          3:
+            title_html: "Du lịch mạo hiểm"
+            text_html: "Có rất nhiều hoạt động du lịch mạo hiểm thú vị bạn có thể tham gia khi đến Chugoku như đi xe đạp bánh to trên cồn cát Tottori, bay qua cồn cát Tottori bằng dù lượn, chèo thuyền kayak trên biển để được chiêm ngưỡng cổng torii màu đỏ của đền Itsukushima ở cự ly gần, chèo ván đứng SUP trên đảo Suo-Oshima ở Yamaguchi, hay leo thác nước (Shower Climbing) ở Hiroshima và ngâm mình thư giãn tại Yuki Onsen trên đường về."
+            url: "https://www.tsunagujapan.com/vi/adventure-tourism-in-chugoku/"
+          4:
+            title_html: "Vườn quốc gia"
+            text_html: "Vườn quốc gia lớn nhất Nhật Bản \"Setonaikai\" là nơi tập trung khoảng 1.000 hòn đảo thuộc Biển Nội địa Seto. \"Vườn quốc gia Daisen-Oki\" nổi tiếng với ngôi đền Izumo Taisha là nơi trú ngụ của các vị thần trong thần thoại Nhật Bản, dãy núi Daisen, và khung cảnh ven biển tuyệt đẹp được tạo ra bởi những con sóng nhấp nhô của Biển Nhật Bản. Hãy đến Chugoku và khám phá những điều thú vị tại 2 vườn quốc gia này nhé!"
+            url: "https://www.tsunagujapan.com/vi/national-park-in-chugoku/"
+          5:
+            title_html: "Công trình kiến trúc lịch sử"
+            text_html: "Tại Chugoku bạn có thể tìm thấy rất nhiều những công trình kiến trúc lịch sử lâu đời như Di sản thế giới Đền Itsukushima nổi tiếng với cổng torii lớn ở giữa biển, Khu phố lịch sử Kurashiki Bikan nơi bạn có thể thưởng thức phong cảnh trang nhã của những nhà kho tường màu trắng và những cây liễu rủ dọc bờ sông. Ngoài ra, tại đây còn có cây cầu gỗ Kintaikyo với tổng chiều dài khoảng 200m và kết cấu 5 nhịp cầu gỗ uốn cong, Bảo vật quốc gia Điện Nageiredo của chùa Mitokusan Sanbutsu-ji được xây dựng trên vách của một núi đá."
+            url: "https://www.tsunagujapan.com/vi/chugoku-unique-historic-structures/"
+        read_more: "Xem thêm"
+        related_articles:
+          title: "Bài viết liên quan"
+          lead: "Còn rất nhiều bài viết thú vị khác về khu vực Chugoku. Các bạn hãy nhớ đón đọc nhé!"
+          1:
+            url: "https://www.tsunagujapan.com/vi/a-trip-through-chugoku-region-the-land-of-myths-and-memories/"
+            text: "Du ngoạn quanh vùng Chugoku: Khám phá Yamaguchi, Hiroshima, Tottori và những vùng đất bí ẩn khác"
+          2:
+            url: "https://www.tsunagujapan.com/vi/how-to-spend-2-days-in-hiroshima/"
+            text: "Hành trình du lịch 2 ngày tại Hiroshima - vùng đất của những cánh chim hòa bình"
+          3:
+            url: "https://www.tsunagujapan.com/vi/7-recommended-sightseeing-spots-in-tottori/"
+            text: "Tuyển chọn 7 điểm tham quan hấp dẫn nhất tại Tottori"
+          4:
+            url: "https://www.tsunagujapan.com/vi/shimanami-kaido-cycle-across-the-seto-inland-sea/"
+            text: "Shimanami Kaido: Tuyến đường đạp xe đẹp nhất Nhật Bản"
+          5:
+            url: "https://www.tsunagujapan.com/vi/rabbit-island-okunoshima/"
+            text: "Đảo Okunoshima - Thiên đường thỏ mộng mơ và quá khứ từng bị xóa tên trên bản đồ thế giới"
+          6:
+            url: "https://www.tsunagujapan.com/vi/25-things-to-do-hiroshima/"
+            text: "25 điều thú vị ở Hiroshima: Khám phá lịch sử, văn hóa và thiên nhiên nơi đây!"
+  planning_trip:
+    page_title: "Thông tin du lịch Nhật Bản"
+    page_description: "Trang này tổng hợp các bài viết chia sẻ thông tin hữu ích cho du khách nước ngoài khi đến thăm Nhật Bản. Tại đây có đầy đủ các thông tin về giao thông, tiền tệ, quy tắc ứng xử, biện pháp ứng phó trong các trường hợp khẩn cấp như thương tích, thảm họa và các mẹo du lịch hữu ích,... giúp bạn tận hưởng kỳ nghỉ ở Nhật Bản một cách an toàn và thoải mái."
+    title_html: "Tổng hợp thông tin<br>du lịch hữu ích<br>khi đến thăm Nhật Bản"
+    description: "Trang này tổng hợp các bài viết chia sẻ thông tin hữu ích cho du khách nước ngoài khi đến thăm Nhật Bản. Tại đây có đầy đủ các thông tin về giao thông, tiền tệ, quy tắc ứng xử, biện pháp ứng phó trong các trường hợp khẩn cấp như thương tích, thảm họa và các mẹo du lịch hữu ích,... giúp bạn tận hưởng kỳ nghỉ ở Nhật Bản một cách an toàn và thoải mái."
+    articles:
+      1:
+        title: "Giao thông"
+        description: "Thông tin về phương tiện giao thông như cách di chuyển trên các phương tiện giao thông công cộng và các loại thẻ IC giao thông."
+        1:
+          text: "Tiết kiệm chi phí du lịch với thẻ Suica - thẻ IC phổ biến nhất ở Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/suica-japans-most-popular-ic-card/"
+        2:
+          text: "Các loại vé tàu trọn gói giúp bạn khám phá toàn bộ Tokyo với chi phí rẻ nhất"
+          url: "https://www.tsunagujapan.com/vi/tokyo-free-pass-guide/"
+        3:
+          text: "Hướng dẫn cách đi từ sân bay Narita đến trung tâm Tokyo! Dành cho những người lần đầu đến Nhật!"
+          url: "https://www.tsunagujapan.com/vi/how-to-get-from-narita-airport-to-downtown-tokyo/"
+        4:
+          text: "Hướng dẫn đầy đủ về ga Shinjuku ở Tokyo - Nhà ga đông đúc nhất thế giới"
+          url: "https://www.tsunagujapan.com/vi/you-won-t-get-lost-with-this-a-complete-guide-to-shinjuku-station-in-tokyo-the-world-s-busiest-station/"
+        5:
+          text: "7 nhà ga dễ bị lạc nhất ở Tokyo: Từ \"mê cung\" Tokyo cho đến \"ngục tối\" Shinjuku"
+          url: "https://www.tsunagujapan.com/vi/the-7-most-troublesome-stations-in-tokyo/"
+      2:
+        title: "Tiền"
+        description: "Thông tin về phương thức thanh toán không tiền mặt, tiền giấy Nhật Bản và cách chuyển đổi ngoại tệ."
+        1:
+          text: "Bạn có thể sống sót mà không cần tiền mặt ở Nhật Bản? 12 lựa chọn thanh toán không dùng tiền mặt hàng đầu tại Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/top-cashless-payment-options-japan/"
+        2:
+          text: "Tất cả những điều bạn cần biết về thanh toán không tiền mặt và chính sách hoàn tiền bằng điểm thưởng ở Nhật"
+          url: "https://www.tsunagujapan.com/vi/cashless-payments-and-cashback-policy-in-japan/"
+        3:
+          text: "Những điều khách du lịch cần biết về tiền và mua hàng miễn thuế ở Nhật"
+          url: "https://www.tsunagujapan.com/vi/guide-to-money-and-tax-free-shopping-in-japan/"
+        4:
+          text: "5 cách tốt nhất để tiêu nốt 1.000 Yên cuối cùng tại Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/the-5-best-ways-to-spend-your-last-1-000-yen-in-japan/"
+        5:
+          text: "Nhật Bản có thật sự đắt đỏ? 8 sản phẩm giá rẻ của Nhật khiến nhiều người nước ngoài ngạc nhiên"
+          url: "https://www.tsunagujapan.com/vi/8-surprisingly-cheap-things-in-japan/"
+      3:
+        title: "Quy tắc ứng xử"
+        description: "Thông tin về quy tắc ứng xử trong văn hóa Nhật Bản bạn cần lưu ý khi du lịch đến đây."
+        1:
+          text: "12 điều bạn nên biết trước khi du lịch tới Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/japan-12-things-to-know-before-travel/"
+        2:
+          text: "10 điều cần biết khi đi tàu điện ở Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/10-things-to-know-when-riding-trains-in-japan/"
+        3:
+          text: "10 điều cấm kị khi dùng đũa ở Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/10-things-you-should-avoid-doing-when-using-chopsticks-in-japan/"
+        4:
+          text: "Những quy tắc ứng xử trên bàn ăn của người Nhật Bản dành cho người mới học"
+          url: "https://www.tsunagujapan.com/vi/japanese-table-manners-for-beginners/"
+        5:
+          text: "5 điều bạn cần biết khi đi ăn ramen ở Nhật"
+          url: "https://www.tsunagujapan.com/vi/5-important-things-to-know-before-entering-a-japanese-ramen-shop/"
+      4:
+        title: "Mẹo du lịch"
+        description: "Tìm hiểu về các mẹo du lịch hữu ích để có một chuyến đi tiện lợi và bổ ích."
+        1:
+          text: "20 cụm từ tiếng Nhật thường sử dụng khi đi du lịch"
+          url: "https://www.tsunagujapan.com/vi/20-japanese-phrases-to-use-when-traveling/"
+        2:
+          text: "Mua đồ ăn mang đi hoặc gọi món giao tận nhà ở Nhật Bản! Tìm hiểu dịch vụ giao đồ ăn phổ biến tại Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/takeout-culture-in-japan/"
+        3:
+          text: "7 cách tiết kiệm chi phí khi mua sắm ở Nhật mà chỉ người Nhật mới biết"
+          url: "https://www.tsunagujapan.com/vi/7-useful-tips-on-how-to-shop-like-a-local-in-japan/"
+        4:
+          text: "Tránh xa những chuyến tàu đông người! Hãy để chuyến du lịch của bạn tuyệt vời hơn bằng cách hạn chế đi lại vào giờ cao điểm tại Tokyo!"
+          url: "https://www.tsunagujapan.com/vi/tokyo-traffic-rushtime/"
+        5:
+          text: "9 Món đồ bạn cần mang theo khi đi du lịch Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/what-you-should-bring-for-japan-trip/"
+      5:
+        title: "Tình huống khẩn cấp (Tai nạn/ Cấp cứu/ Pháp luật)"
+        description: "Những điều bạn cần chú ý khi ở Nhật, đặc biệt là cách ứng phó với những tình huống khẩn cấp như thương tích, bệnh tật và thảm họa."
+        1:
+          text: "Những điều cần chú ý để giữ an toàn khi gặp thiên tai tại Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/tips-and-advice-staying-safe-natural-disasters-japan/"
+        2:
+          text: "Độ tuổi nào được phép uống rượu, hút thuốc ở Nhật Bản? 8 quy định liên quan đến pháp luật bạn cần biết trước khi đến Nhật"
+          url: "https://www.tsunagujapan.com/vi/8-laws-you-should-know-japan/"
+        3:
+          text: "8 Điều cần lưu ý ngay cả khi bạn đang ở một đất nước an toàn như Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/8-situations-to-be-aware-of-when-visiting-japan/"
+        4:
+          text: "Chia sẻ từ người Nhật! 8 cách xử lý khi gặp tai nạn hoặc bị ốm khi ở Nhật Bản"
+          url: "https://www.tsunagujapan.com/vi/what-to-do-when-you-get-sick-or-injured-according-to-locals/"
+        5:
+          text: "Những bệnh viện hỗ trợ người nước ngoài tại Nhật Bản bạn nên ghi nhớ"
+          url: "https://www.tsunagujapan.com/vi/multilingual-hospitals-clinics-japan/"
+  article:
+    title: "Danh sách bài viết"
+    desc: ""
+    translator: "Translator"
+    author: "Author"
+    travelSite:
+      heading: "Khuyến nghị từ các biên tập viên của chúng tôi"
+    banner:
+      travel: "tsunagu Japan Travel - Nội dung được đề xuất bởi các biên tập viên của tsunagu Japan! CLICK Here!"
+      travel1: "Nội dung được đề xuất bởi các biên tập viên của tsunagu Japan!"
+      travel2: "Không thể bỏ qua! Đặt khách sạn, tour và các hoạt động trải nghiệm khi du lịch đến Nhật Bản!"
+      travel3: "Tìm kiếm thông tin về khách sạn, tour và các hoạt động trải nghiệm tại Nhật Bản ngay tại đây!"
+      travel4: "Vô vàn những thông tin du lịch hữu ích từ các biên tập viên của tsunaguJapan sẽ có ngay tại đây!"
+      travel5: "Khám phá những chuyến du lịch mới! Nhanh tay nắm bắt các xu hướng, thông tin về khách sạn, các hoạt động ở Nhật Bản!"
+      travel6: "Khám phá Nhật Bản một cách sâu sắc và thú vị hơn! Nắm bắt các mẹo du lịch và những thông tin mới nhất!"
+      text: "Nội dung được đề xuất bởi các biên tập viên của tsunagu Japan!"
+  hotel:
+    name1: "Agoda"
+    short1: "A"
+    name2: "Booking.com"
+    short2: "B"
+    bookWith1: "Đặt phòng với Agoda"
+    bookWith2: "Đặt phòng với Booking.com"
+    bookWith3: "Đặt phòng với Relux"
+  hotelpage:
+    labels:
+      name: "Tên"
+      desc: "Miêu tả"
+      price: "Giá"
+      location: "Địa chỉ"
+      reference: "Tham khảo:"
+      book: "book at"
+      info: "Thông tin"
+  source: "Source:"
+  sns:
+    share: "Chia sẻ"
+    pin: "Ghim"
+    tweet: "Tweet"
+  lang:
+    zh-hant: "繁體中文"
+    zh-hans: "简体中文"
+    ko: "한국어"
+    vi: "Tiếng Việt"
+    en: "English"
+    ja: "日本語"
+    th: "ภาษาไทย"
+    id: "Indonesian"
+  footer:
+    about: "Giới thiệu về tsunagu Japan"
+    tsunagudesc: "tsunagu Japan is a platform for sharing travel information for Japan. The information includes trip planning advice, useful tips for staying in Japan, or knowledge about Japanese culture that makes your trip deeply enjoyable. We want to bring all of Japan to you."
+    contact: "Liên hệ"
+    login: "Đăng nhập"
+    logout: "Đăng xuất"
+    company: "Hồ sơ công ty"
+    privacy: "Riêng tư"
+    terms: "Điều khoản"
+    tradelaw: "Dựa trên Luật giao dịch thương mại cụ thể"
+  email_html: "tsunagu Japan <br>
+<a href=\"https://www.tsunagujapan.com/\">https://www.tsunagujapan.com/</a><br>
+D2CX, inc. <br>
+TOKYO SHIODOME BUILDING, 1-9-1 <br>
+Higashi-Shimbashi, Minato-ku, Tokyo <br>
+<a href=\"https://www.d2cx.co.jp/\">https://www.d2cx.co.jp/</a>"
+
+  wowjapan:
+    desc: "The Japan tourism information site WOW! JAPAN closed on September 15, 2021.<br><br>We've published a selection of their most popular articles on this page."
+  covid:
+    subtitle: "Giới thiệu các cơ sở áp dụng biện pháp phòng tránh Covid-19 tại Nhật Bản"
+    desc: "Tìm hiểu biện pháp phòng tránh Covid-19 của các cơ sở kinh doanh, khu vui chơi giải trí tại Nhật Bản để lên kế hoạch cho chuyến du lịch Nhật Bản an toàn và thú vị."
+    search_button: "Tìm kiếm các cơ sở áp dụng biện pháp phòng tránh Covid-19"
+    how:
+      title: "Các biện pháp phòng tránh Covid-19 tại Nhật Bản"
+      sub: "Nguyên tắc 3 KHÔNG"
+      desc_html: "Ngoài những biện pháp cá nhân như che miệng khi ho và vệ sinh tay sạch sẽ, chính phủ Nhật Bản cũng kêu gọi người dân tuân thủ nguyên tắc \"3 KHÔNG\" (KHÔNG đóng cửa, KHÔNG tập trung, KHÔNG tiếp xúc) để ngăn chặn sự lây lan của virus corona."
+      1:
+        repletion: "Không gian kín"
+        keyword_html: "<span>KHÔNG</span> ở trong không gian kín"
+      2:
+        repletion: "Tập trung đông người"
+        keyword_html: "<span>KHÔNG</span> tập trung"
+      3:
+        repletion: "Trò chuyện ở khoảng cách gần"
+        keyword_html: "<span>KHÔNG</span> tiếp xúc"
+      additional_html: "Nếu muốn tìm hiểu chi tiết về các biện pháp phòng tránh Covid-19, bạn có thể xem thêm tại <a href='https://corona.go.jp/vi/' target='_blank'>Văn phòng xúc tiến kiểm soát dịch Covid-19 (Chánh văn phòng nội các).</a>"
+    about:
+      title: "Thông tin liên quan đến Covid-19 tại Nhật Bản"
+      1:
+        text: "Các quốc gia/khu vực có quy định hạn chế nhập cảnh, các biện pháp kiểm dịch (cách ly) khi nhập cảnh vào Nhật Bản, các hạn chế về thị thực Nhật Bản, v.v."
+        url1_title: "Trang An toàn ở nước ngoài của Bộ Ngoại giao Nhật Bản"
+        url1: "https://www.anzen.mofa.go.jp/"
+        url2_title: "Cục Quản lý xuất nhập cảnh Bộ Tư pháp Nhật Bản"
+        url2: "https://www.isa.go.jp/vi/nyuukokukanri01_00151.html"
+        desc: "*Vì các biện pháp này có thể thay đổi tùy theo tình hình dịch bệnh, nên thông tin sẽ được cập nhật thường xuyên mà không cần thông báo. Vui lòng xem trên trang web để biết thông tin mới nhất."
+      2:
+        text: "Các biện pháp khi nhập cảnh (xuất trình giấy chứng nhận xét nghiệm Covid-19, cài đặt các ứng dụng cần thiết, v.v.)"
+        url1_title: "Bộ Y tế, Lao động và Phúc lợi Nhật Bản"
+        url1: "https://www.mhlw.go.jp/stf/covid-19/bordercontrol.html"
+      3:
+        text: "Tình hình tiêm chủng vắc-xin Covid-19 tại Nhật Bản"
+        url1_title: "Trang Văn phòng Thủ tướng Nhật Bản (tiếng Nhật)"
+        url1: "https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html"
+        url2_title: "Trang Văn phòng Thủ tướng Nhật Bản (tiếng Anh)"
+        url2: "https://japan.kantei.go.jp/ongoingtopics/vaccine.html"
+    place_list:
+      title: "Thông tin các cơ sở thực hiện biện pháp phòng tránh lây nhiễm"
+      all: "All Category"
+      transport: "Giao thông"
+      hotel: "Khách sạn"
+      shop: "Cửa hàng"
+      restaurant: "Nhà hàng"
+      sightseeing: "Điểm tham quan"
+      other: "Các hoạt động, trải nghiệm khác"
+      category: "Danh mục"
+      category_ph: "Tìm kiếm theo danh mục"
+      area: "Khu vực"
+      area_ph: "Tìm kiếm theo khu vực"
+      add_area: "Thêm địa điểm"
+    result:
+      count_total: " kết quả"
+      #      current_count_html: "Hiển thị <span class='count_start'></span>~<span class='count_end'></span> kết quả (Thứ tự bảng chữ cái)"
+      current_count_html: "(Thứ tự bảng chữ cái)"
+      title: "Kết quả tìm kiếm"
+      unit: "kết quả"
+      icon:
+        title: "Các ký hiệu biện pháp phòng ngừa COVID-19"
+        cashless: "Thanh toán bằng thẻ tín dụng"
+        distance: "Đảm bảo giữ khoảng cách"
+        gargle: "Nhân viên súc miệng thường xuyên"
+        hand: "Nhân viên vệ sinh tay thường xuyên"
+        mask: "Nhân viên đeo khẩu trang"
+        sanitizer: "Trang bị dung dịch khử trùng tay"
+        sheet: "Lắp đặt tấm chắn ngăn giọt bắn"
+        spray: "Thường xuyên khử trùng cơ sở"
+        temperature: "Kiểm tra thân nhiệt của nhân viên"
+        thermograph: "Lắp đặt thiết bị đo nhiệt độ tự động"
+        tray: "Sử dụng khay đựng tiền khi thanh toán"
+        vent: "Lưu thông không khí"
+      show_more_html: "<i class='fas fa-plus'></i>  Xem thêm"
+      show_less_html: "<i class='fas fa-minus'></i>  Thu gọn"
+      read_more: "Xem thêm"
+      read_less: "Thu gọn"
+      website: "Official Website"
+    featured_articles: "Bài viết"
+    more_info: "Xem thêm bên dưới để biết về các biện pháp an toàn của mỗi doanh nghiệp"
+    details:
+      description: "Giới thiệu"
+      safety_description: "Chính sách đảm bảo an toàn"
+      benefit: "Ưu đãi"
+      disclaimer: "Tham khảo trang web chính thức để cập nhật những thông tin mới nhất"
+      headline: "Các biện pháp an toàn để phòng tránh Covid-19 tại Nhật Bản"
+      teaser_desc_html: "Nhằm hạn chế sự lây lan của dịch COVID-19, chính phủ Nhật Bản đã đưa ra chính sách \"3 không\".
+      Chính sách \"3 không\" gồm có \"Không đóng cửa\", \"Không tập trung\" và \"Không tiếp xúc\". Cụ thể, \"Không đóng cửa\" là mở cửa để giúp không khí được lưu thông, \"Không tập trung\" là không tụ tập đông người và \"Không tiếp xúc\" là không nói chuyện ở khoảng cách gần với người khác.
+      Hãy cùng chúng tôi tìm hiểu xem các doanh nghiệp Nhật Bản đã áp dụng \"3 không\" vào \"Chính sách đảm bảo an toàn\" như thế nào trong việc phòng chống Covid-19."
+      menu:
+        headline: "Chính sách của các doanh nghiệp"
+        transport: "Sân bay - Hệ thống giao thông công cộng"
+        accommodate: "Cơ sở lưu trú"
+        restaurant: "Nhà hàng"
+        shops: "Trung tâm mua sắm"
+        sightseeing: "Các địa điểm tham quan"
+        other: "Các hoạt động, trải nghiệm khác"
+      descs:
+        transport: "Ở sân bay - nơi đưa đón một lượng lớn khách du lịch từ khắp nơi trên thế giới đến Nhật Bản, hay các hệ thống giao thông công cộng như tàu điện, xe buýt, số lượng người đi lại rất đông, và đây chính là cơ hội để virus lây lan nhanh chóng. Hãy cùng chúng tôi tìm hiểu các biện pháp phòng chống Covid-19 tại sân bay và các hệ thống giao thông công cộng ở Nhật Bản trong phần này."
+        accommodate: "Bên cạnh các địa điểm tham quan, các món ăn ngon thì cơ sở lưu trú như khách sạn, nhà nghỉ cũng đóng vai trò hết sức quan trọng quyết định chuyến đi của bạn có thành công hay không.
+        Chúng ta đều mong muốn có thể tìm được một nơi đem lại cảm giác thoải mái, an toàn để yên tâm nghỉ lại.
+        Cùng tìm hiểu các biện pháp phòng chống Covid-19 tại các hệ thống nhà nghỉ, khách sạn ở Nhật Bản trong phần này."
+        restaurant: "Có lẽ có rất nhiều người đặt việc ăn uống lên hàng đầu khi đi du lịch.
+        Mặc dù cảm giác vừa tận hưởng văn hóa ẩm thực địa phương, vừa quây quần bên gia đình và bạn bè khi thưởng thức bữa tối thật tuyệt vời, nhưng điều này cũng tiềm ẩn nguy cơ lấy nhiễm virus rất cao.
+        Hãy cùng chúng tôi tìm hiểu các biện pháp phòng chống Covid-19 của các nhà hàng, quán ăn để có thể yên tâm tận hưởng những bữa ăn ngon trong chuyến đi của bạn!"
+        shops: "Một trong những thú vui không thể bỏ qua trong chuyến đi của bạn có lẽ chính là việc nhìn ngắm những món quà lưu niệm hay các món đồ nhỏ xinh.
+        Hãy cùng chúng tôi tìm hiểu các biện pháp an toàn như khử độc, hệ thống lọc không khí tại các trung tâm mua sắm đông người tại Nhật Bản!"
+        sightseeing: "Đến với Nhật Bản, rất nhiều người lựa chọn các công viên chủ đề, bảo tàng mỹ thuật, triển lãm hay đền chùa để tìm hiểu về văn hóa và lịch sử của xứ sở anh đào. Thế nhưng, tập trung ở một nơi đông người như vậy chắc chắn cũng sẽ khiến bạn cảm thấy bất an.
+        Trong phần này hãy cùng chúng tôi tìm hiểu các biện pháp an toàn nhằm phòng chống Covid-19 tại các địa điểm tham quan tập trung đông người ở Nhật Bản."
+        other: "Đến Nhật Bản, hẳn có không ít người mong muốn được tham gia trải nghiệm văn hóa tại nơi đây. Để có thể yên tâm tham gia các hoạt động trải nghiệm, trong phần này hãy cùng chúng tôi tìm hiểu các biện pháp an toàn cũng như các biện pháp phòng chống Covid-19 để xử lý với các tình huống khi bạn đang đi du lịch tại Nhật Bản!"
+    teaster:
+      headline_html: "Du lịch Nhật Bản an toàn"
+      headline_m_html: "Du lịch Nhật Bản an toàn"
+      sub: "Một loại bệnh truyền nhiễm mới xuất hiện trên thế giới do virus corona chủng mới gây ra đã khiến rất nhiều người nước ngoài trong chúng ta cảm thấy lo lắng. Chính vì thế trang thông tin này sẽ cung cấp cho những người nước ngoài đang sống ở Nhật những thông tin hữu ích nhất về dịch Covid-19 tại Nhật Bản. Hy vọng ngày chúng ta có thể bước ra ngoài và gặp lại nhau không còn xa nữa."
+    information:
+      headline: "Thông tin cần biết về Covid-19"
+    safety:
+      headline: "Các biện pháp an toàn để phòng tránh Covid-19 tại Nhật Bản"
+      sub: "Giới thiệu biện pháp phòng tránh Covid-19 của từng doanh nghiệp Nhật Bản"
+      content:
+        h3: "Giao thông công cộng"
+        sub: "Phương tiện giao thông công cộng như tàu điện, xe buýt là phương tiện đi lại chủ yếu của không chỉ khách du lịch mà còn của cả người dân Nhật Bản. Các biện pháp phòng tránh đang được thực hiện là mở cửa thông gió bên trong xe, khử trùng toàn bộ xe, yêu cầu tất cả nhân viên nhà ga đeo khẩu trang."
+      info:
+        mask:
+          headline: "Đeo khẩu trang"
+          sub: "Yêu cầu nhân viên đeo khẩu trang để tránh lây nhiễm"
+        hand_san:
+            headline: "Trang bị dung dịch khử trùng"
+            sub: "Trang bị dung dịch khử trùng ở nhiều khu vực trong tòa nhà"
+        temp:
+            headline: "Theo dõi sức khỏe"
+            sub: "Theo dõi tình trạng sức khỏe của nhân viên"
+        sheets:
+            headline: "Lắp đặt tấm nhựa vinyl"
+            sub: "Lắp đặt tấm nhựa vinyl tại quầy thanh toán để ngăn giọt bắn"
+        distance:
+            headline: "Giãn cách xã hội"
+            sub: "Thực hiện giãn cách xã hội giữa các khách hàng"
+        first:
+          headline: "Thông thoáng"
+          sub: "Mở cửa sổ để thông gió cho các phương tiện công cộng"
+        second:
+          headline: "Khử trùng"
+          sub: "Khử trùng toàn bộ thiết bị và không gian bên trong xe"
+        third:
+          headline: "Đeo khẩu trang"
+          sub: "Nhân viên nhà ga phải đeo khẩu trang để tránh lây nhiễm qua giọt bắn"
+      outgoing:
+        headline: "Kiểm tra thông tin chi tiết tại trang chủ của các công ty đường sắt khi sử dụng."
+        link1: "JR East"
+        link2: "Tokyo Metro"
+        link3: "Toei Subway"
+        link4: "Keikyu"
+        link5: "Keisei Electric Railway"
+        link6: "Tokyo Monorail"
+        link7: "Hankyu Railway"
+        link8: "Nankai Electric Railway"
+        link13: "Keihan Electric Railway"
+        link9: "Osaka Metro"
+        link10: "Xe buýt sân bay"
+        link11: "Các hãng taxi lớn"
+        link12: "JR Central"
+    forward:
+        headline: "Tuyển tập đường link về các thông tin liên quan đến Covid-19 tại Nhật Bản"
+        sub: "Đối với các thông tin liên quan đến Covid-19 tại Nhật Bản, vui lòng kiểm tra thông tin tại các trang web của chính phủ"
+        link1: "Tokyo"
+        link2: "Bộ Y tế, Lao động và Phúc lợi"
+        link3: "Bộ Ngoại giao, trang An toàn ở nước ngoài"
+    learning:
+        headline_html: "Khám phá &amp; Lên kế hoạch"
+        learning: "Khám phá"
+        planing: "Lên kế hoạch"
+        sub: "Bạn có muốn trải nghiệm cảm giác đi du lịch tại nhà? Những thông tin về danh thắng Nhật Bản, những điểm nổi tiếng chưa được biết đến, văn hóa Nhật Bản, hay mẹo du lịch, tất cả sẽ được các biên tập viên của tsunagu Japan tại Nhật Bản gửi đến các bạn."
+  feature:
+    feature_label: "Tập san"
+    index:
+      description: "\"Tập san\" là nơi tổng hợp các bài viết đặc biệt của tsunagu Japan. Tại đây, có các bài viết chuyên sâu giới thiệu về những con người đang làm việc và sinh sống ở Nhật Bản, các địa danh tại Nhật Bản, cũng như các bài viết giới thiệu về văn hóa như ẩm thực, văn hóa truyền thống, văn hóa đại chúng."
+      poj:
+        description: "\"People of Japan\" là chuyên mục đặc biệt giới thiệu về những con người đang sinh sống ở Nhật Bản như thợ thủ công truyền thống, nghệ sĩ mới nổi, những nhà khởi nghiệp muốn thay đổi thế giới bằng những ý tưởng mới lạ, hay chủ các cửa hàng nổi tiếng. Bạn sẽ có cơ hội tìm hiểu về các sản phẩm, dịch vụ mà họ cung cấp, cũng như những câu chuyện thú vị, bí quyết kinh doanh, và những triết lý đằng sau những thành công của họ."
+        theme1_html: "Nhật Bản qua những <br>lăng kính khác nhau!"
+      aoj:
+        description: "\"Area of Japan\" là chuyên mục giới thiệu những địa điểm ít được biết đến ở Nhật Bản, được lựa chọn từ góc nhìn riêng của những biên tập viên đến từ nhiều quốc gia. Các biên tập viên sẽ thuật lại chính những trải nghiệm của họ, sức hấp dẫn cũng như cách khám phá từng khu vực để bạn có thể tham khảo cho chuyến đi của mình."
+        theme1_html: "Một ngày dạo chơi ở Tokyo"
+        theme2_html: ""
+      coj:
+        description: "\"Culture of Japan\" là chuyên mục giới thiệu về nền văn hóa độc đáo của Nhật Bản. Các biên tập viên đến từ nhiều quốc gia, bao gồm cả người Nhật sẽ giới thiệu đến bạn những nét văn hóa khác nhau của Nhật Bản như văn hóa ẩm thực, văn hóa truyền thống, hay văn hóa đại chúng. Hãy cùng khám phá thế giới văn hóa Nhật Bản vô cùng hấp dẫn và thú vị này nhé."
+        theme1_html: ""
+        theme2_html: "Thưởng thức ẩm thực <br>Nhật Bản theo cách của các <br>chuyên gia"
+    read_more: "Xem thêm"
+    poj:
+      title: "People of Japan"
+      sub_title: "Nhật Bản qua những lăng kính khác nhau!"
+      description: "\"People of Japan\" là một dự án giới thiệu về những con người khác nhau đang sinh sống và làm việc tại Nhật Bản như thợ thủ công truyền thống, những nghệ sĩ mới nổi, những nhà khởi nghiệp muốn thay đổi thế giới bằng những ý tưởng mới lạ, hay chủ của các cửa hàng nổi tiếng. Thông qua các cuộc phỏng vấn với những con người này, bạn không chỉ có cơ hội tìm hiểu thêm về các sản phẩm hoặc dịch vụ mà họ cung cấp mà còn có thể khám phá những câu chuyện thú vị, cảm xúc và hy vọng ẩn sau những thành công của họ. Bạn sẽ có một cái nhìn hoàn toàn khác về thế giới sau khi đọc những câu chuyện này, vì vậy đừng bỏ qua những bài viết thú vị tại \"People of Japan\" nhé!"
+      article1:
+        url: "https://www.tsunagujapan.com/vi/onigiri-bongo-ukon-yumiko/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/475/thumb/A5B61446-0CF5-4B15-BD93-980778AA8496.jpeg?2022&d=400x400"
+        area: "Tokyo"
+        date: "Aug 02, 2022"
+        title: "Con đường kinh doanh đầy chông gai của Ukon Yumiko - chủ cửa hàng \"Onigiri Bongo\" nổi tiếng ở Tokyo"
+      article2:
+        url: "https://www.tsunagujapan.com/vi/justin-potts-changing-the-face-of-japan-through-sake/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/461/thumb/Thumb_Justin_Ponshukan2.jpg?2022&d=400x400"
+        area: "Toàn quốc"
+        date: "Jul 07, 2022"
+        title: "Justin Potts - Quảng bá văn hóa Nhật Bản thông qua rượu sake"
+      article3:
+        url: "https://www.tsunagujapan.com/vi/makoto-komai-sharing-the-charms-of-japanese-art-in-a-familiar-format/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/395/thumb/POJ_thumbnail_2.jpg?2022&d=400x400"
+        area: "Shizuoka"
+        date: "Jun 09, 2022"
+        title: "Makoto Komai - Truyền tải sức hấp dẫn của nghệ thuật Nhật Bản qua những chiếc áo phông"
+      article4:
+        url: "https://www.tsunagujapan.com/vi/shonan-soy-studio-onoka-keita/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/415/thumb/FotoJet.jpg?2022&d=400x400"
+        area: "Kanagawa"
+        date: "May 25, 2022"
+        title: "Thay đổi thế giới với \"Natto cà phê\"! Câu chuyện kinh doanh của Onoka Keita - nhà khởi nghiệp Natto"
+      article5:
+        url: "https://www.tsunagujapan.com/vi/mia-mia-vaughan-and-rie-allison/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/394/thumb/MIA_MIA.jpg?2022&d=400x400"
+        area: "Tokyo"
+        date: "Apr 22, 2022"
+        title: "Vaughan và Rie Allison - chủ sở hữu quán cà phê MIA MIA, địa điểm giao lưu kết bạn ở Tokyo"
+      article6:
+        url: "https://www.tsunagujapan.com/vi/upcycling-antique-kimono-into-cushions-foa-chitose-abe/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/419/thumb/IMG_5816a.jpeg?2022&d=400x400"
+        area: "Toàn quốc"
+        date: "Apr 15, 2022"
+        title: "Nhà thiết kế \"F.O.A\" Abe Chitose! Biến những chiếc Obi cũ thành những chiếc gối"
+      article7:
+        url: "https://www.tsunagujapan.com/vi/discover-japanese-cuisine-pro-vietnamese-chef-nguyen-ba-phuoc/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/401/thumb/anh_bia.jpeg?2022&d=400x400"
+        area: "Toàn quốc"
+        date: "Mar 24, 2022"
+        title: "Nguyễn Bá Phước - Hành trình đến với ẩm thực Nhật Bản của chàng đầu bếp tài năng"
+      article8:
+        url: "https://www.tsunagujapan.com/vi/dragon-farm-owner-interview/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/374/thumb/tsunagu-EVEE6409.jpeg?2022&d=400x400"
+        area: "Chiba"
+        date: "Mar 30, 2022"
+        title: "Khám phá vườn dâu tây nổi tiếng Dragon Farm qua cuộc trò chuyện với bà chủ Uchida Kahoru"
+      article9:
+        url: "https://www.tsunagujapan.com/vi/yuko-matsumoto-kimono-shop-manager-tokyo-yanaka/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/041/265/thumb/ezgif.com-gif-maker.jpg?2022&d=400x400"
+        area: "Tokyo"
+        date: "Dec 24, 2021"
+        title: "Yuko Matsumoto - Chủ cửa hàng kimono ở Yanaka, Tokyo chia sẻ câu chuyện về niềm vui khi được mặc kimono"
+    aoj:
+      theme1:
+        title: "Một ngày dạo chơi ở Tokyo"
+        description: "Bạn sẽ làm gì nếu có một ngày ở Tokyo? Trong chuyên mục đặc biệt này, các biên tập viên người nước ngoài đang sinh sống ở Tokyo sẽ giới thiệu về những địa điểm họ muốn ghé thăm nếu có thời gian một ngày ở thành phố này. Tất cả đều được chia sẻ từ những trải nghiệm thực tế sẽ giúp bạn có cái nhìn rõ nét hơn về những địa điểm thú vị nhưng chưa được biết đến ở Nhật Bản."
+        article1:
+          title: "Dạo quanh công viên Komaba ở Tokyo để tìm hiểu văn học, kiến ​​trúc lịch sử và những sản phẩm thủ công truyền thống của Nhật Bản"
+          description: "Bạn yêu thích văn học, những công trình kiến trúc lịch sử và sản phẩm thủ công truyền thống của Nhật Bản? Nếu câu trả lời là có thì Công viên Komaba ở Tokyo là điểm đến lý tưởng dành cho bạn. Tác giả bài viết vốn là một người yêu thích nghệ thuật đã có một ngày khám phá công viên Komaba và ghi lại những trải nghiệm tuyệt vời của cô ấy tại đây."
+          url: "https://www.tsunagujapan.com/vi/a-day-of-literature-and-art-in-komaba-park/"
+          writer:
+            name: "Dawn"
+            country: "Đài Loan"
+            profile: "Tôi thích đến các buổi triển lãm nghệ thuật và bảo tàng trên khắp Nhật Bản. Tôi hy vọng có thể truyền tải sức hấp dẫn của du lịch nghệ thuật Nhật Bản đến mọi người. Trong tương lai, tôi muốn sinh sống ở cả hai nơi Tokyo và Đài Bắc."
+        article2:
+          title: "Một ngày thư giãn tại \"khu phố cà phê\" Kiyosumi Shirakawa"
+          description: "Sở hữu nhiều quán cà phê phong cách, khu vực Kiyosumi Shirakawa được biết đến với tên gọi \"Khu phố cà phê\" vô cùng nổi tiếng ở Tokyo. Một biên tập viên yêu thích cà phê của chúng tôi đã ghé thăm Kiyosumi Shirakawa để tìm hiểu lý do tại sao nơi đây lại có nhiều quán cà phê như vậy và tất nhiên là cũng để thưởng thức những ly cà phê chất lượng!"
+          url: "https://www.tsunagujapan.com/vi/a-day-of-coffee-tasting-in-kiyosumi-shirakawa/"
+          writer:
+            name: "Kinoko"
+            country: "Việt Nam"
+            profile: "Tôi thích khám phá những vùng đất mới và con người mới trên khắp Nhật Bản. Thông qua những trải nghiệm của bản thân, tôi hy vọng có thể đưa mọi người đến gần hơn với nước Nhật."
+        article3:
+          title: "Một ngày tại Trường đua ngựa Tokyo City Keiba để khám phá một khía cạnh thú vị khác của Nhật Bản!"
+          description: "Mặc dù trường đua ngựa có thể không nằm trong danh sách những địa điểm bạn muốn ghé thăm khi đến Nhật Bản, nhưng đua ngựa là loại hình cá cược được chính phủ Nhật Bản cho phép và được rất nhiều người yêu thích. Nhiều người thường có ấn tượng không tốt về những nơi như thế này, nhưng thực tế không giống như những gì bạn vẫn nghĩ. Hãy cùng theo chân tác giả của bài viết để dõi theo hành trình một ngày dạo chơi ở trường đua ngựa của cô ấy xem có điều gì thú vị nhé!"
+          url: "https://www.tsunagujapan.com/vi/one-day-in-tokyo-city-keiba-oi-keibajo/"
+          writer:
+            name: "Lu"
+            country: "Đài Loan"
+            profile: "Tôi sinh ra ở Đài Bắc và hiện đang sinh sống ở Tokyo. Tôi yêu thích các nền văn hóa phụ và đang tận hưởng cuộc sống Otaku của mình bên cạnh các chuyến du lịch trên khắp Nhật Bản."
+        article4:
+          title: "Tsukishima - Một khu phố khác biệt so với phần còn lại của Tokyo"
+          description: "Tsukishima vốn được xây dựng trên một vùng đất khai hoang gần sông Sumida. Đây là một khu phố độc đáo với nhiều tòa nhà cao tầng và các công trình kiến trúc hiện đại trải dài trước biển xen lẫn với bầu không khí cổ kính của một khu phố Shitamachi điển hình. Khu vực này cũng nổi tiếng với món monjayaki. Nếu bạn đang tìm kiếm một địa điểm khác lạ ở Tokyo, tại sao không thử ghé thăm Tsukishima?"
+          url: "https://www.tsunagujapan.com/vi/unique-retro-downtown-neighborhood-tsukishima/"
+          writer:
+            name: "Kim"
+            country: "Mỹ"
+            profile: "Tôi yêu văn hóa cà phê của Nhật Bản và thường ghé thăm các quán cà phê vào ngày nghỉ để tìm kiếm những không gian hoài cổ và những khu vực mới lạ ít người biết đến."
+        article5:
+          title: "Dạo quanh Shibamata - Khu phố cổ kính lạ lẫm ngay giữa lòng thủ đô"
+          description: "Shibamata nằm ở quận Katsushika, Tokyo, là một khu phố shitamachi nơi vẫn còn lưu dấu hình ảnh về cuộc sống của những người dân bình thường, và là điểm đến thú vị cho những chuyến du lịch. Nơi đây nổi bật với khung cảnh thanh bình của những tòa kiến trúc cổ, những quán ăn bình dân. Đây là một nơi tuyệt vời dành cho những người muốn khám phá một khía cạnh ít được biết đến của Tokyo và cho những ai yêu thích lịch sử."
+          url: ""
+          writer:
+            name: "Stefania Sabia"
+            country: "Ý"
+            profile: "Tôi yêu thích truyền thống Nhật Bản, thích đến những nơi ít người biết đến, những nơi mang bầu không khí hoài cổ. Từ nhỏ tôi đã bị cuốn hút bởi văn hóa Nhật Bản. Sau khi đến Nhật tôi đã có cơ hội đi nhiều nơi hơn và giới thiệu vẻ đẹp của Nhật Bản qua trang Instagram của mình."
+    coj:
+      theme2:
+        title: "Thưởng thức ẩm thực Nhật Bản theo cách của các nhà chuyên môn"
+        description: "Chuyên mục này được tạo ra với hy vọng những người đến Nhật Bản có thể thưởng thức ẩm thực Nhật Bản nhiều nhất có thể. Ngoài onigiri, wagashi và rượu sake, bạn có thể khám phá cách thưởng thức cũng như quá trình làm nên những món ăn độc đáo khác của Nhật Bản như trứng sống."
+        article1:
+          title: "Bí quyết để làm onigiri ngon! Chia sẻ từ một cửa hàng onigiri lâu đời hơn 60 năm tuổi ở Tokyo"
+          description: "Bạn đã từng ăn \"onigiri\" (cơm nắm) ở Nhật Bản bao giờ chưa? Một số người thường nhầm đây là \"đặc sản\" của cửa hàng tiện lợi, nhưng onigiri từ lâu đã là một món ăn gia đình rất được yêu thích ở Nhật Bản. Một món ăn vô cùng đơn giản mà bạn có thể dễ dàng làm được tại nhà. Và nếu bạn muốn biết thêm một vài bí quyết để làm món này hãy đọc bài chia sẻ từ chủ cửa hàng onigiri nổi tiếng ở Tokyo \"Onigiri Bongo\" dưới đây nhé."
+          url: "https://www.tsunagujapan.com/vi/tips-for-making-perfect-onigiri-from-master/"
+          writer:
+            name: "Pan"
+            country: "Đài Loan"
+            profile: "Tôi sinh ra ở Đài Nam, khu vực nổi tiếng với những người sành ăn. Chính vì thế tôi rất thích nấu ăn và thích những đồ thủ công được làm bằng tay. Tôi thích triết lý tôn trọng thiên nhiên \"mùa nào thức nấy\" trong văn hóa ẩm thực Nhật Bản và mong muốn truyền tải nó đến tất cả mọi người."
+        article2:
+          title: "Jo-Namagashi - Tác phẩm nghệ thuật tinh tế đại diện tiêu biểu cho đồ ngọt truyền thống Nhật Bản"
+          description: "\"Wagashi\" là một thuật ngữ chỉ các loại bánh kẹo truyền thống của Nhật Bản. Mặc dù có nhiều loại wagashi, nhưng nổi bật nhất phải kể đến \"jo-namagashi\" - loại đồ ngọt trông giống như những tác phẩm nghệ thuật tinh tế được tạo ra một cách tỉ mỉ. Trong bài viết này, chúng tôi sẽ chia sẻ đến bạn trải nghiệm đến thăm cửa hàng wagashi lâu đời \"Tsuruya Yoshinobu\" để tìm hiểu về sức hấp dẫn của jo-namagashi và cách thưởng thức chúng."
+          url: "https://www.tsunagujapan.com/vi/jo-namagashi-edible-works-of-art/"
+          writer:
+            name: "Kim"
+            country: "Mỹ"
+            profile: "Tôi yêu văn hóa cà phê của Nhật Bản và thường ghé thăm các quán cà phê vào ngày nghỉ để tìm kiếm những không gian hoài cổ và những khu vực mới lạ ít người biết đến."
+        article3:
+          title: "Cách thưởng thức trứng sống ở Nhật! Chia sẻ từ một cửa hàng chuyên về trứng ở Tokyo"
+          description: "Bên cạnh thịt, cá, người Nhật còn có thói quen ăn trứng sống, sử dụng trứng sống trong nhiều món ăn khác nhau như tamago kakegohan hay sukiyaki,.... Tuy nhiên, không ít người nước ngoài cảm thấy lo ngại với cách ăn này vì cho rằng nó không thực sự an toàn. Để tìm hiểu xem liệu trứng sống có thật sự an toàn khi ăn không cũng như cách người Nhật thưởng thức trứng sống, chúng tôi đã quyết định ghé thăm một cửa hàng chuyên phục vụ các món về trứng \"Kisaburo Nojou\" ở Tokyo và tham khảo ý kiến của chủ cửa hàng."
+          url: "https://www.tsunagujapan.com/vi/how-to-eat-deliciously-japanese-raw-eggs/"
+          writer:
+            name: "Kinoko"
+            country: "Việt Nam"
+            profile: "Tôi thích khám phá những vùng đất mới và con người mới trên khắp Nhật Bản. Thông qua những trải nghiệm của bản thân, tôi hy vọng có thể đưa mọi người đến gần hơn với nước Nhật."
+        article4:
+          title: "Thưởng thức rong biển đúng cách theo tiêu chuẩn của một cửa hàng rong biển 100 năm tuổi"
+          description: "Rong biển (nori) là một trong những thực phẩm truyền thống mà Nhật Bản luôn tự hào. Rong biển có giá trị dinh dưỡng cao thường được sử dụng để làm sushi, onigiri, mà nhiều người Nhật thường ăn nó từ khi còn nhỏ. Rong biển cũng được nhiều du khách chọn mua về làm quà. Tuy nhiên không phải ai cũng phân biệt được sự khác nhau giữa các loại rong biển, cũng như cách tưởng thức chúng một cách ngon nhất. Chính vì vậy chúng tôi đã đến thăm cửa hàng rong biển lâu đời ở Tokyo \"Ito Noriten\" để hỏi ý kiến của một chuyên gia về vấn đề này."
+          url: "https://www.tsunagujapan.com/vi/a-guide-to-japanese-seaweed-nori/"
+          writer:
+            name: "Pan"
+            country: "Đài Loan"
+            profile: "Tôi sinh ra ở Đài Nam, khu vực nổi tiếng với những người sành ăn. Chính vì thế tôi rất thích nấu ăn và thích những đồ thủ công được làm bằng tay. Tôi thích triết lý tôn trọng thiên nhiên \"mùa nào thức nấy\" trong văn hóa ẩm thực Nhật Bản và mong muốn truyền tải nó đến tất cả mọi người."
+        article5:
+          title: "Học cách nếm rượu sake với chuyên gia tại nhà máy rượu 250 tuổi"
+          description: "Một trong những cách tốt nhất để người mới bắt đầu làm quen với rượu sake là tham gia một khóa học nếm rượu tại các nhà máy rượu trên khắp Nhật Bản. Để giúp các bạn có cái nhìn rõ nét hơn về rượu sake, lần này chúng tôi đã đến thăm Nhà máy rượu Sake Imayo Tsukasa 250 tuổi để nếm thử rượu sake dưới sự hướng dẫn của một chuyên gia. Với phương pháp nếm thử rượu sake đơn giản này, bất kỳ ai kể cả những người không chuyên cũng có thể tìm hiểu và khám phá thêm những điều thú vị về loại đồ uống đặc trưng này."
+          url: "https://www.tsunagujapan.com/vi/learning-to-taste-sake-with-an-expert-at-a-250-year-old-brewery/"
+          writer:
+            name: "Steve Csorgo"
+            country: "Úc"
+            profile: "Tôi sinh ra ở Melbourne - thành phố của cà phê. Tôi yêu thích anime, rượu sake và nghề thủ công Nhật Bản. Hiện tại tôi đang sống tại thành phố Niigata, nơi nổi tiếng với đặc sản rượu sake."
+  cookieconsent:
+    message: "This website uses cookies to ensure you get the best experience on our website."
+    dismiss: "OK, got it"
+    link: "Learn more"
+    href: "https://www.tsunagujapan.com/vi/privacy/"

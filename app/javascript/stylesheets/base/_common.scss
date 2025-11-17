@@ -1,0 +1,95 @@
+/* ---------------------------------------------------------
+common
+----------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap");
+
+html {
+  font-size: calc(100vw / 37.5); // viewport 375px: 1rem = 10px
+
+  @include mq(sm) {
+    font-size: 62.5%; // 1rem = 10px
+  }
+}
+
+body {
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-display: auto;
+  font-kerning: normal;
+  font-size: rem(14);
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+html,
+body {
+  &.is-modalOpen {
+    overflow: hidden;
+  }
+}
+
+a {
+  transition: all 0.3s;
+  word-break: break-word;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+table[border="0"] td {
+  border: none;
+}
+
+h1 {
+  font-size: 19pt;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h2 a,
+h3 a {
+  color: black;
+}
+
+address {
+  font-size: 12px;
+}
+
+canvas {
+  max-width: 100%;
+  display: block;
+}
+
+svg a:hover {
+  opacity: 0.8;
+}
+
+ul {
+  padding-left: 0;
+}
+
+figure {
+  margin-bottom: 15px;
+
+  img {
+    margin-bottom: 5px;
+  }
+
+  figcaption {
+    font-size: 12px;
+  }
+}

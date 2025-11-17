@@ -1,0 +1,208 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/category/feature/people-of-japan/">
+<link rel="alternate" hreflang="ja" href="https://www.tsunagujapan.com/ja/category/feature/people-of-japan/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/category/feature/people-of-japan/">
+<link rel="alternate" hreflang="th" href="https://www.tsunagujapan.com/th/category/feature/people-of-japan/">
+<link rel="alternate" hreflang="vi" href="https://www.tsunagujapan.com/vi/category/feature/people-of-japan/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/category/feature/people-of-japan/">
+<% end %>
+<% body_class "feature lang_" + I18n.locale.to_s %>
+<% set_meta_tags  title: t('feature.poj.title'),
+                  description: t('feature.poj.description'),
+                  og: {
+                    image: ActionController::Base.helpers.asset_pack_path('media/images/category/feature/poj/og-poj.png', host: CdnConfig.cloudfront_url)
+                  }
+%>
+<main id="top" class="main">
+  <div class="feature-hero poj">
+    <h1 class="feature-hero-title"><img src="<%= asset_pack_path('media/images/category/feature/poj/logo-poj.svg') %>" alt="<%= t('feature.poj.title') %>" class=""></h1>
+  </div><!-- /.feature-hero -->
+  <div class="feature-contents">
+    <div class="feature-description container">
+      <p><%= t('feature.poj.description') %></p>
+    </div>
+    <div class="feature-article container">
+      <div class="article-list">
+        <% if I18n.locale.to_s != "th" && I18n.locale.to_s != "vi" %>
+          <div>
+            <article class="article-list-item">
+              <a href="<%= t('feature.poj.article12.url') %>">
+                <div class="article-list-item-imageBox">
+                  <img class="article-list-item-image" src="<%= t('feature.poj.article12.image') %>">
+                </div>
+                <div class="article-list-item-body">
+                  <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article12.area') %></span><span><%= t('feature.poj.article12.date') %></span>
+                  </div>
+                  <h3 class="truncate-overflow"><%= t('feature.poj.article12.title') %></h3>
+                </div>
+              </a>
+            </article>
+          </div><!-- article div # SCRUM-486 -->
+          <div>
+            <article class="article-list-item">
+              <a href="<%= t('feature.poj.article11.url') %>">
+                <div class="article-list-item-imageBox">
+                  <img class="article-list-item-image" src="<%= t('feature.poj.article11.image') %>">
+                </div>
+                <div class="article-list-item-body">
+                  <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article11.area') %></span><span><%= t('feature.poj.article11.date') %></span>
+                  </div>
+                  <h3 class="truncate-overflow"><%= t('feature.poj.article11.title') %></h3>
+                </div>
+              </a>
+            </article>
+          </div><!-- article div # SCRUM-465 -->
+          <div>
+            <article class="article-list-item">
+              <a href="<%= t('feature.poj.article10.url') %>">
+                <div class="article-list-item-imageBox">
+                  <img class="article-list-item-image" src="<%= t('feature.poj.article10.image') %>">
+                </div>
+                <div class="article-list-item-body">
+                  <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article10.area') %></span><span><%= t('feature.poj.article10.date') %></span>
+                  </div>
+                  <h3 class="truncate-overflow"><%= t('feature.poj.article10.title') %></h3>
+                </div>
+              </a>
+            </article>
+          </div><!-- article div # SCRUM-438 -->
+        <% end %>
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article1.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article1.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article1.area') %></span><span><%= t('feature.poj.article1.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article1.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article2.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article2.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article2.area') %></span><span><%= t('feature.poj.article2.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article2.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article3.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article3.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article3.area') %></span><span><%= t('feature.poj.article3.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article3.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article4.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article4.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article4.area') %></span><span><%= t('feature.poj.article4.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article4.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article5.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article5.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article5.area') %></span><span><%= t('feature.poj.article5.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article5.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article6.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article6.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article6.area') %></span><span><%= t('feature.poj.article6.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article6.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <% if I18n.locale.to_s != "th" %>
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article7.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article7.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article7.area') %></span><span><%= t('feature.poj.article7.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article7.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <% end %>
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article8.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article8.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article8.area') %></span><span><%= t('feature.poj.article8.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article8.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+        <div>
+          <article class="article-list-item">
+            <a href="<%= t('feature.poj.article9.url') %>">
+              <div class="article-list-item-imageBox">
+                <img class="article-list-item-image" src="<%= t('feature.poj.article9.image') %>">
+              </div>
+              <div class="article-list-item-body">
+                <div class="article-list-item-body-sub"><span class="article-list-item-body-sub-area"><%= t('feature.poj.article9.area') %></span><span><%= t('feature.poj.article9.date') %></span>
+                </div>
+                <h3 class="truncate-overflow"><%= t('feature.poj.article9.title') %></h3>
+              </div>
+            </a>
+          </article>
+        </div><!-- article div -->
+      </div><!-- /.article-list -->
+    </div><!-- /.feature-article -->
+
+  </div><!-- /.feature-contents -->
+</main>
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

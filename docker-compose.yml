@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  # PostgreSQL データベース
+  db:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Rails ウェブアプリケーション（本番用）
+  web:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: web
+      args:
+        BUILD_DATE: ${BUILD_DATE:-$(date -u +'%Y-%m-%dT%H:%M:%SZ')}
+        BUILD_TAG: ${BUILD_TAG:-latest}
+    ports:
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      # Rails 設定
+      RAILS_ENV: production
+      NODE_ENV: production
+      RACK_ENV: production
+      SKIP_MIGRATION: true
+      SECRET_KEY_BASE: "production_secret_key_base_for_docker_compose"
+      
+      # データベース設定
+      RDS_USER_NAME: postgres
+      RDS_HOST_NAME: db
+      RDS_DB_NAME: postgres
+      RDS_DB_PASSWORD: password
+      
+      # CDN設定
+      CLOUDFRONT_DOMAIN: "d2v788u131n0r6.cloudfront.net"
+      
+      # S3設定（必要に応じて設定）
+      TNG_S3_BUCKET: "v-rails6-dev-uswest2-static-assets-4bjjnnho"
+      S3_REGION: "us-west-2"
+      
+      # パフォーマンス設定
+      RAILS_MAX_THREADS: 15
+      DB_POOL: 50
+      WEB_CONCURRENCY: 3
+      
+      # Asset設定
+      RAILS_SERVE_STATIC_FILES: "true"
+      RAILS_LOG_TO_STDOUT: "true"
+    volumes:
+      # 本番環境では最小限のボリュームマウント
+      - ./log:/app/log
+      - ./tmp:/app/tmp
+  
+  # Redis（必要に応じて）
+  redis:
+    image: redis:6-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    profiles:
+      - cache
+
+volumes:
+  postgres_data:
+  bundle_cache:
+  node_modules:
+  redis_data:

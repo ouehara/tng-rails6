@@ -1,0 +1,172 @@
+section {
+  h2 {
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 30px;
+
+    @include mq(sm) {
+      font-size: 4.2rem;
+      margin-bottom: 50px;
+    }
+  }
+
+  padding-bottom: rem(20);
+
+  @include mq(sm) {
+    padding-bottom: 40px;
+  }
+
+  &+& {
+    margin-top: rem(20);
+
+    @include mq(sm) {
+      margin-top: 50px;
+    }
+  }
+
+  &_heading {
+    margin: 0;
+    padding: rem(25) 0;
+    text-align: center;
+    color: #1c1c1c;
+    font-size: rem(24);
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    position: relative;
+
+    @include mq(sm) {
+      padding: 50px 0;
+      font-size: rem(42);
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: vw(84);
+      height: 4px;
+      background-color: #1c1c1c;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include mq(sm) {
+        width: 84px;
+      }
+    }
+  }
+
+  .section_button {
+    text-align: right;
+
+    a {
+      font-size: 18px;
+      color: #f2a900;
+
+      &:after {
+        content: "\203A";
+        margin-left: 13px;
+        font-size: 35px;
+        margin-top: 20px;
+        position: relative;
+        line-height: 1;
+        top: 2px;
+      }
+    }
+  }
+
+  .newest_article .add_button {
+    margin: 0 0 4rem 0;
+
+    padding: rem(40) 0 0;
+    text-align: center;
+
+    @include mq(sm) {
+      padding: 50px 0 0;
+    }
+
+    a,
+    .btn {
+      display: inline-block;
+      width: vw(430, 750);
+      min-height: 48px;
+      padding: rem(13) rem(25);
+      background-color: #1c1c1c;
+      text-align: center;
+      color: #fff;
+      font-size: rem(16);
+      text-decoration: none;
+      position: relative;
+      transition: background ease-out 0.2s;
+
+      @include mq(sm) {
+        width: auto;
+        min-width: 340px;
+        min-height: 90px;
+        padding: 27px 10px 26px;
+        font-size: rem(26);
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        background-color: $color_yellow;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin: -1px -20px 0 0;
+      }
+
+      &:hover {
+        background-color: #333;
+
+        &::after {
+          @extend %cmn_line_animation;
+        }
+      }
+
+      .line {
+        height: 0;
+      }
+    }
+  }
+}
+
+.newest_article .add_button {
+  margin: 4rem 0 4rem 0;
+}
+
+.video-section {
+  color: white;
+
+  h2 {
+    color: black;
+    padding-bottom: 10px;
+  }
+}
+
+.small_spacing+section {
+  margin-top: 00px;
+}
+
+.sub-section-heading {
+  font-size: 25px;
+
+  @include mq(sm) {
+    font-size: 40px;
+  }
+
+  padding-top: 50px;
+  border-top: 1px solid #979797;
+}
+
+.related_posts {
+  @include mq(sm) {
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+}

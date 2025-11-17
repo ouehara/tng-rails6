@@ -1,0 +1,19 @@
+<% if type == 'grid_full_width_header_image' %>
+<% el = elements.first 
+elements = elements[1..-1]%>
+<div class="full_width_grid_el" style="background-image: url(<%= el.image_url %>&d=770x770)">
+        <a href="<%= el.link %>">
+            <h3><%= el.title %></h3>
+        </a>
+    </div>
+<% end %>
+
+<div class="grid  <%= type == 'grid_small' ?'grid_small' : '' %> ">
+<% elements.each_with_index do |el, i| %>
+    <div class="grid_<%= i %>" style="background-image: url(<%= el.image_url %>&d=770x770)">
+        <a href="<%= el.link %>">
+            <h3><%= el.title %></h3>
+        </a>
+    </div>
+<% end %>
+</div>

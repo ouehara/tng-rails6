@@ -1,0 +1,22 @@
+<div class="select_row">
+    <ul class="select_list">
+        <li class="selected">Category</li>
+        <li class="sub">
+                <ul>
+                <% model.each do |c| %>
+                    
+                    <li><%= 
+                    if !current_area.nil? && !current_area.is_a?(Hash)
+                    link_to c.name, categoryListing_path(c,current_area) 
+                    else
+                    link_to c.name, categoryListing_path(c)
+                    end  
+                    %> 
+                    
+                    </li>
+                    
+                <%end%>
+                </ul>
+        </li>
+    </ul>
+</div>

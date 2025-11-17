@@ -1,0 +1,136 @@
+<div class="restaurant_search_sidebar_container rest-closed">
+  <%= form_tag({controller: "restaurant_search", action: "search"}, method: "get", class: "nifty_form") do%>
+    <%= render "sidebar_headline", :title => t("savor.sidebar.search") %>
+    <div class="form-group">
+      <%= label_tag(:location, t("savor.sidebar.location"), class: "label-indent bold") %>
+      <%= text_field_tag :location, params[:location], class: "form-control", placeholder:t("savor.sidebar.placeholder_city")%>
+      <input type="hidden" name="loc_type" id="loc_type_" value="<%= params[:loc_type] %>">
+      <div id="location-search-results">
+      </div>
+    </div>
+    <div class="form-group">
+      <%= label_tag(:cuisine, t("savor.sidebar.cuisine"), class: "label-indent bold") %>
+      <%= text_field_tag :cuisine,params[:cuisine], class: "form-control", placeholder: t("savor.sidebar.placeholder_cuisine")%>
+      <input type="hidden" name="<%=  (!params.key?("sub_cuisine_id") ? "cuisine_id" : "sub_cuisine_id")  %>"  id="cuisine_id_" value="<%= !params.key?("sub_cuisine_id") ? params[:cuisine_id]  : params[:sub_cuisine_id]%>">
+      <div id="cuisine-search-results">
+      </div>
+    </div>
+    <button class="btn btn-orange btn-block restaurant-search-btn-top">
+      <span class="glyphicon glyphicon-search"></span>
+      <%=t("savor.sidebar.search")%>
+    </button>
+    <div class="visible-xs open-search">Show more <span class="icon-arrow-down"></span></div>
+    <%= render "sidebar_headline", :title => t("savor.sidebar.filter") %>
+    <div class="label-indent">
+      <p class="bold"><%=t("savor.sidebar.budget")%></p>
+      <div class="form-check form-check-inline">
+        <%= radio_button_tag :budget, "dinner",true, class: "form-check-input" %>
+        <%= label_tag :budget_dinner, t("savor.sidebar.dinner"), class:  "form-check-label" %>
+      </div>
+      <div class="form-check form-check-inline">
+        <%= radio_button_tag :budget, "lunch",false, class: "form-check-input" %>
+        <%= label_tag :budget_lunch, t("savor.sidebar.lunch"), class:  "form-check-label" %>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="dropdown form-check-inline">
+      <button class="btn btn-default" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        select
+        <span class="caret"></span>
+      </button>
+      <%= hidden_field_tag(:budget_from, "-1",class: "selection_value") %>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">1000</a></li>
+        <li><a href="#">2000</a></li>
+        <li><a href="#">3000</a></li>
+        <li><a href="#">4000</a></li>
+        <li><a href="#">5000</a></li>
+        <li><a href="#">10000</a></li>
+      </ul>
+    </div>
+    <span class="form-check-inline">
+    ~
+    </span>
+    <div class="dropdown form-check-inline">
+      <button class="btn btn-default" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        select
+        <span class="caret"></span>
+      </button>
+      <%= hidden_field_tag(:budget_to, "-1",class: "selection_value") %>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">1000</a></li>
+        <li><a href="#">2000</a></li>
+        <li><a href="#">3000</a></li>
+        <li><a href="#">4000</a></li>
+        <li><a href="#">5000</a></li>
+        <li><a href="#">10000</a></li>
+      </ul>
+    </div>
+    <span class="form-check-inline">
+    JPY
+    </span>
+    <div class="label-indent">
+      <p class="mtop30 bold"><%=t("savor.sidebar.extras")%></p>
+      <div class="form-group">
+        <%= check_box_tag :no_smoking, "1",params[:no_smoking].present? %>
+        <%= label_tag :no_smoking, t("savor.filter.no_smoking") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :menu, "1", params[:menu].present? %>
+        <%= label_tag :menu, t("savor.filter.menu") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :languages_available, "1", params[:languages_available].present? %>
+        <%= label_tag :languages_available, t("savor.filter.staff") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :late_night_service, "1", params[:late_night_service].present? %>
+        <%= label_tag :late_night_service, t("savor.filter.late_night") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :special_diet, "1", params[:special_diet].present? %>
+        <%= label_tag :special_diet, t("savor.filter.diet") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :western_cutlery, "1", params[:western_cutlery].present? %>
+        <%= label_tag :western_cutlery, t("savor.filter.western_cutlery") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :lunch_menu, "1", params[:lunch_menu].present? %>
+        <%= label_tag :lunch_menu, t("savor.filter.lunch") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :free_wifi_available, "1",  params[:free_wifi_available].present?  %>
+        <%= label_tag :free_wifi_available, t("savor.filter.wifi") %>
+      </div>
+    </div>
+    <div class="label-indent">
+      <p class="bold"><%=t("savor.sidebar.cc")%></p>
+      <div class="form-group">
+        <%= check_box_tag :visa, "1",  params[:visa].present?  %>
+        <%= label_tag :visa, t("savor.filter.visa") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :master_card, "1",  params[:master_card].present?  %>
+        <%= label_tag :master_card, t("savor.filter.mastercard") %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :american_express, "1",  params[:american_express].present?  %>
+        <%= label_tag :american_express, t("savor.filter.anex")  %>
+      </div>
+      <div class="form-group">
+        <%= check_box_tag :diners_club, "1",  params[:diners_club].present?  %>
+        <%= label_tag :diners_club, t("savor.filter.diners")  %>
+      </div>
+    </div>
+
+    <div class="label-indent">
+      <p class="bold"><%=t("savor.sidebar.keywords")%></p>
+    </div>
+    <%= text_area_tag :keywords,  params[:keywords], class:"keyword_search", placeholder:  t("savor.sidebar.placeholder_keyword")%>
+    <button class="btn btn-orange btn-block">
+      <span class="glyphicon glyphicon-search"></span>
+      <%=t("savor.sidebar.search")%>
+    </button>
+    <% end %>
+</div>

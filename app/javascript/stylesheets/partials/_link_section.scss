@@ -1,0 +1,33 @@
+.link_section {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  &_item {
+    flex: 0 0 100%;
+    font-size: 18px;
+    padding: 5px;
+    @include mq(sm) {
+      padding-bottom: 44px;
+      flex: 0 0 33.333%;
+      font-size: 22px;
+      padding-right: 17px;
+      &:nth-last-child(-n + 3) {
+        padding-bottom: 44px;
+      }
+    }
+    a {
+      color: #555555;
+      @include mq(sm) {
+        word-break: break-all;
+      }
+    }
+    &:before {
+      content: "\2022";
+      color: #f2a900;
+      font-weight: bold;
+      display: inline-block;
+      width: 0.5em;
+      margin-left: -0.5em;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <p class="hero_intro"><%= intro_text %> </p>
+  <% if !ad.nil? %>
+    <div class="hero_ad">
+      <a href=<%= ad["url"] %> >
+        <img
+          src=<%= ad["img"] %>
+          alt=<%= ad["alt"] %>
+        />
+      </a>
+    </div>
+  <% end %>
+</div>

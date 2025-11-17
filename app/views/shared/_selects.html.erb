@@ -1,0 +1,10 @@
+
+<section class="small_spacing">
+    <div class="container">
+    <h2 class="section_heading text-center"><%= title.nil? ? I18n.t("search.title"): title unless (!areas.is_a?(Hash) && (areas.nil? || areas.children.length == 0)) && (categories.empty?)%></h2>
+        <% if show_area %>
+        <%= render "shared/select_list", current_category: cur_cat, model: areas  unless !areas.is_a?(Hash) && (areas.nil? || areas.children.length == 0) %>
+        <% end %>
+        <%= render "shared/select_list_category", current_category: cur_cat ,model: categories, current_area: areas unless categories.empty? %>
+    </div>
+</section>

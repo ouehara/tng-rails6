@@ -1,0 +1,128 @@
+# =============================================================================
+# Ruby on Rails
+# =============================================================================
+
+# Bundler
+/.bundle
+
+# Database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Logs and temp files
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/.keep
+
+# Public assets
+/public/assets/
+/public/system/*
+/public/packs/*
+
+# Benchmark
+/bench_rails_memory_usage.rb
+
+# =============================================================================
+# Node.js / JavaScript
+# =============================================================================
+
+# Dependencies
+/node_modules/
+/bower_components
+
+# Build outputs
+/public/packs/
+
+# Yarn
+yarn-debug.log*
+.yarn-integrity
+
+# =============================================================================
+# Terraform
+# =============================================================================
+
+# Local directories
+.terraform/
+
+# Plan and state files
+*.tfplan
+*.tfstate
+*.tfstate.backup
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variable files
+terraform.tfvars
+terraform.tfvars.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
+
+# =============================================================================
+# Elastic Beanstalk
+# =============================================================================
+
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# =============================================================================
+# Operating System
+# =============================================================================
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+.Trashes
+
+# =============================================================================
+# IDEs and Editors
+# =============================================================================
+
+.vscode/
+.idea/
+.tool-versions
+
+# Vim
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# Environment and Configuration
+# =============================================================================
+
+# Environment variables
+.env*
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Local configuration
+config/database.yml
+config/secrets.yml
+config/aws.yml
+config/s3.yml
+
+# =============================================================================
+# Generated Files
+# =============================================================================
+
+/.yardoc/
+
+# =============================================================================
+# Docker
+# =============================================================================
+
+docker-compose.override.yml
+.env.docker

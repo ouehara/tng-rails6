@@ -1,0 +1,47 @@
+<%= form_for([:admin, @pickup], html: { class: "form" }) do |f| %>
+<% if @pickup.errors.any? %>
+<%= render partial: 'admin/shared/error_message', locals: { resource: @pickup } %>
+<% end %>
+
+<div class="form-group">
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control", placeholder: "Title", autocomplete: "off" %>
+</div>
+
+<div class="form-group">
+  <%= f.label :image, "Image", class: "control-label" %>
+  <div class="row">
+    <div class="col-sm-12">
+      <% if f.object.image.exists? %>
+      <div class="preview-image clickable-preview" id="originalImage">
+        <%= image_tag f.object.image.url(:thumb), style: "width:100px;" %>
+      </div>
+      <% end %>
+      <div id="previewImage" class="preview-image clickable-preview" style="display:none; width:100px;">
+      </div>
+      <%= f.file_field :image %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :content %>
+  <%= f.text_area :content, class: "form-control", placeholder: "Title", autocomplete: "off" %>
+</div>
+<h3>
+  Articles
+</h3>
+<table class="table table-striped" id="pickup_articles">
+  <%= f.fields_for :pickup_articles do |pa| %>
+  <%= render 'pickup_article_fields', f: pa %>
+  <% end %>
+</table>
+
+<%= link_to_add_association 'Add an article', f, :pickup_articles, 'data-association-insertion-method' => 'append', 'data-association-insertion-traversal' => 'prev', 'data-association-insertion-node' => 'table', style: "display:none;" %>
+<div class="form-group">
+  <%= link_to "Pick an article", pick_article_admin_pickups_path, class: "btn btn-default", remote: true %>
+</div>
+
+<%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

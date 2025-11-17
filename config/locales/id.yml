@@ -1,0 +1,1235 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available aOkint http://guides.rubyonrails.org/i18n.html.
+
+id:
+  langAttribute: "id"
+  helpers:
+    label:
+      hotel_landingpage:
+        official_text: "Great deals if you use their official website!"
+        recommend_text: "Lodgings that tsunagu Japan highly recommend!"
+        published: "Publish"
+  hello: "Hello world"
+  site_name: "tsunagu Japan"
+  site_top:
+    title_prefix: "Media untuk wisatawan asing di Jepang"
+    page_desc: "tsunagu Japan menyediakan informasi tempat wisata, kuliner, akomodasi, belanja, pengalaman, budaya, dan tips berguna. Silakan gunakan untuk perjalanan terbaik Anda di Jepang!"
+    breadcrumb: "Home"
+  page_title: "tsunagu Japan"
+  page_prefix: "tsunagu Japan"
+  page_desc: "Halaman ini berisi kumpulan artikel tentang berbagai hal yang bisa Anda lalukan di Jepang. Penuh dengan informasi bermanfaat untuk Anda menikmati Jepang dari segala aspek, termasuk rekomendasi tempat-tempat wisata, kuliner, budaya, hotel & ryokan, dan masih banyak lagi!"
+  confirm: "Confirm"
+  more_btn: "More"
+  more_details: "Lebih detail"
+  menu_more: "Lainnya"
+  partner: "Mitra Kami"
+  newest_article_on: "Artikel %{area} Terbaru"
+  narrow_down_by_interest: "Persempit Area Berdasarkan Kategori"
+  narrow_down_by_int_area: "Persempit Berdasarkan Area dan Kategori"
+  other_interests: "Lihat kategori artikel lainnya"
+  related_interest: "Artikel Terkait"
+  popular_articles: "Artikel Populer"
+  see_other_areas: "Lihat Area Lainnya"
+  video: "Video"
+  view_videos: "Lihat semua video"
+  video_desc: "Menghadirkan video yang memberikan informasi tentang kuliner Jepang, pemandangan indah, budaya, seni pertunjukan tradisional, kegiatan, tips, dan masih banyak lagi!"
+  about_author: "About the author"
+  date_published_article: "Dipublikasikan tanggal"
+  date_updated_article: "Terakhir diperbarui"
+  pr_article: "Artikel ini mungkin mengandung tautan afiliasi. Jika Anda membeli melalui tautan afiliasi tersebut, kami berkesempatan memperoleh komisi tanpa biaya tambahan dari Anda."
+  disclaimer_article: "The information in this article is accurate at the time of publication."
+  area_banner:
+    rentalcars:
+      desc: "Rent the car you want at the price you want. Rental Cars. Perfect if you're looking to rent a car in Japan! Learn more. "
+      link: "https://www.klook.com/id/car-rentals/?aid=30900"
+  sns-bot: "tsunagu Japan SNS"
+  newest_top: "Artikel Terbaru"
+  related_label: 'Recommended'
+  sort_by: "Urutkan berdasarkan area"
+  none: "none"
+  search_region: "Cari Berdasarkan Wilayah"
+  narrow_by_area: "Persempit Area"
+  search_map: "Cari dari Peta"
+  search_in: "Cari di"
+  view_coupons: "View all coupons"
+  view_videos: "View all Videos"
+  coupon_headline: "Kupon Diskon"
+  coupon_desc: "Halaman ini mencantumkan berbagai kupon diskon yang dapat Anda gunakan untuk semua jenis situasi, mulai dari berbelanja hingga memesan hotel atau tur."
+  coupon_none: "Saat ini tidak ada kupon yang tersedia."
+  new_arrivals: 'New Arrivals'
+  clips_title: 'Bookmark Anda'
+  clip_desc: "Halaman ini menunjukkan semua artikel yang Anda bookmarked. Silakan gunakan artikel-artikel ini sebagai panduan untuk melakukan perjalanan lebih menyenangkan di Jepang!"
+  clip_none: "idak ada yang terpotong."
+  empty_state: "Maaf, kami belum memiliki konten terkait saat ini. Tsunagu Japan akan selalu memberikan konten-konten menarik untuk Anda, jadi tetap stay tuned dan jangan sampai ketinggalan informasi paling up to date!"
+  search_by: "Cari berdasarkan destinasi, aktivitas, atau atraksi"
+  recommended_area: "Area Rekomendasi"
+  view_area: "Lihat semua area"
+  view_restaurant: "Lihat semua restoran"
+  travel_tips: "Travel Tips"
+  transportation: "Transportasi"
+  manners: "Manners"
+  budget_travel: "Budget"
+  climate: "Iklim & Cuaca"
+  top_travel: "Rencana Travel Populer"
+  things: "Wisata"
+  fooddrink: "Kuliner"
+  hotels: "Hotel & Ryokan"
+  shopping: "Shopping"
+  travel_tip: "Travel Tips"
+  in_depth: "Budaya Jepang"
+  festival: "Festivals & Events"
+  view_tips: "Lihat semua tips"
+  featured_topics: "Topik Populer"
+  japan: "Jepang"
+  latest: "Latest Posts"
+  media_partner: "MEDIA PARTNER"
+  sushi: "#Sushi"
+  onsen: "#Onsen"
+  ramen: "#Ramen"
+  activites: "#Aktivitas/Pengalaman"
+  souvenier: "#Suvenir"
+  beauty: "#Busana & Kecantikan"
+  history: "#Sejarah & Budaya"
+  hotels_ryokan: "#Hotel & Ryokan"
+  popular_restaurants: "Restoran Populer berdasarkan Area"
+  related_articles_title: "Artikel Terkait"
+  buttons:
+    btn-default: "default"
+    btn-cust-blue: "blue"
+    btn-cust-green: "green"
+    book-with: "orange button"
+    btn-ads: "red ad button"
+    savor-button-booking: "savor button"
+    btn-3d-orange: "orange with shadow"
+  tours:
+    recommended: 'Rekomendasi Tur'
+    currency: 'JPY'
+    from: 'from'
+    desc: 'Halaman ini mencantumkan tur di Jepang yang bisa Anda daftarkan.'
+    tour: "Recommended Tours"
+    details: 'Details'
+  savor:
+    search_title: "Try Out One of Japan's Most Popular Search Engines!"
+    search_results: "%{start} - %{end} of %{all}"
+    sort_price: "Price"
+    sort_price_ask: "Low to High"
+    sort_price_desc: "High to Low"
+    sidebar_headline: "Japanese Restaurant Guide"
+    slogan: "Savor Japan is an exhaustive restaurant<br> guide for restaurants in Japan."
+    tokyo: "Tokyo"
+    tokyo_sub:
+      kanagawa: "Kanagawa"
+      chiba: "Chiba"
+      tochigi: "Tochigi"
+      gunma: "Gunma"
+      saitama: "Saitama"
+      ibaraki: "Ibaraki"
+      shizuoka: "Shizuoka"
+      yamanashi: "Yamanashi"
+    kyoto_sub:
+      kyoto: "Kyoto"
+      osaka: "Osaka"
+      hyogo: "Hyogo"
+      nara: "Nara"
+      shiga: "Shiga"
+      wakayama: "Wakayama"
+      mie: "Mie"
+    honshu_sub:
+      miyagi: "Miyagi"
+      fukushima: "Fukushima"
+      yamagata: "Yamagata"
+      iwate: "Iwate"
+      akita: "Akita"
+      aomori: "Aomori"
+      aichi: "Aichi"
+      shizuoka: "Shizuoka"
+      gifu: "Gifu"
+      ishikawa: "Ishikawa"
+      nagano: "Nagano"
+      niigata: "Niigata"
+      toyama: "Toyama"
+      fukui: "Fukui"
+      yamanashi: "Yamanashi"
+      hiroshima: "Hiroshima"
+      okayama: "Okayama"
+      shimane: "Shimane"
+      tottori: "Tottori"
+      yamaguchi: "Yamaguchi"
+    shikoku_sub:
+      ehime: "Ehime"
+      kagawa: "Kagawa"
+      kochi: "Kochi"
+      tokushima: "Tokushima"
+    kyushu_sub:
+      fukuoka: "Fukuoka"
+      kagoshima: "Kagoshima"
+      kumamoto: "Kumamoto"
+      miyazaki: "Miyazaki"
+      nagasaki: "Nagasaki"
+      oita: "Oita"
+      saga: "Saga"
+    near_tokyo: "Near Tokyo"
+    kyoto: "Kyoto and Osaka area"
+    hokkaido: "Hokkaido"
+    chubu: "Chubu"
+    kanto: "Kanto"
+    kansai: "Kansai"
+    tohoku: "Tohoku"
+    chugoku: "Chugoku"
+    northern_honshu: "Nothern Honshu (Tohoku)"
+    central_honshu: "Central Honshu (Chubu)"
+    western_honshu: "Western Honshu (Chugoku)"
+    shikoku: "Shikoku"
+    kyushu: "Kyushu/Okinawa"
+    okinawa: "Okinawa"
+    learn_more: "learn more"
+    show_less: "show less"
+    restaurant_search: "Cari Restoran"
+    search_by: "Cari lewat Area Populer"
+    no_searchresult: "Restaurants were not found. Please try different search criteria."
+    sidebar:
+      s_keyword: "Cari lewat Kata Kunci"
+      location: "Lokasi"
+      cuisine: "Masakan"
+      filter: "Filter"
+      budget: "Budget"
+      dinner: "Dinner"
+      lunch: "Lunch"
+      extras: "Ekstra"
+      cc: "Kartu kredit"
+      coupons: "Coupons / Vouchers"
+      keywords: "Kata kunci"
+      search: "Search"
+      placeholder_keyword: "e.g. city, station,cuisine or specific restaurant"
+      placeholder_city: "e.g. city, landmark"
+      placeholder_cuisine: "contoh: Sushi, ramen"
+    filter:
+      no_smoking: "No Smoking"
+      menu: "Menu bahasa Inggirs"
+      staff: "Staf berbahasa Inggris"
+      languages_available: "Staf berbahasa Inggris"
+      late_night: "Late-night service"
+      late_night_service: "Late-night service"
+      diet: "Permintaan diet khusus"
+      special_diet: "Permintaan diet khusus"
+      western_cutlery: "Peralatan makan barat"
+      lunch: "Makan siang"
+      lunch_menu: "Lunch"
+      wifi: "Gratis Wi-Fi"
+      free_wifi_available: "Gratis Wi-Fi"
+      visa: "Visa"
+      mastercard: "MasterCard"
+      anex: "American Express"
+      diners: "Diners Club"
+      coupons: "Coupons / Vouchers"
+  hotel-lp:
+    meta_title: "tsunagu Japan's Top Picks for Japanese Hotels & Inns"
+    meta_desc: "Using our vast network, we have picked out the best Japanese hotels and inns to showcase. Many can’t be found on other websites, so take a look!"
+    breadcrumb: "Editorial Picks"
+    title_html: "tsunagu Japan <br> editorial department carefully selected!<br>Special homepage introduction"
+    desc_headline: "A noteworthy trip starts with exceptional lodging."
+    desc: "Japan has around 50,000 hotels and inns, which makes coming to a decision incredibly hard. Using our vast network, our editorial team has scoured through lodgings all over Japan and picked out a select few to introduce to you! There are several that you won’t find on other websites, so it’s definitely worth a look!"
+    starting: "Starting from"
+    pickup: "New Pickup"
+    website: "Official Website"
+    website_sub_html: "Great deals if you use their official website!"
+    website_sub_recommend_text: "We highly recommend this lodge!"
+    related: "Artikel terkait"
+    hotel_price_tax_html: "Excluding taxes and fees <br> It is a charge for two people in one room."
+    notice:
+      change: "The information on this website may change even after the publish date."
+      estimated: "The estimated accommodation fee is based on the fee for 1 person renting a room that can accommodate 2 people during the off-season. It includes meals, but does not include consumption tax, bathing tax, or service charges. Depending on factors like how many people use 1 room, the season, the type of room, and the accommodation plan, the overall accommodation fee can differ."
+      communication: "Staff members who can communicate in languages other than Japanese may not always be present."
+    features:
+      bar: "Bar"
+      parking: "Parking"
+      bus: "Pick Up Service"
+      wifi: "Wi-Fi"
+      onsen: "Hot Spring"
+      smoking: "Smoking Room"
+      nosmoking: "Non-smoking Room"
+      smokingspace: "Smoking Spaces"
+      english: "English OK"
+      chinese: "Chinese Ok"
+  edion:
+    title: "Special Feature: Best-selling Home Electronics in Japan!! [With Discount Coupon]"
+    website_html: "Official Homepage (Japanese Only) <a href='https://www.edion.com/' target='_blank'>https://www.edion.com/</a>"
+    address: "Address"
+    further: "For details on other stores across Japan, click below. "
+    phone: "Phone"
+    tokyo: "EDION AKIBA / Tokyo"
+    tokyo_a: "1-2-9 Sotokanda, Chiyoda-ku, Tokyo"
+    tokyo_p: "03-3257-1100"
+    osaka: "EDION Dotonbori Store / Osaka"
+    osaka_a: "Dotonbori Benisu Bldg. 12F, 1-4-27 Dotonbori, Chuo-ku, Osaka-shi, Osaka"
+    osaka_p: "06-6212-3035"
+    osaka2: "EDION Universal CityWalk Osaka Store / Osaka"
+    osaka2_a: "Universal CityWalk Osaka 4F, 6-2-61 Shimaya, Konohana-ku, Osaka-shi, Osaka"
+    osaka2_p: "06-6469-1211"
+    only_headline_html: "Only for tsunagu Japan readers!!<br>
+Discount coupon for EDION (home electronics retailer)"
+    consumer_electronics: "Consumer electronics help make your life easier. In Japan, there are many different types of home electronics, as well as a ton of stores that specialize in and sell them. This special feature introduces not only the standard home electronics, but also the ones that are extremely popular in Japan right now. "
+    popular_headline: "5 Popular Salon Products"
+    top10: "Top 10 Popular & Recommended Products for 2017"
+    what_is_headline: "What is EDION?"
+    what_is: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    readers_discount: "For All Our Readers, Here's an EDION Discount Coupon!"
+    readers_discount_text_html: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    popular:
+      1_headline: "1.SHARP Plasmacluster Dryer (Ruby Red) (IBHP9R)"
+      1_desc_html: "The plasmacluster ions moisturize the hair and reduce static electricity. The built-in “Beauty Mode” automatically adjusts the temperature to suit the season, and the lukewarm air that comes out alternately will make your hair beautiful, shiny, and smooth.
+<br> <br>
+<span class='price'>Example Price: 19,880 yen (before tax)</span>"
+      2_headline: "2.Panasonic Ladies’ Shaver Salashe (Blue) (ES2235PPA)"
+      2_desc_html: "This is an all-purpose shaver that can handle your armpits, legs, arms, and even your bikini line! It has a grip that was engineered to be easy to hold, as well as a compact head. It’s waterproof, so you can use it in the shower. Another perk is its bright color scheme!
+<br> <br>
+<span class='price'>Example Price: 2,480 yen (before tax)</span>"
+      3_headline: "3.Panasonic Face Shaver Ferrier (Green) (ESWF50G)"
+      3_desc_html: "This extraordinary shaver comes with a pivoting head that can follow the natural contours of the skin, turning at angles that make it easy to shave. Its rounded blade edges make it safe for anyone to use, and it can easily shave off peach fuzz. Applying your make-up will get a lot easier! If you want something easy to carry, its compact size will be convenient for you.
+<br> <br>
+<span class='price'>Example Price: 3,480 yen (before tax)</span>"
+      4_headline: "4.YA-MAN Body Esthetic Original Acetino Quattro Impact Evolution (Red) (IB250RED)"
+      4_desc_html: "The 8 rollers rotate at an incredible speed, and they’ll thoroughly massage any fleshy parts that you’re worried about, so you can receive great esthetic care from home. You can use it on your body and face. It’s also waterproof, so you can even use it in the bath!
+<br> <br>
+<span class='price'>Example Price: 14,800 yen (before tax)</span>"
+      5_headline: "5.Panasonic Eyelash Curler (Natural Curls) Matsuge Kurun (Pink) (EHSE10PPP)"
+      5_desc_html: "This is a heated eyelash curler that will give you long-lasting natural curls. Equipped with dual heating pads, it’ll give your eyelashes the proper curl and boost they need!
+<br> <br>
+<span class='price'>Example Price: 1,700 yen (before tax)</span>"
+    top:
+      other: "Other Popular Products"
+      best_selling: "Best-selling Among Travelers #%{number} (EDION)"
+      1_headline: "1. MTG ReFa Carat (PECL1706)"
+      1_desc_html: "This face roller takes in light with a solar panel and releases it as a microcurrent. With its unique form and diamond cut design, it gently tightens your delicate skin and helps improve your skin texture. It’s also made from waterproof materials, so you can rest easy.
+<br> <br>
+<span class='price'>Example Price: 23,800 yen (before tax)</span>"
+      2_headline: "2. TIGER Stainless Bottle Colobockle (MBRB06GRL)"
+      2_desc_html: "You can wash every part of this stainless bottle. Just by changing the bottle’s mouthpiece, you can either directly drink from the bottle with one finger push, or you can pour your drink into a cup. They’re popular for their cute designs!
+<br> <br>
+<span class='price'>Example Price: 5,980 yen (before tax)</span>"
+      3_headline: "3. Panasonic Hair Dryer Nano Care (Rouge Pink) (EHCNA99RP)"
+      3_desc_html: "Quickly dries your hair and improves your hair quality – this is a hair dryer that’ll really take care of your hair! It can help reduce damage caused from friction or ultraviolet (UV) light. It’s highly recommended for its 5 modes that you can mix and match to suit your type of hair, such as its Hair Ends Care Mode or its Hot-Cold Rhythm Mode.
+<br> <br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      4_headline: "4. ATEX Lourdes Premium Massage Cushion Double Massage (Mint Black) (AXHCL188MB)"
+      4_desc_html: "This massage cushion is perfect for rooms with stylish interiors. Using random movements, it can massage a variety of places, such as your neck, shoulders, waist, back, and back of the foot. You’ll be happy to know that you can easily remove the cover for a quick wash!
+<br>
+<span class='price'>Example Price: 9,800 yen (before tax)</span>"
+      5_headline: "5. Philips Nose, Ear & Eyebrow Trimmer Nosetrimmer Series 3000 (Black/Grey) (NT316210)"
+      5_desc_html: "Every single part of this product is washable. With just this trimmer, you can tidy up your nose, ears, and eyebrows. Its long-lasting sharpness is what makes it special. But don’t worry, because the blade tips are rounded, and the blade itself is ultrathin to ensure that it doesn’t nick the skin!
+<br>
+<span class='price'>Example Price: 2,980 yen (before tax)</span>"
+      6_headline: "6. Braun Electric Toothbrush Oral-B Genius 9000 (Black) (D7015256XCBK)"
+      6_desc_html: "This electric toothbrush cleans your teeth just as well as a dentist in a dental clinic. The smartphone app that comes with it can tell you what parts of your mouth still need to be brushed, so you can properly brush every part of your mouth, including the corners!
+<br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      7_headline: "7. Sharp Plasmacluster Dehumidifier (White) (CVG71W)"
+      7_desc_html: "Not only does this dehumidifier help dry hung up clothes while getting rid of the funky smell that comes with the drying process, but it also prevents mold from growing in the room! It’s designed to block out large dust balls. Its handle makes it easy to move around, and it makes drainage easy too!
+<br>
+<span class='price'>Example Price: 26,800 yen (before tax)</span>"
+      8_headline: "8. Vitantonio Yogurt Maker (White x Silver) (VYG11)"
+      8_desc_html: "With this device, you’ll finally be able to easily make yogurt at home! It’s popular for being able to make a wide variety of things, such as cheese and other fermented foods, along with any foods that require low-temperature cooking.
+<br>
+<span class='price'>Example Price: 6,880 yen (before tax)</span>"
+      9_headline: "9. TESCOM Negative Ion Curl Dryer (Pink) (TIC750P)"
+      9_desc_html: "Regardless of whether you have short or long hair, this curl dryer will not only fluff up your hair, but it’ll also tidy every bit of it, including the tips! Made from aluminum, it evenly distributes heat, ensuring that you get the exact hairstyle that you want.
+<br>
+<span class='price'>Example Price: 2,580 yen (before tax)</span>"
+      10_headline: "10. YA-MAN RF Beaute Photo PLUS (Champagne Bronze) (HRF10T) "
+      10_desc_html: "Warming, cleansing, moisturizing, facial muscle care, cooling – this is a one-in-all salon device that can play 5 different roles! Deeply penetrating your skin, it’ll make your skin as supple as it can be!
+<br>
+<span class='price'>Example Price: 37,000 yen (before tax)</span>"
+  weather:
+    1: "Sunny"
+    2: "Sun, followed by clouds"
+    3: "Sun, followed by rain"
+    4: "Sun, followed by snow"
+    5: "Sunny with passing clouds"
+    6: "Sunny with occasional rain"
+    7: "Sunny with occasional snow"
+    8: "Cloudy"
+    9: "Clouds followed by sun"
+    10: "Clouds followed by rain"
+    11: "Clouds followed by snow"
+    12: "Cloudy with some sun"
+    13: "Cloudy with occasional rain"
+    14: "Cloudy with occasional snow"
+    15: "Rainy"
+    16: "Rain gives way to clouds"
+    17: "Rain followed by sun"
+    18: "Rain followed by snow"
+    19: "Scattered rain"
+    20: "Mostly rainy with some sun"
+    21: "Mostly rainy with some snow"
+    22: "Snowy"
+    23: "Snow gives way to clouds"
+    24: "Snow followed by sun"
+    25: "Snow followed by rain"
+    26: "Scattered snow"
+    27: "Mostly snowy with some sun"
+    28: "Mostly snowy with some rain"
+  map:
+    search_from: "Search from list"
+    headline: "Search from Map"
+    information1: "※ Sendai is included in Miyagi"
+    information2: "※ Yokohama, Kamakura, Hakone is included in Kanagawa"
+    information3: "※ Kanazawa is included in Ishikawa"
+    information4: "※ Nagoya is included in Aichi"
+    hokkaido: "1. Hokkaido"
+    sendai: "5. Sendai"
+    tokyo: "13. Tokyo"
+    yokohama: "14. Yokohama"
+    kamakura: "14. Kamakura"
+    hakone: "14. Hakone"
+    kanazawa: "17. Kanazawa"
+    nagoya: "23. Nagoya"
+    kyoto: "25. Kyoto"
+    osaka: "29. Osaka"
+    fukuoka: "40. Fukuoka"
+    okinawa: "Okinawa"
+    popular: "Popular cities for tourists"
+  basic-information:
+    name: "Nama"
+    hours: "Jam buka"
+    closed: "Hari tutup"
+    price: "Harga"
+    address: "Alamat"
+    access: "Akses"
+    url-ja: "Website (bahasa Jepang)"
+    url-en: "Website (bahasa Inggris)"
+    url-th: "Website (Thai)"
+    url-zh-hant: "Website (bahasa Mandarin tradisional)"
+    url-zh-hans: "Website (bahasa Mandarin disederhanakan)"
+    url-ko: "Website (Korean)"
+    url-vi: "Website (Vietnamese)"
+    others: "Lainnya"
+    checkin: "Check-in"
+    checkout: "Check-out"
+  sidebar:
+    finder: "Restaurant finder"
+    rental: "Rental Car"
+    weekly: "Prakiraan mingguan"
+    ranking: "Popular Posts"
+    connect: "Connect"
+    more: "More"
+    hide: "hide"
+    featured: "Featured"
+    book_agoda: "Book your Hotel"
+    spotlight: "Spotlight"
+  toc: "Daftar isi"
+  search:
+    title: "Mencari"
+    desc: "%{num} hasil pencarian untuk %{term}"
+  views:
+    pagination:
+      previous: "<i class='icon-arrow-left icons'></i>"
+      next: "<i class='icon-arrow-right icons'></i>"
+  rankings:
+    title: "Artikel populer"
+    desc: ""
+  tags:
+    title: "%{param}"
+    desc: ""
+    list_title: "Newest %{tag} Articles"
+    meta_title: "%{tag} di Jepang"
+    single_meta_desc: "Baca tentang %{tag} di Jepang. Temukan artikel dengan informasi tentang berkunjung dan tinggal di Jepang di tsunagu Japan."
+    multi_meta_desc: "Baca %{N} artikel tentang %{tag} di Jepang. Temukan artikel dengan informasi tentang berkunjung dan tinggal di Jepang di tsunagu Japan."
+  category:
+    cat2_with_child_cat3_desc: "Baca %{N} artikel tentang %{cat2_alias}. Cari tahu tentang %{cat3}, dan banyak lagi."
+    cat2_without_child_cat3_desc: "Baca %{N} artikel tentang %{cat2_alias}. Anda juga dapat mencari artikel lain tentang %{parent_cat1} di Jepang."
+    cat3_with_only_1_article: "Baca tentang %{cat3_alias}. Anda juga dapat mencari artikel lain tentang %{parent_cat2} di Jepang."
+    cat3_with_2_and_more_articles: "Baca %{N} artikel tentang %{cat3_alias}. Anda juga dapat mencari artikel lain tentang %{parent_cat2} di Jepang."
+  area:
+    index_title: "Area di Jepang"
+    index_desc: "Jelajahi wilayah di Jepang untuk menemukan artikel tentang wisata, kuliner, tips travel, berbelanja, dan banyak lagi."
+    area_intro: "Di halaman ini Anda dapat mencari artikel berdasarkan area. Jika Anda menekan tombol area di peta, halaman baru yang berisi artikel terkait akan muncul."
+    banner_section_title: "Halaman Khusus Wilayah"
+    top_link:
+      hokkaido: "Hokkaido"
+      tohoku: "Tohoku"
+      kanto: "Kanto"
+      chubu: "Chubu"
+      kansai: "Kansai"
+      chugoku: "Chugoku"
+      shikoku: "Shikoku"
+      kyushu: "Kyushu"
+      okinawa: "Okinawa"
+    breadcrumb: "Areas"
+    title: "%{param}"
+    desc: ""
+    area: "Area"
+    title_prefix: "Semua hal tentang "
+    child_area_desc: "Temukan artikel tentang cara menikmati %{child_area}, tempat wisata, kuliner, suvenir, dll di %{prefecture}."
+    feature:
+      hokkaido:
+        title: "Spesial Hokkaido"
+        description: "Halaman ini berisi kumpulan artikel tentang Hokkaido. Penuh dengan informasi berguna untuk menikmati Hokkaido, seperti rekomendasi akomodasi, taman nasional, kuliner lokal, dan aktivitas wisata."
+        top: "Hokkaido"
+        article:
+          1:
+            title_html: "Tentang Hokkaido"
+            text_html: "Hokkaido, pulau paling utara di Jepang, adalah tempat yang tepat untuk mengagumi kekayaan alam yang melimpah, seperti Situs Warisan Dunia Shiretoko, gunung-gunung megah, dan Lahan Basah Kushiro yang menjadi rumah bari berbagai flora dan fauna. Selain itu, karena wilayahnya sangat luas, setiap daerah memiliki iklim dan karakteristik alam yang berbeda. Menikmati budaya tradisional, kuliner lokal, festival, dan aktivitas yang lahir di masing-masing daerah tersebut merupakan pesona Hokkaido yang tidak boleh dilewatkan."
+            url: "https://www.tsunagujapan.com/id/all-about-hokkaido/"
+          2:
+            title_html: "Akomodasi Mewah"
+            text_html: "Ada banyak akomodasi mewah di Hokkaido yang menyatu dengan alam nan indah. Dari sekian banyak akomodasi unik yang tersebar di setiap wilayah, seperti Niseko yang membanggakan salah satu bubuk salju terbaik di dunia, Furano dengan pemandangan pedesaan yang indah di setiap musim, dan Hakodate yang menjadi pintu gerbang ke Hokkaido, Anda bisa menginap di rumah liburan dan vila. Di Hokkaido yang dikelilingi oleh kemegahan alam, Anda benar-benar dapat menyegarkan diri tanpa rasa khawatir."
+            url: "https://www.tsunagujapan.com/id/trustworthy-luxury-accommodations-in-japans-hokkaido-area/"
+          3:
+            title_html: "Wisata Petualangan"
+            text_html: "Wisata petualangan mengacu pada aktivitas yang mencakup setidaknya dua dari tiga elemen alam, pertukaran budaya, dan aktivitas fisik. Ini merupakan bagian dari gaya liburan generasi baru yang sesuai dengan SDGs dan keamanan virus corona. Kisah dan keindahan alam di keempat musim, budaya Ainu, serta panduan menarik yang menyampaikan pesona itu, semua merupakan satu kesatuan sempurna yang ditawarkan Hokkaido."
+            url: "https://www.tsunagujapan.com/id/adventure-tourism_in_hokkaido/"
+          4:
+            title_html: "Taman Nasional"
+            text_html: "Terletak di bagian paling utara Jepang dan dikelilingi laut, Hokkaido memiliki ekosistem unik yang berbeda dari Honshu. Keindahan alam Hokkaido di keenam taman nasionalnya, seperti Taman Nasional Shiretoko yang ditetapkan sebagai Situs Warisan Dunia, Taman Nasional Rishiri-Rebun-Sarobetsu dengan hamparan tanaman alpine di ladang bunga, dan Taman Nasional Akan Mashu yang menjadi rumah bagi Danau Mashu - salah satu danau terjernih di dunia, pasti akan membuat siapa pun yang melihatnya terkesima."
+            url: "https://www.tsunagujapan.com/id/national-park-in-hokkaido/"
+          5:
+            title_html: "Kuliner Lokal"
+            text_html: "Hokkaido, yang memiliki wilayah terluas di Jepang, merupakan sumber penghasil bahan-bahan segar seperti seafood dari kota pelabuhan yang menghadap ke laut, dan sayuran, daging, serta produk susu dihasilkan wilayah daratannya. Ada banyak kuliner lokal di Hokkaido yang berakar kuat di masing-masing wilayah, seperti ramen yang menunjukkan rivalitas keauntetikan individual di setiap daerah, Genghis Khan yang menggunakan banyak daging domba dan sayuran, sup kari, serta kentang kukus mentega, semua dapat Anda nikmati di pulau adiboga ini."
+            url: "https://www.tsunagujapan.com/id/12-local-foods-not-to-be-missed-in-hokkaido/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "Masih ada artikel lainnya yang menjelaskan tentang Hokkaido. Silakan dibaca."
+          1:
+            url: "https://www.tsunagujapan.com/id/50-things-to-do-in-hokkaido/"
+            text: "50 Hal yang Dapat Dilakukan di Hokkaido"
+          2:
+            url: "https://www.tsunagujapan.com/id/15-ways-to-enjoy-winter-in-hokkaido/"
+            text: "15 Cara Terbaik Menikmati Musim Dingin di Hokkaido"
+          3:
+            url: "https://www.tsunagujapan.com/id/a-guide-on-hokkaido-s-weather-climate/"
+            text: "Panduan Lengkap Iklim dan Cuaca di Hokkaido Selama Setahun"
+          4:
+            url: "https://www.tsunagujapan.com/breathtaking-beauty%25ef%25bc%258110-rare-stunning-natural-phenomena-of-hokkaido/"
+            text: "Breathtaking Beauty! 10 Rare, Stunning Natural Phenomena in Hokkaido"
+          5:
+            url: "https://www.tsunagujapan.com/id/enjoy-the-spectacular-scenery-of-hokkaido-on-these-7-local-railway-lines/"
+            text: "Nikmati Keindahan Malam di 19 Tempat Terbaik untuk Hang Out di Hokkaido"
+          6:
+            url: "https://www.tsunagujapan.com/id/10-must-see-spots-in-the-sapporo-area/"
+            text: "10 Tempat yang Wajib Dikunjungi di Area Sapporo"
+      tohoku:
+        title: "Spesial Tohoku"
+        description: "Halaman ini berisi kumpulan artikel tentang Tohoku. Penuh dengan informasi berguna untuk menikmati Tohoku, seperti rekomendasi akomodasi, taman nasional, tempat wisata, dan aktivitas rekreasi."
+        top: "Tohoku"
+        article:
+          1:
+            title_html: "Tentang Tohoku"
+            text_html: "Terletak di ujung utara Honshu, Tohoku terdiri dari Prefektur Aomori, Iwate, Akita, Miyagi, Yamagata, dan Fukushima. Suhu di wilayah ini lebih rendah dari daerah lain di Honshu karena garis lintangnya yang tinggi, dan saat musim dingin tiba, pemandangan salju nan indah membentang luas di berbagai tempat. Memiliki alam melimpah yang masih asli, acara dan kerajinan tradisional yang unik, dan beragam kuliner yang lezat, Tohoku menyimpan sejuta pesona yang belum banyak diketahui."
+            url: "https://www.tsunagujapan.com/id/all-about-tohoku/"
+          2:
+            title_html: "Akomodasi Mewah"
+            text_html: "Tohoku adalah rumah bagi banyak resor onsen populer di Jepang, seperti Sukayu Onsen di Aomori yang terkenal dengan pemandian campuran besarnya, Nyuto Osenkyo di Akita dengan tujuh sumber air tersembunyi, dan Ginzan Onsen di Yamagata yang menghadirkan suasana retro. Bagi Anda yang ingin bersantai dengan aman dan nyaman selama masa menginap, ada akomodasi mewah bertipe vila dan penginapan berkamar terpisah, serta penginapan yang menghadirkan kekayaan alam Tohoku. Semua menawarkan ketenangan pikiran dan kontak terbatas dengan orang lain."
+            url: "https://www.tsunagujapan.com/id/trustworthy-luxury-accommodations-in-japans-tohoku-area/"
+          3:
+            title_html: "Wisata Petualangan"
+            text_html: "Tohoku penuh dengan alam yang memesona, seperti hutan purba di Shirakami-Sanchi, Pantai Sanriku yang indah, Danau Towada dan Danau Tazawa, tanah rawa Oze, dan kawasan Zao - surga bagi para pecinta alam. Wilayah ini sangat ideal untuk tempat wisata petualangan karena Anda dapat membenamkan diri di alam dengan menyusuri rute ziarah Dewa Sanzan yang dikenal sebagai tempat pemujaan atau mengenal budaya Matagi, pemburu yang tinggal di pegunungan di Tohoku."
+            url: "https://www.tsunagujapan.com/id/adventure-tourism-in-tohoku/"
+          4:
+            title_html: "Taman Nasional"
+            text_html: "Tohoku memiliki tiga taman nasional. Taman Nasional Towada-Hachimantai yang kaya akan gunung berapi dan mata air panas, Taman Nasional Sanriku Fukko yang didirikan untuk merekonstruksi daerah Sanriku yang rusak akibat Gempa Besar Jepang Timur, dan Taman Nasional Bandai Asahi dengan gunung, danau, dan rawa yang indah. Kunjungi dan saksikan sendiri kemegahan alam, dan alami budaya khas pemujaan gunung dan penyembuhan dengan mata air panas yang telah mengakar di Jepang sejak lama."
+            url: "https://www.tsunagujapan.com/id/national-park-in-tohoku/"
+          5:
+            title_html: "Tempat Wisata"
+            text_html: "Tohoku menawarkan banyak tempat untuk Anda dapat merasakan kekayaan alam dan sejarah. Di antaranya adalah Matsushima, salah satu dari tiga tempat terindah di Jepang; Kastil Hirosaki dengan hamparan bunga sakura; Ngarai Naruko, salah satu tempat terbaik untuk menikmati dedaunan musim gugur di Tohoku; Kuil Risshakuji, yang muncul dalam haiku karya Matsuo Basho; dan Ouchi-juku, kota pos yang dibangun sekitar 400 tahun lalu. Mari temukan semua daya tarik dari tempat-tempat wisata di 6 prefektur Tohoku dan rencanakan perjalanan Anda!"
+            url: "https://www.tsunagujapan.com/id/10-recommended-spots-in-tohoku/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "Masih ada artikel lainnya yang menjelaskan tentang Tohoku. Silakan dibaca."
+          1:
+            url: "https://www.tsunagujapan.com/id/ouchijuku-the-charming-village-stuck-in-the-samurai-period/"
+            text: "Lintasi Lorong Waktu ke Zaman Samurai di Desa Ouchijuku"
+          2:
+            url: "https://www.tsunagujapan.com/id/top-10-sightseeing-spots-miyagi-tohoku/"
+            text: "10 Tempat Wisata Terbaik di Prefektur Miyagi, Wilayah Tohoku"
+          3:
+            url: "https://www.tsunagujapan.com/id/akita-yamagata-niigata-tohoku-travel-guide/"
+            text: "Menjelajahi Tohoku dan Hokuriku - Nikmati Keindahan Pemandangan Alam yang Melampaui Waktu di Niigata, Yamagata, dan Akita"
+          4:
+            url: "https://www.tsunagujapan.com/id/8-best-hot-springs-in-tohoku-region/"
+            text: "8 Pemandian Air Panas Terbaik di Wilayah Tohoku"
+          5:
+            url: "https://www.tsunagujapan.com/id/hiraizumi-the-first-unesco-world-heritage-site-in-tohoku/"
+            text: "Hiraizumi, Situs Warisan Dunia UNESCO Pertama di Tohoku"
+          6:
+            url: "https://www.tsunagujapan.com/id/10-must-see-places-yamagata-prefecture-1/"
+            text: "10 Tempat Wisata di Prefektur Yamagata yang Wajib Dikunjungi"
+      kyushu:
+        title: "Spesial Kyushu"
+        description: "Halaman ini berisi kumpulan artikel tentang Kyushu. Penuh dengan informasi berguna untuk menikmati Kyushu, seperti rekomendasi akomodasi, taman nasional, aktivitas wisata, dan onsen (mata air panas)."
+        top: "Kyushu"
+        article:
+          1:
+            title_html: "Tentang Kyushu"
+            text_html: "Kyushu, yang terletak di bagian barat daya, adalah salah satu pulau pembentuk kepulauan Jepang. Wilayah yang hangat ini terdiri dari 7 prefektur: Fukuoka, Saga, Nagasaki, Oita, Kumamoto, Miyazaki, dan Kagoshima. Prefektur Fukuoka di Kitakyushu merupakan pintu gerbang menuju Kyushu dan Asia, dengan bandara dan stasiun Shinkansen yang berangkat dan tiba dari Jepang serta luar negeri. Pulau ini juga menawarkan sejuta pesona, mulai dari keindahan alam dan onsen, berbagai aktivitas seru untuk Anda dapat menikmati tempat-tempat terkenal bersejarah dan alam yang kaya, hingga mencicipi aneka kuliner lokal seperti ramen Hakata."
+            url: "https://www.tsunagujapan.com/id/why-is-it-called-kyushu-9-provinces-when-there-are-only-7-prefectures/"
+          2:
+            title_html: "Akomodasi Mewah"
+            text_html: "Kyushu memiliki banyak resor pemandian air panas paling terkenal di Jepang. Dikelilingi oleh laut dan dianugerahi alam yang melimpah seperti Gunung Aso dan Yakushima, Anda dapat menemukan banyak penginapan mewah untuk merasakan berendam di mata air panas sambil menyaksikan pemandangan spektakuler di setiap musim. Tidak hanya itu, Anda bahkan dapat merasa tenang menghabiskan waktu santai di akomodasi mewah yang meminimalkan kontak dengan orang lain seperti di penginapan tipe vila dan ryokan yang setiap kamarnya dibangun menjadi satu bangunan terpisah."
+            url: "https://www.tsunagujapan.com/id/trustworthy-luxury-accommodations-in-japans-kyushu-area/"
+          3:
+            title_html: "Wisata Petualangan"
+            text_html: "Wisata petualangan adalah pengalaman yang mencakup alam, budaya yang berbeda, dan aktivitas. Ini merupakan format wisata generasi muda yang berfokus pada SDGs dan situasi corona. Di Jepang, pemilihan tur dipusatkan di Hokkaido. Namun, di wilayah Kyushu yang diberkahi banyak sumber daya alam, Anda juga dapat menikmati wisata petualangan yang seru dan menarik."
+            url: "https://www.tsunagujapan.com/id/adventuretravel_in_kumamoto"
+          4:
+            title_html: "Taman Nasional"
+            text_html: "Ada 6 taman nasional yang bisa Anda kunjungi di Kyushu. Di Situs Warisan Dunia \"Taman Nasional Yakushima\" dan \"Taman Nasional-Amami\" yang memiliki hutan bakau terbesar kedua di Jepang, terdapat kekayaan alam yang masih belum terjamah. Selain itu, Kyushu juga memiliki banyak taman yang memungkinkan Anda untuk merasakan energi gunung dari dekat. Salah satunya adalah \"Taman Nasional Kirishima-Kinkowan\" di Sakurajima. Jadi, bagaimana jika Anda mengunjungi tempat-tempat indah ini dan mendapatkan pengalaman yang hanya bisa Anda dapatkan di sana?"
+            url: "https://www.tsunagujapan.com/id/national-park-in-kyushu/"
+          5:
+            title_html: "Tur Online"
+            text_html: "Tur Online adalah bentuk pariwisata baru yang memungkinkan Anda untuk berwisata dari rumah secara online. Tur online yang mengombinasikan produk lokal sangatlah populer. Tur ini merupakan cara baru untuk menikmati suasana suatu daerah sebelum Anda benar-benar mengunjunginya."
+            url: "https://www.tsunagujapan.com/id/kyushu-online-tours/"
+          6:
+            title_html: "Onsen / Mata Air Panas"
+            text_html: "Kyushu menyumbang tiga dari lima mata air panas terbaik di Jepang dan memiliki jumlah pemandian serta mata air panas terbanyak di negara tersebut. Itulah mengapa pulau ini disebut surga mata air panas. Kyushu merupakan tempat berkumpulnya beberapa resor pemandian air panas paling terkenal di Jepang, seperti Beppu dan Yufuin, yang banyak dikunjungi wisatawan. Mari datang, dan sembuhkan jiwa serta raga Anda di pemandian air panas sambil menikmati berbagai hal yang ditawarkannya. Anda dapat merasakan perbedaan kualitas dan khasiat air, mencoba berendam di pemandian terbuka dengan pemandangan alam sekitar, atau mengagumi panorama resor pemandian air panas yang begitu memesona."
+            url: "https://www.tsunagujapan.com/id/onsen-in-kyushu-top10/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "Masih ada artikel lain yang menjelaskan tentang Kyushu. Silakan dibaca."
+          1:
+            url: "https://www.tsunagujapan.com/id/kagoshima-the-prefecture-with-many-world-heritage-sites/"
+            text: "Kagoshima: Prefektur dengan Banyak Situs Warisan Dunia"
+          2:
+            url: "https://www.tsunagujapan.com/id/7-popular-picturesque-spots-kumamoto/"
+            text: "Indah dan Memukau! 25 Pesona Terbaik Kumamoto - Salah Satu Daerah Terindah di Jepang"
+          3:
+            url: "https://www.tsunagujapan.com/id/cats-and-onsen/"
+            text: "Dapatkan Pengalaman Seru di Onsen Ryokan Terbaik di Kyushu!"
+          4:
+            url: "https://www.tsunagujapan.com/id/beppu-eagerly-awaits-travelers-with-charming-commercials/"
+            text: "Beppu, Jepang Menunggu Wisatawan Dengan Iklan Menarik"
+          5:
+            url: "https://www.tsunagujapan.com/id/new-luxury-train-kyushu/"
+            text: "Bersiaplah Terpana! Kereta Mewah Baru di Kyushu dengan Tampilan yang Memukau!"
+          6:
+            url: "https://www.tsunagujapan.com/id/50-things-to-do-in-fukuoka/"
+            text: "50 Hal yang Dapat Dilakukan di Fukuoka"
+      okinawa:
+        title: "Spesial Okinawa"
+        description: "Halaman ini berisi kumpulan artikel tentang Okinawa. Penuh dengan informasi berguna untuk menikmati Okinawa, seperti rekomendasi akomodasi, taman nasional, pantai, dan aktivitas wisata di Okinawa."
+        top: "Okinawa"
+        article:
+          1:
+            title_html: "Tentang Okinawa"
+            text_html: "Okinawa, pulau paling selatan di Jepang, terdiri dari 160 pulau yang tersebar di lautan luas. Ini adalah satu-satunya prefektur di Jepang yang memiliki ekosistem dan budaya sendiri karena seluruh wilayahnya termasuk dalam iklim samudra subtropis. Beragam pesona Okinawa, seperti ikan tropis dan terumbu karang di laut biru yang jernih, hutan dengan ekosistem yang unik, budaya tradisional yang mengakar di daerah tersebut, dan olahraga laut, tidak akan Anda temukan di prefektur lain."
+            url: "https://www.tsunagujapan.com/id/beginners-guide-to-okinawa/"
+          2:
+            title_html: "Akomodasi Mewah"
+            text_html: "Ada banyak akomodasi tipe rumah dan vila yang meminimalkan kontak dengan orang lain di empat pulau utama Okinawa (utara, tengah, Naha, dan selatan), Pulau Ishigaki, dan Pulau Miyako. Setiap akomodasi difasilitasi dengan kolam renang pribadi dan pemandian berpemandangan laut untuk Anda dapat menikmati kemegahan alam Okinawa. Pastikan juga Anda mengunjungi tempat-tempat wisata utama di sekitar akomodasi."
+            url: "https://www.tsunagujapan.com/id/10-okinawa-accommodations-that-can-be-rented-out/"
+          3:
+            title_html: "Wisata Petualangan"
+            text_html: "Okinawa terdiri dari banyak pulau, di antaranya pulau utama Okinawa, Pulau Miyako, Pulau Ishigaki, dan Pulau Iriomote. Selain pasir putih dan laut berwarna hijau zamrud yang menjadi keistimewaannya, Okinawa juga memiliki lingkungan alam seperti hutan hujan yang tidak akan Anda temukan di daerah lain di Jepang. Untuk menikmati keragaman alam Okinawa sepenuhnya, Anda bisa mengikuti beberapa tur, seperti mengeksplorasi gua, menunggang kuda Yonaguni, dan naik Sabani (perahu) tradisional."
+            url: "https://www.tsunagujapan.com/id/adventuretourism-in-okinawa/"
+          4:
+            title_html: "Taman Nasional"
+            text_html: "Di Okinawa yang dikelilingi oleh laut terdapat tiga taman nasional: Taman Nasional Yanbaru, Taman Nasional Kerama Shoto, dan Taman Nasional Iriomote-Ishigaki. Mulai dari hutan laurel subtropis terbesar di Jepang dan hutan bakau, laut transparan dan terumbu karang yang padat, flora dan fauna endemik, hingga desa dengan atap genteng tradisional berwarna merah, semua bisa Anda nikmati di taman nasional."
+            url: "https://www.tsunagujapan.com/id/national-park-in-okinawa/"
+          5:
+            title_html: "Pantai"
+            text_html: "Memiliki suhu tahunan rata-rata tertinggi di Jepang dan iklim subtropis yang panas dan lembab, Okinawa merupakan kawasan resor yang sangat populer. Daya tarik terbesar dari pantai-pantai Okinawa adalah pasir putih dan laut biru yang jernih. Di halaman ini, Anda bisa menemukan rekomendasi pantai indah di pulau utama dan pulau-pulau terpencil di Okinawa yang ramai dikunjungi selama musim berenang. Dari tempat klasik hingga yang kurang dikenal, cari tahu pesona setiap pantai, cara menikmati, dan akses ke sana, lalu rencanakan perjalanan Anda."
+            url: "https://www.tsunagujapan.com/id/top-okinawa-beaches/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "Masih ada artikel lainnya yang menjelaskan tentang Okinawa. Silakan dibaca."
+          1:
+            url: "https://www.tsunagujapan.com/id/a-guide-to-traveling-to-and-around-okinawa/"
+            text: "Pergi ke Okinawa? Panduan Perjalanan ke Prefektur Tropis Jepang dan Pulau Sekitarnya"
+          2:
+            url: "https://www.tsunagujapan.com/id/50-things-to-do-in-okinawa/"
+            text: "50 Hal yang Dapat Dilakukan di Okinawa"
+          3:
+            url: "https://www.tsunagujapan.com/id/a-year-s-guide-on-the-weather-in-okinawa-is-it-really-always-summer-in-okinawa/"
+            text: "Panduan Lengkap Iklim dan Cuaca di Okinawa Selama Setahun - Benarkah di Okinawa Selalu Musim Panas?"
+          4:
+            url: "https://www.tsunagujapan.com/id/10-local-cuisine-you-should-try-in-okinawa/"
+            text: "10 Kuliner Lokal yang Harus Anda Coba di Okinawa"
+          5:
+            url: "https://www.tsunagujapan.com/id/7-best-resorts-to-stay-in-okinawa-on-a-budget/"
+            text: "7 Resort Terbaik untuk Menginap di Okinawa dengan Harga Terjangkau"
+          6:
+            url: "https://www.tsunagujapan.com/id/historical-okinawa-townhouse-inns-15/"
+            text: "Rasakan Suasana Tropis di Selatan Jepang! 15 Penginapan Tua Terbaik di Okinawa"
+      shikoku:
+        title: "Spesial Shikoku"
+        description: "Halaman ini berisi kumpulan artikel tentang Shikoku. Penuh dengan informasi berguna untuk menikmati Shikoku, seperti akomodasi yang direkomendasikan, taman nasional, aktivitas wisata, dan informasi ziarah."
+        top: "Shikoku"
+        article:
+          1:
+            title_html: "Tentang Shikoku"
+            text_html: "Shikoku, yang terletak di barat daya Honshu, terdiri dari Prefektur Tokushima, Kagawa, Ehime, dan Kochi. Sisi utaranya menghadap ke Laut Pedalaman Seto, sedangkan sisi selatan ke Samudra Pasifik. Suhu di wilayah Shikoku relatif hangat bahkan di musim dingin dan curah hujannya pun cukup tinggi. Dengan pulau-pulau di Laut Pedalaman Seto, medan terjal, dan pemandangan hutan yang kaya, keindahan alam di Shikoku seolah tidak ada habisnya. Selain itu, produksi sayuran dan buah-buahan, serta industri perikanan di wilayah ini juga berkembang pesat. Ada sejuta pesona yang menanti untuk ditemukan di Tohoku, termasuk kelezatan bahan makanan yang berbeda di setiap musim."
+            url: "https://www.tsunagujapan.com/id/all-about-shikoku/"
+          2:
+            title_html: "Akomodasi Mewah"
+            text_html: "Di sini, kami akan memperkenalkan akomodasi yang menyajikan pemandangan alam seperti vila yang direnovasi dari kominka di dekat Sungai Shimanto yang jernih, dan penginapan dengan pemandangan istimewa pulau kecil Shodoshima di Laut Pedalaman Seto. Ada pula penginapan lainnya seperti Dogo Onsen, salah satu desa pemandian air panas terkemuka di Jepang, dan Iya Onsen, wilayah yang belum banyak terjamah. Baik menginap di vila atau cottage yang meminimalkan kontak dengan orang lain, maupun penginapan yang menerapkan tindakan pencegahan infeksi, Shikoku menjadi tempat yang sempurna untuk bersantai dengan nyaman dan ketenangan pikiran."
+            url: "https://www.tsunagujapan.com/id/trustworthy-luxury-accommodations-in-japans-shikoku-area/"
+          3:
+            title_html: "Wisata Petualangan"
+            text_html: "Dikelilingi oleh laut, Shikoku memiliki iklim yang hangat dan menawarkan berbagai aktivitas menarik. Ada banyak cara untuk menikmati laut, sungai, dan pegunungan di Shikoku yang memesona dengan wisata petualangan, seperti berkano di Sungai Shimanto yang jernih, bersepeda di Setouchi sambil menikmati keindahan alam sekitar, melakukan kayak laut, mencoba arung jeram di Oboke Koboke, menyelam di Pulau Kashiwa, dan mengamati paus Kochi."
+            url: "https://www.tsunagujapan.com/id/adventure-tourism-in-shikoku/"
+          4:
+            title_html: "Taman Nasional"
+            text_html: "Shikoku menjadi rumah bagi dua taman nasional. Taman Nasional Setonaikai, yang merupakan taman nasional terbesar di Jepang, menampilkan lanskap kepulauan di laut pedalaman yang terdiri dari banyak pulau besar dan kecil. Di sisi lain, Anda dapat melihat kehidupan laut subtropis yang dipengaruhi Arus Kuroshio, gugusan karang, dan pemandangan indah yang dihasilkan oleh pantai ria di Taman Nasional Ashizuri-Uwakai. Jika Anda berkunjung ke Shikoku, pastikan untuk mengunjungi taman nasionalnya dan nikmati pemandangan serta aktivitas menarik dari observatorium."
+            url: "https://www.tsunagujapan.com/id/national-park-in-shikoku/"
+          5:
+            title_html: "Ziarah"
+            text_html: "Ziarah Shikoku adalah kegiatan mengunjungi 88 kuil suci yang tersebar di Shikoku, yang diyakini telah dipraktikkan oleh biksu pertama di awal zaman Heian (794-1185) bernama Kobo Daishi (juga dikenal sebagai Kukai). Dengan total panjang rute sekitar 1.200 km, ziarah tidak hanya dilakukan untuk kepentingan keagamaan, tetapi juga untuk mengagumi keindahan alam Shikoku di sepanjang perjalanan, menikmati kuliner daerah yang langka, dan mendapatkan berbagai pengalaman lainnya. Sampai saat ini, masih ada banyak peziarah dari dalam dan luar negeri yang mencoba mengikuti jejak Kobo Daishi."
+            url: "https://www.tsunagujapan.com/id/ohenro-shikoku-pilgrimage/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "Masih ada artikel lainnya yang menjelaskan tentang Shikoku. Silakan dibaca."
+          1:
+            url: "https://www.tsunagujapan.com/id/top-12-photogenic-spots-shikoku/"
+            text: "12 Spot Fotogenik Terbaik dengan Pemandangan Memukau di Shikoku"
+          2:
+            url: "https://www.tsunagujapan.com/id/10-must-see-sights-in-shikoku-s-kochi-prefecture/"
+            text: "10 Tempat Wisata Terbaik yang Wajib Dikunjungi di Prefektur Kochi, Shikoku"
+          3:
+            url: "https://www.tsunagujapan.com/id/14-dishes-not-to-be-missed-in-shikoku/"
+            text: "14 Kuliner Lezat yang Wajib Dicoba di Shikoku"
+          4:
+            url: "https://www.tsunagujapan.com/id/12-historical-spots-in-kagawa-to-add-to-your-bucket-list/"
+            text: "12 Tempat Bersejarah di Kagawa untuk Ditambahkan ke Bucket List Anda"
+          5:
+            url: "https://www.tsunagujapan.com/id/12-places-to-visit-in-kagawa-shikoku/"
+            text: "12 Tempat Wisata yang Harus Dikunjungi di Kagawa, Shikoku"
+          6:
+            url: "https://www.tsunagujapan.com/id/top-10-tourist-destinations-ehime-prefecture-shikoku/"
+            text: "10 Destinasi Wisata Terbaik di Prefektur Ehime, Shikoku"
+      kanto:
+        title: "Spesial Kanto"
+        description: "Halaman ini berisi kumpulan artikel tentang Kanto. Penuh dengan informasi berguna untuk menikmati Kanto, seperti rekomendasi akomodasi, taman nasional, tempat wisata, dan kawasan onsen."
+        top: "Kanto"
+        article:
+          1:
+            title_html: "Tentang Kanto"
+            text_html: "Wilayah Kanto, yang dihuni oleh sepertiga total penduduk Jepang, memainkan peran penting dalam perekonomian Jepang. Di wilayah ini terdapat berbagai objek wisata terkenal, seperti Tokyo, salah satu kota terbesar di dunia; Yokohama, yang memiliki pelabuhan perdagangan internasional; Kamakura, kota kuno dengan banyak pesona; dan Nikko Toshogu, yang terdaftar sebagai Situs Warisan Dunia. Persiapkan diri Anda dengan pengetahuan dan informasi dasar tentang wilayah Kanto agar bisa menikmati segala daya tarik yang ditawarkannya."
+            url: "https://www.tsunagujapan.com/id/all-about-kanto/"
+          2:
+            title_html: "Akomodasi Mewah"
+            text_html: "Di wilayah Kanto terdapat banyak hotel kelas atas dengan layanan istimewa khas kota besar Tokyo. Ada pula beberapa kawasan onsen terkemuka dengan penginapan tradisional yang menghadirkan suasana khas Jepang, seperti Kusatsu Onsen dan Ikaho Onsen di Prefektur Gunma, dan Hakone Onsen di Prefektur Kanagawa. Di halaman ini, kami akan memperkenalkan hotel, vila, dan penginapan yang mudah diakses dari Tokyo. Cobalah temukan tempat favorit Anda!"
+            url: "https://www.tsunagujapan.com/id/trustworthy-luxury-accommodations-in-japans-kanto-area"
+          3:
+            title_html: "Wisata Petualangan"
+            text_html: "Di wilayah Kanto, termasuk Tokyo, ada banyak alam dan aktivitas outdoor yang masih kurang begitu dikenal luas. Khususnya daerah Tochigi dan Gunma, yang memiliki alam melimpah. Anda dapat melakukan berbagai aktivitas untuk menyatu dengan alam seperti berkano menyusuri sungai atau menunggang kuda di pegunungan. Semuanya sangat mudah diakses dari Tokyo dan dapat dicapai dengan perjalanan sehari. Jadi, pastikan Anda mengunjunginya saat berada di Tokyo."
+            url: "https://www.tsunagujapan.com/id/adventure-tourism-in-kanto"
+          4:
+            title_html: "Taman Nasional"
+            text_html: "Ada tiga taman nasional yang bisa Anda kunjungi untuk menikmati kemegahan alam di wilayah Kanto. Taman Nasional Nikko dengan keindahan alam pegunungan, danau, air terjun, dan rawa, serta tempat-tempat wisata seperti kuil yang terdaftar sebagai Situs Warisan Dunia. Taman Nasional Oze, tempat sempurna untuk berjalan-jalan sambil mengamati berbagai tanaman di jalur kayu yang terpelihara di tengah rawa. Taman Nasional Chichibu Tama Kai, yang merupakan taman nasional terdekat dengan area metropolitan Tokyo dan memiliki akses yang mudah dari Tokyo."
+            url: "https://www.tsunagujapan.com/id/national-park-in-kanto/"
+          5:
+            title_html: "Onsen"
+            text_html: "Wilayah Kanto memiliki banyak kawasan onsen (pemandian air panas) yang mudah diakses dari area metropolitan Tokyo, seperti Kusatsu Onsen yang memiliki mata air alami terbesar di Jepang, Hakone Yumoto Onsen, tempat untuk menikmati seni, dan Kamogawa Onsen, resor onsen tepi laut. Anda bisa bermalam di sana setelah berjalan-jalan di Tokyo. Di halaman ini kami juga akan memperkenalkan keistimewaan dari setiap onsen dan efektivitasnya. Silakan pilih kawasan yang sesuai dengan tujuan dan kebutuhan Anda."
+            url: "https://www.tsunagujapan.com/id/10-kanto-onsen/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "Masih ada artikel lainnya yang menjelaskan tentang Kanto. Silakan dibaca."
+          1:
+            url: "https://www.tsunagujapan.com/id/kabukicho-what-to-do-and-what-to-avoid/"
+            text: "Panduan Menjelajahi Kabukicho di Tokyo: Apa yang Harus Dilakukan dan Dihindari"
+          2:
+            url: "https://www.tsunagujapan.com/id/hitachi-seaside-park/"
+            text: "Hitachi Seaside Park - Rumah Bagi Salah Satu Ladang Bunga Terbaik di Jepang"
+          3:
+            url: "https://www.tsunagujapan.com/id/a-yearly-guide-to-flower-viewing-in-tokyo/"
+            text: "Panduan Tahunan untuk Melihat Keindahan Berbagai Bunga di Tokyo"
+          4:
+            url: "https://www.tsunagujapan.com/id/10-yokohama-sightseeing-spots-you-can-enjoy-with-minatomirai-line/"
+            text: "10 Destinasi Wisata Yokohama di Minatomirai Line yang Harus Anda Kunjungi"
+          5:
+            url: "https://www.tsunagujapan.com/id/how-to-get-from-narita-airport-to-downtown-tokyo/"
+            text: "Panduan Perjalanan Menuju Tokyo dari Bandara Narita"
+          6:
+            url: "https://www.tsunagujapan.com/id/omiya-bonsai-village-the-capital-of-the-world-renown-japanese-bonsai-culture/"
+            text: "Desa Bonsai Omiya: Ibu Kota Budaya Bonsai Jepang"
+      kansai:
+        title: "Kansai Feature"
+        description: "On this page, you’ll find a collection of articles about the Kansai region, covering everything from top accommodations to national parks, adventure tours, and the famous “Kansai-ben” dialect."
+        top: "Kansai"
+        article:
+          1:
+            title_html: "About Kansai"
+            text_html: "The Kansai region, located roughly in the center of Japan, is made from a collection of popular and unique sightseeing areas. It includes the deeply traditional Kyoto and Nara, the long-established industrial and economic capital of Osaka, the port town of Kobe, and more. Plan for your trip by reading up on all the basic info on Kansai and get to know this amazing region of Japan!"
+            url: "https://www.tsunagujapan.com/all-about-kansai/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "There are numerous luxury options to spend the night in Kansai. This includes 5-star hotels in central Osaka, those serving up Kobe beef alongside breathtaking night views, high-class ryokan in Hyogo Prefecture’s Kinosaki Onsen, renovated Kyoto townhouses, inns with open-air hot springs and temple pagoda views, hotels with traditional Buddhist and kaiseki cuisine, and more. If you’re still figuring out where to stay, let us introduce you to some of the most exceptional hotels, villas, and inns in the Kansai region."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-kansai-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Combine culture with adventure by following the World Heritage Site of Kumano Kodo, experience sea kayaking at Awajishima Island in the Seto Inland Sea, ride a horse in Kyotamba amongst quaint Japanese village scenery, bungee jump at a sacred spot in Nara – we’ll show you some exciting ideas for an adventure within the Kansai region!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-kansai/"
+          4:
+            title_html: "National Parks"
+            text_html: "Kansai is home to three national parks: Yoshino Kumano National Park, which boasts one of the sole trails registered as a World Heritage Site along with the 30,000 cherry blossom trees of Mt. Yoshino; San'inkaigan National Park, with diverse coastal terrain and the famous Tottori Sand Dunes; and Setonaikai National Park, full of breathtaking island scenery. Here we’ll showcase how best to enjoy each of these parks and their must-see highlights."
+            url: "https://www.tsunagujapan.com/national-park-in-kansai/"
+          5:
+            title_html: "The Kansai-Ben Dialect"
+            text_html: "The Kansai-ben dialect has words and phrases totally different from standard Japanese, along with distinctive intonation and inflection. Here we outline some tips on how to get along with people from Kansai and some handy Kansai vocab to use during your trip. Study up before visiting for smooth communication with the Kansai locals!"
+            url: "https://www.tsunagujapan.com/all-about-kansai-dialect/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "We have many more fantastic articles about Kansai. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/8-spots-where-you-can-feel-japans-history-and-spirituality/"
+            text: "Great Day-Trips From Kyoto and Osaka! 8 Sites Where You Can Feel Japan’s History and Spirituality"
+          2:
+            url: "https://www.tsunagujapan.com/japans-pilgrimage-roads-the-kumano-kodou/"
+            text: "Experience the Kumano Kodo - A Complete Guide to Hiking One of Japan’s Great Pilgrimage Routes"
+          3:
+            url: "https://www.tsunagujapan.com/osaka-shotengai-shopping-streets/"
+            text: "Osaka’s Best Bargains: “Shotengai” Shopping Streets in the City of Merchants"
+          4:
+            url: "https://www.tsunagujapan.com/10-customs-unique-to-kyoto/"
+            text: "10 Unique Kyoto Customs That Even Japanese People Find Confusing"
+          5:
+            url: "https://www.tsunagujapan.com/kansai-useful-one-day-transport-passes/"
+            text: "A Complete Guide to Kansai Transportation: 9 One-Day Passes of Great Value"
+          6:
+            url: "https://www.tsunagujapan.com/5-ways-to-explore-the-kansai-region-on-bicycle/"
+            text: "5 Ways to Explore the Kansai Region on Bicycle"
+      chubu:
+        title: "Chubu Feature"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Chubu, including top accommodations, national parks, outdoor activities and tours, retro townscapes, and more."
+        top: "Chubu"
+        article:
+          1:
+            title_html: "About Chubu"
+            text_html: "Encompassing the central area of mainland Japan, the Chubu region is home to a wealth of sightseeing attractions, including Mt. Fuji, the former castletown of Kanazawa; the historic World Heritage mountain villages of Shirakawa-go and Gokayama; and the leading mountain resort Kamikochi. In this article, we cover all the basics you need to know about the Chubu region, from what makes it special to its climate and how to get there."
+            url: "https://www.tsunagujapan.com/all-about-chubu/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to places to stay in the Chubu region that we think you’ll absolutely love. Spend a night at a long-established “ryokan” inn situated in the Chaya District of Kanazawa in Ishikawa Prefecture, enjoy an all-you-can-eat fresh seafood buffet at another inn with hot spring baths in Toyama, admire the designer furniture and modern art decorating a refurbished townhouse in Niigata Prefecture, or maybe even gaze at Mt. Fuji from the windows of a resort hotel built close to Lake Kawaguchi in Yamanashi Prefecture!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chubu-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Have a thrilling adventure in the Chubu region with these fun outdoor activities and gorgeous nature scenery! Admire Mie’s vibrant surroundings while standup paddleboarding, raft your way down Nagara River in Gifu, or ride around on a snowmobile in Hida Takayama. Alternatively, go fishing and eat what you catch or bungee jump from a height of 215 meters! The opportunities are endless!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chubu/"
+          4:
+            title_html: "National Parks"
+            text_html: "Many tall mountains can be found within the national parks of the Chubu region, making them amazing places for those seeking out challenging mountain climbs, winter ski adventures, hot springs, or an escape from the sweltering summer heat. In this article, we cover all five of the national parks in Chubu in detail, going over some of the top reasons why they make such great places to explore. Encounter the wild snow monkeys of Joshin’etsukogen National Park, relax at the leading mountain resort of Kamikochi in Chubusangaku National Park, and pay a visit to the 2,000-year-old Ise Jingu shrine within Ise-Shima National Park."
+            url: "https://www.tsunagujapan.com/national-park-in-chubu/"
+          5:
+            title_html: "Retro Townscapes"
+            text_html: "The Chubu region is rich in traditional Japanese townscapes, and we want you to see the best of them! There’s the gorgeous Higashi Chaya District in Kanazawa, Ishikawa Prefecture, with its cobblestone streets and stunning historical architecture. Then you have Toyama’s Gokayama, a historical mountain village registered as a World Heritage Site; Nagoya’s Arimatsu, a merchant town renowned in the tie-dyeing industry; Fukui’s Kumagawa-juku, a post town born from trade with Kyoto; and far more!"
+            url: "https://www.tsunagujapan.com/chubu-area-traditional-retro-townscapes/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "We have many more fantastic articles about Chubu. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/10-tea-houses-in-kanazawa/"
+            text: "Top 10 Tea Houses in Kanazawa's Tea House District to Wind Down In"
+          2:
+            url: "https://www.tsunagujapan.com/6-high-class-ryokan-around-lake-kawaguchi/"
+            text: "6 High-Class Ryokan Around Lake Kawaguchi to Enjoy a Magnificent View of Mt. Fuji"
+          3:
+            url: "https://www.tsunagujapan.com/discover-karuizawa-rental-bicycle/"
+            text: "Discover the Best of Karuizawa via Rental Bicycles"
+          4:
+            url: "https://www.tsunagujapan.com/2-day-autumn-trip-in-toyama-kurobe-uozu/"
+            text: "Fall Bliss in Toyama: A 2-Day Road Trip in Kurobe and Uozu"
+          5:
+            url: "https://www.tsunagujapan.com/2-day-trip-in-okazaki/"
+            text: "Spend a 2-Day Trip in Okazaki, a Hidden Gem in Aichi Prefecture"
+          6:
+            url: "https://www.tsunagujapan.com/deep-snow-an-hour-from-tokyo-relishing-the-midwinter-bounties-of-niigata/"
+            text: "Deep Snow an Hour From Tokyo: Relishing the Midwinter Bounties of Niigata"
+      chugoku:
+        title: "Chugoku Feature"
+        description: "On this page, you’ll find a collection of articles about the Chugoku region, covering everything from top accommodations to national parks, adventure tours, and its many and varied historic structures."
+        top: "Chugoku"
+        article:
+          1:
+            title_html: "About Chugoku"
+            text_html: "Encompassing the westernmost part of Japan’s main island of Honshu, the Chugoku region is filled with historic, cultural, and scenic delights. Some examples include Itsukushima Shrine, registered as a World Heritage Site; the historic townscapes of Hagi Castle Town; and the Tottori Sand Dunes, the largest formations of their kind in all of Japan. If you're planning a trip to Chugoku, then here's everything you'll need to know about the region, including information on its weather, the best places to visit, and how to get there."
+            url: "https://www.tsunagujapan.com/a-trip-through-chugoku-region-the-land-of-myths-and-memories/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to some really enthralling and unforgettable stays in the Chugoku region: a 400-year-old resort hotel near Itsukushima Shrine, a Hiroshima “ryokan” inn with open-air baths in every room, a long-established inn situated right within the Kurashiki Bikan Historical Quarter of Okayama Prefecture, a Yamaguchi hot spring inn boasting a large bath with gorgeous views of a nearby mountain stream, a Tottori inn where you can stuff yourself with fresh Sea of Japan delicacies such as crab, and more!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chugoku-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Go on thrilling adventures in the Chugoku area! Ride across the Tottori Sand Dunes on an off-road “fat bike” or fly high above them on a paraglider. Paddle up close to Itsukushima Shrine’s giant torii gate in a sea kayak. SUP around Yamaguchi’s Suo-Oshima Island. Take a hot spring dip at Yuki Onsen or enjoy some shower climbing in Hiroshima. There is always something fun to do in Chugoku!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chugoku/"
+          4:
+            title_html: "National Parks"
+            text_html: "The Chugoku region is home to two national parks: Setonaikai National Park, the largest national park in Japan partially made up of the 1,000 islands on the Seto Inland Sea, and Daisen-Oki National Park, where you can find Izumo Taisha—a grand shrine that features as the setting of various Japanese myths and legends—as well as mountains like Mt. Daisen and lovely coastline scenery shaped from the rough waves of the Sea of Japan. Come discover these two nature wonderlands with us."
+            url: "https://www.tsunagujapan.com/national-park-in-chugoku/"
+          5:
+            title_html: "Historic Structures"
+            text_html: "Admire the many architectural marvels of the Chugoku region, such as the giant torii gate of Itsukushima Shrine, a registered World Heritage Site, standing in the middle of the sea. There are also the white-walled warehouses and willow-lined avenues of the Kurashiki Bikan Historical Quarter; the wooden 200-meter-long Kintai Bridge featuring five arches; and Mitokusan Sanbutsuji Temple's Nageire Hall, a national treasure built right into a cliff face cavern."
+            url: "https://www.tsunagujapan.com/chugoku-unique-historic-structures/"
+        read_more: "Baca Selengkapnya"
+        related_articles:
+          title: "Artikel Terkait"
+          lead: "We have many more fantastic articles about Chugoku. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/filming-location-in-hiroshima-drive-my-car/"
+            text: "\"Drive My Car\" Hiroshima Filming Locations - Step Into the World of Haruki Murakami!"
+          2:
+            url: "https://www.tsunagujapan.com/7-photogenic-spots-in-tottori-full-of-nature-and-culture/"
+            text: "7 Photogenic Spots in Tottori, a Prefecture Full of Nature and Culture"
+          3:
+            url: "https://www.tsunagujapan.com/only-1-hour-from-osaka-15-awesome-photogenic-spots-in-okayama/"
+            text: "Only 1 Hour From Osaka! 15 Awesome Photogenic Spots in Okayama"
+          4:
+            url: "https://www.tsunagujapan.com/shimanami-kaido-cycle-across-the-seto-inland-sea/"
+            text: "The Shimanami Kaido: Japan's Best Cycling Adventure!"
+          5:
+            url: "https://www.tsunagujapan.com/25-things-to-do-hiroshima/"
+            text: "25 Amazing Things To Do in Hiroshima: A Complete Travel Guide to Enjoying Its History, Culture, and Nature"
+          6:
+            url: "https://www.tsunagujapan.com/rabbit-island-okunoshima/"
+            text: "A Must-Visit for Rabbit Lovers! Okunoshima, an Island Removed from the Maps"
+  planning_trip:
+    page_title: "Informasi Berguna Seputar Jepang"
+    page_description: "Halaman ini berisi kumpulan artikel yang berguna untuk wisatawan internasional saat berkunjung ke Jepang. Temukan berbagai informasi yang akan membantu memudahkan masa tinggal Anda selama di Jepang, seperti transportasi, keuangan, tata krama, bagaimana menghadapi keadaan darurat (bencana dan cedera), serta tips bermanfaat lainnya."
+    title_html: "Informasi Berguna Seputar Jepang"
+    description: "Halaman ini berisi kumpulan artikel yang berguna untuk wisatawan internasional saat berkunjung ke Jepang. Temukan berbagai informasi yang akan membantu memudahkan masa tinggal Anda di Jepang, seperti transportasi, keuangan, tata krama, bagaimana menghadapi keadaan darurat (bencana dan cedera), serta tips bermanfaat lainnya."
+    articles:
+      1:
+        title: "Transportasi"
+        description: "Temukan berbagai informasi terkait transportasi seperti cara naik kereta dan ragam jenis kartu IC."
+        1:
+          text: "Rencanakan Perjalanan ke Jepang dengan Tetap Menerapkan Social Distancing"
+          url: "https://www.tsunagujapan.com/id/how-to-plan-a-socially-distanced-trip-to-japan/"
+        2:
+          text: "Panduan Lengkap Menjelajah Stasiun Tersibuk di Dunia - Stasiun Shinjuku di Tokyo"
+          url: "https://www.tsunagujapan.com/id/you-won-t-get-lost-with-this-a-complete-guide-to-shinjuku-station-in-tokyo-the-world-s-busiest-station/"
+        3:
+          text: "Panduan Perjalanan Menuju Tokyo dari Bandara Narita"
+          url: "https://www.tsunagujapan.com/id/how-to-get-from-narita-airport-to-downtown-tokyo/"
+        4:
+          text: "Waspada Kereta Penuh! Hindari Jam-Jam Sibuk di Tokyo!"
+          url: "https://www.tsunagujapan.com/id/tokyo-traffic-rushtime/"
+        5:
+          text: "Jangan Bingung! Inilah Panduan Tepat dan Lengkap Menggunakan Kereta di Jepang"
+          url: "https://www.tsunagujapan.com/id/the-japanese-commuter-train-system-a-comprehensive-guide/"
+      2:
+        title: "Keuangan"
+        description: "Temukan berbagai informasi terkait keuangan seperti cara pembayaran nontunai dan cara menukar atau menarik yen."
+        1:
+          text: "Di Mana dan Bagaimana Cara Menukar, Menarik, dan Memperoleh Uang Tunai Dalam Yen Jepang"
+          url: "https://www.tsunagujapan.com/id/where-to-exchange-money-in-japan/"
+        2:
+          text: "Bisakah Anda Bertahan Hidup Tanpa Uang Tunai di Jepang? 12 Pilihan Metode Pembayaran Nontunai Terbaik di Jepang"
+          url: "https://www.tsunagujapan.com/id/top-cashless-payment-options-japan/"
+        3:
+          text: "Panduan Mengenai Uang Jepang: Uang Koin dan Uang Kertas"
+          url: "https://www.tsunagujapan.com/id/a-guide-to-japanese-money-coins-and-bills/"
+        4:
+          text: "5 Cara Terbaik untuk Menghabiskan 1,000 Yen Terakhir Anda di Jepang"
+          url: "https://www.tsunagujapan.com/id/the-5-best-ways-to-spend-your-last-1-000-yen-in-japan/"
+        5:
+          text: "Semua yang Perlu Anda Ketahui Tentang Sistem Poin Tokyo Metro dan JR Suica"
+          url: "https://www.tsunagujapan.com/id/tokyo-metro-jr-suica-points/"
+      3:
+        title: "Tata Krama"
+        description: "Temukan berbagai informasi terkait tata krama di Jepang seperti sopan santun dan peraturan dalam masyarakat."
+        1:
+          text: "Dianggap Tabu! 10 Hal yang Harus Anda Hindari Ketika Menggunakan Sumpit di Jepang"
+          url: "https://www.tsunagujapan.com/id/10-things-you-should-avoid-doing-when-using-chopsticks-in-japan/"
+        2:
+          text: "10 Hal yang Perlu Diketahui Saat Naik Kereta di Jepang"
+          url: "https://www.tsunagujapan.com/id/10-things-to-know-when-riding-trains-in-japan/"
+        3:
+          text: "Kata Itadakimasu dan Cara Menggunakan Sumpit - Etika Makan (Table Manner) Orang Jepang untuk Pemula"
+          url: "https://www.tsunagujapan.com/id/japanese-table-manners-for-beginners/"
+        4:
+          text: "10 Poin Penting yang Perlu Anda Ketahui Ketika Berdoa di Kuil Shinto"
+          url: "https://www.tsunagujapan.com/id/10-important-points-to-note-about-praying-at-a-shrine/"
+        5:
+          text: "Tradisi Hanami - Etika Menikmati Bunga Sakura di Jepang yang Perlu Anda Ketahui"
+          url: "https://www.tsunagujapan.com/id/cherry-blossom-sakura-viewing-hanami-etiquette/"
+      4:
+        title: "Pengetahuan Umum"
+        description: "Temukan berbagai informasi yang dapat menambah wawasan dan membantu Anda menikmati perjalanan di Jepang."
+        1:
+          text: "Semua yang Perlu Anda Ketahui Tentang Penggunaan Toilet Pintar Jepang"
+          url: "https://www.tsunagujapan.com/id/japanese-toilet-guide/"
+        2:
+          text: "6 Alasan Utama Mengapa Orang Jepang Tidak Bisa Berbahasa Inggris"
+          url: "https://www.tsunagujapan.com/id/6-real-reasons-why-japanese-cannot-speak-english/"
+        3:
+          text: "Katakan \"Okini\" Saat di Kansai - 51 Ucapan Terima Kasih Dalam Dialek Daerah di Jepang"
+          url: "https://www.tsunagujapan.com/id/how-to-say-thank-you-in-japanese/"
+        4:
+          text: "12 Frasa Penting yang Harus Diketahui Sebelum Memasuki Minimarket Jepang dan Cara Meresponnya"
+          url: "https://www.tsunagujapan.com/id/12-phrases-at-convenience-stores-with-responses/"
+        5:
+          text: "Bisakah Anda Membawa Pulang atau Delivery Makanan di Jepang? Mari Jelajahi Budaya Takeout Jepang yang Unik!"
+          url: "https://www.tsunagujapan.com/id/takeout-culture-in-japan/"
+      5:
+        title: "Keadaan Darurat (Medis, Bencana, Hukum)"
+        description: "Temukan berbagai informasi berguna yang dapat membantu Anda menghadapi keadaan darurat, seperti saat Anda sakit, cedera, terjadi bencana, dan hal-hal lain yang harus diwaspadai."
+        1:
+          text: "Wajib Tahu! Tips dan Saran untuk Tetap Aman Saat Terjadi Bencana Alam di Jepang"
+          url: "https://www.tsunagujapan.com/id/tips-and-advice-staying-safe-natural-disasters-japan/"
+        2:
+          text: "Berapa Usia Legal Minum Alkohol di Jepang? 8 Hukum yang Harus Anda Ketahui Sebelum Datang ke Jepang"
+          url: "https://www.tsunagujapan.com/id/8-laws-you-should-know-japan/"
+        3:
+          text: "Mulai Dari Potensi Pencurian Hingga Denda Besar: 8 Situasi yang Harus Anda Ketahui Saat Berada di Jepang"
+          url: "https://www.tsunagujapan.com/id/8-situations-to-be-aware-of-when-visiting-japan/"
+        4:
+          text: "Anda Sakit atau Terluka Saat di Jepang? 8 Solusi Berguna yang Harus Anda Tahu"
+          url: "https://www.tsunagujapan.com/id/what-to-do-when-you-get-sick-or-injured-according-to-locals/"
+        5:
+          text: "Bermanfaat di Saat Darurat! Rumah Sakit Jepang yang Melayani Orang Asing"
+          url: "https://www.tsunagujapan.com/id/multilingual-hospitals-clinics-japan/"
+  article:
+    title: "Daftar artikel"
+    desc: ""
+    translator: "Translator"
+    author: "Author"
+  hotel:
+    name1: "Agoda"
+    short1: "A"
+    name2: "Booking.com"
+    short2: "B"
+    bookWith1: "Pesan melalui Agoda"
+    bookWith2: "Pesan melalui Booking.com"
+    bookWith3: "Pesan melalui Relux"
+  hotelpage:
+    labels:
+      name: "Nama"
+      desc: "Deskripsi"
+      price: "Harga"
+      location: "Alamat"
+      reference: "Sumber"
+      book: "book at"
+      info: "Informasi"
+  source: "Sumber:"
+  img_source: "Ảnh:"
+  sns:
+    share: "Bagikan"
+    pin: "pin"
+    tweet: "tweet"
+  lang:
+    zh-hant: "Bahasa Mandarin (Tradisional)"
+    zh-hans: "Bahasa Mandarin (Disederhanakan)"
+    ko: "Bahasa Korea"
+    vi: "Bahasa Vietnam"
+    en: "Bahasa Inggris"
+    ja: "Bahasa Jepang"
+    th: "Bahasa Thailand"
+    id: "Bahasa Indonesian"
+  footer:
+    about: "Tentang tsunagu Japan"
+    tsunagudesc: "tsunagu Japan adalah platform untuk berbagi informasi perjalanan di Jepang. Informasi ini mencakup saran rencana perjalanan, tips bermanfaat untuk tinggal di Jepang, dan pengetahuan tentang budaya Jepang yang membuat setiap perjalanan terasa lebih menyenangkan. Kami ingin membawa seluruh aspek Jepang kepada Anda. "
+    contact: "Kontak"
+    login: "Masuk"
+    logout: "Keluar"
+    company: "Profil Perusahaan"
+    privacy: "Kebijakan pribadi"
+    terms: "Ketentuan"
+  email_html: "tsunagu Japan <br>
+<a href=\"https://www.tsunagujapan.com/\">https://www.tsunagujapan.com/</a><br>
+D2CX, inc. <br>
+TOKYO SHIODOME BUILDING, 1-9-1 <br>
+Higashi-Shimbashi, Minato-ku, Tokyo <br>
+<a href=\"https://www.d2cx.co.jp/\">https://www.d2cx.co.jp/</a>"
+
+  wowjapan:
+    desc: "The Japan tourism information site WOW! JAPAN closed on September 15, 2021.<br><br>We've published a selection of their most popular articles on this page."
+  covid:
+    subtitle: "Panduan Penanganan Penyebaran Virus Corona di Jepang"
+    desc: "Agar wisatawan yang datang ke Jepang dapat menikmati perjalanan dengan aman dan nyaman, berbagai fasilitas wisata menerapkan tindakan pencegahan penyebaran virus corona."
+    search_button: "Cari fasilitas yang menerapkan tindakan keamanan virus corona"
+    how:
+      title: "Penanganan Penularan Virus Corona di Jepang"
+      sub: "Hindari 3C!"
+      desc_html: "Selain memperhatikan etika batuk dan kebersihan tangan, pemerintah Jepang menyerukan penghindaran 3C (closed spaces / ruangan tertutup, crowded places / tempat ramai, dan close-contact / kontak dekat) untuk mencegah penyebaran infeksi virus corona."
+      1:
+        repletion: "Ventilasi yang buruk"
+        keyword_html: "Ruangan Tertutup"
+      2:
+        repletion: "Banyak orang yang berkumpul"
+        keyword_html: "Tempat Ramai"
+      3:
+        repletion: "Berkomunikasi dalam jarak dekat"
+        keyword_html: "Kontak Dekat"
+      additional_html: "Jika Anda ingin mengetahui lebih lanjut tentang langkah-langkah melawan infeksi virus corona, silakan cek \"Kantor Promosi Pengendalian Penyakit Menular Virus Corona (Sekretariat Kabinet)\"."
+    about:
+      title: "Infromasi tentang virus corona di Jepang"
+      1:
+        text: "Negara dan wilayah yang menerapkan pembatasan imigrasi, karantina pada saat masuk, pembatasan visa, dll."
+        url1_title: "MOFA: Halaman Informasi Keselamatan Perjalanan Luar Negeri"
+        url1: "https://www.anzen.mofa.go.jp/"
+        url2_title: "Badan Layanan Imigrasi Jepang Kementerian Kehakiman"
+        url2: "https://www.isa.go.jp/id/nyuukokukanri01_00151.html"
+        desc: "※Langkah-langkah ini terus berubah dan diterapkan tanpa adanya pemberitahuan. Sikan cek informasi terkini."
+      2:
+        text: "Tentang Langkah-Langkah Imigrasi (menyerahkan sertifikat pemeriksaan, pendaftaran aplikasi yang diperlukan, dll)"
+        url1_title: "Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan"
+        url1: "https://www.mhlw.go.jp/stf/covid-19/bordercontrol.html"
+      3:
+        text: "Status vaksinasi di Jepang"
+        url1_title: "Halaman Kantor Perdana Menteri (bahasa Jepang)"
+        url1: "https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html"
+        url2_title: "Halaman Kantor Perdana Menteri (bahasa Inggris)"
+        url2: "https://japan.kantei.go.jp/ongoingtopics/vaccine.html"
+    place_list:
+      title: "Informasi Fasilitas yang Memerangi Virus Corona"
+      all: "All Category"
+      transport: "Transportasi"
+      hotel: "Hotel"
+      shop: "Pertokoan"
+      restaurant: "Restoran"
+      sightseeing: "Wisata"
+      other: "Aktivitas/Lainnya"
+      category: "Kategori"
+      category_ph: "Persempit berdasarkan kategori"
+      area: "Area"
+      area_ph: "Persempit berdasarkan area"
+      add_area: "Tambahkan Area"
+    result:
+      count_total: ""
+      #      current_count_html: "<span class='count_start'></span> ~ <span class='count_end'></span> (Urutan Abjad)"
+      current_count_html: "(Urutan Abjad)"
+      title: "Hasil Pencarian"
+      unit: ""
+      icon:
+        title: "Ikon Tindakan Pencegahan COVID-19"
+        cashless: "Mendukung pembayaran nontunai"
+        distance: "Menerapkan social distancing"
+        gargle: "Staf berkumur dengan seksama"
+        hand: "Staf membersihkan tangan"
+        mask: "Staf memakai masker"
+        sanitizer: "Menyediakan hand sanitizer"
+        sheet: "Memasang partisi"
+        spray: "Mendisinfeksi area fasilitas"
+        temperature: "Melakukan pengukuran suhu kepada staf"
+        thermograph: "Memasang alat pengukur suhu tubuh otomatis"
+        tray: "Menggunakan nampan koin saat pembayaran"
+        vent: "Menerapkan ventilasi"
+      show_more_html: "<i class='fas fa-plus'></i>  Selengkapnya"
+      show_less_html: "<i class='fas fa-minus'></i>  Persingkat"
+      read_more: "Selengkapnya"
+      read_less: "Persingkat"
+      website: "Official Website"
+    featured_articles: "Rekomendasi Artikel"
+
+    more_info: "Silakan lihat informasi di bawah ini untuk mengetahui langkah-langkah keselamatan dan keamanan yang diterapkan masing-masing pelaku bisnis."
+    details:
+      description: "Pengenalan Fasilitas"
+      safety_description: "Langkah-langkah Keselamatan dan Keamanan"
+      benefit: "Keuntungan"
+      disclaimer: "Silakan merujuk ke situs web resmi untuk mendapatkan informasi terbaru"
+      headline: "Langkah-Langkah Keselamatan dan Keamanan untuk Mencegah Infeksi COVID-19 di Jepang"
+      teaser_desc_html: "Sebagai langkah penanggulangan virus corona, pemerintah Jepang menerapkan imbauan untuk menghindari \"Tiga C\", yakni: Closed Spaces (ruangan tertutup - ruangan yang memiliki ventilasi buruk), Crowded Places (tempat ramai), dan Close-contact (kontak dekat). Agar ketiga kondisi tersebut tidak tumpang tindih, pemerintah terus menyerukannya secara luas kepada masyarakat.
+      Menanggapi imbauan ini, kami akan mengulas secara detail tindakan apa saja yang diterapkan masing-masing perusahaan Jepang di berbagai industri sebagai \"langkah keselamatan dan keamanan\" untuk mencegah infeksi virus corona."
+      menu:
+        headline: "Upaya yang Diterapkan Para Pelaku Usaha"
+        transport: "Bandara / Transportasi Umum"
+        accommodate: "Fasilitas Akomodasi"
+        restaurant: "Restoran"
+        shops: "Fasilitas Perbelanjaan"
+        sightseeing: "Wisata"
+        other: "Aktivitas / Lainnya"
+      descs:
+        transport: "Baik di bandara yang menyambut dan mengirim para wisatawan dari seluruh dunia ke Jepang, maupun di transportasi umum seperti bus atau kereta yang berfungsi bagaikan \"kaki\" untuk berpindah lokasi, banyak orang yang datang dan pergi. Semua perpindahan itu mungkin saja disertai dengan virus corona. Di sini, kami akan memperkenalkan langkah-langkah keselamatan dan keamanan untuk mencegah infeksi virus corona di bandara dan transportasi umum."
+        accommodate: "Ada banyak hal menyenangkan untuk dilakukan saat liburan seperti mengunjungi tempat-tempat wisata dan berkuliner. Namun, hotel atau penginapan yang Anda pilih akan menjadi poin penting dalam mewarnai liburan Anda.
+        Tentu di tempat yang tenang dan nyamanlah Anda ingin menginap.
+        Di sini, kami akan memperkenalkan langkah-langkah keselamatan dan keamanan yang diterapkan di setiap fasilitas akomodasi untuk mencegah infeksi virus corona."
+        restaurant: "Di destinasi yang dituju, bukankah \"makanan\" menjadi hal yang dinanti-nantikan banyak orang? Berkumpul bersama keluarga atau teman sambil menikmati budaya makanan lokal adalah salah satu hal terbaik yang dirasakan saat liburan. Namun, kontak dekat dan percikan dikhawatirkan akan menimbulkan risiko penularan yang tinggi.
+        Mari periksa langkah-langkah pencegahan infeksi virus corona di setiap restoran dan nikmati makanan dengan nyaman dan menyenangkan!"
+        shops: "Membeli suvenir dan melihat-lihat berbagai produk unik adalah salah satu hal yang tidak bisa dilewatkan saat berlibur.
+        Di sini, kami akan memperkenalkan langkah-langkah keselamatan dan keamanan yang diterapkan setiap fasilitas perbelanjaan. Misalnya, dengan melakukan disinfeksi dan menerapkan ventilasi menyeluruh di tempat banyak orang berkumpul."
+        sightseeing: "Banyak orang yang menanti-nantikan untuk menikmati budaya dan sejarah negeri sakura ketika mengunjungi Jepang, seperti taman tradisional, museum, kuil Buddha, kuil Shinto, dan kastil. Akan tetapi, di semua fasilitas ini ada banyak orang yang berkumpul, termasuk orang Jepang. Dengan hanya melihat situasi yang ramai itu saja sudah mengundang kekhawatiran.
+        Di sini, kami akan memperkenalkan langkah-langkah keselamatan dan keamanan untuk mencegah infeksi virus corona yang diterapkan di setiap tempat wisata."
+        other: "Ada banyak orang yang ingin mengalami budaya Jepang saat mereka datang ke Jepang. Namun, pastikan Anda memeriksa langkah-langkah keselamatan dan keamanan terlebih dulu untuk mendapatkan pengalaman yang hanya bisa Anda rasakan di Jepang!
+        Selain itu, kami akan memperkenalkan langkah-langkah pencegahan infeksi virus corona dalam berbagai situasi di tempat-tempat yang Anda kunjungi saat bepergian di Jepang."
+    teaster:
+      headline_html: "Bepergian dengan Aman di Jepang"
+      headline_m_html: "Bepergian dengan Aman di Jepang"
+      sub: "Virus Corona, penyakit menular baru yang sedang mewabah di dunia. Sambil berdoa agar wabah ini cepat selesai, kami akan memberikan informasi berguna kepada orang asing yang sedang tinggal di Jepang dan orang-orang yang tertarik dengan Jepang. Kami dengan tulus berharap bisa bertemu lagi dengan banyak wisatawan asing."
+    information:
+      headline: "Informasi Terkini Virus Corona yang Harus Dibaca"
+    safety:
+      headline: "Langkah-Langkah Keselamatan dan Keamanan untuk Mencegah Infeksi COVID-19 di Jepang"
+      sub: "Kami akan Memperkenalkan Penerapan Tindakan Pencegahan Infeksi COVID-19 untuk Setiap Perusahaan Bisnis di Jepang"
+      content:
+        h3: "Transportasi Umum"
+        sub: "Tidak hanya untuk wisatawan, di transportasi umum seperti bus dan kereta yang juga bertindak sebagai \"kaki-nya\" orang Jepang, kami akan memberikan langkah-langkah pencegahan. Misalnya, melakukan disinfeksi ruang dalam mobil, menyediakan disinfektan, dan para kru harus mengenakan masker."
+      info:
+        mask:
+          headline: "Memakai masker"
+          sub: "Karyawan memakai masker untuk mencegah penularan melalui percikan (droplet)"
+        hand_san:
+            headline: "Menyediakan hand sanitizer"
+            sub: "Menyediakan hand sanitizer di berbagai tempat di dalam gedung"
+        temp:
+            headline: "Menjaga kondisi tubuh"
+            sub: "Mengontrol kondisi kesehatan karyawan"
+        sheets:
+            headline: "Memasang sekat vinil"
+            sub: "Memasang sekat vinil di konter kasir untuk mencegah penularan melalui percikan (droplet)"
+        distance:
+            headline: "Menerapkan Social Distancing"
+            sub: "Menerapkan Social Distancing antara sesama pelanggan"
+        first:
+          headline: "Ventilasi"
+          sub: "Membuka jendela mobil untuk tujuan ventilasi"
+        second:
+          headline: "Disinfeksi"
+          sub: "Disinfeksi peralatan dan interior mobil"
+        third:
+          headline: "Mengenakan Masker"
+          sub: "Para kru harus mengenakan masker agar tidak terinfeksi dan menginfeksi"
+      outgoing:
+        headline: "Silkan periksa HP institusi yang dituju untuk mendapatkan informasi lebih lanjut."
+        link1: "JR East"
+        link2: "Tokyo Metro"
+        link3: "Toei Subway"
+        link4: "Keikyu"
+        link5: "Keisei Electric Railway"
+        link6: "Tokyo Monorail"
+        link7: "Hankyu Railway"
+        link8: "Nankai Electric Railway"
+        link13: "Keihan Electric Railway"
+        link9: "Osaka Metro"
+        link10: "Bus Bandara"
+        link11: "Perusahaan Taksi Besar"
+        link12: "JR Tokai"
+    forward:
+        headline: "Kumpulan Tautan Mengenai Informasi Terkait Virus Corona di Jepang"
+        sub: "Untuk mendapatkan informasi terkini terkait virus corona di Jepang, silakan kunjungi situs web masing-masing lembaga publik."
+        link1: "Tokyo"
+        link2: "Kementerian Kesehatan, Perburuhan dan Kesejahteraan Jepang"
+        link3: "Kementerian Luar Negeri Halaman keamanan luar negeri"
+    learning:
+        headline_html: "Wawasan &amp; Perencanaan"
+        learning: "Wawasan"
+        planing: "Perencanaan"
+        sub: "Maukah Anda merasa seperti sedang berwisata meski berada di rumah? Kami akan memberikan berbagai informasi pilihan, mulai dari tempat-tempat terkenal di Jepang yang belum Anda ketahui, tempat indah yang ingin Anda kunjungi kembali, hingga budaya kebanggaan Jepang dan tips travel!"
+  cookieconsent:
+    message: "This website uses cookies to ensure you get the best experience on our website."
+    dismiss: "OK, got it"
+    link: "Learn more"
+    href: "https://www.tsunagujapan.com/id/privacy/"

@@ -1,0 +1,43 @@
+<ul class="post_bottomBanners">
+  <% if !browser.device.mobile? %>
+    <!-- Desktop -->
+    <li class="post_bottomBanner horizontal">
+      <% if I18n.locale.to_s == "en" || I18n.locale.to_s == "zh-hans" || I18n.locale.to_s == "id" %>
+        <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tjt/pc/travel202309_04_770_280_en.jpg") }, class: "lazy img-responsive center-block", alt: t('article.banner.travel1'), :size => "770x280"), "https://travel.tsunagujapan.com/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_bannerBottom_pc&utm_content=banner_#{I18n.locale.to_s}", target: :_blank, id: "bottomBanner_tjtravel-#{I18n.locale.to_s}", class: "tour-banner hover-opacity" %>
+      <% else %>
+        <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tjt/pc/travel202309_04_770_280_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('article.banner.travel1'), :size => "770x280"), "https://travel.tsunagujapan.com/#{I18n.locale.to_s}/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_bannerBottom_pc&utm_content=banner_#{I18n.locale.to_s}", target: :_blank, id: "bottomBanner_tjtravel-#{I18n.locale.to_s}", class: "tour-banner hover-opacity" %>
+      <% end %>
+    </li>
+  <% else %>
+    <!-- mobile -->
+    <li class="post_bottomBanner horizontal">
+      <% if I18n.locale.to_s == "en" || I18n.locale.to_s == "zh-hans" || I18n.locale.to_s == "id" %>
+        <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tjt/sp/travel202309_04_1280_1280_en.jpg") }, class: "lazy img-responsive center-block", alt: t('article.banner.travel1'), :size => "360x360"), "https://travel.tsunagujapan.com/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_bannerBottom_sp&utm_content=banner_#{I18n.locale.to_s}", target: :_blank, id: "bottomBanner_tjtravel-#{I18n.locale.to_s}", class: "tour-banner hover-opacity" %>
+      <% else %>
+        <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tjt/sp/travel202309_04_1280_1280_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('article.banner.travel1'), :size => "360x360"), "https://travel.tsunagujapan.com/#{I18n.locale.to_s}/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_bannerBottom_sp&utm_content=banner_#{I18n.locale.to_s}", target: :_blank, id: "bottomBanner_tjtravel-#{I18n.locale.to_s}", class: "tour-banner hover-opacity" %>
+      <% end %>
+    </li>
+  <% end %>
+</ul><!-- /.post-bottomBanners -->
+
+<div class="adsense-bottom">
+  <% if browser.device.mobile? %>
+  <!-- tJ_article_bottom -->
+  <ins class="adsbygoogle ads_img"
+      style="display:inline-block;width:320px;height:100px"
+      data-ad-client="ca-pub-4177280178292675"
+      data-ad-slot="3167506003"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <% else %>
+  <!-- tJ_article_bottom_desktop -->
+  <ins class="adsbygoogle ads_img"
+      style="display:inline-block;width:728px;height:90px"
+      data-ad-client="ca-pub-4177280178292675"
+      data-ad-slot="8164511343"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <% end %>
+</div><!-- /.adsense-bottom -->

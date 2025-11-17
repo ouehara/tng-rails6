@@ -1,0 +1,51 @@
+<td colspan="10" class="editrow<%= article.id %>">
+  <div class="col-xs-4">
+    <p>Select category</p>
+    <select name="article[category_id]" class="sel-cat">
+      <% categories.each do |cat| %>
+        <option value=<%= cat.id %> <%= article.category != nil && cat.id == article.category.id ? "selected" : "" %> ><%= cat.name %></option>
+      <% end %>
+    </select>
+  </div>
+  <div class="col-xs-4">
+    <p> Select area </p>
+    <select name="article[area_id]" class="sel-area">
+      <% areas.each do |a| %>
+        <option value=<%= a.id %> <%= article.area != nil && a.id == article.area.id ? "selected" : "" %>><%= a.name %></option>
+        <% a.children.each do |sub_area| %>
+        <option value=<%= sub_area.id %> <%= article.area != nil && sub_area.id == article.area.id ? "selected" : "" %>><%= sub_area.name %></option>
+          <% sub_area.children.each do |final_area| %>
+            <option value=<%= final_area.id %> <%= article.area != nil && final_area.id == article.area.id ? "selected" : "" %>><%= final_area.name %></option>
+          <% end %>
+        <% end %>
+        <option disabled>-----------</option>
+      <% end %>
+    </select>
+  </div>
+  <div class="col-xs-4">
+    <p> Tags</p>
+    <!-- DefaultTagComponent TaggedInput !-->
+
+    <%= react_component('TaggedInput',{autofocus: false,
+          backspaceDeletesWord:true,
+          placeholder:'Tags',
+          tags:article.all_tags.split(','),
+          tagOnBlur:false,
+          searchPath: search_admin_tags_path(":param",:format => :json),
+          clickTagToEdit:false,
+          unique: true,
+          classes:'my-css-namespace',
+          removeTagLabel:"\u274C",
+        })
+    %>
+  </div>
+  <b class="col-xs-12">Related grouping</b>
+  <div class="col-xs-4">
+    <p>Category</p>
+    <%= select_tag :article_group, options_for_select(@grouping,article.article_groups.first.nil? ? 0 : article.article_groups.first.id), class: "select_grouping" %>
+  </div>
+  <input type="hidden" value='<%= article.id %>' name="id" class="sel-id" />
+  <div class="col-xs-12">
+    <a href=<%= quick_save_admin_articles_url %> class="btn btn-default quick-edit-save" data-attr="<%= article.id %>"> save </a>
+  </div>
+</td>

@@ -1,0 +1,8 @@
+<tr class="nested-fields pickup-article-fields">
+  <td class="article-image">image</td>
+  <td class="article-id"><%= f.text_field :article_id %></td>
+  <td class="article-title"><%= f.object.article.try(:title) %></td>
+  <td>
+    <%= link_to_remove_association "Delete", f %>
+  </td>
+</tr>

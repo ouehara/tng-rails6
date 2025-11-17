@@ -1,0 +1,101 @@
+.form-search {
+  &_heading {
+    margin: 0;
+    padding: rem(40) 0 rem(20);
+    text-align: center;
+    font-size: rem(16);
+    font-weight: bold;
+    @include mq(sm) {
+      padding: 50px 0 40px;
+      font-size: rem(26);
+    }
+  }
+  &_box {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 3px solid #f2a900;
+    border-radius: 2px;
+    overflow: hidden;
+    @include mq(sm) {
+      border-radius: 4px;
+    }
+    input {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  &_input {
+    display: table-cell;
+    vertical-align: middle;
+
+    .form-control {
+      width: 100%;
+      height: rem(44);
+      padding: rem(6) rem(12);
+      border: none;
+      box-shadow: none;
+      color: $color_yellow;
+      font-size: rem(14);
+      text-overflow: ellipsis;
+      @include mq(sm) {
+        height: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: rem(22);
+      }
+      &:-ms-input-placeholder,
+      &::placeholder {
+        color: #91908e;
+      }
+    }
+  }
+  &_btn {
+    display: table-cell;
+    vertical-align: middle;
+    width: rem(44);
+    @include mq(sm) {
+      width: 120px;
+    }
+
+    .btn {
+      width: 100%;
+      height: rem(44);
+      padding: 0;
+      border-radius: 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url("../images/shared/icon_search.png") no-repeat center
+        center $color_yellow;
+      background-size: rem(18.5) auto;
+      @include cmn_transition(background-color);
+      @include mq(sm) {
+        height: 70px;
+        background-size: auto auto;
+        font-size: rem(22);
+
+        &:hover {
+          background-color: $hov_yellow;
+        }
+      }
+    }
+  }
+  &_multiply {
+    display: table-cell;
+    vertical-align: middle;
+    width: rem(10.5);
+    height: rem(44);
+    background: url("../images/shared/icon_multiply.png") no-repeat center
+      center;
+    background-size: contain;
+    @include mq(sm) {
+      width: 21px;
+      height: 70px;
+    }
+  }
+}

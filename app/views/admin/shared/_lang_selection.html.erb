@@ -1,0 +1,12 @@
+Language
+<select class="lang-select">
+  <% I18n.available_locales.each do |locale| %>
+  <option value="<%= locale %>"<%= locale == I18n.locale ? 'selected' : '' %>><%= locale %></option>
+<% end %>
+</select>
+<script type="text/javascript">
+$(".lang-select").on("change", function(ev){
+var edit_path = "<%= path %>"
+  window.location.href = edit_path+"/"+$(this).val()
+})
+</script>

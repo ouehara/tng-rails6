@@ -1,0 +1,94 @@
+<% content_for :head do %>
+  <% if !@article.sponsored_content %>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <% end %>
+<% end %>
+
+<% body_class 'post' %>
+<% set_meta_tags title: @title,
+      description: @description %>
+<div class="container post_landingpage">
+  <div class="post_row">
+    <main class="post_main">
+      <article class="post_article post_landingpage">
+        <div class="post_article-hero">
+          <picture>
+            <source media="(min-width:768px)" srcset="<%=@article.title_image.url(:original)%>&d=750x400 770w" sizes="100vw" width="770" height="411">
+            <img data-src="<%=@article.title_image(:medium)%>" src="" alt="" class="lazy" width="390" height="260">
+          </picture>
+        </div>
+        <div class="post_landingpage-content">
+          <section class="post_article-section">
+            <%= render("articles/show") %>
+          </section>
+        </div><!-- /article_content -->
+      </article><!-- /post_article -->
+    </main><!--/.post_main -->
+  </div><!--/.post_row -->
+</div><!--/.post_landingpage -->
+
+<% content_for :foot do %>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    let active = false;
+
+    const lazyLoad = function() {
+      if (active === false) {
+        active = true;
+
+        setTimeout(function() {
+          lazyImages.forEach(function(lazyImage) {
+            if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.classList.remove("lazy");
+
+              lazyImages = lazyImages.filter(function(image) {
+                return image !== lazyImage;
+              });
+
+              if (lazyImages.length === 0) {
+                document.removeEventListener("scroll", lazyLoad);
+                window.removeEventListener("resize", lazyLoad);
+                window.removeEventListener("orientationchange", lazyLoad);
+              }
+            }
+          });
+
+          active = false;
+        }, 200);
+      }
+    };
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+  }
+});
+</script>
+  <% if I18n.locale.to_s == "en" && !@article.sponsored_content %>
+    <% if @article.cached_category.root.name == "Things to Do" || @article.cached_category.root.name == "Accommodation" || @article.cached_category.root.name == "Japanese Culture" || @article.cached_category.root.name == "Experiences" %>
+      <%= render "shared/modal_travel" %>
+    <% else %>
+      <%= render "shared/modal_newsletter" %>
+    <% end %>
+  <% end %>
+<% end %>

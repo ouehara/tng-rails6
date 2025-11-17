@@ -1,0 +1,21 @@
+<svg id="icon4" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_33" data-name="Group 33">
+    <g id="Group_34" data-name="Group 34">
+      <g id="Group_11" data-name="Group 11">
+        <circle id="Oval_Copy_6" data-name="Oval Copy 6" cx="22.5" cy="22.5" r="22.5" fill="#188e9d"/>
+      </g>
+    </g>
+    <g id="Group_12" data-name="Group 12" transform="translate(7 16)">
+      <g id="Rectangle" transform="translate(5.188)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25">
+        <rect width="19.556" height="13" rx="1" stroke="none"/>
+        <rect x="0.625" y="0.625" width="18.306" height="11.75" rx="0.375" fill="none"/>
+      </g>
+      <path id="Line_11" data-name="Line 11" d="M.115.25H11.885" transform="translate(8.778 2.964)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Line_11_Copy" data-name="Line 11 Copy" d="M.115.25H11.885" transform="translate(8.778 6.304)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Line_11_Copy_2" data-name="Line 11 Copy 2" d="M.115.25H11.885" transform="translate(8.778 9.643)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Line_12" data-name="Line 12" d="M.1.1h0" transform="translate(24.545 2.393)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="0.5"/>
+      <path id="Path_3" data-name="Path 3" d="M0,0S-5.256.59-5.256,4.714,0,9.427,0,9.427" transform="translate(5.256 2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      <path id="Path_3_Copy" data-name="Path 3 Copy" d="M0,0S5.256.59,5.256,4.714,0,9.427,0,9.427" transform="translate(25 2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+    </g>
+  </g>
+</svg>

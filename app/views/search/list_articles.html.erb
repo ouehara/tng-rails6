@@ -1,0 +1,28 @@
+<% body_class 'index' %>
+<%= react_component('hero/hero_view',{elements:{category: "search",
+"category_full": @title,"page_type": "index",
+"sp_bg_img": asset_pack_path("media/images/area/index_hero_img_sp.jpg"),
+"pc_bg_img": asset_pack_path("media/images/area/index_hero_img_pc.jpg"),
+"intro_text": @desc,
+"area": "",
+"weather": {},
+"ad": {
+      "img": "",
+      "alt": "",
+      "url": ""
+    }
+},
+}) %>
+<%= render "shared/breadcrumb" %>
+<div class="container">
+  <p class="hero_intro">
+   <%=@desc %>
+  </p>
+</div>
+<section>
+  <div class="container">
+    <%= render "articles/list", articles: @articles %>
+  </div>
+</section>
+<%= render "shared/ads" %>
+<%= render "shared/sns" %>

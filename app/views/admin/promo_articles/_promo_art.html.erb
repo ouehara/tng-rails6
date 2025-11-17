@@ -1,0 +1,7 @@
+<div class="promo-placeholder">
+<%= link_to delete_admin_promo_articles_path(I18n.locale,article.promo_article.find_by_lang(@lang)), :method => :delete, class: "del-art" do %>
+  <span class="glyphicon glyphicon-remove"></span>
+  <%end%>
+  <img src=<%= article.medium_url%> class="img-responsive" />
+  <h3> <%= article.title %></h3>
+</div>

@@ -1,0 +1,33 @@
+
+<div class="select_row">
+    <ul class="select_list">
+        <li class="selected"><%= 
+        if model.is_a?(Hash)
+            model[:name]
+        else
+            model.name
+        end %></li>
+        <li class="sub">
+                <ul>
+                <% 
+                if model.is_a?(Hash)
+                    children = model[:children]
+                else
+                    children =  model.children
+                end 
+                children.each do |c| %>
+                    <% if c.articles.count > 0  %>
+                    <li><%= 
+                    if current_category.nil?
+                    link_to c.name, area_path(c) 
+                    else
+                        link_to c.name, categoryListing_path(current_category,c)
+                    end
+
+                    %> </li>
+                    <% end %>
+                <%end%>
+                </ul>
+        </li>
+    </ul>
+</div>

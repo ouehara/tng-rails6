@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Video</h2>
+      <%= form_tag admin_videos_url, :method => :get,:class => 'locale' do %>
+        <%= select_tag 'locale',  options_for_select( I18n.available_locales, :selected => params[:locale]), :onchange => 'this.form.submit()' %>
+        <% end %>
+      <%= link_to new_admin_video_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title">name</th>
+              <th class="column-title">translations</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody data-role="activerecord_sortable">
+            <% @videos.each do |video| %>
+            <tr class="pointer" data-role="category<%= video.id %>" data-move-url="<%= move_admin_video_url(video.id) %>" data-position=<%= video.position %>">
+              
+              <td><%= link_to video.title, [:admin, video] %></td>
+              
+              <td>
+                <% video.translated_locales.each do |l| %>
+                  <%= l %>
+                <%end%>
+              </td>
+              <td><%= link_to 'Show', [:admin, video] %></td>
+              <td><%= link_to 'Edit', edit_admin_video_path(video) %></td>
+              <td><%= link_to 'Delete', [:admin, video], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('*[data-role=activerecord_sortable]').activerecord_sortable();
+});
+</script>

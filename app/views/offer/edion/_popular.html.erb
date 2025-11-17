@@ -1,0 +1,11 @@
+<% (1..5).each do |i| %>
+<div class="row">
+  <div class="col-xs-9 col-sm-4 popular-img col-xs-center">
+    <%= image_tag(asset_pack_path("media/images/edion/popular/#{i}.png"), class: "img-responsive") %>
+  </div>
+  <div class="col-sm-8 col-xs-12">
+    <h3><%= t("edion.popular.#{i}_headline")%></h3>
+    <p><%= t("edion.popular.#{i}_desc_html")%></p>
+  </div>
+</div>
+<% end %>

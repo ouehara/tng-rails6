@@ -1,0 +1,22 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/gunma_excellence/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/gunma_excellence/">
+<link rel="alternate" hreflang="th" href="https://www.tsunagujapan.com/th/gunma_excellence/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/gunma_excellence/">
+<% end %>
+<% body_class "excellence index lang_" + I18n.locale.to_s %>
+<% set_meta_tags title: t('excellence.title'),
+                description: t('excellence.description'),
+                og: {
+                  image:  ActionController::Base.helpers.asset_pack_path("media/images/area/feature/prefecture/gunma_excellence/1200_630_yumomi.jpg", host: CdnConfig.cloudfront_url)
+                },
+                canonical: "https://www.tsunagujapan.com/gunma_excellence/" %>
+
+<main id="top" class="main">
+  <div class="excellence_hero gunma-a">
+    <div class="excellence_titleArea gunma-a">
+      <h1 class="excellence_title gunma-a"><img src="<%= asset_pack_path("media/images/area/feature/prefecture/gunma_excellence/gunma-h1-a.svg") %>" alt="<%= t('excellence.title') %> / <%= t('excellence.lead') %>" class=""></h1>
+    </div>
+  </div><!-- /.excellence_hero -->
+  <%= render "areas/feature/prefectures/excellence_contents" %>
+</main><!-- /.main -->

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="<%= t('langAttribute') %>">
+<head>
+  <meta charset="UTF-8">
+  <%= display_meta_tags(default_meta_tags) %>
+  <%= csrf_meta_tags %>
+  <!-- Lighthouse Details -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#C50001">
+  <!-- CookieConsent CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+
+  <%= stylesheet_pack_tag 'area_feature_prefecture' %>
+  <% if I18n.locale.to_s == "th" %>
+    <%= stylesheet_pack_tag 'th_font' %>
+  <% end %>
+  <%= stylesheet_link_tag 'print', media: 'print' %>
+
+  <%= render 'shared/favicon' %>
+  <% if I18n.locale.to_s == 'ko' || I18n.locale.to_s == 'en' %>
+    <meta name="naver-site-verification" content="26e17e4844190f65ebd4d223cc8aff61b2c65418" />
+  <% end %>
+  <script>
+      var locales = "<%= I18n.locale %>"
+      var availableLocale = <%= raw I18n.available_locales.to_json %>
+  </script>
+  <script src="https://kit.fontawesome.com/b6dc3cca7d.js" crossorigin="anonymous"></script>
+
+  <%= render partial: "shared/gtm_head" %>
+
+  <% if I18n.locale.to_s == "ko" %>
+    <%= render partial: "shared/naver_analytics" %>
+  <% end %>
+
+  <%= yield :head %>
+</head>
+
+<body class="<%= yield (:body_class) %> <%= I18n.locale %>" data-turbolinks="false">
+<%= render partial: "shared/gtm_body" %>
+
+  <%= yield %>
+  <%#= render "shared/footer" %>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_sub_info">
+        <small class="footer_copyright">
+          &copy;&nbsp;tsunagu Japan, All Rights Reserved.
+        </small>
+      </div>
+    </div>
+  </footer>
+
+  <%= yield :foot %>
+  <%= render partial: "shared/cookieconsent" %>
+
+  <%= javascript_packs_with_chunks_tag 'application', defer: true%>
+  <%= javascript_include_tag 'application', 'defer' => true %>
+  <%= render partial:"shared/analytics" %>
+
+  <script src="/assets/area/feature/kyushu/js/jquery-3.3.1.min.js" data-turbolinks="false"></script>
+  <script src="/assets/area/feature/kyushu/js/jquery.easing.1.3.js" data-turbolinks="false"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js" data-turbolinks="false"></script>
+
+  <script>
+    imageMapResize();
+  </script>
+
+  </body>
+</html>

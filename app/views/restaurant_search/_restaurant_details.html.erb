@@ -1,0 +1,72 @@
+<div class="row restaurant-row">
+  <% if @show_admin_options%>
+  <div class="col-xs-12">
+    <%= render "admin_options", :restaurant => restaurant %>
+  </div>
+  <%end%>
+  <div class="col-sm-4 col-xs-12 ">
+    <div class="frontpage_square">
+      <a onClick="ga('send', 'event', 'savor_restaurant', 'click', '<%= restaurant.name.parameterize %>')" href="<%= restaurant.savor_url %>" target="_blank">
+        <%= image_tag restaurant.search_image, :class=>"img-responsive" %>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-8 col-xs-12">
+    
+    <h2><a onClick="ga('send', 'event', 'savor_restaurant', 'click', '<%= restaurant.name.parameterize %>')" href="<%= restaurant.savor_url %>" target="_blank"><%= restaurant.name %></a></h2>
+    <%if !restaurant.loc.nil? %>
+    <div class="restaurant-loc">
+        <%= image_tag asset_pack_path("media/images/restaurant/loc.png"), :class => "ico"%>
+        <%=  restaurant.loc.township %>, <%=  restaurant.loc.pref %>
+    </div>
+    <%end%>
+    <p><%= restaurant.catch_copy_title %>
+    <div class="collapse" id="<%= 'ca'+restaurant.id.to_s %>"><%= restaurant.catch_copy %></div>
+    
+    <span class="collapse-button collapsed" data-toggle="collapse" data-target="#<%= 'ca'+restaurant.id.to_s %>">
+      <span class="if-collapsed"><%= t("savor.learn_more") %> <span class="icon-arrow-down"></span></span>
+      <span class="if-not-collapsed"><%= t("savor.show_less") %> <span class="icon-arrow-up"></span></span>
+    </span>
+      
+    </p>
+    <div class="restaurant-details">
+      <div class="restaurant-location form-check-inline">
+        <div class="ico glyphicon glyphicon-map-marker"></div> <%= restaurant.address %>
+      </div>
+      <div class="clear"></div>
+      
+      <% if restaurant.cuisine_1 != nil %>
+      <div class="restaurant-tags form-check-inline">
+        <div class="ico icon-book-open"></div>
+        <%= restaurant.cuisine_1 %>  <%= restaurant.cuisine_2 %>  <%= restaurant.cuisine_3 %>
+      </div>
+      <%end%>
+      <div class="clear"></div>
+      <% 
+      if (restaurant.average_price_lunch != 0 && !restaurant.average_price_lunch.nil?) || (restaurant.average_price_grand != 0 &&  !restaurant.average_price_grand.nil?)%>
+      <div class="restaurant-price form-check-inline">
+        <div class="ico yen-sign">¥</div>
+        <%=  "Lunch: #{restaurant.average_price_lunch} JPY" unless restaurant.average_price_lunch == 0  || restaurant.average_price_lunch.nil? %>  <%= " Dinner: #{restaurant.average_price_grand} JPY" unless restaurant.average_price_grand == 0 || restaurant.average_price_grand.nil? %> 
+      </div>
+      <%end%>
+      <div class="clear"></div>
+      <div class="restaurant-closing form-check-inline">
+        <%= image_tag asset_pack_path("media/images/restaurant/closed_ico.png"), :class => "ico"%>
+        Closed: <%= restaurant.holiday %>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="<%= "restaurant-icons rest-icons-lang-#{I18n.locale.to_s}"%>">
+      <div title="<%= t("savor.filter.menu")  %>" class="menu-ico <%= 'deactivated' if restaurant.menu.to_s != "1" %>"></div>
+      <div title="<%= t("savor.filter.staff")  %>" class="langstaff-ico <%= 'deactivated' if restaurant.languages_available.to_s != "1" %>"></div>
+      <div title="<%= t("savor.filter.wifi")  %>" class="wifi-ico <%= 'deactivated' if restaurant.free_wifi_available.to_s  != "1"%>"></div>
+      <div title="<%= t("savor.filter.lunch")  %>"  class="lunch-ico <%= 'deactivated' if restaurant.lunch_menu.to_s  != "1"%>"></div>
+      <div title="<%= t("savor.sidebar.dinner")  %>" class="dinner-ico <%= 'deactivated' if restaurant.late_night_service.to_s  != "1"%>"></div>
+      <div title="<%= t("savor.filter.no_smoking")  %>" class="smoking-ico <%= 'deactivated' if restaurant.no_smoking.to_s  != "1"%>"></div>
+      <div title="<%= t("savor.filter.diet")  %>" class="menuplus-ico  <%= 'deactivated' if restaurant.special_diet.to_s  != "1"%>"></div>
+      <div title="<%= t("savor.filter.western_cutlery")  %>" class="silver-ico <%= 'deactivated' if restaurant.western_cutlery.to_s  != "1"%>"></div>  
+
+    </div>
+  </div>
+</div>
+<hr class="" />

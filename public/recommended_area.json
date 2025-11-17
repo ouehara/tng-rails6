@@ -1,0 +1,79 @@
+{
+  "recommended_area": {
+    "type": "is-area",
+    "item": [
+      {
+        "id": "a_tokyo",
+        "disp_title": "savor.tokyo",
+        "url": "area/tokyo/",
+        "url_category": "tokyo/",
+        "thumbnail": "/assets/top/pic_area_002.jpg",
+        "map_img": "/assets/top/pic_area_map_02.png",
+        "size": "large"
+      },
+      {
+        "id": "a_osaka",
+        "disp_title": "savor.kyoto_sub.osaka",
+        "url": "area/osaka/",
+        "url_category": "osaka/",
+        "thumbnail": "/assets/top/pic_area_003.jpg",
+        "map_img": "/assets/top/pic_area_map_03.png",
+        "size": "large"
+      },
+      {
+        "id": "a_kyoto",
+        "disp_title": "savor.kyoto_sub.kyoto",
+        "url": "area/kyoto/",
+        "url_category": "kyoto/",
+        "thumbnail": "/assets/top/pic_area_0006.jpg",
+        "map_img": "/assets/top/pic_area_map_06.png",
+        "size": "large"
+      },
+      {
+        "id": "a_fukuoka",
+        "disp_title": "savor.kyushu_sub.fukuoka",
+        "url": "area/fukuoka/",
+        "url_category": "fukuoka/",
+        "thumbnail": "/assets/top/pic_area_0007.jpg",
+        "map_img": "/assets/top/pic_area_map_07.png",
+        "size": "large"
+      },
+      {
+        "id": "a_hokkaido",
+        "disp_title": "savor.hokkaido",
+        "url": "area/hokkaido/",
+        "url_category": "hokkaido/",
+        "thumbnail": "/assets/top/pic_area_0001.jpg",
+        "map_img": "/assets/top/pic_area_map_01.png",
+        "size": "medium"
+      },
+      {
+        "id": "a_kanagawa",
+        "disp_title": "savor.tokyo_sub.kanagawa",
+        "url": "area/kanagawa/",
+        "url_category": "kanagawa/",
+        "thumbnail": "/assets/top/pic_area_005.jpg",
+        "map_img": "/assets/top/pic_area_map_05.png",
+        "size": "medium"
+      },
+      {
+        "id": "a_gifu",
+        "disp_title": "savor.honshu_sub.gifu",
+        "url": "area/gifu/",
+        "url_category": "gifu/",
+        "thumbnail": "/assets/top/pic_area_0004.jpg",
+        "map_img": "/assets/top/pic_area_map_04.png",
+        "size": "medium"
+      },
+      {
+        "id": "a_okinawa",
+        "disp_title": "savor.okinawa",
+        "url": "area/okinawa/",
+        "url_category": "okinawa/",
+        "thumbnail": "/assets/top/pic_area_008.jpg",
+        "map_img": "/assets/top/pic_area_map_08.png",
+        "size": "medium"
+      }
+    ]
+  }
+}

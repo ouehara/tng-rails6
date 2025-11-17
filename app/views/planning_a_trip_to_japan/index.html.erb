@@ -1,0 +1,56 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/en/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="ja" href="https://www.tsunagujapan.com/ja/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="zh-cmn-Hans" href="https://www.tsunagujapan.com/zh-hans/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="th" href="https://www.tsunagujapan.com/th/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="vi" href="https://www.tsunagujapan.com/vi/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="ko" href="https://www.tsunagujapan.com/ko/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="id" href="https://www.tsunagujapan.com/id/planning-a-trip-to-japan/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/planning-a-trip-to-japan/">
+<% end %>
+<% body_class "area index planning_trip lang_" + I18n.locale.to_s %>
+<% set_meta_tags title: t('planning_trip.page_title'),
+                 description: t('planning_trip.page_description'),
+                 og: {
+                  image:  ActionController::Base.helpers.asset_pack_path("media/images/planning_a_trip_to_japan/hero_mob.jpg", host: CdnConfig.cloudfront_url)
+                 } %>
+<main id="top" class=" main">
+  <div class="area-hero planning-a-trip-to-japan">
+    <div id="teaser" class="teaser">
+      <h1><%= t('planning_trip.title_html') %></h1>
+    </div>
+  </div><!-- /.area-hero -->
+
+  <section class="area-contents">
+
+    <h3 class="planning-h3"><%= t('planning_trip.description') %></h3>
+
+    <% (1..5).each do |n| %>
+
+      <section id="transportation" class="service">
+        <h2><%= t('planning_trip.articles.'+ n.to_s(10) + '.title') %></h2>
+        <p class="lead"><%= t('planning_trip.articles.' + n.to_s(10) + '.description') %></p>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="<%= t('planning_trip.articles.' + n.to_s(10) + '.1.url') %>"><img src="<%= asset_pack_path("media/images/planning_a_trip_to_japan/#{I18n.locale.to_s}/" + n.to_s(10) + "/1.jpg") %>" class="img-fluid"><div><%= t('planning_trip.articles.' + n.to_s(10) + '.1.text') %></div></a></div>
+            <div class="swiper-slide"><a href="<%= t('planning_trip.articles.' + n.to_s(10) + '.2.url') %>"><img src="<%= asset_pack_path("media/images/planning_a_trip_to_japan/#{I18n.locale.to_s}/" + n.to_s(10) + "/2.jpg") %>" class="img-fluid"><div><%= t('planning_trip.articles.' + n.to_s(10) + '.2.text') %></div></a></div>
+            <div class="swiper-slide"><a href="<%= t('planning_trip.articles.' + n.to_s(10) + '.3.url') %>"><img src="<%= asset_pack_path("media/images/planning_a_trip_to_japan/#{I18n.locale.to_s}/" + n.to_s(10) + "/3.jpg") %>" class="img-fluid"><div><%= t('planning_trip.articles.' + n.to_s(10) + '.3.text') %></div></a></div>
+            <div class="swiper-slide"><a href="<%= t('planning_trip.articles.' + n.to_s(10) + '.4.url') %>"><img src="<%= asset_pack_path("media/images/planning_a_trip_to_japan/#{I18n.locale.to_s}/" + n.to_s(10) + "/4.jpg") %>" class="img-fluid"><div><%= t('planning_trip.articles.' + n.to_s(10) + '.4.text') %></div></a></div>
+            <div class="swiper-slide"><a href="<%= t('planning_trip.articles.' + n.to_s(10) + '.5.url') %>"><img src="<%= asset_pack_path("media/images/planning_a_trip_to_japan/#{I18n.locale.to_s}/" + n.to_s(10) + "/5.jpg") %>" class="img-fluid"><div><%= t('planning_trip.articles.' + n.to_s(10) + '.5.text') %></div></a></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="num"><span class="now">01</span>/05</div>
+      </section>
+    <% end %>
+  </div><!-- /.area-contents -->
+</main><!-- /.main -->
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

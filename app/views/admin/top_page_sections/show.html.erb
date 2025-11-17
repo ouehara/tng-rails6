@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @top_page_section.title %>
+</p>
+
+<p>
+  <strong>Display:</strong>
+  <%= @top_page_section.display %>
+</p>
+
+<p>
+  <strong>More btn:</strong>
+  <%= @top_page_section.more_btn_text %>
+</p>
+
+<p>
+  <strong>More btn:</strong>
+  <%= @top_page_section.more_btn_link %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @top_page_section.active %>
+</p>
+
+<%= link_to 'Edit', edit_admin_top_page_section_path([:admin, @top_page_section]) %> |
+<%= link_to 'Back', admin_top_page_sections_path %>

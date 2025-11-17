@@ -1,0 +1,163 @@
+/* slider */
+.carousel {
+  &.carousel-slider .control-arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -19px;
+    background-size: contain;
+    background-image: none;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+
+    &:before {
+      margin-bottom: 9px;
+      margin-left: 6px;
+    }
+
+    @include mq(sm) {
+      width: 38px;
+      height: 38px;
+      margin-top: -19px;
+      transition: opacity ease-out 0.2s;
+
+      &:before {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.slider-3,
+.slider-4 {
+  @include mq(sm) {
+    li {
+      max-width: 33%;
+    }
+  }
+
+  .carousel {
+    ul {
+      white-space: nowrap;
+
+      .thumb {
+        width: 80%;
+        max-width: 80%;
+        border: none;
+
+        @include mq(sm) {
+          width: 32%;
+        }
+      }
+    }
+
+    &.carousel-slider {
+      margin: 0 auto;
+      padding-bottom: 30px;
+
+      .control-arrow {
+        margin-top: -25px;
+      }
+    }
+  }
+
+  .slide {
+    iframe {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      min-width: 95%;
+      max-width: 95%;
+      margin: 0 auto;
+
+      img {
+        box-shadow: 2px 2px 4px #000;
+      }
+
+      @include mq(sm) {
+        padding-right: 20px;
+        max-width: 100%;
+        min-width: 100%;
+
+        img {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.slider-4 {
+  @include mq(sm) {
+    li {
+      max-width: 25%;
+    }
+  }
+}
+
+.video-slide {
+  h4 {
+    white-space: pre-wrap;
+    color: black;
+  }
+
+  @include mq(sm) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    h4 {
+      padding-left: 25px;
+    }
+
+    >* {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+.carousel {
+  .slide {
+    text-align: left;
+    background: none;
+  }
+
+  &.carousel-slider {
+    max-height: 320px;
+
+    @include mq(sm) {
+      max-height: initial;
+    }
+  }
+}
+
+.control-dots {
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+
+  .dot {
+    transition: opacity 0.25s ease-in;
+    opacity: 0.3;
+    box-shadow: none !important;
+    background: #888 !important;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 8px;
+
+    &:hover,
+    &.selected {
+      background: #f2a900 !important;
+      opacity: 1;
+    }
+  }
+}

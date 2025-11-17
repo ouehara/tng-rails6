@@ -1,0 +1,43 @@
+<div class="container staticPages">
+  <h1 class="staticPages_heading"><%= title "Sitemap" %></h1>
+  <div class="staticPages_contents">
+    <section>
+        <h2>Areas</h2>
+        <% Area.roots.each do |root| %>
+            <h3><a href='<%= area_path(root)%>'> <%= root.name %> </a></h3>
+            <%if root.has_children? %>
+                <% root.children.each do |child| %>
+                    <a class='<%= area_path(child)%>' href='#'><%= child.name %></a>
+                    <br>
+                    <% child.children.each do |c| %>
+                        <a class='<%= area_path(c)%>' href='#'><%= c.name %></a>
+                    <% end %>
+                <% end %>
+            <% end %>
+        <% end %>
+    </section>
+    <section>
+      <h2>Category</h2>
+      <% Category.roots.each do |root| %>
+          <h3><a href='<%= category_path(root)%>'> <%= root.name %> </a></h3>
+          <%if root.has_children? %>
+
+              <% root.children.each do |child| %>
+                  <a class='<%= category_path(child)%>'  href='#'><%= child.name %></a>
+                  <br>
+                  <% child.children.each do |c| %>
+                      <a class='<%= category_path(c)%>'  href='#'><%= c.name %></a>
+                  <% end %>
+              <% end %>
+          <% end %>
+      <% end %>
+    </section>
+    <section>
+      <h2>Other usefull links</h2>
+      <a href="https://www.d2cx.co.jp/contact/" target="_blank">Contact</a>
+      <a href="partners/">Partner</a>
+      <a href="coupon/">Coupons</a>
+      <a href="video/">Video</a>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+.edion {
+  margin-bottom: 20px;
+
+  p {}
+
+  h1,
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header-image {
+    border: 1px solid #666464;
+    margin-top: 20px;
+  }
+
+  .colored-boxes {
+    margin-top: 20px;
+  }
+
+  .edion-blue {
+    text-align: center;
+    color: #1e3190;
+    margin-bottom: 20px;
+  }
+
+  .edion-banner {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .colored-bg {
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+  }
+
+  .yellow-bg {
+    background: #eacc4f;
+  }
+
+  .green-bg {
+    background: #6eb92b;
+  }
+
+  .blue-bg {
+    background: #00b1ed;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    display: block;
+    color: #595656;
+    text-align: right;
+  }
+
+  .popular-img img {
+    margin-top: 15px;
+  }
+
+  .top-img {
+
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ccc;
+
+    .img-responsive {
+      max-width: 60%;
+      height: auto;
+      display: inline-block;
+    }
+
+    .best-selling {
+      width: 100px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: #ee781e;
+      color: white;
+      padding: 5px;
+    }
+  }
+
+  .black-bg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #39302d;
+    color: white;
+    padding: 5px;
+    padding-left: 15px;
+  }
+
+  .top10-p2 {
+    .price {
+      margin-top: 5px;
+    }
+  }
+
+  .nopadding-top {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .mtop10 {
+    margin-top: 10px;
+  }
+
+  .mbot20 {
+    margin-bottom: 20px;
+  }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+  }
+
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

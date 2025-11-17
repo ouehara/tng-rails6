@@ -1,0 +1,1864 @@
+id,name_id
+1,nasional
+2,hokkaido
+3,kanto
+4,chubu
+5,kansai
+6,chugoku
+7,shikoku
+8,kyushu
+9,jepang timur
+10,jepang barat
+11,hokuriku
+12,tohoku
+13,kamui kotan
+14,tokachi
+15,niseko
+16,asahikawa
+17,susukino
+18,wakkanai
+19,muroran
+20,sapporo
+21,noboribetsu
+22,otaru
+23,furano
+24,biei
+25,abashiri
+26,chitose
+27,obihiro
+28,yamagata
+29,morioka
+30,zao
+31,hirosaki
+32,yokote
+33,iwaki
+34,matsushima
+35,kakunodate
+36,aizu
+37,aomori
+38,iwate
+39,fukushima
+40,akita
+41,sendai
+42,hachinohe
+43,miyagi
+44,shonan
+45,hakone
+46,chiyoda
+47,kannai
+48,ginza
+49,shinagawa
+50,akasaka
+51,akihabara
+52,aoyama
+53,bashamichi
+54,asakusa
+55,nishijima
+56,hachioji
+57,chiba
+58,iidabashi
+59,sangenjaya
+60,motomachi
+61,shinjuku
+62,tsukiji
+63,kichijoji
+64,izu oshima
+65,ogasawara
+66,akabane
+67,gora
+68,kamakura
+69,minatomirai
+70,ueno
+71,takadanobaba
+72,omotesando
+73,okachimachi
+74,kawasaki
+75,nagatacho
+76,iriya
+77,sakuragicho
+78,tonosawa
+79,fujisawa
+80,ninomiya
+81,shinokubo
+82,makuhari
+83,saitama
+84,hakone yumoto
+85,koshu
+86,jiyugaoka
+87,ryogoku
+88,utsunomiya
+89,ochanomizu
+90,tokyo
+91,nihonbashi
+92,jimbocho
+93,tawaramachi
+94,haneda
+95,shinbashi
+96,kappabashi
+97,kagurazaka
+98,omiya
+99,chichibu
+100,shiodome
+101,daikanyama
+102,azabu
+103,denenchofu
+104,ogikubo
+105,kuramae
+106,hongo
+107,gunma
+108,kawagoe
+109,okutama
+110,hayama
+111,odaiba
+112,nakameguro
+113,narita
+114,nikko
+115,kinshicho
+116,tsukishima
+117,roppongi
+118,kiyosumi shirakawa
+119,oshiage
+120,otemachi
+121,yurakucho
+122,ebisu
+123,kanda
+124,ikebukuro
+125,marunouchi
+126,maihama
+127,harajuku
+128,shimokitazawa
+129,shibuya
+130,ariake
+131,tochigi
+132,yokohama
+133,semenanjung izu
+134,nakano
+135,nishi-kasai
+136,hamamatsucho
+137,chonan
+138,ningyocho
+139,minowa
+140,ibaraki
+141,mikata
+142,tsujido
+143,yotsuya
+144,setagaya
+145,takamatsu
+146,kinugawa
+147,azabujuban
+148,mito
+149,hibiya
+150,nasu
+151,sawara
+152,atsugi
+153,sengokuhara
+154,sakushima
+155,okazaki
+156,kaga
+157,tokoname
+158,yuzawa
+159,fukui
+160,hakuba
+161,izu
+162,hida
+163,hamamatsu
+164,takayama
+165,niigata
+166,obuse
+167,atami
+168,shizuoka
+169,karuizawa
+170,kanazawa
+171,nagoya
+172,togakushi
+173,aichi
+174,ishikawa
+175,mino
+176,nozawa
+177,yamanashi
+178,toyama
+179,gotenba
+180,kaketsuka
+181,kurobe tateyama
+182,osaka
+183,arashiyama
+184,umeda
+185,uji
+186,hirakata
+187,kobe
+188,shijo
+189,gion
+190,higashiyama
+191,karasuma
+192,miyanoshita
+193,shinsaibashi
+194,fushimi
+195,tsuruhashi
+196,tennoji
+197,suzuka
+198,hanshin
+199,otani
+200,sagano
+201,nara
+202,omihachiman
+203,himeji
+204,mifune
+205,mie
+206,hyogo
+207,kawaramachi
+208,ine
+209,nishijin
+210,ninenzaka
+211,kyoto
+212,wakayama
+213,dotonbori
+214,namba
+215,hikone
+216,hiroshima
+217,kurashiki
+218,izumo
+219,ogijima
+220,onomichi
+221,imabari
+222,sensuijima
+223,takehara
+224,miyajima
+225,tottori
+226,okayama
+227,shodoshima
+228,matsuyama
+229,tokushima
+230,kochi
+231,ehime
+232,kagawa
+233,hakata
+234,aso
+235,kumamoto
+236,yomitan
+237,kunigami
+238,pulau taketomi
+239,sakurajima
+240,kita kyushu
+241,nagasaki
+242,naha
+243,pulau ishigaki
+244,yakushima
+245,oita
+246,beppu
+247,kokura
+248,pulau iriomote-jima
+249,fukuoka
+250,amami oshima
+251,ibusuki
+252,miyazaki
+253,miyakojima
+254,kumejima
+255,pulau kerama
+256,pulau ogasawara
+257,pabrik
+258,snorkeling
+259,bilyar
+260,jogging
+261,perjalanan gratis
+262,salon kecantikan
+263,pemandangan indah
+264,air terjun
+265,observatorium
+266,pendakian gunung
+267,hanami
+268,noh
+269,gereja
+270,kebun
+271,bioskop
+272,teater
+273,kehidupan malam
+274,pemandian kaki
+275,spa
+276,mikoshi
+277,kolam renang
+278,kapal pesiar
+279,memetik buah
+280,perjalanan sehari
+281,pemandian terbuka
+282,salon rambut
+283,menonton pertandingan baseball
+284,piknik
+285,memancing
+286,michi no eki
+287,pasar pagi
+288,iluminasi
+289,ziarah
+290,pasar
+291,karaoke
+292,selam skuba
+293,wisteria
+294,berkemah
+295,kapal feri
+296,bintang
+297,spot malam
+298,kelas memasak
+299,power spot
+300,taman
+301,kabuki
+302,kebun binatang
+303,ski
+304,papan seluncur salju
+305,ukiyoe
+306,arung jeram
+307,hiking
+308,kaligrafi
+309,berjalan kaki
+310,arsitektur
+311,pemandangan malam
+312,daun-daun musim gugur
+313,kerajinan tradisional
+314,pelayaran
+315,sumo
+316,akuarium
+317,olahraga
+318,taman hiburan
+319,kastil
+320,anime
+321,situs warisan dunia
+322,bersepeda
+323,sento
+324,kafe bertema
+325,kuil buddha
+326,kuil shinto
+327,meditasi
+328,sumber air panas
+329,ninja
+330,kimono
+331,stadion
+332,pemandangan kota retro
+333,kolam
+334,rawa
+335,laut
+336,planetarium
+337,museum
+338,peternakan
+339,danau
+340,origami
+341,jembatan gantung
+342,gua
+343,binatang
+344,gym
+345,pacuan kuda
+346,permainan meloloskan diri
+347,seni bela diri
+348,lokakarya keramik
+349,kota dataran rendah
+350,aset budaya
+351,kamar bergaya jepang
+352,tiga pemandangan populer Jepang
+353,galeri kesenian
+354,pantai
+355,festival musik
+356,gua batu kapur
+357,berbelanja
+358,rumah hantu
+359,menyala
+360,toko buku
+361,tur pabrik
+362,trek balap
+363,kincir ria
+364,balon udara
+365,olahraga air
+366,pulau terpencil
+367,alam
+368,torii
+369,pasar loak
+7914,rencana perjalanan
+7934,acara
+370,warung makan
+371,karaage
+372,teh jepang
+373,restoran
+374,kue
+375,tiram
+376,yakisoba
+377,vegetarian
+378,bir
+379,kari
+380,nabe
+381,matcha
+382,kaisendon
+383,makan malam
+384,tuna
+385,organik
+386,tonkatsu
+387,paket makanan
+388,mie ramen instan
+389,shoyu ramen
+390,hojicha
+391,izakaya
+392,stroberi
+393,tempura
+394,daging sapi kobe
+395,sashimi
+396,daging sapi matsusaka
+397,ekiben
+398,shio ramen
+399,miso ramen
+400,tonkotsu ramen
+401,wagyu
+402,tendon
+403,makanan ringan
+404,salad
+405,daging babi
+406,lidah sapi
+407,masakan buddha
+408,kue
+409,kepiting
+410,wafel
+411,lobster berduri
+412,pizza
+413,gyoza
+414,vegan
+415,kafe
+416,roti
+417,beras
+418,shochu
+419,onigiri
+420,unagi
+421,natto
+422,okonomiyaki
+423,takoyaki
+424,daging kuda
+425,sukiyaki
+426,sake jepang
+427,hamburger
+428,donburi
+429,sandwich
+430,chanko
+431,gorengan
+432,buah
+433,kaiseki
+434,halal
+435,makanan cepat saji
+436,makanan jepang
+437,restoran keluarga
+438,keju fondue
+439,oden
+440,udon
+441,bulu babi
+442,makan siang
+443,michelin
+444,jajanan
+445,wiski
+446,coklat
+447,chuhai
+448,wagashi
+449,soba
+450,yakitori
+451,prasmanan
+452,makanan setempat
+453,sarapan pagi
+454,es krim
+455,kopi
+456,panekuk
+457,omurice
+458,napolitan
+459,udang goreng
+460,oyako-don
+461,ramen
+462,alkohol
+463,kafetaria
+464,teppanyaki
+465,makaron
+466,permen
+467,bento
+468,yakiniku
+469,ramune
+470,furikake
+471,es serut
+472,ochazuke
+473,susu
+474,sushi
+475,tofu
+476,susu kedelai
+477,anko
+478,mochi
+479,teh hijau
+480,edamame
+481,miso
+482,kecap asin
+483,makanan laut
+484,serangga
+485,parfait
+486,kepiting salju
+487,kepiting kobako
+488,jibuni
+489,shabu-shabu
+490,gyudon
+491,unadon
+492,katsudon
+493,ikan fugu
+494,cheesecake
+495,baumkuchen
+496,sup kari
+497,mie somen
+498,kesemak
+499,gurita
+500,cumi-cumi
+501,dorayaki
+502,puding
+503,steak burger
+504,sate babi
+505,maid cafe
+506,kaiten zushi
+507,okonomiyaki ala hiroshima
+508,kerupuk nasi
+509,monjayaki
+510,pasta
+511,kroket
+512,bar
+513,steak
+514,okonomiyaki ala osaka
+515,perawatan rambut
+516,alat tulis
+517,serum kecantikan
+518,sumpit
+519,parfum
+520,supermaket
+521,kamera
+522,toko barang bekas
+523,perawatan kulit
+524,apotek
+525,uang
+526,toko 100 yen
+527,obat
+528,mini market
+529,mainan
+530,kacamata
+531,department store
+532,suvenir
+533,jalan perbelanjaan
+534,pakaian
+535,makeup
+536,yukata
+537,aksesoris
+538,elektronik
+539,toko outlet
+540,penanak nasi
+541,bahan makanan
+542,kosmetik obat
+543,pakaian jepang
+544,kosmetik
+545,fashion
+546,hotel apartemen
+547,shukubo
+548,kamar hotel dengan dapur
+549,love hotel
+550,guest house
+551,hostel
+552,ryokan
+553,pesan
+554,keramahan
+555,salam
+556,stasiun kereta
+557,kereta bawah tanah
+558,area merokok
+559,internet
+560,badai
+561,bandara
+562,pernikahan
+563,bebas pajak
+564,sepeda
+565,shinkansen
+566,mobil
+567,tokyo metro
+568,mobil sewa
+569,wifi
+570,kupon
+571,aplikasi
+572,tiket terusan
+573,loker
+574,taxi
+575,trem
+576,kereta
+577,rel kereta
+578,aksesibilitas
+579,bus
+5564,cuaca
+7923,anggaran perjalanan
+7939,transportasi
+7940,tata krama
+580,musim dingin
+581,musim gugur
+582,musim semi
+583,musim panas
+584,festival salju
+585,hinamatsuri
+586,pelayan
+587,kembang api
+588,geisha
+589,maiko
+590,sakura
+591,pameran
+592,seni
+593,idol
+594,sekolah
+595,bonsai
+596,bahasa jepang
+597,alat musik
+598,video game
+599,buku
+600,festival
+601,maskot
+602,natal
+603,tren
+604,ume
+605,lavender
+606,baseball
+607,bunga matahari
+608,murah
+609,ginkgo
+610,otaku
+611,barang besi nambu tekki
+612,hakama
+613,daun emas
+614,hydrangea
+615,goshuin
+616,golden week
+617,jimat
+618,tokyo tower
+619,museum anak-anak anpanman
+620,museum peringatan sakamoto ryoma
+621,kuil atsuta
+622,taman laut odaiba
+623,fuji-q highland
+624,studio toei kyoto
+625,azumabashi
+626,kebun binatang ueno
+627,yokohama cosmo world
+628,museum mizuki shigeru
+629,nagashima spa land
+630,taman kinrin
+631,museum arsitektur udara terbuka edo-tokyo
+632,akuarium sumida
+633,museum seni suntory
+634,taman yamashita
+635,tokyo skytree
+636,istana kekaisaran
+637,bandara internasional chubu centrair
+638,tokyo dome city
+639,museum snoopy
+640,roppongi hills
+641,abeno harukas
+642,museum ramen shin-yokohama
+643,akuarium sunshine
+644,umeda sky building
+645,yokohama red brick warehouse
+646,resor reoma
+647,tokyo joypolis
+648,korakuen
+649,sirkuit suzuka
+650,gedung pemerintahan metropolitan tokyo
+651,akuarium enoshima
+652,teater kabuki-za
+653,kastil shurijo
+654,akuarium churaumi okinawa
+655,museum seni kontemporer abad ke-21
+656,legoland discovery center
+657,tokyo dome
+658,akuarium kaiyukan osaka
+659,bandara internasional kansai
+660,bandara narita
+661,disney sea
+662,bandara shin-chitose
+663,bandara haneda
+664,disneyland
+665,universal studios japan
+666,dermaga pelayaran danau ashi
+667,museum mie instan
+668,kebun binatang asahiyama
+669,peternakan keluarga danau nasu rindo
+670,taman wisteria kawachi
+671,nikko edo mura
+672,tsutenkaku
+673,ryogoku kokugikan
+674,huis ten bosch
+675,museum seni sumida hokusai
+676,museum seni prefektur shizuoka
+677,kota sunshine
+678,omotesando hills
+679,laLaport
+680,coppice kichijoji
+681,aqua city odaiba
+682,museum sains nasional
+683,asakusa hanayashiki
+684,tokyo cruise
+685,takeiya
+686,makuhari messe
+687,yokohama arena
+688,forum internasional tokyo
+689,stadion ajinomoto
+690,museum sains kota nagoya
+691,toyokawa inari
+692,museum hatcho miso
+693,kyoto tower
+694,taman ueno
+695,akuarium miyajima
+696,miyajima ropeway
+697,museum sejarah masyarakat miyajima
+698,sky circus dek observasi sunshine 60
+699,planetarium manten
+700,teater tokyo metropolitan
+701,kebun binatang alam takasakiyama
+702,kebun binatang nogeyama
+703,adventure world
+704,fuji safari park
+705,taman zoologi tama
+706,afrika safari
+707,aqua toto gifu
+708,aquamarine fukushima
+709,maxell aqua park shinagawa
+710,yokohama hakkeijima sea paradise
+711,kamogawa sea world
+712,pelabuhan akuarium publik nagoya
+713,museum peringatan tambang tembaga besshi
+714,umiterasu14
+715,yawata steel works
+716,menara pelabuhan chiba
+717,kebun raya universitas hokkaido
+718,museum nasional tokyo
+719,zepp tokyo
+720,the little prince museum
+721,planetarium konica minolta
+722,namjatown
+723,j-world tokyo
+724,teater sunshine
+725,museum orient kuno
+726,universitas nanzan
+727,menara nihon terebi
+728,nhk studio park
+729,universitas tokyo
+730,universitas kyoto
+731,universitas nagoya
+732,chion-in
+733,kuil daigoji
+734,kuil komyo-ji
+735,3331 arts chiyoda
+736,tokyo wonder site
+737,mori art museum
+738,museum fotografi metropolitan tokyo
+739,asosiasi art tokyo
+740,geisai
+741,nakanojo biennale
+742,museum seni kontemporer towada
+743,museum terbuka Kirishima
+744,museum peringatan perdamaian hiroshima
+745,museum bir sapporo
+746,museum bandai
+747,twin ring motegi
+748,museum edo tokyo
+749,museum ghibli mitaka
+750,tokyo solamachi
+751,tokyo disney resort
+752,sanrio puroland
+753,tokyo summer land
+754,taman tokiwa
+755,taman pemerintah nasional alps azumino
+756,yomiuri land
+757,taman bunga ashikaga
+758,museum seni chichu
+759,toshimaen
+760,miraikan
+761,museum dinosaurus prefektur fukui
+762,taman jojima kogen
+763,mitsui greenland
+764,mitsui greenland
+765,taman beruang noboribetsu
+766,taman kuda muranaka
+767,farm inn anima no sato
+768,peternakan kitakitsune
+769,taman okhotsk chipmunk
+770,peternakan rusa tonakai
+771,hakodate mejikan
+772,kanemori red brick warehouse
+773,kebun raya tropis hakodate
+774,gereja ortodoks hakodate
+775,pasar pagi hakodate
+776,balai umum tua distrik kota hakodate
+777,museum seni nasional
+778,museum seni kota osaka
+779,mesum seni abeno harukas
+780,museum sains osaka
+781,museum sejarah alam kota osaka
+782,museum keramik oriental kota osaka
+783,museum seni sanno
+784,taman kehidupan laut tokyo
+785,akuarium shinagawa
+786,taman kehidupan adachi
+787,green dome nettaikan
+788,kebun binatang inokashira
+789,yokohama landmark tower
+790,hikawamaru
+791,yokohama marine tower
+792,museum boneka yokohama
+793,yokohama hakkeijima sea paradise
+794,pabrik bir kirin yokohama
+795,kebun binatang kota yokohama zoorasia
+796,stadion yokohama
+797,peternakan rusa ezo
+798,okurayama ski jump stadium
+799,bangunan pusat perdagangan dunia
+800,balai kota kobe
+801,hakuba ski jumping stadium
+802,pertunjukan non-verbal teater kyoto gear
+803,yunessun
+804,museum kereta api
+805,pusat kesenian nasional tokyo
+806,galeri pusat kesenian mori
+807,menara taman izumi
+808,museum pos jepang
+809,jembatan yanagibashi
+810,tkp garden city umeda osaka
+811,museum sumida edo kiriko
+812,chochinya onda
+813,asakusa zanmai 99 times
+814,museum seni pola
+815,museum seni okada
+816,outlet premium gotemba
+817,taman buah hamamatsu tokinosumika
+818,museum gotosumio
+819,museum seni tendoshi
+820,museum seni yamatane
+821,museum sato sakura
+822,museum seni gyokudo
+823,museum peringatan kamakura kaburagi kiyokata
+824,museum seni narukawa
+825,museum seni mizuno
+826,museum seni menard
+827,museum seni meito
+828,museum seni niimi
+829,museum seni adachi
+830,museum seni hirayama ikuo
+831,museum peringatan industri dan teknologi toyota
+832,museum seni tokugawa
+833,scmaglev dan taman kereta api
+834,kebun binatang dan kebun raya higashiyama
+835,jr central tower
+836,midland square
+837,oasis 21
+838,meiji mura
+839,museum sejarah oya
+840,menara kapsul nakagin
+841,kebun binatang maruyama
+842,museum penjara abashiri
+843,situs takdir yoro
+844,resor ski kokusai sapporo
+845,sapporo teine ski center
+846,resor ski otaru tenguyama
+847,resor ski furano
+848,museum ninja igaryu
+849,musuem sejarah sainomiya
+850,kereta gantung akechidaira
+851,museum alam nikko prefektur tochigi
+852,gereja katolik oura
+853,kebun binatang alami edogawa
+854,museum nasional seni barat
+855,bunkamura
+856,museum seni metropolitan tokyo
+857,museum seni teien metropolitan tokyo
+858,museum nasional tokyo seni modern
+859,museum bom atom nagasaki
+860,taman ski shigakogen
+861,taman nasional kyoto gyoen
+862,nakamise
+863,selat kanmon
+864,ngarai oirase
+865,taman nara
+866,hasedera
+867,sungai shimanto
+868,konpira onsen
+869,kuil dazaifu tenmangu
+870,mojiko retro
+871,kinosaki onsen
+872,ameyoko
+873,nikko toshogu
+874,rute pegunungan tateyama kurobe alpine
+875,kinkakuji
+876,kuil kiyomizu-dera
+877,distrik higashichaya
+878,chuzenji
+879,kaminarimon
+880,raiden
+881,miyake hachimangu
+882,tokyo daijingu
+883,fuji terebi
+884,kastil takamatsu
+885,shuzenji
+886,shuzenji onsen
+887,gunung takao
+888,kastil kumamoto
+889,zeniarai benzaiten
+890,taman peringatan asahiyama
+891,ise jingu
+892,kolam shinobazu
+893,pasar omicho
+894,hokai-ji
+895,jufuku-ji
+896,eisho-ji
+897,air terjun kirifuri
+898,tsurugaoka hachimangu
+899,oku no hosomichi
+900,kuil kawagoe hikawa
+901,shirakawago
+902,desa ramen asahikawa
+903,kawagoehachimangu
+904,kuil hozenji
+905,taman hitsujiyama
+906,joju-in
+907,an'yo-in
+908,minato mirai 21
+909,pasar tsukiji
+910,kuil chichibu
+911,air terjun chichibu kegon
+912,jan jan yokocho
+913,air terjun kegon
+914,kastil bitchu matsuyama
+915,kurashiki bikan historical quarter
+916,kastil matsuyama
+917,ueno daibutsu
+918,danau shinji
+919,selat naruto
+920,kuil hanazono jinja
+921,kuil hakuto
+922,kuil yokai
+923,gunung daisen
+924,kastil kokura
+925,taman zounohana
+926,kamigamo-jinja
+927,kastil takeda
+928,okazaki jinja
+929,taman ritsurin
+930,kashiya yokocho
+931,senjogahara
+932,nakano broadway
+933,rainbow bridge
+934,istana kekaisaran
+935,niyodogawa
+936,kastil kochi
+937,kuil byodoin
+938,harunire terrace
+939,katsurahama
+940,pasar luar tsukiji
+941,chikurin-ji
+942,taman monet
+943,danau ashi
+944,kuil meiji jingu
+945,kastil kanazawa
+946,taman mori
+947,hakusan domon
+948,meoto iwa
+949,tanjung ashizuri
+950,stasiun osaka
+951,tsuyu tenjinsha
+952,ngarai takase
+953,sungai mogami
+954,air terjun sobo
+955,pasar karato
+956,kuil yakushi-ji
+957,kuil horyuji
+958,taman kenrokuen
+959,kotokuin
+960,ofunna kannon
+961,kantor kuil hokkaido
+962,kuil aoshima
+963,ngarai takachiho
+964,kastil nagoya
+965,air terjun akiu
+966,yamanaka onsen
+967,kuil kumagayasan hoonji sekte soto
+968,kabukicho
+969,yunogo onsen
+970,yubara onsen
+971,maga onsen
+972,okutsu onsen
+973,museum arsitektur terbuka edo-tokyo
+974,kurobe dam
+975,stasiun shimonada
+976,setouchi shimanami expressway
+977,villa gunung garyu
+978,kuil nanzenji
+979,kastil wakayama
+980,tembok salju
+981,kastil matsumoto
+982,kuil atago
+983,gokayama
+984,ngarai kurobe
+985,kumano hongu taisha
+986,kastil inuyama
+987,gunung koya
+988,gunung sarakura
+989,owakudani
+990,kuil azumamaro
+991,kirishima-jingu
+992,pantai yonehara
+993,jembatan tsujun
+994,air terjun fufu
+995,taman nasional shinjuku gyoen
+996,omoide yokocho
+997,kuil enoshima
+998,observatorium enoshima
+999,shukkeien
+1000,katayamazu onsen
+1001,arima onsen
+1002,gua akiyoshido
+1003,air terjun nabegataki
+1004,gunung aso
+1005,ikuta jinja
+1006,danau chuzenji
+1007,arashiyama onsen
+1008,kurama onsen
+1009,takeshita street
+1010,americamura
+1011,kuil todaiji
+1012,gua kameiwa
+1013,jomonsugi
+1014,yakusugi
+1015,kasuga taisha
+1016,pulau hashima
+1017,amanohashidate
+1018,kuil jishu-jinja
+1019,taman kastil kokura
+1020,kuil suwa
+1021,kuil hakone
+1022,shimanami expressway
+1023,senkoji
+1024,bungaku no komichi
+1025,kolam kumoba
+1026,kuil yasaka
+1027,kuil sennyuji
+1028,yumotochaya
+1029,magome-juku
+1030,ninotaira
+1031,peternakan hanabatake
+1032,stasiun kofuku
+1033,stasiun aikoku
+1034,pulau awaji
+1035,jembatan onaruto
+1036,odaiba tokyo oedo-onsen monogatari
+1037,kuil murasakino imamiya
+1038,kuil nonomiya
+1039,Pesisir amaharashi
+1040,karuizawa taliesin
+1041,ikaho onsen
+1042,mizusawa kannon
+1043,kastil himeji
+1044,kurokabe square
+1045,enryakuji
+1046,danau kawaguchi
+1047,kuil fushimi inari taisha
+1048,taman pantai hitachi
+1049,kastil osaka
+1050,goryokoku
+1051,yasaka koshin-do
+1052,jembatan togetsu-kyo
+1053,yukawa onsen
+1054,ryusendo
+1055,gyokusendo
+1056,stasiun ueno
+1057,kuil izumo taisha
+1058,atami onsen
+1059,danau biwa
+1060,gunung nokogiri
+1061,kastil matsue
+1062,gunung hiei
+1063,museum seni sagawa
+1064,hachiman-bori
+1065,sazaedo
+1066,kurama-dera
+1067,kuil kifune
+1068,kuil tofukuji
+1069,kuil suzumushidera
+1070,kuil kitano tenmangu
+1071,kuil hiyoshi-taisha
+1072,ogoto onsen
+1073,kunozan tosho-gu
+1074,kuil heian jingu
+1075,menara kastil tsuruga
+1076,aizu aoi silk road bunmeikan
+1077,takizawa honjin
+1078,seaburiyama
+1079,higashiyama onsen
+1080,jalan perbelanjaan nanokamachi
+1081,engyo-ji
+1082,otaru denuki koji
+1083,kinugawa onsen
+1084,yorozuyobashi
+1085,sungai kanda
+1086,kuil momotaro
+1087,jembatan seto ohashi
+1088,kolam biru
+1089,kokusai street
+1090,kuil naminouegu
+1091,fuji lima danau
+1092,rinkaiso
+1093,gunung hakodate
+1094,meganebashi
+1095,kanal otaru
+1096,hiraizumi
+1097,yufuin
+1098,dogo onsen
+1099,enoshima
+1100,stasiun shin-osaka
+1101,yuigahama
+1102,naoshima
+1103,yanaka
+1104,nezu
+1105,sendagi
+1106,jigokudani yaen koen
+1107,nozawa onsen
+1108,kusatsu onsen
+1109,yanesen
+1110,alps jepang
+1111,gunung fuji
+1112,hida takayama
+1113,stasiun tokyo
+1114,taman hirakata
+1115,sungai yodo
+1116,taman kastil osaka
+1117,kuil itsukushima
+1118,kuil sumiyoshi taisha
+1119,ponto-cho
+1120,desa inakadate
+1121,nogecho
+1122,takayu onsen
+1123,machiya
+1124,stasiun shinjuku
+1125,kazuemachi
+1126,stasiun kyoto
+1127,stasiun umeda
+1128,pulau okunoshima
+1129,bukit pasir tottori
+1130,laut pedalaman seto
+1131,kuil aso
+1132,lereng hollander
+1133,dejima
+1134,nakasendo
+1135,namba walk
+1136,jalan perbelanjaan namba midosuji
+1137,sungai kamo noryo-yuka
+1138,pasar pagi wajima
+1139,botchan ressha
+1140,ishibezakura
+1141,hachiko
+1142,yokohama chinatown
+1143,kurokawa onsen
+1144,kencho-ji
+1145,engaku-ji
+1146,tokyo zen center
+1147,gunung merapi daisetsuzan
+1148,gunung usu
+1149,gunung bandai
+1150,gunung asama
+1151,gunung hakone
+1152,gunung kuju
+1153,kastil okazaki
+1154,wadazuka
+1155,gokurakuji
+1156,inamuragasaki
+1157,shichirigahama
+1158,kamakurakokomae
+1159,koshigoe
+1160,sounzan
+1161,museum terbuka hakone
+1162,kolam manno
+1163,kasa no misaki
+1164,pelabuhan hashidate
+1165,museum sains salju dan es
+1166,kuil aizenji
+1167,udo-jingu
+1168,air terjun sekinoo
+1169,kuil amanoiwato
+1170,kota kastil obi
+1171,kirishima factory garden
+1172,dataran tinggi ebino
+1173,tanjung toi
+1174,shionoe onsen
+1175,nibukawa onsen
+1176,ashizuri onsen
+1177,oboke onsen
+1178,okudogo onsen
+1179,danau tanuki
+1180,miho no matsubara
+1181,akuarium laut dalam numazu
+1182,air terjun shiraito
+1183,air terjun otodome
+1184,stasiun okuoikojo
+1185,kiyomizu kannon-do
+1186,kuil ueno toshogu
+1187,kuil shitaya
+1188,kuil imado
+1189,oshino hakkai
+1190,kuil akabane hachiman
+1191,kuil ono
+1192,kuil ninomiya
+1193,kuil matsumoto
+1194,kuil aiba
+1195,numanodaira
+1196,danau mashu
+1197,danau shikotsu
+1198,kolam biru
+1199,danau akan
+1200,danau ogawara
+1201,danau tazawa
+1202,goshiki-numa
+1203,danau inawashiro
+1204,mata air ryugakubo
+1205,korankei
+1206,himakajima
+1207,yakimono sanpomichi
+1208,kuil shinto goou
+1209,kamogawa
+1210,hanamikoji-dori
+1211,stasiun arashiyama
+1212,kuil shimogamo
+1213,senryougatsuji
+1214,kuchimaguchi-dori
+1215,kastil nijo
+1216,jalan perbelanjaan kyoto sanjo
+1217,museum kyoto
+1218,shinkyogoku-dori
+1219,kuil miyake-hachimangu
+1220,shibuya niku yokocho
+1221,gunung osore
+1222,kushiro shitsugen
+1223,teras unkai
+1224,dougashima
+1225,kuil shirahige
+1226,maruyama senmaida
+1227,kumano kodo
+1228,pantai hirizo
+1229,pantai kujuppama
+1230,pantai shirahama
+1231,pantai tagosebama
+1232,pantai nagahama
+1233,pantai osekai
+1234,pesisir futo
+1235,persimpangan shibuya
+1236,center-gai
+1237,sungai meguro
+1238,chidorigafuchi
+1239,kuil yasukuni
+1240,taman asukayama
+1241,taman sumida
+1242,taman shiba
+1243,kuil torikoe
+1244,kuil zoujo-ji
+1245,kuil takaosan yakuoin
+1246,tsukiji hongwanji
+1247,kuil ookunitama
+1248,kuil ikegami honmon-ji
+1249,kuil shozoku inari
+1250,kuil tenkai inari
+1251,kuil kushidan
+1252,kuil kashiigu
+1253,kuil miyajidake
+1254,kuil munakata taisha
+1255,kuil kora taisha
+1256,kuil hakozaki
+1257,kuil mizuta tenmangu
+1258,hikosan jingu
+1259,kuil sakurai
+1260,kuil ninja
+1261,asahidake ropeway
+1262,danau shikaribetsu
+1263,sounkyo
+1264,air terjun shirahige
+1265,desa tsurui
+1266,air terjun kajikasawa
+1267,danau onneto
+1268,danau kussharo
+1269,kuil akasaka hikawa
+1270,kuil shibadai jingu
+1271,kuil hakusan
+1272,kuil myogi
+1273,kuil meotogi
+1274,kuil menara daijingu
+1275,kuil omiya hachimangu
+1276,taman momijidani
+1277,goju-no-to
+1278,kuil daishoin
+1279,kuil omoto
+1280,taman omoto
+1281,kuil araebisu
+1282,observatorium shishiiwa
+1283,jalan perbelanjaan miyajima omotesando
+1284,gunung misen
+1285,kuil gokokuji
+1286,kuil shounji
+1287,kuil shohoin
+1288,kuil taeganji
+1289,kuil hongakuin
+1290,kuil nata
+1291,kuil hashikuraji
+1292,kuil myokoji
+1293,kuil monjusenji
+1294,meijijingu gaien
+1295,taman otaguro
+1296,taman tonogayato
+1297,taman inokashira
+1298,rikugien
+1299,air terjun mino
+1300,katsuoji
+1301,daiitokuji
+1302,gunung inumaki
+1303,gunung kongo
+1304,midosuji
+1305,taman daisen
+1306,kuil zenkoji
+1307,kuil myoshinji
+1308,kisshokaku
+1309,kuil taiyoji
+1310,kuil taogakushi
+1311,kuil iorengein
+1312,sungai edogawa
+1313,shibamata
+1314,area tokyo bay
+1315,kastil uwajima
+1316,kastil imabari
+1317,kuil kanjizai
+1318,kuil sankaku
+1319,kuil koshaku
+1320,kuil taga
+1321,kuil taihou
+1322,situs kamikuroiwa
+1323,kuil burakuji
+1324,kuil hotsumisakiji
+1325,kuil enkoji
+1326,gua ryugado
+1327,kastil oko
+1328,tempat kelahiran iwasaki yataro
+1329,kotohira-gu
+1330,kuil kandani
+1331,kuil unpenji
+1332,kuil motoyamaji
+1333,kuil zentsuji
+1334,kuil okuboji
+1335,kuil marugame
+1336,zenigata sunae
+1337,gua onigashima
+1338,taman timur higashi ogishima
+1339,jembatan taishobashi
+1340,kota sains tsukuba
+1341,taman air harumi
+1342,taman sunayama toshi ryokuchi
+1343,taman hamadera
+1344,taman aboshi nagisa
+1345,observatorium washuzan
+1346,taman nasional shiretoko
+1347,kuil chusonji
+1348,gunung washu
+1349,taman peringatan perdamaian hiroshima
+1350,teater AKB48
+1351,ginkakuji
+1352,ryoanji
+1353,kokedera
+1354,toji
+1355,danau yamanakako
+1356,jurang oyasu
+1357,sanjusangendo
+1358,kubah bom atom
+1359,taman shiroi koibito
+1360,taman hamarikyu
+1361,tengah kota tokyo
+1362,keyakizaka
+1363,museum bank otaru jepang
+1364,museum kotak musik otaru
+1365,gunung tengu
+1366,tempat pembuatan sake tanaka kikkogura
+1367,vila aoyama tua
+1368,pasar nantaru
+1369,air terjun oshinkoshin
+1370,batu oronko
+1371,yuhidai lookout
+1372,tanjung puyuni
+1373,air terjun frepe
+1374,shiretoko pass
+1375,danau shiretoko goko
+1376,air terjun kamuiwakka
+1377,kuil sensoji
+1378,pulau tomoga
+1379,pulau engetsu
+1380,air terjun nachi
+1381,jembatan gantung tanize
+1382,jembatan akashi kaikyo
+1383,ngarai dorokyo
+1384,kuil jingoji
+1385,kuil kurumazaki
+1386,kuil jikishian
+1387,kuil enkoji (�� ����)
+1388,kuil kodaiji
+1389,pulau hashima
+1390,gua bawah air inazumi
+1391,gunung inaza
+1392,jalan menuju laputa
+1393,taman kawachi fuji
+1394,taman mifuneyama rakuen
+1395,aogashima
+1396,air terjun fukuroda
+1397,jembatan gantung momijidani
+1398,gunung shirane
+1399,air terjun fukiware
+1400,taman umemura
+1401,taman kyukurauchitei
+1402,pusat komunitas sentral kota morioka
+1403,taman furosenkan
+1404,taman balai kota toriga
+1405,nabeshima house garden
+1406,taman kichoutei
+1407,taman memorial naito
+1408,taman fukushima kengeihinkan
+1409,taman tenryuin
+1410,taman balai kota fukuju fukuyama
+1411,taman nakajima chikuhei
+1412,taman departemen perkebunan universitas chiba
+1413,taman bekas villa hotta masatomo
+1414,museum seni nezu
+1415,taman bekas kediaman kusuo yasuda
+1416,taman kaitokukan
+1417,taman chinzan-so
+1418,taman kiyosumi
+1419,taman bekas kediaman shibusawa eiichi
+1420,taman yamamoto-tei
+1421,taman kokian
+1422,taman museum budaya utara
+1423,taman kyosanbo
+1424,taman rumah nakata
+1425,taman touzanso
+1426,taman seiryu-tei
+1427,taman museum memorial tamesaburo
+1428,taman kediaman moroto tokunari
+1429,taman rakusui
+1430,taman chofu
+1431,taman yurinso
+1432,motomachi shopping street
+1433,queens square yokohama
+1434,taman pelabuhan
+1435,taman yokohama sankeien
+1436,desa bunga matahari hokuryu
+1437,gunung yotei
+1438,gunung showashin
+1439,ladang lavender furano
+1440,gua kankane
+1441,gua abukuma
+1442,gua es narusawa
+1443,dougashima sea cave skylight
+1444,gua batu kapur besar hida
+1445,pantai jodogahama
+1446,pantai suishohama
+1447,pantai yurigahama
+1448,pantai hitotsuku
+1449,pantai nishihama
+1450,pantai hatenohama
+1451,pulau korijima
+1452,pulau seseko
+1453,itoshima
+1454,nokonoshima
+1455,pasar pagi yobuko
+1456,desa ninja hizenyumekaidou
+1457,yoshinogari
+1458,kastil karatsu
+1459,ureshino onsen
+1460,taman bunga kuju
+1461,jembatan gantung kokonoe yume
+1462,yufuin onsen
+1463,beppu onsen
+1464,ngarai kikuchi
+1465,jembatan tsunoshima
+1466,ganryu-jima
+1467,taman observatorium kirosan
+1468,gua tamatori
+1469,rissyakuji
+1470,gunung kagami
+1471,mercusuar hennasaki
+1472,kuil naritasan shinshoji
+1473,ngarai shiratani unsuikyo
+1474,eikando
+1475,kuil anamori inari
+1476,meijijingu gaien ginkgo avenue
+1477,tenjinbashi shopping street
+1478,taman peringatan expo'70
+1479,desa rubah zao
+1480,jalan kappabashi dougu
+1481,kastil okayama
+1482,kuil kanda myojin
+1483,kuil namiyoke
+1484,kuil akagi
+1485,kuil koami
+1486,kuil musashi mitake
+1487,roppongi yokocho
+1488,saluran pembuangan bawah tanah luar area metropolitan
+1489,daisen kofun
+1490,lembah iya
+1491,pusat ruang tanegashima
+1492,kawah okama
+1493,taman onioshidashi
+1494,senjojiki arena
+1495,sanbutsuji
+1496,ngarai oboke
+1497,air terjun harajiri
+1498,batu tofu
+1499,okuhitachi kirara no sato
+1500,lembah hanuki
+1501,irohazaka
+1502,gunung nasu
+1503,taman motofuchie
+1504,taman kamichiba sunahara
+1505,taman himonya
+1506,kebun binatang hamura
+1507,taman showa kinen
+1508,taman gora
+1509,grinpia maki no hara
+1510,kuroneiwa onsen
+1511,gunung omuro
+1512,kuil hokongoin
+1513,kuil mimurotoji
+1514,gunung yoshino
+1515,taman banshu yamasaki iris
+1516,lembah sensui
+1517,jembatan sakurabashi
+1518,pulau hachijo
+1519,kita onsen
+1520,perkebunan tomita
+1521,gunung hanami
+1522,tanah rawa oze
+1523,kuil nezu
+1524,fuefuki
+1525,kastil odawara
+1526,taman shirotori
+1527,kuil osu kanon
+1528,taman tokugawa
+1529,taman urakuen
+1530,kuil domyoji tenmangu
+1531,taman alam minabe
+1532,kuil jonangu
+1533,hutan prem minabe
+1534,kastil hikone
+1535,kampung shimoguri
+1536,gunung shirouma
+1537,air terjun akame 48
+1538,pulau akashima
+1539,kuil gotokuji
+1540,taman yoyogi
+1541,lembah akigawa
+1542,lembah yoro
+1543,nagatoro
+1544,kuil daichiji
+1545,kuil tenryuji
+1546,kuil saihoji
+1547,kuil entsuji
+1548,okayama korakuen
+1549,gunung moiwa
+1550,hoheikyo onsen
+1551,taman moerenuma
+1552,kuil konpira
+1553,kuil ubagami
+1554,sounkyo onsen
+1555,jalan nakamachi komise
+1556,desa tono furusato
+1557,minakami
+1558,kamikochi
+1559,sungai yoshino
+1560,kuil dewa sanzan
+1561,taman michinoku
+1562,pulau okushiri
+1563,pulau rebun
+1564,pulau rishiri
+1565,taman nasional daisetsuzan
+1566,ngarai yabakei
+1567,noboribetsu onsen
+1568,nyuto onsen
+1569,zao onsen
+1570,onogawa onsen
+1571,okukinu onsen
+1572,manza onsen
+1573,shirahone onsen
+1574,okuhida onsen
+1575,kumo no ue onsen
+1576,makkari onsen
+1577,mizunashi kaihin onsen
+1578,kotan onsen
+1579,tenninkyo onsen
+1580,yoroushi onsen
+1581,hiraiso onsen
+1582,kolam kaminoko
+1583,tanjung kamui
+1584,bukit biei
+1585,taman higashimokoto shibazakura
+1586,taman nasional akan mashu
+1587,lautan okhotsk
+1588,jalur pegunungan mikune
+1589,danau notoro
+1590,sapporo satoland
+1591,bukit observasi hitsujigaoka
+1592,taman hutan maeda
+1593,desa bersejarah hokkaido
+1594,taman seni sapporo
+1595,taman nakajima
+1596,desa ecorin
+1597,kuil nitta
+1598,kuil nishiki tenmangu
+1599,kuil rokkakudo
+1600,kuil yasui konpira-gu
+1601,kuil doso
+1602,kuil taga-taisha
+1603,kuil nishino
+1604,kuil sanko kumano
+1605,kuil koinomizu
+1606,kuil shiroyama hachimangu
+1607,kuil keta taisha
+1608,kuil kumano hayatama
+1609,kuil koinoki
+1610,kuil hakuto
+1611,kuil yaegaki
+1612,pulau sado
+1613,pulau manabeshima
+1614,pulau niijima
+1615,pulau tsunoshima
+1616,pulau kamishima
+1617,pulau chikubu
+1618,taman odori
+1619,pasar nijo
+1620,shinsekai
+1621,taman nakanoshima
+1622,pasar kuromon ichiba
+1623,kuil kishu toshogu
+1624,kuil wakura tenmangu
+1625,kuil kimii-dera
+1626,nachi no miharashidai
+1627,kuil chohoij
+1628,kuil enpukuin
+1629,kuil kongobuji
+1630,kuil negoroji
+1631,kiso
+1632,kitashiobara
+1633,kuni
+1634,minamioguni
+1635,takaharu
+1636,aya
+1637,totsukawa
+1638,yoshino
+1639,higashinaruse
+1640,kastil gifu
+1641,medan perang sekigahara
+1642,patahan neodani
+1643,kastil sunomata
+1644,taman yoro
+1645,kastil ogaki
+1646,kastil gujo hachiman
+1647,kuil eiho-ji
+1648,kastil iwamura
+1649,kuil ankokuji
+1650,kuil nangu taisha
+1651,kuil rokuon-ji
+1652,kuil gokokushi-ji
+1653,kuil shinhase-dera
+1654,gero onsen
+1655,kastil ueno
+1656,kastil tsu
+1657,kastil matsusaka
+1658,kuwana sosha
+1659,kuil agung tsubaki
+1660,onigajo
+1661,nabeishi onsen
+1662,air terjun ryuzu
+1663,nikko yumoto onsen
+1664,kastil hiroshima
+1665,kastil fukuyama
+1666,lembah taishaku
+1667,kuil takachiho
+1668,kuil fukiji
+1669,shirakami-sanchi
+1670,taman makomanai
+1671,taman hirosaki
+1672,kastil takato
+1673,taman takada
+1674,taman okazaki
+1675,pemakaman yanaka
+1676,yanaka ginza shopping street
+1677,kuil kofukuji
+1678,kuil toshodaiji
+1679,heijo-kyo
+1680,pasar nichiki
+1681,kobe kitano ijinkan
+1682,desa gashho
+1683,ibusuki onsen
+1684,hutan bambu arashiyama
+1685,kastil hirosaki
+1686,kastil nakagusuku
+1687,kastil edo
+1688,kastil katsuren
+1689,kastil wakamatsu
+1690,azumi basin
+1691,kastil ueda
+1692,kamisuwa onsen
+1693,shimosuwa onsen
+1694,stasiun kanazawa
+1695,kuil myoryuji
+1696,yunokami onsen
+1697,aizuwakamatsu
+1698,hotel new otani
+1699,hoshinoya
+1700,resor hoshino
+1701,hotel apa
+1702,asakusa view hotel
+1703,hotel keio plaza
+1704,hilton
+1705,hotel prince
+1706,hotel imperial
+1707,ritz-carlton
+1708,9h ninehours
+1709,first cabin
+1710,hotel centurion
+1711,hotel mystays
+1712,hotel marriott
+1713,hotel sunroute
+1714,hotel ana crown plaza
+1715,hotel intercontinental
+1716,hotel nikko
+1717,hotel mitsui garden
+1718,hotel okura
+1719,hotel grand hyatt
+1720,hotel mandarin oriental
+1721,hotel sheraton
+1722,horoyoi
+1723,pocky
+1724,pashadelic
+1725,totoro
+1726,hello kitty
+1727,glico
+1728,haagen-dazs
+1729,pokemon
+1730,calbee
+1731,shiroi koibito
+1732,rokkatei
+1733,umaibou
+1734,airbnb
+1735,ghibli
+1736,kitkat
+1737,keripik kentang
+1738,masker wajah
+1739,sukajan
+1740,samantha thavasa
+1741,Hada Labo
+1742,royce
+1743,fujifilm
+1744,isetan
+1745,lawson
+1746,torikizoku
+1747,loteng
+1748,restoran robot
+1749,muji
+1750,donki
+1751,starbucks
+1752,tokyu hands
+1753,karuizawa prince shopping plaza
+1754,plaza
+1755,francfranc
+1756,kitakaro (suvenir hokkaido)
+1757,seven eleven
+1758,familymart
+1759,mini stop
+1760,matsumoto kiyoshi
+1761,aeon
+1762,marui
+1763,ginza six
+1764,shibuya109
+1765,tokyu plaza
+1766,coucou
+1767,mitsukoshi
+1768,takashimaya
+1769,tobu
+1770,daimaru
+1771,keio
+1772,yodobashi
+1773,bic camera
+1774,uniqlo
+1775,yumean
+1776,hanaya yohei
+1777,tonden
+1778,washoku sato
+1779,aiya
+1780,bookoff
+1781,animate
+1782,gelato pique
+1783,mos burger
+1784,circle k
+1785,tiger
+1786,zojirushi
+1787,toshiba
+1788,hitachi
+1789,panasonic
+1790,thermos
+1791,shiseido
+1792,kanebo
+1793,kose
+1794,tokyu
+1795,seibu
+1796,daiso
+1797,mandarake
+1798,sushiro
+1799,kfc
+1800,mcdonald
+1801,disney
+1802,dior
+1803,can do
+1804,gusto
+1805,saizeriya
+1806,coco's
+1807,jonathan's
+1808,denny's
+1809,lush
+1810,lotte
+1811,sukiyabashi jiro
+1812,cosplay
+1813,slam dunk
+1814,detektif conan
+1815,purikura
+1816,seni kuku
+1817,spot foto
+1818,kominka
+1819,manga
+1820,musim hujan
+1821,tanabata
+1822,hari valentine
+1823,setsubun
+1824,malam tahun baru
+1825,tahun baru
+1826,halloween
+1827,tahun baru
+1828,drama
+1829,festival lonceng angin
+1830,festival tarian rakyat awa-odori
+1831,festival yamaga toro
+1832,festival setomono
+1833,festival saidaiji eyo hadaka
+1834,haruki murakami
+1835,comiket
+1836,festival gion
+1837,doraemon
+1838,hatsune miku
+1839,rilakkuma
+1840,gozan no okuribi
+1841,jidai matsuri
+1842,yayoi kusama
+1843,kawazu zakura
+1844,tadao ando
+1845,kengo kuma
+1846,olimpiade
+1847,fotogenik
+1848,peringkat
+1849,instagrammable
+1850,hanya di jepang
+1851,perjalanan sendiri
+1852,orientasi keluarga
+1853,perjalanan keluarga
+1854,pasangan
+1855,disesuaikan
+1856,orang tua dan anak
+8124,Kegiatan Outdoor

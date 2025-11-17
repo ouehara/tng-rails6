@@ -1,0 +1,53 @@
+<div id="tab_accommodate" class="hide">
+<h3><%= t "covid.details.menu.accommodate" %> </h3>
+<p class="sub"><%= t "covid.details.descs.accommodate" %></p>
+    <div class="info_highlight">
+                <%  if !browser.device.mobile? %>
+                    <div class="info_highlight_el">
+                        <img src="<%= asset_pack_path('media/images/covid/icons/mask.png') %>" />
+                            <div><h4><%= t "covid.safety.info.mask.headline" %></h4>
+                            <p><%= t "covid.safety.info.mask.sub" %></p>
+                        </div>
+                    </div>
+                    <div class="info_highlight_el">
+                        <img src="<%= asset_pack_path('media/images/covid/icons/sanitizer.png') %>" />
+                        <div><h4><%= t "covid.safety.info.hand_san.headline" %></h4>
+                        <p><%= t "covid.safety.info.hand_san.sub" %></p>
+                        </div>
+                    </div>
+                    <div class="info_highlight_el">
+                        <img src="<%= asset_pack_path('media/images/covid/icons/thermograph.png') %>" />
+                        <div><h4><%= t "covid.safety.info.temp.headline" %></h4>
+                        <p><%= t "covid.safety.info.temp.sub" %></p>
+                        </div>
+                    </div>
+                <% else %>
+                <div class="info_highlight_el">
+                <h4><%= t "covid.safety.info.mask.headline" %></h4>
+                <img src="<%= asset_pack_path('media/images/covid/icons/mask.png') %>" />
+                <p><%= t "covid.safety.info.mask.sub" %></p>
+                </div>
+                <div class="info_highlight_el">
+                <h4><%= t "covid.safety.info.hand_san.headline" %></h4>
+                    <img src="<%= asset_pack_path('media/images/covid/icons/sanitizer.png') %>" />
+                    
+                    <p><%= t "covid.safety.info.hand_san.sub" %></p>
+                    
+                </div>
+                <div class="info_highlight_el">
+                    <h4><%= t "covid.safety.info.temp.headline" %></h4>
+                    <img src="<%= asset_pack_path('media/images/covid/icons/thermograph.png') %>" />
+                    <p><%= t "covid.safety.info.temp.sub" %></p>
+                </div>
+                <% end %>   
+                </div>       
+                <p class="more_info_text">
+                <%= I18n.t "covid.more_info" %>
+                </p> 
+                <div class="more-btn text-center">
+                    <a href="<%= traveling_safely_in_japan_detail_path('hotels') %>#c_menu" class="btn btn-default btn-lg">
+                    <%= I18n.t "more_details" %>
+                    </a>
+                </div>
+  
+</div>

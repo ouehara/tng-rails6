@@ -1,0 +1,71 @@
+
+<%
+  logo = {"en" => "savor_logo_en.png",
+  "th" => "savor_logo_en.png",
+  "zh-hant" => "logo_savor_zh.png" ,
+  "zh-hans" => "savor_logo_zh_hans.png",
+  "vi" => "savor_logo_en.png",
+  "ko" => "savor_logo_en.png"
+  }
+%>
+<div class="container nopadding-container restaurant-wrapper">
+  <div class="col-xs-12">
+    <h1 class="pull-left"><%= title t("savor.restaurant_search")%></h1>
+    <%= image_tag asset_pack_path("media/images/restaurant/#{logo[I18n.locale.to_s]}"), :class => "pull-right savor-logo hidden-xs"%>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <%= render "sidebar" %>
+  </div>
+  <div class="col-sm-8 col-xs-12">
+    <%= render "selections"  unless @search_params.keys.length == 0 %>
+    <% if !@results.empty? %>
+      <div class="row result-count">
+        <span class="res-text"><%= @results_text  %></span>
+        <div class="dropdown form-check-inline pull-right">
+          <button class="btn btn-default" type="button" id="sort-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="caret"></span>
+            <%= t("savor.sort_price") %>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="sort-drop">
+            <li>
+            <%= link_to search_restaurant_search_index_path(params.merge({"order_by" => "price_asc"}).permit!) do %>
+            <%= t("savor.sort_price_ask") %>
+            <%end%>
+            </li>
+            <li>
+            <%= link_to search_restaurant_search_index_path(params.merge({"order_by" => "price_desc"}).permit!) do %>
+              <%= t("savor.sort_price_desc") %>
+            <%end%>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+    <%= t("savor.no_searchresult") unless !@results.empty? %>
+    <% @results.each do |result|%>
+      <%= render "restaurant_details", :restaurant => result %>
+    <% end %>
+    <%= image_tag asset_pack_path("media/images/restaurant/#{logo[I18n.locale.to_s]}"), :class => "pull-right savor-logo visible-xs"%>
+    <%=
+      paginate @results
+    %>
+  </div>
+</div>
+<script>
+
+document.addEventListener("turbolinks:load", function() {
+  new app.SavorLocation;
+  new app.SavorCuisine;
+  new app.dropDowns;
+})
+
+var buttons = document.querySelectorAll(".collapse-button");
+for (var button of buttons) {
+  button.addEventListener("click",function(evt){
+    event.currentTarget.classList.toggle("collapsed");
+    var targetId = event.currentTarget.getAttribute("data-target");
+    document.querySelector(targetId).classList.toggle("collapse");
+  })
+}
+
+</script>

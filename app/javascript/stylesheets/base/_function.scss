@@ -1,0 +1,14 @@
+//
+// Function
+// --------------------------------------------------
+@function vw($int, $baseWidth: 750) {
+  @return ($int / $baseWidth) * 100vw;
+}
+
+@function rem($int) {
+  @return $int / 10 + 0rem;
+}
+
+@function half($int) {
+  @return $int / 2 + 0px;
+}

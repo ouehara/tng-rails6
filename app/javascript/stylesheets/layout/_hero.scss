@@ -1,0 +1,229 @@
+//
+// Hero
+// --------------------------------------------------
+.hero {
+  &_container {
+    @include mq(sm) {
+      width: 100%;
+      max-width: 1115px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+
+      @at-root body.index & {
+        width: auto;
+      }
+    }
+  }
+
+  &_title {
+    position: relative;
+    height: vw(390);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @include mq(sm) {
+      height: 290px;
+    }
+
+    @at-root body.index & {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .title {
+    position: relative;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.15rem;
+
+    @at-root body.index & {
+      font-size: rem(21);
+      margin-left: 0;
+      padding-top: vw(50);
+
+      &::before {
+        content: "";
+        display: block;
+        width: vw(35);
+        height: vw(47);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translateX(-50%);
+
+        @include mq(sm) {
+          width: 35px;
+          height: 47px;
+        }
+      }
+
+      @include mq(sm) {
+        font-size: 42px;
+        padding-top: 50px;
+      }
+    }
+
+    @at-root body.area.index .title::before {
+      background-image: url("../images/shared/icon_area_white.png");
+    }
+
+    @at-root body.things.index .title::before {
+      background-image: url("../images/shared/icon_todo_white.png");
+    }
+
+    @at-root body.f_d.index .title::before {
+      background-image: url("../images/shared/icon_food_white.png");
+    }
+
+    @at-root body.h_r.index .title::before {
+      background-image: url("../images/shared/icon_hotel_white.png");
+    }
+
+    @at-root body.shopping.index .title::before {
+      background-image: url("../images/shared/icon_shopping_white.png");
+    }
+
+    @at-root body.tips.index .title::before {
+      background-image: url("../images/shared/icon_tips_white.png");
+    }
+
+    @at-root body.depth.index .title {
+      padding-top: 0;
+    }
+
+    @at-root body.sub & {
+      margin-left: vw(24);
+      padding-top: 0;
+      font-size: rem(13.5);
+      line-height: 1.5;
+      letter-spacing: 3px;
+      text-align: left;
+
+      @include mq(sm) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .place {
+    position: relative;
+    font-size: rem(21);
+
+    @include mq(sm) {
+      font-size: 42px;
+    }
+
+    @at-root body.sub & {
+      padding-left: 1.25em;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: vw(35);
+      height: vw(47);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-image: url("../images/shared/icon_area_white.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translateX(-50%);
+
+      @include mq(sm) {
+        width: 35px;
+        height: 47px;
+      }
+
+      @at-root body.sub & {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &_intro {
+    font-size: rem(13.5);
+    line-height: 1.7;
+
+    margin-bottom: vw(90);
+    white-space: pre-line;
+
+    @include mq(sm) {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &_ad {
+    a {
+      display: block;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+
+      @include mq(sm) {
+        width: 653px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.hero_ad {
+  margin-bottom: 70px;
+}
+
+.feature-index-hero,
+.jobs-hero {
+  &_title {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_container {
+    width: auto;
+
+    .title {
+      font-size: rem(21);
+      // padding-top: vw(50);
+
+      @include mq(sm) {
+        font-size: 42px;
+        // padding-top: 50px;
+      }
+
+      // &::before {
+      //   content: "";
+      //   display: block;
+      //   width: vw(35);
+      //   height: vw(47);
+      //   position: absolute;
+      //   top: 0;
+      //   left: 50%;
+      //   background-size: contain;
+      //   background-repeat: no-repeat;
+      //   transform: translateX(-50%);
+      //   background-image: url("../images/shared/icon_feature_white.png");
+      //   @include mq(sm) {
+      //     width: 35px;
+      //     height: 47px;
+      //   }
+      // }
+
+    }
+  }
+}

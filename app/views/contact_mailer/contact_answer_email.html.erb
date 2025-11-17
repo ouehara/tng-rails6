@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p style="white-space: pre-line">
+      <%= @contentText %>
+    </p>
+    <p>
+      <%= t("email_html") %>
+    </p>
+      <blockquote cite="<%="mid:"+@origMail %>" type="cite">
+      <%= @original %>
+      </blockquote>
+      
+    
+  </body>
+</html>

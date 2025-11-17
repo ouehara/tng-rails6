@@ -1,0 +1,81 @@
+<%= form_for([:admin, @tour], html: { class: "form", :multipart => true }) do |f| %>
+<% if @tour.errors.any? %>
+<%= render partial: 'admin/shared/error_message', locals: { resource: @tour } %>
+<% end %>
+<select class="lang-select">
+<% selected_locale = I18n.locale%>
+<% I18n.available_locales.each do |locale| %>
+  <%I18n.with_locale(locale) do%>
+  <%= locale%>
+    <option <%= locale == selected_locale ? "selected" : "" %> value="<%= url_for(locale: locale) %>"><%=locale%></option>
+  <%end%>
+<%end%>
+</select>
+<script type="text/javascript">
+$(".lang-select").on("change", function(ev){
+  window.location.href = $(this).val()
+})
+</script>
+<div class="form-group">
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control", placeholder: "Title", autocomplete: "off" %>
+</div>
+
+<div class="field">
+  <%= f.label :area %><br />
+  <%= f.select :area_id, options_for_select(Area.all.map{|s|[s.name, s.id]}, :selected => @tour.area_id) %>
+</div>
+
+<div class="form-group">
+  <%= f.label :price %>
+  <%= f.text_field :price, class: "form-control", placeholder: "price e.g. 10.000", autocomplete: "off" %>
+</div>
+<div class="form-group">
+  <%= f.label :duration %>
+  <%= f.text_field :duration, class: "form-control", placeholder: "duration e.g. 1 day", autocomplete: "off" %>
+</div>
+
+<div class="form-group">
+  <%= f.label :details %>
+  <%= f.text_field :details, class: "form-control", placeholder: "details button url", autocomplete: "off" %>
+</div>
+
+
+<div class="field">
+  <%= f.fields_for :buttons do |button_form| %>
+    <%= render 'button_fields', f: button_form %>
+  <% end %>
+</div>
+<%= link_to_add_fields "Add Button", f, :buttons %>
+
+<div>
+<div class="form-group">
+<%= f.label :banner, "Image", class: "control-label" %>
+<div>
+<img src="<%=f.object.banner.url(:thumb) %>" width='200' %>
+</div>
+  
+  <div class="row">
+    <div class="col-sm-12">
+      <%= f.file_field :banner %>
+    </div>
+  </div>
+</div>
+</div>
+<%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>
+
+<script type='text/javascript'>
+    $(".remove_fields").on("click", function(event){
+      $(this).prev('input[type=hidden]').val('1')
+      $(this).closest('div').hide()
+      event.preventDefault()
+    })
+    $(".add_fields").on("click", function(event){
+      time = new Date().getTime()
+      regexp = new RegExp($(this).data('id'), 'g')
+      $(this).before($(this).attr('data-fields').replace(regexp, time))
+      event.preventDefault()
+    })
+</script>

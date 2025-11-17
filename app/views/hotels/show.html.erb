@@ -1,0 +1,72 @@
+<div class="container nopadding-container">
+  <div class="col-xs-12 col-sm-8">
+    <div class="row">
+      <div class="hotel-headline col-xs-12">
+        <img src=<%= @hotels.hotel_details.first.image %> />
+        <h1 class="hotel-headline-h1"><%= title @hotels.name %></h1>
+        <div>
+          <p class="sub-headline"><%= @hotels.hotel_details.first.address %><p>
+        </div>
+      </div>
+    </div>
+    <h2 class="black-border"><%= t("hotelpage.labels.info") %></h2>
+    <div class="row">
+    <p class="col-xs-12 hotel-page-desc"><%= @hotels.hotel_details.first.description %></p>
+    <div class="col-xs-12 col-sm-12 hotel-bookings">
+      <p><b> <%= t("hotelpage.labels.book") %></b></p>
+      <% @hotels.hotel_details.each.with_index do |detail, index| %>
+      <div class="bookings-btn-wrapper">
+        <%= react_component('HotelAffiliate', {content:{url:detail.url, type: t("hotel.name#{detail.service}")}}) %>
+      </div>
+      <% end %>
+    </div>
+    <div class="col-xs-12">
+      <table class="table hotel-detail-table">
+      <tbody>
+        <tr>
+          <td class="table-left"><%= t("hotelpage.labels.name") %></td>
+          <td><%= @hotels.name %></td>
+        </tr>
+        <tr>
+          <td class="table-left"><%= t("hotelpage.labels.price") %></td>
+          <td>
+            <%= @hotels.hotel_details.first.currency %>
+            <%= @hotels.hotel_details.first.min_rate %>
+            <p class="updated-price">updated on <%= localize(@hotels.hotel_details.first.updated_at, :format => :short) %></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-left"><%= t("hotelpage.labels.location") %></td>
+          <td>
+          <%= @hotels.hotel_details.first.address %>
+          <div id="map" />
+          </td>
+        </tr>
+      </tbody>
+      </table>
+      <p class="reference"><%= t("hotelpage.labels.reference") %> <b><%= t("hotel.name#{@hotels.hotel_details.first.service}") %></b></p>
+    </div>
+    </div>
+  </div>
+</div>
+<script>
+  function initMap() {
+    var uluru = {lat: <%= @hotels.hotel_details.first.lat %>, lng: <%= @hotels.hotel_details.first.long %>};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9cjpu-HTxdu1_B9tzzaq5WkLhOKu1pac&callback=initMap">
+</script>
+<style>
+       #map {
+        height: 300px;
+        width: 100%;
+       }
+    </style>

@@ -1,0 +1,37 @@
+<%= form_tag({controller: "search", action:
+        "list_articles"}, method: "get", class: "form-search") do%>
+        <div class="form-search_box">
+          <div class="form-search_input">
+            <label class="sr-only" for="freewords">Freewords</label>
+            <input
+              type="text"
+              name="search"
+              class="form-control"
+              id="freewords"
+              placeholder="<%=I18n.t("search_by")%>"
+            />
+          </div>
+          
+          <% if !defined?(category).nil? && category != 0  %>
+             <input
+              type="hidden"
+              name="category"
+              value=<%= category %>
+              class="form-control"
+              
+            />
+            <% end %>
+            <% if !defined?(area).nil?  && area != 0 %>
+            <input
+             type="hidden"
+             name="area"
+             value=<%= area %>
+             class="form-control"
+             
+           />
+          <% end %>
+
+          <div class="form-search_btn">
+            <button class="btn" id="search_all">Search</button>
+          </div>
+          <%end%>

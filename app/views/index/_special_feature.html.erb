@@ -1,0 +1,108 @@
+<% if I18n.locale.to_s == "en" || I18n.locale.to_s == "ja" || I18n.locale.to_s == "zh-hant" %>
+<% content_for :head do %>
+<% end %>
+<section id="top_specialFeture" class="top_specialFeture">
+  <div class="featureSlider container">
+    <h2 class="section_heading"><%= I18n.t("feature.feature_label")%></h2>
+    <div class="swiper featureSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <%= link_to category_feature_people_of_japan_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-poj", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-poj.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.poj.theme1_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_aoj_a_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-aoj-a", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-aoj-a.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.aoj.theme1_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_aoj_b_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-aoj-b", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-aoj-b.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.aoj.theme2_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_aoj_c_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-aoj-c", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-aoj-c.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.aoj.theme3_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_aoj_d_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-aoj-d", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-aoj-d.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.aoj.theme4_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_aoj_e_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-aoj-e", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-aoj-e.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.aoj.theme5_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_coj_b_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-coj-b", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-coj-b.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.coj.theme2_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_coj_c_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-coj-c", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-coj-c.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.coj.theme3_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_coj_d_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-coj-d", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-coj-d.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.coj.theme4_html') %></p>
+          <% end %>
+        </div>
+        <div class="swiper-slide">
+          <%= link_to category_feature_coj_e_path(I18n.locale == :en ? nil : I18n.locale), id: "top_feature-coj-b", class: "featureSwiper_link" do %>
+            <%= image_tag(asset_pack_path("media/images/index/feature/top-coj-e.png"), class: "featureSwiper_img", alt: "", :size => "357x428") %>
+            <p class="featureSwiper_label"><%= t('feature.index.coj.theme5_html') %></p>
+          <% end %>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <p class="section_button"><%= link_to t("view_special_feature"), category_feature_index_path(I18n.locale == :en ? nil : I18n.locale), :class => "" %></p>
+  </div>
+</section>
+<% content_for :foot do %>
+  <script data-turbolinks="false">
+    const featureSwiper = new Swiper(".featureSwiper", {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      centeredSlides: true,
+      loop: true,
+      // loopAdditionalSlides: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: { // ブレークポイント
+        // 1130: {
+        //   slidesPerView: 4,
+        //   spaceBetween: 15,
+        //   centeredSlides: false,
+        // },
+        768: { // 画面幅768px以上で適用
+          slidesPerView: 3,
+          spaceBetween: 15,
+          centeredSlides: false,
+        },
+      },
+    });
+  </script>
+<% end %>
+<% end %>

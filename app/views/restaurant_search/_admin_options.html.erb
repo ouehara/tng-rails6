@@ -1,0 +1,4 @@
+<%= form_for restaurant, :remote => true do |r|%>
+  <%= r.check_box :ad, onchange: "this.form.dispatchEvent(new Event('submit', {bubbles: true}));"%>
+  <%= r.label :ad%>
+<% end %>

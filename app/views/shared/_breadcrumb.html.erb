@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+      <% breadcrumbs.each_with_index do |breadcrumb, index|%>
+        <%  finalpath=""
+            case path = breadcrumb.path
+            when Symbol
+            finalpath = send(path)
+            when Proc
+                finalpath =  path.call(@context)
+            else
+                finalpath =  url_for(path)
+            end
+            %>
+    {
+    "@type": "ListItem",
+    "position":  <%= index+1 %>,
+    "name": "<%= breadcrumb.name %>",
+    "item": {
+        "@id": "<%= finalpath %>",
+        "name": "<%= breadcrumb.name %>"
+    }
+    }<%= index != breadcrumbs.size - 1 ?",":"" %>
+  <% end %>
+  ]
+}
+</script>
+<div class="breadcrumb-wrapper breadcrumb-wrapper-bottom">
+  <div class="container">
+    <ol class="breadcrumb row">
+      <%= render_breadcrumbs :tag => :li, :separator => ' '%>
+    </ol>
+  </div>
+</div>

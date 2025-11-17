@@ -1,0 +1,14 @@
+$('#results').html('<%= escape_javascript(render(partial: "article", collection: @q)) %>')
+$('.article-to-pick').click( function () {
+  var title = $(this).data('article-title');
+  var image = $(this).data('article-image');
+  var articleId = $(this).data('article-id');
+  $('#ajax-modal').modal('hide');
+  $('.add_fields').click();
+  var form = $('.add_article_form');
+  console.log(form)
+  $('.add_article_submit').show()
+  form.append('<input type="hidden" value="'+articleId+'" name="articleId[]">');
+  var table = $('.article_list');
+  table.append('<tr><td>'+title+'</td></tr>');
+})

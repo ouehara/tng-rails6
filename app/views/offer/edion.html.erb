@@ -1,0 +1,109 @@
+<% title t("edion.title") %>
+<% url = "edion/en/"%>
+<% if @i18n.include? "zh"
+    url = "edion/zh/"
+  end
+%>
+<div class="container nopadding-container edion">
+  <div class="col-xs-12 col-sm-8">
+    <%= image_tag(asset_pack_path("media/images/#{url}header.png"), class: "img-responsive header-image")%>
+    <div class="colored-boxes row">
+      <div class="col-xs-4 popular-products">
+        <a href="#popular">
+          <%= image_tag(asset_pack_path("media/images/#{url}popular.png"), class: "img-responsive")%>
+        </a>
+      </div>
+      <div class="col-xs-4 top-products">
+        <a href="#top">
+          <%= image_tag(asset_pack_path("media/images/#{url}top.png"), class: "img-responsive")%>
+        </a>
+      </div>
+      <div class="col-xs-4 discount">
+        <a href="#discount">
+          <%= image_tag(asset_pack_path("media/images/#{url}discount.png"), class: "img-responsive")%>
+        </a>
+      </div>
+    </div>
+    <h1 class="edion-blue"><%= t("edion.only_headline_html")%></h1>
+    <%= link_to "/assets/#{url}tj.pdf", target: "_blank" do %>
+      <%= image_tag(asset_pack_path("media/images/#{url}edion-tax-free-banner.png"), class: "img-responsive edion-banner")%>
+    <%end%>
+    <p>
+      <%= t("edion.consumer_electronics")%>
+    </p>
+    <h2 class="yellow-bg colored-bg" id="popular">
+    <%= t("edion.popular_headline")%>
+    </h2>
+    <%= render "offer/edion/popular"%>
+    <h2 class="green-bg colored-bg" id="top">
+    <%= t("edion.top10")%>
+    </h2>
+    <%= render "offer/edion/top"%>
+    <h2 class="blue-bg colored-bg" id="discount">
+    <%= t("edion.readers_discount")%>
+    </h2>
+    <p>
+      <%= t("edion.readers_discount_text_html")%>
+    </p>
+
+    <h1 class="edion-blue"><%= t("edion.only_headline_html")%></h1>
+    <%= link_to "/assets/#{url}tj.pdf", target: "_blank" do %>
+    <%= image_tag(asset_pack_path("media/images/#{url}discount-coupon.png"), class: "img-responsive")%>
+    <%end%>
+    <h2 class="blue-bg colored-bg">
+    <%= t("edion.what_is_headline")%>
+    </h2>
+    <%= image_tag(asset_pack_path("media/images/edion/building.png"), class: "img-responsive")%>
+    <p class="mtop10 mbot20">
+      <%= t("edion.readers_discount_text_html")%>
+    </p>
+    <div class="row">
+    <div class="col-xs-4 popular-products">
+        <%= image_tag(asset_pack_path("media/images/edion/inside_1.png"), class: "img-responsive")%>
+      </div>
+      <div class="col-xs-4 top-products">
+        <%= image_tag(asset_pack_path("media/images/edion/inside_2.png"), class: "img-responsive")%>
+      </div>
+      <div class="col-xs-4 discount">
+        <%= image_tag(asset_pack_path("media/images/edion/inside_3.png"), class: "img-responsive")%>
+      </div>
+    </div>
+      <p class="mtop10 mbot20"><%= t("edion.website_html") %></p>
+
+      <p class="black-bg"><%= t("edion.tokyo")%></p>
+      <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1472462005345!2d139.7687803152592!3d35.69799398019039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1d234db8b7%3A0x9b8bc75401014bd2!2sEdion+Akiba!5e0!3m2!1sen!2sjp!4v1507618788129" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="store-info row mtop10 mbot20">
+        <div class="col-xs-2"><%= t("edion.address")%></div>
+        <div class="col-xs-10"><%= t("edion.tokyo_a")%></div>
+        <div class="col-xs-2"><%= t("edion.phone")%></div>
+        <div class="col-xs-10"><%= t("edion.tokyo_p")%></div>
+      </div>
+
+      <p class="black-bg"><%= t("edion.osaka")%></p>
+      <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.448318050109!2d135.50193831523143!3d34.668632980442915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71520dfec47%3A0xfa25e6bce524c61f!2sEDION!5e0!3m2!1sen!2sjp!4v1507618914328" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="store-info row mtop10 mbot20">
+        <div class="col-xs-2"><%= t("edion.address")%></div>
+        <div class="col-xs-10"><%= t("edion.osaka_a")%></div>
+        <div class="col-xs-2"><%= t("edion.phone")%></div>
+        <div class="col-xs-10"><%= t("edion.osaka_p")%></div>
+      </div>
+      <p class="black-bg"><%= t("edion.osaka2")%></p>
+      <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.453110937129!2d135.43530131523144!3d34.66851198044269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e896d05551e7%3A0x5a08abf40a91a86!2z44Ko44OH44Kj44Kq44Oz44Om44OL44OQ44O844K144Or44O744K344OG44Kj44Km44Kp44O844Kv5aSn6Ziq5bqX!5e0!3m2!1sen!2sjp!4v1507618936502" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="store-info row mtop10 mbot20">
+        <div class="col-xs-2"><%= t("edion.address")%></div>
+        <div class="col-xs-10"><%= t("edion.osaka2_a")%></div>
+        <div class="col-xs-2"><%= t("edion.phone")%></div>
+        <div class="col-xs-10"><%= t("edion.osaka2_p")%></div>
+      </div>
+
+      <p><%= t("edion.further")%></p>
+      <p><%= t("edion.website_html") %></p>
+  </div>
+  
+</div>

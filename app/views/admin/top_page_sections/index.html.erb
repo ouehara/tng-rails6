@@ -1,0 +1,49 @@
+
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="page-title">
+    <h2>Top Page</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="x_panel">
+   
+    <div class="x_content">
+          <% @top_page_sections.each do |top_page_section| %>
+           
+            <h3 class="pull-left">
+            <%= link_to top_page_section.title, edit_admin_top_page_section_path(top_page_section) %>
+            </h3>
+            <%= link_to "delete section", [:admin, top_page_section], method: :delete, data: { confirm: 'Are you sure?' }, :class => "pull-right" %>
+            <div class="clear" />
+            <%= link_to 'Add Element', new_admin_top_page_sections_element_path %>
+            <table class="table table-striped jambo_table">
+            <thead>
+              <tr class="headings">
+                <th class="column-title">Image</th>
+                <th class="column-title">Title</th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody data-role="activerecord_sortable">
+            <% top_page_section.top_page_sections_element.with_translations(I18n.locale).order(:position).each do |f| %>
+              <tr class="pointer" data-role="category<%= f.id %>" data-move-url="<%= move_admin_top_page_sections_element_url(f.id) %>" data-position=<%= f.position %>">
+              <td><img src="<%=f.image_url %>" height='200' %></td>
+              <td><%= f.title %></td>
+              
+              <td><%= link_to 'Edit', edit_admin_top_page_sections_element_path(f) %></td>
+              <td><%= link_to 'Destroy', [:admin, f], method: :delete, data: { confirm: 'Are you sure? It will delete record including all translations' } %></td>
+              </tr>
+            <% end %> 
+            </tbody>
+            </table>
+          <% end %>
+    </div>
+</div>
+</div>
+<%= link_to 'New Top Page Section', new_admin_top_page_section_path %>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('*[data-role=activerecord_sortable]').activerecord_sortable();
+});
+</script>

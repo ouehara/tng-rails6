@@ -1,0 +1,12 @@
+<section> 
+    <div class="container">
+    <h2><%= section_title %></h2>
+        <ul class="link_section">
+            <% data.each do |d| %>
+                <li class="link_section_item">
+                    <a href="<%=d['link']%>"><%=d["title"]%> </a>
+                </li> 
+            <%end%>
+        </ul>
+    </div>
+</section>

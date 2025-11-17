@@ -1,0 +1,408 @@
+<% content_for :head do %>
+  <%= render "shared/hreflang" %>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <% if !@article.sponsored_content %>
+  <!-- Taboola head tag -->
+  <script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({article:'auto'});
+    !function (e, f, u, i) {
+      if (!document.getElementById(i)){
+        e.async = 1;
+        e.src = u;
+        e.id = i;
+        f.parentNode.insertBefore(e, f);
+      }
+    }(document.createElement('script'),
+    document.getElementsByTagName('script')[0],
+    '//cdn.taboola.com/libtrc/d2cx-network/loader.js',
+    'tb_loader_script');
+    if(window.performance && typeof window.performance.mark == 'function')
+      {window.performance.mark('tbl_ic');}
+  </script>
+  <% end %>
+  <style>
+  .btn-becos {
+    margin: 1em auto;
+    text-align: center;
+  }
+  .btn-becos > a {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-radius: 0.5rem;
+    background-color: #CFC173;
+    font-size: 1.125em;
+  }
+  .btn-becos > a:hover {
+    background-color: #dbd196;
+  }
+  </style>
+<% end %>
+<% body_class 'post' %>
+<%= render "shared/breadcrumb" %>
+<% set_meta_tags title: @title,
+      description: @description,
+      keywords: @keywords %>
+<div class="container">
+  <div class="post_row">
+    <main class="post_main">
+      <div class="post_article">
+        <div class="post_article-hero">
+          <picture>
+            <source media="(min-width:768px)" srcset="<%=@article.title_image.url(:original)%>&d=750x400 770w" sizes="100vw" width="770" height="411">
+            <img data-src="<%=@article.title_image(:medium)%>" src="" alt="" class="lazy" width="390" height="260">
+          </picture>
+        </div>
+        <ul class="post_categorize">
+          <% if I18n.locale.to_s != "ja" %>
+            <li class="post_categorize-item area"><%=link_to @article.cached_area.name, area_path(@article.cached_area) unless @article.cached_area.nil? %></li>
+            <li class="post_categorize-item category is-todo"><%=link_to @article.cached_category.root.name, category_path(@article.cached_category.root) unless @article.cached_category.nil?%></li>
+          <% else %>
+          <%# only japanese #%>
+            <li class="post_categorize-item area"><%= @article.cached_area.name %></li>
+            <li class="post_categorize-item category is-todo"><%= @article.cached_category.root.name%></li>
+          <% end %>
+          <% if @article.sponsored_content %>
+            <li class="post_categorize-item pr">PR</li>
+          <% end %>
+        </ul>
+        <h1 class="post_article-heading"><%=@article.disp_title[0]%></h1>
+        <% if !@article.cached_users.nil? %>
+          <%= render "article_info",
+            author: @article.cached_users.username,
+            translator: @article.userTranslator.username,
+            posted_date: !@article.schedule.nil? && @article.schedule[I18n.locale.to_s] ? @article.schedule[I18n.locale.to_s].to_datetime.strftime('%b %d %Y') : "",
+            revision_date: !@article.lang_updated_at.nil? && @article.lang_updated_at[I18n.locale.to_s] ? @article.lang_updated_at[I18n.locale.to_s].to_datetime.strftime('%b %d %Y') : ""
+          %>
+        <% end %>
+
+        <p class="post_article-intro"><%= @article.excerpt[0] %></p>
+
+        <%= react_component('article_new/article_sns', {
+            locale: I18n.locale,
+            position: 'top',
+            elements: {
+              page_url: request.original_url,
+              page_title: @title,
+              type: [
+                {
+                  "name": "Weibo",
+                  "link_text": "Share",
+                  "class_name": "weibo"
+                },
+                {
+                  "name": "Facebook",
+                  "link_text": "Share",
+                  "class_name": "fb"
+                },
+                {
+                  "name": "X",
+                  "link_text": "Post",
+                  "class_name": "x"
+                },
+                {
+                  "name": "Pinterest",
+                  "link_text": "Pin",
+                  "class_name": "pn"
+                }
+              ]
+            }
+          }) %>
+
+        <%= render "articles/bannerArea_top" %>
+
+        <div class="post-article_content">
+          <section class="post_article-section">
+            <% if !@article.sponsored_content %>
+              <p class="post_pr"><em><%= I18n.t("pr_article") %></em></p>
+            <% end %>
+            <%= render "show" %>
+            <% if I18n.locale.to_s == "en" %>
+              <%= render "banner/travel_contact", {position: "post_bottom", url: "https://www.tsunagujapan.com/tsunagu-japan-travel-dmc/?utm_source=internal&utm_medium=banner&utm_campaign=article_footer_banner&utm_content=variation_a", eleId: "post_travelLink"} %>
+            <% end %>
+            <%= render "banner/post_areafeature" %>
+            <p class="post_disclaimer"><%= I18n.t("disclaimer_article") %></p>
+          </section>
+        </div>
+
+        <% if I18n.locale.to_s == "en" %>
+          <div class="post_newsletter">
+            <div class="post_newsletter-desc">
+              <h3 class="post_newsletter-title"><%= I18n.t("newsletter_link.title") %></h3>
+              <p class="post_newsletter-text"><%= I18n.t("newsletter_link.description") %></p>
+            </div>
+            <div class="post_newsletter-action"><a href="<%= I18n.t("newsletter_link.pagelink") %>" class="hover-opacity"><%= I18n.t("newsletter_link.button_label") %></a></div>
+          </div>
+        <% end %>
+
+        <% if I18n.locale.to_s != "ja" && I18n.locale.to_s != "vi" && I18n.locale.to_s != "id" %>
+          <% if @article.id != 44831 %>
+            <div class="post_coupon">
+              <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/coupons/coupon02-#{I18n.locale.to_s}.png") }, class: "lazy img-responsive center-block", alt: t('article.banner.coupon'), :size => "770x140"), coupons_path, id: "post_coupon-#{I18n.locale.to_s}", class: "tour-banner hover-opacity post_coupon-bnr" %>
+            </div>
+          <% end %>
+        <% end %>
+
+        <%= render "tags", tags: @article.cached_tags %>
+
+        <%= react_component('article_new/article_sns', {
+            locale: I18n.locale,
+            position: 'bottom',
+            elements: {
+              page_url: request.original_url,
+              page_title: @title,
+              type: [
+                {
+                  "name": "Weibo",
+                  "link_text": "Share",
+                  "class_name": "weibo"
+                },
+                {
+                  "name": "Facebook",
+                  "link_text": "Share",
+                  "class_name": "fb"
+                },
+                {
+                  "name": "X",
+                  "link_text": "Post",
+                  "class_name": "x"
+                },
+                {
+                  "name": "Pinterest",
+                  "link_text": "Pin",
+                  "class_name": "pn"
+                }
+              ]
+            }
+        }) %>
+
+        <% if I18n.locale.to_s == "zh-hans" %>
+          <div class="post_weiboBnr">
+            <%= link_to image_tag(asset_pack_path("media/images/weibo.png"), class: "img-responsive", alt: "欢迎关注 tsunagu Japan 开通做博账号啦！"), "https://www.weibo.com/p/1006067183527272/home?from=page_100606&mod=TAB&is_all=1#place", target: :_blank, class: "weibo-banner" %>
+          </div>
+        <% end %>
+      </div>
+
+      <%= render "articles/author", user: @article.cached_users %>
+
+      <%= render "articles/bannerArea_bottom" %>
+
+      <% if browser.device.mobile? %>
+        <div class="post_searchbox">
+        <%= render "articles/searchbox" %>
+        </div>
+      <% end %>
+
+      <% if !@article.sponsored_content %>
+      <section class="related_posts">
+        <h2><%= I18n.t("related_articles_title") %></h2>
+        <!-- Taboola Widget -->
+        <div id="taboola-below-article-thumbnails-new"></div>
+        <script type="text/javascript">
+          window._taboola = window._taboola || [];
+          _taboola.push({
+            mode: 'alternating-thumbnails-b',
+            container: 'taboola-below-article-thumbnails-new',
+            placement: 'Below Article Thumbnails New',
+            target_type: 'mix'
+          });
+        </script>
+      </section>
+      <% else %>
+      <%= react_component('article_new/article_sub', {
+            elements: {
+              related_articles_out_content:JSON.parse(@related_articles),
+              articlePath: article_path(":param"),
+            },
+            showRelatedAd: @endRelated,mobile: browser.device.mobile?
+          }
+        ) %>
+      <% end %>
+    </main>
+
+    <aside class="sidebar">
+      <% if !browser.device.mobile? %>
+      <div class="sidebar_searchbox">
+        <%= render "articles/searchbox" %>
+      </div><!-- /.sidebar_searchbox -->
+      <% end %>
+      <% if !@article.sponsored_content %>
+        <div class="sidebar_adsense">
+          <!-- tJ_article_sidebar -->
+          <ins class="adsbygoogle ads_img"
+              style="display:inline-block;width:300px;height:250px"
+              data-ad-client="ca-pub-4177280178292675"
+              data-ad-slot="5414269395"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div><!-- /.sidebar_adsense -->
+        <% if !browser.device.mobile? %>
+        <div class="sidebar_advertisements">
+          <%= react_component('sidebar/sidebar_ads',{elements:JSON.parse(@ad)}) %>
+        </div><!-- /.sidebar_advertisements -->
+        <% end %>
+      <% end %>
+    </aside><!-- /.sidebar -->
+
+  </div><!-- /.post_row -->
+</div><!--- /.container -->
+
+<% if I18n.locale.to_s != "ja" %>
+<%= render "shared/link_section", section_title: I18n.t("related_interest"), data: @children %>
+<% end %>
+
+<% if browser.device.mobile? %>
+<aside class="advertisement visible-xs-block">
+  <%= react_component('ads/ad_list_view',{elements:JSON.parse(@ad), mobile: browser.device.mobile?}) %>
+  <div class="advertisement_ads">
+    <!-- tJ_article_footer_before_sp -->
+    <ins class="adsbygoogle ads_img"
+        style="display:inline-block;width:300px;height:250px"
+        data-ad-client="ca-pub-4177280178292675"
+        data-ad-slot="3464973187"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</aside><!-- /.advertisement -->
+<% end %>
+
+<%= render "shared/sns" %>
+<div class="clip_widget_container">
+  <%= react_component('clip/clip_widget',{elements: {post: @article,thumb: @article.title_image(:thumb),  url: clips_path()}}) %>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "headline": "<%= @article.disp_title[0] %>",
+  "author": "<%= !@article.cached_users.nil? ? @article.cached_users.username: '' %>",
+  "image": "<%= @article.title_image(:medium) %>",
+  "genre": "traveling",
+  "keywords": "<%= @article.all_tags %>",
+  "url": "<%= url_for(:only_path => false) %>",
+  "datePublished": "<%= !@article.schedule.nil? && @article.schedule[I18n.locale.to_s] ? @article.schedule[I18n.locale.to_s].to_datetime.strftime('%b %d %Y')  : "" %>",
+  "dateModified": "<%= !@article.lang_updated_at.nil? && @article.lang_updated_at[I18n.locale.to_s] ? @article.lang_updated_at[I18n.locale.to_s].to_datetime.strftime('%b %d %Y') : "" %>",
+  "description": "<%= @article.excerpt[0]%>",
+  "mainEntityOfPage": "<%= url_for(:only_path => false) %>",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "height": "34",
+      "url": "https://www.tsunagujapan.com/assets/logo.png",
+      "width": "200"
+    },
+    "name": "tsunagu Japan"
+  }
+}
+</script>
+
+<% if false %>
+  <% if I18n.locale.to_s == "zh-hant" %>
+  <script>
+    function isInView(el) {
+        let y = el.offsetTop;
+        let windowY = window.pageYOffset;
+        return y > windowY && y < windowY + window.innerHeight;
+    }
+
+    let bannerSeen = false;
+
+    const scrollHandler = function(event) {
+      if(document.querySelector("#zh-hant-cust-banner-article") == null) {
+        return
+      }
+        if (isInView(document.querySelector("#zh-hant-cust-banner-article")) && !bannerSeen) {
+            //alert("#footer-banner detected.");
+            ga('send', 'event', 'shiga', 'impression', '<%= I18n.locale %>.shiga_impression_article')
+            bannerSeen = true;
+            document.removeEventListener('scroll', scrollHandler);
+        }
+    }
+
+    document.addEventListener('scroll', scrollHandler);
+  </script>
+  <% end %>
+<% end %>
+
+<% if !@article.sponsored_content %>
+<!-- Taboola body tag -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<% end %>
+
+<% content_for :foot do %>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    let active = false;
+
+    const lazyLoad = function() {
+      if (active === false) {
+        active = true;
+
+        setTimeout(function() {
+          lazyImages.forEach(function(lazyImage) {
+            if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.classList.remove("lazy");
+
+              lazyImages = lazyImages.filter(function(image) {
+                return image !== lazyImage;
+              });
+
+              if (lazyImages.length === 0) {
+                document.removeEventListener("scroll", lazyLoad);
+                window.removeEventListener("resize", lazyLoad);
+                window.removeEventListener("orientationchange", lazyLoad);
+              }
+            }
+          });
+
+          active = false;
+        }, 200);
+      }
+    };
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+  }
+});
+</script>
+  <% if I18n.locale.to_s == "en" && !@article.sponsored_content %>
+    <% if @article.cached_category.root.name == "Things to Do" || @article.cached_category.root.name == "Accommodation" || @article.cached_category.root.name == "Japanese Culture" || @article.cached_category.root.name == "Experiences" || @article.cached_category.root.name == "Food & Drinks" || @article.cached_category.root.name == "Travel Tips" %>
+      <%= render "shared/modal_travel" %>
+    <% else %>
+      <%= render "shared/modal_newsletter" %>
+    <% end %>
+  <% end %>
+<% end %>

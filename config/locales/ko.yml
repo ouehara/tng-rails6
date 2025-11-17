@@ -1,0 +1,1243 @@
+ # Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available aOkint http://guides.rubyonrails.org/i18n.html.
+
+ko:
+  langAttribute: "ko"
+  helpers:
+    label:
+      hotel_landingpage:
+        official_text: "Great deals if you use their official website!"
+        recommend_text: "Lodgings that tsunagu Japan highly recommend!"
+        published: "Publish"
+  hello: "Hello world"
+  site_name: "tsunagu Japan 츠나구재팬"
+  site_top:
+    title_prefix: "일본관광 웹매거진"
+    page_desc: "관광, 숙박시설, 여행 팁 그리고 일본 문화까지 - tsunagu Japan 츠나구재팬에서 일본에 대한 기사를 찾아보세요."
+    breadcrumb: "홈페이지"
+  page_title: "일본 관광・여행정보"
+  page_prefix: "tsunagu Japan 츠나구재팬"
+  page_desc: "한 차원 높은 일본여행 웹사이트 ‘츠나구 재팬’! 일본 관광정보, 맛집, 쇼핑, 숙박, 교통, 날씨, 문화까지 꼼꼼하게 소개해드립니다."
+  confirm: "확정"
+  more_btn: "More"
+  more_details: "더 보기"
+  menu_more: "더 보기"
+  partner: "파트너"
+  search_map: "지도에서 찾기"
+  newest_article_on: "%{area} 최신 기사"
+  narrow_down_by_interest: "지역을 카테고리로 상세 검색"
+  narrow_down_by_int_area: "지역과 카테고리로 상세 검색"
+  search_region: "지역에서 찾기"
+  see_other_areas: "타지역 보기"
+  popular_articles: "인기 기사"
+  narrow_by_area: "지역을 상세 검색"
+  other_interests: "타 카테고리 기사 보기"
+  related_interest: "관련 카테고리"
+  video: "동영상"
+  view_videos: "모든 영상 보기"
+  video_desc: "일본의 다양한 음식, 풍경, 문화, 전통 예능, 액티비티, 여행 팁 등에 대한 동영상을 소개합니다."
+  img_source: "사진 :"
+  newest_top: "최신 기사"
+  view_coupons: "모든 쿠폰 보기"
+  coupon_headline: "할인 쿠폰"
+  coupon_desc: "쇼핑, 숙소 예약, 투어 예약 등을 하실 때 사용 가능한 할인 쿠폰을 소개합니다."
+  coupon_none: "현재 사용 가능한 쿠폰이 없습니다."
+  related_label: '관련 기사'
+  about_author: "기자 프로필"
+  date_published_article: "공개 날짜"
+  date_updated_article: "업데이트 날짜"
+  disclaimer_article: "기사 내의 정보는 공개 시점의 정보입니다."
+  coupons_top: "일본에서의 할인 쿠폰은 여기에서 획득!"
+  area_banner:
+    rentalcars:
+      desc: 취향에 맞는 렌트카를 저렴한 가격으로 이용하실 수 있습니다. 렌트카. 일본에서 렌터카를 이용하시고자 한다면 여기! 자세히 보기."
+      link: "https://www.klook.com/ko/car-rentals/?aid=30900"
+  none: "없음"
+  toc: "목차"
+  sort_by: "구역별 정렬"
+  clip_desc: "이 페이지는 당신이 북마크한 기사 일람을 표시하는 페이지입니다. 여행중에 이들 기사를 참조하면서 쾌적한 여행을 즐겨보세요."
+  clip_none: "아무것도 클립되지 않았습니다."
+  empty_state: "죄송합니다, 아직 이것과 관련된 컨텐츠가 없습니다!저희는 항상 새로운 컨텐츠를 찍어내고 있으니, 어떤 업데이트도 놓치지 마세요!"
+  search_by: "목적지, 활동 또는 시설명으로 검색"
+  recommended_area: "추천 지역"
+  view_area: "모든 지역 보기"
+  search_in: "상세 검색"
+  view_restaurant: "모든 레스토랑 보기"
+  travel_tips: "여행 팁"
+  transportation: "교통"
+  manners: "매너"
+  budget_travel: "저예산 여행"
+  climate: "기후 & 날씨"
+  top_travel: "인기 여행 일정"
+  things: "관광과 체험"
+  fooddrink: "음식"
+  hotels: "호텔 & 료칸"
+  shopping: "쇼핑"
+  travel_tip: "여행 팁"
+  in_depth: "일본 문화"
+  festival: "축제 & 이벤트"
+  view_tips: "모든 팁 보기"
+  featured_topics: "주제별 모음"
+  japan: "일본"
+  latest: "Latest Posts"
+  media_partner: "MEDIA PARTNER"
+  sushi: "#스시"
+  onsen: "#온천"
+  ramen: "#라멘"
+  activites: "#활동/경험"
+  souvenier: "#기념품"
+  beauty: "#미용 & 패션"
+  history: "#역사 & 문화"
+  hotels_ryokan: "#호텔 & 료칸"
+  popular_restaurants: "지역별 인기 레스토랑 "
+  related_articles_title: "관련 기사"
+  buttons:
+    btn-default: "default"
+    btn-cust-blue: "blue"
+    btn-cust-green: "green"
+    book-with: "orange button"
+    btn-ads: "red ad button"
+    savor-button-booking: "savor button"
+    btn-3d-orange: "orange with shadow"
+  tours:
+    recommended: 'Recommended Tours'
+    currency: 'JPY'
+    from: 'from'
+    desc: '이 페이지에서는 일본에서 체험할 수 있는 투어 정보를 소개하고 있습니다.'
+    tour: "추천 투어"
+    details: '자세한 정보'
+  savor:
+    search_title: "Try Out One of Japan's Most Popular Search Engines!"
+    search_results: "%{start} - %{end} of %{all}"
+    sort_price: "Price"
+    sort_price_ask: "Low to High"
+    sort_price_desc: "High to Low"
+    sidebar_headline: "Japanese Restaurant Guide"
+    slogan: "Savor Japan is an exhaustive restaurant<br> guide for restaurants in Japan."
+    tokyo: "도쿄"
+    tokyo_sub:
+      kanagawa: "가나가와"
+      chiba: "지바"
+      tochigi: "도치기"
+      gunma: "군마"
+      saitama: "사이타마"
+      ibaraki: "이바라키"
+      shizuoka: "시즈오카"
+      yamanashi: "야마나시"
+    kyoto_sub:
+      kyoto: "교토"
+      osaka: "오사카"
+      hyogo: "효고"
+      nara: "나라"
+      shiga: "시가"
+      wakayama: "와카야마"
+      mie: "미에"
+    honshu_sub:
+      miyagi: "미야기"
+      fukushima: "후쿠시마"
+      yamagata: "야마가타"
+      iwate: "이와테"
+      akita: "아키타"
+      aomori: "아오모리"
+      aichi: "아이치"
+      shizuoka: "시즈오카"
+      gifu: "기후"
+      ishikawa: "이시카와"
+      nagano: "나가노"
+      niigata: "니가타"
+      toyama: "도야마"
+      fukui: "후쿠이"
+      yamanashi: "야마나시"
+      hiroshima: "히로시마"
+      okayama: "오카야마"
+      shimane: "시마네"
+      tottori: "돗토리"
+      yamaguchi: "야마구치"
+    shikoku_sub:
+      ehime: "에히메"
+      kagawa: "가가와"
+      kochi: "고치"
+      tokushima: "도쿠시마"
+    kyushu_sub:
+      fukuoka: "후쿠오카"
+      kagoshima: "가고시마"
+      kumamoto: "구마모토"
+      miyazaki: "미야자키"
+      nagasaki: "나가사키"
+      oita: "오이타"
+      saga: "사가"
+    near_tokyo: "Near Tokyo"
+    kyoto: "Kyoto and Osaka area"
+    hokkaido: "홋카이도"
+    chubu: "주부"
+    kanto: "간토"
+    kansai: "간사이"
+    tohoku: "도호쿠"
+    chugoku: "주고쿠"
+    northern_honshu: "도호쿠"
+    central_honshu: "주부"
+    western_honshu: "주고쿠"
+    shikoku: "시코쿠"
+    kyushu: "규슈・오키나와"
+    okinawa: "오키나와"
+    learn_more: "learn more"
+    show_less: "show less"
+    restaurant_search: "레스토랑 검색"
+    search_by: "인기 지역별로 찾기"
+    no_searchresult: "Restaurants were not found. Please try different search criteria."
+    sidebar:
+      s_keyword: "	키워드로 찾기"
+      search: "레스토랑 검색"
+      location: "지역"
+      cuisine: "요리"
+      filter: "Filter"
+      budget: "예산"
+      dinner: "Dinner"
+      lunch: "Lunch"
+      extras: "추가 사항"
+      cc: "신용카드 결제"
+      coupons: "Coupons / Vouchers"
+      keywords: "Keywords"
+      search: "검색"
+      placeholder_keyword: "예: 도시, 역, 요리, 혹은 특정 식당"
+      placeholder_city: "예: 도시, 널리 알려진 명소"
+      placeholder_cuisine: "예: 스시, 라멘"
+    filter:
+      no_smoking: "금연"
+      menu: "영어 메뉴"
+      staff: "영어가 가능한 종업원"
+      languages_available: "영어가 가능한 종업원"
+      late_night: "심야 서비스"
+      late_night_service: "심야 서비스"
+      diet: "특별식 주문"
+      special_diet: "특별식 주문"
+      western_cutlery: "서양식 식기"
+      lunch: "런치"
+      lunch_menu: "런치"
+      wifi: "무료 Wi-Fi"
+      free_wifi_available: "무료 Wi-Fi"
+      visa: "Visa"
+      mastercard: "MasterCard"
+      anex: "American Express"
+      diners: "Diners Club"
+      coupons: "Coupons / Vouchers"
+  hotel-lp:
+    meta_title: "tsunagu Japan's Top Picks for Japanese Hotels & Inns"
+    meta_desc: "Using our vast network, we have picked out the best Japanese hotels and inns to showcase. Many can’t be found on other websites, so take a look!"
+    breadcrumb: "Editorial Picks"
+    title_html: "tsunagu Japan <br> editorial department carefully selected!<br>Special homepage introduction"
+    desc_headline: "A noteworthy trip starts with exceptional lodging."
+    desc: "Japan has around 50,000 hotels and inns, which makes coming to a decision incredibly hard. Using our vast network, our editorial team has scoured through lodgings all over Japan and picked out a select few to introduce to you! There are several that you won’t find on other websites, so it’s definitely worth a look!"
+    starting: "Starting from"
+    pickup: "New Pickup"
+    website: "Official Website"
+    website_sub_html: "Great deals if you use their official website!"
+    website_sub_recommend_text: "We highly recommend this lodge!"
+    related: "Related Article"
+    hotel_price_tax_html: "Excluding taxes and fees <br> It is a charge for two people in one room."
+    notice:
+      change: "The information on this website may change even after the publish date."
+      estimated: "The estimated accommodation fee is based on the fee for 1 person renting a room that can accommodate 2 people during the off-season. It includes meals, but does not include consumption tax, bathing tax, or service charges. Depending on factors like how many people use 1 room, the season, the type of room, and the accommodation plan, the overall accommodation fee can differ."
+      communication: "Staff members who can communicate in languages other than Japanese may not always be present."
+    features:
+      bar: "Bar"
+      parking: "Parking"
+      bus: "Pick Up Service"
+      wifi: "Wi-Fi"
+      onsen: "온천"
+      smoking: "Smoking Room"
+      nosmoking: "Non-smoking Room"
+      smokingspace: "Smoking Spaces"
+      english: "English OK"
+      chinese: "Chinese Ok"
+  edion:
+    title: "Special Feature: Best-selling Home Electronics in Japan!! [With Discount Coupon]"
+    website_html: "Official Homepage (Japanese Only) <a href='https://www.edion.com/' target='_blank'>https://www.edion.com/</a>"
+    address: "Address"
+    further: "For details on other stores across Japan, click below. "
+    phone: "Phone"
+    tokyo: "EDION AKIBA / Tokyo"
+    tokyo_a: "1-2-9 Sotokanda, Chiyoda-ku, Tokyo"
+    tokyo_p: "03-3257-1100"
+    osaka: "EDION Dotonbori Store / Osaka"
+    osaka_a: "Dotonbori Benisu Bldg. 12F, 1-4-27 Dotonbori, Chuo-ku, Osaka-shi, Osaka"
+    osaka_p: "06-6212-3035"
+    osaka2: "EDION Universal CityWalk Osaka Store / Osaka"
+    osaka2_a: "Universal CityWalk Osaka 4F, 6-2-61 Shimaya, Konohana-ku, Osaka-shi, Osaka"
+    osaka2_p: "06-6469-1211"
+    only_headline_html: "Only for tsunagu Japan readers!!<br>
+Discount coupon for EDION (home electronics retailer)"
+    consumer_electronics: "Consumer electronics help make your life easier. In Japan, there are many different types of home electronics, as well as a ton of stores that specialize in and sell them. This special feature introduces not only the standard home electronics, but also the ones that are extremely popular in Japan right now. "
+    popular_headline: "5 Popular Salon Products"
+    top10: "Top 10 Popular & Recommended Products for 2017"
+    what_is_headline: "What is EDION?"
+    what_is: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    readers_discount: "For All Our Readers, Here's an EDION Discount Coupon!"
+    readers_discount_text_html: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    popular:
+      1_headline: "1.SHARP Plasmacluster Dryer (Ruby Red) (IBHP9R)"
+      1_desc_html: "The plasmacluster ions moisturize the hair and reduce static electricity. The built-in “Beauty Mode” automatically adjusts the temperature to suit the season, and the lukewarm air that comes out alternately will make your hair beautiful, shiny, and smooth.
+<br> <br>
+<span class='price'>Example Price: 19,880 yen (before tax)</span>"
+      2_headline: "2.Panasonic Ladies’ Shaver Salashe (Blue) (ES2235PPA)"
+      2_desc_html: "This is an all-purpose shaver that can handle your armpits, legs, arms, and even your bikini line! It has a grip that was engineered to be easy to hold, as well as a compact head. It’s waterproof, so you can use it in the shower. Another perk is its bright color scheme!
+<br> <br>
+<span class='price'>Example Price: 2,480 yen (before tax)</span>"
+      3_headline: "3.Panasonic Face Shaver Ferrier (Green) (ESWF50G)"
+      3_desc_html: "This extraordinary shaver comes with a pivoting head that can follow the natural contours of the skin, turning at angles that make it easy to shave. Its rounded blade edges make it safe for anyone to use, and it can easily shave off peach fuzz. Applying your make-up will get a lot easier! If you want something easy to carry, its compact size will be convenient for you.
+<br> <br>
+<span class='price'>Example Price: 3,480 yen (before tax)</span>"
+      4_headline: "4.YA-MAN Body Esthetic Original Acetino Quattro Impact Evolution (Red) (IB250RED)"
+      4_desc_html: "The 8 rollers rotate at an incredible speed, and they’ll thoroughly massage any fleshy parts that you’re worried about, so you can receive great esthetic care from home. You can use it on your body and face. It’s also waterproof, so you can even use it in the bath!
+<br> <br>
+<span class='price'>Example Price: 14,800 yen (before tax)</span>"
+      5_headline: "5.Panasonic Eyelash Curler (Natural Curls) Matsuge Kurun (Pink) (EHSE10PPP)"
+      5_desc_html: "This is a heated eyelash curler that will give you long-lasting natural curls. Equipped with dual heating pads, it’ll give your eyelashes the proper curl and boost they need!
+<br> <br>
+<span class='price'>Example Price: 1,700 yen (before tax)</span>"
+    top:
+      other: "Other Popular Products"
+      best_selling: "Best-selling Among Travelers #%{number} (EDION)"
+      1_headline: "1. MTG ReFa Carat (PECL1706)"
+      1_desc_html: "This face roller takes in light with a solar panel and releases it as a microcurrent. With its unique form and diamond cut design, it gently tightens your delicate skin and helps improve your skin texture. It’s also made from waterproof materials, so you can rest easy.
+<br> <br>
+<span class='price'>Example Price: 23,800 yen (before tax)</span>"
+      2_headline: "2. TIGER Stainless Bottle Colobockle (MBRB06GRL)"
+      2_desc_html: "You can wash every part of this stainless bottle. Just by changing the bottle’s mouthpiece, you can either directly drink from the bottle with one finger push, or you can pour your drink into a cup. They’re popular for their cute designs!
+<br> <br>
+<span class='price'>Example Price: 5,980 yen (before tax)</span>"
+      3_headline: "3. Panasonic Hair Dryer Nano Care (Rouge Pink) (EHCNA99RP)"
+      3_desc_html: "Quickly dries your hair and improves your hair quality – this is a hair dryer that’ll really take care of your hair! It can help reduce damage caused from friction or ultraviolet (UV) light. It’s highly recommended for its 5 modes that you can mix and match to suit your type of hair, such as its Hair Ends Care Mode or its Hot-Cold Rhythm Mode.
+<br> <br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      4_headline: "4. ATEX Lourdes Premium Massage Cushion Double Massage (Mint Black) (AXHCL188MB)"
+      4_desc_html: "This massage cushion is perfect for rooms with stylish interiors. Using random movements, it can massage a variety of places, such as your neck, shoulders, waist, back, and back of the foot. You’ll be happy to know that you can easily remove the cover for a quick wash!
+<br>
+<span class='price'>Example Price: 9,800 yen (before tax)</span>"
+      5_headline: "5. Philips Nose, Ear & Eyebrow Trimmer Nosetrimmer Series 3000 (Black/Grey) (NT316210)"
+      5_desc_html: "Every single part of this product is washable. With just this trimmer, you can tidy up your nose, ears, and eyebrows. Its long-lasting sharpness is what makes it special. But don’t worry, because the blade tips are rounded, and the blade itself is ultrathin to ensure that it doesn’t nick the skin!
+<br>
+<span class='price'>Example Price: 2,980 yen (before tax)</span>"
+      6_headline: "6. Braun Electric Toothbrush Oral-B Genius 9000 (Black) (D7015256XCBK)"
+      6_desc_html: "This electric toothbrush cleans your teeth just as well as a dentist in a dental clinic. The smartphone app that comes with it can tell you what parts of your mouth still need to be brushed, so you can properly brush every part of your mouth, including the corners!
+<br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      7_headline: "7. Sharp Plasmacluster Dehumidifier (White) (CVG71W)"
+      7_desc_html: "Not only does this dehumidifier help dry hung up clothes while getting rid of the funky smell that comes with the drying process, but it also prevents mold from growing in the room! It’s designed to block out large dust balls. Its handle makes it easy to move around, and it makes drainage easy too!
+<br>
+<span class='price'>Example Price: 26,800 yen (before tax)</span>"
+      8_headline: "8. Vitantonio Yogurt Maker (White x Silver) (VYG11)"
+      8_desc_html: "With this device, you’ll finally be able to easily make yogurt at home! It’s popular for being able to make a wide variety of things, such as cheese and other fermented foods, along with any foods that require low-temperature cooking.
+<br>
+<span class='price'>Example Price: 6,880 yen (before tax)</span>"
+      9_headline: "9. TESCOM Negative Ion Curl Dryer (Pink) (TIC750P)"
+      9_desc_html: "Regardless of whether you have short or long hair, this curl dryer will not only fluff up your hair, but it’ll also tidy every bit of it, including the tips! Made from aluminum, it evenly distributes heat, ensuring that you get the exact hairstyle that you want.
+<br>
+<span class='price'>Example Price: 2,580 yen (before tax)</span>"
+      10_headline: "10. YA-MAN RF Beaute Photo PLUS (Champagne Bronze) (HRF10T) "
+      10_desc_html: "Warming, cleansing, moisturizing, facial muscle care, cooling – this is a one-in-all salon device that can play 5 different roles! Deeply penetrating your skin, it’ll make your skin as supple as it can be!
+<br>
+<span class='price'>Example Price: 37,000 yen (before tax)</span>"
+  weather:
+    1: "Sunny"
+    2: "Sun, followed by clouds"
+    3: "Sun, followed by rain"
+    4: "Sun, followed by snow"
+    5: "Sunny with passing clouds"
+    6: "Sunny with occasional rain"
+    7: "Sunny with occasional snow"
+    8: "Cloudy"
+    9: "Clouds followed by sun"
+    10: "Clouds followed by rain"
+    11: "Clouds followed by snow"
+    12: "Cloudy with some sun"
+    13: "Cloudy with occasional rain"
+    14: "Cloudy with occasional snow"
+    15: "Rainy"
+    16: "Rain gives way to clouds"
+    17: "Rain followed by sun"
+    18: "Rain followed by snow"
+    19: "Scattered rain"
+    20: "Mostly rainy with some sun"
+    21: "Mostly rainy with some snow"
+    22: "Snowy"
+    23: "Snow gives way to clouds"
+    24: "Snow followed by sun"
+    25: "Snow followed by rain"
+    26: "Scattered snow"
+    27: "Mostly snowy with some sun"
+    28: "Mostly snowy with some rain"
+  map:
+    search_from: "Search from list"
+    headline: "Search from Map"
+    information1: "※ Sendai is included in Miyagi"
+    information2: "※ Yokohama, Kamakura, Hakone is included in Kanagawa"
+    information3: "※ Kanazawa is included in Ishikawa"
+    information4: "※ Nagoya is included in Aichi"
+    hokkaido: "1. 홋카이도"
+    sendai: "5. 센다이"
+    tokyo: "13. 도쿄"
+    yokohama: "14. 요코하마"
+    kamakura: "14. 가마쿠라"
+    hakone: "14. 하코네"
+    kanazawa: "17. 가나가와"
+    nagoya: "23. 나고야"
+    kyoto: "25. 교토"
+    osaka: "29. 오사카"
+    fukuoka: "40. 후쿠오카"
+    okinawa: "오키나와"
+    popular: "Popular cities for tourists"
+  basic-information:
+    name: "명칭"
+    hours: "영업시간"
+    closed: "휴일"
+    price: "가격"
+    address: "주소"
+    access: "교통편"
+    url-ja: "웹사이트 (일본어)"
+    url-en: "웹사이트 (영어)"
+    url-th: "Website (Thai)"
+    url-zh-hant: "웹사이트 (중국어 번체)"
+    url-zh-hans: "웹사이트 (중국어 간체)"
+    others: "그 외"
+    checkin: "Check-in"
+    checkout: "Check-out"
+  sidebar:
+    finder: "레스토랑 검색"
+    rental: "Rental Car"
+    weekly: "주간 예보"
+    ranking: "인기 기사"
+    connect: "Connect"
+    more: "더 보기"
+    hide: "hide"
+    featured: "특집"
+    book_agoda: "숙소를 예약"
+    spotlight: "Spotlight"
+  search:
+    title: "검색"
+    desc: "%{term}로(으로)%{num}건의 검색결과를 찾았습니다"
+  views:
+    pagination:
+      previous: "<i class='icon-arrow-left icons'></i>"
+      next: "<i class='icon-arrow-right icons'></i>"
+  rankings:
+    title: "인기 기사"
+    desc: ""
+  tags:
+    title: "%{param}"
+    desc: ""
+    list_title: "최신 %{tag}기사"
+    meta_title: "일본 %{tag}"
+    single_meta_desc: "일본 %{tag}에 대한 기사를 읽어보세요. tsunagu Japan 츠나구재팬에서 일본 방문이나 거주에 대한 정보가 담긴 기사를 찾아보시기 바랍니다."
+    multi_meta_desc: "일본 %{tag}에 대한 기사 %{N}를 읽어보세요. tsunagu Japan 츠나구재팬에서 일본 방문이나 거주에 대한 정보가 담긴 기사를 찾아보시기 바랍니다."
+  category:
+    cat2_with_child_cat3_desc: "%{cat2_alias}에 대한 %{N} 기사를 읽어보세요. %{cat3}에 대해 더 알아보세요."
+    cat2_without_child_cat3_desc: "%{cat2_alias}에 대한 %{N} 기사를 읽어보세요. 일본 %{parent_cat1}에 대한 다른 기사들도 찾아보시기 바랍니다."
+    cat3_with_only_1_article: "%{cat3_alias}에 대해 읽어보세요. 일본 %{parent_cat2}에 대한 다른 기사도 찾아보시기 바랍니다."
+    cat3_with_2_and_more_articles: "%{cat3_alias}에 대한 %{N} 기사를 읽어보세요. 일본 %{parent_cat2}에 대한 다른 기사들도 찾아보시기 바랍니다."
+  area:
+    index_title: "일본의 지역"
+    index_desc: "관광과 체험, 음식, 여행 팁, 쇼핑 등과 관련된 많은 기사를 찾아보려면 '일본의 지역' 페이지를 둘러보세요."
+    area_intro: "이 페이지에서는 일본의 각 지역에서의 관련 기사를 찾을 수 있습니다. 알고 싶은 지역을 지도상에서 클릭하면 그 지역의 관련 기사 일람 페이지로 이동할 수 있습니다."
+    banner_section_title: "지역별 특집 페이지"
+    top_link:
+      hokkaido: "홋카이도"
+      tohoku: "도호쿠"
+      kanto: "간토"
+      chubu: "주부"
+      kansai: "간사이"
+      chugoku: "주고쿠"
+      shikoku: "시코쿠"
+      kyushu: "규슈"
+      okinawa: "오키나와"
+    breadcrumb: "지역"
+    title: "%{param}"
+    desc: ""
+    area: "지역"
+    title_prefix: "에 대한 모든 것"
+    child_area_desc: "%{prefecture} %{child_area}에 관한 기사를 읽어보세요 - 관광 명소, 체험 등"
+    feature:
+      hokkaido:
+        title: "홋카이도 특집"
+        description: "여기에 홋카이도 관련 기사가 총집합! 홋카이도의 추천 숙박 시설과 국립 공원, 현지 먹거리, 액티비티 투어리즘 등, 홋카이도를 200% 즐기기 위해 필요한 모든 정보가 기재되어 있습니다."
+        top: "홋카이도"
+        article:
+          1:
+            title_html: "홋카이도에 대해서"
+            text_html: "일본 최북단에 있는 홋카이도는 세계 자연 유산인 시레토코와 웅대한 산맥과 다양한 동식물이 서식하고 있는 구시로 습원 등, 스케일이 다른 자연 유산을 만끽할 수 있는 관광지입니다. 또, 광활한 면적 때문에 지역에 따라 기후와 풍토가 다르며 특색 있는 전통문화와 향토 요리, 행사와 액티비티도 즐길 수 있습니다."
+            url: "https://www.tsunagujapan.com/ko/all-about-hokkaido/"
+          2:
+            title_html: "고급 숙박 시설(호텔/료칸)"
+            text_html: "홋카이도에는 웅대한 자연과 어우러진 숙박시설이 다수 있습니다. 세계 굴지의 설질을 자랑하는 니세코, 사계절 내내 아름다운 풍경이 이어지는 후라노, 홋카이도의 현관 하코다테 등, 각 지역별 특색 있는 숙박 시설을 소개합니다. 대자연에 둘러싸인 홋카이도에서 심신을 리프레시 해보세요."
+            url: "https://www.tsunagujapan.com/ko/trustworthy-luxury-accommodations-in-japans-hokkaido-area/"
+          3:
+            title_html: "어드벤처 투어리즘"
+            text_html: "어드벤처 투어리즘이란 자연, 이문화, 액티비티 중 두 가지 요소를 체험할 수 있는 투어로, SDGs와 코로나 시대에 주목받는 차세대 여행의 형태입니다. 계절마다 변화무쌍한 자연과 스토리, 지역 고유의 아이누 문화, 홋카이도의 매력을 알기 쉽게 전해주는 가이드가 많은 홋카이도야말로 어드벤처 투어리즘에 적격인 곳입니다."
+            url: "https://www.tsunagujapan.com/ko/adventure-tourism_in_hokkaido/"
+          4:
+            title_html: "국립공원"
+            text_html: "일본의 최북단에 위치하며 주변이 바다로 둘러싸인 홋카이도에는 혼슈와 다른 독자적인 생태계가 펼쳐집니다. 세계 유산인 '시레토코 국립공원', 고산식물과 꽃을 만날 수 있는 '리시리레분 사로베쓰 국립공원', 세계 유수의 투명도를 자랑하는 '마슈코 호수'와 '아칸마슈 국립공원' 등, 홋카이도에 있는 6개의 국립공원은 보는 사람을 감동시키는 아름다움으로 가득합니다."
+            url: "https://www.tsunagujapan.com/ko/national-park-in-hokkaido/"
+          5:
+            title_html: "현지 먹거리"
+            text_html: "일본 제일의 면적을 자랑하는 홋카이도는 바다와 인접한 항구 도시에는 해산물, 내륙 지방에는 야채와 고기, 유제품 등, 신선한 식재료가 가득합니다. 지역별로 개성 있는 라멘, 양고기와 야채를 같이 먹는 징기스칸, 수프카레, 감자버터 등, 다양한 현지 먹거리가 있으니 꼭 드셔보시기 바랍니다."
+            url: "https://www.tsunagujapan.com/ko/12-local-foods-not-to-be-missed-in-hokkaido/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "홋카이도 지역에 관한 기사를 더 읽어 보세요!"
+          1:
+            url: "https://www.tsunagujapan.com/ko/50-things-to-do-in-hokkaido/"
+            text: "홋카이도에서 꼭 해봐야 할 50가지"
+          2:
+            url: "https://www.tsunagujapan.com/ko/a-guide-on-hokkaido-s-weather-climate/"
+            text: "홋카이도의 날씨와 기후에 대한 가이드"
+          3:
+            url: "https://www.tsunagujapan.com/ko/10-recommended-sightseeing-spots-sapporo/"
+            text: "삿포로에 가신다면 미리 체크해 두세요! 추천 관광 명소 10선!"
+          4:
+            url: "https://www.tsunagujapan.com/ko/hokkaido-restaurant-best-3/"
+            text: "【홋카이도 여행】삿포로 먹방 여행을 위한 추천맛집 Best 3"
+          5:
+            url: "https://www.tsunagujapan.com/ko/12-seasonal-ramen-shops-in-hokkaido-that-you-must-try-now/"
+            text: "홋카이도에서 지금 꼭 먹어야 할 라멘집 12선"
+          6:
+            url: "https://www.tsunagujapan.com/ko/15-ways-to-enjoy-winter-in-hokkaido/"
+            text: "홋카이도에서 겨울을 즐기는 15가지 방법"
+      tohoku:
+        title: "도호쿠 특집"
+        description: "이 페이지에서는 도호쿠에 관한 기사를 모아서 보여드립니다. 도호쿠의 추천 숙박 시설과 국립공원, 추천 관광지, 액티비티 등, 도호쿠를 만끽하는 데 도움이 되는 정보를 놓치지 마세요."
+        top: "도호쿠"
+        article:
+          1:
+            title_html: "도호쿠에 대해서"
+            text_html: "혼슈 최북부에 위치한 도호쿠는 아오모리, 이와테, 아키타, 미야기, 야마가타, 후쿠시마의 여섯 개 현으로 구성되어 있습니다. 위도가 높아서 혼슈의 다른 지역보다 기온이 낮고, 겨울에는 각지에서 눈으로 덮인 아름다운 경치를 감상할 수 있습니다. 때묻지 않은 자연과 특유의 전통문화, 전통 공예품, 향토 요리도 풍부하며 알려지지 않은 매력이 넘치는 곳입니다."
+            url: "https://www.tsunagujapan.com/ko/all-about-tohoku/"
+          2:
+            title_html: "고급 숙박 시설(호텔/료칸)"
+            text_html: "도호쿠에는 혼욕 대중탕으로 유명한 아오모리 스카유온센(酸ヶ湯温泉), 7개의 숨겨진 탕이 있는 아키타의 뉴토온센쿄(乳頭温泉郷), 레트로한 경치가 펼쳐지는 야마가타의 긴잔온센(銀山温泉) 등, 인기 온천 마을이 다수 있습니다. 타인과의 접촉을 최소화한 별채형 숙소, 관광지화 되지 않은 자연 속 숙소 등, 고급 숙박 시설에서 안심하고 쾌적한 시간을 보내세요."
+            url: "https://www.tsunagujapan.com/ko/trustworthy-luxury-accommodations-in-japans-tohoku-area/"
+          3:
+            title_html: "어드벤처 투어리즘"
+            text_html: "도호쿠에는 너도밤나무의 원생림 시라카미 산지(白神山地)를 비롯, 아름다운 산리쿠 해안(三陸海岸),  도와다호(十和田湖)와 다자와호(田沢湖) 등의 호수,  오제(尾瀬)와 자오(蔵王) 등, 매력적인 자연이 다수 존재합니다. 또 신앙의 장으로 데와산잔(出羽三山), 아키타의 마타기(マタギ) 등, 일본 고유의 문화도 많이 남아 있어서 자연과 문화를 체험할 수 있는 어드벤처 투어리즘에 최적입니다."
+            url: "https://www.tsunagujapan.com/ko/adventure-tourism-in-tohoku/"
+          4:
+            title_html: "국립공원"
+            text_html: "도호쿠에는 화산이 낳은 절경과 온천이 매력인 도와다하치만타이 국립공원(十和田八幡平国立公園), 동일본 대지진으로 피해를 입은 산리쿠 지역의 부흥을 위해 세워진 산리쿠 부흥 국립공원(三陸復興国立公園), 산악신앙이 숨 쉬는 산과 아름다운 호수가 있는 '반다이아사히 국립공원(磐梯朝日国立公園)'의 세 개의 국립공원이 있습니다. 현지에서 자연의 아름다움과 산악신앙, 탕치 등, 도호쿠만의 독특한 문화를 꼭 체험해보세요."
+            url: "https://www.tsunagujapan.com/ko/national-park-in-tohoku/"
+          5:
+            title_html: "관광 명소"
+            text_html: "일본 삼경의 하나인 '마츠시마', 벚꽃이 원내를 가득 채우는 히로사키 성(弘前城), 동북지방 굴지의 단풍 명소인 나루코 협곡(鳴子峡), 유명한 시인 '마츠오 마쇼(松尾芭蕉)'의 시에도 등장하는 릿샤쿠지(立石寺), 약 400년 전에 정비된 숙박지 오우치주쿠(大内宿) 등, 도호쿠에는 풍부한 자연과 역사를 느낄 수 있는 곳이 많습니다. 도호쿠 6현의 관광명소를 체크하시고 여행 계획을 세워보세요."
+            url: "https://www.tsunagujapan.com/ko/10-recommended-spots-in-tohoku/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "도호쿠 지역에 관한 기사를 더 읽어 보세요! "
+          1:
+            url: "https://www.tsunagujapan.com/ko/akita-yamagata-niigata-tohoku-travel-guide/"
+            text: "[도호쿠・호쿠리쿠 자유여행] 옛 정취를 찾아 니가타・야마가타・아키타 지역으로 떠나는 시공을 초월한 여정"
+          2:
+            url: "https://www.tsunagujapan.com/ko/best-things-to-do-in-kitakata-fukushima-gourmet-paradise/"
+            text: "후쿠시마의 미식 천국, 기타카타 최고의 즐길거리 5선"
+          3:
+            url: "https://www.tsunagujapan.com/ko/explore-iwaki-the-hawaii-of-fukushima-rare-sake-hot-springs-and-other-top-things-to-do/"
+            text: "일본의 하와이, 이와키 탐험: 희귀 사케, 온천 등 꼭 경험해봐야 할 것"
+          4:
+            url: "https://www.tsunagujapan.com/ko/aizu-wakamatsu-the-samurai-city-of-fukushima/"
+            text: "후쿠시마의 사무라이 도시, 아이즈 와카마쓰에서 사무라이 시대로 시간 여행을 해보자!"
+          5:
+            url: "https://www.tsunagujapan.com/ko/goshikinuma-fukushima-s-otherworldy-beautiful-rainbow-lakes/"
+            text: "고시키누마 - 별세계처럼 아름다운 후쿠시마의 오색빛 연못들"
+          6:
+            url: "https://www.tsunagujapan.com/ko/ouchijuku-the-charming-village-stuck-in-the-samurai-period/"
+            text: "오우치주쿠(大内宿) - 매력적인 마을에서 사무라이 시대로 시간 여행을 떠나다"
+      kyushu:
+        title: "규슈 특집"
+        description: "여기에 규슈 관련 기사가 총집합! 규슈의 추천 숙박 시설과 국립 공원, 액티비티 투어리즘, 온천 등, 규슈를 200% 즐기기 위해 필요한 모든 정보가 기재되어 있습니다."
+        top: "규슈"
+        article:
+          1:
+            title_html: "규슈에 대해서"
+            text_html: "규슈는 일본 열도를 구성하는 섬의 하나로 남서부에 위치하며 기후는 온난합니다. 후쿠오카 현, 사가 현, 나가사키 현, 오이타 현, 구마모토 현, 미야자키 현, 가고시마 현의 7개 현으로 구성되어 있으며 북큐슈에 위치한 후쿠오카 현은 국내외로 오가는 공항과 신칸센 역도 있어서 규슈와 아시아의 현관 역할을 하고 있습니다.<br>규슈에는 자연과 온천, 역사적인 명소와 대자연을 만끽할 수 있는 액티비티, 하카타 라멘을 비롯한 현지 먹거리 등, 다양한 매력이 있습니다."
+            url: "https://www.tsunagujapan.com/ko/why-is-it-called-kyushu-9-provinces-when-there-are-only-7-prefectures/"
+          2:
+            title_html: "고급 숙박 시설<br>(호텔/료칸)"
+            text_html: "일본 굴지의 유명 온천지가 다수 있는 규슈. 바다에 둘러싸여 아소산과 야쿠시마를 비롯한 풍부한 자연 경관을 자랑하며, 계절마다 바뀌는 절경을 감상하며 온천을 즐길 수 있는 숙박 시설이 많이 있습니다. 빌라나 한 동씩 세워진 료칸 등, 타인과의 접촉을 최소화한 고급 숙박 시설이라면 안심하고 지내실 수 있을 것입니다."
+            url: "https://www.tsunagujapan.com/ko/trustworthy-luxury-accommodations-in-japans-kyushu-area/"
+          3:
+            title_html: "어드벤처 투어리즘"
+            text_html: "자연, 이문화, 액티비티 중 두 가지 요소를 체험할 수 있는 것이 어드벤처 투어리즘입니다. SDGs와 코로나 시대에 주목받는 차세대 여행의 형태로, 일본에서는 홋카이도를 중심으로 투어가 이루어지고 있습니다. 규슈도 자연 자원이 풍부하며 잠재력이 높은 지역입니다. 규슈의 어드벤처 투어리즘 관련 정보를 전해드립니다."
+            url: "https://www.tsunagujapan.com/ko/adventuretravel_in_kumamoto/"
+          4:
+            title_html: "국립공원"
+            text_html: "규슈에는 6개의 국립공원이 있습니다. 세계 유산인 '야쿠시마 국립 공원', 일본에서 두 번째로 넓은 홍수림을 보유한 '아마미 군도 국립공원'에서는 훼손되지 않은 대자연을 감상할 수 있습니다. 또한, 사쿠라지마가 있는 자연 그대로의 원시림 '기리시마 긴코만 국립공원' 등, 화산의 에너지를 가까이에서 느낄 수 있는 곳도 많습니다. 각 명승지에서 각별한 체험과 감동을 맛보세요."
+            url: "https://www.tsunagujapan.com/ko/national-park-in-kyushu/"
+          5:
+            title_html: "온라인 투어"
+            text_html: "자택에 있으면서 인터넷으로 현지의 매력을 체험할 수 있는 온라인 투어는 최근 새로운 관광 체험의 형태로 성장하고 있습니다. 특히 현지 상품 배송과 결합된 온라인 투어가 인기입니다. 실제로 현지를 방문하기 전에 현지 분위기를 느낄 수 있다는 점에서 온라인 투어는 새로운 트렌드로 주목을 받고 있습니다."
+            url: "https://www.tsunagujapan.com/ko/kyushu-online-tours/"
+          6:
+            title_html: "온천"
+            text_html: "일본 국내 온천 용출량과 원천수 톱 5 중, 3개 지역을 포함하고 있는 규슈는 온천 천국으로 알려져 있습니다. 벳푸와 유후인 등 일본 굴지의 유명 온천지가 모여있으며 온천 순례를 즐기는 사람도 많습니다. 온천물과 효능의 차이, 자연을 조망하며 즐길 수 있는 노천탕, 이국적인 온천마을의 경치 등, 다양한 즐거움이 있는 온천에서 심신을 치유해보세요."
+            url: "https://www.tsunagujapan.com/ko/onsen-in-kyushu-top10/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "규슈 지역에 관한 기사를 더 읽어 보세요!"
+          1:
+            url: "https://www.tsunagujapan.com/ko/3-day-kyushu-travel-itinerary-fukuoka-oita-kumamoto/"
+            text: "일본 여행지 중에서도 특히 추천하는 규슈! 인기의 후쿠오카·오이타·구마모토 3일 모델 코스!"
+          2:
+            url: "https://www.tsunagujapan.com/ko/50-things-to-do-in-fukuoka/"
+            text: "후쿠오카에서 해야 할 50가지"
+          3:
+            url: "https://www.tsunagujapan.com/ko/7-popular-picturesque-spots-kumamoto/"
+            text: "일본에서 가장 아름다운 곳 중 하나인 구마모토의 즐길 거리 25선"
+          4:
+            url: "https://www.tsunagujapan.com/ko/nagasaki-recommended-tourist-attractions/"
+            text: "[나가사키 여행] 세계 유산과 일품 맛집 등 볼거리 가득! 나가사키 시내 추천 명소"
+          5:
+            url: "https://www.tsunagujapan.com/ko/nagasaki-champon-and-saraudon/"
+            text: "【일본 현지인 추천】 나가사키에서 꼭 가봐야 하는 나가사키 짬뽕 & 사라우동 맛집"
+          6:
+            url: "https://www.tsunagujapan.com/ko/kagoshima-ibusuki-recommended-travel-plan/"
+            text: "느긋한 온천욕과 맛있는 음식, 아름다운 경치를 통해 심신을 재충전! 가고시마・이부스키 추천 여행 플랜"
+      okinawa:
+        title: "오키나와 특집"
+        description: "이 페이지에서는 오키나와에 관한 기사를 모아서 소개해 드립니다. 오키나와의 추천 숙박 시설과 국립 공원, 추천 바다와 액티비티 투어리즘 등, 오키나와 여행에 도움이 되는 정보를 가득 담았습니다."
+        top: "오키나와"
+        article:
+          1:
+            title_html: "오키나와에 대해서"
+            text_html: "일본 최남단에 있는 오키나와는 광활한 바다에 산재한 160개 섬들로 이루어져 있습니다. 일본에서 유일하게 전역이 아열대 해양성 기후에 속해있어서 독자적인 생태계와 문화가 오키나와의 특징입니다. 깨끗하고 투명한 바다에서 만날 수 있는 열대어와 산호, 특유의 생태계를 보여주는 숲, 토착 문화, 해양 스포츠 등, 다른 현에는 없는 오키나와만의 매력을 알아봅시다."
+            url: "https://www.tsunagujapan.com/ko/beginners-guide-to-okinawa/"
+          2:
+            title_html: "고급 숙박 시설(호텔/료칸)"
+            text_html: "오키나와 본토의 4개 지역(북부, 중부, 나하, 남부), 이시가키섬, 미야코섬에 위치하며, 외부인과의 접촉을 최소화할 수 있는 단독 주택이나 빌라 타입의 숙소를 소개합니다. 개인 풀장과 오션뷰 욕실 등, 각 시설에는 오키나와의 자연을 충분히 만끽할 수 있는 매력이 넘칩니다. 각 시설에서 가까운 주요 관광지도 체크해보세요."
+            url: "https://www.tsunagujapan.com/ko/10-okinawa-accommodations-that-can-be-rented-out/"
+          3:
+            title_html: "어드벤처 투어리즘"
+            text_html: "오키나와 본토, 미야코섬, 이시가키섬, 이리오모테섬 등, 다수의 섬으로 구성되어 있는 오키나와. 새하얀 백사장과 에메랄드빛 바다가 유명하지만, 열대우림(정글) 등, 일본의 다른 지역에서는 보기 힘든 자연환경도 풍부합니다. 동굴 탐험, 승마 체험, 전통적인 보트 '사바니' 체험 등, 오키나와의 자연을 만끽할 수 있는 다양한 액티비티가 가능합니다."
+            url: "https://www.tsunagujapan.com/ko/adventuretourism-in-okinawa/"
+          4:
+            title_html: "국립공원"
+            text_html: "아름다운 바다에 둘러싸인 오키나와에는 '얀바루 국립공원', '게라마쇼토 국립공원', '이리오모테 이시가키 국립공원'의 세 군데의 국립공원이 있습니다. 국내 최대급 아열대 조엽수림과 홍수림, 투명한 바다와 다양한 산호가 생식하고 있는 산호 군락, 고유의 동식물, 전통적인 빨간 지붕의 가옥 등, 오키나와의 국립공원에서 대자연과 전통문화를 만끽해보세요."
+            url: "https://www.tsunagujapan.com/ko/national-park-in-okinawa/"
+          5:
+            title_html: "바다"
+            text_html: "연간 평균 기온이 일본에서 가장 높은 고온 다습 아열대 기후인 오키나와는 리조트가 인기입니다. 오키나와 바다의 매력은 뭐니 뭐니 해도 새하얀 백사장과 투명한 바다! 해수욕 시즌에 많은 사람들이 찾는 오키나와의 추천 바다를 소개합니다. 대표적인 바다부터 알려지지 않은 곳까지, 각각의 매력과 즐기는 법, 찾아가는 법 등을 미리 체크하고 계획을 세워보세요."
+            url: "https://www.tsunagujapan.com/ko/top-okinawa-beaches/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "오키나와 지역에 관한 기사를 더 읽어 보세요!"
+          1:
+            url: "https://www.tsunagujapan.com/ko/a-year-s-guide-on-the-weather-in-okinawa-is-it-really-always-summer-in-okinawa/"
+            text: "오키나와 날씨에 대한 4계절 안내서: 정말로 오키나와는 1년 내내 여름일까요?"
+          2:
+            url: "https://www.tsunagujapan.com/ko/50-things-to-do-in-okinawa/"
+            text: "오키나와에서 해봐야 할 것 베스트 50"
+          3:
+            url: "https://www.tsunagujapan.com/ko/okinawa-traditional-noodles/"
+            text: "오키나와에서 꼭 먹어봐야 하는 전통 국수! '오키나와 소바'에 대하여"
+          4:
+            url: "https://www.tsunagujapan.com/ko/historical-okinawa-townhouse-inns-15/"
+            text: "남국의 정취가 물씬 풍기는 오키나와에서 최고의 숙박을 경험해보세요! 전통가옥 펜션 베스트 15"
+          5:
+            url: "https://www.tsunagujapan.com/ko/okinawa-cafe-best3/"
+            text: "【오키나와 자유여행】오키나와 추천 카페 Best3!"
+          6:
+            url: "https://www.tsunagujapan.com/ko/okinawan-agu-pork-restaurant/"
+            text: "【오키나와 여행】 오키나와 명물돼지 아구 - 다양한 아구 요리들"
+      shikoku:
+        title: "시코쿠 특집"
+        description: "이 페이지에서는 시코쿠에 관한 기사를 모아서 보여드립니다. 시코쿠의 추천 숙박 시설이나 국립공원, 액티비티 투어리즘, 순례 정보 등, 시코쿠를 즐기는 데 도움이 되는 정보가 가득합니다."
+        top: "시코쿠"
+        article:
+          1:
+            title_html: "시코쿠에 대해서"
+            text_html: "혼슈 남서쪽에 위치한 시코쿠는 도쿠시마현, 가가와현, 에히메현, 고치현 4개 현으로 이루어져 있습니다. 북쪽은 세토내해, 남쪽은 태평양에 접하고 있어 겨울에도 비교적 온난하고 비도 많이 오는 편입니다. 세토내해의 다도나 험준한 지형, 풍부한 삼림이 펼쳐진 경치 등, 아름다운 자연이 매력적인 지역입니다. 또한 야채와 과일 생산, 어업도 활발해 계절마다 제철의 맛있는 음식을 즐길 수 있습니다."
+            url: "https://www.tsunagujapan.com/ko/all-about-shikoku/"
+          2:
+            title_html: "고급 숙박시설(호텔/료칸)"
+            text_html: "세이류 시만토가와(清流四万十川) 강 근처의 옛 민가를 리노베이션 한 별장, 세토내해에 떠 있는 작은 쇼도시마(小豆島) 섬의 숙소 등, 아름다운 자연이 매력적인 시코쿠의 숙박시설을 소개합니다. 일본 유수의 온천마을 '도고온천'이나 비경을 간직한 '이야온천'의 숙소도 꼭 체크해보세요. 타인과의 접촉을 피할 수 있는 빌라, 별장, 감염 대책을 제대로 갖춘 숙소 등, 안심하고 프라이빗한 시간을 보낼 수 있는 숙박시설을 엄선 소개합니다."
+            url: "https://www.tsunagujapan.com/ko/trustworthy-luxury-accommodations-in-japans-shikoku-area/"
+          3:
+            title_html: "어드벤처 투어리즘"
+            text_html: "바다로 둘러싸여 있으며 기후가 온난한 시코쿠에서는 다양한 액티비티를 즐길 수 있습니다. 세이류 시만토가와 강의 카누나 다도해를 감상할 수 있는 세토내의 사이클링, 오보케코보케 계곡의 격류 래프팅, 가시와지마 섬 다이빙, 고치현 고래 워칭 등, 일본의 바다, 강, 산을 모두 즐길 수 있는 매력적인 시코쿠의 어드벤처 투어리즘을 소개합니다."
+            url: "https://www.tsunagujapan.com/ko/adventure-tourism-in-shikoku/"
+          4:
+            title_html: "국립공원"
+            text_html: "시코쿠에는 2개의 국립공원이 있습니다. 세토내해 국립공원은 일본에서 가장 넓은 국립공원으로, 크고 작은 섬들로 구성된 다도해 경관이 매력적입니다. 아시즈리 우와카이 국립공원에서는 구로시오(黒潮) 해류의 영향을 받은 아열대성 해양생물과 산호 군락, 리아스식 해안이 빚어낸 웅대한 경관 등을 볼 수 있습니다. 현지를 방문하여 전망대에서 경치를 조망하거나, 액티비티를 즐기는 것도 추천합니다."
+            url: "https://www.tsunagujapan.com/ko/national-park-in-shikoku/"
+          5:
+            title_html: "시코쿠 순례"
+            text_html: "시코쿠 순례란 헤이안 시대(794~1185년) 초기의 승려 고보 대사가 수행했다고 알려져 있는 88곳의 영지를 순례하는 것입니다. 총 길이는 약 1200km로, 신앙 목적뿐만 아니라 시코쿠의 아름다운 경치를 보고 현지 음식을 즐기는 등, 새로운 형태의 관광으로 국내외의 순례자들이 방문하고 있습니다."
+            url: "https://www.tsunagujapan.com/ko/ohenro-shikoku-pilgrimage/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "시코쿠 지역에 관한 기사를 더 읽어 보세요! "
+          1:
+            url: "https://www.tsunagujapan.com/ko/dogo-onsen-trip/"
+            text: "도고 온천에서 일본 문학가를 만나다! 세토나이카이와 인접한 도시 - 에히메 마쓰야마"
+          2:
+            url: "https://www.tsunagujapan.com/ko/top-10-tourist-destinations-ehime-prefecture-shikoku/"
+            text: "시코쿠 에히메현의 10대 관광지"
+          3:
+            url: "https://www.tsunagujapan.com/ko/10-must-see-sights-in-shikoku-s-kochi-prefecture/"
+            text: "시코쿠 고치현에서 꼭 찾아야 할 명소 10선"
+          4:
+            url: "https://www.tsunagujapan.com/ko/kagawa-sanuki-udon-restaurant-best-4/"
+            text: "【가가와 여행】 사누키 우동을 먹으러 가요! 추천 맛집 Best 4"
+          5:
+            url: "https://www.tsunagujapan.com/ko/tamatex-imabari-towel"
+            text: "일본 전통 공예품, ‘이마바리 타월(수건)’의 매력"
+          6:
+            url: "https://www.tsunagujapan.com/ko/12-places-to-visit-in-kagawa-shikoku/"
+            text: "시코쿠 가가와현에서 꼭 가봐야 할 곳 12선"
+      kanto:
+        title: "간토 특집"
+        description: "이 페이지에서는 간토(관동) 지역에 관한 기사를 모아서 보여드립니다. 간토 지역의 추천 숙박 시설이나 국립공원, 액티비티 투어리즘, 온천지 정보 등, 간토 지역을 즐기는 데 도움이 되는 정보가 가득합니다."
+        top: "간토"
+        article:
+          1:
+            title_html: "간토에 대해서"
+            text_html: "일본 총인구의 1/3 이상이 생활하는 간토 지방은 일본의 중추기능이 집중되어 일본 경제의 견인차 역할을 하고 있습니다. 세계에서도 손꼽히는 대도시 도쿄를 비롯하여 국제 무역항이 있는 요코하마와 옛 수도 가마쿠라, 세계유산에 등록된 닛코 도쇼구 등 다양한 볼거리가 있습니다. 간토 지방을 방문하기 전에 알아두면 좋은 기초 지식을 가르쳐드립니다."
+            url: "https://www.tsunagujapan.com/ko/all-about-kanto/"
+          2:
+            title_html: "고급 숙박시설(호텔/료칸)"
+            text_html: "간토 지방에는 대도시 도쿄만의 서비스가 잘 갖춰진 최고급 호텔이 많이 있는 데다 군마현의 구사쓰 온천이나 이카호 온천, 가나가와현의 하코네 온천 등 일본 유수의 온천지도 있어 다양한 여관에서 일본다운 정취를 만끽할 수도 있습니다. 도쿄에서 가기 쉬운 곳에 위치한 호텔, 별장, 여관을 소개해드립니다."
+            url: "https://www.tsunagujapan.com/ko/trustworthy-luxury-accommodations-in-japans-kanto-area"
+          3:
+            title_html: "어드벤처 투어리즘"
+            text_html: "도쿄를 포함한 간토 주변 지역에는 그다지 알려지지 않은 풍부한 자연과 그 자연 속에서 많은 액티비티를 즐길 수 있습니다. 특히 도치기, 군마 등의 지역은 자연이 울창해서 산이나 강에서 캐닝이나 승마 등의 본격적인 액티비티도 즐길 수 있습니다. 모두 도쿄에서 접근하기 쉽고 당일치기로 갈 수 있습니다."
+            url: "https://www.tsunagujapan.com/ko/adventure-tourism-in-kanto"
+          4:
+            title_html: "국립공원"
+            text_html: "산악·호수·폭포·습원이 만들어 내는 자연미와 세계 문화유산의 사찰 관광을 즐길 수 있는 '닛코 국립공원', 습원 안에 정비된 길을 따라 다양한 식물을 감상하면서 산책할 수 있는 '오제 국립공원', 수도권에 가장 가까운 국립공원으로 도쿄에서 접근이 편리한 '지치부 다마카이 국립공원'. 간토에 있는 이들 3개의 국립공원의 추천 포인트와 즐기는 방법을 소개합니다."
+            url: "https://www.tsunagujapan.com/ko/national-park-in-kanto/"
+          5:
+            title_html: "온천"
+            text_html: "자연 용출량 일본 제일의 '구사쓰 온천', 미술 감상도 즐길 수 있는 '하코네 유모토 온천', 해변의 리조트 온천지 '가모가와 온천' 등, 간토에는 수도권에서 찾아가기 쉬운 온천지가 많아 도쿄 관광 김에 온천지에서 1박 하는 일정도 추천할 만합니다. 각 온천의 볼거리와 온천수의 효능도 소개하니 여행 목적과 내 몸에 맞는 온천지를 선택해 보세요."
+            url: "https://www.tsunagujapan.com/ko/10-kanto-onsen/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "간토 지역에 관한 기사를 더 읽어 보세요! "
+          1:
+            url: "https://www.tsunagujapan.com/ko/hitachi-seaside-park/"
+            text: "【이바라키 여행】일본 최고의 꽃 명소 중 한 곳, 히타치 해변공원"
+          2:
+            url: "https://www.tsunagujapan.com/ko/one-day-sightseeing-spot/"
+            text: "도쿄에서 편도 2시간 이내! 당일치기 추천 여행지 10선"
+          3:
+            url: "https://www.tsunagujapan.com/ko/8-best-places-to-admire-mount-fuji-from/"
+            text: "후지산을 감상하기 위한 최고의 장소 8선"
+          4:
+            url: "https://www.tsunagujapan.com/ko/best-5-free-parks-in-tokyo/"
+            text: "【도쿄 혼행】혼자 사색을 즐기기 좋은 도쿄 근교의 추천 공원 5곳"
+          5:
+            url: "https://www.tsunagujapan.com/ko/museum-of-contemporary-art-tokyo-renovations/"
+            text: "접근성 좋고 친근하며 인터랙티브한 도쿄 현대 미술관 여행"
+          6:
+            url: "https://www.tsunagujapan.com/ko/best-jogging-spots-in-tokyo/"
+            text: "도쿄에서 조깅을 즐길 수 있는 최고의 명소 5선"
+      kansai:
+        title: "Kansai Feature"
+        description: "On this page, you’ll find a collection of articles about the Kansai region, covering everything from top accommodations to national parks, adventure tours, and the famous “Kansai-ben” dialect."
+        top: "Kansai"
+        article:
+          1:
+            title_html: "About Kansai"
+            text_html: "The Kansai region, located roughly in the center of Japan, is made from a collection of popular and unique sightseeing areas. It includes the deeply traditional Kyoto and Nara, the long-established industrial and economic capital of Osaka, the port town of Kobe, and more. Plan for your trip by reading up on all the basic info on Kansai and get to know this amazing region of Japan!"
+            url: "https://www.tsunagujapan.com/all-about-kansai/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "There are numerous luxury options to spend the night in Kansai. This includes 5-star hotels in central Osaka, those serving up Kobe beef alongside breathtaking night views, high-class ryokan in Hyogo Prefecture’s Kinosaki Onsen, renovated Kyoto townhouses, inns with open-air hot springs and temple pagoda views, hotels with traditional Buddhist and kaiseki cuisine, and more. If you’re still figuring out where to stay, let us introduce you to some of the most exceptional hotels, villas, and inns in the Kansai region."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-kansai-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Combine culture with adventure by following the World Heritage Site of Kumano Kodo, experience sea kayaking at Awajishima Island in the Seto Inland Sea, ride a horse in Kyotamba amongst quaint Japanese village scenery, bungee jump at a sacred spot in Nara – we’ll show you some exciting ideas for an adventure within the Kansai region!"
+            url: "https://www.tsunagujapan.com/ko/adventure-tourism-in-shikoku/"
+          4:
+            title_html: "National Parks"
+            text_html: "Kansai is home to three national parks: Yoshino Kumano National Park, which boasts one of the sole trails registered as a World Heritage Site along with the 30,000 cherry blossom trees of Mt. Yoshino; San'inkaigan National Park, with diverse coastal terrain and the famous Tottori Sand Dunes; and Setonaikai National Park, full of breathtaking island scenery. Here we’ll showcase how best to enjoy each of these parks and their must-see highlights."
+            url: "https://www.tsunagujapan.com/national-park-in-kansai/"
+          5:
+            title_html: "The Kansai-Ben Dialect"
+            text_html: "The Kansai-ben dialect has words and phrases totally different from standard Japanese, along with distinctive intonation and inflection. Here we outline some tips on how to get along with people from Kansai and some handy Kansai vocab to use during your trip. Study up before visiting for smooth communication with the Kansai locals!"
+            url: "https://www.tsunagujapan.com/all-about-kansai-dialect/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "We have many more fantastic articles about Kansai. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/8-spots-where-you-can-feel-japans-history-and-spirituality/"
+            text: "Great Day-Trips From Kyoto and Osaka! 8 Sites Where You Can Feel Japan’s History and Spirituality"
+          2:
+            url: "https://www.tsunagujapan.com/japans-pilgrimage-roads-the-kumano-kodou/"
+            text: "Experience the Kumano Kodo - A Complete Guide to Hiking One of Japan’s Great Pilgrimage Routes"
+          3:
+            url: "https://www.tsunagujapan.com/osaka-shotengai-shopping-streets/"
+            text: "Osaka’s Best Bargains: “Shotengai” Shopping Streets in the City of Merchants"
+          4:
+            url: "https://www.tsunagujapan.com/10-customs-unique-to-kyoto/"
+            text: "10 Unique Kyoto Customs That Even Japanese People Find Confusing"
+          5:
+            url: "https://www.tsunagujapan.com/kansai-useful-one-day-transport-passes/"
+            text: "A Complete Guide to Kansai Transportation: 9 One-Day Passes of Great Value"
+          6:
+            url: "https://www.tsunagujapan.com/5-ways-to-explore-the-kansai-region-on-bicycle/"
+            text: "5 Ways to Explore the Kansai Region on Bicycle"
+      chubu:
+        title: "Chubu Feature"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Chubu, including top accommodations, national parks, outdoor activities and tours, retro townscapes, and more."
+        top: "Chubu"
+        article:
+          1:
+            title_html: "About Chubu"
+            text_html: "Encompassing the central area of mainland Japan, the Chubu region is home to a wealth of sightseeing attractions, including Mt. Fuji, the former castletown of Kanazawa; the historic World Heritage mountain villages of Shirakawa-go and Gokayama; and the leading mountain resort Kamikochi. In this article, we cover all the basics you need to know about the Chubu region, from what makes it special to its climate and how to get there."
+            url: "https://www.tsunagujapan.com/all-about-chubu/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to places to stay in the Chubu region that we think you’ll absolutely love. Spend a night at a long-established “ryokan” inn situated in the Chaya District of Kanazawa in Ishikawa Prefecture, enjoy an all-you-can-eat fresh seafood buffet at another inn with hot spring baths in Toyama, admire the designer furniture and modern art decorating a refurbished townhouse in Niigata Prefecture, or maybe even gaze at Mt. Fuji from the windows of a resort hotel built close to Lake Kawaguchi in Yamanashi Prefecture!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chubu-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Have a thrilling adventure in the Chubu region with these fun outdoor activities and gorgeous nature scenery! Admire Mie’s vibrant surroundings while standup paddleboarding, raft your way down Nagara River in Gifu, or ride around on a snowmobile in Hida Takayama. Alternatively, go fishing and eat what you catch or bungee jump from a height of 215 meters! The opportunities are endless!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chubu/"
+          4:
+            title_html: "National Parks"
+            text_html: "Many tall mountains can be found within the national parks of the Chubu region, making them amazing places for those seeking out challenging mountain climbs, winter ski adventures, hot springs, or an escape from the sweltering summer heat. In this article, we cover all five of the national parks in Chubu in detail, going over some of the top reasons why they make such great places to explore. Encounter the wild snow monkeys of Joshin’etsukogen National Park, relax at the leading mountain resort of Kamikochi in Chubusangaku National Park, and pay a visit to the 2,000-year-old Ise Jingu shrine within Ise-Shima National Park."
+            url: "https://www.tsunagujapan.com/national-park-in-chubu/"
+          5:
+            title_html: "Retro Townscapes"
+            text_html: "The Chubu region is rich in traditional Japanese townscapes, and we want you to see the best of them! There’s the gorgeous Higashi Chaya District in Kanazawa, Ishikawa Prefecture, with its cobblestone streets and stunning historical architecture. Then you have Toyama’s Gokayama, a historical mountain village registered as a World Heritage Site; Nagoya’s Arimatsu, a merchant town renowned in the tie-dyeing industry; Fukui’s Kumagawa-juku, a post town born from trade with Kyoto; and far more!"
+            url: "https://www.tsunagujapan.com/chubu-area-traditional-retro-townscapes/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "We have many more fantastic articles about Chubu. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/10-tea-houses-in-kanazawa/"
+            text: "Top 10 Tea Houses in Kanazawa's Tea House District to Wind Down In"
+          2:
+            url: "https://www.tsunagujapan.com/6-high-class-ryokan-around-lake-kawaguchi/"
+            text: "6 High-Class Ryokan Around Lake Kawaguchi to Enjoy a Magnificent View of Mt. Fuji"
+          3:
+            url: "https://www.tsunagujapan.com/discover-karuizawa-rental-bicycle/"
+            text: "Discover the Best of Karuizawa via Rental Bicycles"
+          4:
+            url: "https://www.tsunagujapan.com/2-day-autumn-trip-in-toyama-kurobe-uozu/"
+            text: "Fall Bliss in Toyama: A 2-Day Road Trip in Kurobe and Uozu"
+          5:
+            url: "https://www.tsunagujapan.com/2-day-trip-in-okazaki/"
+            text: "Spend a 2-Day Trip in Okazaki, a Hidden Gem in Aichi Prefecture"
+          6:
+            url: "https://www.tsunagujapan.com/deep-snow-an-hour-from-tokyo-relishing-the-midwinter-bounties-of-niigata/"
+            text: "Deep Snow an Hour From Tokyo: Relishing the Midwinter Bounties of Niigata"
+      chugoku:
+        title: "Chugoku Feature"
+        description: "On this page, you’ll find a collection of articles about the Chugoku region, covering everything from top accommodations to national parks, adventure tours, and its many and varied historic structures."
+        top: "Chugoku"
+        article:
+          1:
+            title_html: "About Chugoku"
+            text_html: "Encompassing the westernmost part of Japan’s main island of Honshu, the Chugoku region is filled with historic, cultural, and scenic delights. Some examples include Itsukushima Shrine, registered as a World Heritage Site; the historic townscapes of Hagi Castle Town; and the Tottori Sand Dunes, the largest formations of their kind in all of Japan. If you're planning a trip to Chugoku, then here's everything you'll need to know about the region, including information on its weather, the best places to visit, and how to get there."
+            url: "https://www.tsunagujapan.com/a-trip-through-chugoku-region-the-land-of-myths-and-memories/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to some really enthralling and unforgettable stays in the Chugoku region: a 400-year-old resort hotel near Itsukushima Shrine, a Hiroshima “ryokan” inn with open-air baths in every room, a long-established inn situated right within the Kurashiki Bikan Historical Quarter of Okayama Prefecture, a Yamaguchi hot spring inn boasting a large bath with gorgeous views of a nearby mountain stream, a Tottori inn where you can stuff yourself with fresh Sea of Japan delicacies such as crab, and more!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chugoku-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Go on thrilling adventures in the Chugoku area! Ride across the Tottori Sand Dunes on an off-road “fat bike” or fly high above them on a paraglider. Paddle up close to Itsukushima Shrine’s giant torii gate in a sea kayak. SUP around Yamaguchi’s Suo-Oshima Island. Take a hot spring dip at Yuki Onsen or enjoy some shower climbing in Hiroshima. There is always something fun to do in Chugoku!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chugoku/"
+          4:
+            title_html: "National Parks"
+            text_html: "The Chugoku region is home to two national parks: Setonaikai National Park, the largest national park in Japan partially made up of the 1,000 islands on the Seto Inland Sea, and Daisen-Oki National Park, where you can find Izumo Taisha—a grand shrine that features as the setting of various Japanese myths and legends—as well as mountains like Mt. Daisen and lovely coastline scenery shaped from the rough waves of the Sea of Japan. Come discover these two nature wonderlands with us."
+            url: "https://www.tsunagujapan.com/national-park-in-chugoku/"
+          5:
+            title_html: "Historic Structures"
+            text_html: "Admire the many architectural marvels of the Chugoku region, such as the giant torii gate of Itsukushima Shrine, a registered World Heritage Site, standing in the middle of the sea. There are also the white-walled warehouses and willow-lined avenues of the Kurashiki Bikan Historical Quarter; the wooden 200-meter-long Kintai Bridge featuring five arches; and Mitokusan Sanbutsuji Temple's Nageire Hall, a national treasure built right into a cliff face cavern."
+            url: "https://www.tsunagujapan.com/chugoku-unique-historic-structures/"
+        read_more: "상세 내용"
+        related_articles:
+          title: "관련 기사"
+          lead: "We have many more fantastic articles about Chugoku. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/filming-location-in-hiroshima-drive-my-car/"
+            text: "\"Drive My Car\" Hiroshima Filming Locations - Step Into the World of Haruki Murakami!"
+          2:
+            url: "https://www.tsunagujapan.com/7-photogenic-spots-in-tottori-full-of-nature-and-culture/"
+            text: "7 Photogenic Spots in Tottori, a Prefecture Full of Nature and Culture"
+          3:
+            url: "https://www.tsunagujapan.com/only-1-hour-from-osaka-15-awesome-photogenic-spots-in-okayama/"
+            text: "Only 1 Hour From Osaka! 15 Awesome Photogenic Spots in Okayama"
+          4:
+            url: "https://www.tsunagujapan.com/shimanami-kaido-cycle-across-the-seto-inland-sea/"
+            text: "The Shimanami Kaido: Japan's Best Cycling Adventure!"
+          5:
+            url: "https://www.tsunagujapan.com/25-things-to-do-hiroshima/"
+            text: "25 Amazing Things To Do in Hiroshima: A Complete Travel Guide to Enjoying Its History, Culture, and Nature"
+          6:
+            url: "https://www.tsunagujapan.com/rabbit-island-okunoshima/"
+            text: "A Must-Visit for Rabbit Lovers! Okunoshima, an Island Removed from the Maps"
+  planning_trip:
+    page_title: "일본에서 도움이 되는 정보"
+    page_description: "이 페이지에서는 외국인이 일본을 방문할 때 도움이 되는 정보를 모아서 전해드립니다. 교통, 돈, 매너, 부상이나 재해 등 긴급 사태 시의 대처 방법, 알아두면 좋은 토막 지식 등, 안전하고 쾌적하게 일본을 즐기실 수 있는 정보가 가득합니다."
+    title_html: "일본 방문 시 도움이 되는 정보"
+    description: "이 페이지에서는 외국인이 일본을 방문할 때 도움이 되는 정보를 모아서 전해드립니다. 교통, 돈, 매너, 부상이나 재해 등 긴급 사태 시의 대처 방법, 알아두면 좋은 토막 지식 등, 안전하고 쾌적하게 일본을 즐기실 수 있는 정보가 가득합니다."
+    articles:
+      1:
+        title: "교통"
+        description: "대중교통 기관의 이용법, 교통 카드의 종류 등 교통에 관한 정보입니다."
+        1:
+          text: "나리타 vs 하네다: 도쿄 국제공항 안내서"
+          url: "https://www.tsunagujapan.com/ko/narita-vs-haneda-a-guide-to-tokyo-s-international-airports/"
+        2:
+          text: "발급 건수 넘버원! 최고의 인기를 누리는 교통카드 '스이카(Suica)'로 좋은 가성비에 편하게 일본을 여행하자!"
+          url: "https://www.tsunagujapan.com/ko/jreast-suica-ultimate-guide/"
+        3:
+          text: "일본에서 전철을 이용할 때 알아둬야 할 10가지 사항"
+          url: "https://www.tsunagujapan.com/ko/10-things-to-know-when-riding-trains-in-japan/"
+        4:
+          text: "상상을 초월하는 만원 전철! 러시아워를 피하여 슬기로운 여행을 떠나볼까요?"
+          url: "https://www.tsunagujapan.com/ko/tokyo-traffic-rushtime/"
+        5:
+          text: "일본에서 저렴하게 이동하는 방법: 저가 항공, 심야 버스 외"
+          url: "https://www.tsunagujapan.com/ko/ways-to-travel-for-cheap-across-japan/"
+      2:
+        title: "돈"
+        description: "캐시리스 결제, 일본 돈으로 환전 방법 등, 돈에 관한 정보입니다."
+        1:
+          text: "엔화를 손에 넣는 다양한 방법"
+          url: "https://www.tsunagujapan.com/ko/where-to-exchange-money-in-japan/"
+        2:
+          text: "일본에서 현금 없이 지낼 수 있을까요? 일본에서 시행 중인 캐시리스 결제 베스트 12"
+          url: "https://www.tsunagujapan.com/ko/top-cashless-payment-options-japan/"
+        3:
+          text: "외국인들에게는 잘 알려지지 않은 일본에서 저렴하게 쇼핑하는 방법 7가지"
+          url: "https://www.tsunagujapan.com/ko/7-useful-tips-on-how-to-shop-like-a-local-in-japan/"
+        4:
+          text: "일본에서 잔돈 1,000엔을 쓰는 가장 좋은 방법 5가지"
+          url: "https://www.tsunagujapan.com/ko/the-5-best-ways-to-spend-your-last-1-000-yen-in-japan/"
+        5:
+          text: "포인트 서비스 대국 일본! 포인트 적립을 좋아하는 일본인들에게 절대적인 지지를 받고 있는 d POINT란?"
+          url: "https://www.tsunagujapan.com/ko/japanese-point-service-d-point-app/"
+      3:
+        title: "매너"
+        description: "알아두면 좋은 일본어 표현, 일본 특유의 문화 등, 일본의 매너에 관한 정보입니다."
+        1:
+          text: "일본의 젓가락 사용과 관련된 금기 10가지"
+          url: "https://www.tsunagujapan.com/ko/10-things-you-should-avoid-doing-when-using-chopsticks-in-japan/"
+        2:
+          text: "주문하지 않은 음식이 테이블에?! 외국인이 이자카야에서 놀라는 7가지 이유"
+          url: "https://www.tsunagujapan.com/ko/7-terrific-things-about-japanese-izakaya-that-surprise-foreigners/"
+        3:
+          text: "일본의 쓰레기 분리수거에 대해 알아야 할 것"
+          url: "https://www.tsunagujapan.com/ko/everything-you-need-to-know-about-garbage-in-japan/"
+        4:
+          text: "【스시 전문점에서 활용 가능한 완벽 가이드】 맛있게 즐기는 법과 매너를 익혀 도쿄의 추천 스시 전문점에 방문해 봅시다!"
+          url: "https://www.tsunagujapan.com/ko/dos-and-donts-the-correct-way-to-eat-sushi/"
+        5:
+          text: "24시간 술을 살 수 있다? 공공장소에서의 음주도 OK? 외국인이 경악하는 일본의 신기한 음주 문화 5가지"
+          url: "https://www.tsunagujapan.com/ko/5-shocking-things-about-japanese-drinking-culture/"
+      4:
+        title: "토막 지식"
+        description: "알아 두면 도움이 되고 일본 여행이 더 즐거워지는 토막 지식입니다."
+        1:
+          text: "일본인도 모르는 후지산의 비밀 12가지"
+          url: "https://www.tsunagujapan.com/ko/12-little-known-secrets-on-mt-fuji/"
+        2:
+          text: "기모노 vs 유카타, 일본 전통 의상에 숨겨진 역사와 문화"
+          url: "https://www.tsunagujapan.com/ko/yukata-vs-kimono-the-secret-culture-behind-the-japanese-national-dress/"
+        3:
+          text: "일본에서는 가게들이 일찍 문을 닫는다던데? - 일본의 일반적인 점포 영업시간"
+          url: "https://www.tsunagujapan.com/ko/opening-hours-japan/"
+        4:
+          text: "일본인에게도 어렵다!? 알면 알수록 어려운 교토의 관습과 토막 지식 10"
+          url: "https://www.tsunagujapan.com/ko/10-customs-unique-to-kyoto/"
+        5:
+          text: "여행에 유용한 20가지 일본어 표현"
+          url: "https://www.tsunagujapan.com/ko/20-japanese-phrases-to-use-when-traveling/"
+      5:
+        title: "긴급 사태(의료, 재해, 법률)"
+        description: "부상과 병, 재해 등 긴급 시의 대응, 일본에서 조심해야 할 것에 관한 정보입니다."
+        1:
+          text: "일본에서 자연재해 발생 시 안전을 위한 실천요령 및 권고"
+          url: "https://www.tsunagujapan.com/ko/tips-and-advice-staying-safe-natural-disasters-japan/"
+        2:
+          text: "What Is the Legal Drinking Age in Japan? 8 Laws You Should Know Before Coming to Japan"
+          url: "https://www.tsunagujapan.com/ko/8-laws-you-should-know-about-before-coming-to-japan/"
+        3:
+          text: "치안이 좋은 일본에서도 주의해야 할 점 8가지(길거리 편)"
+          url: "https://www.tsunagujapan.com/ko/8-situations-to-be-aware-of-when-visiting-japan/"
+        4:
+          text: "일본인이 직접 알려주는 대처법! 일본 방문 중에 다치거나 병에 걸렸을 경우 해결 방법 8가지"
+          url: "https://www.tsunagujapan.com/ko/what-to-do-when-you-get-sick-or-injured-according-to-locals/"
+        5:
+          text: "긴급 시에도 안심! 외국인 대응 가능한 병원"
+          url: "https://www.tsunagujapan.com/ko/multilingual-hospitals-clinics-japan/"
+  article:
+    title: "기사 일람"
+    desc: ""
+    translator: "Translator"
+    author: "Author"
+    travelSite:
+      heading: "일본 거주 편집부 추천･숙소･상품･액티비티"
+    banner:
+      travel: "tsunagu Japan Travel - tsunagu Japan 기자의 관광 추천 콘텐츠 보기! CLICK Here!"
+      travel1: "tsunagu Japan 라이터 추천 관광 콘텐츠는 여기!"
+      travel2: "일본 여행자 필수! tsunagu Japan에서 호텔･투어･체험 예약하기"
+      travel3: "일본을 여행하신다면 우선 체크하세요! 호텔이나 투어, 체험 등의 정보가 가득"
+      travel4: "tsunagu Japan 라이터가 기억에 남는 여행을 만들어 줄 힌트를 드립니다!"
+      travel5: "새로운 여행의 발견! 추천 호텔이나 체험 등 최신 트렌드를 제공합니다!"
+      travel6: "일본여행을 더 깊게, 더 즐겁게! 여행 플래닝 팁과 최신 정보"
+      text: "tsunagu Japan 기자의 관광 추천 콘텐츠 보기!"
+      coupon: "일본에서의 할인 쿠폰은 여기에서 획득!"
+  hotel:
+    name1: "Agoda"
+    short1: "A"
+    name2: "Booking.com"
+    short2: "B"
+    bookWith1: "Agoda에서 예약"
+    bookWith2: "Booking.com에서 예약"
+    bookWith3: "Relux에서 예약"
+  hotelpage:
+    labels:
+      name: "호텔명"
+      desc: "세부 사항"
+      price: "가격"
+      location: "주소"
+      reference: "인용"
+      book: "book at"
+      info: "정보"
+  source: "출처:"
+  sns:
+    share: "공유"
+    pin: "Pin"
+    tweet: "트윗"
+  lang:
+    zh-hant: "繁體中文"
+    zh-hans: "简体中文"
+    ko: "한국어"
+    vi: "Tiếng Việt"
+    en: "English"
+    ja: "日本語"
+    th: "ภาษาไทย"
+    id: "Indonesian"
+  footer:
+    about: "tsunagu Japan에 관하여"
+    tsunagudesc: "tsunagu Japan은 방일 여행객을 위한 정보 플랫폼입니다. 방일 여행객이 일본에서 더욱 알차게 일정을 보내실 수 있도록 관광, 음식, 쇼핑, 여행 팁 등의 다양한 정보를 제공하고 있습니다."
+    contact: "문의하기"
+    login: "로그인"
+    logout: "로그아웃"
+    company: "회사 개요"
+    privacy: "개인정보 처리방침"
+    terms: "이용 약관"
+  email_html: "tsunagu Japan <br>
+<a href=\"https://www.tsunagujapan.com/\">https://www.tsunagujapan.com/</a><br>
+D2CX, inc. <br>
+TOKYO SHIODOME BUILDING, 1-9-1 <br>
+Higashi-Shimbashi, Minato-ku, Tokyo <br>
+<a href=\"https://www.d2cx.co.jp/\">https://www.d2cx.co.jp/</a>"
+
+  wowjapan:
+    desc: "일본 여행자를 위한 관광 미디어 WOW! JAPAN은 2021년 9월 15일에 서비스가 종료되었습니다.<br><br>이 페이지에서는 WOW! JAPAN의 과거 인기 기사 일부를 공개합니다."
+  covid:
+    subtitle: "신형 코로나 바이러스 감염증 대책을 실시 중인 일본의 시설 가이드"
+    desc: "안심하고 일본 여행을 즐기실 수 있도록, 일본 관광 시설의 신형 코로나 바이러스 감염증 대책에 대해 소개합니다. "
+    search_button: "신형 코로나 바이러스 감염증 대책을 실시 중인 시설 찾기"
+    how:
+      title: "일본의 신형 코로나 바이러스 감염증 대책 "
+      sub: "3밀을 피합시다!"
+      desc_html: "일본 정부는 신형 코로나 바이러스 감염증 확대를 방지하기 위해 기침 예절과 손 위생을 철저히 지키는 동시에 3밀(밀폐, 밀집, 밀접)을 피할 것을 권장하고 있습니다. "
+      1:
+        repletion: "환기가 되지 않는"
+        keyword_html: "<span>밀</span>폐 공간"
+      2:
+        repletion: "많은 사람이 모여 있는"
+        keyword_html: "<span>밀</span>집 공간"
+      3:
+        repletion: "다닥다닥 붙어 대화하는"
+        keyword_html: "<span>밀</span>접 공간"
+      additional_html: "신형 코로나 바이러스 감염증 대책에 대해 더 자세히 알고 싶으신 분은 <a href='https://corona.go.jp/ko/' target='_blank'>'신형 코로나 바이러스 감염증 대책 추진실(내각 관방)'</a>을 확인해 주세요."
+    about:
+      title: "일본 내의 신형 코로나 바이러스에 관한 정보"
+      1:
+        text: "입국 제한 조치를 취하고 있는 국가·지역, 입국 시의 검역(격리조치), 비자제한 등에 대하여"
+        url1_title: "외무성 해외 안전 페이지"
+        url1: "https://www.anzen.mofa.go.jp/"
+        url2_title: "법무부 출입국 재류관리청"
+        url2: "https://www.isa.go.jp/ko/nyuukokukanri01_00151.html"
+        desc: "※이러한 대응은 유동적이며 예고 없이 실시될 수도 있습니다. 최신 정보 확인을 부탁드립니다."
+      2:
+        text: "입국 시 조치(검사증명서 제시, 필요한 앱 등록 등)에 대하여"
+        url1_title: "후생노동성"
+        url1: "https://www.mhlw.go.jp/stf/covid-19/bordercontrol.html"
+      3:
+        text: "일본의 백신 접종 상황"
+        url1_title: "총리 관저 페이지 (일본어)"
+        url1: "https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html"
+        url2_title: "총리 관저 페이지 (영어)"
+        url2: "https://japan.kantei.go.jp/ongoingtopics/vaccine.html"
+    place_list:
+      title: "감염 대책을 실시 중인 시설 정보"
+      all: "All Category"
+      transport: "교통기관"
+      hotel: "호텔"
+      shop: "상점"
+      restaurant: "레스토랑"
+      sightseeing: "관광지"
+      other: "액티비티/기타"
+      category: "카테고리"
+      category_ph: "카테고리별 상세검색"
+      area: "지역"
+      area_ph: "지역별 상세검색"
+      add_area: "지역 추가"
+    result:
+      count_total: " 건"
+      #      current_count_html: "<span class='count_start'></span>건~<span class='count_end'></span>건 표시（알파벳순으로 정렬）"
+      current_count_html: "(알파벳순으로 정렬)"
+      title: "검색 결과"
+      unit: "건"
+      icon:
+        title: "신형 코로나 바이러스 감염증 대책 아이콘 리스트"
+        cashless: "캐시리스 결제 대응"
+        distance: "다른 사람과의 거리 확보"
+        gargle: "스태프의 양치질 철저"
+        hand: "스태프의 손 소독 실시"
+        mask: "스태프의 마스크 착용"
+        sanitizer: "손 소독액 설치 "
+        sheet: "칸막이 설치"
+        spray: "시설 내 소독 실시"
+        temperature: "스태프의 검온 실시"
+        thermograph: "자동 체온 측정 장치 설치"
+        tray: "계산 시 트레이 사용"
+        vent: "환기 실시"
+      show_more_html: "<i class='fas fa-plus'></i>  더 보기 "
+      show_less_html: "<i class='fas fa-minus'></i>  표시 줄이기"
+      read_more: "더 보기"
+      read_less: "표시 줄이기"
+      website: "Official Website"
+    featured_articles: "추천 기사"
+
+    more_info: "각 사업자의 안전대책에 대해서는 아래를 확인해 주세요."
+    details:
+      description: "시설 소개"
+      safety_description: "안심/안전 대책"
+      benefit: "특전"
+      disclaimer: "최신 정보에 대해서는 공식 홈페이지를 참조하세요"
+      headline: "일본의 코로나19 예방을 위한 안전대책"
+      teaser_desc_html: "일본 정부는 신종 코로나 감염 대책으로 '3가지 밀(密)'을 피하도록 권장하고 있습니다.
+      '3가지 밀(密)'이란 '밀폐', '밀집', '밀접'으로 환기가 잘되지 않는 '밀폐 공간', 많은 사람들이 모이는 '밀집 장소', 가까이에서 이야기를 하는 '밀접 장소', 이 세 가지가 발생하지 않도록 하고 있습니다.
+      이러한 주의 환기를 바탕으로, 일본의 각 사업자가 코로나 감염 방지를 위한 '안심/안전 대책'을 구체적으로 어떻게 시행하고 있는지 자세히 소개합니다."
+      menu:
+        headline: "각 사업자의 대책"
+        transport: "공항, 대중교통 기관"
+        accommodate: "숙박 시설"
+        restaurant: "레스토랑"
+        shops: "쇼핑 시설"
+        sightseeing: "관광"
+        other: "체험/기타"
+      descs:
+        transport: "전 세계의 관광객을 맞이하는 공항과 이동 시 발이 되는 전철, 버스 등의 대중교통 기관은 많은 사람들이 이용하기 때문에 바이러스 확산의 경로가 될 수 있습니다. 여기에서는 공항과 대중교통 기관에서 시행 중인 코로나 바이러스의 감염 방지를 위한 안심, 안전 대책을 소개합니다."
+        accommodate: "관광지 방문, 맛있는 음식 등 여행의 즐거움은 많이 있지만, 어떤 호텔이나 숙소에 머무는가도 여행의 중요한 포인트입니다.
+        여행의 피로를 풀고 휴식을 취하는 장소이기 때문에 더더욱 안심하고 쉬고 싶을 것입니다.
+        여기에서는 각 숙박 시설에서 실시하고 있는 코로나 감염 방지를 위한 안심/안전 대책을 소개합니다."
+        restaurant: "여행의 묘미는 '음식'이라고 생각하는 분도 많을 것입니다.
+        그 지역의 식문화를 즐기면서 가족, 지인과 다 같이 즐기는 식사 시간은 여행의 즐거움입니다만, 감염 리스크가 높은 접촉, 비말 요소는 걱정되는 부분입니다.
+        각 음식점의 코로나 바이러스 감염 방지 대책을 체크하여 안심하고 식사를 즐겨보세요!"
+        shops: "그 지역만의 기념품과 잡화를 사는 것은 여행지에서의 빠뜨릴 수 없는 즐거움의 한가지. 많은 사람이 모이는 쇼핑 명소의 소독 실시와 환기 등, 안심/안전 대책을 각 시설 별로 소개합니다."
+        sightseeing: "테마파크와 미술관, 박물관, 절, 성 등, 일본 문화와 역사를 보고 감상하는 관광객이 많습니다. 하지만 이런 시설은 일본인은 물론 많은 사람들이 모여서 밀집 상태가 되기 때문에 불안을 느낄 것입니다.
+        여기에서는 밀집이 예상되는 각 관광 명소의 코로나 바이러스 감염 방지를 위한 안심/안전 대책을 소개합니다."
+        other: "일본에 오면 일본 문화를 체험해보고 싶은 분들도 많을 것입니다. 일본에서만 가능한 액티비티를 안심하고 체험할 수 있도록 액티비티 시의 안심/안전 대책을 체크해보세요.
+        또 일본 여행 중에 발생할 수 있는 다양한 상황과 그에 따른 코로나 감염 방지 대책도 소개합니다."
+    teaster:
+      headline_html: "안전하게 일본을 여행하는 방법"
+      headline_m_html: "안전하게 일본을<br>여행하는 방법"
+      sub: "세계적인 맹위를 떨치고 있는 코로나 바이러스 감염증(이하 코로나19). 하루빨리 종식되기를 기원하며 불안한 생활을 이어가고 있는 외국인 거주민 분들과 일본에 관심이 있는 여러분들에게 유익한 정보를 전해드리겠습니다. 많은 외국인 여러분과 다시 만나게 되길 진심으로 기대합니다."
+    information:
+      headline: "코로나19의 확산, 지금 꼭 읽어야 할 정보"
+    safety:
+      headline: "일본의 코로나19 예방을 위한 안전대책"
+      sub: "일본의 각 사업자 별 코로나19  감염예방대책을 소개해드립니다."
+      content:
+        h3: "공공 교통 기관"
+        sub: "여행객은 물론, 일본인의 발이 되어주는 전철, 버스 등의 공공 교통 기관에서는, 주로 차내 환기, 소독, 승무원의 마스크 착용을 철저히 하고 있습니다."
+      info:
+        mask:
+          headline: "마스크 착용"
+          sub: "비말감염 예방을 위해, 종업원 전원 마스크 착용"
+        hand_san:
+            headline: "소독액 설치"
+            sub: "관내 각소에 소독액 설치"
+        temp:
+            headline: "컨디션 관리"
+            sub: "종업원의 컨디션 관리 철저"
+        sheets:
+            headline: "비닐 시트 설치"
+            sub: "비말 감염 방지를 위해, 계산대에 비닐 시트를 설치"
+        distance:
+            headline: "사회적 거리두기"
+            sub: "고객 간 사회적 거리두기 실천을 엄수"
+        first:
+          headline: "환기"
+          sub: "차내 환기를 목적으로 한 창문 개방"
+        second:
+          headline: "소독"
+          sub: "차내 설비 및 차내 공간 소독"
+        third:
+          headline: "마스크 착용"
+          sub: "호흡기를 통한 감염을 막기 위해 승무원의 마스크 착용"
+      outgoing:
+        headline: "이용 시에는 각 기관의 홈페이지를 참조하세요."
+        link1: "JR 동일본"
+        link2: "도쿄 메트로"
+        link3: "도에이 지하철"
+        link4: "게이큐 전철"
+        link5: "게이세이 전철"
+        link6: "도쿄 모노레일"
+        link7: "한큐 전철"
+        link8: "난카이"
+        link13: "게이한"
+        link9: "오사카 메트로"
+        link10: "공항 버스"
+        link11: "주요 택시 회사"
+        link12: "JR 도카이"
+    forward:
+        headline: "일본 국내의 코로나19에 관한 정보 링크 모음"
+        sub: "일본 국내의 최신 코로나 관련 정보에 관해서는 각 공적 기관의 홈페이지를 참조하세요."
+        link1: "도쿄도"
+        link2: "후생노동성"
+        link3: "외무성 해외안전 페이지"
+    learning:
+        headline_html: "여행팀 &amp; 플랜"
+        learning: "여행팀"
+        planing: "플랜"
+        sub: "자택 생활 속에서 여행을 떠난 듯한 기분을 만끽해보세요.아직 모르고 있었던 일본의 명소, 또 가고 싶은 일본의 절경 스폿, 일본이 자랑하는 문화와 상식까지.tsunagu Japan의 한국인 직원들이 엄선한 일본의 정보를 전해드립니다!"
+  cookieconsent:
+    message: "고객님께서 쾌적하게 이용하실 수 있도록 본 웹사이트에서는 쿠키를 사용합니다."
+    dismiss: "동의하기"
+    link: "자세히 보기"
+    href: "https://www.tsunagujapan.com/ko/privacy/"

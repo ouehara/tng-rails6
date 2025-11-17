@@ -1,0 +1,27 @@
+<%= render "shared/breadcrumb" %>
+<div class="container">
+  <div class="clip">
+    <section class="clip_section">
+      <h1 class="section_heading"><%= title I18n.t 'clips_title'%></h1>
+      <p class="section_intro"><%= I18n.t "clip_desc" %></p>
+      <%= react_component('clip/clip_list_view', {
+        elements: { no_clips_message: I18n.t('clip_none') }
+        }) %>
+    </section>
+
+    <section class="section newArrivals">
+      <h2 class="section_heading"><%= I18n.t 'new_arrivals'%></h2>
+      <%= react_component('article_list/article_list_swiper',{
+          elements:JSON.parse(@articles),
+          articlePath: article_path(":param")
+          }) %>
+    </section>
+  </div>
+</div>
+<%= render "shared/sns" %>
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

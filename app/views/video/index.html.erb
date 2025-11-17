@@ -1,0 +1,29 @@
+
+<% body_class @pagetype %>
+<%= react_component('hero/hero_view',{elements:{category: "video",
+"category_full": I18n.t("video"),"page_type": @pagetype,
+"sp_bg_img": asset_pack_path('media/images/area/index_hero_img_pc.jpg'),
+"pc_bg_img": asset_pack_path('media/images/area/index_hero_img_pc.jpg'),
+"map_img":'',
+"intro_text": I18n.t("video_desc"),
+"area": '',
+"ad": {},
+"weather": {},
+},
+}) %>
+<%= render "shared/breadcrumb" %>
+<%= render "shared/intro", intro_text: I18n.t("video_desc"), ad: nil %>
+<section class="section">
+  <div class="container video-container">
+    <%= react_component('video/video', {videos:@videos, autoplay: @autoplay }) %>
+    <div class="paginate">
+      <%= paginate @videos, window: browser.device.mobile? ? 1 : 4  %>
+    </div>
+  </div>
+</section>
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

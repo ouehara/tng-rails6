@@ -1,0 +1,12 @@
+
+<div class="related-round">
+    <% elements.each do |el| %>
+        <a href="<%= el.link %>">
+            <div class="img-container">
+                <img src="<%= el.image_url %>&d=400x400" />
+            </div>
+            <h3><%= el.title %></h3>
+        </a>
+    <% end %>
+</div>
+    

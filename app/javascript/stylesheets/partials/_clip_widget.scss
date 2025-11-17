@@ -1,0 +1,134 @@
+//@import "../base/_variables";
+
+.clip_widget {
+  position: fixed;
+  //bottom: half(50);
+  bottom: 25px;
+  left: 0;
+  z-index: $z_btn_pagetop;
+  width: half(122);
+  height: half(200);
+
+  @include mq(sm) {
+    width: 100px;
+    height: 120px;
+    top: 174px;
+    bottom: auto;
+    left: -20px;
+  }
+
+  &.stick {
+    position: absolute;
+    bottom: 40px;
+  }
+
+  &_container {
+    position: relative;
+  }
+
+  .btn_clip {
+    @extend %fixed_btn_shadow;
+    position: absolute;
+  }
+
+  .btn_clip_add {
+    background-color: $color_yellow;
+    text-align: center;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: half(20) half(36);
+    bottom: 0;
+
+    @include mq(sm) {
+      padding: 12px 20px 12px 48px;
+      cursor: pointer;
+      top: 0;
+      bottom: auto;
+      right: 0;
+      transition: right ease 0.2s;
+      border-top-right-radius: 33px;
+      border-bottom-right-radius: 33px;
+
+      &:hover {
+        right: -20px;
+      }
+    }
+
+    .inner {
+      pointer-events: none;
+    }
+
+    svg {
+      display: block;
+      width: half(30);
+      height: half(34);
+      margin: 0 auto 2px;
+      fill: #000;
+
+      @include mq(sm) {
+        width: 24px;
+        height: 27px;
+      }
+    }
+
+    .text {
+      display: block;
+      margin: 0;
+      font-size: half(22);
+      line-height: 1;
+
+      @include mq(sm) {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .btn_clip_info {
+    width: half(66);
+    height: half(66);
+    background-color: #7e7e7e;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    margin-left: half(-33);
+
+    @include mq(sm) {
+      width: 40px;
+      height: 40px;
+      top: auto;
+      bottom: 0;
+      left: auto;
+      right: 20px;
+      transition: background-color ease 0.2s;
+
+      &:hover {
+        background-color: darken(#7e7e7e, 5);
+      }
+    }
+
+    a {
+      display: table;
+      width: 100%;
+      height: 100%;
+    }
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    svg {
+      width: half(20);
+      height: half(30);
+      margin-top: 4px;
+      fill: #fff;
+
+      @include mq(sm) {
+        width: 12px;
+        height: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<ul class="top-banners">
+  <% if I18n.locale.to_s != "ja" && I18n.locale.to_s != "vi" && I18n.locale.to_s != "id" %>
+    <li class="top-banners_item horizontal">
+      <%= link_to image_tag(asset_pack_path("media/images/banner/coupons/coupon-#{I18n.locale.to_s}.png"), class: "img-maxwidth center-block", alt: t('coupons_top'), :size => "820x150"), coupons_path, id: "top_coupons-#{I18n.locale.to_s}", class: "top_coupons" %>
+    </li>
+  <% end %>
+</ul>

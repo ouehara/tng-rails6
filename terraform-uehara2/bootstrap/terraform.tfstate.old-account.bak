@@ -1,0 +1,274 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.3",
+  "serial": 6,
+  "lineage": "de0fbbbe-a04d-84a8-4952-ecd3774cc0b6",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "aws_caller_identity",
+      "name": "current",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "account_id": "904271084068",
+            "arn": "arn:aws:iam::904271084068:user/uehara-console",
+            "id": "904271084068",
+            "user_id": "AIDAJER7IOKTWBQQLNXNA"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "terraform_state",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": null,
+            "arn": "arn:aws:s3:::s3-terraform-w-rails-1026-904271084068",
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "bucket_domain_name": "s3-terraform-w-rails-1026-904271084068.s3.amazonaws.com",
+            "bucket_prefix": "",
+            "bucket_region": "ap-northeast-1",
+            "bucket_regional_domain_name": "s3-terraform-w-rails-1026-904271084068.s3.ap-northeast-1.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "grant": [
+              {
+                "id": "2e9252250c6e5e649b948fe58700470c72f91019d18a6ed1770ee4dd7bf45d22",
+                "permissions": [
+                  "FULL_CONTROL"
+                ],
+                "type": "CanonicalUser",
+                "uri": ""
+              }
+            ],
+            "hosted_zone_id": "Z2M4EHUR26P7ZW",
+            "id": "s3-terraform-w-rails-1026-904271084068",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "object_lock_enabled": false,
+            "policy": "",
+            "region": "ap-northeast-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [
+              {
+                "rule": [
+                  {
+                    "apply_server_side_encryption_by_default": [
+                      {
+                        "kms_master_key_id": "",
+                        "sse_algorithm": "AES256"
+                      }
+                    ],
+                    "bucket_key_enabled": false
+                  }
+                ]
+              }
+            ],
+            "tags": {
+              "App": "w-rails-1026",
+              "Environment": "terraform",
+              "Owner": "wizstg"
+            },
+            "tags_all": {
+              "App": "w-rails-1026",
+              "Environment": "terraform",
+              "Owner": "wizstg"
+            },
+            "timeouts": null,
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "904271084068",
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "region": "ap-northeast-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "data.aws_caller_identity.current"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket_object_lock_configuration",
+      "name": "terraform_state_lock",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "expected_bucket_owner": "",
+            "id": "s3-terraform-w-rails-1026-904271084068",
+            "object_lock_enabled": "Enabled",
+            "region": "ap-northeast-1",
+            "rule": [
+              {
+                "default_retention": [
+                  {
+                    "days": 1,
+                    "mode": "GOVERNANCE",
+                    "years": 0
+                  }
+                ]
+              }
+            ],
+            "token": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "token"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_s3_bucket.terraform_state",
+            "aws_s3_bucket_versioning.terraform_state_versioning",
+            "data.aws_caller_identity.current"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket_public_access_block",
+      "name": "terraform_state_block",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "block_public_acls": true,
+            "block_public_policy": true,
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "id": "s3-terraform-w-rails-1026-904271084068",
+            "ignore_public_acls": true,
+            "region": "ap-northeast-1",
+            "restrict_public_buckets": true,
+            "skip_destroy": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "904271084068",
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "region": "ap-northeast-1"
+          },
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_s3_bucket.terraform_state",
+            "data.aws_caller_identity.current"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket_server_side_encryption_configuration",
+      "name": "terraform_state_sse",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "expected_bucket_owner": "",
+            "id": "s3-terraform-w-rails-1026-904271084068",
+            "region": "ap-northeast-1",
+            "rule": [
+              {
+                "apply_server_side_encryption_by_default": [
+                  {
+                    "kms_master_key_id": "",
+                    "sse_algorithm": "AES256"
+                  }
+                ],
+                "bucket_key_enabled": null
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "904271084068",
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "expected_bucket_owner": null,
+            "region": "ap-northeast-1"
+          },
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_s3_bucket.terraform_state",
+            "data.aws_caller_identity.current"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket_versioning",
+      "name": "terraform_state_versioning",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "expected_bucket_owner": "",
+            "id": "s3-terraform-w-rails-1026-904271084068",
+            "mfa": null,
+            "region": "ap-northeast-1",
+            "versioning_configuration": [
+              {
+                "mfa_delete": "",
+                "status": "Enabled"
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "904271084068",
+            "bucket": "s3-terraform-w-rails-1026-904271084068",
+            "expected_bucket_owner": null,
+            "region": "ap-northeast-1"
+          },
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_s3_bucket.terraform_state",
+            "data.aws_caller_identity.current"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

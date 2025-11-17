@@ -1,0 +1,31 @@
+<%= form_tag({controller: "restaurant_search", action:
+      "search"}, method: "get", class: "top-search") do%>
+      <div class="form-search_box">
+        <div class="form-search_input">
+          <label class="sr-only" for="location"
+            ><%= t("savor.sidebar.location") %></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="location"
+            name="location"
+            placeholder="<%=I18n.t("savor.sidebar.location")%>"
+          />
+        </div>
+        <div class="form-search_multiply"></div>
+        <div class="form-search_input">
+          <label class="sr-only" for="cuisine"
+            ><%=I18n.t("savor.sidebar.cuisine")%></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="cuisine"
+            name="cuisine"
+            placeholder="<%=I18n.t("savor.sidebar.cuisine")%>"
+          />
+        </div>
+        <div class="form-search_btn"><button class="btn">Search</button></div>
+      </div>
+      <% end %>

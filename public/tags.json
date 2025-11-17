@@ -1,0 +1,55 @@
+{
+  "featured_topics": {
+    "type": "is-featured",
+    "item": [
+      {
+        "id": "f_sushi",
+        "disp_title": "sushi",
+        "url": "/category/food-drink/g/sushi-sashimi/",
+        "thumbnail": "/assets/top/pic_featured_01.jpg"
+      },
+      {
+        "id": "f_onsen",
+        "disp_title": "onsen",
+        "url": "/category/things-to-do/g/onsen/",
+        "thumbnail": "/assets/top/pic_featured_02.jpg"
+      },
+      {
+        "id": "f_ramen",
+        "disp_title": "ramen",
+        "url": "/category/food-drink/g/ramen/",
+        "thumbnail": "/assets/top/pic_featured_03.jpg"
+      },
+      {
+        "id": "f_a-e",
+        "disp_title": "activites",
+        "url": "/category/things-to-do/g/outdoor-activities/",
+        "thumbnail": "/assets/top/pic_featured_04.jpg"
+      },
+      {
+        "id": "f_souvenirs",
+        "disp_title": "souvenier",
+        "url": "/category/shopping/g/souvenirs/",
+        "thumbnail": "/assets/top/pic_featured_05.jpg"
+      },
+      {
+        "id": "f_bandf",
+        "disp_title": "beauty",
+        "url": "/category/shopping/g/beauty-health/",
+        "thumbnail": "/assets/top/pic_featured_06.jpg"
+      },
+      {
+        "id": "f_handc",
+        "disp_title": "history",
+        "url": "/category/japan-in-depth/g/history-culture/",
+        "thumbnail": "/assets/top/pic_featured_07.jpg"
+      },
+      {
+        "id": "f_handr",
+        "disp_title": "hotels_ryokan",
+        "url": "/category/hotels-ryokan/",
+        "thumbnail": "/assets/top/pic_featured_08.jpg"
+      }
+    ]
+  }
+}

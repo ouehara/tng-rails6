@@ -1,0 +1,1 @@
+$(".qedit<%=@article.id%>").html("<%= escape_javascript(render partial:  'quickedit', locals: { categories: @categories, areas: @areas,article: @article} ) %>"); 

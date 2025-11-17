@@ -1,0 +1,12 @@
+$('#results').html('<%= escape_javascript(render(partial: "article", collection: @articles)) %>')
+$('.article-to-pick').click( function () {
+  var title = $(this).data('article-title');
+  var image = $(this).data('article-image');
+  var articleId = $(this).data('article-id');
+  $('#ajax-modal').modal('hide');
+  $('.add_fields').click();
+  var field = $('.pickup-article-fields').last();
+  field.find('.article-title').text(title);
+  field.find('.article-image').text(image);
+  field.find('.article-id').find('input').val(articleId);
+})

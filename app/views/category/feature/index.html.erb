@@ -1,0 +1,155 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/category/feature/">
+<link rel="alternate" hreflang="ja" href="https://www.tsunagujapan.com/ja/category/feature/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/category/feature/">
+<link rel="alternate" hreflang="th" href="https://www.tsunagujapan.com/th/category/feature/">
+<link rel="alternate" hreflang="vi" href="https://www.tsunagujapan.com/vi/category/feature/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/category/feature/">
+<% end %>
+<% body_class "feature-index lang_" + I18n.locale.to_s %>
+<% set_meta_tags  title: t('feature.feature_label'),
+                  description: t('feature.index.description')
+%>
+<%= react_component('hero/hero_view',{elements:{category: "feature-index",
+  "category_full": t('feature.feature_label'),"page_type": "index",
+  "sp_bg_img": asset_pack_path("media/images/category/feature/index/index_hero_img_pc.jpg"),
+  "pc_bg_img": asset_pack_path("media/images/category/feature/index/index_hero_img_pc.jpg"),
+  "intro_text": "",
+  "ad": {
+        "img": "",
+        "alt": "",
+        "url": ""
+      }
+  },
+}) %>
+<%= render "shared/breadcrumb" %>
+<section class="section">
+  <div class="container">
+    <div class="feature-sect">
+      <section class="feature-sect-head">
+        <h2 class="feature-sect-heading"><img src="<%= asset_pack_path("media/images/category/feature/index/logo-index-poj.svg") %>" alt="People of Japan" class="poj"></h2>
+        <p class="feature-sect-intro"><%= t('feature.index.poj.description') %></p>
+      </section>
+      <ul class="feature-lists">
+        <li class="feature-list">
+          <a href="<%= category_feature_people_of_japan_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+            <div class="feature-list-images">
+              <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-poj.jpg")%>" alt="<%= t('feature.poj.title') %>">
+            </div>
+            <h3 class="feature-list-heading poj"><%= t('feature.index.poj.theme1_html') %></h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="feature-sect">
+      <section class="feature-sect-head">
+        <h2 class="feature-sect-heading"><img src="<%= asset_pack_path("media/images/category/feature/index/logo-index-aoj.svg") %>" alt="Area of Japan" class="aoj"></h2>
+        <p class="feature-sect-intro"><%= t('feature.index.aoj.description') %></p>
+      </section>
+      <ul class="feature-lists">
+        <li class="feature-list">
+          <a href="<%= category_feature_aoj_a_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+            <div class="feature-list-images">
+              <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-aoj_a.jpg")%>" alt="<%= t('feature.aoj.theme1.title') %>">
+            </div>
+            <h3 class="feature-list-heading aoj"><%= t('feature.index.aoj.theme1_html') %></h3>
+          </a>
+        </li>
+        <% if I18n.locale.to_s != "th" && I18n.locale.to_s != "vi" %>
+          <li class="feature-list">
+            <a href="<%= category_feature_aoj_b_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-aoj_b.jpg")%>" alt="<%= t('feature.aoj.theme2.title') %>">
+              </div>
+              <h3 class="feature-list-heading aoj"><%= t('feature.index.aoj.theme2_html') %></h3>
+            </a>
+          </li>
+          <li class="feature-list">
+            <a href="<%= category_feature_aoj_c_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-aoj_c.jpg")%>" alt="<%= t('feature.aoj.theme3.title') %>">
+              </div>
+              <h3 class="feature-list-heading aoj"><%= t('feature.index.aoj.theme3_html') %></h3>
+            </a>
+          </li>
+          <li class="feature-list">
+            <a href="<%= category_feature_aoj_d_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-aoj_d.jpg")%>" alt="<%= t('feature.aoj.theme4.title') %>">
+              </div>
+              <h3 class="feature-list-heading aoj"><%= t('feature.index.aoj.theme4_html') %></h3>
+            </a>
+          </li>
+          <li class="feature-list">
+            <a href="<%= category_feature_aoj_e_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-aoj_e.jpg")%>" alt="<%= t('feature.aoj.theme5.title') %>">
+              </div>
+              <h3 class="feature-list-heading aoj"><%= t('feature.index.aoj.theme5_html') %></h3>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div><!-- /.feature-sect -->
+    <div class="feature-sect">
+      <section class="feature-sect-head">
+        <h2 class="feature-sect-heading"><img src="<%= asset_pack_path("media/images/category/feature/index/logo-index-coj.svg") %>" alt="Culture of Japan" class="coj"></h2>
+        <p class="feature-sect-intro"><%= t('feature.index.coj.description') %></p>
+      </section>
+      <ul class="feature-lists">
+        <li class="feature-list">
+          <a href="<%= category_feature_coj_b_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+            <div class="feature-list-images">
+              <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-coj_b.jpg")%>" alt="<%= t('feature.coj.theme2.title') %>">
+            </div>
+            <h3 class="feature-list-heading coj"><%= t('feature.index.coj.theme2_html') %></h3>
+          </a>
+        </li>
+        <% if I18n.locale.to_s != "th" && I18n.locale.to_s != "vi" %>
+          <li class="feature-list">
+            <a href="<%= category_feature_coj_c_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-coj_c.jpg")%>" alt="<%= t('feature.coj.theme3.title') %>">
+              </div>
+              <h3 class="feature-list-heading coj"><%= t('feature.index.coj.theme3_html') %></h3>
+            </a>
+          </li>
+          <li class="feature-list">
+            <a href="<%= category_feature_coj_d_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-coj_d.jpg")%>" alt="<%= t('feature.coj.theme4.title') %>">
+              </div>
+              <h3 class="feature-list-heading coj"><%= t('feature.index.coj.theme4_html') %></h3>
+            </a>
+          </li>
+          <li class="feature-list">
+            <a href="<%= category_feature_coj_e_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-coj_e.jpg")%>" alt="<%= t('feature.coj.theme5.title') %>">
+              </div>
+              <h3 class="feature-list-heading coj"><%= t('feature.index.coj.theme5_html') %></h3>
+            </a>s
+          </li>
+          <li class="feature-list">
+            <a href="<%= category_feature_coj_f_path(I18n.locale == :en ? nil : I18n.locale) %>" class="feature-list-action">
+              <div class="feature-list-images">
+                <img class="img-responsive" src="<%= asset_pack_path("media/images/category/feature/index/thum-coj_f.jpg")%>" alt="<%= t('feature.coj.theme6.title') %>">
+              </div>
+              <h3 class="feature-list-heading coj"><%= t('feature.index.coj.theme6_html') %></h3>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div><!-- /.feature-sect -->
+  </div>
+</section>
+
+<!-- sns -->
+<%= render "shared/sns" %>
+<!-- /sns -->
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

@@ -1,0 +1,2 @@
+module RestaurantSearchHelper
+end

@@ -1,0 +1,67 @@
+<%= render 'page_title' %>
+
+<div class="row">
+<div class='well'>
+<h2>Import from csv</h2>
+<%= form_for @category, url: import_admin_categories_path, html: { multipart: true, } do |f| %>
+  <%= f.file_field :import_file %>
+  <%= f.submit 'Import', :class=> 'btn btn-default' %>
+<% end %>
+</div>
+<%= link_to "Export to CSV", admin_categories_path(format: :csv) %>
+</div>
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index <%= "filter by : #{params[:query]}" if params[:query] %></h2>
+      <%= link_to new_admin_category_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+      <p>Use drag and drop to sort.</p>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+
+      <%= arranged_tree_as_list(@c, {:list_style => :bootstrap_list_group}) do |category| %>
+        <dl>
+          <dt class="id"><%= category.id %></dt>
+          <dt class="name"><%= link_to category.name, category_path(category) %></dt>
+          <dt class="action"><%= link_to 'Show', [:admin, category] %> <%= link_to 'Edit', edit_admin_category_path(category) %> <%= link_to 'Delete', [:admin, category], method: :delete, data: { confirm: 'Are you sure?' } %></dt>
+        </dl>
+      <% end %>
+    
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title" style="width: 10%;">ID</th>
+              <th class="column-title">Name</th>
+              <th class="column-title">Articles count</th>
+              <th class="column-title">Created</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody data-role="activerecord_sortable">
+            <% @categories.each do |category| %>
+            <tr class="pointer" data-role="category<%= category.id %>" data-move-url="<%= move_admin_category_url(category.id) %>" data-position="<%= category.position %>" >
+              
+              <td><%= category.id %></td>
+              <td><%= link_to category.name, [:admin, category] %></td>
+              <td><%= category.articles.count %></td>
+              <td><%= category.created_at.strftime("%F %T") %></td>
+              <td><%= link_to 'Show', [:admin, category] %></td>
+              <td><%= link_to 'Edit', edit_admin_category_path(category) %></td>
+              <td><%= link_to 'Delete', [:admin, category], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('*[data-role=activerecord_sortable]').activerecord_sortable();
+});
+</script>

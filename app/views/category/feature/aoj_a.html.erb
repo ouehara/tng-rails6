@@ -1,0 +1,147 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/category/feature/aoj-one-day-free-in-tokyo/">
+<link rel="alternate" hreflang="ja" href="https://www.tsunagujapan.com/ja/category/feature/aoj-one-day-free-in-tokyo/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/category/feature/aoj-one-day-free-in-tokyo/">
+<link rel="alternate" hreflang="th" href="https://www.tsunagujapan.com/th/category/feature/aoj-one-day-free-in-tokyo/">
+<link rel="alternate" hreflang="vi" href="https://www.tsunagujapan.com/vi/category/feature/aoj-one-day-free-in-tokyo/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/category/feature/aoj-one-day-free-in-tokyo/">
+<% end %>
+<% body_class "feature lang_" + I18n.locale.to_s %>
+<% set_meta_tags  title: t('feature.aoj.theme1.title'),
+                  description: t('feature.aoj.theme1.description'),
+                  og: {
+                    image: ActionController::Base.helpers.asset_pack_path('media/images/category/feature/aoj_a/og-aoj_a.png', host: CdnConfig.cloudfront_url)
+                  }
+%>
+<main id="top" class="main">
+  <div class="feature-hero aoj-a">
+    <div class="feature-hero-inner">
+      <h1 class="feature-hero-logo aoj-a"><img src="<%= asset_pack_path("media/images/category/feature/aoj_a/logo-aoj-#{I18n.locale.to_s}.svg") %>" alt="Area of Japan - <%= t('feature.aoj.theme1.title') %>" class=""></h1>
+    </div>
+  </div><!-- /.feature-hero -->
+  <div class="feature-contents aoj">
+    <div class="feature-description container">
+      <p><%= t('feature.aoj.theme1.description') %></p>
+    </div>
+    <div class="feature-sections">
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/aoj_a/aoj_a-1.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">01</p>
+          <h2 class="feature-desc-title"><%= t('feature.aoj.theme1.article1.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.aoj.theme1.article1.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.aoj.theme1.article1.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-dawn.jpg') %>" alt="<%= t('feature.aoj.theme1.article1.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.aoj.theme1.article1.writer.name') %> - <%= t('feature.aoj.theme1.article1.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.aoj.theme1.article1.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/aoj_a/aoj_a-2.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">02</p>
+          <h2 class="feature-desc-title"><%= t('feature.aoj.theme1.article2.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.aoj.theme1.article2.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.aoj.theme1.article2.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-kinoko.jpg') %>" alt="<%= t('feature.aoj.theme1.article2.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.aoj.theme1.article2.writer.name') %> - <%= t('feature.aoj.theme1.article2.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.aoj.theme1.article2.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/aoj_a/aoj_a-3.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">03</p>
+          <h2 class="feature-desc-title"><%= t('feature.aoj.theme1.article3.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.aoj.theme1.article3.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.aoj.theme1.article3.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-lu.jpg') %>" alt="<%= t('feature.aoj.theme1.article3.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.aoj.theme1.article3.writer.name') %> - <%= t('feature.aoj.theme1.article3.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.aoj.theme1.article3.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/aoj_a/aoj_a-4.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">04</p>
+          <h2 class="feature-desc-title"><%= t('feature.aoj.theme1.article4.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.aoj.theme1.article4.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.aoj.theme1.article4.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-kim.jpg') %>" alt="<%= t('feature.aoj.theme1.article4.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.aoj.theme1.article4.writer.name') %> - <%= t('feature.aoj.theme1.article4.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.aoj.theme1.article4.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <% if I18n.locale.to_s != "vi" && I18n.locale.to_s != "th" %>
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/aoj_a/aoj_a-5.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">05</p>
+          <h2 class="feature-desc-title"><%= t('feature.aoj.theme1.article5.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.aoj.theme1.article5.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.aoj.theme1.article5.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-stefania.jpg') %>" alt="<%= t('feature.aoj.theme1.article5.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.aoj.theme1.article5.writer.name') %> - <%= t('feature.aoj.theme1.article5.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.aoj.theme1.article5.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <% end %>
+    </div>
+  </div><!-- /.feature-contents -->
+</main>
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

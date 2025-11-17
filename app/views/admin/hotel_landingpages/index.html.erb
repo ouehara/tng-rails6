@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Admin Hotel Landingpages</h1>
+<%= form_for @htlp, url: import_admin_hotel_landingpages_path, html: { multipart: true, } do |f| %>
+  <%= f.file_field :import_file %>
+  <%= f.submit 'Import', :class=> 'btn btn-default' %>
+<% end %>
+<div class="row">
+<%= form_tag url_for(params.permit!), :method => :get,:class => 'locale' do %>
+<%= select_tag 'set_locale',  options_for_select( I18n.available_locales, :selected => params[:set_locale]), :onchange => 'this.form.submit()' %>
+<% end %>
+<div class="col-xs-4">
+<%if @leftPromo.present?%>
+  <%= render partial: 'promo_art', locals: { promo: @leftPromo} %> 
+<%else%>
+  <%= render partial: 'placeholder'%> 
+<%end%>
+</div>
+<div class="col-xs-4">
+<%if @middlePromo.present?%>
+  <%= render partial: 'promo_art', locals: { promo: @middlePromo} %> 
+<%else%>
+  <%= render partial: 'placeholder'%> 
+<%end%>
+</div>
+<div class="col-xs-4">
+<%if @rightPromo.present?%>
+  <%= render partial: 'promo_art', locals: { promo: @rightPromo} %> 
+<%else%>
+  <%= render partial: 'placeholder'%> 
+<%end%>
+</div>
+</div>
+<table class="table table-striped jambo_table">
+  <thead>
+    <tr class="headings">
+      <th>name </th>
+      <th>summary </th>
+      <th>category</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody data-role="activerecord_sortable">
+    <% @admin_hotel_landingpages.each do |admin_hotel_landingpage| %>
+      <tr class="pointer" data-role="hotel_landingpage<%= admin_hotel_landingpage.id %>" data-move-url="<%= move_admin_hotel_landingpage_url(admin_hotel_landingpage.id) %>" data-position="<%= admin_hotel_landingpage.position %>">
+        <td><%=admin_hotel_landingpage.name %></td>
+        <td><%=admin_hotel_landingpage.summary %></td>
+        <td><%=admin_hotel_landingpage.category %></td>
+        <td><%= link_to 'Show', [:admin, admin_hotel_landingpage] %></td>
+        <td><%= link_to 'Edit', edit_admin_hotel_landingpage_path(admin_hotel_landingpage) %></td>
+        <td><%= link_to 'Destroy', [:admin, admin_hotel_landingpage], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hotel landingpage', new_admin_hotel_landingpage_path, class: "btn btn-default" %>
+<%= link_to 'Set Pickups', pickup_lang_admin_hotel_landingpages_path, class: "btn btn-default", remote: true %>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('*[data-role=activerecord_sortable]').activerecord_sortable();
+});
+</script>

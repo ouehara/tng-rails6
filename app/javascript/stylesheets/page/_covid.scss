@@ -1,0 +1,854 @@
+.articleList_text {
+  width: 49vw;
+  max-width: 100%;
+}
+
+.main_container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  background: #1c1c1c;
+  padding: 10px;
+  color: white;
+}
+
+body {
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-display: auto;
+  font-kerning: normal;
+  font-size: rem(14);
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+p {
+  font-size: 16px;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../images/covid/newmainImg_mobile.jpg");
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 100%;
+  position: relative;
+
+  @include mq(sm) {
+    padding-top: 0px;
+    height: 740px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+      url("../images/covid/covid-header.jpg");
+    background-position: center center;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    width: 40px;
+    height: 40px;
+
+    svg {
+      fill: white;
+    }
+
+    @include mq(sm) {
+      position: absolute;
+
+      width: 200px;
+      height: 80px;
+    }
+  }
+
+  #teaser {
+    img {
+      @include mq(sm) {
+        margin-bottom: 25px;
+      }
+    }
+
+    justify-self: center;
+    align-self: center;
+    color: black;
+
+    width: 800px;
+
+    height: auto;
+    padding: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    @include mq(sm) {
+      color: white;
+      margin-top: -20px;
+      background: transparent;
+      padding: 30px;
+      height: 340px;
+    }
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: white;
+    line-height: 36px;
+    margin-bottom: 0;
+
+    @include mq(sm) {
+      font-size: 64px;
+      line-height: initial;
+      padding-bottom: 40px;
+    }
+
+    font-weight: normal;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  p {
+    @include mq(sm) {
+      font-size: 24px;
+    }
+
+    line-height: 30px;
+  }
+}
+
+#teaser_text {
+  line-height: 30px;
+  padding: 15px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 15px;
+
+  @include mq(sm) {
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+  }
+
+  z-index: 1;
+  position: relative;
+
+  h2 {
+    text-align: center;
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    font-size: 26px;
+    border-left: 10px solid $color_yellow;
+    max-width: 100%;
+
+    @include mq(sm) {
+      font-size: 34px;
+    }
+
+    padding-right: 5px;
+    justify-self: center;
+
+    span {
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
+
+.sub {
+  font-size: 1.5rem;
+
+  @include mq(sm) {
+    font-size: 18px;
+  }
+
+  color: #333333;
+  text-align: center;
+}
+
+#safety {
+  background-color: #f7f7f7;
+
+  .sub-container {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    @include mq(sm) {
+      margin: 18px;
+    }
+
+    .row .col-sm-6 .row {
+      margin-bottom: 10px;
+    }
+  }
+
+  .sub {
+    margin-bottom: 40px;
+    padding: 5px;
+  }
+
+  .container {
+    background: repeating-linear-gradient(-45deg,
+        #e8e8e8,
+        #e8e8e8 10px,
+        transparent 10px,
+        transparent 23px);
+
+    #safety_content {
+      background: white;
+      padding-bottom: 30px;
+      margin-bottom: 15px;
+
+      h3 {
+        text-align: center;
+        padding: 30px;
+        font-size: 30px;
+      }
+
+      h4 {
+        @include mq(sm) {
+          height: 36px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .section_sub {
+        text-align: center;
+        padding: 10px;
+
+        @include mq(sm) {
+          padding: 40px;
+        }
+      }
+
+      table {
+        margin: 30px;
+        width: 100%;
+      }
+
+      .info_highlight {
+        margin: 10px;
+
+        @include mq(sm) {
+          margin: 30px;
+        }
+
+        padding: 10px;
+        background: #eeeeee;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+          text-align: center;
+          width: 250px;
+
+          @include mq(sm) {
+            width: auto;
+            text-align: left;
+          }
+        }
+
+        @include mq(sm) {
+          flex-direction: row;
+        }
+
+        &_el {
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+
+          img {
+            margin-bottom: 10px;
+
+            @include mq(sm) {
+              align-self: center;
+              margin-bottom: 0px;
+            }
+          }
+
+          @include mq(sm) {
+            flex-direction: row;
+            flex: 1;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            align-items: flex-start;
+            height: 125px;
+          }
+
+          div {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#forward_links {
+  .sub {
+    margin-bottom: 40px;
+  }
+
+  table {
+    margin: 0 auto;
+    padding-top: 30px;
+
+    .t_label {
+      padding-right: 30px;
+    }
+  }
+
+  .center-block {
+    .row {
+      @include mq(sm) {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#learning-planning {
+  h4 {
+    font-size: 1.5rem;
+
+    @include mq(sm) {
+      font-size: 18px;
+    }
+  }
+
+  background-color: #f7f7f7;
+
+  .centered-line {
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  .centered-line span {
+    flex: 1;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    border-bottom: 1px solid black;
+  }
+
+  .center {
+    flex: 0 0 auto !important;
+    display: inline-block;
+    position: relative;
+    top: 0.5em;
+    padding: 0 0.5em;
+  }
+}
+
+.article-slider-swipe {
+  img {
+    height: 135px;
+
+    @include mq(sm) {
+      height: 220px;
+    }
+  }
+}
+
+.carousel .control-dots {
+  margin: -3px !important;
+  padding-left: 0;
+}
+
+.carousel.carousel-slider {
+  max-height: 340px !important;
+}
+
+.post-article_sns {
+  list-style: none;
+  margin: vw(80) auto vw(100);
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: vw(380);
+
+  @include mq(sm) {
+    margin: 40px auto 75px;
+    max-width: 350px;
+  }
+
+  &__item {
+    a {
+      display: block;
+      padding-top: vw(65);
+      font-size: rem(12);
+      font-weight: bold;
+      position: relative;
+      transition: all ease-out 0.2s;
+
+      @include mq(sm) {
+        padding-top: 0;
+        padding-left: 38px;
+        font-size: 18px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: vw(55);
+        height: vw(55);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include mq(sm) {
+          width: 28px;
+          height: 28px;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &.weibo a {
+      color: #e32529;
+
+      &::before {
+        background-image: url("../images/post/icon_sns_weibo.png");
+      }
+    }
+
+    &.fb a {
+      color: #3951aa;
+
+      &::before {
+        background-image: url("../images/post/icon_sns_fb.png");
+      }
+    }
+
+    &.tw a {
+      color: #38b2ff;
+
+      &::before {
+        background-image: url("../images/post/icon_sns_tw.png");
+      }
+    }
+
+    &.pn a {
+      color: #e60025;
+
+      &::before {
+        background-image: url("../images/post/icon_sns_pn.png");
+      }
+    }
+  }
+}
+
+.first-img {
+  margin-bottom: 10px;
+}
+
+.more-btn {
+  padding-top: 20px;
+
+  .btn {
+    background: #3f51b5;
+    color: white;
+    border: none;
+  }
+}
+
+.main-page-menu {
+  margin: 0 auto;
+  width: 344px;
+  border-top: 1px solid #999999;
+  border-right: 1px solid #999999;
+  margin-bottom: 20px;
+
+  @include mq(sm) {
+    width: 1035px;
+    border-bottom: 1px solid #999999;
+    border-right: none;
+  }
+}
+
+.corona-details-lp {
+  ul li a {
+    font-size: 14px;
+
+    @include mq(sm) {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    white-space: pre-wrap;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 35px;
+
+    @include mq(sm) {
+      font-size: 42px;
+      margin-top: 0;
+    }
+  }
+
+  header {
+    #logo {
+      width: auto;
+    }
+
+    height: 250px;
+
+    a {
+      color: black;
+      font-weight: bold;
+      width: 150px;
+      display: block;
+
+      div {
+        margin-top: 5px;
+        width: 40px;
+
+        @include mq(sm) {
+          width: 165px;
+        }
+      }
+    }
+  }
+
+  #first_section {
+    padding-bottom: 20px;
+    padding-top: 15px;
+
+    .teaser_desc {
+      line-height: 25px;
+
+      @include mq(sm) {
+        line-height: initial;
+      }
+    }
+
+    @include mq(sm) {
+      padding-top: 40px;
+    }
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+  .mtop50 {
+    margin-top: 50px;
+  }
+
+  .menu {
+    margin-bottom: 20px;
+
+    @include mq(sm) {
+      border-bottom: 1px solid #999999;
+      border-top: 1px solid #999999;
+    }
+
+    .container {
+      border-bottom: 1px solid #999999;
+      border-top: 1px solid #999999;
+      border-right: 1px solid #999999;
+      padding: 0;
+
+      @include mq(sm) {
+        border-bottom: none;
+        border-top: none;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-right: none;
+      }
+    }
+  }
+
+  hr {
+    border-color: #999;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    @include mq(sm) {
+      border-right: 1px solid #999999;
+    }
+
+    li {
+      border-left: 1px solid #999999;
+      border-bottom: 1px solid #999999;
+      padding: 20px;
+      text-align: center;
+      width: 33%;
+
+      @include mq(sm) {
+        width: 130px;
+        height: 120px;
+        border-bottom: none;
+        flex: 1;
+      }
+
+      &.active {
+        background: $color_yellow;
+      }
+
+      a {
+        color: black;
+        height: 100%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 59px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.hotel-name {
+  font-size: 26px !important;
+  font-weight: bold;
+}
+
+.hotel-features {
+  background: #ebebeb;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-icon-single-wrap {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 6.8px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .hotel-features :nth-child(13) {
+    margin-right: 0;
+  }
+}
+
+.feature-icon-single-wrap>img {
+  width: 45px;
+}
+
+.hotel-location-wrapper {
+  i {
+    float: left;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-right: 10px;
+    color: #c9c69d;
+  }
+}
+
+.hotel-location {
+  font-size: 16px;
+  position: relative;
+  padding-left: 20px;
+
+  &:before {
+    content: " ";
+    width: 14px;
+    height: 20px;
+    background: url("../images/covid/icons/icon_area.png") no-repeat;
+    display: inline-block;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.website-sub {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.hotel-offical {
+  display: block;
+  color: #666666;
+  border: 1px solid #666666;
+  border-radius: 0;
+  font-size: 18px;
+  text-align: center;
+
+  img {
+    width: 22px;
+  }
+}
+
+.hotel-summary {
+  font-size: 20px;
+}
+
+.hotel-description {
+  font-size: 16px;
+}
+
+.area-sorting-button {
+  &.inline {
+    display: inline-block;
+  }
+}
+
+.hotel-price {
+  font-size: 43px;
+  line-height: 22px;
+  text-align: right;
+
+  .small {
+    font-size: 16px;
+  }
+}
+
+.hotel-price-small {
+  font-size: 12px;
+  text-align: right;
+}
+
+.hotel-related {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+
+  >a {
+    margin-top: 10px;
+    display: block;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+}
+
+.covid-estab-info {
+  font-size: 14px;
+
+  .bold {
+    font-weight: bold;
+  }
+}
+
+.hotel-image {
+  width: 100%;
+}
+
+.hotel-related-title {
+  color: black;
+}
+
+.hotel-small {
+  padding-right: 5px;
+  padding-left: 5px;
+
+  img {
+    height: 76px;
+
+    @include mq(sm) {
+      height: 122px;
+    }
+  }
+}
+
+.hotel-small:nth-child(2) {
+  padding-left: 0;
+}
+
+.hotel-small:nth-child(3) {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.hotel-small:nth-of-type(4) {
+  padding-right: 0;
+}
+
+.text-container p {
+  white-space: initial;
+
+  .show-more-btn {
+    cursor: pointer;
+    display: block;
+    color: #337ab7;
+  }
+
+  span {
+    white-space: pre-wrap;
+  }
+}
+
+.hotel-location {
+  white-space: initial;
+}
+
+.more_info_text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 25px;
+
+  @include mq(sm) {
+    font-size: 18px;
+  }
+
+  padding: 5px;
+}

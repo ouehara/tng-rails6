@@ -1,0 +1,12 @@
+
+<i class="<%
+case Contact.states[contact.state]
+  when Contact.states[:unread]%>icon-envelope
+  <%when Contact.states[:read]%>icon-envelope-open
+  <%when Contact.states[:answered]%>fa fa-reply
+  <%when Contact.states[:ignore]%>fa fa-times
+  <%when Contact.states[:flag_red]..Contact.states[:flag_green] %>fa fa-flag <%=contact.state%>
+<%
+end
+%>
+"> </i>

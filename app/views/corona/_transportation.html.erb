@@ -1,0 +1,175 @@
+<div class="container" id="selected_category">
+  <div class="col-xs-12 col-sm-12">
+    <%if @establishment.blank? %>
+      <p style="text-align: center; margin-bottom: 40px;"><%= I18n.t "empty_state" %></p>
+    <%end%>
+    <% @establishment.each.with_index do |hotel, index| %>
+      <div class="row" id=<%= "hotel#{hotel.id}"%>>
+        <div class="col-xs-12 hotel-header">
+          <div class="row">
+            <h3 class="col-xs-12 hotel-name"><%= raw sanitize hotel.name,  tags: %w(sub sup) %></h3>
+          </div>
+          <%if  !hotel.address.blank? %>
+            <div class="hotel-location-wrapper">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p class="hotel-location">
+                <%if !hotel.maps.blank? %>
+                  <a href="<%= hotel.maps %>">
+                <% end %>
+                <%a =  hotel.address.split("\n") %><span class="bold"><%= a[0]%></span><%= a[1]%></p>
+              <%if  !hotel.maps.blank? %>
+                </a>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-xs-12 col-sm-7 hotel-images">
+          <%# VIA INN Hotel 対応 %>
+          <% if hotel.id == 96 %>
+            <div class="nopadding first-img" style="position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden;margin-bottom: 2rem;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Cu_L_HoPbPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute;top: 0;width: 100%;height: 100%;"></iframe>
+            </div>
+            <%hotel.hotel_images.each.with_index do |img, i|%>
+              <div class="col-xs-4 nopadding hotel-small">
+                <%= image_tag img.image.url(:medium), class: "img-responsive hotel-image"%>
+              </div>
+            <%end%>
+          <% else %>
+            <%hotel.hotel_images.each.with_index do |img, i|%>
+              <% if i == 0%>
+                <div class="nopadding first-img">
+              <% else %>
+                <div class="col-xs-4 nopadding hotel-small">
+              <%end%>
+              <%= image_tag img.image.url(:medium), class: "img-responsive hotel-image"%>
+              </div>
+            <%end%>
+          <% end %>
+          <%if  !hotel.img_src.blank? %>
+            <div class="row">
+              <div class="col-xs-12">
+                <small><%= I18n.t "img_source" %> <%= hotel.img_src %> </small>
+              </div>
+            </div>
+          <% end %>
+          <div class="hotel-features col-xs-12">
+            <% hotel.hotel_features.each.with_index do |feature,i|%>
+              <div class="feature-icon-single-wrap"  >
+
+                <img src=<%= asset_pack_path("media/images/covid/icons/"+feature.feature.to_s+".svg")%> >
+
+              </div>
+            <%end%>
+          </div>
+          </div>
+          <div class="col-xs-12 col-sm-5 covid-estab-info">
+            <% if  !hotel.description.blank? %>
+              <p class="bold placelist_desc"><%= t("covid.details.description") %></p>
+
+              <p><%=raw sanitize hotel.description, tags: %w(h2 p strong em a img), attributes: %w(id class href src) %></p>
+              <br/>
+            <% end %>
+            <% if  !hotel.summary.blank? %>
+              <div class="text-container">
+                <p class="bold  placelist_desc"><%= t("covid.details.safety_description") %></p>
+                <p class=><%
+                  sum = [hotel.summary[0..240], hotel.summary[240..-1]]
+                %>
+                  <%if !sum[1].nil?  %>
+                    <span id="summary_<%= hotel.id %>"><%=raw sanitize  sum[0], tags: %w(h2 p strong em a img), attributes: %w(id class href src) %>...</span>
+                    <span class="box" id="detail_<%= hotel.id %>"><%=raw sanitize hotel.summary, tags: %w(h2 p strong em a img), attributes: %w(id class href src) %></span>
+                    <button onclick="readMore(this)" id="btn_<%= hotel.id %>" data-id="<%= hotel.id %>" class="show-more-btn">Read more</button>
+                  <%else%>
+                    <span><%=raw sanitize  sum[0], tags: %w(h2 p strong em a img), attributes: %w(id class href src) %></span>
+                  <%end%>
+                </p>
+              </div>
+              <br/>
+            <% end %>
+            <% if  !hotel.price.blank? %>
+              <p class="bold">■ <%= t("covid.details.benefit") %></p>
+              <p class="hotel-description">
+                <%=raw sanitize hotel.price, tags: %w(h2 p strong em a img), attributes: %w(id class href src) %>
+              </p>
+            <% end %>
+            <div class="row">
+              <div class="col-xs-12">
+                <a href="<%= hotel.url %>"
+                   class="btn hotel-offical"
+                   target="_blank"
+                   onClick="ga('send', 'event', 'hotel_lp', 'click', '<%= I18n.locale.to_s+"."+hotel.name_en.parameterize("_") %>');">
+                  <%= t("hotel-lp.website") %>
+                </a>
+                <%if hotel.official_text %>
+                  <p class="website-sub bold"><%= t("hotel-lp.website_sub_html") %></p>
+                <%end%>
+                <%if hotel.recommend_text %>
+                  <p class="website-sub bold"><%= t("hotel-lp.website_sub_recommend_text") %></p>
+                <%end%>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr/>
+    <%end%>
+    </div>
+  </div>
+
+  <div class="result_pager">
+    <ul class="result_pagination">
+      <li class="pre"><a href="#"><span>«</span></a></li>
+      <li><a href="#" class="active"><span>1</span></a></li>
+      <li><a href="#"><span>2</span></a></li>
+      <li><a href="#"><span>3</span></a></li>
+      <li><a href="#"><span>4</span></a></li>
+      <li><a href="#"><span>500</span></a></li>
+      <li class="next"><a href="#"><span>»</span></a></li>
+    </ul>
+  </div>
+
+  <script>
+      // document.addEventListener('click', function (event) {
+      //
+      //     // If the clicked element doesn't have the right selector, bail
+      //     if (!event.target.matches('.show-more-btn')) return;
+      //
+      //     // Don't follow the link
+      //     event.preventDefault();
+      //
+      //     // Log the clicked element in the console
+      //     event.target.previousElementSibling.classList.toggle("hidden");
+      //     event.target.classList.toggle("hidden");
+      //     event.target.nextElementSibling.classList.toggle("hidden");
+      // }, false);
+
+      function readMore(event) {
+
+          let id = event.getAttribute('data-id')
+
+          // let summaryText = document.getElementById("summary_" + id);
+          // let box = document.getElementById("detail_" + id);
+
+          // let btn = document.getElementById("btn_" + id);
+
+          let sum = $('#summary_' + id);
+          let box = $('#detail_' + id);
+          let btn = $('#btn_' + id);
+
+          console.log(sum);
+
+          if($(box).is(":hidden")) {
+              $(sum).hide();
+              $(box).show("slow");
+              $(btn).text("Show less");
+          } else {
+              $(sum).show();
+              $(box).slideUp();
+              $(btn).text("Show less");
+          }
+
+
+      }
+
+  </script>
+</div>

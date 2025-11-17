@@ -1,0 +1,20 @@
+<% set_meta_tags noindex: true %>
+<div class="loginPage">
+  <h2 class="loginPage_heading"><%= title 'Forgot your password?' %></h2>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="field form-group row">
+      <%= f.label :email, class: "col-sm-4" %>
+      <div class="col-sm-8">
+      <%= f.email_field :email, autofocus: true, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="actions form-group">
+      <%= f.submit "Send me reset password instructions", class: "btn btn-primary btn-block" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>

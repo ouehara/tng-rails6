@@ -1,0 +1,159 @@
+<%= form_for([:admin, @admin_hotel_landingpage],html: { class: 'form-horizontal', multipart: true }) do |f| %>
+  <%if params[:set_locale]%>
+    <input type="hidden" value=<%=params[:set_locale]%> name="set_locale" />
+  <%end%>
+  <% if @admin_hotel_landingpage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_hotel_landingpage.errors.count, "error") %> prohibited this admin_hotel_landingpage from being saved:</h2>
+
+      <ul>
+      <% @admin_hotel_landingpage.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :category %>
+    <%= f.select :category, HotelLandingpage.categories.keys.map { |key, value| [key, key] } %>
+
+     
+  </div>
+  <div class="form-group">
+    <%=f.label :name %>
+    <%= f.text_field :name, class: "form-control", placeholder: "name", autocomplete: "off" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label @admin_hotel_landingpage.hotel? ? :description : "Facility Information" %>
+    <%= f.text_field :description, class: "form-control", placeholder: "description", autocomplete: "off" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label @admin_hotel_landingpage.hotel? ? :price : "Health and Safety Measures" %>
+    <%= f.text_area :price, class: "form-control", placeholder: "price", autocomplete: "off" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label  @admin_hotel_landingpage.hotel? ? :summary : "Special Offer" %>
+    <%= f.text_area :summary, class: "form-control", placeholder: "summary", autocomplete: "off" %>
+  </div>
+
+   <div class="form-group">
+    <%= f.label :url %>
+    <%= f.text_field :url, class: "form-control", placeholder: "url", autocomplete: "off" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :address %>
+    <%= f.text_area :address, class: "form-control", placeholder: "address", autocomplete: "off" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :maps %>
+    <%= f.text_field :maps, class: "form-control", placeholder: "map link", autocomplete: "off" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.check_box :official_text%>
+    <%= f.label :official_text %>
+  </div>
+  <div class="form-group">
+    <%= f.check_box :recommend_text %>
+    <%= f.label :recommend_text %>
+  </div>
+  <div class="form-group">
+    <%= f.label :area %>
+    <select class="filter-area" name="hotel_landingpage[area_id]">
+        <option value="-1">all</option>
+        <% @areas.each do |a| %>
+          <option value=<%= a.id %> <%=@admin_hotel_landingpage.area_id == a.id ? "selected" : "" %> ><%= a.name %></option>
+          <% a.children.each do |sub_area| %>
+          <option value=<%= sub_area.id %> <%=@admin_hotel_landingpage.area_id == sub_area.id ? "selected" : "" %> ><%= sub_area.name %></option>
+            <% sub_area.children.each do |final_area| %>
+              <option value=<%= final_area.id %> <%=@admin_hotel_landingpage.area_id == final_area.id ? "selected" : "" %> ><%= final_area.name %></option>
+            <% end %>
+          <% end %>
+          <option disabled>-----------</option>
+        <% end %>
+      </select>
+  </div>
+
+  
+  <%= f.label "Features" %>
+  <p>For Hotel Lp</p>
+  <% HotelFeature.features.each do |feature| %>
+  <div class="form-group">
+    <% if feature[1] == 11 %>
+    <p>For Traveling safely page</p>
+    <%end%>
+    <%= check_box_tag "hotel_features[]", feature[1], f.object.hotel_features.where(feature: feature[1]).exists? %>
+    <%= f.label feature[0] %>
+  </div>
+  <% end %>
+  
+
+  <div class="form-group">
+  <%= f.label :hotel_images, class: 'control-label' %>
+    <div class="controls">
+      <%= file_field_tag "hotel_images[]", type: :file, multiple: true %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :img_src %>
+    <%= f.text_field :img_src, class: "form-control", placeholder: "image source", autocomplete: "off" %>
+  </div>
+<% @admin_hotel_landingpage.hotel_images.each do |h| %>
+<div class="hotel-image-del-wrapper">
+<%= image_tag h.image.url(:thumb), width: "100" %>
+<div class="hotel-image-delete" data-id="<%= h.id %>">
+<i class="menu-icon icon-trash"></i>
+</div>
+</div>
+<%end%>
+<table class="table table-striped" id="pickup_articles">
+  <%= f.fields_for :hotel_landingpage_articles do |pa| %>
+    <%=render 'hotel_landingpage_article_fields', f: pa%>
+  <% end %>
+</table>
+<div class="form-group">
+  <%= f.label "Pick up" %>
+  <select name="isPromotional">
+    <option value="-1">----</option>
+    <option value="left" <%=!@promo.nil? && @promo.position.to_s == "left" ? "selected" : "" %>>left</option>
+    <option value="right" <%=!@promo.nil? && @promo.position.to_s == "right" ? "selected" : "" %>>right</option>
+    <option value="middle" <%=!@promo.nil? && @promo.position.to_s == "middle" ? "selected" : "" %>>middle</option>
+  </select>
+</div>
+<div class="form-group">
+<%= f.check_box :published %>
+<%= f.label :published %>
+    
+</div>
+<!--
+<%= link_to_add_association 'Add an article', f, :hotel_landingpage_articles, 'data-association-insertion-method' => 'append', 'data-association-insertion-traversal' => 'prev', 'data-association-insertion-node' => 'table', style: "display:none;" %>
+<div class="form-group">
+  <%= link_to "Pick an article", pick_article_admin_pickups_path, class: "btn btn-default", remote: true %>
+</div>
+!-->
+  <div class="actions">
+    <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+  </div>
+<% end %>
+<script type="text/javascript">
+$(".hotel-image-delete").on("click",function(){
+  let id = $(this).attr("data-id")
+  $that = $(this)
+  $.ajax({
+    url: "<%= image_destroy_admin_hotel_landingpages_path %>",
+    data: {id: <%= @admin_hotel_landingpage.id %>, img_id: id},
+    method: "delete",
+    success: function(d){
+      $that.parent().remove()
+    }
+
+  })
+});
+
+</script>

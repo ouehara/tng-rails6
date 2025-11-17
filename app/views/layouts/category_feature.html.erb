@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="<%= t('langAttribute') %>">
+<head>
+  <meta charset="UTF-8">
+  <%= display_meta_tags(default_meta_tags) %>
+  <%= csrf_meta_tags %>
+  <!-- Lighthouse Details -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#C50001">
+  <%= canonical_tag -%>
+  <!-- CookieConsent CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+
+  <%= stylesheet_pack_tag 'category_feature' %>
+  <% if I18n.locale.to_s == "th" %>
+    <%= stylesheet_pack_tag 'th_font' %>
+  <% end %>
+
+  <%= render 'shared/favicon' %>
+  <% if I18n.locale.to_s == 'ko' || I18n.locale.to_s == 'en' %>
+    <meta name="naver-site-verification" content="26e17e4844190f65ebd4d223cc8aff61b2c65418" />
+  <% end %>
+  <script>
+    var locales = "<%= I18n.locale %>"
+    var availableLocale = <%= raw I18n.available_locales.to_json %>
+  </script>
+
+  <%= render partial: "shared/gtm_head" %>
+
+  <% if I18n.locale.to_s == "ko" %>
+    <%= render partial: "shared/naver_analytics" %>
+  <% end %>
+
+  <%= yield :head %>
+</head>
+
+<body class="<%= yield (:body_class) %> <%= I18n.locale %>" data-turbolinks="false">
+<%= render partial: "shared/gtm_body" %>
+
+  <%= render "shared/header" %>
+
+  <%= yield %>
+  <%= render "shared/footer" %>
+  <%= yield :foot %>
+  <%= render partial: "shared/cookieconsent" %>
+
+  <%= javascript_packs_with_chunks_tag 'application', defer: true%>
+  <%= javascript_include_tag 'application', 'defer' => true %>
+
+  <%= render partial: "shared/analytics" %>
+  </body>
+</html>

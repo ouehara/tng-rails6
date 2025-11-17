@@ -1,0 +1,28 @@
+@import "base/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "base/function";
+@import "base/mixins";
+@import "base/common";
+@import "base/add_common";
+
+/**
+  layout
+*/
+@import "layout/section";
+@import "layout/container";
+
+/**
+  page
+*/
+@import "editor/editor";
+
+/**
+  partials
+*/
+@import "partials/critical";
+@import "partials/footer";
+@import "partials/article_list";
+@import "partials/contents-parts";
+@import "partials/cookieconsent";
+
+@import "page/area_feature_prefecture";

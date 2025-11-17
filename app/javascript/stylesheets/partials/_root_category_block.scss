@@ -1,0 +1,26 @@
+.root-category-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  &-element {
+    flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: black;
+    h3 {
+      font-size: 16px;
+      margin-top: 10px;
+      @include mq(sm) {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="x_panel">
+    <div class="x_content"> 
+      <h2>Merge <%= @tag1.name %> and <%= @tag2.name %> </h2>
+      <p> use <b> <%= link_to merge_by_ids_admin_tags_path(@tag2.id,@tag1.id) do%> 
+      <%= @tag1.name%> <%end%> </b> or <b> 
+       <%= link_to merge_by_ids_admin_tags_path(@tag1.id,@tag2.id) do%>  <%= @tag2.name %> 
+       <%end%>
+      </b> 
+      </p>
+      
+      <hr />
+      <p> create new tag and merge<p>
+
+      <%= form_for([:admin, @newTag], html: { class: "form" },  url: create_and_merge_admin_tags_url) do |f| %>
+        <% if @newTag.errors.any? %>
+          <%= render partial: 'admin/shared/error_message', locals: { resource: @tag } %>
+        <% end %>
+
+        <div class="form-group">
+          <%= hidden_field_tag "id", @tag1.id%>
+          <%= hidden_field_tag "id2", @tag2.id%>
+          <%= f.label :name_en %>
+          <%= f.text_field :name_en, class: "form-control", placeholder: "Tag name", autocomplete: "off" %>
+
+          <%= f.label :name_zh_hant %>
+          <%= f.text_field :name_zh_hant, class: "form-control", placeholder: "Tag name", autocomplete: "off" %>
+
+          <%= f.label :name_zh_hans %>
+          <%= f.text_field :name_zh_hans, class: "form-control", placeholder: "Tag name", autocomplete: "off" %>
+
+          <%= f.label :name_ja %>
+          <%= f.text_field :name_ja, class: "form-control", placeholder: "Tag name", autocomplete: "off" %>
+
+          <%= f.label :name_th %>
+          <%= f.text_field :name_th, class: "form-control", placeholder: "Tag name", autocomplete: "off" %>
+
+          <input type="hidden" value="<%=I18n.locale %>" name="lang">
+        </div>
+        <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+      <% end %>
+
+    </div>
+    
+  </div>

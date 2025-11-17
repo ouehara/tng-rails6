@@ -1,0 +1,83 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/">
+<link rel="alternate" hreflang="ja" href="https://www.tsunagujapan.com/ja/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/">
+<link rel="alternate" hreflang="zh-cmn-Hans" href="https://www.tsunagujapan.com/zh-hans/">
+<link rel="alternate" hreflang="th" href="https://www.tsunagujapan.com/th/">
+<link rel="alternate" hreflang="vi" href="https://www.tsunagujapan.com/vi/">
+<link rel="alternate" hreflang="ko" href="https://www.tsunagujapan.com/ko/">
+<link rel="alternate" hreflang="id" href="https://www.tsunagujapan.com/id/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/">
+<% end %>
+
+<div class="top-hero">
+  <div class="slider">
+    <%= react_component('top_slider/top_slider', {topSlider: JSON.parse(@newestArticle), mobile: browser.device.mobile?}) %>
+  </div>
+</div><!-- /.top-hero -->
+
+<%= render "topBannerArea" %>
+
+<div id="newest-top"></div>
+
+<section>
+  <div class="newest_article container">
+    <h2 class="section_heading newest-top-scroll-to"><%= I18n.t("newest_top")%></h2>
+    <%= render "articles/list", articles: @articles %>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section_heading"><%= I18n.t("area.banner_section_title")%></h2>
+    <%= render "area_feature_banner", page: "top" %>
+  </div>
+</section>
+
+<%= render "shared/ads", {prerender: true} %>
+<%= render "special_feature", {prerender: true} %>
+
+<% if false %>
+  <% if I18n.locale.to_s != "ja" %>
+    <section>
+      <div class="container">
+        <h2 class="section_heading"><%= I18n.t("popular_articles")%></h2>
+        <%= render "articles/list", articles: @topArticles, isTop: true %>
+      </div>
+    </section>
+  <% end %>
+<% end %>
+
+<% if !@videos.empty? %>
+<section class="section video-section">
+  <div class="container">
+    <h2 class="section_heading"><%= I18n.t("video")%></h2>
+    <div class="advertisement video-slider row">
+    <%= react_component('video/video_list_view',{elements:@videos, mobile: browser.device.mobile?}) %>
+    </div>
+    <p class="section_button">
+      <%= link_to I18n.t("view_videos"), video_index_path, id: "tips_all"  %>
+    </p>
+  </div>
+</section>
+<% end %>
+
+<%= render "structured", articles: @articles  %>
+<%= render "shared/sns" %>
+
+<script>
+(function() {
+  <% if @paged %>
+    window.requestAnimationFrame(function() {
+    window.location.hash="newest-top";
+  })
+  <% end %>
+  })();
+</script>
+
+<% content_for :foot do %>
+
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

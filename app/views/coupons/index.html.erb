@@ -1,0 +1,41 @@
+<% body_class "index" %>
+<% set_meta_tags title: I18n.t('coupon_headline'), description: I18n.t('coupon_desc') %>
+
+<%= react_component('hero/hero_view',{elements:{category: "coupons",
+  "category_full": I18n.t('coupon_headline'),"page_type": "index",
+  "sp_bg_img": asset_pack_path("media/images/area/index_hero_img_pc.jpg"),
+  "pc_bg_img": asset_pack_path("media/images/area/index_hero_img_pc.jpg"),
+  "intro_text": I18n.t('coupon_desc'),
+  "ad": {
+        "img": "",
+        "alt": "",
+        "url": ""
+      }
+  },
+}) %>
+<%= render "shared/breadcrumb" %>
+<section class="section">
+  <div class="container">
+    <% if !@coupons.empty? %>
+      <!-- coupons -->
+      <div class="coupon">
+        <% @coupons.each do |coupon| %>
+          <div class="coupon_item">
+            <%= link_to coupon, class: "coupon_link" do %>
+              <img src="<%= coupon.original_url %>" class="img-responsive">
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="paginate">
+        <%= paginate @coupons, window: browser.device.mobile? ? 1 : 4 %>
+      </div>
+      <!-- /coupons -->
+    <% else %>
+      <p class="coupon_none"><%= I18n.t('coupon_none') %></p>
+    <% end %>
+  </div>
+</section>
+
+<%= render "shared/sns" %>
+<!-- /Advertisement -->

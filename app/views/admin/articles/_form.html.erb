@@ -1,0 +1,14 @@
+<%= form_for([:admin, @article], html: { class: "form" }) do |f| %>
+  <% if @article.errors.any? %>
+    <%= render partial: 'admin/shared/error_message', locals: { resource: @article } %>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control", placeholder: "Article title", autocomplete: "off" %>
+    <%= f.select 'locale',  options_for_select(I18n.available_locales, :selected =>I18n.locale) %>
+  </div>
+  
+  <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

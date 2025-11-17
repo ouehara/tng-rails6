@@ -1,0 +1,76 @@
+<% body_class "area " + @pagetype %>
+<%= react_component('hero/hero_view',{elements:{category: "",
+"category_full": I18n.t('area.area'),"page_type": @pagetype,
+"sp_bg_img": asset_pack_path("media/images/area/area_"+(@areaImage != "" ? @areaImage :  @curArea.slug)+"M400.jpg"),
+"pc_bg_img": asset_pack_path("media/images/area/area_"+(@areaImage != "" ? @areaImage :  @curArea.slug)+"M400.jpg"),
+"map_img": "",
+"intro_text": "",
+"area": @title,
+"weather": @weather,
+"isPc":  browser.device.mobile?,
+"ad": JSON.parse(@catad),
+},
+}) %>
+<%= render "shared/breadcrumb" %>
+<div class="container">
+  <% if !@desc.empty? %>
+    <p class="hero_intro"><%= @desc %></p>
+  <% end %>
+  <% if(I18n.locale.to_s != "ja") %>
+    <%= render "banner/list_areafeature" %>
+  <% end %>
+</div>
+
+<% if !@children.empty? %>
+<%= render "shared/link_section", section_title: I18n.t("narrow_by_area"), data: @children %>
+<% end %>
+
+<%= render "shared/selects", areas: @curArea, categories: @categories_select, cur_cat: nil, show_area: false, title: I18n.t("search.title")%>
+
+<section class="">
+  <div class="container">
+  <h2 class="section_heading"><%=I18n.t("newest_article_on", area: @curArea.name ) %></h2>
+  <%= render "articles/list", articles: @articles, isTop: false %>
+  </div>
+</section>
+
+<% if false %>
+<section class="coupons-section">
+  <div class="container">
+    <%= react_component('ads/section',{elements: @coupons, mobile: browser.device.mobile?}) %>
+  </div>
+</section>
+<% end %>
+
+<% if !@videos.empty? %>
+<section class="section video-section">
+  <div class="container">
+    <h2 class="section_heading"><%= I18n.t("video")%></h2>
+    <div class="row">
+      <aside class="advertisement video-slider">
+        <%= react_component('video/video_list_view',{elements:@videos, mobile: browser.device.mobile?}) %>
+      </aside>
+    </div>
+    <p class="section_button">
+      <%= link_to I18n.t("view_videos"), video_index_path, id: "tips_all" %>
+    </p>
+  </div>
+</section>
+<% end %>
+
+<%= render "shared/link_section", section_title: I18n.t("see_other_areas"), data: @related %>
+
+<%= render "index/structured", articles: @articles  %>
+<!-- Recommended Area -->
+<div>
+<%= render "shared/recommended_area", {category: nil, area: @curArea, show_search: true}
+%>
+</div>
+<%= render "shared/ads" %>
+<%= render "shared/sns" %>
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

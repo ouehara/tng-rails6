@@ -1,0 +1,661 @@
+$feature-images: (
+  "poj": "poj",
+  "aoj-a": "aoj_a",
+  "aoj-b": "aoj_b",
+  "aoj-c": "aoj_c",
+  "aoj-e": "aoj_e",
+  "aoj-d": "aoj_d",
+  "coj-b": "coj_b",
+  "coj-c": "coj_c",
+  "coj-d": "coj_d",
+  "coj-e": "coj_e",
+  "coj-f": "coj_f",
+  "echigo": "echigo"
+);
+
+/* ---------------------------------------------------------
+.obj-fit
+----------------------------------------------------------*/
+img.obj-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------------
+Menu
+----------------------------------------------------------*/
+.gmenu li a {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+/* ---------------------------------------------------------
+main
+----------------------------------------------------------*/
+.main {
+  @include mq(sm) {
+    margin-top: -10px;
+  }
+
+  @include mq(md) {
+    margin-top: 115px;
+  }
+}
+
+.feature {
+  &-hero {
+    // min-height: 35vh;
+    width: 100%;
+    position: relative;
+    // display: flex;
+    // overflow: hidden;
+    // justify-content: center;
+    // align-items: flex-end;
+    background-color: #1d140d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include mq(sm) {
+      padding-top: 0;
+      // min-height: 580px;
+      background-size: contain;
+    }
+
+    @include mq(lg) {
+      padding-top: 0;
+      // min-height: 650px;
+      background-size: contain;
+    }
+
+    @each $name,
+    $dir in $feature-images {
+      &.#{$name} {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url("../images/category/feature/#{$dir}/hero_mob.jpg");
+
+        @include mq(sm) {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url("../images/category/feature/#{$dir}/hero.jpg");
+        }
+
+        @if $name =="poj" {
+          min-height: 35vh;
+
+          @include mq(sm) {
+            min-height: 580px;
+          }
+
+          @include mq(lg) {
+            min-height: 650px;
+          }
+        }
+      }
+    }
+
+    &-inner {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      min-height: 35vh;
+
+      @include mq(sm) {
+        min-height: 580px;
+      }
+
+      @include mq(lg) {
+        max-width: 1310px;
+        min-height: 650px;
+      }
+    }
+
+    &-title {
+      position: absolute;
+      text-align: center;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 26%;
+      width: 65%;
+
+      &>img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &-logo {
+      position: absolute;
+      left: 6vw;
+
+      @include mq(sm) {
+        left: 3.6%;
+      }
+
+      &>img {
+        max-width: initial;
+        height: 7.5vh;
+
+        @include mq(sm) {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &.aoj-a {
+        top: 8vh;
+
+        @include mq(sm) {
+          top: 19.6rem;
+        }
+      }
+
+      &.aoj-b {
+        top: 4vh;
+
+        @include mq(sm) {
+          top: 7.4rem;
+        }
+      }
+
+      &.aoj-c {
+        top: 2.5vh;
+
+        @include mq(sm) {
+          top: 14.6rem;
+        }
+      }
+
+      &.aoj-d {
+        top: 3vh;
+
+        @include mq(sm) {
+          top: 24.6rem;
+        }
+      }
+
+      &.aoj-e {
+        top: 2vh;
+        left: auto;
+        right: 6vw;
+
+        @include mq(sm) {
+          top: auto;
+          bottom: 8rem;
+          left: auto;
+          right: 3.6%;
+        }
+      }
+
+      &.coj-b {
+        top: 6vh;
+
+        @include mq(sm) {
+          top: 5rem;
+        }
+      }
+
+      &.coj-c {
+        bottom: 2.5vh;
+        left: auto;
+        right: 6vw;
+
+        @include mq(sm) {
+          bottom: 5rem;
+          left: auto;
+          right: 3.6%;
+        }
+      }
+
+      &.coj-d {
+        top: 2.5vh;
+        left: auto;
+        right: 6vw;
+
+        @include mq(sm) {
+          top: 5rem;
+          left: auto;
+          right: 3.6%;
+        }
+      }
+
+      &.coj-e {
+        top: 2.5vh;
+        left: auto;
+        right: 6vw;
+
+        @include mq(sm) {
+          top: 5rem;
+          left: auto;
+          right: 3.6%;
+        }
+      }
+
+      &.coj-f {
+        bottom: 6vh;
+        left: auto;
+        right: 6vw;
+
+        @include mq(sm) {
+          bottom: 13.5rem;
+          left: auto;
+          right: 3.6%;
+        }
+      }
+    }
+  }
+
+  &-contents {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq(sm) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    &.aoj,
+    &.coj {
+      padding-bottom: 0;
+      background-color: #f0f0f2;
+    }
+
+    &.echigo {
+      padding-bottom: 0;
+      background: url("../images/category/feature/echigo/bg-echigo.png") transparent left top/auto 180px;
+
+      @include mq(sm) {
+        background-size: auto 357px;
+      }
+    }
+  }
+
+  &-description {
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 60px;
+    line-height: 1.6;
+
+    @include mq(sm) {
+      font-size: 20px;
+      padding-bottom: 100px;
+      letter-spacing: .025em;
+      line-height: 2;
+    }
+  }
+
+  &-article {}
+
+  &-sections {}
+
+  &-section {
+    width: 100%;
+    background-color: #fff;
+
+    @include mq(sm) {
+      display: flex;
+    }
+
+    &:nth-of-type(odd) {
+      @include mq(sm) {
+        .feature-desc {
+          order: 0;
+        }
+
+        .feature-images {
+          order: 1;
+        }
+      }
+    }
+
+    &:nth-of-type(even) {}
+  }
+
+  &-images {
+    width: 100%;
+    height: 56.25vw;
+
+    @include mq(sm) {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  &-image {
+    display: block;
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &-desc {
+    padding: 3rem 6vw 6rem;
+    width: 100%;
+
+    @include mq(sm) {
+      padding: 40px 60px;
+      width: 50%;
+    }
+
+    &-num {
+      position: relative;
+      font-weight: bold;
+      line-height: 1;
+      font-size: 14vw;
+      margin-bottom: 6vw;
+
+      @include mq(sm) {
+        font-size: 8rem;
+        margin-bottom: .4em;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        height: 2px;
+        margin-top: -1px;
+        left: 18vw;
+        width: 6.66vw;
+
+        @include mq(sm) {
+          width: 3rem;
+          left: 10.2rem;
+        }
+      }
+    }
+
+    &-title {
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 1em;
+      font-size: 5.6vw;
+
+      @include mq(sm) {
+        font-size: 2.8rem;
+      }
+    }
+
+    &-text {
+      font-size: 3.6vw;
+      line-height: 1.75;
+      margin-bottom: 2.5em;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+    }
+
+    &-actions {
+      width: 100%;
+      max-width: 70vw;
+      margin: auto;
+
+      @include mq(sm) {
+        max-width: 336px;
+        margin-left: 0;
+      }
+    }
+
+    &-action {
+      width: 100%;
+      position: relative;
+      display: block;
+      font-weight: bold;
+      color: #333;
+      background-color: #fff;
+      border: 1px solid #333;
+      border-radius: 3rem;
+      transition: all .3s;
+      padding: 0 2em;
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 5.8rem;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+        line-height: 5.8rem;
+      }
+
+      &:hover {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: -20px;
+          display: block;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 2px;
+          animation: lineAnimation .4s ease-out 0s 1 both;
+        }
+      }
+    }
+  }
+
+  &-profile {
+    padding: 2.5rem 2rem;
+    margin: auto;
+    width: 100%;
+    margin-top: 3em;
+
+    @include mq(sm) {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 0 20px;
+      margin-top: 4em;
+    }
+
+    &-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: auto;
+
+      @include mq(sm) {
+        margin: 0;
+      }
+
+      &>img {}
+    }
+
+    &-detail {}
+
+    &-name {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3.6vw;
+      line-height: 1.75;
+      margin-top: 1em;
+
+      @include mq(sm) {
+        text-align: left;
+        margin-top: 0;
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+    }
+
+    &-desc {
+      font-size: 3.6vw;
+      line-height: 1.75;
+      margin-bottom: 0;
+
+      @include mq(sm) {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.aoj {
+  .feature-desc-num {
+    &::after {
+      background-color: #44c38b;
+    }
+  }
+
+  .feature-profile {
+    background-color: #daf3e8;
+  }
+
+  .feature-desc-action {
+    &:hover {
+      &::after {
+        background-color: #44c38b;
+      }
+    }
+  }
+}
+
+.coj {
+  .feature-desc-num {
+    &::after {
+      background-color: #1d868c;
+    }
+  }
+
+  .feature-profile {
+    background-color: #ebfff0;
+  }
+
+  .feature-desc-action {
+    &:hover {
+      &::after {
+        background-color: #1d868c;
+      }
+    }
+  }
+}
+
+.jobs-hero {
+  &_title {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_container {
+    width: auto;
+
+    .title {
+      font-size: rem(21);
+      // padding-top: vw(50);
+
+      @include mq(sm) {
+        font-size: 42px;
+        // padding-top: 50px;
+      }
+
+    }
+  }
+}
+
+.echigo {
+  &_title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 6vw;
+    font-size: 8vw;
+
+    @include mq(sm) {
+      margin-bottom: .6em;
+      font-size: 5rem;
+    }
+  }
+
+  &_desc {
+    &-title {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 6vw;
+      font-size: 8vw;
+
+      @include mq(sm) {
+        margin-bottom: .4em;
+        font-size: 5rem;
+      }
+    }
+
+    &-num {
+      font-size: 14vw;
+      padding-right: 0.2em;
+
+      @include mq(sm) {
+        font-size: 8rem;
+      }
+    }
+
+    &-subtitle {
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 1em;
+      font-size: 5.6vw;
+
+      @include mq(sm) {
+        font-size: 2.8rem;
+      }
+    }
+
+    &-span {
+      width: 100%;
+      position: relative;
+      display: block;
+      font-weight: bold;
+      color: #333;
+      background-color: #fff;
+      border: 1px solid #333;
+      border-radius: 3rem;
+      transition: all .3s;
+      padding: 0 2em;
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 5.8rem;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+        line-height: 5.8rem;
+      }
+    }
+
+    &-action {
+      width: 100%;
+      position: relative;
+      display: block;
+      font-weight: bold;
+      color: #333;
+      background-color: #fff;
+      border: 1px solid #333;
+      border-radius: 3rem;
+      transition: all .3s;
+      padding: 0 2em;
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 5.8rem;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+        line-height: 5.8rem;
+      }
+
+      &:hover {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  }
+}

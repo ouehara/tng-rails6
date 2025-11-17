@@ -1,0 +1,48 @@
+<% content_for :head do %>
+  <!-- Taboola head tag -->
+  <script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({article:'auto'});
+    !function (e, f, u, i) {
+      if (!document.getElementById(i)){
+        e.async = 1;
+        e.src = u;
+        e.id = i;
+        f.parentNode.insertBefore(e, f);
+      }
+    }(document.createElement('script'),
+    document.getElementsByTagName('script')[0],
+    '//cdn.taboola.com/libtrc/d2cx-network/loader.js',
+    'tb_loader_script');
+    if(window.performance && typeof window.performance.mark == 'function')
+      {window.performance.mark('tbl_ic');}
+  </script>
+<% end %>
+<div class="container staticPages">
+  <h1 class="staticPages__heading"><%= title "Errors#internal_server_error" %></h1>
+  <div class="staticPages__contents">
+    <p>Find me in app/views/errors/internal_server_error.html.erb</p>
+  </div>
+
+  <section class="related_posts">
+    <h2 class="related_title"><%= I18n.t("related_articles_title") %></h2>
+    <!-- Taboola Widget -->
+    <div id="taboola-below-article-thumbnails-new"></div>
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({
+        mode: 'alternating-thumbnails-b',
+        container: 'taboola-below-article-thumbnails-new',
+        placement: 'Below Article Thumbnails New',
+        target_type: 'mix'
+      });
+    </script>
+  </section><!-- /.related_posts -->
+
+</div>
+
+<!-- Taboola body tag -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>

@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"ItemList",
+"itemListElement": [
+<% articles.each_with_index do |article, index| %>
+    {
+    "@type": "ListItem",
+    "position": <%= index+1 %>,
+    "url":"<%= article_path(article) %>"
+    }<%= index != articles.size - 1 ?",":"" %>
+  
+<%end%>
+    ]
+}
+</script>

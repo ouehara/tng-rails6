@@ -1,0 +1,37 @@
+<div class="container">
+
+<div class="col-xs-2">
+<%= image_tag @poi["thumbnail_url"], class: "img-resonsive" %>
+</div>
+<div class="col-xs-9">
+  <h1><%= @poi["name"] %></h1>
+</div>
+<div class="col-xs-12">
+<p><%= @poi["perex"] %></p>
+</div>
+<div class="col-xs-12">
+      <table class="table hotel-detail-table">
+      <tbody>
+        <tr>
+          <td class="table-left">Opening Hours</td>
+          <td>
+            <%= @poi["opening_hours"] %>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-left">Address</td>
+          <td>
+            <%= @poi["address"] %>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-left">Categories</td>
+          <td>
+            <%= @poi["categories"] %>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+      <%= link_to @poi["references"][0]["title"], @poi["references"][0]["url"], class: "btn btn-orange" %>
+    </div>
+</div>

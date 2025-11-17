@@ -1,0 +1,127 @@
+<div class="menu_section">
+  <h3>Settings</h3>
+  <ul class="nav side-menu">
+    <li class="<%= 'active current-page' if controller_name == 'dashboard' %>">
+      <%= link_to admin_dashboard_path do %>
+        <i class="menu-icon icon-graph"></i> Dashboard
+      <% end %>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'users' %>">
+      <%= link_to admin_users_path do %>
+        <i class="menu-icon icon-people"></i> Users
+      <% end %>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'top_page_sections' %>">
+      <%= link_to admin_top_page_sections_path do %>
+        <i class="menu-icon icon-settings"></i> Top Page
+      <% end %>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'articles' %>">
+      <%= link_to admin_articles_path do %>
+        <i class="menu-icon icon-doc"></i> Articles
+      <% end %>
+      <ul style="display: none;">
+      
+        <li> <%= link_to coupon_show_admin_articles_path do %>
+          <i class="menu-icon icon-doc"></i> Coupons
+        <% end %></li>
+        <li> <%= link_to landingpage_show_admin_articles_path do %>
+          <i class="menu-icon icon-doc"></i> Landingpage
+        <% end %></li>
+        <li> <%= link_to otomo_show_admin_articles_path do %>
+          <i class="menu-icon icon-doc"></i> Otomo
+        <% end %></li>
+      </ul>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'contacts' %>">
+      <%= link_to admin_contacts_path do %>
+        <i class="menu-icon icon-envelope"></i> Contacts
+      <% end %>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'curator_requests' %>">
+      <%= link_to admin_curator_requests_path do %>
+        <i class="menu-icon icon-badge"></i> Curator Request
+      <% end %>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'areas' %>">
+      <%= link_to admin_areas_path do %>
+        <i class="menu-icon icon-organization"></i> Areas
+      <% end %>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'tags' %>">
+      <%= link_to admin_tags_path do %>
+        <i class="menu-icon icon-tag"></i> Tags
+        <% if @missingTag && @missingTag > 0 %>
+          <span class="notification"><%= @missingTag %></span>
+        <% end %>
+      <% end %>
+      
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'categories' %>">
+      <%= link_to admin_categories_path do %>
+        <i class="menu-icon icon-menu"></i> Category
+      <% end %>
+    </li>
+    <li class="<%= 'active current-page' if controller_name == 'tag_groups' %>">
+      <%= link_to admin_tag_groups_path do %>
+        <i class="menu-icon icon-grid"></i> Tag Groups
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'pickups' %>">
+      <%= link_to admin_pickups_path do %>
+        <i class="menu-icon icon-direction"></i> Pickups
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'sidebar_ads' %>">
+      <%= link_to admin_sidebar_ads_path do %>
+        <i class="menu-icon icon-direction"></i> Ads
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'promo_articles' %>">
+      <%= link_to admin_promo_articles_path do %>
+        <i class="menu-icon icon-fire"></i> Promo
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'article_groups' %>">
+      <%= link_to admin_article_groups_path do %>
+        <i class="fa fa-object-group"></i> Related articles
+      <% end %>
+    </li>
+
+    <li  class="<%= 'active current-page' if controller_name == 'tours' %>">
+      <%= link_to admin_tours_path do %>
+        <i class="menu-icon icon-map"></i> Tour
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'missing_images' %>">
+      <%= link_to admin_missing_images_path do %>
+        <i class="menu-icon icon-exclamation"></i> Missing images
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'image' %>">
+      <%= link_to admin_images_path do %>
+        <i class="menu-icon icon-layers"></i> Images
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'hotel_landingpages' %>">
+      <%= link_to admin_hotel_landingpages_path do %>
+        <i class="menu-icon icon-folder"></i> Hotel Lp
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'hotel_landingpages' %>">
+      <%= link_to admin_rss_feeds_path do %>
+        <i class="menu-icon icon-folder"></i> Feed
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'partners' %>">
+      <%= link_to admin_partners_path do %>
+        <i class="menu-icon icon-phone"></i> Partner
+      <% end %>
+    </li>
+    <li  class="<%= 'active current-page' if controller_name == 'videoss' %>">
+      <%= link_to admin_videos_path do %>
+        <i class="menu-icon  icon-social-youtube"></i> Videos
+      <% end %>
+    </li>
+  </ul>
+</div>

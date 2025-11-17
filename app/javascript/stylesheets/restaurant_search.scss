@@ -1,0 +1,492 @@
+$orange: #f18236;
+$dullOrange: #ecb68f;
+$lightgrey: #dddddd;
+$darkgrey: #898989;
+
+.savor-logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.restaurant-wrapper {
+  margin-bottom: 20px;
+
+  hr {
+    border-color: $dullOrange;
+  }
+}
+
+.mtop30 {
+  margin-top: 30px;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+
+  .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: 0.3125rem;
+    margin-left: 0;
+  }
+
+  .form-check-label {
+    margin-bottom: 0;
+  }
+}
+
+.form-check-inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 0.75rem;
+}
+
+.restaurant-wrapper {
+  .sidebar_headline {
+    background: $darkgrey;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .rest-area-container {
+    .sidebar_headline {
+      background: black;
+    }
+  }
+}
+
+.restaurant_search_sidebar_container {
+  background: $lightgrey;
+  padding: 10px;
+
+  label {
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+  .sidebar_headline {
+    background: $darkgrey;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .label-indent {
+    padding-left: 10px;
+  }
+
+  input {
+    border-radius: 0;
+    border: 1px solid $dullOrange;
+  }
+
+  .dropdown {
+    margin-top: 5px;
+
+    .btn {
+      border-radius: 0;
+      border: 1px solid $dullOrange;
+    }
+  }
+
+  .keyword_search {
+    border: 1px solid $dullOrange;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .btn-orange {
+    margin-top: 15px;
+  }
+
+  .restaurant-search-btn-top {
+    margin-top: 22px;
+  }
+}
+
+.btn-orange {
+  background: $orange;
+  font-size: 16px;
+  color: white;
+}
+
+.btn-orange-line {
+  border: 1px solid $orange;
+  border-radius: 0;
+  color: black;
+}
+
+.restaurant-filters-top {
+  .btn-orange {
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.restaurant-row {
+  font-size: 16px;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    width: auto;
+    border-bottom: 1px solid black;
+    display: inline-block;
+  }
+
+  .restaurant-details {}
+
+  .ico {
+    color: #f18236;
+    font-size: 19px;
+    margin-right: 5px;
+    width: 24px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .restaurant-icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    &>div {
+      background-image: url("../images/restaurant/en_sarvicegenre_bg01.png");
+
+      &.deactivated {
+        background-image: url("../images/restaurant/en_sarvicegenre_bg02.png");
+      }
+
+      width: 40px;
+      height: 36px;
+      display: inline-block;
+      margin-right: 5px;
+
+      &.langstaff-ico {
+        background-position: 0 -136px;
+      }
+
+      &.wifi-ico {
+        background-position: 0 -271px;
+      }
+
+      &.lunch-ico {
+        background-position: 0 -408px;
+      }
+
+      &.dinner-ico {
+        background-position: 0 -534px;
+      }
+
+      &.smoking-ico {
+        background-position: 0 -667px;
+      }
+
+      &.menuplus-ico {
+        background-position: 0 -802px;
+      }
+
+      &.silver-ico {
+        background-position: 0 -931px;
+      }
+    }
+
+    &.rest-icons-lang-zh-hant {
+      &>div {
+        height: 40px;
+
+        &.menu-ico {
+          background-image: url("../images/restaurant/tw_sarvicegenre_bg01.png");
+
+          &.deactivated {
+            background-image: url("../images/restaurant/tw_sarvicegenre_bg02.png");
+          }
+        }
+
+        &.langstaff-ico {
+          background-image: url("../images/restaurant/tw_sarvicegenre_bg01.png");
+          background-position: 0 -134px;
+
+          &.deactivated {
+            background-image: url("../images/restaurant/tw_sarvicegenre_bg02.png");
+          }
+        }
+
+        &.silver-ico {
+          background-position: 0px -927px;
+        }
+      }
+    }
+  }
+}
+
+.ui-autocomplete-category {
+  font-weight: bold;
+  padding: 0.2em 0.4em;
+  margin: 0.8em 0 0.2em;
+  line-height: 1.5;
+}
+
+#location-search-results,
+#cuisine-search-results {
+  .ui-widget-content {
+    background: #fff;
+    border-color: #ddd;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .ui-menu-item {
+    position: relative;
+    border: 0;
+    padding-left: 20px;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+      background: $lightgrey;
+    }
+  }
+}
+
+.rest-area-container {
+  display: flex;
+  flex-flow: column;
+
+  .rest-area-row {
+    display: flex;
+  }
+
+  .area-container-wrapper {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    color: white;
+
+    &.area-container-wrapper-hover:hover .hidden {
+      display: block !important;
+    }
+
+    &.area-container-wrapper-hover:hover .icons {
+      top: 13px !important;
+      transform: rotate(90deg);
+      transition: transform 0.3s;
+    }
+
+    .area-sub-links {
+      padding: 10px;
+
+      a {
+        color: white;
+        padding-right: 5px;
+        text-decoration: underline;
+      }
+    }
+
+    .rest-link-title {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      min-height: 49px;
+      transition: height 0.3s;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding-right: 24px;
+      padding-left: 24px;
+
+      .icons {
+        position: absolute;
+        right: 10px;
+        font-weight: bold;
+        top: 50%;
+        margin-top: -9px;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .restaurant_search_sidebar_container {
+    margin-bottom: 20px;
+
+    &.rest-closed {
+      height: 360px;
+      overflow: hidden;
+
+      .open-search {
+        color: #337ab7;
+        cursor: pointer;
+        display: block !important;
+        margin-top: 20px;
+      }
+    }
+
+    .open-search {
+      display: none !important;
+      text-align: center;
+    }
+  }
+
+  .restaurant-wrapper {
+    hr {
+      margin-top: 40px;
+    }
+  }
+}
+
+.frontpage_square {
+  padding-bottom: 15px;
+}
+
+@media (min-width: $screen-xs-max) {
+  .frontpage_square {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+  }
+
+  .frontpage_square img {
+    position: absolute;
+  }
+
+  .restaurant-filters-top {
+    margin-bottom: 15px;
+
+    .dropdown {
+      width: 50%;
+      float: left;
+    }
+  }
+}
+
+.dropdown-menu {
+  background: #dddddd;
+
+  li {
+    border-bottom: 1px solid white;
+  }
+}
+
+.savor-tags {
+  border: 1px solid $orange;
+  padding: 10px;
+
+  p {
+    color: $orange;
+    font-size: 18px;
+  }
+
+  .savor-restaurant-tagging {
+    border-radius: 0;
+    background: $lightgrey;
+    color: black;
+
+    .fa {
+      margin-left: 15px;
+    }
+  }
+}
+
+.collapse-button {
+  color: #337ab7;
+  cursor: pointer;
+
+  .icon-arrow-down,
+  .icon-arrow-up {
+    font-size: 12px;
+  }
+}
+
+[data-toggle="collapse"] {
+  &.collapsed .if-not-collapsed {
+    display: none;
+  }
+
+  &:not(.collapsed) .if-collapsed {
+    display: none;
+  }
+}
+
+.restaurant-loc {
+  margin-bottom: 10px;
+}
+
+.result-count {
+  padding: 5px;
+  padding-top: 0;
+  display: flex;
+  padding-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  background: #f18236;
+  margin-bottom: 30px;
+  height: 40px;
+
+  .res-text {
+    width: 100%;
+    color: white;
+  }
+
+  .dropdown {
+    button {
+      background: none;
+      border: none;
+      width: 130px;
+      border-left: 1px solid white;
+      border-radius: 0;
+      color: white;
+    }
+
+    .dropdown-menu {
+      left: 0;
+      border-radius: 0;
+      border: 1px solid #f18236;
+      border-top: 0;
+      box-shadow: none;
+      text-align: center;
+      background: white;
+      width: 143px;
+      min-width: 0;
+      padding-top: 0;
+      margin-top: 4px;
+
+      li {
+        padding: 3px 0px;
+      }
+
+      a:hover {
+        background: #fbe2cd;
+        transition: none;
+      }
+
+      li:hover {
+        background: #fbe2cd;
+      }
+    }
+  }
+}

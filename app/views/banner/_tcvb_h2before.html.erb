@@ -1,0 +1,19 @@
+<% if @article.cached_area.names_depth_cache.include?('kanto/tokyo') || @article.cached_area.names_depth_cache.include?('kanto/chiba/narita-airport') %>
+  <% if I18n.locale.to_s == "en" %>
+  <div class="post_bnrBlock">
+    <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tcvb/tcvb-en.jpg") }, class: "lazy img-responsive", alt: "Got a problem? Visit the Tokyo Tourism Information Desk!", :size => "770x460"), "https://tokyotouristinfo.com/en/?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=en", target: :_blank, id: "post_h2brefore-tcvb-en", class: "post_h2brefore-tcvb hover-opacity" %>
+  </div>
+  <% elsif I18n.locale.to_s == "zh-hant" then %>
+  <div class="post_bnrBlock">
+    <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tcvb/tcvb-zh-hant.jpg") }, class: "lazy img-responsive", alt: "東京遊客服務處 解決旅途中的疑難雜症", :size => "770x460"), "https://tokyotouristinfo.com/tc/?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=tc", target: :_blank, id: "post_h2brefore-tcvb-zh-hant", class: "post_h2brefore-tcvb hover-opacity" %>
+  </div>
+  <% elsif I18n.locale.to_s == "zh-hans" then %>
+  <div class="post_bnrBlock">
+    <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tcvb/tcvb-zh-hans.jpg") }, class: "lazy img-responsive", alt: "旅途中的不安或烦恼，就来东京旅游信息服务台", :size => "770x460"), "https://tokyotouristinfo.com/cn/?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=cn", target: :_blank, id: "post_h2brefore-tcvb-zh-hans", class: "post_h2brefore-tcvb hover-opacity" %>
+  </div>
+  <% elsif I18n.locale.to_s == "ko" then %>
+  <div class="post_bnrBlock">
+    <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/tcvb/tcvb-ko.jpg") }, class: "lazy img-responsive", alt: "여행 중에 걱정거리나 곤란한 일이 생겼을 때는 도쿄 관광 안내 데스크로", :size => "770x460"), "https://tokyotouristinfo.com/kr/?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=kr", target: :_blank, id: "post_h2brefore-tcvb-ko", class: "post_h2brefore-tcvb hover-opacity" %>
+  </div>
+  <% end %>
+<% end %>

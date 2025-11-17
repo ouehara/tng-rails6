@@ -1,0 +1,24 @@
+<article class="article-list-item col-xs-12 col-sm-4">
+  <a
+  href=<%= article_path(I18n.locale, a) %>
+  >
+    <div class="article-list-item-imageBox">
+      <img
+      class="article-list-item-image"
+      src=<%= a.thumb_url + "&d=400x400" %>
+      alt=<%= a.disp_title %>
+      />
+    </div>
+    <div class="article-list-item-body">
+        <p class="article-list-item-body-sub">
+          <span ><%= a.schedule[I18n.locale.to_s].to_time.strftime('%b %d, %Y') %></span>
+          <span class="articleList_author">
+          <%= a.cached_users.username %>
+          </span>
+        </p>
+        <h3 class="truncate-overflow">
+        <%= a.disp_title %>
+        </h3>
+    </div>
+  </a>
+</article>

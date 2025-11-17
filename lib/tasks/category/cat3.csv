@@ -1,0 +1,323 @@
+parent_id,name
+7,Cruises
+7,Hair salons
+7,Beauty salons
+7,Old Japan
+7,Karaoke
+7,Cinema
+7,Skyline & Observatories
+7,Churches
+7,Meditation
+7,Exhibitions
+7,Day trips
+7,Workshops
+7,Factory tours
+7,Instagrammable photo spots
+8,Cooking classes
+9,Hachiko Statue
+9,Rainbow bridge
+9,Tokyo tower
+9,Tokyo skytree
+9,Shirakawago & Gokayama
+9,Dotonbori
+9,Gion
+9,Imperial Palace
+9,Robot restaurant
+9,Umeda sky building
+9,Sunshine city
+9,Roppongi hills
+9,Tokyo metropolitan government building
+9,Kyoto tower
+9,Tsutenkaku
+9,Sekigahara battlefield
+9,Yokohama chinatown
+9,Tokyo midtown
+9,Farm tomita
+9,Otaru canal
+9,Atomic bomb dome
+9,Shibuya scramble crossing
+9,Kokusai dori street
+9,World heritage sites
+9,Higashichaya district
+10,Festivals (Matsuri)
+10,Hinamatsuri
+10,Tanabata
+10,Golden week
+10,Mikoshi
+10,Olympics
+10,New Year
+10,Christmas
+10,Valentine's Day & White Day
+10,Setsubun
+10,Halloween
+10,Illuminations
+10,Fireworks
+11,Hanami & Sakura
+11,Autumn leaves & Momiji
+11,Japanese plum
+11,Wisteria
+11,Hydrangeas
+11,Lavender
+11,Sunflowers
+11,Ginkgo
+12,Beaches & seas
+12,Rivers
+12,Waterfalls
+12,Lakes
+12,Power spots
+13,Mt. Fuji
+13,Mt. Takao
+13,Mt. Koya
+13,Mt. Aso
+13,Mt. Moiwa
+14,Ueno Park
+14,Nara Park
+14,Yoyogi Park
+14,Hitachi Seaside Park
+14,Ashikaga flower park
+14,Shinjuku Gyoen National Park
+14,Hamarikyu Gardens
+14,Inokashira Park
+14,Kenrokuen Garden
+14,Osaka Castle Park
+14,Showa Kinen Park
+14,Hiroshima Peace Memorial Park
+14,Korakuen
+14,Odaiba Seaside Park
+14,Ritsurin Garden
+14,Kawachi Wisteria Park
+14,Hirosaki Park
+15,Onsen
+15,Sento
+15,Rotenburo
+15,Spas
+15,Footbath
+16,Aquariums
+16,Zoos
+16,Animal cafes
+17,Skiing
+17,Snowboarding
+17,Martial arts
+17,Sumo
+17,Walking & Hiking
+17,Camping
+17,Bicycles
+17,Horse racing
+17,Fishing
+17,Stadiums
+17,Scuba diving
+17,Rafting
+17,Snorkeling
+17,Water sports
+18,Osaka castle
+18,Himeji castle
+18,Shurijo castle
+18,Nijo castle
+18,Matsumoto castle
+18,Nagoya castle
+18,Hiroshima castle
+18,Kumamoto castle
+18,Kanazawa castle
+18,Odawara castle
+18,Hikone castle
+18,Inuyama castle
+18,Okayama castle
+18,Matsuyama castle
+18,Gifu castle
+18,Kochi castle
+18,Bitchu Matsuyama castle
+20,Sankakuji
+20,Hasedera
+20,Kinkakuji
+20,Ginkakuji
+20,Sensoji Temple & Kaminarimon
+20,Rokkakudou
+20,Byodoin temple
+20,Kiyomizu-dera temple
+20,Tenryuji temple
+20,Todaiji temple
+20,Sanjusangendo
+20,Ryoanji
+20,Kodaiji temple
+20,Zojoji temple
+20,Kotokuin
+20,Unpenji
+20,Zenkoji temple
+20,Eikando temple
+20,Saihoji
+20,Naritasan Shinshoji temple
+20,Daishoin temple
+20,Enkoji temple
+21,Itsukushima shrine
+21,Yasaka shrine
+21,Yasukuni shrine
+21,Ise Jingu shrine
+21,Meiji jingu shrine
+21,Sumiyoshi Taisha
+21,Kasuga Taisha
+21,Hakone shrine
+21,Fushimi inari taisha shrine
+21,Ueno toshogu shrine
+21,Nikko Toshogu
+21,Dazaifu tenmangu
+21,Atsuta shrine
+21,Enoshima shrine
+23,Ferris wheels
+23,Universal studios japan
+23,Tokyo Disney Resort
+23,Tokyo Dome & Dome City
+23,Fuji-q highland
+23,Huis ten bosch
+23,Legoland discovery center
+23,Tokyo joypolis
+23,Yomiuri land
+23,Reoma resort
+24,Kabukicho
+24,Golden gai
+24,Omoide yokocho
+27,Buses
+27,Trains & stations
+27,Shinkansen
+27,Subways & Metro
+27,Travel passes
+27,Cars & car rental
+27,Taxis
+27,Coin lockers & luggage storage
+27,Accessibility
+28,Weather
+28,Typhoons
+28,Earthquakes
+28,Rainy season
+28,Winter
+28,Spring
+28,Summer
+28,Autumn
+39,Restaurants
+39,Izakaya
+39,Street food
+39,Cafes
+39,Bars & Pubs
+39,All you can eat
+39,Maid cafes
+39,Fast food
+39,Family restaurants
+39,Conveyor belt sushi
+39,Local cuisine
+39,Michelin star restaurants
+39,Breakfast
+39,Lunch
+39,Dinner
+39,Themed cafes
+42,Octopus & Takoyaki
+42,Unagi
+42,Fugu
+42,Crab
+42,Tuna
+42,Oysters
+43,Wagyu
+43,Kobe beef
+43,Matsusaka beef
+43,Shabu-shabu
+43,Yakitori
+43,Yakiniku
+43,Sukiyaki
+43,Tonkatsu
+43,Karaage
+43,Steak
+43,Gyutan
+43,Hamburger
+43,Pork
+43,Horse meat
+45,Yakisoba
+45,Udon
+45,Soba
+45,Somen
+45,Pasta
+46,Onigiri
+46,Omurice
+46,Curry
+46,Oyakodon
+46,Gyudon
+46,Kaisendon
+46,Unadon
+46,Tendon
+47,Mochi
+47,Pancakes & crepes
+47,Anko
+47,Wagashi
+47,Candy
+47,Kakigori
+47,Cake
+47,Ice cream
+47,Fruit
+47,Senbei
+47,Chocolate
+47,Bread
+47,Pizza
+47,Sandwiches
+47,Strawberry
+47,Pudding
+47,Potato Chips
+47,Parfait
+47,Baumkuchen
+48,Tofu
+48,Edamame
+48,Gyoza
+48,Tempura
+48,Miso
+48,Teppanyaki
+48,Okonomiyaki
+48,Bento & Ekiben
+48,Soy sauce
+48,Furikake
+48,Natto
+48,Oden
+48,Japanese hot pot
+48,Kaiseki
+48,Monjayaki
+48,Teishoku
+48,Chanko
+49,Sake
+49,Whisky
+49,Shochu
+49,Beer
+49,Umeshu
+49,Cocktails & Chuhai
+50,Matcha
+50,Sencha
+50,Hojicha
+51,Ramune
+51,Coffee
+51,Milk
+53,Vegetarian & Vegan
+53,Halal food
+53,Kosher food
+53,Organic
+62,Nishiki market
+62,Takeshita dori street
+62,Tsukiji outer market
+62,Nakano broadway
+62,Ameyoko market
+62,Nakamise shopping street
+62,Yokohama red brick warehouse
+62,Omicho market
+62,Tokyo solamachi
+62,Kappabashi street
+93,Japanese rock & Visual kei
+93,Idols & Japanese pop
+93,Cosplay
+93,Purikura
+93,TV shows
+93,Mascots
+93,Nail art
+93,Video games
+93,Trends
+91,Kabuki
+91,Noh
+91,Music & instruments
+91,Japanese calligraphy
+91,Japanese tea ceremony
+91,Theater & Plays
+91,Chopstics
+91,Japanese-style rooms
+91,Traditional crafts

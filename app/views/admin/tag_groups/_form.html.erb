@@ -1,0 +1,27 @@
+<%= form_for([:admin, @tg], html: { class: "form", :multipart => true }) do |f| %>
+  <select class="lang-select">
+  <% selected_locale = I18n.locale%>
+  <% I18n.available_locales.each do |locale| %>
+    <%I18n.with_locale(locale) do%>
+    <%= locale%>
+    
+      <option <%= locale == selected_locale ? "selected" : "" %> value="<%= url_for(locale: locale) %>"><%=locale%></option>
+    <%end%>
+  <%end%>
+  </select>
+  <script type="text/javascript">
+$(".lang-select").on("change", function(ev){
+  window.location.href = $(this).val()
+})
+</script>
+<div class="form-group">
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control", placeholder: "tag group", autocomplete: "off" %>
+</div>
+<div class="field">
+  <%= f.label :category %><br />
+  <%= f.select :category_id, options_for_select(Category.all.map{|s|[s.name, s.id]}) %>
+</div>
+<%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

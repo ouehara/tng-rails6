@@ -1,0 +1,163 @@
+<%= render 'page_title' %>
+
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index <%= "filter by : #{params[:query]}" if params[:query] %></h2>
+      <%= link_to new_admin_article_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+      <br/>
+      <br/>
+      <%= form_tag url_for(params.permit!), :method => :get,:class => 'locale' do %>
+        <% params.except("controller", "action", "cat_filter", "set_locale","utf8","locale").each do |param, val|%>
+            <%= hidden_field_tag param, val %>
+        <% end %>
+        <b>Language Filter</b>
+        <%= select_tag 'set_locale',  options_for_select( ["all"]+I18n.available_locales, :selected => params[:set_locale]), :onchange => 'this.form.submit()' %>
+        <br />
+        <b>Area Filter</b>
+        <select class="filter-area" onChange = 'this.form.submit()' name="cat_filter">
+        <option value="-1">all</option>
+        <% @areas.each do |a| %>
+          <option value=<%= a.id %> <%=@cat_filter.to_i == a.id ? "selected" : "" %> ><%= a.name %></option>
+          <% a.children.each do |sub_area| %>
+          <option value=<%= sub_area.id %> <%=@cat_filter.to_i == sub_area.id ? "selected" : "" %> ><%= sub_area.name %></option>
+            <% sub_area.children.each do |final_area| %>
+              <option value=<%= final_area.id %> <%=@cat_filter.to_i == final_area.id ? "selected" : "" %> ><%= final_area.name %></option>
+            <% end %>
+          <% end %>
+          <option disabled>-----------</option>
+        <% end %>
+      </select>
+      <% end %>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+      <form action=<%= bulk_edit_admin_articles_path %>  id="bulk-edit">
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title" >
+                <select id="choose-action">
+                  <option value="1" selected>action</option>
+                  <option value="2"> bulk edit </option>
+                </select>
+              </th>
+              <th class="column-title" style="width: 5%;">ID</th>
+              <th class="column-title">Title</th>
+
+              <th class="column-title clickable-header" attr-href=<%=url_for params.merge(sort:'date',asc:@asc=='true' && @sort=='date' ? false : true) %>>Created</th>
+              <th class="column-title">updated</th>
+              <th class="column-title">Category</th>
+              <th class="column-title">Area</th>
+              <th class="column-title">Tag Group</th>
+              <th class="column-title">Tags</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+
+              <th class="column-title clickable-header" attr-href=<%=url_for params.merge(sort:'status',asc:@asc=='true' && @sort=='status' ? false : true) %> style="width: 10%;">status</th>
+              <th class="column-title" style="width: 10%;">edit</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @articles.each do |article| %>
+            <tr class="pointer open-quickedit art<%= article.id %>" data-url =<%= quick_edit_admin_articles_url(article.id) %> >
+              <%= render partial: 'artview', locals: { article: article} %>
+            </tr>
+            <tr class="pointer qedit dispnone qedit<%= article.id %>">
+
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+        </form>
+        <div class="paginate">
+          <%= paginate @articles, views_prefix: 'admin' %>
+
+        </div>
+
+      </div>
+    </div>
+    <div>
+    <h2>Import from csv</h2>
+    <%= form_for Article.new, url: import_admin_articles_path, html: { multipart: true, } do |f| %>
+      <%= f.file_field :import_file %>
+      <%= f.submit 'Import', :class=> 'btn btn-default' %>
+    <% end %>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+  var tags = []
+  $("#choose-action").on("change",function(){
+    $("#bulk-edit").submit();
+  });
+  $("#bulk-edit").on("keypress", function (e) {
+      if (e.keyCode == 13) {
+          return false;
+      }
+  });
+  $(".table").on("click",".quick-edit-save",function (evt){
+    evt.preventDefault();
+    var id = $(this).attr("data-attr")
+    var link = $(this).attr("href")
+    var parent = $(".editrow"+id);
+    var patch = {
+        id: parent.find(".sel-id").val(),
+        category_id: parent.find(".sel-cat").val(),
+        area_id: parent.find(".sel-area").val(),
+        all_tags: parent.find(".hidden-all-tags").val(),
+        article_groups: parent.find(".select_grouping").val(),
+        sort: "<%= @sort %>",
+        asc: "<%= @asc %>",
+        page: "<%=  @page %>",
+      }
+    $that = $(this);
+    $that.closest(".qedit").hide()
+    $.ajax({
+      url: link,
+      method: "PATCH",
+      data: patch
+    });
+  });
+  $(".open-quickedit").on("click",function (){
+    $(this).next(".qedit").toggle()
+    var url = $(this).attr("data-url")
+    $.ajax({
+      url: url
+    }).done(function (data) {
+      ReactRailsUJS.mountComponents()
+    }.bind(this));
+  })
+  $(".table").on("click",".change-state",function(evt){
+    $(this).closest(".open-quickedit").next(".qedit").hide();
+  });
+  $(".table").on("change",".change-state",function(evt){
+    evt.preventDefault();
+     $(this).closest(".open-quickedit").next(".qedit").hide()
+    var lang = $(this).attr("data-lang");
+    var status = $(this).val();
+    var id = $(this).attr("data-id");
+    var link = $(this).attr("data-url");
+
+    var patch = {
+      lang: lang,
+      status: status,
+      id: id
+    }
+    $.ajax({
+      url: link,
+      method: "PATCH",
+      data: patch
+    });
+  });
+  /*$(".filter-area").on("change",function(evt){
+
+    var link = "<%=url_for params.merge(cat_filter:"+$(this).val()+") %>"
+    console.log(link)
+    //window.location = link
+  })*/
+  </script>

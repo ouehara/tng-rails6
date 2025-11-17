@@ -1,0 +1,7 @@
+<% if(user.avatar?) %>
+<%= image_tag(user.avatar.url(:thumb), :alt => "user-avatar", :class => "user-avatar img-responsive") %>
+<%else%>
+<div class="user-initals">
+<%= user.username.split(' ').collect{ |s| s[0] }.join('.') %>
+</div>
+<%end%>

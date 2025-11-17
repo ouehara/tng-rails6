@@ -1,0 +1,52 @@
+<div className="page-title">
+  <div className="title_left">
+    <h3>Admin::Dashboard#index</h3>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="row">
+
+  <div class="d_panel col-xs-4">
+    <div class="x_title">
+      <h2>Published Articles</h2>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+    <%= render partial: 'publishedArticle', locals: { publishedArticle: @published_article} %>
+    </div>
+  </div>
+  
+  <div class="d_panel col-xs-4">
+    <div class="x_title">
+      <h2>Acitvity Log</h2>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+    <%= render partial: 'activity', locals: { activities: @activities} %>
+    </div>
+  </div>
+
+  <div class="d_panel col-xs-4">
+    <div class="x_title">
+      <h2>Top Article last 7 days</h2>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+    <%= render partial: 'topArticle', locals: { topArticle: @topImpression} %>
+    </div>
+  </div>
+<!--
+  <div class="d_panel col-xs-4">
+    <div class="x_title">
+      <h2>Top Articles</h2>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+    <%= render partial: 'topArticle', locals: { topArticle: @allImpression} %>
+    </div>
+  </div>
+!-->
+  
+</div>

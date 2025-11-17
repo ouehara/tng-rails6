@@ -1,0 +1,28 @@
+    <div class="row savor-wrapper-cat">
+      <div class="col-xs-12 col-sm-4">
+      <%= image_tag asset_pack_path("media/images/savor_logo_white.png"), class: "img-responsive" %>
+      </div>
+      <%
+        url_lang_prefix = ""
+        if(I18n.locale.to_s == "zh-hant")
+          url_lang_prefix = "tw."
+        end
+        if(I18n.locale.to_s == "zh-hans")
+          url_lang_prefix = "cn."
+        end
+      %>
+      <div class="col-xs-12 col-sm-8">
+        <%= link_to t("savor.tokyo"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/tokyo/", :target => "_blank"%> |
+        <%= link_to t("savor.near_tokyo"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/near_tokyo/",  :target => "_blank"%> |
+        <%= link_to t("savor.kyoto"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/kyoto_and_osaka_area/",  :target => "_blank"%> |
+        <%= link_to t("savor.hokkaido"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/hokkaido/", :target => "_blank"%> |
+        <%= link_to t("savor.northern_honshu"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/northern_honshu/",   :target => "_blank"%> |
+        <%= link_to t("savor.central_honshu"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/central_honshu/",   :target => "_blank"%> |
+        <%= link_to t("savor.western_honshu"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/western_honshu/",   :target => "_blank"%> |
+        <%= link_to t("savor.shikoku"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/shikoku/",   :target => "_blank"%> |
+        <%= link_to t("savor.kyushu"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/kyushu/",   :target => "_blank"%> |
+        <%= link_to t("savor.okinawa"), "https://#{url_lang_prefix}savorjapan.com/search-by-area/okinawa/", :target => "_blank"%>
+      </div>
+    </div>
+    
+

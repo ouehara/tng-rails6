@@ -1,0 +1,15 @@
+<%= form_for [:admin,@favorites] do |f|%>
+  <div class="form-group">
+   <%= f.select :group_1, @categories, :include_blank => true %>
+  </div>
+  <div class="form-group">
+   <%= f.select :group_2, @categories, :include_blank => true %>
+  </div>
+  <div class="form-group">
+   <%= f.select :group_3, @categories, :include_blank => true %>
+  </div>
+  <div class="form-group">
+   <%= f.select :group_4, @categories, :include_blank => true %>
+  </div>
+    <%= f.submit %>
+<%end%>

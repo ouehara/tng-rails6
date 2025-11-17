@@ -1,0 +1,14 @@
+<svg id="icon7" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_30" data-name="Group 30">
+    <circle id="Oval_Copy_9" data-name="Oval Copy 9" cx="22.5" cy="22.5" r="22.5" fill="#188e9d"/>
+    <g id="Group_28" data-name="Group 28" transform="translate(16 11)">
+      <g id="Group_4" data-name="Group 4" transform="translate(0 0)">
+        <path id="Path_17" data-name="Path 17" d="M12.408,21.1a1,1,0,0,1-1,1H1.916a1,1,0,0,1-1-1V13.788a1,1,0,0,1,.416-.811l2.453-1.766a1,1,0,0,0,.41-.7L4.83,4.683a1,1,0,0,0-.071-.493L4.4,3.332a1,1,0,0,0-.923-.616H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H9.693a1,1,0,0,1,1,1v.552a1,1,0,0,1-.6.918l-1.178.508a1,1,0,0,0-.6.918V6.506a1,1,0,0,0,.155.535l3.791,5.991a1,1,0,0,1,.155.535Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_17" data-name="Line 17" d="M.5.5h3" transform="translate(4.5 4)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_17_Copy" data-name="Line 17 Copy" d="M.5.5h3" transform="translate(4.5 6)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_18" data-name="Line 18" d="M2.116,0a9.816,9.816,0,0,1-.771,2.135A12.739,12.739,0,0,1,0,3.635" transform="translate(1.058 2.865)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      </g>
+      <path id="Line_16" data-name="Line 16" d="M.5,0V2.5" transform="translate(1.5 0)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.25"/>
+    </g>
+  </g>
+</svg>

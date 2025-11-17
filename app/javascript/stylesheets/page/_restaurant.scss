@@ -1,0 +1,492 @@
+//
+// Restaurant
+// --------------------------------------------------
+
+$form_f_size_pc: 18px;
+
+.restaurant-section {
+  margin-bottom: 100px;
+}
+
+.restaurant-hero {
+  &_title {
+    position: relative;
+    background-image: url("../images/restaurant/index_hero_img_sp.jpg");
+    @include mq(sm) {
+      background-image: url("../images/restaurant/index_hero_img_pc.jpg");
+    }
+  }
+
+  .title {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: vw(50);
+    font-size: rem(21);
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+
+    @include mq(sm) {
+      padding-top: 50px;
+      font-size: 42px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: vw(41);
+      height: vw(48);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-image: url("../images/shared/icon_food_white.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translateX(-50%);
+
+      @include mq(sm) {
+        width: 41px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+.restaurant-keyword {
+  &_heading {
+    padding-bottom: vw(20);
+    @include mq(sm) {
+      padding-bottom: 12px;
+    }
+  }
+  &_sub {
+    margin: 0;
+    text-align: center;
+
+    @include mq(sm) {
+      margin-top: 10px;
+    }
+
+    .sub_text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: rem(12);
+      margin-right: vw(10);
+      @include mq(sm) {
+        font-size: 16px;
+      }
+    }
+    .sub_logo {
+      @extend %hide_text;
+      display: inline-block;
+      vertical-align: middle;
+      width: vw(236);
+      height: vw(36);
+      background: url("../images/shared/logo_savorjapan_color.png") no-repeat 0
+        0;
+      background-size: contain;
+      @include mq(sm) {
+        width: 173px;
+        height: 26px;
+      }
+    }
+  }
+  &_intro {
+    font-size: rem(13.5);
+    line-height: 1.7;
+    margin-top: vw(40);
+    margin-bottom: vw(60);
+
+    @include mq(sm) {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+// Keywords form
+.kwd-form {
+  padding: 0 12px;
+
+  @include mq(md) {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &_row {
+    & + & {
+      margin-top: vw(50);
+      @include mq(sm) {
+        margin-top: 30px;
+      }
+    }
+    &::before {
+      content: none;
+    }
+  }
+
+  &_group {
+    display: flex;
+    flex-direction: column;
+    @include mq(sm) {
+      flex-direction: row;
+      align-items: center;
+      min-height: 70px;
+    }
+    & + & {
+      margin-top: vw(50);
+      @include mq(sm) {
+        margin-top: 0;
+      }
+    }
+  }
+  &_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: vw(30);
+    @include mq() {
+      margin-top: 0;
+    }
+
+    &__item {
+      flex-grow: 1;
+    }
+    &__text {
+      width: 3em;
+      text-align: center;
+      font-size: rem(13.5);
+      font-weight: bold;
+      @include mq(sm) {
+        font-size: $form_f_size_pc;
+      }
+    }
+  }
+  &_label {
+    margin-bottom: vw(30);
+    font-size: rem(13.5);
+    font-weight: bold;
+    @include mq(sm) {
+      min-width: 120px;
+      min-height: 70px;
+      line-height: 70px;
+      margin-bottom: 0;
+      font-size: $form_f_size_pc;
+
+      &.kwd-pc_align__top {
+        align-self: flex-start;
+      }
+    }
+    @include mq(md) {
+      min-width: 125px;
+    }
+  }
+  &_submit {
+    width: vw(330);
+    margin: vw(50) auto 0;
+    @include mq(sm) {
+      width: 400px;
+      margin-top: 50px;
+    }
+  }
+
+  // input[type="text"], select
+  &_input,
+  &_select {
+    appearance: none;
+    height: vw(88);
+    padding: vw(30) vw(20);
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    box-shadow: none;
+    color: $color_yellow;
+    font-size: rem(13.5);
+    line-height: 1;
+    @include mq(sm) {
+      height: 60px;
+      padding: 20px;
+      border-width: 2px;
+      font-size: $form_f_size_pc;
+    }
+
+    &:-ms-input-placeholder,
+    &::placeholder {
+      color: #91908e;
+    }
+    &:focus {
+      border-color: $color_yellow;
+      box-shadow: none;
+    }
+  }
+  &_select {
+    background: url("../images/shared/icon_select_arrow.png") no-repeat #fff;
+    background-position: calc(100% - #{vw(15)}) center;
+    background-size: vw(19) auto;
+    @include mq(sm) {
+      background-position: calc(100% - 20px) center;
+      background-size: 9px auto;
+    }
+  }
+
+  // input[type="radio"]
+  &_radio {
+    padding-left: vw(64);
+    position: relative;
+    overflow: hidden;
+    @include mq(sm) {
+      padding-left: 42px;
+    }
+
+    & + & {
+      margin-left: vw(130);
+      @include mq(sm) {
+        margin-left: 10px;
+      }
+      @include mq(md) {
+        margin-left: 8px;
+      }
+    }
+    input[type="radio"] {
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+    label {
+      margin: 0;
+      font-size: rem(16);
+      line-height: vw(48);
+      font-weight: normal;
+      @include mq(sm) {
+        font-size: $form_f_size_pc;
+        line-height: 32px;
+        cursor: pointer;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: vw(48);
+        height: vw(48);
+        background-color: #fff;
+        border: 2px solid #333;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        @include mq(sm) {
+          width: 32px;
+          height: 32px;
+          border-width: 3px;
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: vw(32);
+        height: vw(32);
+        background-color: #333;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(25%, -50%);
+        opacity: 0;
+        transition: opacity ease 0.2s;
+        @include mq(sm) {
+          width: 18px;
+          height: 18px;
+          transform: translate(7px, -50%);
+        }
+      }
+    }
+    input[type="radio"]:checked + label::after {
+      opacity: 1;
+    }
+
+    &.radio_dinner {
+      color: #38366c;
+      label::before {
+        border-color: #38366c;
+      }
+      label::after {
+        background-color: #38366c;
+      }
+    }
+    &.radio_lunch {
+      color: #ff8605;
+      label::before {
+        border-color: #ff8605;
+      }
+      label::after {
+        background-color: #ff8605;
+      }
+    }
+  }
+
+  // input[type="checkbox"]
+  &_checkList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: vw(-20);
+    @include mq(sm) {
+      margin-top: -20px;
+    }
+  }
+  &_check {
+    position: relative;
+    margin: vw(20) vw(20) 0 0;
+    overflow: hidden;
+    @include mq(sm) {
+      margin: 20px 20px 0 0;
+    }
+
+    input[type="checkbox"] {
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+    label {
+      margin: 0;
+      background-color: #fff;
+      border: 1px solid #7e7e7e;
+      border-radius: 2px;
+      padding: vw(18) vw(14);
+      color: #7e7e7e;
+      font-size: rem(13.5);
+      font-weight: normal;
+      transition: all ease-out 0.2s;
+      @include mq(sm) {
+        padding: 17px 20px 18px;
+        border-width: 2px;
+        border-radius: 4px;
+        font-size: $form_f_size_pc;
+        font-weight: normal;
+        cursor: pointer;
+      }
+
+      &:hover {
+        border-color: $color_yellow;
+        color: $color_yellow;
+      }
+    }
+    input[type="checkbox"]:focus + label {
+      border-color: $color_yellow;
+      color: $color_yellow;
+    }
+    input[type="checkbox"]:checked + label {
+      background-color: $color_yellow;
+      border-color: $color_yellow;
+      color: #fff;
+    }
+  }
+
+  &_cardList {
+    display: flex;
+    justify-content: space-between;
+    @include mq(sm) {
+      justify-content: flex-start;
+    }
+
+    .kwd-form_check {
+      margin-top: 0;
+      margin-right: 0;
+
+      & + .kwd-form_check {
+        @include mq(sm) {
+          margin-left: 40px;
+        }
+      }
+
+      label {
+        @extend %hide_text;
+        width: vw(116);
+        height: vw(84);
+        padding: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto 100%;
+        @include mq(sm) {
+          width: 116px;
+          height: 82px;
+          vertical-align: top;
+        }
+
+        &.card_visa {
+          background-image: url("../images/restaurant/logo_visa.png");
+        }
+        &.card_master {
+          background-image: url("../images/restaurant/logo_master.png");
+        }
+        &.card_amex {
+          background-image: url("../images/restaurant/logo_amex.png");
+        }
+        &.card_diners {
+          background-image: url("../images/restaurant/logo_diners.png");
+        }
+      }
+    }
+  }
+
+  // button
+  &_btn {
+    padding: vw(25) vw(75);
+    background-color: $color_yellow;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    font-size: rem(16);
+    font-weight: bold;
+    transition: background ease-out 0.2s;
+    @include mq(sm) {
+      padding: 18px 10px 19px;
+      font-size: 22px;
+      border-radius: 0;
+    }
+    &:hover,
+    &:focus {
+      background-color: #ffd633;
+    }
+
+    &__search {
+      display: inline-block;
+      padding-left: vw(55);
+      position: relative;
+      @include mq(sm) {
+        padding-left: 55px;
+      }
+
+      @at-root .kwd-form_btn:hover &,
+        .kwd-form_btn:focus & {
+        color: #fff;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: vw(39);
+        height: vw(37);
+        background: url("../images/shared/icon_search.png") no-repeat 0 0;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include mq(sm) {
+          width: 39px;
+          height: 37px;
+        }
+      }
+    }
+  }
+}

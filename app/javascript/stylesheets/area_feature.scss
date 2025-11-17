@@ -1,0 +1,27 @@
+// planning-a-trip-to-japan, area feature CSS
+@import "base/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "base/function";
+@import "base/mixins";
+@import "base/common";
+@import "base/add_common";
+
+/**
+  layout
+*/
+@import "layout/section";
+@import "layout/container";
+
+/**
+  partials
+*/
+@import "partials/critical";
+@import "partials/advertisement";
+@import "partials/footer";
+@import "partials/search";
+@import "partials/header";
+@import "partials/modal";
+@import "partials/head_banner";
+@import "partials/cookieconsent";
+
+@import "page/area_feature";

@@ -1,0 +1,21 @@
+<div class="page-title">
+  <div class="title_left">
+    <h3>Article</h3>
+  </div>
+   <div class="title_right">
+    <%= form_tag url_for(params.permit!), :method => :get do %>
+    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+      <div class="input-group">
+          <% params.except("controller", "action", "search", "utf8", "locale").each do |param, val|%>
+            <%= hidden_field_tag param, val %>
+          <% end %>
+          <input type="text" name="search" class="form-control" id="searchQuery" placeholder="Search for..." value="<%= params[:query] if params[:query] %>">
+          <span class="input-group-btn">
+          <button type="button" class="btn btn-default" onclick="if($('#searchQuery').val().length == 0){ return; }else{ this.form.submit() }">Go!</button>
+          
+        </span>
+      </div>
+      <%end%>
+    </div>
+</div>
+</div>

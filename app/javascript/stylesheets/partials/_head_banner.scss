@@ -1,0 +1,84 @@
+.js-headBanner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // background-color: #fff;
+  background-color: #222;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 40px 15px 20px;
+  z-index: 500;
+  display: none;
+  opacity: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+  // @include mq(sm) {
+  //   display: none;
+  //   opacity: 0;
+  // }
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+
+  &_close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    @include mq(sm) {}
+
+    &::before,
+    &::after {
+      content: "";
+      // background-color: rgba(#222, 0.5);
+      background-color: #fff;
+      position: absolute;
+      // top: -5px;
+      // right: 10px;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      position: absolute;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  &_contents {
+    color: #fff;
+
+    &-action {}
+
+    &-cta {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      text-align: center;
+      background: #f2a900;
+      color: #222;
+      border: none;
+      padding: 15px 0;
+      font-weight: bold;
+      margin: 20px auto 0;
+      border-radius: 2px;
+      font-size: 1.6rem;
+    }
+  }
+}

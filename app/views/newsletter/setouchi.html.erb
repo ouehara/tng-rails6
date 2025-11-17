@@ -1,0 +1,151 @@
+<% body_class "newsletter lang_" + I18n.locale.to_s %>
+<% set_meta_tags title: t('newsletter.setouchi.title'),
+                description: t('newsletter.setouchi.description'),
+                og: {
+                  image: ActionController::Base.helpers.asset_pack_path("media/images/newsletter/setouchi/hero.jpg", host: CdnConfig.cloudfront_url)
+                },
+                noindex: true,
+                nofollow: true
+                 %>
+
+<main id="top" class="main">
+
+  <div id="area-hero" class="area-hero setouchi">
+    <div class="area-hero_title">
+      <h1 class="area-hero_lead"><%= t('newsletter.setouchi.title') %></h1>
+    </div>
+  </div><!-- /.area-hero -->
+  <section id="feature_abouts" class="feature_abouts">
+    <h2 class="feature_abouts-title"><%= t('newsletter.setouchi.abouts.title') %></h2>
+    <p class="feature_abouts-text"><%= t('newsletter.setouchi.abouts.description_html') %></p>
+    <div class="feature_abouts-maps">
+      <div class="feature_abouts-map">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/map-setouchi.png') %>" usemap="#ImageMap" alt="MAP Setouchi">
+        <map name="ImageMap">
+          <area shape="rect" coords="414,121,474,149" href="#<%= t('newsletter.setouchi.introduce.1.section') %>" alt="<%= t('newsletter.setouchi.introduce.1.section') %>">
+          <area shape="rect" coords="291,139,375,165" href="#<%= t('newsletter.setouchi.introduce.2.section') %>" alt="<%= t('newsletter.setouchi.introduce.2.section') %>">
+          <area shape="rect" coords="174,178,264,200" href="#<%= t('newsletter.setouchi.introduce.3.section') %>" alt="<%= t('newsletter.setouchi.introduce.3.section') %>">
+          <area shape="rect" coords="41,231,132,249" href="#<%= t('newsletter.setouchi.introduce.4.section') %>" alt="<%= t('newsletter.setouchi.introduce.4.section') %>">
+          <area shape="rect" coords="330,257,423,285" href="#<%= t('newsletter.setouchi.introduce.5.section') %>" alt="<%= t('newsletter.setouchi.introduce.5.section') %>">
+          <area shape="rect" coords="321,216,392,241" href="#<%= t('newsletter.setouchi.introduce.6.section') %>" alt="<%= t('newsletter.setouchi.introduce.6.section') %>">
+          <area shape="rect" coords="189,290,249,320" href="#<%= t('newsletter.setouchi.introduce.7.section') %>" alt="<%= t('newsletter.setouchi.introduce.7.section') %>">
+        </map>
+      </div>
+      <div class="feature_abouts-map">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/map-japan.png') %>" alt="Map Japan">
+      </div>
+    </div>
+  </section>
+  <div id="feature_campaign" class="feature_campaign">
+    <div class="feature_campaign-head">
+      <img src="<%= asset_pack_path('media/images/newsletter/setouchi/setouchi_prize_2201.jpg') %>" alt="Subscribe to the Setouchi Mail Magazine and Win a Prize!">
+    </div>
+    <div class="feature_campaign-body">
+      <p class="feature_campaign-desc">Win a Prize to Celebrate the Start of the Newsletter!<br>To celebrate the start of the Setouchi Reflection Trip newsletter, we will be randomly gifting amazing items from the seven Setouchi prefectures to seven lucky subscribers!<br>Be sure to subscribe for a chance to win a lovely present!</p>
+      <section class="feature_campaign-prize">
+        <h3 class="feature_campaign-heading">Prizes</h3>
+        <ul class="feature_campaign-items">
+          <li class="feature_campaign-item"><strong>Hyogo Prefecture:</strong> Himekawa Zaiku (Himeji white leatherwork)</li>
+          <li class="feature_campaign-item"><strong>Okayama Prefecture:</strong> Denim wallet</li>
+          <li class="feature_campaign-item"><strong>Ehime Prefecture:</strong> Imabari towel</li>
+          <li class="feature_campaign-item"><strong>Hiroshima Prefecture:</strong> Round tray with shrine gate design (approx. 15 cm)</li>
+          <li class="feature_campaign-item"><strong>Kagawa Prefecture:</strong> Marugame Uchiwa handheld fan</li>
+          <li class="feature_campaign-item"><strong>Yamaguchi Prefecture:</strong> Okaki Fukuyaki crackers</li>
+          <li class="feature_campaign-item"><strong>Tokushima Prefecture:</strong> Awa Indigo dobby weave stole</li>
+        </ul>
+      </section>
+      <section class="feature_campaign-period">
+        <h3 class="feature_campaign-heading">Event period</h3>
+        <p><strong>Campaign period: now until January 31, 2023<br>Winners will be contacted from February 1, 2023</strong></p>
+        <p>*Prize may be subject to change depending on availability</p>
+        <ul class="feature_campaign-sns">
+          <li>Facebook: <a href="https://www.facebook.com/SetouchiDMO" target="_blank">https://www.facebook.com/SetouchiDMO</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/setouchi.trip/" target="_blank">https://www.instagram.com/setouchi.trip/</a></li>
+        </ul>
+      </section>
+    </div>
+  </div><!-- /.feature_campaign -->
+  <div id="feature_newsletter" class="feature_newsletter">
+    <div class="feature_newsletter-actions">
+      <a href="https://setouchitrip.us9.list-manage.com/subscribe?u=a413ae5685809198cf0a9368e&id=8841c4bd4f" target="_blank" class="feature_newsletter-action">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/btn-action.svg') %>" alt="SUBSCRIBE TO OUR NEWSLETTER">
+      </a>
+    </div>
+  </div>
+  <section id="feature_introduce" class="feature_introduce">
+    <h2 class="feature_introduce-title"><%= t('newsletter.setouchi.introduce.title') %></h2>
+    <div id="<%= t('newsletter.setouchi.introduce.1.section') %>" class="feature_area">
+      <div class="feature_area-images">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/area-1.jpg') %>" alt="">
+      </div>
+      <div class="feature_area-desc">
+        <h3 class="feature_area-title"><%= t('newsletter.setouchi.introduce.1.area') %></h3>
+        <p class="feature_area-text"><%= t('newsletter.setouchi.introduce.1.desc_html') %></p>
+      </div>
+    </div><!-- /.feature_area -->
+    <div id="<%= t('newsletter.setouchi.introduce.2.section') %>" class="feature_area">
+      <div class="feature_area-images">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/area-2.jpg') %>" alt="">
+      </div>
+      <div class="feature_area-desc">
+        <h3 class="feature_area-title"><%= t('newsletter.setouchi.introduce.2.area') %></h3>
+        <p class="feature_area-text"><%= t('newsletter.setouchi.introduce.2.desc_html') %></p>
+      </div>
+    </div><!-- /.feature_area -->
+    <div id="<%= t('newsletter.setouchi.introduce.3.section') %>" class="feature_area">
+      <div class="feature_area-images">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/area-3.jpg') %>" alt="">
+      </div>
+      <div class="feature_area-desc">
+        <h3 class="feature_area-title"><%= t('newsletter.setouchi.introduce.3.area') %></h3>
+        <p class="feature_area-text"><%= t('newsletter.setouchi.introduce.3.desc_html') %></p>
+      </div>
+    </div><!-- /.feature_area -->
+    <div id="<%= t('newsletter.setouchi.introduce.4.section') %>" class="feature_area">
+      <div class="feature_area-images">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/area-4.jpg') %>" alt="">
+      </div>
+      <div class="feature_area-desc">
+        <h3 class="feature_area-title"><%= t('newsletter.setouchi.introduce.4.area') %></h3>
+        <p class="feature_area-text"><%= t('newsletter.setouchi.introduce.4.desc_html') %></p>
+      </div>
+    </div><!-- /.feature_area -->
+    <div id="<%= t('newsletter.setouchi.introduce.5.section') %>" class="feature_area">
+      <div class="feature_area-images">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/area-5.jpg') %>" alt="">
+      </div>
+      <div class="feature_area-desc">
+        <h3 class="feature_area-title"><%= t('newsletter.setouchi.introduce.5.area') %></h3>
+        <p class="feature_area-text"><%= t('newsletter.setouchi.introduce.5.desc_html') %></p>
+      </div>
+    </div><!-- /.feature_area -->
+    <div id="<%= t('newsletter.setouchi.introduce.6.section') %>" class="feature_area">
+      <div class="feature_area-images">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/area-6.jpg') %>" alt="">
+      </div>
+      <div class="feature_area-desc">
+        <h3 class="feature_area-title"><%= t('newsletter.setouchi.introduce.6.area') %></h3>
+        <p class="feature_area-text"><%= t('newsletter.setouchi.introduce.6.desc_html') %></p>
+      </div>
+    </div><!-- /.feature_area -->
+    <div id="<%= t('newsletter.setouchi.introduce.7.section') %>" class="feature_area">
+      <div class="feature_area-images">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/area-7.jpg') %>" alt="">
+      </div>
+      <div class="feature_area-desc">
+        <h3 class="feature_area-title"><%= t('newsletter.setouchi.introduce.7.area') %></h3>
+        <p class="feature_area-text"><%= t('newsletter.setouchi.introduce.7.desc_html') %></p>
+      </div>
+    </div><!-- /.feature_area -->
+  </section>
+
+  <section id="feature_closing" class="feature_closing">
+    <h2 class="feature_closing-title"><%= t('newsletter.setouchi.whats.title') %></h2>
+    <p class="feature_closing-desc"><%= t('newsletter.setouchi.whats.desc') %></p>
+    <div class="feature_newsletter-actions">
+      <a href="https://setouchitrip.us9.list-manage.com/subscribe?u=a413ae5685809198cf0a9368e&id=8841c4bd4f" target="_blank" class="feature_newsletter-action">
+        <img src="<%= asset_pack_path('media/images/newsletter/setouchi/btn-action.svg') %>" alt="SUBSCRIBE TO OUR NEWSLETTER">
+      </a>
+    </div>
+  </section>
+</main><!-- /.main -->

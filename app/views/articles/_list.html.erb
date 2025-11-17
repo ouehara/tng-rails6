@@ -1,0 +1,20 @@
+<div class="article-list">
+<% articles.each_with_index do |article,i| %>
+    <%= react_component('article_list/article_list', {
+        link: (I18n.locale == :en ?
+            article_path(nil, article) :
+                article_path(I18n.locale, article)
+        ),
+    img: article.thumb_url + "&d=400x400", area: article.cached_area.name, date: article.schedule[I18n.locale.to_s].to_time.strftime("%b %d, %Y"),
+    title: article.disp_title,count: i+1, topArticle: (defined?(isTop) && isTop==true ? true : false)}, {prerender: true}) %>
+<% end %>
+</div>
+
+<% if !defined?(isTop) || isTop==false %>
+<div class="paginate">
+<%= paginate articles, window: browser.device.mobile? ? 1 : 4   %>
+</div>
+<% content_for :head do %>
+    <%= rel_next_prev_link_tags articles %>
+<% end %>
+<% end %>

@@ -1,0 +1,47 @@
+<% content_for :head do %>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<% end %>
+<% body_class 'post' %>
+<% set_meta_tags title: @title, description: @description %>
+<%= render "shared/breadcrumb" %>
+<div class="container">
+  <div class="post_row">
+    <main class="post_main">
+      <article class="post_article" id="printable">
+        <h1 class="post_article-heading"><%=@article.disp_title[0]%></h1>
+        <p class="post_article-intro"><%=@article.excerpt[0]%></p>
+        <div class="post_lp-content">
+          <section class="post_article-section">
+            <%= render("articles/show") %>
+          </section>
+        </div><!-- /.article_content -->
+      </article><!-- /.post-article -->
+      <button class="btn kwd-form_btn coupon-btn" onclick="window.print();return false;">Print</button>
+    </main><!-- /.post_main -->
+    <aside class="sidebar">
+      <div class="sidebar_adsense">
+        <!-- tJ_article_sidebar -->
+        <ins class="adsbygoogle ads_img"
+            style="display:inline-block;width:300px;height:250px"
+            data-ad-client="ca-pub-4177280178292675"
+            data-ad-slot="5414269395"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div><!-- /.sidebar_adsense -->
+      <% if !browser.device.mobile? %>
+      <div class="sidebar_advertisements">
+        <%= react_component('sidebar/sidebar_ads',{elements:JSON.parse(@ad)}) %>
+      </div>
+      <% end %>
+    </aside><!-- /Advertisement -->
+  </div><!-- /.post_row -->
+</div><!-- /.container -->
+<% if browser.device.mobile? %>
+<aside class="advertisement visible-xs-block">
+  <%= react_component('ads/ad_list_view',{elements:JSON.parse(@ad), mobile: browser.device.mobile?}) %>
+</aside><!-- /.advertisement -->
+<% end %>
+<%= render "shared/sns" %>
+<%= stylesheet_link_tag 'print', media: 'print', 'data-turbolinks-track'=> true %>

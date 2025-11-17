@@ -1,0 +1,1229 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-hans:
+  langAttribute: "zh-cmn-Hans"
+  helpers:
+    label:
+      hotel_landingpage:
+        official_text: "官方網站更超值!"
+        recommend_text: "tsunagu Japan特別介紹的旅宿！"
+  hello: "Hello world"
+  site_name: "tsunagu Japan"
+  site_top:
+    title_prefix: "日本旅游资讯网"
+    page_desc: "关于旅行，美食，住宿，购物，体验，文化到趣味知识-在tsunagu Japan上浏览与日本相关的文章。"
+    breadcrumb: "首页"
+  page_title: "tsunagu Japan"
+  page_prefix: "tsunagu Japan"
+  page_desc: "此页面收集日本旅行必玩攻略。包含旅游景点和区域推荐，让你充分享受日本旅程。"
+  confirm: "确定"
+  more_btn: "More"
+  more_details: "更多详情"
+  menu_more: "查看更多"
+  partner: "合作伙伴"
+  japan: "日本"
+  newest_top: "最新攻略"
+  related_label: '相关攻略'
+  none: "皆不適用"
+  search_map: "地图检索"
+  search_region: "地区搜索"
+  narrow_by_area: "细化区域"
+  newest_article_on: "%{area}的最新攻略"
+  see_other_areas: "查看其他区域"
+  narrow_down_by_interest: "选择分类"
+  related_interest: "相关分类"
+  narrow_down_by_int_area: "按区域和类别检索"
+  popular_articles: "热门攻略"
+  other_interests: "查看其他分类"
+  video: "视频"
+  video_desc: "这里汇集了日本美食、绝景、文化、传统艺术、活动、小百科等方方面面的视频。"
+  view_videos: "观看全部视频"
+  coupon_headline: "优惠券"
+  coupon_desc: "购物，订酒店，预约当地体验时可以用的优惠券大合集"
+  coupon_none: "目前没有可用的优惠券。"
+  search_in: "搜尋"
+  about_author: "作者简介"
+  date_published_article: "发布日期"
+  date_updated_article: "更新日期"
+  disclaimer_article: "本文提供信息均以公开时为准。"
+  coupons_top: "领取免税折扣优惠券！"
+  area_banner:
+    rentalcars:
+      desc: "以划算的价格租到喜欢的车。租车。想在日本租车就选这里！更多详情。"
+      link: "https://www.klook.com/zh-CN/car-rentals/?aid=30900"
+  latest: "最新文章"
+  img_source: "照片:"
+  things: "体验日本"
+  fooddrink: "美食"
+  hotels: "住宿"
+  clip_desc: "此页面为您钉选的文章一览。协助您一边参考文章，一边来趟得心应手的旅程。"
+  empty_state: "抱歉，我们目前尚无此类文章！但我们不断致力于分享日本最新消息，还请您持续追踪我们发布的最新资讯！"
+  clip_none: "没有剪贴任何内容。"
+  shopping: "购物"
+  in_depth: "深度日本"
+  travel_tip: "旅行攻略"
+  search_by: "搜寻目的地丶活动丶旅游景点"
+  recommended_area: "推荐地区"
+  view_area: "查看所有区域"
+  travel_tips: "实用资讯"
+  transportation: "交通"
+  manners: "礼仪"
+  budget_travel: "低预算旅行"
+  climate: "天气"
+  top_travel: "热门旅游路线"
+  festival: "节庆活动"
+  view_tips: "查看所有实用资讯"
+  media_partner: "合伙媒体"
+  featured_topics: "精选主题"
+  sushi: "#寿司"
+  onsen: "#温泉"
+  ramen: "#拉面"
+  activites: "#活动体验"
+  souvenier: "#伴手礼"
+  beauty: "#时尚美容"
+  history: "#历史文化"
+  hotels_ryokan: "#酒店住宿"
+  popular_restaurants: "热门景点餐厅"
+  view_restaurant: "查看所有餐厅"
+  related_articles_title: "相关文章"
+  buttons:
+    btn-default: "default"
+    btn-cust-blue: "blue"
+    btn-cust-green: "green"
+    book-with: "orange button"
+    btn-ads: "red ad button"
+    savor-button-booking: "savor button"
+    btn-3d-orange: "orange with shadow"
+  tours:
+    recommended: 'Recommended Tours'
+    currency: 'JPY'
+    from: 'from'
+    desc: '能在日本进行体验的行程介绍'
+    tour: "推荐行程"
+    details: '行程详情'
+  savor:
+    search_title: "搜索日本优质餐厅"
+    search_results: "%{all} 间餐厅中的 %{start} - %{end} 间"
+    sort_price: "价格"
+    sort_price_ask: "升序"
+    sort_price_desc: "降序"
+    learn_more: "了解更多"
+    show_less: "关闭"
+    sidebar_headline: " "
+    slogan: "风味日本是信息详实的日本餐馆指南。<br>
+如您是访日外国游客，就来对地方了！"
+    tokyo: "东京"
+    tohoku: "东北"
+    kanto: "关东"
+    chubu: "中部"
+    kansai: "关西"
+    chugoku: "中国"
+    tokyo_sub:
+      kanagawa: "神奈川"
+      chiba: "千叶"
+      tochigi: "栃木"
+      gunma: "群马"
+      saitama: "埼玉"
+      ibaraki: "茨城"
+      shizuoka: "静冈"
+      yamanashi: "山梨"
+    kyoto_sub:
+      kyoto: "京都"
+      osaka: "大阪"
+      hyogo: "兵库"
+      nara: "奈良"
+      shiga: "滋贺"
+      wakayama: "和歌山"
+      mie: "三重"
+    honshu_sub:
+      miyagi: "宫城"
+      fukushima: "福岛"
+      yamagata: "山形"
+      iwate: "岩手"
+      akita: "秋田"
+      aomori: "青森"
+      aichi: "爱知"
+      shizuoka: "静冈"
+      gifu: "岐阜"
+      ishikawa: "石川"
+      nagano: "长野"
+      niigata: "新泻"
+      toyama: "富山"
+      fukui: "福井"
+      yamanashi: "山梨"
+      hiroshima: "广岛"
+      okayama: "冈山"
+      shimane: "岛根"
+      tottori: "鸟取"
+      yamaguchi: "山口"
+    shikoku_sub:
+      ehime: "爱媛"
+      kagawa: "香川"
+      kochi: "高知"
+      tokushima: "德岛"
+    kyushu_sub:
+      fukuoka: "福冈"
+      kagoshima: "鹿儿岛"
+      kumamoto: "熊本"
+      miyazaki: "宫崎"
+      nagasaki: "长崎"
+      oita: "大分"
+      saga: "佐贺"
+    near_tokyo: "东京周边地区"
+    kyoto: "京都和大阪地区"
+    hokkaido: "北海道"
+    northern_honshu: "本州北部（东北地区）"
+    central_honshu: "本州中部（中部地区）"
+    western_honshu: "本州西部（中国地区）"
+    shikoku: "四国"
+    kyushu: "九州・冲绳"
+    okinawa: "冲绳和东南部岛屿"
+    search_by: "从人气景点搜寻"
+    restaurant_search: "搜寻餐厅"
+    no_searchresult: "找不到您要的餐厅，请更改搜寻标准。"
+
+    sidebar:
+      s_keyword: "以关键字搜寻"
+      location: "地点"
+      cuisine: "料理"
+      filter: "进阶搜寻"
+      budget: "预算"
+      dinner: "晚餐"
+      lunch: "午餐"
+      extras: "额外内容"
+      cc: "信用卡种类"
+      coupons: "优惠券"
+      keywords: "关键词"
+      search: "搜索"
+      placeholder_keyword: "（例）城市、车站、料理或具体餐厅"
+      placeholder_city: "（例）城市标志、地标"
+      placeholder_cuisine: "（例）喜欢的菜肴"
+    filter:
+      no_smoking: "中文（简体字）菜单"
+      menu: "中文工作人员"
+      staff: "料理特殊要求"
+      languages_available: "料理特殊要求"
+      late_night: "吸烟区"
+      late_night_service: "吸烟区"
+      diet: "包间"
+      special_diet: "包间"
+      western_cutlery: "午餐"
+      lunch: "打包"
+      lunch_menu: "打包"
+      wifi: "免费WiFi"
+      free_wifi_available: "免费WiFi"
+      visa: "Visa"
+      mastercard: "MasterCard"
+      anex: "American Express"
+      diners: "Diners Club"
+      coupons: "优惠券"
+  edion:
+    title: "日本現正熱銷中的人氣家電特集!!【有讀者限定的Edion優惠券】"
+    website_html: "官方網站(僅日文) <a href='https://www.edion.com/' target='_blank'>https://www.edion.com/</a>"
+    address: "地址"
+    further: "其它店舖詳情請看此 "
+    phone: "電話"
+    tokyo: "Edion AKIBA / 東京"
+    tokyo_a: "東京都千代田区外神田1‐2‐9"
+    tokyo_p: "03-3257-1100"
+    osaka: "Edion 道頓堀店 / 大阪"
+    osaka_a: "大阪府大阪市中央区道頓堀一丁目4番27号　道頓堀ベニスビル1 2階"
+    osaka_p: "06-6212-3035"
+    osaka2: "Edion Universal CityWalk™大阪店 / 大阪"
+    osaka2_a: "大阪府大阪市此花区島屋6丁目2番61号 ユニバーサル･シティウォーク大阪™4階"
+    osaka2_p: "06-6469-1211"
+    only_headline_html: "tsunagu Japan讀者限定!! 家電量販店Edion 特別優惠券"
+    consumer_electronics: "家電製品扮演著舒適日常生活中不可或缺的一角。在日本，也有許多家電量販店販售著多種家電和家電製品。本次就從經典款到現正發燒中的商品，為您介紹日本時下人氣正夯的家電究竟有哪些。"
+    popular_headline: "精選5款人氣美容家電"
+    top10: "精選推薦2017年日本10款人氣家電"
+    what_is_headline: "Edion是？"
+    what_is: "代表日本的大型家電量販連鎖店，在日本全國設有將近1200間。以西日本為中心，共有62間店提供免稅服務。在方便購物的免稅專櫃中，也販售多款電子鍋、理容美容用品等人氣商品。造訪東京時，推薦您前往超人氣觀光景點的秋葉原店，較為方便。大阪的話則是道頓堀店及緊鄰日本環球影城(R)的免稅専賣店Edion Universal CityWalk™大阪店。"
+    readers_discount: "讀者限定Edion優惠券！"
+    readers_discount_text_html: "代表日本的大型家電量販連鎖店，在日本全國設有將近1200間。以西日本為中心，共有62間店提供免稅服務。在方便購物的免稅專櫃中，也販售多款電子鍋、理容美容用品等人氣商品。造訪東京時，推薦您前往超人氣觀光景點的秋葉原店，較為方便。大阪的話則是道頓堀店及緊鄰日本環球影城(R)的免稅専賣店Edion Universal CityWalk™大阪店。"
+    popular:
+      1_headline: "1.SHARP 自動除菌離子吹風機 寶石紅 IBHP9R"
+      1_desc_html: "自動除菌離子可以滋潤髮絲、抑止靜電。使用美容模式還可配合季節自動切換溫度，冷熱風交替，為您打造光澤秀髮。
+<br><br>
+<span class='price'> 建議售價 19,880日圓(未稅)</span>"
+      2_headline: "2.Panasoinc 仕女除毛刀 Salashe 藍 ES2235PPA"
+      2_desc_html: "腋下、腿、手臂、比基尼線等皆適用。採用符合人體工學的握把以及小巧刀頭。具防水功能，沐浴時亦可使用。色款種類相當豐富。
+<br><br>
+<span class='price'>建議售價 2,480日圓(未稅)</span>"
+      3_headline: "3.Panasonic 電動修容器 綠 ESWF50G"
+      3_desc_html: "旋轉刀頭能緊密貼合肌膚，非常便於剔除毛髮。採用對肌膚溫和的圓弧刀刃，能乾淨清除寒毛，更容易上妝。外型輕巧便於攜帶。
+<br><br>
+<span class='price'>建議售價 3,480日圓(未稅)</span>"
+      4_headline: "4.YA-MAN 美體碎脂機 Evolution 紅 IB250RED"
+      4_desc_html: "有8個高速旋轉轉頭，可針對在意部位加強按摩，在家也能有專業的SPA體驗。身體及臉部皆能使用。具防水功能，沐浴時亦可使用。
+<br><br>
+<span class='price'>建議售價 14,800日圓(未稅)</span>"
+      5_headline: "5.Panasonic 燙睫毛器(自然捲翹) 粉紅 EHSE10PPP"
+      5_desc_html: "可長時間維持自然捲度的這款燙睫毛器，配有雙加溫器，讓您的睫毛加倍捲翹。
+<br><br>
+<span class='price'>建議售價 1,700日圓(未稅)</span>"
+    top:
+      other: "其它人氣商品"
+      best_selling: "訪日觀光客熱銷排行榜第%{number}名(Edion)"
+      1_headline: "1.MTG ReFa CARAT白金滾輪美容按摩器 PEC L1706"
+      1_desc_html: "從太陽能板擷取光能，產生微弱電流的這款美肌滾輪按摩器，採用鑽石外觀雕刻，形狀特殊。敏感性肌膚也適用，有緊緻、撫平肌理等效用。具防水功能。
+<br><br>
+<span class='price'>建議售價 23,800日圓(未稅)</span>"
+      2_headline: "2.不鏽鋼保溫瓶 虎牌 colobockle MBRB06GRL"
+      2_desc_html: "整個保溫瓶皆可清洗。瓶蓋為可替換式類型，有按壓款及水杯款兩種。外型設計可愛，相當討喜。
+<br><br>
+<span class='price'>建議售價 5,980日圓(未稅)</span>"
+      3_headline: "3.Panasonic 奈米水離子吹風機 桃紅 EHCNA99RP"
+      3_desc_html: "這款吹風機具速乾效果，且助於改善髮質，讓您秀髮宛如剛上過沙龍護理般。可降低摩擦及紫外線導致的受損頭髮。有髮尾集中護理模式、冷熱風交替模式等5階段不一樣的模式，可配合各種髮質使用，相當推薦。
+<br><br>
+<span class='price'>建議售價 19,800日圓(未稅)</span>"
+      4_headline: "4.ATEX 按摩抱枕 薄荷黑 AXHCL188MB"
+      4_desc_html: "能完美融入時尚空間設計的這款按摩抱枕，不規則律動的旋轉按摩頭，可用於肩頸、腰背及腳底，適用部位相當廣泛。抱枕套還可以拆除清洗喔。
+<br>
+<span class='price'>建議售價 9,800日圓(未稅)</span>"
+      5_headline: "5.飛利浦 舒適鼻毛、耳毛和眉毛修容刀 Nosetrimmer series 3000 黑/灰 NT316210"
+      5_desc_html: "全機皆可水洗。是款適用於修整鼻毛、耳毛、眉毛的萬能修容刀。修剪後眉型能維持一大段時間。圓弧狀的超薄刀刃為不易傷膚的設計。
+<br>
+<span class='price'>建議售價 2,980日圓(未稅)</span>"
+      6_headline: "6.百靈 電動牙刷 歐樂B Genius 9000 黑 D7015256XCBK"
+      6_desc_html: "這款電動牙刷帶給您如同上牙科般清潔牙齒的體驗。可以透過APP畫面知道哪裡尚未清乾淨，讓您可以正確刷牙，使口腔內的每一部分都能清潔溜溜。
+<br>
+<span class='price'>建議售價 19,800日圓(未稅)</span>"
+      7_headline: "7.SHARP 自動除菌離子除濕機 白色系 CVG71W"
+      7_desc_html: "可以消除衣物曬在屋內的異味以及乾燥，也能抑止附著在屋內的黴菌增生。出風口處能有效抵擋大顆粒的灰塵。附把手，移動或倒水時都相當方便。
+<br>
+<span class='price'>建議售價 26,800日圓(未稅)</span>"
+      8_headline: "8.Vitantonio 優格機 白×銀 VYG11"
+      8_desc_html: "擁有一台，便可在家輕鬆製作優格。另外也能製作起司等發酵食品及低溫調理，用途相當廣泛。
+<br>
+<span class='price'>建議售價 6,880日圓(未稅)</span>"
+      9_headline: "9.TESCOM 負離子整髮梳 粉紅 TIC750P"
+      9_desc_html: "這款負離子整髮梳，無論短髮還是長髮，皆能讓髮根蓬鬆、髮絲光澤不毛躁。使用可以均等受熱的鋁製材質，讓您能隨心所欲、整理出自然秀髮。
+<br>
+<span class='price'>建議售價 2,580日圓(未稅)</span>"
+      10_headline: "10.YA-MAN RF 射頻再生美顏機 HRF10T"
+      10_desc_html: "這台ALL IN ONE的美顏機具有溫熱、清潔、保濕、和緩臉部肌肉、冷卻，以上5個功效！可以將精華導入至肌膚深處，完成富含彈力光澤的細緻肌膚。
+<br>
+<span class='price'>建議售價 37,000日圓(未稅)</span>"
+  weather:
+    1: "晴天"
+    2: "晴转阴"
+    3: "晴转雨"
+    4: "晴转雪"
+    5: "晴时多云"
+    6: "晴时多雨"
+    7: "晴时多雪"
+    8: "阴天"
+    9: "阴转晴"
+    10: "阴转雨"
+    11: "阴转雪"
+    12: "多云时晴"
+    13: "多云时雨"
+    14: "多云时雪"
+    15: "雨天"
+    16: "雨转阴"
+    17: "雨转晴"
+    18: "雨转雪"
+    19: "多雨时阴"
+    20: "多雨时晴"
+    21: "多雨时雪"
+    22: "降雪"
+    23: "雪转阴"
+    24: "雪转晴"
+    25: "雪转雨"
+    26: "多雪时阴"
+    27: "多雪时晴"
+    28: "多雪时雨"
+  basic-information:
+    name: "名称"
+    hours: "营业时间"
+    closed: "公休日"
+    price: "价位"
+    address: "地址"
+    access: "交通方式"
+    url-ja: "网站（日文)"
+    url-en: "网站（英文)"
+    url-zh-hant: "网站（繁体字)"
+    url-zh-hans: "网站（简体字)"
+    checkin: "Check-in"
+    checkout: "Check-out"
+    others: "其它"
+  map:
+    headline: "Search from Map"
+    information1: "※ Sendai is included in Miyagi"
+    information2: "※ Yokohama, Kamakura, Hakone is included in Kanagawa"
+    information3: "※ Kanazawa is included in Ishikawa"
+    information4: "※ Nagoya is included in Aichi"
+    hokkaido: "1. Hokkaido"
+    sendai: "5. Sendai"
+    tokyo: "13. Tokyo"
+    yokohama: "14. Yokohama"
+    kamakura: "14. Kamakura"
+    hakone: "14. Hakone"
+    kanazawa: "17. Kanazawa"
+    nagoya: "23. Nagoya"
+    kyoto: "25. Kyoto"
+    osaka: "29. Osaka"
+    fukuoka: "40. Fukuoka"
+    okinawa: "沖繩"
+    popular: "Popular cities for tourists"
+  sidebar:
+    rental: "搜索租车信息"
+    finder: "寻找美味餐厅"
+    weekly: "一周天气"
+    ranking: "热门文章"
+    connect: "Connect"
+    more: "看更多"
+    featured: "特辑"
+    book_agoda: "预约您的住宿"
+  toc: "目录"
+  search:
+    title: "检索"
+    desc: "%{num}个关于%{term}的检索结果"
+  views:
+    pagination:
+      previous: "<i class='icon-arrow-left icons'></i>"
+      next: "<i class='icon-arrow-right icons'></i>"
+  rankings:
+    title: "热门文章"
+    desc: ""
+  tags:
+    title: "%{param}"
+    desc: ""
+    list_title: "最新%{tag}文章"
+    meta_title: "日本 %{tag}"
+    single_meta_desc: "了解日本相关的%{tag}。 在tsunagu Japan上找到有关访日和在日本生活信息的文章。"
+    multi_meta_desc: "阅读关于日本%{tag}的%{N}篇文章，在tsunagu Japan上找到有关访日和在日本生活信息的文章。"
+  category:
+    cat2_with_child_cat3_desc: "阅读关于 %{cat2_alias}的%{N}篇文章，了解有关%{cat3}等的更多信息"
+    cat2_without_child_cat3_desc: "阅读关于 %{cat2_alias}的%{N}篇文章，你还可以搜索其他关于%{parent_cat1}的文章。"
+    cat3_with_only_1_article: "了解%{cat3_alias}，你也可以搜索其他关于 %{parent_cat2}的文章。"
+    cat3_with_2_and_more_articles: "阅读关于%{cat3_alias}的 %{N} 篇文章，你也可以搜索其他相关%{parent_cat2}的文章。"
+  area:
+    index_title: "日本区域"
+    index_desc: "浏览日本各个区域，找到关于日本游玩，当地美食，实用资讯，购物以及更多相关文章。"
+    area_intro: "您能在此页面搜寻日本各地精选文章。从地图上点选欲知区域，即可导入当地文章一览。"
+    banner_section_title: "地区特集专栏"
+    top_link:
+      hokkaido: "北海道"
+      tohoku: "东北"
+      kanto: "关东"
+      chubu: "中部"
+      kansai: "关西"
+      chugoku: "中国"
+      shikoku: "四国"
+      kyushu: "九州"
+      okinawa: "冲绳"
+    breadcrumb: "区域"
+    title: "%{param}"
+    desc: ""
+    area: "区域"
+    title_prefix: "关于 "
+    child_area_desc: "浏览 %{prefecture} %{child_area} 相关的文章，将当地玩乐、美食、必买伴手礼等资讯一网打尽。"
+    feature:
+      hokkaido:
+        title: "北海道特集"
+        description: "本页面是北海道相关文章合集。汇聚了北海道住宿，国立公园，当地美食，户外体验等各种相关资讯。"
+        top: "北海道"
+        article:
+          1:
+            title_html: "关于北海道"
+            text_html: "北海道位于日本最北端，拥有世界自然遗产知床、雄伟多姿的山岳和栖息着多种多样动植物的钏路湿原等自然资源，在这里可以饱览自然风光。另外，由于面积广阔，每个区域的气候和风土都不一样，在不同的环境下产生各具特色的传统文化，乡土料理，节庆和户外活动等，都能让人感受到它的魅力。"
+            url: "https://www.tsunagujapan.com/zh-hans/all-about-hokkaido/"
+          2:
+            title_html: "高级住宿设施（酒店/旅馆）"
+            text_html: "在北海道，有很多融入自然的高级住宿设施。以粉雪而世界闻名的二世谷、可赏四季优美田园风光的富良野、北海道的玄关函馆等各个区域都拥有独具特色的住宿设施，下面就以别墅和别馆为中心进行介绍。在被大自然包围的北海道，您一定可以放松身心。"
+            url: "https://www.tsunagujapan.com/zh-hans/trustworthy-luxury-accommodations-in-japans-hokkaido-area/"
+          3:
+            title_html: "探险旅游"
+            text_html: "探险旅游是包含自然、异文化、户外活动中两个要素，因可持续发展目标和新冠疫情而备受关注的新型旅游方式。四季不同的自然和人文，阿伊努文化，以及当地导游所分享充满魅力的北海道，可以说是最适合的探险旅游的目的地吧。"
+            url: "https://www.tsunagujapan.com/zh-hans/adventure-tourism_in_hokkaido/"
+          4:
+            title_html: "国立公园"
+            text_html: "北海道位于日本的最北端，四周环海，与本州不同，其拥有独特的广袤生态系统。世界遗产“知床国立公园”，遍布高山植物的花圃“利尻礼文北斗国立公园”，拥有世界屈指可数的高透明摩周湖“阿寒摩周国立公园”等都美不胜收。下面就介绍6个北海道必去的国立公园。"
+            url: "https://www.tsunagujapan.com/zh-hans/national-park-in-hokkaido/"
+          5:
+            title_html: "当地美食"
+            text_html: "日本本土面积第一大的北海道，临海的港口城市有丰富的海鲜，内陆有品种多样的蔬菜、肉和乳制品等，堪称新鲜食材的宝库。每个区域都有各自代表性的拉面、烤羊肉和蔬菜的成吉思汗、汤咖喱和黄油土豆等当地特色料理。来北海道一定不能错过这里的美食。"
+            url: "https://www.tsunagujapan.com/zh-hans/12-local-foods-not-to-be-missed-in-hokkaido/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "还有更多关于北海道地区的相关文章，敬请阅读。"
+          1:
+            url: "https://www.tsunagujapan.com/zh-hans/about-hokkaido-crab/"
+            text: "【北海道美食】吃尽北海道的美味螃蟹！螃蟹的种类及享用方法"
+          2:
+            url: "https://www.tsunagujapan.com/zh-hans/20-magnificent-sights-in-hokkaido/"
+            text: "【北海道自由行】严选北海道20处惊人美景!"
+          3:
+            url: "https://www.tsunagujapan.com/zh-hans/11-great-ways-to-enjoy-hokkaido-on-a-budget/"
+            text: "【北海道自由行】花小钱！乐玩北海道的11个景点"
+          4:
+            url: "https://www.tsunagujapan.com/zh-hans/7-hokkaido-local-line/"
+            text: "7条能尽享北海道美丽景色的当地铁路路线"
+          5:
+            url: "https://www.tsunagujapan.com/zh-hans/hokkaido-kushiro-20-tourist-attractions/"
+            text: "【北海道自由行】自然、美食、景点应有尽有！钏路观光景点TOP 20"
+          6:
+            url: "https://www.tsunagujapan.com/zh-hans/a-guide-on-hokkaido-s-weather-climate/"
+            text: "【实用资讯】到北海道观光一定要知道！一整年的气候＆天气指南"
+      tohoku:
+        title: "东北特集"
+        description: "本页是关于东北的文章合集。包括东北地区的推荐住宿，国立公园，观光景点以及体验活动等，汇集东北吃喝玩乐各种旅行资讯。"
+        top: "东北"
+        article:
+          1:
+            title_html: "关于东北"
+            text_html: "东北位于本州最北部，由青森县、岩手县、秋田县、宫城县、山形县、福岛县6县组成。由于地处高纬度，气温比本州其他地区低，一到冬天，各地都是美丽的雪景。保留着原始丰富的自然风光，拥有独具一格的传统活动和传统工艺品，营养丰富又美味的乡土料理也不容错过，这是一个充满了不为人知的深奥魅力的地区。"
+            url: "https://www.tsunagujapan.com/zh-hans/all-about-tohoku/"
+          2:
+            title_html: "高级住宿设施（酒店/旅馆）"
+            text_html: "东北有很多人气温泉街，例如青森的“酸汤温泉”、七大秘汤之一的秋田“乳头温泉乡”、怀旧复古风情的山形“银山温泉”等。这里拥有可以尽量避免与其他人接触的独栋别墅，也有尚且小众鲜为人知的位于东北丰富自然环境中的高级旅馆，保证您安心且舒适的旅程。"
+            url: "https://www.tsunagujapan.com/zh-hans/trustworthy-luxury-accommodations-in-japans-tohoku-area/"
+          3:
+            title_html: "探险旅游"
+            text_html: "东北拥有山毛榉原生林的“白神山地”，风景优美的三陆海岸，十和田湖和田泽湖等湖沼，尾濑和藏王等众多迷人的自然景区。另外，也保留了作为信仰场所的出羽三山和秋田的麻杉木等日本特有的文化景观，是非常适合体验自然和文化探险旅游的地区。"
+            url: "https://www.tsunagujapan.com/zh-hans/adventure-tourism-in-tohoku/"
+          4:
+            title_html: "国立公园"
+            text_html: "东北共有3个国立公园，富有火山绝境和温泉魅力的“十和田八幡平国立公园”,为复兴在东日本大地震受灾的三陆地区而建立的“三陆复兴国立公园”，充满群山和美丽湖沼的“盘梯朝日国立公园”。来到此地，感受自然的巍峨与壮丽，以及扎根日本远古文化的山岳信仰和温泉治愈。"
+            url: "https://www.tsunagujapan.com/zh-hans/national-park-in-tohoku/"
+          5:
+            title_html: "观光景点"
+            text_html: "东北拥有日本三景之一的“松岛”,樱花烂漫的“弘前城”,东北屈指可数的枫叶景点“鸣子峡”，著名的俳句诗人松尾芭蕉的俳句中出现的“立石寺”,拥有400年历史的宿场町“大内旅馆“等自然和历史景观。了解东北6县的观光景点，有助于计划东北旅行的行程。"
+            url: "https://www.tsunagujapan.com/zh-hans/10-recommended-spots-in-tohoku/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "还有更多关于东北的文章，请查阅。"
+          1:
+            url: "https://www.tsunagujapan.com/zh-hans/akita-yamagata-niigata-tohoku-travel-guide/"
+            text: "邂逅日本原生态风景——新潟・山形・秋田穿越时空之旅"
+          2:
+            url: "https://www.tsunagujapan.com/zh-hans/one-day-trip-in-akita-odate-city/"
+            text: "秋田大馆市慢时光铁道旅：摘苹果、烤米棒锅、日景温泉"
+          3:
+            url: "https://www.tsunagujapan.com/zh-hans/sendai-zao-3-days-trip-onsen-hoar-frost-fox-village/"
+            text: "藏王3天2夜慢活之旅：仙台、树冰、狐狸村、远刈田温泉"
+          4:
+            url: "https://www.tsunagujapan.com/zh-hans/2-days-trip-ginzan-onsen/"
+            text: "洋溢大正浪漫氛围！在白雪皑皑的银山温泉街享受2天1夜观光行程"
+          5:
+            url: "https://www.tsunagujapan.com/zh-hans/visit-miyagi-zao-fox-village-in-winter/"
+            text: "冬访宫城・穿梭蔵王狐狸村与白石城之间感受治愈系之旅"
+          6:
+            url: "https://www.tsunagujapan.com/zh-hans/aomori-20-recommended-tourist-spots/"
+            text: "不光只有祭典！严选20处东北・青森必访观光景点"
+      kyushu:
+        title: "九州特集"
+        description: "本页面是九州相关文章合集。汇聚了九州住宿，国立公园，户外体验，温泉等各种实用咨询。"
+        top: "九州"
+        article:
+          1:
+            title_html: "关于九州"
+            text_html: "九州是组成日本列岛的岛屿之一，位于列岛西南部，属于日本的温暖地区。九州由福冈县、佐贺县、长崎县、大分县、熊本县、宫崎县、鹿儿岛县这七个县组成。其中福冈县位于北九州，拥有承载国际/国内航班的机场，以及九州新干线的起点站博多站，可谓连接九州和整个亚洲的枢纽。<br>在九州这片土地上，您可以饱览优美的自然风光、享受温泉之乐、游览历史名胜、品尝以博多拉面为首的当地美食。欢迎您造访九州，感受九州的无穷魅力。"
+            url: "https://www.tsunagujapan.com/zh-hans/why-is-it-called-kyushu-9-provinces-when-there-are-only-7-prefectures/"
+          2:
+            title_html: "高级住宿设施（酒店/旅馆）"
+            text_html: "九州拥有众多日本屈指可数的著名温泉地。这里的很多住宿设施都能为您带来以下奢侈体验：在这片拥有阿苏山、屋久岛等优美自然风光的土地上，您可以一边徜徉在大海的怀抱中，欣赏春夏秋冬不同的绝景，一边惬意泡汤。入住类型可选别墅或别馆这类独栋旅馆，让您最大程度减少与他人接触，尽享高级住宿设施带给您的安心与舒适。"
+            url: "https://www.tsunagujapan.com/zh-hans/trustworthy-luxury-accommodations-in-japans-kyushu-area/"
+          3:
+            title_html: "探险旅游"
+            text_html: "所谓的探险旅游，是包含了自然、异文化、活动这三要素之二，在联合国可持续发展目标（SDGs）的推进和新冠疫情下备受瞩目的次世代旅游形式，日本选定了以北海道为中心的探险旅游开发策略。九州同样拥有着丰富的旅游资源，开展探险旅游可谓潜力无限。我们会您为带来九州探险旅游的相关资讯。"
+            url: "https://www.tsunagujapan.com/zh-hans/adventuretravel_in_kumamoto"
+          4:
+            title_html: "国立公园"
+            text_html: "九州有6个国立公园。包括世界遗产“屋久岛国立公园”、保留了原生态大自然，大红树林面积位居日本第二的“奄美群岛国立公园”、包含樱岛在内的“雾岛锦江湾国立公园”等等，还有很多让您能够近距离感受火山能量的公园。欢迎您造访九州的这些风景名胜，体验这片土地带给您的独有感动。"
+            url: "https://www.tsunagujapan.com/zh-hans/national-park-in-kyushu/"
+          5:
+            title_html: "线上旅游"
+            text_html: "线上旅游也是如今不可或缺的一项新兴观光体验形式，让您足不出户就能在线领略当地景点的魅力。尤其是附带配送当地商品的线上旅游项目，拥有很高的人气。在实际造访前先感受一下这片土地的氛围，这也成为了人们选择线上旅游的另一个理由。越来越多的线上旅游玩法等待着大家的挖掘。"
+            url: "https://www.tsunagujapan.com/zh-hans/kyushu-online-tours/"
+          6:
+            title_html: "温泉"
+            text_html: "九州被誉为温泉天国，日本国内温泉涌出量和源泉数TOP5的温泉地中，九州就占了三个。这里云集了别府温泉、汤布院温泉等日本屈指可数的温泉胜地，很多人造访九州都是为了体验泡汤之乐。不同的温泉地的温泉泉质和功效都有所不同，您可以体验一边眺望自然美景一边泡汤的露天温泉，还可以感受温泉街的独有风情，让不同的温泉疗愈您的身心。"
+            url: "https://www.tsunagujapan.com/zh-hans/onsen-in-kyushu-top10/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "还有更多关于九州地区的相关文章，敬请阅读。"
+          1:
+            url: "https://www.tsunagujapan.com/zh-hans/3-day-kyushu-travel-itinerary-fukuoka-oita-kumamoto/"
+            text: "旅日强推九州地区！为您带来玩转福冈・大分・熊本三大人气地区的3天推荐路线！"
+          2:
+            url: "https://www.tsunagujapan.com/zh-hans/10-must-see-historic-spots-in-kyushu/"
+            text: "【九州自由行】九州岛必参观的历史建造物10 选"
+          3:
+            url: "https://www.tsunagujapan.com/zh-hans/kagoshima-ibusuki-recommended-travel-plan/"
+            text: "【鹿儿岛自由行】来去鹿儿岛与指宿走一遭！尽情享受温泉、美景、美食的疗愈放松之旅"
+          4:
+            url: "https://www.tsunagujapan.com/zh-hans/oita-hita-nakatsu-beppu-kitsuki-onsen-travel-attractions/"
+            text: "【大分自由行】不只温泉！漫游九州大分县　美食绝景三日轻旅行：日田・中津・别府・杵筑"
+          5:
+            url: "https://www.tsunagujapan.com/zh-hans/nagasaki-recommended-tourist-attractions/"
+            text: "【长崎旅行】将世界遗产和极品美食一网打尽！为您推荐长崎市内观光好去处"
+          6:
+            url: "https://www.tsunagujapan.com/zh-hans/cats-and-onsen/"
+            text: "【九州自由行】猫×温泉×绝景！能够体验极致疗愈效果的九州温泉旅馆"
+      okinawa:
+        title: "冲绳特集"
+        description: "本页面是冲绳相关文章合集。汇集了关于冲绳的酒店旅馆、国立公园、美丽海滩和体验活动等旅行资讯。"
+        top: "冲绳"
+        article:
+          1:
+            title_html: "关于冲绳"
+            text_html: "冲绳位于日本最南端，由散布在广阔海域上的160个岛屿组成。日本唯一的全县属于亚热带海洋性气候的地区，拥有独特的生态系统和文化。清澈湛蓝的海里的热带鱼和珊瑚，独特生态系统的森林，扎根于地域的传统文化，以海上运动为代表的各项活动等，冲绳拥有着区别于日本其他地区的独特魅力。"
+            url: "https://www.tsunagujapan.com/zh-hans/beginners-guide-to-okinawa/"
+          2:
+            title_html: "高级住宿设施（酒店/旅馆）"
+            text_html: "介绍冲绳本岛的4大区域(北部、中部、那霸、南部)，石垣岛，宫古岛与世隔绝的独栋或别墅。坐享私人泳池和海景浴池，充分领略冲绳开放的自然魅力。同时一起来了解一下各设施附近的主要观光景点吧。"
+            url: "https://www.tsunagujapan.com/zh-hans/10-okinawa-accommodations-that-can-be-rented-out/"
+          3:
+            title_html: "探险旅游"
+            text_html: "冲绳由冲绳本岛、宫古岛、石垣岛、西表岛等多个岛屿组成。白色的沙滩和碧蓝的大海是其典型的象征，此外这里还有日本其他地区看不到热带雨林等自然环境。洞窟探险、骑马体验（冲绳独有的“与那国马”）、乘坐传统的船等各种自然活动丰富多彩。"
+            url: "https://www.tsunagujapan.com/zh-hans/adventuretourism-in-okinawa"
+          4:
+            title_html: "国立公园"
+            text_html: "被美丽大海包围的冲绳，拥有3个国立公园：山野国立公园、庆良间群岛国立公园、西表石垣国立公园。这些地方分布着日本国内最大的亚热带照叶树林和红树林，超高透明度的大海和多样的珊瑚栖息的高密度珊瑚礁，独有的动植物，传统的红瓦屋顶村落等景观。在魅力无限的冲绳国立公园，尽享自然和传统文化。"
+            url: "https://www.tsunagujapan.com/zh-hans/national-park-in-okinawa/"
+          5:
+            title_html: "海滩"
+            text_html: "冲绳属于日本年平均气温最高的高温多湿的亚热带气候，因此是拥有超高人气的度假胜地。冲绳海滩的魅力在于白色的沙滩和碧蓝的大海。这里介绍在海水浴季节里，冲绳本岛和离岛上高人气海滩。从必去海滩到小众海滩，将会详细介绍每个地方的景色、游览方法、交通等信息，希望对您的旅行计划有所帮助。"
+            url: "https://www.tsunagujapan.com/zh-hans/top-okinawa-beaches/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "还有更多关于冲绳的文章，请查阅。"
+          1:
+            url: "https://www.tsunagujapan.com/zh-hans/naha-20-spots/"
+            text: "【冲绳自由行】造访那霸必游！精选20个那霸观光景点"
+          2:
+            url: "https://www.tsunagujapan.com/zh-hans/complete-guide-of-ishigaki-island-okinawa/"
+            text: "【冲绳自由行】现今最具话题性景点！日本冲绳・石垣岛完全指南"
+          3:
+            url: "https://www.tsunagujapan.com/zh-hans/15-must-visit-spots-in-okinawa/"
+            text: "【冲绳自由行】冲绳乐逍遥！精选15处必游观光景点"
+          4:
+            url: "https://www.tsunagujapan.com/zh-hans/20-okinawa-omiyage/"
+            text: "【冲绳购物】提到冲绳非此莫属！绝对令人欣喜的20款人气伴手礼"
+          5:
+            url: "https://www.tsunagujapan.com/zh-hans/a-year-s-guide-on-the-weather-in-okinawa-is-it-really-always-summer-in-okinawa/"
+            text: "【冲绳实用资讯】真的是常夏吗？让您的冲绳之旅玩得更畅快！一整年的气候&天气指南"
+          6:
+            url: "https://www.tsunagujapan.com/zh-hans/okinawa-outlying-islands-gourmet/"
+            text: "【冲绳美食】冲绳旅行必吃！10家冲绳热门美食店推荐"
+      shikoku:
+        title: "四国特集"
+        description: "本页是四国相关文章合集。包含四国的推荐酒店住宿设施、国立公园、体验活动、四国遍路等四国旅行信息。"
+        top: "四国"
+        article:
+          1:
+            title_html: "关于四国"
+            text_html: "四国位于本州西南部，由德岛县、香川县、爱媛县、高知县四县组成。北临濑户内海，南临太平洋，是冬天也比较温暖多雨的地区，濑户内海的群岛和陡峭的地形，丰富的森林景色等自然美景是其魅力所在。另外，盛产蔬菜和水果、渔业也很兴盛，每个季节都能品尝到当季的美味，是值得一去的地方。"
+            url: "https://www.tsunagujapan.com/zh-hans/all-about-shikoku/"
+          2:
+            title_html: "高级住宿设施（酒店／旅馆）"
+            text_html: "本页介绍四国的住宿设施信息，包括清流四万十川附近的古民居改建而成的别墅，濑户内海小豆岛上景观别具一格的旅馆等。此外，还有日本屈指可数的温泉乡“道后温泉”和秘境“祖谷温泉”等温泉旅馆。独栋、别墅等可以避免与他人接触的旅馆，做好感染对策的旅馆等可以安心居住，旅途中选择这样的住宿设施吧。"
+            url: "https://www.tsunagujapan.com/zh-hans/trustworthy-luxury-accommodations-in-japans-shikoku-area/"
+          3:
+            title_html: "探险旅游"
+            text_html: "四面环海，气候温暖的四国有很多绝好探险体验活动。清流四万十河独木舟，环濑户内骑行，皮划艇，大歩危小歩危激流泛舟，柏岛跳水，高知县海豚观赏等，通过四国的探险旅游可以充分领略日本海、河、山的魅力。"
+            url: "https://www.tsunagujapan.com/zh-hans/adventure-tourism-in-shikoku/"
+          4:
+            title_html: "国立公园"
+            text_html: "四国有两个国立公园。“濑户内海国立公园”是日本国内面积最大的国立公园，由大大小小的岛屿构成，多岛海景观是其魅力所在。“足苏宇和海国立公园”可以看到受黑潮影响的亚热带性海洋生物和珊瑚群，以及利亚斯式海岸交织的雄伟景观。去四国，体验从展望台欣赏眺望美景和体验各种活动吧。"
+            url: "https://www.tsunagujapan.com/zh-hans/national-park-in-shikoku/"
+          5:
+            title_html: "四国遍路"
+            text_html: "所谓“四国遍路”，是指围绕平安时代(794 ~ 1185年)初期僧人“弘法大师(别名:空海)”修行过的，散布在四国的88处灵场的寺院巡礼之路。全长约1200km，不仅以信仰为目的，还可以在途中观赏四国的美丽景色，品尝当地美食，舒适自由，吸引着很多来自国内外的游客。"
+            url: "https://www.tsunagujapan.com/zh-hans/ohenro-shikoku-pilgrimage/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "还有更多关于四国的文章。请查阅。"
+          1:
+            url: "https://www.tsunagujapan.com/zh-hans/ehime-matsuyama/"
+            text: "松山城与城下漫游・来场历史、文学、建筑之旅"
+          2:
+            url: "https://www.tsunagujapan.com/zh-hans/naoshima-architecture/"
+            text: "直岛的建筑学：“逃城”般的素雅之地"
+          3:
+            url: "https://www.tsunagujapan.com/zh-hans/11-historical-places-in-ehime-for-blast-to-the-past-moments/"
+            text: "精选11处务必造访的爱媛县名胜古迹"
+          4:
+            url: "https://www.tsunagujapan.com/zh-hans/20-shikoku-hot-springs/"
+            text: "能尽情享受的日归温泉和名汤！四国20处推荐温泉"
+          5:
+            url: "https://www.tsunagujapan.com/zh-hans/12-historical-spots-in-kagawa-to-add-to-your-bucket-list/"
+            text: "精选12处务必造访的香川县名胜古迹"
+          6:
+            url: "https://www.tsunagujapan.com/zh-hans/kagawa-omiyagae-gifts/"
+            text: "从经典点心到杂货应有尽有！推荐香川15种必买纪念品"
+      kanto:
+        title: "关东特集"
+        description: "本页是关东地区相关文章合集。包含关东地区的推荐酒店住宿、国立公园、探险旅游、温泉等各种实用旅行信息。"
+        top: "关东"
+        article:
+          1:
+            title_html: "关于关东"
+            text_html: "关东地区总人口约占日本总人口的1/3，作为中枢地区，对全日本经济起到了引领作用。拥有首屈一指的大都市东京，国际贸易港横滨、古都镰仓、世界遗产日光东照宫等代表景点。在旅行之前，了解这一地区的基本信息会对您的出行起到帮助。"
+            url: "https://www.tsunagujapan.com/zh-hans/all-about-kanto/"
+          2:
+            title_html: "高级住宿设施（酒店／旅馆）"
+            text_html: "关东地区酒店住宿资源丰富。除了大都市东京特有的无微不至最高级服务的酒店之外，还分布着日本著名的温泉胜地，如群马县的草津温泉和伊香保温泉，神奈川县的箱根温泉等，这里的独有的温泉旅馆更是不容错过。本页介绍了部分东京附近的酒店、别墅、旅馆，供您选择。"
+            url: "https://www.tsunagujapan.com/zh-hans/trustworthy-luxury-accommodations-in-japans-kanto-area"
+          3:
+            title_html: "探险旅游"
+            text_html: "包括东京在内的关东周边地区，存在着许多小众之地适合进行探险体验活动。特别是枥木县、群马县等地自然资源丰富，可在在山川中可露营、骑马。从东京出发交通便利，当天往返，在东京期间可以顺便游玩。"
+            url: "https://www.tsunagujapan.com/zh-hans/adventure-tourism-in-kanto"
+          4:
+            title_html: "国立公园"
+            text_html: "本页将会介绍以下三个国立公园的推荐景点及玩法。日光国立公园内山川、湖沼、瀑布、沼泽遍布，还拥有世界自然文化遗产寺庙，尾濑国立公园中可以沿着被整顿的沼泽木道散步,欣赏着多种多样的植物，秩父多摩甲斐国立公园距离首都圈最近，交通十分便利。"
+            url: "https://www.tsunagujapan.com/zh-hans/national-park-in-kanto/"
+          5:
+            title_html: "温泉"
+            text_html: "关东地区首都圈周围分布着众多温泉地，自然涌出量日本第一的“草津温泉”、可以享受艺术之乐的“箱根汤本温泉”、在海边度假的“鸭川温泉”等。东京旅行时特别推荐您一定要安排一日温泉行程。这里介绍各个温泉的看点和功效，大家可以根据旅行的目的和身体需求进行选择。"
+            url: "https://www.tsunagujapan.com/zh-hans/10-kanto-onsen/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "还有更多关于关东地区的文章。敬请查阅。"
+          1:
+            url: "https://www.tsunagujapan.com/zh-hans/one-day-sightseeing-spot/"
+            text: "从东京出发不到2小时！严选关东地区10处适合一日游的景点"
+          2:
+            url: "https://www.tsunagujapan.com/zh-hans/hakone-trip-guide-for-family/"
+            text: "一年四季皆宜造访！带长辈畅游箱根 两天一夜懒人包（箱根景点、交通资讯篇）"
+          3:
+            url: "https://www.tsunagujapan.com/zh-hans/chiba-travel-sightseeing-spots/"
+            text: "不只有迪士尼乐园！千叶20个非去不可推荐绝景地点"
+          4:
+            url: "https://www.tsunagujapan.com/zh-hans/kawagoe-travel-cafes/"
+            text: "川越漫步日记：咖啡茶饮店一日惬意之旅"
+          5:
+            url: "https://www.tsunagujapan.com/zh-hans/what-to-do-tokyo-station/"
+            text: "购物、吃饭、放松！一篇文章告诉你上电车前可以在东京站周围做什么"
+          6:
+            url: "https://www.tsunagujapan.com/zh-hans/tokyo-antique-shop/"
+            text: "逛这些店家绝对能挖到宝！属于老灵魂的东京古董杂货寻宝地图"
+      kansai:
+        title: "Kansai Feature"
+        description: "On this page, you’ll find a collection of articles about the Kansai region, covering everything from top accommodations to national parks, adventure tours, and the famous “Kansai-ben” dialect."
+        top: "Kansai"
+        article:
+          1:
+            title_html: "About Kansai"
+            text_html: "The Kansai region, located roughly in the center of Japan, is made from a collection of popular and unique sightseeing areas. It includes the deeply traditional Kyoto and Nara, the long-established industrial and economic capital of Osaka, the port town of Kobe, and more. Plan for your trip by reading up on all the basic info on Kansai and get to know this amazing region of Japan!"
+            url: "https://www.tsunagujapan.com/all-about-kansai/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "There are numerous luxury options to spend the night in Kansai. This includes 5-star hotels in central Osaka, those serving up Kobe beef alongside breathtaking night views, high-class ryokan in Hyogo Prefecture’s Kinosaki Onsen, renovated Kyoto townhouses, inns with open-air hot springs and temple pagoda views, hotels with traditional Buddhist and kaiseki cuisine, and more. If you’re still figuring out where to stay, let us introduce you to some of the most exceptional hotels, villas, and inns in the Kansai region."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-kansai-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Combine culture with adventure by following the World Heritage Site of Kumano Kodo, experience sea kayaking at Awajishima Island in the Seto Inland Sea, ride a horse in Kyotamba amongst quaint Japanese village scenery, bungee jump at a sacred spot in Nara – we’ll show you some exciting ideas for an adventure within the Kansai region!"
+            url: "https://www.tsunagujapan.com/zh-hans/adventure-tourism-in-shikoku/"
+          4:
+            title_html: "National Parks"
+            text_html: "Kansai is home to three national parks: Yoshino Kumano National Park, which boasts one of the sole trails registered as a World Heritage Site along with the 30,000 cherry blossom trees of Mt. Yoshino; San'inkaigan National Park, with diverse coastal terrain and the famous Tottori Sand Dunes; and Setonaikai National Park, full of breathtaking island scenery. Here we’ll showcase how best to enjoy each of these parks and their must-see highlights."
+            url: "https://www.tsunagujapan.com/national-park-in-kansai/"
+          5:
+            title_html: "The Kansai-Ben Dialect"
+            text_html: "The Kansai-ben dialect has words and phrases totally different from standard Japanese, along with distinctive intonation and inflection. Here we outline some tips on how to get along with people from Kansai and some handy Kansai vocab to use during your trip. Study up before visiting for smooth communication with the Kansai locals!"
+            url: "https://www.tsunagujapan.com/all-about-kansai-dialect/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "We have many more fantastic articles about Kansai. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/8-spots-where-you-can-feel-japans-history-and-spirituality/"
+            text: "Great Day-Trips From Kyoto and Osaka! 8 Sites Where You Can Feel Japan’s History and Spirituality"
+          2:
+            url: "https://www.tsunagujapan.com/japans-pilgrimage-roads-the-kumano-kodou/"
+            text: "Experience the Kumano Kodo - A Complete Guide to Hiking One of Japan’s Great Pilgrimage Routes"
+          3:
+            url: "https://www.tsunagujapan.com/osaka-shotengai-shopping-streets/"
+            text: "Osaka’s Best Bargains: “Shotengai” Shopping Streets in the City of Merchants"
+          4:
+            url: "https://www.tsunagujapan.com/10-customs-unique-to-kyoto/"
+            text: "10 Unique Kyoto Customs That Even Japanese People Find Confusing"
+          5:
+            url: "https://www.tsunagujapan.com/kansai-useful-one-day-transport-passes/"
+            text: "A Complete Guide to Kansai Transportation: 9 One-Day Passes of Great Value"
+          6:
+            url: "https://www.tsunagujapan.com/5-ways-to-explore-the-kansai-region-on-bicycle/"
+            text: "5 Ways to Explore the Kansai Region on Bicycle"
+      chubu:
+        title: "Chubu Feature"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Chubu, including top accommodations, national parks, outdoor activities and tours, retro townscapes, and more."
+        top: "Chubu"
+        article:
+          1:
+            title_html: "About Chubu"
+            text_html: "Encompassing the central area of mainland Japan, the Chubu region is home to a wealth of sightseeing attractions, including Mt. Fuji, the former castletown of Kanazawa; the historic World Heritage mountain villages of Shirakawa-go and Gokayama; and the leading mountain resort Kamikochi. In this article, we cover all the basics you need to know about the Chubu region, from what makes it special to its climate and how to get there."
+            url: "https://www.tsunagujapan.com/all-about-chubu/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to places to stay in the Chubu region that we think you’ll absolutely love. Spend a night at a long-established “ryokan” inn situated in the Chaya District of Kanazawa in Ishikawa Prefecture, enjoy an all-you-can-eat fresh seafood buffet at another inn with hot spring baths in Toyama, admire the designer furniture and modern art decorating a refurbished townhouse in Niigata Prefecture, or maybe even gaze at Mt. Fuji from the windows of a resort hotel built close to Lake Kawaguchi in Yamanashi Prefecture!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chubu-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Have a thrilling adventure in the Chubu region with these fun outdoor activities and gorgeous nature scenery! Admire Mie’s vibrant surroundings while standup paddleboarding, raft your way down Nagara River in Gifu, or ride around on a snowmobile in Hida Takayama. Alternatively, go fishing and eat what you catch or bungee jump from a height of 215 meters! The opportunities are endless!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chubu/"
+          4:
+            title_html: "National Parks"
+            text_html: "Many tall mountains can be found within the national parks of the Chubu region, making them amazing places for those seeking out challenging mountain climbs, winter ski adventures, hot springs, or an escape from the sweltering summer heat. In this article, we cover all five of the national parks in Chubu in detail, going over some of the top reasons why they make such great places to explore. Encounter the wild snow monkeys of Joshin’etsukogen National Park, relax at the leading mountain resort of Kamikochi in Chubusangaku National Park, and pay a visit to the 2,000-year-old Ise Jingu shrine within Ise-Shima National Park."
+            url: "https://www.tsunagujapan.com/national-park-in-chubu/"
+          5:
+            title_html: "Retro Townscapes"
+            text_html: "The Chubu region is rich in traditional Japanese townscapes, and we want you to see the best of them! There’s the gorgeous Higashi Chaya District in Kanazawa, Ishikawa Prefecture, with its cobblestone streets and stunning historical architecture. Then you have Toyama’s Gokayama, a historical mountain village registered as a World Heritage Site; Nagoya’s Arimatsu, a merchant town renowned in the tie-dyeing industry; Fukui’s Kumagawa-juku, a post town born from trade with Kyoto; and far more!"
+            url: "https://www.tsunagujapan.com/chubu-area-traditional-retro-townscapes/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "We have many more fantastic articles about Chubu. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/10-tea-houses-in-kanazawa/"
+            text: "Top 10 Tea Houses in Kanazawa's Tea House District to Wind Down In"
+          2:
+            url: "https://www.tsunagujapan.com/6-high-class-ryokan-around-lake-kawaguchi/"
+            text: "6 High-Class Ryokan Around Lake Kawaguchi to Enjoy a Magnificent View of Mt. Fuji"
+          3:
+            url: "https://www.tsunagujapan.com/discover-karuizawa-rental-bicycle/"
+            text: "Discover the Best of Karuizawa via Rental Bicycles"
+          4:
+            url: "https://www.tsunagujapan.com/2-day-autumn-trip-in-toyama-kurobe-uozu/"
+            text: "Fall Bliss in Toyama: A 2-Day Road Trip in Kurobe and Uozu"
+          5:
+            url: "https://www.tsunagujapan.com/2-day-trip-in-okazaki/"
+            text: "Spend a 2-Day Trip in Okazaki, a Hidden Gem in Aichi Prefecture"
+          6:
+            url: "https://www.tsunagujapan.com/deep-snow-an-hour-from-tokyo-relishing-the-midwinter-bounties-of-niigata/"
+            text: "Deep Snow an Hour From Tokyo: Relishing the Midwinter Bounties of Niigata"
+      chugoku:
+        title: "Chugoku Feature"
+        description: "On this page, you’ll find a collection of articles about the Chugoku region, covering everything from top accommodations to national parks, adventure tours, and its many and varied historic structures."
+        top: "Chugoku"
+        article:
+          1:
+            title_html: "About Chugoku"
+            text_html: "Encompassing the westernmost part of Japan’s main island of Honshu, the Chugoku region is filled with historic, cultural, and scenic delights. Some examples include Itsukushima Shrine, registered as a World Heritage Site; the historic townscapes of Hagi Castle Town; and the Tottori Sand Dunes, the largest formations of their kind in all of Japan. If you're planning a trip to Chugoku, then here's everything you'll need to know about the region, including information on its weather, the best places to visit, and how to get there."
+            url: "https://www.tsunagujapan.com/a-trip-through-chugoku-region-the-land-of-myths-and-memories/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to some really enthralling and unforgettable stays in the Chugoku region: a 400-year-old resort hotel near Itsukushima Shrine, a Hiroshima “ryokan” inn with open-air baths in every room, a long-established inn situated right within the Kurashiki Bikan Historical Quarter of Okayama Prefecture, a Yamaguchi hot spring inn boasting a large bath with gorgeous views of a nearby mountain stream, a Tottori inn where you can stuff yourself with fresh Sea of Japan delicacies such as crab, and more!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chugoku-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Go on thrilling adventures in the Chugoku area! Ride across the Tottori Sand Dunes on an off-road “fat bike” or fly high above them on a paraglider. Paddle up close to Itsukushima Shrine’s giant torii gate in a sea kayak. SUP around Yamaguchi’s Suo-Oshima Island. Take a hot spring dip at Yuki Onsen or enjoy some shower climbing in Hiroshima. There is always something fun to do in Chugoku!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chugoku/"
+          4:
+            title_html: "National Parks"
+            text_html: "The Chugoku region is home to two national parks: Setonaikai National Park, the largest national park in Japan partially made up of the 1,000 islands on the Seto Inland Sea, and Daisen-Oki National Park, where you can find Izumo Taisha—a grand shrine that features as the setting of various Japanese myths and legends—as well as mountains like Mt. Daisen and lovely coastline scenery shaped from the rough waves of the Sea of Japan. Come discover these two nature wonderlands with us."
+            url: "https://www.tsunagujapan.com/national-park-in-chugoku/"
+          5:
+            title_html: "Historic Structures"
+            text_html: "Admire the many architectural marvels of the Chugoku region, such as the giant torii gate of Itsukushima Shrine, a registered World Heritage Site, standing in the middle of the sea. There are also the white-walled warehouses and willow-lined avenues of the Kurashiki Bikan Historical Quarter; the wooden 200-meter-long Kintai Bridge featuring five arches; and Mitokusan Sanbutsuji Temple's Nageire Hall, a national treasure built right into a cliff face cavern."
+            url: "https://www.tsunagujapan.com/chugoku-unique-historic-structures/"
+        read_more: "更多"
+        related_articles:
+          title: "相关文章"
+          lead: "We have many more fantastic articles about Chugoku. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/filming-location-in-hiroshima-drive-my-car/"
+            text: "\"Drive My Car\" Hiroshima Filming Locations - Step Into the World of Haruki Murakami!"
+          2:
+            url: "https://www.tsunagujapan.com/7-photogenic-spots-in-tottori-full-of-nature-and-culture/"
+            text: "7 Photogenic Spots in Tottori, a Prefecture Full of Nature and Culture"
+          3:
+            url: "https://www.tsunagujapan.com/only-1-hour-from-osaka-15-awesome-photogenic-spots-in-okayama/"
+            text: "Only 1 Hour From Osaka! 15 Awesome Photogenic Spots in Okayama"
+          4:
+            url: "https://www.tsunagujapan.com/shimanami-kaido-cycle-across-the-seto-inland-sea/"
+            text: "The Shimanami Kaido: Japan's Best Cycling Adventure!"
+          5:
+            url: "https://www.tsunagujapan.com/25-things-to-do-hiroshima/"
+            text: "25 Amazing Things To Do in Hiroshima: A Complete Travel Guide to Enjoying Its History, Culture, and Nature"
+          6:
+            url: "https://www.tsunagujapan.com/rabbit-island-okunoshima/"
+            text: "A Must-Visit for Rabbit Lovers! Okunoshima, an Island Removed from the Maps"
+  planning_trip:
+    page_title: "日本旅行实用资讯"
+    page_description: "本页汇总了日本旅行时的实用信息。包含交通，金钱，日本礼仪，受伤和灾害等紧急事态时的应对方法，便利小知识等，有助于您安全舒适地享受日本旅行。"
+    title_html: "日本旅行实用资讯汇总"
+    description: "本页汇总了日本旅行时的实用信息。包含交通，金钱，日本礼仪，受伤和灾害等紧急事态时的应对方法，便利小知识等，有助于您安全舒适地享受日本旅行。"
+    articles:
+      1:
+        title: "交通"
+        description: "公共交通工具的乘坐方法，交通IC卡的种类等交通相关资讯。"
+        1:
+          text: "【实用资讯】游日本常见的交通方式 搭廉航及夜巴！花小钱玩日本"
+          url: "https://www.tsunagujapan.com/zh-hans/ways-to-travel-for-cheap-across-japan/"
+        2:
+          text: "【实用资讯】日本的IC卡不仅限于搭车！交通票卡资讯一网打尽"
+          url: "https://www.tsunagujapan.com/zh-hans/japanese-ic-cards-are-not-just-for-train-travel-suica-pasmo/"
+        3:
+          text: "这些标志你看得懂吗？在日本开车须知：道路交通标志基础篇"
+          url: "https://www.tsunagujapan.com/zh-hans/self-driving-in-japan-road-sign/"
+        4:
+          text: "【关东自由行】一券在手畅游无阻！精选关东地区11张超值优惠一日券"
+          url: "https://www.tsunagujapan.com/zh-hans/useful-one-day-transport-passes-in-tokyo/"
+        5:
+          text: "【实用资讯】关西交通攻略整理！精选关西地区9张超值优惠一日券"
+          url: "https://www.tsunagujapan.com/zh-hans/kansai-useful-one-day-transport-passes/"
+      2:
+        title: "金钱"
+        description: "无现金支付，日本纸币和货币兑换方法等金钱相关资讯。"
+        1:
+          text: "【日本购物】日本旅行最后剩下1000日元能买什么？精选10种出境前的最佳运用方式"
+          url: "https://www.tsunagujapan.com/zh-hans/10-things-you-can-buy-with-your-last-1000-yen-before-leaving-japan/"
+        2:
+          text: "【实用资讯】旅行前必读！如何在日本兑换、提取和储存日元"
+          url: "https://www.tsunagujapan.com/zh-hans/where-to-exchange-money-in-japan/"
+        3:
+          text: "【日本自由行】【永久保存版】日本旅游省钱大作战38招"
+          url: "https://www.tsunagujapan.com/zh-hans/saving-money/"
+        4:
+          text: "只有日本人才知道！精选7种在日本精打细算的购物方式"
+          url: "https://www.tsunagujapan.com/zh-hans/7-useful-tips-on-how-to-shop-like-a-local-in-japan/"
+        5:
+          text: "日本物价真的很高吗？精选8种让外国人惊讶的便宜之物"
+          url: "https://www.tsunagujapan.com/zh-hans/8-surprisingly-cheap-things-in-japan/"
+      3:
+        title: "礼仪"
+        description: "便利实用的日语和日本独特的规则等，日本礼仪相关资讯。"
+        1:
+          text: "连吃饭都不可以轻视忽略！在日本使用筷子的10样禁忌"
+          url: "https://www.tsunagujapan.com/zh-hans/ohashi-taboo-10/"
+        2:
+          text: "酒类自动售货机？边搭电车边喝酒？5种令外国人叹为观止的日本饮酒文化"
+          url: "https://www.tsunagujapan.com/zh-hans/5-shocking-things-about-japanese-drinking-culture/"
+        3:
+          text: "日本是酒精爱好者的天堂？精选日本5种令外国人羡慕的特有饮酒文化"
+          url: "https://www.tsunagujapan.com/zh-hans/5-reasons-why-drinking-in-japan-is-great-according-to-expats/"
+        4:
+          text: "如何正确享用寿司又不失礼？寿司小知识与东京推荐店家不藏私大公开"
+          url: "https://www.tsunagujapan.com/zh-hans/dos-and-donts-the-correct-way-to-eat-sushi/"
+        5:
+          text: "去日本拉面店前应该知道的5件事"
+          url: "https://www.tsunagujapan.com/zh-hans/5-important-things-to-know-before-entering-a-japanese-ramen-shop/"
+      4:
+        title: "小知识"
+        description: "了解这些小知识让你受益匪浅，让你的日本旅行更加愉快。"
+        1:
+          text: "日本国花是樱花吗？你所不知道的日本樱花豆知识"
+          url: "https://www.tsunagujapan.com/zh-hans/facts-about-sakura-cherry-blossom/"
+        2:
+          text: "日本牛奶真的比较好喝吗？包装盒上为何“缺一角”？日本牛奶小知识"
+          url: "https://www.tsunagujapan.com/zh-hans/japan-milk-package-design/"
+        3:
+          text: "日本店家很早就打烊？！关于日本各类店家设施的营业时间小知识"
+          url: "https://www.tsunagujapan.com/zh-hans/opening-hours-japan/"
+        4:
+          text: "梅酒必喝必买攻略！美味小知识与选购秘诀懒人包"
+          url: "https://www.tsunagujapan.com/zh-hans/all-about-japan-umeshu/"
+        5:
+          text: "割引？買得？日本购物必记折扣关键单字 让你钱包省更多"
+          url: "https://www.tsunagujapan.com/zh-hans/japanese-discount-keywords/"
+      5:
+        title: "紧急事态(医疗、灾害、法律)"
+        description: "受伤、生病、灾害等紧急情况下的应对方法，以及在日本期间的注意事项等相关资讯。"
+        1:
+          text: "【实用资讯】不怕一万只怕万一！日本旅游前必备避难知识及应变方法"
+          url: "https://www.tsunagujapan.com/zh-hans/tips-and-advice-staying-safe-natural-disasters-japan/"
+        2:
+          text: "【实用资讯】在日本几岁能喝酒、抽烟呢？访日前应知道的8条日本法律及特有规定"
+          url: "https://www.tsunagujapan.com/zh-hans/8-laws-you-should-know-about-before-coming-to-japan/"
+        3:
+          text: "【实用资讯】治安良好仍需注意！日本8项旅游须知 街道篇"
+          url: "https://www.tsunagujapan.com/zh-hans/8-situations-to-be-aware-of-when-visiting-japan/"
+        4:
+          text: "【实用资讯】让日本人来告诉你！外国人在日本受伤或生病时的8种应对方法"
+          url: "https://www.tsunagujapan.com/zh-hans/what-to-do-when-you-get-sick-or-injured-according-to-locals/"
+        5:
+          text: "出国发生意外怎么办？为外国患者提供服务的日本医院"
+          url: "https://www.tsunagujapan.com/zh-hans/multilingual-hospitals-clinics-japan/"
+  article:
+    title: "文章列表"
+    desc: ""
+    translator: "Translator"
+    author: "作者"
+    banner:
+      coupon: "领取免税折扣优惠券！"
+  hotel:
+    name1: "Agoda"
+    short1: "A"
+    name2: "Booking.com"
+    short2: "B"
+    bookWith1: "用Agoda预约"
+    bookWith2: "用Booking预约"
+    bookWith3: "用Relux预约"
+  hotel-lp:
+    title_html: "tsunagu Japan <br> editorial department carefully selected!<br>Special homepage introduction"
+    desc_headline: "特別的旅行，就從特別的住宿開始！"
+    desc: "日本據說約有5萬間的酒店及旅館，想要從中挑選其一實在很困難。在此，tsunagu Japan編輯部在獨自擁有的全日本住宿資訊平台中，為您嚴選了數一數二的酒店及旅館！尤其是還有一般訂房網所沒有刊登的旅館及酒店，請您無論如何都要參考看看喔！"
+    starting: "Starting from"
+    pickup: "New Pickup"
+    website: "官方网站"
+    website_sub_html: "官方網站更超值!"
+    website_sub_recommend_text: "tsunagu Japan特別介紹的旅宿！"
+    related: "Related Article"
+    hotel_price_tax_html: "Excluding taxes and fees <br> It is a charge for two people in one room."
+    notice:
+      change: "本網站刊載資訊可能會有日後更動的情況，建議您事前確認。"
+      estimated: "此價格為淡季、1泊2食、2人1房（不含消費稅、溫泉稅及服務費）時1人的住宿費用。刊載的房間費用也會因利用人數、季節、客房型態、料理方案等而有所變動。"
+      communication: "並非隨時都有會外文的職員常駐。不便之處，敬請見諒。"
+    features:
+      bar: "酒吧"
+      parking: "酒吧"
+      bus: "含接送"
+      wifi: "Wi-Fi"
+      onsen: "溫泉"
+      smoking: "吸菸房"
+      nosmoking: "禁菸房"
+      smokingspace: "吸菸處"
+      english: "可對應英文"
+      chinese: "可對應中文"
+  hotelpage:
+    labels:
+      name: "饭店名称"
+      desc: "描述"
+      price: "价格"
+      location: "位置"
+      reference: "引用"
+      book: "book at"
+      info: "资讯"
+  source: "来源"
+  sns:
+    share: "分享"
+    pin: "pin"
+    tweet: "推特"
+  lang:
+    zh-hant: "繁体中文"
+    zh-hans: "简体中文"
+    ko: "韩文"
+    vi: "越南文"
+    en: "英文"
+    ja: "日文"
+    th: "泰文"
+    id: "印尼文"
+  footer:
+    about: "关于tsunagu Japan"
+    tsunagudesc: "tsunagu Japan是一个日本旅游资讯的分享平台。资讯内容包括旅行计划建议、逗留于日本期间的实用小技巧，以及日本文化的相关知识介绍，让你的旅途更加充实愉快。我们希望能将日本的全貌呈现于你的眼前!"
+    contact: "联系我们"
+    login: "登录"
+    logout: "登出"
+    company: "公司简介"
+    privacy: "隐私权和保护政策"
+    terms: "使用规章"
+  email_html: "tsunagu Japan <br>
+<a href=\"https://www.tsunagujapan.com/\">https://www.tsunagujapan.com/</a><br>
+株式会社D2C X<br>
+东京都港区东新桥1-9-1 东京汐留大楼<br>
+<a href=\"https://www.d2cx.co.jp/\">https://www.d2cx.co.jp/</a>"
+
+  wowjapan:
+    desc: "日本旅行观光网站WOW! JAPAN于2021年9月15日关闭。<br><br>部分WOW! JAPAN过去的人气文章收录于本页面。"
+  covid:
+    subtitle: "日本应对新冠病毒感染对策的设施指南"
+    desc: "为了让大家安心享受日本旅行，下面介绍一下日本旅游设施的新型冠状病毒感染对策。"
+    search_button: "搜索采取新型冠状病毒感染症对策的设施"
+    how:
+      title: "日本新型冠状病毒感染症对策"
+      sub: "避免三密！"
+      desc_html: "日本政府呼吁，为了防止新型冠状病毒感染扩大，除了要注意咳嗽礼节和手部卫生之外，还要避免三密(密闭、密集、密切)。<br><br>*咳嗽礼节：咳嗽、打喷嚏时以口罩、卫生纸、手帕、袖子、手肘内侧遮掩口鼻。"
+      1:
+        repletion: "换气不畅"
+        keyword_html: "<span>密</span>闭空间"
+      2:
+        repletion: "多人聚集"
+        keyword_html: "<span>密</span>集空间"
+      3:
+        repletion: "近距离对话或交谈"
+        keyword_html: "<span>密</span>切接触"
+      additional_html: "如果想了解更多关于新型冠状病毒感染对策相关信息，请于<a href='https://corona.go.jp/zh-cn/' target='_blank'>“新型冠状病毒感染症对策推进室(内阁官房)”</a>官网查看。"
+    about:
+      title: "关于日本新型冠状病毒的信息"
+      1:
+        text: "关于限制入境的国家地区，入境检疫（隔离措施），签证限制等资讯"
+        url1_title: "外务省海外安全主页"
+        url1: "https://www.anzen.mofa.go.jp/"
+        url2_title: "法务省 出入国在留管理厅"
+        url2: "https://www.isa.go.jp/zh-cn/nyuukokukanri01_00151.html"
+        desc: "※以下措施有可能在无通知的情况下变更。请确认最新资讯。"
+      2:
+        text: "关于入境措施（出示检查证明，注册必须安装的APP等）"
+        url1_title: "厚生劳动省"
+        url1: "https://www.mhlw.go.jp/stf/covid-19/bordercontrol.html"
+      3:
+        text: "日本疫苗注射情况"
+        url1_title: "首相官邸主页（日文）"
+        url1: "https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html"
+        url2_title: "首相官邸主页（英文）"
+        url2: "https://japan.kantei.go.jp/ongoingtopics/vaccine.html"
+    place_list:
+      title: "采取应对感染措施的设施信息"
+      all: "All Category"
+      transport: "交通机关"
+      hotel: "酒店"
+      shop: "商店"
+      restaurant: "餐厅"
+      sightseeing: "景点"
+      other: "户外活动/其他"
+      category: "分类"
+      category_ph: "按分类搜索"
+      area: "区域"
+      area_ph: "按区域搜索"
+      add_area: "追加区域"
+    result:
+      count_total: " 件"
+      #      current_count_html: "显示<span class='count_start'></span>件〜<span class='count_end'></span>件（按字母顺序排列）"
+      current_count_html: "(按字母顺序排列)"
+      title: "搜索结果"
+      unit: "件"
+      icon:
+        title: "新冠病毒感染对策图标一览"
+        cashless: "接受非现金支付"
+        distance: "确保人与人之间的距离"
+        gargle: "员工彻底漱口"
+        hand: "员工手部消毒"
+        mask: "员工佩戴口罩"
+        sanitizer: "摆放手部消毒液"
+        sheet: "设置隔板"
+        spray: "实施设施空间消毒"
+        temperature: "员工测量体温"
+        thermograph: "设置自动检测体温仪器"
+        tray: "结账时使用托盘"
+        vent: "保持空气流通"
+      show_more_html: "<i class='fas fa-plus'></i>  显示更多"
+      show_less_html: "<i class='fas fa-minus'></i>  显示更少"
+      read_more: "显示更多"
+      read_less: "显示更少"
+      website: "Official Website"
+    featured_articles: "推荐文章"
+
+    more_info: "请从以下内容确认各企业的安心・安全对策"
+    details:
+      description: "设施介绍"
+      safety_description: "安心·安全对策"
+      benefit: "优惠"
+      disclaimer: "最新相关信息，请参考官方主页"
+      headline: "日本为预防新型冠状病毒所采取的安全措施"
+      teaser_desc_html: "作为新型冠状病毒感染对策，日本政府提出了回避“三密”原则。
+      “三密”是指“密闭”、“密集”、“密接”，指通风不好的“密闭空间”、人多的“密集场所”、近距离说话的“密切接触”，呼吁大家尽量规避这三种场景。
+      在这样的政策下，日本各企事业为了防止新型冠状病毒感染，制定了“安心·安全对策”，下面具体介绍实施了怎样的措施。"
+      menu:
+        headline: "各企业防疫措施"
+        transport: "機場・大眾運輸"
+        accommodate: "机场・公共交通机关"
+        restaurant: "餐厅"
+        shops: "购物场所"
+        sightseeing: "观光"
+        other: "体验/其他"
+      descs:
+        transport: "作为将世界各地的旅客迎入，送出日本的机场，出行移动必需的电车和公交等公共交通，人流密集，新型冠状病毒传播风险高。下面介绍在这样的机场和公共交通机关为了防止新型冠状病毒感染，而采取的的安心·安全对策。"
+        accommodate: "旅行的乐趣有很多，比如景点观光，美食等，其中住什么样的酒店，旅馆也是为旅途增色的重点。
+        正因为是让人放松和休息的地方，所以安心居住尤为重要。
+        这里介绍在各个住宿设施实施的，为了防止新型冠状病毒感染的安心·安全对策。"
+        restaurant: "很多人会把“吃”作为旅行最大的乐趣吧！
+        一边品味着当地的特色美食，一边和家人、朋友围坐在餐桌前的尽情享受，是旅行的乐趣之一。
+        餐厅被认为是感染风险高，接触和飞沫传染频发的场所。
+        各家饮食店严格执行新型冠状病毒感染防止对策，确保客人放心愉快的吃饭!"
+        shops: "寻觅当地的特产和杂货，是旅途中不可错过的乐趣之一。
+        下面介绍各个购物场所实行的安心・安全措施，包括在人流聚集的地方购，进行消毒，换气等。"
+        sightseeing: "主题公园、美术馆、博物馆、寺庙神社、古城等，很多人在访日的时候，都会期待感受日本的历史文化。但是，这样的地方，往往都会聚集着包括日本人在内的大量人群。这样的密集状态令人不安。
+        这里介绍人流密集的各观光景点，采取的应对新型冠状病毒感染的安心·安全对策。"
+        other: "来日本的话，想体验一下日本文化的人应该很多吧。为了让您安心地进行这里特有的珍贵体验，请确认体验活动时的安心·安全对策!
+        同时介绍在日本旅行中，其他各场所的新型冠状病毒感染预防对策。"
+    teaster:
+      headline_html: "安全游日本"
+      headline_m_html: "安全游日本"
+      sub: "新型冠状病毒袭击全世界。
+      我们祈祷疫情早日结束的同时，也希望能向滞留日本的外国人和
+      关心日本情形的各位，及时传达相关信息。
+      衷心希望能尽快欢迎所有的外国朋友到访日本。"
+    information:
+      headline: "在新型冠状病毒肆虐的当下，应该关注的信息"
+    safety:
+      headline: "日本为预防新型冠状病毒所采取的安全措施"
+      sub: "下面将依次介绍日本各大企业为预防新型冠状病毒感染而采取的对策。"
+      content:
+        h3: "公共交通机关"
+        sub: "电车、公共汽车等公共交通工具不仅是旅客出行的主要交通工具，也是日本人的“脚”。
+        主要采取的预防措施包括：
+        车内换气、车内消毒、乘务员佩戴口罩等。"
+      info:
+        mask:
+          headline: "配戴口罩"
+          sub: "为防止飞沫传染，职员配戴口罩"
+        hand_san:
+            headline: "摆放消毒液"
+            sub: "馆内各处摆放消毒液"
+        temp:
+            headline: "身体状况管理"
+            sub: "职员身体状况管理"
+        sheets:
+            headline: "设置塑料隔板"
+            sub: "为防止飞沫传染，收银处设置塑料隔板"
+        distance:
+            headline: "安全距离"
+            sub: "顾客之间保持安全距离"
+        first:
+          headline: "换气"
+          sub: "通过车窗开放，达到车内换气的目的"
+        second:
+          headline: "消毒"
+          sub: "车内设备和车内空间消毒"
+        third:
+          headline: "佩戴口罩"
+          sub: "为预防飞沫感染，乘务员佩戴口罩"
+      outgoing:
+        headline: "如有使用需求，请于各机关官网确认详情。"
+        link1: "JR东日本"
+        link2: "东京地铁"
+        link3: "都营地铁"
+        link4: "京急电铁"
+        link5: "京成电铁"
+        link6: "东京单轨电车"
+        link7: "阪急电铁"
+        link8: "南海"
+        link13: "京阪"
+        link9: "大阪地铁"
+        link10: "机场巴士"
+        link11: "大型出租车公司"
+        link12: "JR东海"
+    forward:
+        headline: "日本国内新型冠状病毒相关资讯合集"
+        sub: "日本国内最新新型冠状病毒资讯，请于各个政府机关官网确认。"
+        link1: "东京都"
+        link2: "厚生劳动省"
+        link3: "外务省 海外安全网"
+    learning:
+        headline_html: "深度日本 &amp; 行程规划"
+        learning: "深度日本"
+        planing: "行程规划"
+        sub: "用在家的时间来感受一下旅行的心情吧！那些你还不知道的日本风景名胜，值得二次拜访的绝景，闻名世界的向日本文化和常识知识，tsunagu Japan的在日工作人员严选以上资讯给你！"
+  cookieconsent:
+    message: "本网站使用Cookie技术来确保您在网站上获得最佳用户体验。"
+    dismiss: "同意"
+    link: "了解详情"
+    href: "https://www.tsunagujapan.com/zh-hans/privacy/"

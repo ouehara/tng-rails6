@@ -1,0 +1,31 @@
+
+<%= render 'page_title' %>
+
+<div class="row">
+<div class='well'>
+<h2>Import from csv</h2>
+<%= form_for @area, url: import_admin_areas_path, html: { multipart: true, } do |f| %>
+  <%= f.file_field :import_file %>
+  <%= f.submit 'Import', :class=> 'btn btn-default' %>
+<% end %>
+</div>
+<%= link_to "Export to CSV", admin_areas_path(format: :csv) %>
+</div>
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index</h2>
+      <%= link_to new_admin_area_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+      <%= render_sortable_tree(@items, {name_method: :name, sort_url: sort_admin_areas_url, max_levels: 3,controls_partial: 'controls'}) %>
+
+
+      </div>
+    </div>
+  </div>

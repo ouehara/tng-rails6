@@ -1,0 +1,9 @@
+    <div>
+      <% @areaList.each do |area| %>
+        <% area.children.each do |child| %>
+          <% if @availAreas.include?(child.id) %>
+          <%= link_to child.name, categoryListing_path(@category, child), :class => "sort-area"%>
+          <% end %>
+        <% end %>    
+      <% end %>
+    </div>

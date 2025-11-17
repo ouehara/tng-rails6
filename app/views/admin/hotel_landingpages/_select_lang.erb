@@ -1,0 +1,3 @@
+<%= form_tag select_pickup_admin_hotel_landingpages_path(I18n.locale), :method => :get,:class => 'locale', :remote => true do %>
+<%= select_tag 'set_locale',  options_for_select( I18n.available_locales, :selected => params[:set_locale]), :onchange => 'this.form.submit()' %>
+<% end %>

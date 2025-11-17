@@ -1,0 +1,31 @@
+<div class="container nopadding-container restaurant-wrapper">
+  <div class="col-xs-12">
+    <h1><%= title t("savor.restaurant_search")%></h1>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <%= render "sidebar_headline", :title => t("savor.sidebar.s_keyword") %>
+    <div class="restaurant_search_sidebar_container">
+      <%= form_tag({controller: "restaurant_search", action: "search"}, method: "get", class: "nifty_form") %>
+        <%= text_area_tag :keywords,  params[:keywords], class:"keyword_search", placeholder: t("savor.sidebar.placeholder_keyword")%>
+        <button class="btn btn-orange btn-block">
+          <span class="glyphicon glyphicon-search"></span>
+          <%=t("savor.sidebar.search")%>
+        </button>
+    </div>
+  </div>
+  <div class="col-sm-8 col-xs-12 rest-area-container">
+    <%= render "sidebar_headline", :title => t("savor.search_by") %>
+    <% if browser.device.mobile? %>
+      <%= render "index_mobile" %>
+    <% else %>
+      <%= render "index_desktop" %>
+    <% end %>
+  </div>
+</div>
+<script>
+document.addEventListener("turbolinks:load", function() {
+  new app.SavorLocation;
+  new app.SavorCuisine;
+  new app.dropDowns;
+})
+</script>

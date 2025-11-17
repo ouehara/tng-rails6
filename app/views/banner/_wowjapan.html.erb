@@ -1,0 +1,21 @@
+<% if I18n.locale.to_s == "ja" %>
+  <a href="https://www.nttdocomo.co.jp/service/d_wifi/?utm_source=dmenu_wowjapan&utm_medium=free-display&utm_campaign=corp_202006_from-wowjapan-to-crp-ser-dwifi" class="d-inline-block" onClick="ga('send','event','banner','click','dWiFibanner-ja', 1)">
+    <img src="<%= asset_pack_path("media/images/banner/wowjapan/ja.jpg")%>" class="img-responsive">
+  </a>
+<% elsif I18n.locale.to_s == "zh-hans" %>
+  <a href="https://d-members.com/zhs/dwifi/index.html?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=202108-dWiFi-tsunagubanner&utm_content=zhs-1" class="d-inline-block" onClick="ga('send','event','banner','click','dWiFibanner-zhhans', 1)">
+    <img src="<%= asset_pack_path("media/images/banner/wowjapan/zh-hans.jpg")%>" class="img-responsive">
+  </a>
+<% elsif I18n.locale.to_s == "zh-hant" %>
+  <a href="https://d-members.com/zht/dwifi/index.html?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=202108-dWiFi-tsunagubanner&utm_content=zht-1" class="d-inline-block" onClick="ga('send','event','banner','click','dWiFibanner-zhhant', 1)">
+    <img src="<%= asset_pack_path("media/images/banner/wowjapan/zh-hant.jpg")%>" class="img-responsive">
+  </a>
+<% elsif I18n.locale.to_s == "ko" %>
+  <a href="https://d-members.com/ko/dwifi/index.html?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=202108-dWiFi-tsunagubanner&utm_content=ko-1" class="d-inline-block" onClick="ga('send','event','banner','click','dWiFibanner-ko', 1)">
+    <img src="<%= asset_pack_path("media/images/banner/wowjapan/ko.jpg")%>" class="img-responsive">
+  </a>
+<% else %>
+  <a href="https://d-members.com/en/dwifi/index.html?utm_source=tsunagujapan&utm_medium=banner&utm_campaign=202108-dWiFi-tsunagubanner&utm_content=en-1" class="d-inline-block" onClick="ga('send','event','banner','click','dWiFibanner-en', 1)">
+    <img src="<%= asset_pack_path("media/images/banner/wowjapan/en.jpg")%>" class="img-responsive">
+  </a>
+<% end %>

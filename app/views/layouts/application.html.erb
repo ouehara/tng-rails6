@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="<%= t('langAttribute') %>">
+<head>
+  <meta charset="UTF-8">
+  <%= display_meta_tags(default_meta_tags) %>
+  <%= csrf_meta_tags %>
+  <!-- Lighthouse Details -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#C50001">
+  <%= canonical_tag -%>
+  <!-- CookieConsent CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <% if @show_bar %>
+    <%= stylesheet_link_tag 'application_admin', media: 'all', 'data-turbolinks-track'=> true %>
+    <%= stylesheet_pack_tag 'admin', media: "print", onload: "this.media='all'" %>
+  <% end %>
+  <%= stylesheet_pack_tag 'app', media: "print", onload: "this.media='all'" %>
+  <% if I18n.locale.to_s == "th" %>
+    <%= stylesheet_pack_tag 'th_font' %>
+  <% end %>
+  <%= render 'shared/favicon' %>
+  <% if I18n.locale.to_s == 'ko' || I18n.locale.to_s == 'en' %>
+    <meta name="naver-site-verification" content="26e17e4844190f65ebd4d223cc8aff61b2c65418" />
+  <% end %>
+
+  <script>
+    var locales = "<%= I18n.locale %>"
+    var availableLocale = <%= raw I18n.available_locales.to_json %>
+  </script>
+
+  <%= render partial: "shared/gtm_head" %>
+
+  <% if I18n.locale.to_s == "ko" %>
+    <%= render partial: "shared/naver_analytics" %>
+  <% end %>
+
+  <%= yield :head %>
+</head>
+
+<body class="<%= yield (:body_class) %> <%= I18n.locale %>">
+<%= render partial: "shared/gtm_body" %>
+
+  <% if @show_bar %>
+  <div class="admin-nav-bar"><%= render "shared/admin_bar" %></div>
+  <% end %>
+
+  <%= render "shared/header" %>
+
+  <main class="l-main" id="top">
+  <% if controller.controller_name == "articles" &&
+  controller.action_name == "edit"%> <%= yield %> <% else %> <%= yield %> <%
+  end %> <% if !current_page?(root_url) %>
+  </main>
+  <% end %>
+
+  <%= render "shared/footer" %>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" data-turbolinks="false"></script>
+  <%= yield :foot %>
+  <%= render partial: "shared/cookieconsent" %>
+
+  <%= javascript_packs_with_chunks_tag javascript_pack_name, javascript_pack_options %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true, 'defer' => true %>
+
+  <%= render partial: "shared/analytics" %>
+</body>
+</html>

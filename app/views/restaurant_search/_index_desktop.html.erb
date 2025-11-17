@@ -1,0 +1,123 @@
+<div class="rest-area-row">
+      <%= link_to search_restaurant_search_index_path(:location => "Tokyo",:loc_type => "prefectures"), :class => "area-container-wrapper" do%>
+        <%= image_tag asset_pack_path("media/images/restaurant/areas/tokyo.png"), :class =>"img-responsive" %>
+        <div class="rest-link-title"><%= t("savor.tokyo")%><span class="icons icon-arrow-right"></span></div>
+      <%end%>
+
+      <div class="area-container-wrapper area-container-wrapper-hover">
+        <%= image_tag asset_pack_path("media/images/restaurant/areas/near_tokyo.png"), :class =>"img-responsive" %>
+          <div class="rest-link-title"><%= t("savor.near_tokyo") %><span class="icons icon-arrow-right"></span>
+            <div class="hidden area-sub-links">
+              <%= link_to t("savor.tokyo_sub.kanagawa"), search_restaurant_search_index_path(:location => "Kanagawa",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.tokyo_sub.chiba"), search_restaurant_search_index_path(:location => "Chiba",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.tokyo_sub.tochigi"), search_restaurant_search_index_path(:location => "Tochigi",:loc_type => "prefectures") , :class => "filter-contents"%>
+              <%= link_to t("savor.tokyo_sub.gunma"), search_restaurant_search_index_path(:location => "Gunma",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.tokyo_sub.saitama"), search_restaurant_search_index_path(:location => "Saitama",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.tokyo_sub.ibaraki"), search_restaurant_search_index_path(:location => "Ibaraki",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.tokyo_sub.shizuoka"), search_restaurant_search_index_path(:location => "Shizuoka",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.tokyo_sub.yamanashi"), search_restaurant_search_index_path(:location => "Yamanashi",:loc_type => "prefectures"), :class => "filter-contents" %>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="rest-area-row">
+      <div class="rest-single-row-height kyoto-row">
+        <div class="area-container-wrapper area-container-wrapper-hover">
+          <%= image_tag asset_pack_path("media/images/restaurant/areas/osaka.png"), :class =>"img-responsive" %>
+          <div class="rest-link-title"><%= t("savor.kyoto") %><span class="icons icon-arrow-right"></span>
+            <div class="hidden area-sub-links">
+              <%= link_to t("savor.kyoto_sub.kyoto"), search_restaurant_search_index_path(:location => "Kyoto",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyoto_sub.osaka"), search_restaurant_search_index_path(:location => "Osaka",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyoto_sub.hyogo"), search_restaurant_search_index_path(:location => "Hyogo",:loc_type => "prefectures") , :class => "filter-contents"%>
+              <%= link_to t("savor.kyoto_sub.nara"), search_restaurant_search_index_path(:location => "Nara",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyoto_sub.shiga"), search_restaurant_search_index_path(:location => "Shiga",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyoto_sub.wakayama"), search_restaurant_search_index_path(:location => "Wakayama",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyoto_sub.mie"), search_restaurant_search_index_path(:location => "Mie",:loc_type => "prefectures"), :class => "filter-contents" %>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="rest-single-row-width">
+        <%= link_to search_restaurant_search_index_path(:location => "Hokkaido",:loc_type => "prefectures"),  :class => "area-container-wrapper" do%>
+          <%= image_tag asset_pack_path("media/images/restaurant/areas/hokkaido.png"), :class =>"img-responsive" %>
+          <div class="rest-link-title"><%= t("savor.hokkaido") %><span class="icons icon-arrow-right"></span></div>
+        <%end%>
+      
+        <div class="area-container-wrapper area-container-wrapper-hover">
+          <%= image_tag asset_pack_path("media/images/restaurant/areas/northern_honshu.png"), :class =>"img-responsive" %>
+          <div class="rest-link-title"><%= t("savor.northern_honshu") %><span class="icons icon-arrow-right"></span>
+            <div class="hidden area-sub-links">
+              <%= link_to t("savor.honshu_sub.miyagi"), search_restaurant_search_index_path(:location => "Miyagi",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.honshu_sub.fukushima"), search_restaurant_search_index_path(:location => "Fukushima",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.honshu_sub.yamagata"), search_restaurant_search_index_path(:location => "Yamagata",:loc_type => "prefectures") , :class => "filter-contents"%>
+              <%= link_to t("savor.honshu_sub.iwate"), search_restaurant_search_index_path(:location => "Iwate",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.honshu_sub.akita"), search_restaurant_search_index_path(:location => "Akita",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.honshu_sub.aomori"), search_restaurant_search_index_path(:location => "Aomori",:loc_type => "prefectures"), :class => "filter-contents" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rest-single-row-width">
+        <div class="area-container-wrapper area-container-wrapper-hover">  
+            <%= image_tag asset_pack_path("media/images/restaurant/areas/central_honshu.png"), :class =>"img-responsive" %>
+            <div class="rest-link-title"><%= t("savor.central_honshu") %><span class="icons icon-arrow-right"></span>
+              <div class="hidden area-sub-links">
+                <%= link_to t("savor.honshu_sub.aichi"), search_restaurant_search_index_path(:location => "Aichi",:loc_type => "prefectures"), :class => "filter-contents" %>
+                <%= link_to t("savor.honshu_sub.shizuoka"), search_restaurant_search_index_path(:location => "Shizuoka",:loc_type => "prefectures"), :class => "filter-contents" %>
+                <%= link_to t("savor.honshu_sub.gifu"), search_restaurant_search_index_path(:location => "Gifu",:loc_type => "prefectures") , :class => "filter-contents"%>
+                <%= link_to t("savor.honshu_sub.ishikawa"), search_restaurant_search_index_path(:location => "Ishikawa",:loc_type => "prefectures"), :class => "filter-contents" %>
+                <%= link_to t("savor.honshu_sub.nagano"), search_restaurant_search_index_path(:location => "Nagano",:loc_type => "prefectures"), :class => "filter-contents" %>
+                <%= link_to t("savor.honshu_sub.niigata"), search_restaurant_search_index_path(:location => "Niigata",:loc_type => "prefectures"), :class => "filter-contents" %>
+                <%= link_to t("savor.honshu_sub.toyama"), search_restaurant_search_index_path(:location => "Toyama",:loc_type => "prefectures"), :class => "filter-contents" %>
+                <%= link_to t("savor.honshu_sub.fukui"), search_restaurant_search_index_path(:location => "Fukui",:loc_type => "prefectures"), :class => "filter-contents" %>
+                <%= link_to t("savor.honshu_sub.yamanashi"), search_restaurant_search_index_path(:location => "Yamanashi",:loc_type => "prefectures"), :class => "filter-contents" %>
+              </div>  
+            </div>
+          </div>
+        
+        <div class="area-container-wrapper area-container-wrapper-hover">
+          <%= image_tag asset_pack_path("media/images/restaurant/areas/western_honshu.png"), :class =>"img-responsive" %>
+          <div class="rest-link-title"><%= t("savor.western_honshu") %><span class="icons icon-arrow-right"></span>
+            <div class="hidden area-sub-links">
+              <%= link_to t("savor.honshu_sub.hiroshima"), search_restaurant_search_index_path(:location => "Hiroshima",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.honshu_sub.okayama"), search_restaurant_search_index_path(:location => "Okayama",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.honshu_sub.shimane"), search_restaurant_search_index_path(:location => "Shimane",:loc_type => "prefectures") , :class => "filter-contents"%>
+              <%= link_to t("savor.honshu_sub.tottori"), search_restaurant_search_index_path(:location => "Tottori",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.honshu_sub.yamaguchi"), search_restaurant_search_index_path(:location => "Yamaguchi",:loc_type => "prefectures"), :class => "filter-contents" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rest-area-row">
+      <div class="area-container-wrapper area-container-wrapper-hover">
+        <%= image_tag asset_pack_path("media/images/restaurant/areas/shikoku.png"), :class =>"img-responsive" %>
+        <div class="rest-link-title"><%= t("savor.shikoku") %><span class="icons icon-arrow-right"></span>
+          <div class="hidden area-sub-links">
+              <%= link_to t("savor.shikoku_sub.ehime"), search_restaurant_search_index_path(:location => "Ehime",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.shikoku_sub.kagawa"), search_restaurant_search_index_path(:location => "Kagawa",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.shikoku_sub.kochi"), search_restaurant_search_index_path(:location => "Kochi",:loc_type => "prefectures") , :class => "filter-contents"%>
+              <%= link_to t("savor.shikoku_sub.tokushima"), search_restaurant_search_index_path(:location => "Tokushima",:loc_type => "prefectures"), :class => "filter-contents" %>
+            </div>
+        </div>
+      </div>
+      <div class="area-container-wrapper area-container-wrapper-hover">
+        <%= image_tag asset_pack_path("media/images/restaurant/areas/kyushu.png"), :class =>"img-responsive" %>
+        <div class="rest-link-title"><%= t("savor.kyushu") %><span class="icons icon-arrow-right"></span>
+          <div class="hidden area-sub-links">
+              <%= link_to t("savor.kyushu_sub.fukuoka"), search_restaurant_search_index_path(:location => "Fukuoka",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyushu_sub.kagoshima"), search_restaurant_search_index_path(:location => "Kagoshima",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyushu_sub.kumamoto"), search_restaurant_search_index_path(:location => "Kumamoto",:loc_type => "prefectures") , :class => "filter-contents"%>
+              <%= link_to t("savor.kyushu_sub.miyazaki"), search_restaurant_search_index_path(:location => "Miyazaki",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyushu_sub.nagasaki"), search_restaurant_search_index_path(:location => "Nagasaki",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyushu_sub.oita"), search_restaurant_search_index_path(:location => "Oita",:loc_type => "prefectures"), :class => "filter-contents" %>
+              <%= link_to t("savor.kyushu_sub.saga"), search_restaurant_search_index_path(:location => "Saga",:loc_type => "prefectures"), :class => "filter-contents" %>
+          </div>
+        </div>
+      </div>
+      <%= link_to search_restaurant_search_index_path(:location => "Okinawa",:loc_type => "prefectures"),  :class => "area-container-wrapper" do%>
+        <%= image_tag asset_pack_path("media/images/restaurant/areas/okinawa.png"), :class =>"img-responsive" %>
+        <div class="rest-link-title"><%= t("savor.okinawa") %><span class="icons icon-arrow-right"></span></div>
+      <%end%>
+    </div>

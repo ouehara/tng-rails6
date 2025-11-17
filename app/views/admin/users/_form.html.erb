@@ -1,0 +1,148 @@
+<%= form_for([:admin, @user], html: { class: "form" }) do |f| %>
+  <% if @user.errors.any? %>
+    <%= render partial: 'admin/shared/error_message', locals: { resource: @user } %>
+  <% end %>
+
+  <% if false %>
+  <div class="form-group">
+    <%= f.label :avatar %>
+    <div class="row">
+      <div class="col-sm-12">
+        <% if f.object.avatar.exists? %>
+        <div class="preview-avatar clickable-avatar" id="originalAvatar">
+          <%= image_tag f.object.avatar.url(:thumb), style: "max-width:100px;" %>
+        </div>
+        <% end %>
+        <div id="previewAvatar" class="preview-image clickable-preview" style="display:none; max-width:100px;">
+        </div>
+        <%= f.file_field :avatar %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, class: "form-control", placeholder: "Email", autocomplete: "off" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :username %>
+    <%= f.text_field :username, class: "form-control", placeholder: "Username", autocomplete: "off" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :has_page %>
+    <%= f.check_box :has_page,{ class: 'form-control' }%>
+  </div>
+  <% if current_user.administrator? %>
+  <div class="form-group">
+    <%= f.label :role %>
+    <%= f.select :role, User.roles.keys.to_a.map { |r| [r.capitalize, r] }, {}, { class: 'form-control' } %>
+  </div>
+  <%end%>
+  <div class="form-group">
+    <%= f.label :password %>
+    <% if @user.persisted? %>
+    <i>(leave blank if you don't want to change it)</i>
+    <% end %>
+    <%= f.password_field :password, class: "form-control", placeholder: "Password", autocomplete: "off" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Password", autocomplete: "off" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: "form-control" %>
+  </div>
+  <hr />
+  <p>Translate description</p>
+  <%
+    I18n.available_locales.each do |locale|
+    next if locale == :en
+  %>
+  <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#desc_<%=locale.to_s %>" aria-expanded="false" aria-controls="desc_<%=locale.to_s %>">
+    <%=locale.to_s %>
+  </a>
+  <% end %>
+  <%
+    I18n.available_locales.each do |locale|
+    next if locale == :en
+  %>
+    <div class="form-group collapse" id="desc_<%=locale.to_s %>">
+      <%= f.label "description_#{locale.to_s.underscore}" %>
+      <%= f.text_area "description_#{locale.to_s.underscore}", class: "form-control" %>
+    </div>
+  <% end %>
+  
+  <div class="form-group">
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar, class: "form-control" %>
+  </div>
+  <!-- sns !-->
+  <p>SNS</p>
+  <div class="form-group">
+    <%= f.label :facebook_en %>
+    <%= f.text_field :facebook_en, class: "form-control", placeholder: "add profile url" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :instagram_en %>
+    <%= f.text_field :instagram_en, class: "form-control", placeholder: "add profile url" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :twitter_en %>
+    <%= f.text_field :twitter_en, class: "form-control", placeholder: "add profile url" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :google_en %>
+    <%= f.text_field :google_en, class: "form-control", placeholder: "add profile url" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :pintrest_en %>
+    <%= f.text_field :pintrest_en, class: "form-control", placeholder: "add profile url" %>
+  </div>
+  <hr/>
+  <p>translate sns</p>
+  <div id="accordion" role="tablist" aria-multiselectable="false">
+  <%
+    I18n.available_locales.each do |locale|
+    next if locale == :en
+  %>    
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne<%=locale%>">
+          <h5 class="mb-0">
+            <a class="collapsed btn btn-primary btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne<%=locale%>" aria-expanded="false" aria-controls="collapseOne<%=locale%>">
+              <%=locale%>
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapseOne<%=locale%>" class="collapse" role="tabpanel" aria-labelledby="headingOne<%=locale%>">
+          <div class="card-block">
+            <div class="form-group">
+              <%= f.label "facebook_#{locale.to_s.underscore}" %>
+              <%= f.text_field "facebook_#{locale.to_s.underscore}", class: "form-control", placeholder: "add profile url" %>
+            </div>
+            <div class="form-group">
+              <%= f.label "instagram_#{locale.to_s.underscore}" %>
+              <%= f.text_field "instagram_#{locale.to_s.underscore}", class: "form-control", placeholder: "add profile url" %>
+            </div>
+            <div class="form-group">
+              <%= f.label "twitter_#{locale.to_s.underscore}" %>
+              <%= f.text_field "twitter_#{locale.to_s.underscore}", class: "form-control", placeholder: "add profile url" %>
+            </div>
+            <div class="form-group">
+              <%= f.label "google_#{locale.to_s.underscore}" %>
+              <%= f.text_field "google_#{locale.to_s.underscore}", class: "form-control", placeholder: "add profile url" %>
+            </div>
+            <div class="form-group">
+              <%= f.label "pintrest_#{locale.to_s.underscore}" %>
+              <%= f.text_field "pintrest_#{locale.to_s.underscore}", class: "form-control", placeholder: "add profile url" %>
+            </div>
+          </div>
+        </div>
+      </div>
+  <% end %>
+  </div>
+  <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

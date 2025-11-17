@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="contact-form">
+    <%= form_tag do %>
+      <div class="form-group">
+        <%= label_tag(:name, "Name:") %>
+        <%= text_field_tag(:name,'', class: "form-control") %>
+      </div>
+
+      <div class="form-group">
+        <%= label_tag(:email, "Email:") %>
+        <%= email_field(:user, :email, class: "form-control") %>
+      </div>
+
+      <div class="form-group">
+        <%= label_tag(:url, "Url:") %>
+        <%= url_field(:user, :url, class: "form-control") %>
+      </div>
+
+      <div class="form-group">
+        <%= label_tag(:select, "Option:") %>
+        <%= select_tag(:select, options_for_select([['Option1', 1], ['Option2', 2]]),{:class => 'form-control'}) %>
+      </div>
+
+      <div class="form-group">
+        <%= label_tag(:message, "Message:") %>
+        <%= text_area_tag(:message, '',class: "form-control") %>
+      </div>
+
+      <div class="form-group">
+        <%= submit_tag("Send", class: "form-control btn btn-blue") %>
+      </div>
+
+    <% end %>
+    </div>
+  </div>

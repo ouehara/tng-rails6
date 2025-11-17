@@ -1,0 +1,46 @@
+<%= form_for([:admin, @category], html: { class: "form" }) do |f| %>
+  <% if @category.errors.any? %>
+    <%= render partial: 'admin/shared/error_message', locals: { resource: @category } %>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    
+
+    <%= f.text_field :name, class: "form-control", placeholder: "category name", autocomplete: "off" %>
+    <%= f.label :description %>
+    <%= f.text_field :description, class: "form-control", placeholder: "category description", autocomplete: "off" %>
+    <%= f.label :seo_title %>
+    <%= f.text_field :seo_title, class: "form-control", placeholder: "displayed seo title", autocomplete: "off" %>
+    <%= f.label :css_class %>
+    <%= f.text_field :css_class, class: "form-control", placeholder: "css class", autocomplete: "off" %>
+    <%= f.label :active %>
+    <%= f.check_box :active%>
+    <br />
+    <label> select parent</label>
+    <%= f.select :parent_id, @categories %>
+    <input type="hidden" value="<%=I18n.locale %>" name="lang">
+  </div>
+  <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>
+<h3>Related Links</h3>
+<div class="related_cats">
+  <% @category.category_related_links.with_translations(I18n.locale).each do |rl| %>
+    <div class="rlcat" data-id="<%= rl.id %>">
+      <%= rl.title %> / <%= rl.link %>
+      <%= link_to 'Delete', [:admin, rl], method: :delete, data: { confirm: 'Are you sure?' },  remote: true %>
+    </div>
+  <% end %>
+</div>
+<%= form_for([:admin, CategoryRelatedLink.new(category_id: @category.id)], html: { class: "form", :remote=>true }) do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control", placeholder: "category name", autocomplete: "off" %>    
+    <%= f.label :link %>
+    <%= f.text_field :link, class: "form-control", placeholder: "category name", autocomplete: "off" %>    
+  </div>
+  <%= f.hidden_field :category_id, :value => @category.id%>
+
+  <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+<% end %>

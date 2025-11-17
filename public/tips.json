@@ -1,0 +1,41 @@
+{
+  "type": "is-travel",
+  "item": [
+    {
+      "id": "tips_transportation",
+      "disp_title": "transportation",
+      "url": "/category/travel-tips/g/transportation/",
+      "thumbnail": "/assets/top/pic_travel_01.jpg"
+    },
+    {
+      "id": "tips_manners",
+      "disp_title": "manners",
+      "url": "/category/travel-tips/g/manners-etiquette/",
+      "thumbnail": "/assets/top/pic_travel_02.jpg"
+    },
+    {
+      "id": "tips_budget",
+      "disp_title": "budget_travel",
+      "url": "/tag/budget-travel/",
+      "thumbnail": "/assets/top/pic_travel_03.jpg"
+    },
+    {
+      "id": "tips_candw",
+      "disp_title": "climate",
+      "url": "/category/travel-tips/g/weather-climate/",
+      "thumbnail": "/assets/top/pic_travel_04.jpg"
+    },
+    {
+      "id": "tips_itineraries",
+      "disp_title": "top_travel",
+      "url": "/category/things-to-do/g/suggested-travel-itineraries/",
+      "thumbnail": "/assets/top/pic_travel_05.jpg"
+    },
+    {
+      "id": "tips_fande",
+      "disp_title": "festival",
+      "url": "/category/things-to-do/g/events-festivals/",
+      "thumbnail": "/assets/top/pic_travel_06.jpg"
+    }
+  ]
+}

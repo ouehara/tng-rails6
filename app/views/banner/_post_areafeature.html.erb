@@ -1,0 +1,111 @@
+<% if @article.cached_area.names_depth_cache.include?('hokkaido-region') %>
+  <%# hokkaido %>
+  <% if I18n.locale.to_s != "ja" %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/hokkaido/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive", alt:t('area.feature.hokkaido.title'), :size => "770x150"), area_hokkaido_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-hokkaido", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+  <%# Klook Car Rentals %>
+  <% if !browser.device.mobile? %>
+    <!-- Desktop -->
+    <div class="post_areaBnr post_areaKlookBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/klook/pc/rental-o_770_280_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('area_banner.rentalcars.desc'), :size => "770x280"), t('area_banner.rentalcars.link'), target: :_blank, rel: "noopener sponsored", id: "post_areaCarRentals-#{I18n.locale.to_s}", class: "post_areaCarRentals hover-opacity" %>
+    </div>
+  <% else %>
+    <!-- mobile -->
+    <div class="post_areaBnr post_areaKlookBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/klook/sp/rental-o_360_360_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('area_banner.rentalcars.desc'), :size => "360x360"), t('area_banner.rentalcars.link'), target: :_blank, rel: "noopener sponsored", id: "post_areaCarRentals-#{I18n.locale.to_s}", class: "post_areaCarRentals hover-opacity" %>
+    </div>
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('tohoku') %>
+  <%# tohoku %>
+  <% if I18n.locale.to_s != "ja" %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/tohoku/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive", alt:t('area.feature.tohoku.title'), :size => "770x150"), area_tohoku_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-tohoku", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('kanto') %>
+  <%# kanto %>
+  <% if I18n.locale.to_s != "ja" %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/kanto/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive", alt:t('area.feature.kanto.title'), :size => "770x150"), area_kanto_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-kanto", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('shikoku') %>
+  <%# shikoku %>
+  <% if I18n.locale.to_s != "ja" %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/shikoku/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive", alt:t('area.feature.shikoku.title'), :size => "770x150"), area_shikoku_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-shikoku", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('kyushu') %>
+  <%# kyushu %>
+  <% if I18n.locale.to_s != "ja" %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/kyushu/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive", alt:t('area.feature.kyushu.title'), :size => "770x150"), area_kyushu_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-kyushu", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+  <%# Klook Car Rentals %>
+  <% if !browser.device.mobile? %>
+    <!-- Desktop -->
+    <div class="post_areaBnr post_areaKlookBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/klook/pc/rental-o_770_280_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('area_banner.rentalcars.desc'), :size => "770x280"), t('area_banner.rentalcars.link'), target: :_blank, rel: "noopener sponsored", id: "post_areaCarRentals-#{I18n.locale.to_s}", class: "post_areaCarRentals hover-opacity" %>
+    </div>
+  <% else %>
+    <!-- mobile -->
+    <div class="post_areaBnr post_areaKlookBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/klook/sp/rental-o_360_360_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('area_banner.rentalcars.desc'), :size => "360x360"), t('area_banner.rentalcars.link'), target: :_blank, rel: "noopener sponsored", id: "post_areaCarRentals-#{I18n.locale.to_s}", class: "post_areaCarRentals hover-opacity" %>
+    </div>
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('okinawa-region') %>
+  <%# okinawa %>
+  <% if I18n.locale.to_s != "ja" %>
+  <div class="post_areaBnr post-areaFeatureBnr">
+    <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/okinawa/banner/#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive", alt: t('area.feature.okinawa.title'), :size => "770x150"), area_okinawa_feature_path, id: "#{I18n.locale.to_s}_post-areaFeatureBnr-okinawa", class: "post-areaFeatureBnr-link hover-opacity" %>
+  </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+  <%# Klook Car Rentals %>
+  <% if !browser.device.mobile? %>
+    <!-- Desktop -->
+    <div class="post_areaBnr post_areaKlookBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/klook/pc/rental-o_770_280_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('area_banner.rentalcars.desc'), :size => "770x280"), t('area_banner.rentalcars.link'), target: :_blank, rel: "noopener sponsored", id: "post_areaCarRentals-#{I18n.locale.to_s}", class: "post_areaCarRentals hover-opacity" %>
+    </div>
+  <% else %>
+    <!-- mobile -->
+    <div class="post_areaBnr post_areaKlookBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/banner/klook/sp/rental-o_360_360_#{I18n.locale.to_s}.jpg") }, class: "lazy img-responsive center-block", alt: t('area_banner.rentalcars.desc'), :size => "360x360"), t('area_banner.rentalcars.link'), target: :_blank, rel: "noopener sponsored", id: "post_areaCarRentals-#{I18n.locale.to_s}", class: "post_areaCarRentals hover-opacity" %>
+    </div>
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('kansai') %>
+  <%# kansai %>
+  <% if(I18n.locale.to_s != "ja" && I18n.locale.to_s != "zh-hans" && I18n.locale.to_s != "ko" && I18n.locale.to_s != "id") %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/kansai/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive", alt:t('area.feature.kansai.title'), :size => "770x150"), area_kansai_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-kansai", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('chubu') %>
+  <%# chubu %>
+  <% if(I18n.locale.to_s != "ja" && I18n.locale.to_s != "zh-hans" && I18n.locale.to_s != "ko" && I18n.locale.to_s != "id") %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/chubu/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive center-block", alt:t('area.feature.chubu.title'), :size => "770x150"), area_chubu_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-chubu", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+
+<% elsif @article.cached_area.names_depth_cache.include?('chugoku') %>
+  <%# chugoku %>
+  <% if(I18n.locale.to_s != "ja" && I18n.locale.to_s != "zh-hans" && I18n.locale.to_s != "ko" && I18n.locale.to_s != "id") %>
+    <div class="post_areaBnr post-areaFeatureBnr">
+      <%= link_to image_tag("", data: { src: asset_pack_path("media/images/area/feature/chugoku/banner/#{I18n.locale.to_s}.jpg") }, class:"lazy img-responsive center-block", alt:t('area.feature.chugoku.title'), :size => "770x150"), area_chugoku_feature_path, id:"#{I18n.locale.to_s}_post-areaFeatureBnr-chugoku", class:"post-areaFeatureBnr-link hover-opacity" %>
+    </div><!-- /.post-areaFeatureBnr -->
+  <% end %>
+<% end %>

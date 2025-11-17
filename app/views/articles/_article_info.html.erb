@@ -1,0 +1,14 @@
+<div class="post_info">
+  <div class="post_info-date">
+    <% if revision_date != "" && revision_date != posted_date %>
+      <span class="date_public"><%= t("date_published_article") %>: <%= posted_date %></span>
+      <span class="date_update"><%= t("date_updated_article") %>: <time datetime="<%= revision_date %>" aria-label="<%= t("date_updated_article") %>"><%= revision_date %></time></span>
+    <% else %>
+      <span class="date_public"><%= t("date_published_article") %>: <time datetime="<%= posted_date %>" aria-label="<%= t("date_published_article") %>"><%= posted_date %></time></span>
+    <% end %>
+  </div>
+  <ul class="post_info-authors">
+    <li class="post_info-author"><%= author %></li>
+    <li class="post_info-translator"><%= translator %></li>
+  </ul>
+</div>

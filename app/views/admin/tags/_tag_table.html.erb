@@ -1,0 +1,7 @@
+<% tags.each do |tag| %>
+<tr class="pointer" data-id="<%= tag.id %>">
+  <td><%= tag.id %></td>
+  <td><%= tag.name %></td>
+  <td><%= tag.articles.count %></td>
+</tr>
+<% end %>

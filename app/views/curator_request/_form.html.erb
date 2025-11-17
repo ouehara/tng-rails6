@@ -1,0 +1,17 @@
+<div class="container curator_request-form">
+  <%= form_for @curator_request, url: curator_request_path, class: "form" do |f| %>
+    <% if @curator_request.errors.any? %>
+      <%= render partial: 'shared/error_message', locals: { resource: @curator_request } %>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.label(:message, "Content: ") %>
+      <%= f.text_area(:message, class: "form-control", placeholder: "Tell us why you want to become a curator.") %>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit("Send", class: "form-control btn btn-blue") %>
+    </div>
+
+  <% end %>
+  </div>

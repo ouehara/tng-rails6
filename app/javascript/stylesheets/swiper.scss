@@ -1,0 +1,28 @@
+/* slider */
+.carousel.carousel-slider .control-arrow {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -19px;
+  background-size: contain;
+  background-image: none;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+  &:before {
+    margin-bottom: 9px;
+    margin-left: 6px;
+  }
+  @include mq(sm) {
+    width: 38px;
+    height: 38px;
+    margin-top: -19px;
+    transition: opacity ease-out 0.2s;
+    &:before {
+      margin-bottom: 5px;
+    }
+  }
+}

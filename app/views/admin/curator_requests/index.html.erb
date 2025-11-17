@@ -1,0 +1,42 @@
+<%= render 'page_title' %>
+
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index <%= "filter by : #{params[:query]}" if params[:query] %></h2>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title" style="width: 10%;">ID</th>
+              <th class="column-title">Name</th>
+              <th class="column-title">Message</th>
+              <th class="column-title">Created</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @curator_requests.each do |curator_request| %>
+            <tr class="pointer">
+              <td><%= curator_request.id %></td>
+              <td><%= link_to curator_request.user.username, [:admin, curator_request] %></td>
+              <td><%= link_to truncate(curator_request.message), [:admin, curator_request] %></td>
+              <td><%= curator_request.created_at.strftime("%F %T") %></td>
+              <td><%= link_to 'Show', [:admin, curator_request] %></td>
+              <td><%= link_to 'Delete', [:admin, curator_request], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <div class="paginate">
+          <%= paginate @curator_requests %>
+        </div>
+
+      </div>
+    </div>
+  </div>

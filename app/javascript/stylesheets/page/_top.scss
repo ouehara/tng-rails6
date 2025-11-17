@@ -1,0 +1,109 @@
+//
+// Top
+// --------------------------------------------------
+@import "./top/thumbnail";
+@import "./top/restaurant";
+@import "./top/feature_area";
+@import "./top/special_feature";
+
+.tag_group {
+  &_container {
+    margin: 0px 10px 10px 0;
+    float: left;
+
+    a {
+      padding: 11px 15px 11px;
+      border-width: 2px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: normal;
+      cursor: pointer;
+      margin: 0;
+      display: block;
+      background-color: #fff;
+      border: 1px solid #7e7e7e;
+      border-radius: 2px;
+      color: #7e7e7e;
+      font-weight: normal;
+      -webkit-transition: all ease-out 0.2s;
+      transition: all ease-out 0.2s;
+
+      &:hover {
+        border-color: $color_yellow;
+        color: $color_yellow;
+      }
+    }
+
+    &.active a {
+      background-color: $color_yellow;
+      border-color: $color_yellow;
+      color: #fff;
+    }
+  }
+}
+
+.tour-banner {
+  text-align: center;
+  display: block;
+  padding: 13px;
+  padding-bottom: 0;
+  margin-bottom: 10vw;
+
+  @include mq(sm) {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+
+.top-banners {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 40px auto 45px;
+
+  @include mq(sm) {
+    max-width: 820px;
+    padding: 0;
+    margin: 50px auto 60px;
+    // max-height: 285px;
+  }
+
+  &_item {
+    margin-bottom: 10px;
+
+    &>.tour-banner {
+      padding: 0;
+      margin: 0;
+    }
+
+    &.half {
+      width: calc(50% - 5px);
+    }
+
+    &.half-ml {
+      margin-left: 10px;
+    }
+
+    &.horizontal {
+      width: 100%;
+      // margin-top: 10px;
+      // margin-left: 0;
+    }
+
+    &>a {
+      transition: opacity .5s;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+
+  .img-maxwidth {
+    width: 100%;
+    height: auto;
+  }
+}

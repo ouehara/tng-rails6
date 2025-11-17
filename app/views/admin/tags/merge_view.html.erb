@@ -1,0 +1,100 @@
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index <%= "filter by : #{params[:query]}" if params[:query] %></h2>
+    </div>
+    <div class="x_content">
+
+    <div class="input-group">
+    <button type="button" id="menu1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span id="search_concept1"><%= I18n.locale %></span><span class="caret"></span></button>
+    <ul class="dropdown-menu drop-down1" role="menu"  aria-labelledby="menu1">
+      <li><a href="<%= url_for(:locale => "en") %>" >English</a></li>
+      <li><a href="<%= url_for(:locale => "zh-hant") %>" >Chinese traditional</a></li>
+      <li><a href="<%= url_for(:locale => "zh-hans") %>">Chinese simplified</a></li>
+    </ul>
+    </div>
+
+      <div class="table-responsive">
+        <div class="col-xs-6">
+          <%= form_tag url_for(params.permit!), :method => :get do %>
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group top_search">
+              <div class="input-group">
+                  <% params.except("controller", "action", "search", "utf8", "locale").each do |param, val|%>
+                    <%= hidden_field_tag param, val %>
+                  <% end %>
+                  <input type="text" name="search" class="form-control" id="searchQuery1" placeholder="Search for..." value="<%= params[:query] if params[:query] %>">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" onclick="if($('#searchQuery1').val().length == 0){ return; }else{ this.form.submit() }">Go!</button>
+                  </span>
+              </div>
+            </div>
+          <%end%>
+          <table class="table table-striped jambo_table t1">
+            <thead>
+              <tr class="headings">
+                <th class="column-title" style="width: 10%;">ID</th>
+                <th class="column-title">Name</th>
+                <th class="column-title">Articles count</th>
+              </tr>
+            </thead>
+            <tbody>
+             <%= render partial: 'tag_table', locals: { tags: @tags} %>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-xs-6">
+          <%= form_tag url_for(params.permit!), :method => :get do %>
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group top_search">
+              <div class="input-group">
+                  <% params.except("controller", "action", "search2", "utf8", "locale").each do |param, val|%>
+                    <%= hidden_field_tag param, val %>
+                  <% end %>
+                  <input type="text" name="search2" class="form-control" id="searchQuery" placeholder="Search for..." value="<%= params[:query] if params[:query] %>">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" onclick="if($('#searchQuery').val().length == 0){ return; }else{ this.form.submit() }">Go!</button>
+                  </span>
+              </div>
+            </div>
+          <%end%>
+          <table class="table table-striped jambo_table t2">
+            <thead>
+              <tr class="headings">
+                <th class="column-title" style="width: 10%;">ID</th>
+                <th class="column-title">Name</th>
+                <th class="column-title">Articles count</th>
+              </tr>
+            </thead>
+            <tbody>
+             <%= render partial: 'tag_table', locals: { tags: @tags2} %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <button class="pull-right btn btn-default go-to-next">
+      Continue
+    </button>
+  </div>
+
+<script type="text/javascript">
+  $(".t1").on("click", ".pointer", function(evt){ 
+    $(".left-active").removeClass("left-active")
+    $(this).addClass("left-active")
+  })
+  $(".t2").on("click", ".pointer", function(evt){ 
+    $(".right-active").removeClass("right-active")
+    $(this).addClass("right-active")
+  })
+  $(".go-to-next").on("click", function(evt) {
+    if (!$(".left-active").length || !$(".left-active").length) {
+      return;
+    }
+
+    let idLeft = $(".left-active").attr("data-id");
+    let idRight = $(".right-active").attr("data-id");
+    window.location = "/admin1500011/tags/merge_edit?tag1="+idLeft+"&tag2="+idRight
+  });
+
+</script>

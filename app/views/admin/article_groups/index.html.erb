@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <%= link_to new_admin_article_group_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <p>Use drag and drop to sort.</p>
+    </div>
+    <div class="x_content">
+        <div class="table-responsive">
+          <%= render_sortable_tree(@items, {name_method: :title_with_article_count, sort_url: sort_admin_article_groups_url, max_levels: 3,controls_partial: 'controls'}) %>
+          </div>
+        </div>
+    </div>
+   
+  </div>
+  <div class="row">
+  <div class="x_panel">
+    <div class="x_title">      
+      <p>Favorites</p>
+    </div>
+    <div class="x_content">
+      <div class="form-group">
+        <%= link_to "Set Favorite", admin_article_grouping_favorites_path, class: "btn btn-default", remote: true %>
+      </div>
+      <table class="article_list table table-striped jambo_table">
+        <thead>
+          <tr class="headings">
+            <th colspan="4" class="column-title">Group</th>
+            <th class="column-title">Articles</th>
+          </tr>
+        </thead>
+      <% @favorites.each do |favorite| %>
+        <tr>
+          <td><%= ArticleGroup.find(favorite.group_1).title unless favorite.group_1.nil? %></td>
+          <td><%= ArticleGroup.find(favorite.group_2).title unless favorite.group_2.nil? %></td>
+          <td><%= ArticleGroup.find(favorite.group_3).title unless favorite.group_3.nil? %></td>
+          <td><%= ArticleGroup.find(favorite.group_4).title unless favorite.group_4.nil?  %></td>
+          <td>
+          <%= link_to admin_article_group_path( ArticleGroup.find(favorite.group_1), :filter_1 => favorite.group_2, :filter_2 => favorite.group_3, :filter_4 => favorite.group_4) do%>
+            <%= Article.in_groupings([favorite.group_1,favorite.group_2, favorite.group_3, favorite.group_4].compact).count%></td>
+          <%end%>
+        </tr>
+      <%end%>
+    </table>
+    </div>
+   
+  </div>
+</div>
+</div>

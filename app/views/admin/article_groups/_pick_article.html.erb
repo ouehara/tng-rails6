@@ -1,0 +1,10 @@
+<%= search_form_for @q, url: pick_article_search_admin_article_groups_path, remote: true do |f| %>
+<div class="input-group">
+  <%= f.text_field :disp_title, class: "form-control", placeholder: "Search for..." %>
+  <span class="input-group-btn">
+    <%= f.submit "Go!", class: "btn btn-default" %>
+  </span>
+</div>
+<% end %>
+
+<div id="results"></div>

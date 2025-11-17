@@ -1,0 +1,52 @@
+<%= render 'page_title' %>
+
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index <%= "filter by : #{params[:query]}" if params[:query] %></h2>
+      <%= link_to new_admin_user_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title" style="width: 10%;">ID</th>
+              <th class="column-title">Avatar</th>
+              <th class="column-title">Email</th>
+              <th class="column-title">Role</th>
+              <th class="column-title">Username</th>
+              <th class="column-title">Confirmed at</th>
+              <th class="column-title">Created</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @users.each do |user| %>
+            <tr class="pointer">
+              <td><%= user.id %></td>
+              <td><%= image_tag user.avatar.url(:thumb), style: "width:32px;" if user.avatar.exists? %></td>
+              <td><%= link_to user.email, [:admin, user] %></td>
+              <td><%= user.role.to_s.capitalize %></td>
+              <td><%= user.username %></td>
+              <td><%= user.confirmed_at.try(:strftime, "%F %T") %></td>
+              <td><%= user.created_at.strftime("%F %T") %></td>
+              <td><%= link_to 'Show', [:admin, user] %></td>
+              <td><%= link_to 'Edit', edit_admin_user_path(user) %></td>
+              <td><%= link_to 'Delete', [:admin, user], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <div class="paginate">
+          <%= paginate @users %>
+        </div>
+
+      </div>
+    </div>
+  </div>

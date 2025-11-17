@@ -1,0 +1,54 @@
+<% content_for :head do %>
+<style>
+  :root {
+    --swiper-navigation-color: #FFCC00;
+    --swiper-pagination-color: #FFCC00;
+  }
+</style>
+<% end %>
+
+  <div id="adsSlider" class="adsSlider container">
+    <div class="swiper adsSwiper">
+      <div class="swiper-wrapper">
+
+        <% JSON.parse(@ad).each do |element| %>
+          <div class="swiper-slide"><a href="<%= element['url'] %>" onClick="ga('send', 'event', '<%= element["analytics_category"] %>', 'click', '<%= I18n.locale.to_s + "_" + element["analytics_label"] %>');" target="_blank" id="ads_<%= element['id'] %>"><img src="<%= element["banner_url"] %>" class="img-fluid" width="264" height="187"></a></div>
+        <% end %>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+<% content_for :foot do %>
+  <script data-turbolinks="false">
+    const adsSwiper = new Swiper(".adsSwiper", {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      centeredSlides: true,
+      loop: true,
+      // loopAdditionalSlides: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: { // ブレークポイント
+        1130: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+          centeredSlides: false,
+        },
+        768: { // 画面幅768px以上で適用
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+      },
+    });
+  </script>
+<% end %>

@@ -1,0 +1,75 @@
+<% body_class "area index" %>
+<% set_meta_tags title: t('area.index_title'),
+                 description: t('area.index_desc') %>
+<%= react_component('hero/hero_view',{elements:{category: "area",
+"category_full": I18n.t('area.area'),"page_type": "index",
+"sp_bg_img": asset_pack_path("media/images/area/index_hero_img_pc.jpg"),
+"pc_bg_img": asset_pack_path("media/images/area/index_hero_img_pc.jpg"),
+"intro_text": I18n.t('area_desc'),
+"ad": {
+      "img": "",
+      "alt": "",
+      "url": ""
+    }
+},
+}) %>
+<%= render "shared/breadcrumb" %>
+<%= render "shared/intro", intro_text: I18n.t('area.area_intro'), ad: nil %>
+<section class="section">
+  <div class="container">
+    <h2 class="section_heading">
+    <%= I18n.t "search_map" %>
+    </h2>
+    <div class="center-block text-center">
+    <%= render "map", height: browser.device.mobile? ? "365px" : "100%", width: browser.device.mobile? ? "100%" : "80%" %>
+    </div>
+  </div>
+</section>
+
+<%= render "shared/related_round", title: I18n.t("recommended_area"), elements: @related %>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section_heading">
+    <%= I18n.t "search_region" %>
+    </h2>
+    <% @root_areas.each do |area|%>
+      <% next if area.slug == "others" || area.slug == "nationwide" %>
+      <h3 class="sub-section-heading"><%= area.name %></h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <ul class="list-style-none region-listing">
+            <% area.children.order(:pos).each do |child| %>
+              <li class="link_section_item"><a href="<%= area_path(child) %>"><%= child.name %> </a></li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="col-xs-6 text-right">
+          <img class="area-list-map" src=<%= asset_pack_path("media/images/area/maps/#{area.slug}.svg") %> />
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<!-- Advertisement -->
+<%= render "shared/ads" %>
+<!-- /Advertisement -->
+
+<section>
+  <div class="container">
+    <h2 class="section_heading"><%= I18n.t("other_interests") %></h2>
+    <%= render "shared/root_category_block" %>
+  </div>
+</section>
+<!-- /Recommended Area -->
+
+<!-- sns -->
+<%= render "shared/sns" %>
+<!-- /sns -->
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

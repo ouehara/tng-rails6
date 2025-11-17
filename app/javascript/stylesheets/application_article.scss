@@ -1,0 +1,86 @@
+$simple-line-font-path: "simple-line-icons/fonts/";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome/css/font-awesome";
+@import "simple-line-icons/css/simple-line-icons";
+@import "base/variables";
+@import "base/function";
+@import "base/mixins";
+@import "base/common";
+
+@import "partials/search";
+@import "partials/footer";
+@import "partials/header"; // header drawer extends footer style
+@import "partials/advertisement";
+
+@import "editor/editor";
+@import "page/post";
+@import "partials/sns_links";
+@import "partials/clip_widget";
+@import "partials/article_block";
+@import "partials/article_list";
+@import "page/clip";
+
+body {
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-display: auto;
+  font-kerning: normal;
+  font-size: rem(14);
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.breadcrumb-wrapper {
+  background: white;
+
+  .breadcrumb {
+    background: white;
+  }
+}
+
+.admin-nav-bar {
+  background: black;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+
+  h3 {
+    display: none;
+  }
+
+  .menu_section {
+    display: inline-block;
+  }
+
+  .side-menu {
+    display: inline-block;
+
+    li {
+      float: left;
+      font-size: 12px;
+
+      a {
+        padding: 2px 7px;
+        color: white;
+      }
+    }
+  }
+
+  .navbar-right {
+    margin-right: 0;
+
+    li a {
+      padding: 3px;
+      margin: 0;
+      background: black;
+      color: white;
+      padding-right: 35px;
+    }
+
+    .dropdown-menu li a {
+      background: white;
+      color: black;
+    }
+  }
+}

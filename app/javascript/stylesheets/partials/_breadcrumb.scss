@@ -1,0 +1,34 @@
+.breadcrumb-wrapper {
+  background: white;
+  font-size: 12px;
+  margin-bottom: 0px;
+
+  @include mq(sm) {
+    display: block;
+  }
+
+  .breadcrumb {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: white;
+    margin-bottom: 0;
+
+    li {
+      display: inline;
+      max-width: 100px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    li+li:before {
+      content: "> ";
+    }
+
+    a {
+      color: #888;
+      font-size: 10px;
+    }
+  }
+}

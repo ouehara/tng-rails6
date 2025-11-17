@@ -1,0 +1,28 @@
+<%
+if defined? show_search
+  types = "is-area-cat"
+else 
+  types ="is-area"
+end
+if !defined? area
+  area = nil
+end
+%>
+<section class="section">
+  <div class="container">
+  <% if !defined? show_search  %>
+    <h2 class="section_heading" id='sort_by_area'><%= I18n.t("recommended_area")%></h2>
+    <%= react_component('thumbnail_list/thumbnail_list_view', {elements:
+    @recommendedArea["recommended_area"]["item"], type:types}) %>
+    <% if !defined? btn %>
+    <p class="section_button">
+    <%= link_to I18n.t("view_area"), area_listing_path, id: "a_all"  %>
+      
+    </p>
+    <% end %>
+    <% else  %>
+    <h3 class="form-search_heading"><%= I18n.t("search_in") %> <%= category.name unless category.nil? %> <%= area.name unless area.nil? %></h3>
+    <%= render 'shared/search', {category: category.nil? ? 0 : category.id, area: area.nil? ? 0 : area.id} %>
+    <% end %> 
+  </div>
+</section>

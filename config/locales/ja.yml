@@ -1,0 +1,2272 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available aOkint http://guides.rubyonrails.org/i18n.html.
+
+ja:
+  langAttribute: "ja"
+  helpers:
+    label:
+      hotel_landingpage:
+        official_text: "Great deals if you use their official website!"
+        recommend_text: "Lodgings that tsunagu Japan highly recommend!"
+        published: "Publish"
+  hello: "Hello world"
+  js:
+    hello: "cool"
+  en: "English"
+  zh-hant: "繁體中文"
+  zh-hans: "简体中文"
+  th: "ไทย"
+  ja: "日本語"
+  vi: "Tiếng Việt"
+  ko: "한국어"
+  id: "Indonesian"
+  site_name: "tsunagu Japan"
+  site_top:
+    title_prefix: "訪日外国人向けメディア"
+    page_desc: "訪日外国人向けメディアtsunagu Japan。観光スポット、グルメ、宿泊施設、買い物、体験、文化、旅行のための豆知識などを紹介しています。ぜひ日本旅行にお役立てください！"
+    breadcrumb: "Home"
+  page_title: "訪日外国人観光客向けメディア"
+  page_prefix: "tsunagu Japan"
+  page_desc: "訪日観光客向けメディアtsunagu Japan。全国各地の観光スポット、グルメ、宿泊施設、買い物、体験、文化、旅行のための豆知識まで、深い情報を紹介している記事があります。ぜひ日本旅行にお役立てください！"
+  confirm: "Confirm"
+  more_btn: "その他"
+  more_details: "More Details"
+  menu_more: "その他"
+  partner: "パートナー"
+  newest_article_on: "%{area} 新着記事"
+  narrow_down_by_interest: "カテゴリーから探す"
+  narrow_down_by_int_area: "エリアとカテゴリーから探す"
+  other_interests: "その他のカテゴリー一覧"
+  related_interest: "Related Interests"
+  see_other_areas: "その他のエリア"
+  popular_articles: "人気記事"
+  view_special_feature: "すべてのコンテンツを見る"
+  view_videos: "View all Videos"
+  video: "動画"
+  view_videos: "全ての動画を見る"
+  video_desc: "This page shows our handpicked collection of videos on everything related to Japan. Food, scenic spots, traditional arts, outdoor activities, basic trivia, and more await!"
+  about_author: "ライター紹介"
+  date_published_article: "公開日"
+  date_updated_article: "更新日"
+  pr_article: "この記事にはアフィリエイトリンクが含まれている場合があります。アフィリエイトリンクを経由して購入された場合、あなたからの追加費用なしで私たちはコミッションを得る可能性があります。"
+  disclaimer_article: "この記事に掲載されている情報は、公開時点のものです。"
+  area_banner:
+    rentalcars:
+      desc: "好みの車をお手頃価格でレンタルできるレンタカー。日本でレンタカーを借りるならこちら！詳しく見る。"
+      link: "https://www.klook.com/ja/car-rentals/?aid=30900"
+  sns-bot: "tsunagu Japan SNS"
+  newest_top: "新着記事"
+  related_label: 'Recommended'
+  sort_by: "Sort by area"
+  none: "none"
+  search_region: "地域から検索"
+  narrow_by_area: "エリアから探す"
+  search_map: "地図上で検索"
+  search_in: "Search in"
+  view_coupons: "すべてのクーポンを見る"
+  coupon_headline: "割引クーポン"
+  coupon_desc: "このページでは、ショッピングからホテルやツアーの予約まで、あらゆる場面で使える様々な割引クーポンを掲載しています。"
+  coupon_none: "現在、利用可能なクーポンはありません。"
+  new_arrivals: 'New Arrivals'
+  clips_title: 'Your Clip'
+  clip_desc: "This page shows all the articles on this site that you've bookmarked. Please use these articles to have an even more wonderful trip to Japan!"
+  clip_none: "何もクリップされていません。"
+  empty_state: "Sorry, we don't have content for this yet! We're always churning out new content, so please stay tuned for any updates!"
+  search_by: "Search by destination, activity, or attraction…"
+  recommended_area: "人気エリア"
+  view_area: "全てのエリアを見る"
+  view_restaurant: "View all restaurants"
+  travel_tips: "Travel Tips"
+  transportation: "Transportation"
+  manners: "Manners"
+  budget_travel: "Budget Travel"
+  climate: "Climate & Weather"
+  top_travel: "Top Travel Itineraries"
+  things: "Things to Do"
+  fooddrink: "Food & Drink"
+  hotels: "Hotels & Ryokan"
+  shopping: "Shopping"
+  travel_tip: "Travel Tips"
+  in_depth: "Japan In-Depth"
+  festival: "Festivals & Events"
+  view_tips: "View all tips"
+  featured_topics: "Featured Topics"
+  japan: "日本"
+  latest: "Latest Posts"
+  media_partner: "MEDIA PARTNER"
+  sushi: "#Sushi"
+  onsen: "#Onsen"
+  ramen: "#Ramen"
+  activites: "#Activities/Experiences"
+  souvenier: "#Souvenirs"
+  beauty: "#Beauty & Fashion"
+  history: "#History & Culture"
+  hotels_ryokan: "#Hotels & Ryokan"
+  popular_restaurants: "Popular Restaurants by Area"
+  related_articles_title: "関連記事"
+  buttons:
+    btn-default: "default"
+    btn-cust-blue: "blue"
+    btn-cust-green: "green"
+    book-with: "orange button"
+    btn-ads: "red ad button"
+    savor-button-booking: "savor button"
+    btn-3d-orange: "orange with shadow"
+  tours:
+    recommended: 'Recommended Tours'
+    currency: 'JPY'
+    from: 'from'
+    desc: 'This page lists tours in Japan that you can sign up for.'
+    tour: "Recommended Tours"
+    details: 'Details'
+  savor:
+    search_title: "Try Out One of Japan's Most Popular Search Engines!"
+    search_results: "%{start} - %{end} of %{all}"
+    sort_price: "Price"
+    sort_price_ask: "Low to High"
+    sort_price_desc: "High to Low"
+    sidebar_headline: "Japanese Restaurant Guide"
+    slogan: "Savor Japan is an exhaustive restaurant<br> guide for restaurants in Japan."
+    tokyo: "東京"
+    tokyo_sub:
+      kanagawa: "神奈川"
+      chiba: "千葉"
+      tochigi: "栃木"
+      gunma: "群馬"
+      saitama: "埼玉"
+      ibaraki: "茨城"
+      shizuoka: "静岡"
+      yamanashi: "山梨"
+    kyoto_sub:
+      kyoto: "京都"
+      osaka: "大阪"
+      hyogo: "兵庫"
+      nara: "奈良"
+      shiga: "滋賀"
+      wakayama: "和歌山"
+      mie: "三重"
+    honshu_sub:
+      miyagi: "宮城"
+      fukushima: "福島"
+      yamagata: "山形"
+      iwate: "岩手"
+      akita: "秋田"
+      aomori: "青森"
+      aichi: "愛知"
+      shizuoka: "静岡"
+      gifu: "岐阜"
+      ishikawa: "石川"
+      nagano: "長野"
+      niigata: "新潟"
+      toyama: "富山"
+      fukui: "福井"
+      yamanashi: "山梨"
+      hiroshima: "広島"
+      okayama: "岡山"
+      shimane: "島根"
+      tottori: "鳥取"
+      yamaguchi: "山口"
+    shikoku_sub:
+      ehime: "愛媛"
+      kagawa: "香川"
+      kochi: "高知"
+      tokushima: "徳島"
+    kyushu_sub:
+      fukuoka: "福岡"
+      kagoshima: "鹿児島"
+      kumamoto: "熊本"
+      miyazaki: "宮崎"
+      nagasaki: "長崎"
+      oita: "大分"
+      saga: "佐賀"
+    near_tokyo: "Near Tokyo"
+    kyoto: "京都・大阪エリア"
+    hokkaido: "北海道"
+    chubu: "中部"
+    kanto: "関東"
+    kansai: "関西"
+    tohoku: "東北"
+    chugoku: "中国"
+    northern_honshu: "Nothern Honshu (Tohoku)"
+    central_honshu: "Central Honshu (Chubu)"
+    western_honshu: "Western Honshu (Chugoku)"
+    shikoku: "四国"
+    kyushu: "九州・沖縄"
+    okinawa: "沖縄"
+    learn_more: "learn more"
+    show_less: "show less"
+    restaurant_search: "Restaurant Search"
+    search_by: "Search by Popular Area"
+    no_searchresult: "Restaurants were not found. Please try different search criteria."
+    sidebar:
+      s_keyword: "Search by Keywords"
+      location: "Location"
+      cuisine: "Cuisine"
+      filter: "Filter"
+      budget: "Budget"
+      dinner: "Dinner"
+      lunch: "Lunch"
+      extras: "Extras"
+      cc: "Credit Card"
+      coupons: "Coupons / Vouchers"
+      keywords: "Keywords"
+      search: "Search"
+      placeholder_keyword: "e.g. city, station,cuisine or specific restaurant"
+      placeholder_city: "e.g. city, landmark"
+      placeholder_cuisine: "e.g. sushi, ramen"
+    filter:
+      no_smoking: "No Smoking"
+      menu: "English menu"
+      staff: "English-speaking staff"
+      languages_available: "English-speaking staff"
+      late_night: "Late-night service"
+      late_night_service: "Late-night service"
+      diet: "Special dietry requests"
+      special_diet: "Special dietry requests"
+      western_cutlery: "Western cutlery"
+      lunch: "Lunch"
+      lunch_menu: "Lunch"
+      wifi: "Free Wi-Fi"
+      free_wifi_available: "Free Wi-Fi"
+      visa: "Visa"
+      mastercard: "MasterCard"
+      anex: "American Express"
+      diners: "Diners Club"
+      coupons: "Coupons / Vouchers"
+  hotel-lp:
+    meta_title: "tsunagu Japan's Top Picks for Japanese Hotels & Inns"
+    meta_desc: "Using our vast network, we have picked out the best Japanese hotels and inns to showcase. Many can’t be found on other websites, so take a look!"
+    breadcrumb: "Editorial Picks"
+    title_html: "tsunagu Japan <br> editorial department carefully selected!<br>Special homepage introduction"
+    desc_headline: "A noteworthy trip starts with exceptional lodging."
+    desc: "Japan has around 50,000 hotels and inns, which makes coming to a decision incredibly hard. Using our vast network, our editorial team has scoured through lodgings all over Japan and picked out a select few to introduce to you! There are several that you won’t find on other websites, so it’s definitely worth a look!"
+    starting: "Starting from"
+    pickup: "New Pickup"
+    website: "Official Website"
+    website_sub_html: "Great deals if you use their official website!"
+    website_sub_recommend_text: "We highly recommend this lodge!"
+    related: "関連記事"
+    hotel_price_tax_html: "Excluding taxes and fees <br> It is a charge for two people in one room."
+    notice:
+      change: "The information on this website may change even after the publish date."
+      estimated: "The estimated accommodation fee is based on the fee for 1 person renting a room that can accommodate 2 people during the off-season. It includes meals, but does not include consumption tax, bathing tax, or service charges. Depending on factors like how many people use 1 room, the season, the type of room, and the accommodation plan, the overall accommodation fee can differ."
+      communication: "Staff members who can communicate in languages other than Japanese may not always be present."
+    features:
+      bar: "Bar"
+      parking: "Parking"
+      bus: "Pick Up Service"
+      wifi: "Wi-Fi"
+      onsen: "Hot Spring"
+      smoking: "Smoking Room"
+      nosmoking: "Non-smoking Room"
+      smokingspace: "Smoking Spaces"
+      english: "English OK"
+      chinese: "Chinese Ok"
+  edion:
+    title: "Special Feature: Best-selling Home Electronics in Japan!! [With Discount Coupon]"
+    website_html: "Official Homepage (Japanese Only) <a href='https://www.edion.com/' target='_blank'>https://www.edion.com/</a>"
+    address: "Address"
+    further: "For details on other stores across Japan, click below. "
+    phone: "Phone"
+    tokyo: "EDION AKIBA / Tokyo"
+    tokyo_a: "1-2-9 Sotokanda, Chiyoda-ku, Tokyo"
+    tokyo_p: "03-3257-1100"
+    osaka: "EDION Dotonbori Store / Osaka"
+    osaka_a: "Dotonbori Benisu Bldg. 12F, 1-4-27 Dotonbori, Chuo-ku, Osaka-shi, Osaka"
+    osaka_p: "06-6212-3035"
+    osaka2: "EDION Universal CityWalk Osaka Store / Osaka"
+    osaka2_a: "Universal CityWalk Osaka 4F, 6-2-61 Shimaya, Konohana-ku, Osaka-shi, Osaka"
+    osaka2_p: "06-6469-1211"
+    only_headline_html: "Only for tsunagu Japan readers!!<br> Discount coupon for EDION (home electronics retailer)"
+    consumer_electronics: "Consumer electronics help make your life easier. In Japan, there are many different types of home electronics, as well as a ton of stores that specialize in and sell them. This special feature introduces not only the standard home electronics, but also the ones that are extremely popular in Japan right now. "
+    popular_headline: "5 Popular Salon Products"
+    top10: "Top 10 Popular & Recommended Products for 2017"
+    what_is_headline: "What is EDION?"
+    what_is: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    readers_discount: "For All Our Readers, Here's an EDION Discount Coupon!"
+    readers_discount_text_html: "EDION is one of the largest home electronics retailers in Japan, with close to 1,200 stores open throughout the country. In West Japan alone, they have 62 duty-free stores. Inside the convenient duty-free corner, they have stocked a wide variety of popular products, such as rice cookers or salon equipment. If you plan to visit Tokyo, you’ll easily find a store in Akihabara – a popular sightseeing spot in Tokyo. Otherwise, if you’re going to Osaka, then it’s highly recommended that you visit either their EDION Dotonbori Store or the duty-free EDION Universal CityWalk Osaka Store adjacent to Universal Studios Japan ®."
+    popular:
+      1_headline: "1.SHARP Plasmacluster Dryer (Ruby Red) (IBHP9R)"
+      1_desc_html: "The plasmacluster ions moisturize the hair and reduce static electricity. The built-in “Beauty Mode” automatically adjusts the temperature to suit the season, and the lukewarm air that comes out alternately will make your hair beautiful, shiny, and smooth.
+<br><br>
+<span class='price'>Example Price: 19,880 yen (before tax)</span>"
+      2_headline: "2.Panasonic Ladies’ Shaver Salashe (Blue) (ES2235PPA)"
+      2_desc_html: "This is an all-purpose shaver that can handle your armpits, legs, arms, and even your bikini line! It has a grip that was engineered to be easy to hold, as well as a compact head. It’s waterproof, so you can use it in the shower. Another perk is its bright color scheme!
+<br><br>
+<span class='price'>Example Price: 2,480 yen (before tax)</span>"
+      3_headline: "3.Panasonic Face Shaver Ferrier (Green) (ESWF50G)"
+      3_desc_html: "This extraordinary shaver comes with a pivoting head that can follow the natural contours of the skin, turning at angles that make it easy to shave. Its rounded blade edges make it safe for anyone to use, and it can easily shave off peach fuzz. Applying your make-up will get a lot easier! If you want something easy to carry, its compact size will be convenient for you.
+<br><br>
+<span class='price'>Example Price: 3,480 yen (before tax)</span>"
+      4_headline: "4.YA-MAN Body Esthetic Original Acetino Quattro Impact Evolution (Red) (IB250RED)"
+      4_desc_html: "The 8 rollers rotate at an incredible speed, and they’ll thoroughly massage any fleshy parts that you’re worried about, so you can receive great esthetic care from home. You can use it on your body and face. It’s also waterproof, so you can even use it in the bath!
+<br><br>
+<span class='price'>Example Price: 14,800 yen (before tax)</span>"
+      5_headline: "5.Panasonic Eyelash Curler (Natural Curls) Matsuge Kurun (Pink) (EHSE10PPP)"
+      5_desc_html: "This is a heated eyelash curler that will give you long-lasting natural curls. Equipped with dual heating pads, it’ll give your eyelashes the proper curl and boost they need!
+<br><br>
+<span class='price'>Example Price: 1,700 yen (before tax)</span>"
+    top:
+      other: "Other Popular Products"
+      best_selling: "Best-selling Among Travelers #%{number} (EDION)"
+      1_headline: "1. MTG ReFa Carat (PECL1706)"
+      1_desc_html: "This face roller takes in light with a solar panel and releases it as a microcurrent. With its unique form and diamond cut design, it gently tightens your delicate skin and helps improve your skin texture. It’s also made from waterproof materials, so you can rest easy.
+<br><br>
+<span class='price'>Example Price: 23,800 yen (before tax)</span>"
+      2_headline: "2. TIGER Stainless Bottle Colobockle (MBRB06GRL)"
+      2_desc_html: "You can wash every part of this stainless bottle. Just by changing the bottle’s mouthpiece, you can either directly drink from the bottle with one finger push, or you can pour your drink into a cup. They’re popular for their cute designs!
+<br><br>
+<span class='price'>Example Price: 5,980 yen (before tax)</span>"
+      3_headline: "3. Panasonic Hair Dryer Nano Care (Rouge Pink) (EHCNA99RP)"
+      3_desc_html: "Quickly dries your hair and improves your hair quality – this is a hair dryer that’ll really take care of your hair! It can help reduce damage caused from friction or ultraviolet (UV) light. It’s highly recommended for its 5 modes that you can mix and match to suit your type of hair, such as its Hair Ends Care Mode or its Hot-Cold Rhythm Mode.
+<br><br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      4_headline: "4. ATEX Lourdes Premium Massage Cushion Double Massage (Mint Black) (AXHCL188MB)"
+      4_desc_html: "This massage cushion is perfect for rooms with stylish interiors. Using random movements, it can massage a variety of places, such as your neck, shoulders, waist, back, and back of the foot. You’ll be happy to know that you can easily remove the cover for a quick wash!
+<br>
+<span class='price'>Example Price: 9,800 yen (before tax)</span>"
+      5_headline: "5. Philips Nose, Ear & Eyebrow Trimmer Nosetrimmer Series 3000 (Black/Grey) (NT316210)"
+      5_desc_html: "Every single part of this product is washable. With just this trimmer, you can tidy up your nose, ears, and eyebrows. Its long-lasting sharpness is what makes it special. But don’t worry, because the blade tips are rounded, and the blade itself is ultrathin to ensure that it doesn’t nick the skin!
+<br>
+<span class='price'>Example Price: 2,980 yen (before tax)</span>"
+      6_headline: "6. Braun Electric Toothbrush Oral-B Genius 9000 (Black) (D7015256XCBK)"
+      6_desc_html: "This electric toothbrush cleans your teeth just as well as a dentist in a dental clinic. The smartphone app that comes with it can tell you what parts of your mouth still need to be brushed, so you can properly brush every part of your mouth, including the corners!
+<br>
+<span class='price'>Example Price: 19,800 yen (before tax)</span>"
+      7_headline: "7. Sharp Plasmacluster Dehumidifier (White) (CVG71W)"
+      7_desc_html: "Not only does this dehumidifier help dry hung up clothes while getting rid of the funky smell that comes with the drying process, but it also prevents mold from growing in the room! It’s designed to block out large dust balls. Its handle makes it easy to move around, and it makes drainage easy too!
+<br>
+<span class='price'>Example Price: 26,800 yen (before tax)</span>"
+      8_headline: "8. Vitantonio Yogurt Maker (White x Silver) (VYG11)"
+      8_desc_html: "With this device, you’ll finally be able to easily make yogurt at home! It’s popular for being able to make a wide variety of things, such as cheese and other fermented foods, along with any foods that require low-temperature cooking.
+<br>
+<span class='price'>Example Price: 6,880 yen (before tax)</span>"
+      9_headline: "9. TESCOM Negative Ion Curl Dryer (Pink) (TIC750P)"
+      9_desc_html: "Regardless of whether you have short or long hair, this curl dryer will not only fluff up your hair, but it’ll also tidy every bit of it, including the tips! Made from aluminum, it evenly distributes heat, ensuring that you get the exact hairstyle that you want.
+<br>
+<span class='price'>Example Price: 2,580 yen (before tax)</span>"
+      10_headline: "10. YA-MAN RF Beaute Photo PLUS (Champagne Bronze) (HRF10T) "
+      10_desc_html: "Warming, cleansing, moisturizing, facial muscle care, cooling – this is a one-in-all salon device that can play 5 different roles! Deeply penetrating your skin, it’ll make your skin as supple as it can be!
+<br>
+<span class='price'>Example Price: 37,000 yen (before tax)</span>"
+  weather:
+    1: "晴れ"
+    2: "晴れのち曇り"
+    3: "晴れのち雨"
+    4: "晴れのち雪"
+    5: "晴れ時々曇り"
+    6: "晴れ時々雨"
+    7: "晴れ時々雪"
+    8: "曇り"
+    9: "曇りのち晴れ"
+    10: "曇りのち雨"
+    11: "曇りのち雪"
+    12: "曇り時々晴れ"
+    13: "曇り時々雨"
+    14: "曇り時々雪"
+    15: "雨"
+    16: "雨のち曇り"
+    17: "雨のち晴れ"
+    18: "雨のち雪"
+    19: "雨時々曇り"
+    20: "雨時々晴れ"
+    21: "雨時々雪"
+    22: "雪"
+    23: "雪のち曇り"
+    24: "雪のち晴れ"
+    25: "雪のち雨"
+    26: "雪時々曇り"
+    27: "雪時々晴れ"
+    28: "雪時々雨"
+  map:
+    search_from: "Search from list"
+    headline: "Search from Map"
+    information1: "※ Sendai is included in Miyagi"
+    information2: "※ Yokohama, Kamakura, Hakone is included in Kanagawa"
+    information3: "※ Kanazawa is included in Ishikawa"
+    information4: "※ Nagoya is included in Aichi"
+    hokkaido: "1. Hokkaido"
+    sendai: "5. Sendai"
+    tokyo: "13. Tokyo"
+    yokohama: "14. Yokohama"
+    kamakura: "14. Kamakura"
+    hakone: "14. Hakone"
+    kanazawa: "17. Kanazawa"
+    nagoya: "23. Nagoya"
+    kyoto: "25. Kyoto"
+    osaka: "29. Osaka"
+    fukuoka: "40. Fukuoka"
+    okinawa: "Okinawa"
+    popular: "Popular cities for tourists"
+  basic-information:
+    name: "名前:"
+    hours: "営業時間:"
+    closed: "休業日:"
+    price: "価格:"
+    address: "住所:"
+    access: "アクセス:"
+    url-ja: "ウェブサイト（日本語):"
+    url-en: "ウェブサイト（英語):"
+    url-th: "ウェブサイト（タイ語):"
+    url-zh-hant: "ウェブサイト（繁体字):"
+    url-zh-hans: "ウェブサイト（簡体字):"
+    url-ko: "ウェブサイト（韓国語):"
+    url-vi: "ウェブサイト（ベトナム語):"
+    others: "その他:"
+    checkin: "チェックイン:"
+    checkout: "チェックアウト:"
+  sidebar:
+    finder: "Restaurant finder"
+    rental: "Rental Car"
+    weekly: "Weekly forecast"
+    ranking: "Popular Posts"
+    connect: "Connect"
+    more: "Show more"
+    hide: "hide"
+    featured: "Featured"
+    book_agoda: "Book your Hotel"
+    spotlight: "Spotlight"
+  toc: "Table of Contents"
+  search:
+    title: "カテゴリーから探す"
+    desc: "%{num} search results found for %{term}"
+  views:
+    pagination:
+      previous: "<i class='icon-arrow-left icons'></i>"
+      next: "<i class='icon-arrow-right icons'></i>"
+  rankings:
+    title: "人気記事"
+    desc: ""
+  tags:
+    title: "%{param}"
+    desc: "This page collects articles about %{tag}"
+    list_title: "最新の %{tag} に関する記事"
+    meta_title: "%{tag} in Japan"
+    single_meta_desc: "%{tag}についての記事を読んで、日本の旅行や生活に関する情報を見つけてください。"
+    multi_meta_desc: "%{tag}に関する%{N}記事があります。こちらの記事から、日本の旅行や生活に関する情報を見つけてください。"
+  category:
+    cat2_with_child_cat3_desc: "%{cat2_alias}に関する%{N}記事があります。こちらから、%{cat3}についての情報を見つけてください。"
+    cat2_without_child_cat3_desc: "%{cat2_alias}に関する%{N}記事があります。こちらから、%{parent_cat1}に関する他の記事を探すこともできます。"
+    cat3_with_only_1_article: "%{cat3_alias}についての記事があります。日本の%{parent_cat2}に関する他の記事を探すこともできます。"
+    cat3_with_2_and_more_articles: "%{cat3_alias}に関する%{N}記事があります。日本の%{parent_cat2}に関する他の記事を探すこともできます。"
+  area:
+    index_title: "日本の各地域"
+    index_desc: "日本の各地域の記事を読んで、観光スポット、ご当地グルメ、買い物、旅行のための基礎知識などに関する情報を見つけてください。"
+    area_intro: "こちらのページでは、エリアから記事を検索できます。地図上のエリアをクリックすると、そのエリアに関連する記事の一覧を見ることができます。"
+    banner_section_title: "エリア特集"
+    top_link:
+      hokkaido: "北海道"
+      tohoku: "東北"
+      kanto: "関東"
+      chubu: "中部"
+      kansai: "関西"
+      chugoku: "中国"
+      shikoku: "四国"
+      setouchi: "瀬戸内"
+      kyushu: "九州"
+      okinawa: "沖縄"
+    breadcrumb: "エリア"
+    title: "%{param}"
+    desc: ""
+    area: "エリア"
+    title_prefix: "のすべて"
+    child_area_desc: "%{prefecture}の%{child_area}の楽しみ方、観光スポット、グルメ、お土産などを紹介した記事があります。"
+    feature:
+      hokkaido:
+        title: "北海道特集"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Hokkaido, including top accommodations, national parks, outdoor activities and tours, hot springs, and more."
+        top: "北海道"
+        article:
+          1:
+            title_html: "About Hokkaido"
+            text_html: "Hokkaido is Japan’s northernmost region, and it is home to all sorts of grand outdoor sightseeing spots. For example, there’s the World Heritage Shiretoko Peninsula, as well as Kushiro Shitsugen National Park, full of mountains that have seen great changes over time and all kinds of flora and fauna. Because Hokkaido is such a wide area, the climate and landscape differs even within the prefecture, with each region having its own traditional local culture, regional cuisine, events, and activities. In short, there’s a lot to enjoy in Hokkaido!"
+            url: "https://www.tsunagujapan.com/all-about-hokkaido/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "There are many luxurious accommodations in Hokkaido that blend beautifully with the prefecture’s splendid nature. Let us introduce you to some amazingly unique places, with a focus on holiday villas, in some of Hokkaido’s key areas, including Niseko, a resort with some of the best power snow in the world; Furano, home to a rural landscape that gorgeously expresses the four seasons; and Hakodate, the main entrance into the prefecture of Hokkaido for many. At these accommodations, you can truly relax and renew your spirit within Hokkaido’s grand outdoors."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-hokkaido-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "\"Adventure tourism\" refers to activities that include at least two out of three from nature, cultural exchange, and physical activity. It’s part of a new generation of travel styles that fit the demands of the sustainable development goals and coronavirus safety. Hokkaido’s splendid four seasons and accompanying stories, Ainu culture, and the local guides that share that unique culture make the prefecture the perfect destination for adventure tourism."
+            url: "https://www.tsunagujapan.com/adventure-tourism_in_hokkaido/"
+          4:
+            title_html: "National Parks"
+            text_html: "Compared to the rest of Japan, Hokkaido has a very different ecosystem thanks to its location at the very north of the country, surrounded by the sea. All six of its national parks are breathtaking, with some examples being the World Heritage Shiretoko National Park; Rishiri-Rebun-Sarobetsu National Park, where you’ll find fields of highland flowers; and Akan-Mashu National Park, home to Lake Mashu, one of the world’s clearest lakes."
+            url: "https://www.tsunagujapan.com/national-park-in-hokkaido/"
+          5:
+            title_html: "Regional Cuisine"
+            text_html: "Hokkaido not only has the largest area among all of Japan’s prefectures, but it is also a treasure trove of fresh food; seafood abound at its ports and all kinds of delicious vegetables, meats, and dairy products are found in its interior regions. Each region has its own cuisine, with different takes on ramen, jingisukan (a lamb dish with tons of veggies), soup curry, butter potato, and so on. Please visit Hokkaido and try its plethora of delicious regional cuisines for yourself!"
+            url: "https://www.tsunagujapan.com/12-local-foods-not-to-be-missed-in-hokkaido/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Hokkaido. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/a-guide-on-hokkaido-s-weather-climate/"
+            text: "A Guide On Hokkaido's Weather & Climate"
+          2:
+            url: "https://www.tsunagujapan.com/breathtaking-beauty%25ef%25bc%258110-rare-stunning-natural-phenomena-of-hokkaido/"
+            text: "Breathtaking Beauty! 10 Rare, Stunning Natural Phenomena in Hokkaido"
+          3:
+            url: "https://www.tsunagujapan.com/enjoy-the-spectacular-scenery-of-hokkaido-on-these-7-local-railway-lines/"
+            text: "Enjoy the Spectacular Scenery of Hokkaido on these 7 Local Railway Lines"
+          4:
+            url: "https://www.tsunagujapan.com/50-things-to-do-in-hokkaido/"
+            text: "50 Things to Do in Hokkaido"
+          5:
+            url: "https://www.tsunagujapan.com/forget-sapporo-8-winter-gems-in-northern-japan/"
+            text: "Venture Outside Sapporo to Discover These 8 Winter Gems in Northern Japan"
+          6:
+            url: "https://www.tsunagujapan.com/hokkaido-shrimp-dishes-guide/"
+            text: "[2019 Edition] Complete Hokkaido Gourmet Food Guide: Shrimp Edition"
+      tohoku:
+        title: "東北特集"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Tohoku, including top accommodations, national parks, best sightseeing spots, outdoor activities and tours, and more!"
+        top: "東北"
+        article:
+          1:
+            title_html: "About Tohoku"
+            text_html: "The Tohoku region lies at the northernmost tip of mainland Japan and consists of six prefectures: Aomori, Iwate, Akita, Miyagi, Yamagata, and Fukushima. As it lies at a higher latitude, it is always relatively cooler than other parts of Japan and offers gorgeous snowy scenery in the winter. There’s a lot of charm waiting to be discovered in Tohoku, from unspoiled nature to unique traditional festivities and crafts, as well as the healthy and delicious local cuisine."
+            url: "https://www.tsunagujapan.com/all-about-tohoku/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Tohoku is full of popular hot spring resort areas such as Aomori’s Sukayu Onsen, known for its gigantic mixed-gender bath; Akita’s Nyuto Onsen-kyo, featuring seven secluded hot springs waiting to be discovered; and Yamagata’s Ginzan Onsen, where you relax while admiring its retro surroundings. Whether staying at a private villa where contact with other guests is minimal, an inn in a less-busy location nestled within Tohoku’s great wilderness, or a high-end hotel, Tohoku is a great place to relax in comfort and with peace of mind."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-tohoku-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Tohoku has a wealth of nature to offer, such as the stunning primeval beech forest of Shirakami Sanchi, the picturesque Sanriku Coast, famous lakes like Towada and Tazawa, the majestic Oze Marshland, and Mt. Zao. You can also find traditional Japanese culture and traditions buried throughout the region, such as “matagi,” the old and traditional winter hunters of the region; and Dewa Sanzan, the heart of one of Japan’s unique faiths. With so much to offer, Tohoku is indeed an amazing place for adventure tourism."
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-tohoku"
+          4:
+            title_html: "National Parks"
+            text_html: "Tohoku is home to three national parks: Towada-Hachimantai National Park, full of hot springs and a gorgeous panorama born from volcanic activity; Sanriku Fukko National Park, which was created to help revitalize the Sanriku area after it was hit by the Great East Japan Earthquake; and Bandai-Asahi National Park, a base for the unique Japanese faith of mountain worship and and a place where you’ll find gorgeous lake and marsh scenery. Pay a visit to enjoy the incredible beauty of its nature, healing hot springs, and the traditions behind the ancient faith."
+            url: "https://www.tsunagujapan.com/national-park-in-tohoku/"
+          5:
+            title_html: "Sightseeing"
+            text_html: "Tohoku has a plethora of amazing nature and historic spots. For example, there’s Matsushima, which shows off one of Japan’s top three views; Hirosaki Castle, which is covered with cherry blossoms in the spring; Naruko Gorge, one of Tohoku’s top foliage spots; Risshakuji Temple, which appeared in a work of famous Japanese poet Matsuo Basho; and Ouchijuku, a post town built around 400 years ago. Check out the top sightseeing spots across Tohoku’s six prefectures in advance so that you can plan the best trip!"
+            url: "https://www.tsunagujapan.com/10-recommended-spots-in-tohoku/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Tohoku. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/ouchijuku-the-charming-village-stuck-in-the-samurai-period/"
+            text: "Ouchijuku - Travel Back in Time to the Samurai Period at This Charming Village"
+          2:
+            url: "https://www.tsunagujapan.com/sendai-zao-3-days-trip-onsen-hoar-frost-fox-village/"
+            text: "3 Days of Rejuvenation in Zao, Miyagi Prefecture: Sendai, Frost-Covered Trees, A Fox Village, and Togatta Onsen"
+          3:
+            url: "https://www.tsunagujapan.com/akita-yamagata-niigata-tohoku-travel-guide/"
+            text: "Experience Timeless Japanese Beauty in the Untouched Scenery of Niigata, Yamagata, and Akita"
+          4:
+            url: "https://www.tsunagujapan.com/10-must-see-places-yamagata-prefecture-1/"
+            text: "10 Must-See Places to Visit in Yamagata Prefecture"
+          5:
+            url: "https://www.tsunagujapan.com/top-10-sightseeing-spots-miyagi-tohoku/"
+            text: "Top 10 Sightseeing Spots in Miyagi Prefecture in the Tohoku Region"
+          6:
+            url: "https://www.tsunagujapan.com/goshikinuma-fukushima-s-otherworldy-beautiful-rainbow-lakes/"
+            text: "Goshikinuma - Fukushima's Otherworldly, Beautiful Rainbow Ponds"
+      kyushu:
+        title: "九州特集"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Kyushu, including top accommodations, national parks, outdoor activities and tours, hot springs, and more."
+        top: "九州"
+        article:
+          1:
+            title_html: "About Kyushu"
+            text_html: "As the southwesternmost of the main islands that make up the Japanese archipelago, Kyushu has a relatively mild climate. It is made up of the seven prefectures of Saga, Nagasaki, Oita, Kumamoto, Miyazaki, Kagoshima, and Fukuoka, the last of which is the gateway to Kyushu (and even Asia) as it has an active international airport and “shinkansen” (bullet train) station that connects it to the rest of the country.<br><br>Kyushu is filled with a range of delights, from gorgeous nature and “onsen” (hot springs), to activities that let you experience historical spots and the great outdoors, to mouthwatering local cuisine such as Fukuoka’s famous Hakata ramen."
+            url: "https://www.tsunagujapan.com/why-is-it-called-kyushu-9-provinces-when-there-are-only-7-prefectures/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Kyushu is home to many of Japan’s top hot spring resorts. As it is surrounded by ocean and endowed with splendorous nature, including places such as Mt. Aso and Yakushima Island, there are plenty of ryokan (traditional Japanese inns) and hotels that offer the chance to take in the gorgeous seasonal scenery as you soak your troubles away in an open-air bath. And for those who wish to get as much privacy as possible during their relaxing stay, many luxury accommodations offer villas and other fully-detached rooms that will offer peace of mind and limited contact with others."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-kyushu-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "\"Adventure tourism\" refers to activities that include at least two out of the three elements of nature, cultural exchange, and physical activity. It’s part of a new generation of travel styles that fit the demands of sustainable development goals and coronavirus safety. Adventure travel tours have been focused in Hokkaido, but Kyushu is seen as a place with a lot of potential for adventure tourism thanks to its abundant nature. Here, we will bring you information to help you enjoy adventure tourism in Kyushu."
+            url: "https://www.tsunagujapan.com/adventuretravel_in_kumamoto"
+          4:
+            title_html: "National Parks"
+            text_html: "Kyushu is home to six national parks. Untouched, pristine nature can be found in abundance in places such as the UNESCO World Heritage Yakushima National Park or Amami Gunto National Park, which preserves the second-largest mangrove forest in Japan. Other parks, like Kirishima-Kinkowan National Park (which includes Sakurajima Island), allow visitors the chance to experience the energy of active volcanoes up close. Why not visit one of these spectacular natural places and let yourself be awed by their unique beauty?"
+            url: "https://www.tsunagujapan.com/national-park-in-kyushu/"
+          5:
+            title_html: "Online Tours"
+            text_html: "In these times, online tours are a brand new and increasingly important method of sightseeing, with tours providing the opportunity for people to experience first-hand the charms of a far-away destination without leaving their homes. Tours that allow people to purchase and receive local goods in the mail are particularly popular. Other people are using online tours as a way to get a feel for a destination before actually going there in person. The full potential for online tourism is yet to be discovered!"
+            url: "https://www.tsunagujapan.com/kyushu-online-tours/"
+          6:
+            title_html: "Onsen"
+            text_html: "Kyushu is home to three of Japan’s five most active hot springs, leading many to call it the “Onsen Tengoku” (Hot Spring Heaven). Many people travel to the region just to tour around its famous onsen towns such as Beppu and Yufuin. Refresh your mind and body as you enjoy Kyushu’s onsen and the many delights they offer, such as waters with various qualities and healing properties, open-air baths that let you gaze upon the surrounding nature, and little onsen towns brimming with traditional Japanese charm."
+            url: "https://www.tsunagujapan.com/onsen-in-kyushu-top10/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Kyushu. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/explore-kyushu-by-public-transport-3-days-in-nagasaki-saga-and-fukuoka/"
+            text: "3 Days in Kyushu: Exploring Hidden Gems and Rich Culture in Nagasaki, Saga, and Fukuoka Via Public Transportation"
+          2:
+            url: "https://www.tsunagujapan.com/how-hakata-ramen-became-the-most-popular/"
+            text: "How Hakata's Special Style of Ramen Became the Most Popular in the World"
+          3:
+            url: "https://www.tsunagujapan.com/kyushu-local-festival-guide/"
+            text: "A Season by Season Guide to Kyushu's Vibrant Local Festivals"
+          4:
+            url: "https://www.tsunagujapan.com/7-popular-picturesque-spots-kumamoto/"
+            text: "25 Best Things to Do in Kumamoto, One of Japan's Most Picturesque Regions"
+          5:
+            url: "https://www.tsunagujapan.com/kogoshima-senganen/"
+            text: "An In-Depth Look Into Sengan-en Garden & Shoko Shuseikan Museum: Symbols of Japan's Industrial Revolution"
+          6:
+            url: "https://www.tsunagujapan.com/nagasaki-recommended-tourist-attractions/"
+            text: "The Best Sightseeing Spots in Nagasaki: World Heritage Sites, Gourmet Dining, and More!"
+            kyushu:
+              title: "Kyushu Feature"
+              description: "This page introduces all sorts of articles on how to enjoy your time in Kyushu, including top accommodations, national parks, outdoor activities and tours, hot springs, and more."
+              top: "Kyushu"
+              article:
+                1:
+                  title_html: "About Kyushu"
+                  text_html: "As the southwesternmost of the main islands that make up the Japanese archipelago, Kyushu has a relatively mild climate. It is made up of the seven prefectures of Saga, Nagasaki, Oita, Kumamoto, Miyazaki, Kagoshima, and Fukuoka, the last of which is the gateway to Kyushu (and even Asia) as it has an active international airport and “shinkansen” (bullet train) station that connects it to the rest of the country.<br><br>Kyushu is filled with a range of delights, from gorgeous nature and “onsen” (hot springs), to activities that let you experience historical spots and the great outdoors, to mouthwatering local cuisine such as Fukuoka’s famous Hakata ramen."
+                  url: "https://www.tsunagujapan.com/why-is-it-called-kyushu-9-provinces-when-there-are-only-7-prefectures/"
+                2:
+                  title_html: "Luxury Accommodations"
+                  text_html: "Kyushu is home to many of Japan’s top hot spring resorts. As it is surrounded by ocean and endowed with splendorous nature, including places such as Mt. Aso and Yakushima Island, there are plenty of ryokan (traditional Japanese inns) and hotels that offer the chance to take in the gorgeous seasonal scenery as you soak your troubles away in an open-air bath. And for those who wish to get as much privacy as possible during their relaxing stay, many luxury accommodations offer villas and other fully-detached rooms that will offer peace of mind and limited contact with others."
+                  url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-kyushu-area/"
+                3:
+                  title_html: "Adventure Tourism"
+                  text_html: "\"Adventure tourism\" refers to activities that include at least two out of the three elements of nature, cultural exchange, and physical activity. It’s part of a new generation of travel styles that fit the demands of sustainable development goals and coronavirus safety. Adventure travel tours have been focused in Hokkaido, but Kyushu is seen as a place with a lot of potential for adventure tourism thanks to its abundant nature. Here, we will bring you information to help you enjoy adventure tourism in Kyushu."
+                  url: "https://www.tsunagujapan.com/adventuretravel_in_kumamoto"
+                4:
+                  title_html: "National Parks"
+                  text_html: "Kyushu is home to six national parks. Untouched, pristine nature can be found in abundance in places such as the UNESCO World Heritage Yakushima National Park or Amami Gunto National Park, which preserves the second-largest mangrove forest in Japan. Other parks, like Kirishima-Kinkowan National Park (which includes Sakurajima Island), allow visitors the chance to experience the energy of active volcanoes up close. Why not visit one of these spectacular natural places and let yourself be awed by their unique beauty?"
+                  url: "https://www.tsunagujapan.com/national-park-in-kyushu/"
+                5:
+                  title_html: "Online Tours"
+                  text_html: "In these times, online tours are a brand new and increasingly important method of sightseeing, with tours providing the opportunity for people to experience first-hand the charms of a far-away destination without leaving their homes. Tours that allow people to purchase and receive local goods in the mail are particularly popular. Other people are using online tours as a way to get a feel for a destination before actually going there in person. The full potential for online tourism is yet to be discovered!"
+                  url: "https://www.tsunagujapan.com/kyushu-online-tours/"
+                6:
+                  title_html: "Onsen"
+                  text_html: "Kyushu is home to three of Japan’s five most active hot springs, leading many to call it the “Onsen Tengoku” (Hot Spring Heaven). Many people travel to the region just to tour around its famous onsen towns such as Beppu and Yufuin. Refresh your mind and body as you enjoy Kyushu’s onsen and the many delights they offer, such as waters with various qualities and healing properties, open-air baths that let you gaze upon the surrounding nature, and little onsen towns brimming with traditional Japanese charm."
+                  url: "https://www.tsunagujapan.com/onsen-in-kyushu-top10/"
+              read_more: "Discover more"
+              related_articles:
+                title: "関連記事"
+                lead: "We have many more fantastic articles about Kyushu. Feel free to take a look!"
+                1:
+                  url: "https://www.tsunagujapan.com/explore-kyushu-by-public-transport-3-days-in-nagasaki-saga-and-fukuoka/"
+                  text: "3 Days in Kyushu: Exploring Hidden Gems and Rich Culture in Nagasaki, Saga, and Fukuoka Via Public Transportation"
+                2:
+                  url: "https://www.tsunagujapan.com/how-hakata-ramen-became-the-most-popular/"
+                  text: "How Hakata's Special Style of Ramen Became the Most Popular in the World"
+                3:
+                  url: "https://www.tsunagujapan.com/kyushu-local-festival-guide/"
+                  text: "A Season by Season Guide to Kyushu's Vibrant Local Festivals"
+                4:
+                  url: "https://www.tsunagujapan.com/7-popular-picturesque-spots-kumamoto/"
+                  text: "25 Best Things to Do in Kumamoto, One of Japan's Most Picturesque Regions"
+                5:
+                  url: "https://www.tsunagujapan.com/kogoshima-senganen/"
+                  text: "An In-Depth Look Into Sengan-en Garden & Shoko Shuseikan Museum: Symbols of Japan's Industrial Revolution"
+                6:
+                  url: "https://www.tsunagujapan.com/nagasaki-recommended-tourist-attractions/"
+                  text: "The Best Sightseeing Spots in Nagasaki: World Heritage Sites, Gourmet Dining, and More!"
+      okinawa:
+        title: "沖縄特集"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Okinawa, including top accommodations, national parks, beaches, and outdoor activities and tours."
+        top: "沖縄"
+        article:
+          1:
+            title_html: "About Okinawa"
+            text_html: "Okinawa Prefecture lies at the southernmost point of Japan and consists of 160 islands scattered across a vast sea. It’s the sole prefecture in Japan with a subtropical oceanic climate, so you’ll find an incredibly distinct ecosystem and culture here. Let us introduce you to all the unique charms of Okinawa, including the coral reefs and tropical fish swimming about its clear blue sea, forests that help preserve its unique ecosystem, its extraordinary traditional culture, and outdoor activities like watersports."
+            url: "https://www.tsunagujapan.com/beginners-guide-to-okinawa/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Here we’ll introduce stand-alone villas and cottages on the main island of Okinawa (northern, central, and southern regions, as well as Naha), Ishigaki Island, and Miyakojima Island. All the accommodations allow you to enjoy the vast, gorgeous nature that Okinawa offers with private pools, ocean views, etc. We also note down tourist spots near each place, so please have a look!"
+            url: "https://www.tsunagujapan.com/10-okinawa-accommodations-that-can-be-rented-out/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Okinawa Prefecture is made up of multiple islands, including the main island Okinawa and many outer islands such as Miyakojima, Ishigaki, and Iriomote. It’s most well known for its pristine white beaches and emerald green ocean, but it is also home to a unique ecosystem originating from its jungle climate. There are many ways you can experience its distinct nature for yourself, including cave diving, horse riding upon one of the prefecture’s native horse species on Yonaguni, and touring around in a traditional sabani boat."
+            url: "https://www.tsunagujapan.com/adventuretourism-in-okinawa/"
+          4:
+            title_html: "National Parks"
+            text_html: "There are three national parks within Okinawa: Yambaru National Park, Keramashoto National Park, and Iriomote-Ishigaki National Park. Why not visit these national parks to enjoy Okinawa’s vast nature and traditional culture? You can experience its endless charms, including Japan’s largest subtropical and mangrove forests, clear and pristine ocean, wide variety of coral reefs, distinct flora and fauna, and traditional village houses with red tile roofs."
+            url: "https://www.tsunagujapan.com/national-park-in-okinawa/"
+          5:
+            title_html: "Beaches"
+            text_html: "Okinawa is a popular resort area thanks to its hot and humid subtropical climate, with the highest average annual temperatures in all of Japan. The prefecture has many beaches that are known for their pristine white sands and clear blue ocean, so it’s no wonder that many people flock to Okinawa during beach season. Let us introduce you to the top beaches on Okinawa and its surrounding islands; from ones that everyone know to hidden gems, we’ll go through the features and access info for each beach so that you can plan your ultimate Okinawa trip!"
+            url: "https://www.tsunagujapan.com/top-okinawa-beaches/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Okinawa. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/a-guide-to-traveling-to-and-around-okinawa/"
+            text: "Going to Okinawa? A Guide to Traveling to and Around Japan's Tropical Prefecture"
+          2:
+            url: "https://www.tsunagujapan.com/top-20-popular-okinawa-souvenirs/"
+            text: "Top 20 Popular Okinawa Souvenirs That Are Guaranteed to Be a Hit"
+          3:
+            url: "https://www.tsunagujapan.com/a-year-s-guide-on-the-weather-in-okinawa-is-it-really-always-summer-in-okinawa/"
+            text: "A Year's Guide on the Weather in Okinawa - Is It Really Always Summer in Okinawa?"
+          4:
+            url: "https://www.tsunagujapan.com/50-things-to-do-in-okinawa/"
+            text: "50 Things to Do in Okinawa"
+          5:
+            url: "https://www.tsunagujapan.com/6-lodges-with-open-air-baths-in-okinawa/"
+            text: "Ultimate Relaxation! 6 Lodging Facilities with Open-Air Baths in Okinawa"
+          6:
+            url: "https://www.tsunagujapan.com/a-must-read-for-anyone-wanting-to-stay-in-okinawa-for-cheap-13-of-the-best-budget-business-hotels/"
+            text: "A Must-Read for Anyone Wanting to Stay in Okinawa for Cheap! 13 of the Best Budget Business Hotels"
+      shikoku:
+        title: "四国特集"
+        description: "This page features a variety of articles on the region of Shikoku. It is full of useful information for enjoying Shikoku, including top accommodations, national parks, adventure tours, pilgrimages, etc."
+        top: "四国"
+        article:
+          1:
+            title_html: "About Shikoku"
+            text_html: "Located southwest of mainland Japan, the Shikoku region is made up of four prefectures: Tokushima, Kagawa, Ehime, and Kochi. To the north lies the Seto Inland Sea, while the south faces the Pacific Ocean, meaning it has relatively mild winters and gets plenty of rain. It is filled with natural wonders, such as the beautiful islands on the Seto Inland Sea, dynamic terrain, and lush forests. Not only is Shikoku famous for its fruit and vegetable production, but it also has a booming fishing industry, meaning that you can enjoy all kinds of delicious foods throughout the year."
+            url: "https://www.tsunagujapan.com/all-about-shikoku/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to Shikoku accommodations nestled right within its grand nature, such as a renovated old private villa near the exceptionally clear Shimanto River and an inn with a stunning view of the small island of Shodoshima on the Seto Inland Sea. We'll also introduce other kinds of lodgings in places like Dogo Onsen, one of Japan's most well-known hot spring resorts, and the secluded Iya Onsen. All the accommodations we introduce, such as private villas and annexes, take proper COVID-19 measures, allowing you to relax in peace as they let you avoid contact with others."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-shikoku-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "There's a lot of outdoor fun to be had at Shikoku, which is surrounded by the ocean and has a rather mild climate. Let us introduce you to all the ways you can enjoy Shikoku's sea, rivers, and mountains: canoe through the Shimanto River; bicycle or kayak over the Seto Inland Sea, home to a gorgeous splatter of islands; whitewater raft like a pro at the Oboke and Koboke canyons; go diving at Kashiwa Island; and whale watch at Kochi!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-shikoku/"
+          4:
+            title_html: "National Parks"
+            text_html: "Shikoku is home to two national parks. One is Setonaikai National Park, which is the largest national park in all of Japan and has an amazing view of the various islands that make up the Seto Inland Sea. The other one is Ashizuri-Uwakai National Park, which is full of splendor, such as the unique subtropical marine life that populates its waters due to the Kuroshio Current and its vast rias coastline. Come to Shikoku and enjoy the view from one of its observation decks or savor the great outdoors!"
+            url: "https://www.tsunagujapan.com/national-park-in-shikoku/"
+          5:
+            title_html: "Shikoku Pilgrimage"
+            text_html: "The Shikoku Pilgrimage is an 88-temple journey across the Shikoku region that the monk Kobo Daishi (Kukai) is believed to have made back in the Heian Period (794-1185). It spans 1,200 km and is not only walked for religious purposes, but also to enjoy Shikoku's beautiful scenery and unique local foods along the way. There's lots of ways to make and enjoy the trip, which is why even today, many domestic and international tourists make the trip."
+            url: "https://www.tsunagujapan.com/ohenro-shikoku-pilgrimage/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Shikoku. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/top-12-photogenic-spots-shikoku/"
+            text: "Experience Stunning Scenery on a Small Island! Top 12 Photogenic Spots in Shikoku"
+          2:
+            url: "https://www.tsunagujapan.com/top-10-tourist-destinations-ehime-prefecture-shikoku/"
+            text: "Top 10 Tourist Destinations in Ehime Prefecture, Shikoku"
+          3:
+            url: "https://www.tsunagujapan.com/12-places-to-visit-in-kagawa-shikoku/"
+            text: "12 Places to Visit in Kagawa, Shikoku"
+          4:
+            url: "https://www.tsunagujapan.com/family-guide-to-reoma-resort/"
+            text: "Wonderful Views & Fun at an Amusement Park! A Family Guide to Reoma Resort"
+          5:
+            url: "https://www.tsunagujapan.com/shimanami-kaido-cycle-across-the-seto-inland-sea/"
+            text: "The Shimanami Kaido: Japan's Best Cycling Adventure!"
+          6:
+            url: "https://www.tsunagujapan.com/beautiful-sights-in-japan-s-least-visited-prefectures/"
+            text: "Stunningly Beautiful Sights in Japan's Least-Visited Prefectures"
+      setouchi:
+        title: "瀬戸内特集"
+        description: "On this page, you’ll find a collection of articles on the Setouchi area. This includes a ton of info to help you enjoy Setouchi to the fullest, including the best accommodations, national parks, adventure tourism experiences, and local foods!"
+        top: "瀬戸内"
+        article:
+          1:
+            title_html: "About Setouchi"
+            text_html: "Covering seven prefectures facing the Seto Inland Sea, the Setouchi region is absolutely massive! As such, it boasts a wealth of charm, including a pleasantly mild climate, gentle sea, gorgeous island scenery, historical townscapes, and even international art events. Here, we introduce basic info that everyone should know about the Setouchi area before visiting."
+            url: "https://www.tsunagujapan.com/all-about-setouchi/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to accommodations within the Setouchi region where you can fully take in the natural surroundings and history. These options include a long-established traditional inn on Miyajima, the island where you can find the World Heritage Site of Itsukushima Shrine; a hotel boasting beautiful starry night views from its island location; a popular glamping facility that lets you fully take in the sea; and another inn with over 300 years of history within the famed Kurashiki Bikan Historical Quarter. Enjoy a private, quiet vacation away from the hustle and bustle of crowded city life."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-setouchi-area"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Being close to the Seto Inland Sea, the Setouchi region generally has a temperate climate that allows for all kinds of outdoor fun any time of the year. Enjoy the beautiful water that flows through the region from the sea to the mountains as well as the region’s gorgeous inland scenery! Here are a couple of ways to enjoy these natural bounties along with the region’s culture through the great outdoors."
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-setouchi"
+          4:
+            title_html: "National Parks"
+            text_html: "Setonaikai National Park is the largest of its kind in Japan, covering eleven prefectures and even parts of the sea. As such, it flaunts an incredible number of charming and unique spots to explore. We’ll introduce you to some of our top picks and the best ways to enjoy them. You’ll surely be amazed by some of the options awaiting you: bountiful nature such as terraced island rice fields and the Naruto Whirlpools, port city views that’ll take you back in time, the World Heritage of Itsukushima Shrine, and more!"
+            url: "https://www.tsunagujapan.com/national-park-in-setouchi/"
+          5:
+            title_html: "Local Cuisine"
+            text_html: "As all the prefectures within the Setouchi region face the sea, the area is known for its delightful seafood cuisine, often including luxurious ingredients like sea bream and puffer fish. You’ll also find many dishes made from wheat or buckwheat flour. Within this section, we will cover 15 delicious local dishes across the region’s seven prefectures. Why not consider choosing where to visit based on what foods you want to try?"
+            url: "https://www.tsunagujapan.com/15-local-foods-not-to-be-missed-in-setouchi/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Setouchi. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/guide-kinosaki-onsen/"
+            text: "The Ultimate Travel Guide to Kinosaki Onsen, the Best Hot Spring Town in Hyogo Prefecture"
+          2:
+            url: "https://www.tsunagujapan.com/a-trip-through-chugoku-region-the-land-of-myths-and-memories/"
+            text: "A Trip Through Japan's Chugoku Region: Yamaguchi, Hiroshima,Tottori and Beyond"
+          3:
+            url: "https://www.tsunagujapan.com/25-things-to-do-hiroshima/"
+            text: "25 Amazing Things To Do in Hiroshima: A Complete Travel Guide to Enjoying Its History, Culture, and Nature"
+          4:
+            url: "https://www.tsunagujapan.com/only-1-hour-from-osaka-10-must-visit-places-in-okayama/"
+            text: "Only 1 Hour from Osaka! 10 Must-Visit Places in Okayama"
+          5:
+            url: "https://www.tsunagujapan.com/beautiful-sights-in-japan-s-least-visited-prefectures/"
+            text: "Stunningly Beautiful Sights in Japan's Least-Visited Prefectures"
+          6:
+            url: "https://www.tsunagujapan.com/top-10-tourist-destinations-ehime-prefecture-shikoku/"
+            text: "Top 10 Tourist Destinations in Ehime Prefecture, Shikoku"
+      kanto:
+        title: "関東特集"
+        description: "On this page, you’ll find a collection of articles about the Kanto region, covering everything from top accommodations to national parks, adventure tours, and hot spring areas."
+        top: "関東"
+        article:
+          1:
+            title_html: "About Kanto"
+            text_html: "The Kanto region is the center of Japan in a number of ways, including its economy and population, which covers over a third of Japan’s total. Starting with Tokyo, one of the most prominent metropolises in the world, Kanto holds a plethora of must-see spots, such as the global port city of Yokohama, the ancient capital of Kamakura, and the World Heritage Site of Nikko Toshogu Shrine. Plan for your trip by reading up on all the basic info and get to know this amazing region of Japan!"
+            url: "https://www.tsunagujapan.com/all-about-kanto/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Within the Kanto region are a plethora of top-tier hotels offering the kind of exemplary service expected from a major city like Tokyo. Complementing this is a wealth of hot spring areas where you can stay in a traditional Japanese inn and relish an atmosphere unique to Japan, such as Kusatsu Onsen and Ikaho Onsen in Gunma Prefecture or Hakone Onsen in Kanagawa Prefecture. If you’re still figuring out where to stay, let us introduce you to hotels, villas, and inns that can all be accessed easily from Tokyo."
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-kanto-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Hidden throughout Tokyo and the Kanto region is a fantastic diversity of natural wonders offering thrilling adventures. Prefectures like Tochigi and Gunma, in particular, are renowned for their wealth of outdoor activities, such as canyoning in the mountains or over rivers and horse riding. Here we present some outdoor activities and spots that are not only easy to access from Tokyo, but can also be done as a day trip. Why not try your hand at one during your Tokyo visit?"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-kanto"
+          4:
+            title_html: "National Parks"
+            text_html: "Kanto is home to three national parks: Nikko National Park, known for gorgeous mountain, lake, waterfall, and wetland scenery along with temples and shrines designated as a World Heritage Site; Oze National Park, where you can walk on a wooden path over marshland while admiring the incredible variety of flora; and Chichibu-Tama-Kai National Park, which is the closest to Tokyo and extremely easy to access. In this article, we’ll introduce you to their charms and show you how best to enjoy them!"
+            url: "https://www.tsunagujapan.com/national-park-in-kanto/"
+          5:
+            title_html: "Hot Springs"
+            text_html: "There are numerous hot spring havens easily accessed from Tokyo, such as Kusatsu Onsen, which boasts the highest natural spring water output in Japan; Hakone-Yumoto Onsen, renowned as a place for enjoying art alongside hot springs; and Kamogawa Onsen, a resort-like area right by the sea. So, why not spend the night at one of these paradises while exploring Tokyo? We’ll introduce the best things to do in each and what sort of benefits their hot spring waters hold, allowing you to pick one that best matches your interests and travel plans!"
+            url: "https://www.tsunagujapan.com/10-kanto-onsen/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Kanto. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/13-things-you-didn-t-know-about-the-yamanote-line/"
+            text: "13 Fun Facts About the Yamanote Line, the Beating Heart of Tokyo"
+          2:
+            url: "https://www.tsunagujapan.com/20-recommended-spots-in-chichibu/"
+            text: "20 Must-See Sightseeing Spots In Chichibu!"
+          3:
+            url: "https://www.tsunagujapan.com/hitachi-seaside-park/"
+            text: "Hitachi Seaside Park - Home to One of the Best Flower Fields in Japan"
+          4:
+            url: "https://www.tsunagujapan.com/sightseeing-2-hours-from-tokyo/"
+            text: "The Top 10 Day Trip Destinations Within 2 Hours of Tokyo"
+          5:
+            url: "https://www.tsunagujapan.com/explore-the-hidden-traditional-side-of-japan-things-to-do-gunma-niigata/"
+            text: "Top 20 Things to Do in Gunma and Niigata Prefectures - Explore the Hidden Traditional Side of Japan!"
+          6:
+            url: "https://www.tsunagujapan.com/13-must-visit-spots-in-nikko/"
+            text: "13 Sightseeing Attractions You Won't Want to Miss When Visiting Nikko!"
+      kansai:
+        title: "関西特集"
+        description: "このページでは、関西エリアに関する記事を集めています。関西エリアのおすすめ宿泊施設や国立公園、アクティビティツーリズム、関西弁の基礎知識など、関西エリアを楽しむために役立つ情報が満載です。"
+        top: "関西"
+        article:
+          1:
+            title_html: "関西について"
+            text_html: "日本のほぼ中心に位置する関西地方は、昔ながらの伝統文化が息づく京都や奈良、古くから日本の産業・経済の中心として発展してきた大阪や港町の神戸など、個性豊かな地域からなる人気の観光エリア。 関西エリアを訪れる前に押さえておきたい基礎知識を身につけて、関西旅行にお役立てください。"
+            url: "https://www.tsunagujapan.com/all-about-kansai/"
+          2:
+            title_html: "高級宿泊施設（ホテル／旅館）"
+            text_html: "大阪の中心街に建つ5つ星ホテル、神戸牛と夜景を堪能できる高級ホテル、兵庫の城崎温泉にある高級旅館、京町屋を改装した宿、露天風呂から寺院の塔を臨める宿、精進料理や懐石料理を楽しめる宿など。関西で一度は泊まってみたい宿泊施設をご紹介。"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-kansai-area/"
+          3:
+            title_html: "アドベンチャーツーリズム"
+            text_html: "文化とアクティビティが混在した世界遺産の熊野古道、瀬戸内海に浮かぶ淡路島のシーカヤック、里山風景を眺めながら散策できる京丹波町のホーストレッキング、奈良の開運スポットで開催されるバンジージャンプなど。関西エリアのおすすめアクティビティと見どころをご紹介。"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-kansai/"
+          4:
+            title_html: "国立公園"
+            text_html: "世界でも珍しい「道」の世界遺産や約３万本の桜を有する吉野山がある「吉野熊野国立公園」、変化に富む海岸地形や鳥取砂丘を有する「山陰海岸国立公園」、多島美が魅力の「瀬戸内海国立公園」。関西エリアの府県を含む３つの国立公園のおすすめポイントと楽しみ方をご紹介。"
+            url: "https://www.tsunagujapan.com/national-park-in-kansai/"
+          5:
+            title_html: "関西弁"
+            text_html: "関西弁には標準語と異なる単語や表現があり、イントネーションや語尾変化にも大きな特徴があります。旅行中に使える代表的な関西弁や関西人と仲良くなるための豆知識など、事前に知識を身につけておけば、現地の関西人と快適にコミュニケーションが楽しめます。"
+            url: "https://www.tsunagujapan.com/all-about-kansai-dialect/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "関西エリアに関する記事は他にもあります。ぜひご覧ください。"
+          1:
+            url: "https://www.tsunagujapan.com/8-spots-where-you-can-feel-japans-history-and-spirituality/"
+            text: "Great Day-Trips From Kyoto and Osaka! 8 Sites Where You Can Feel Japan’s History and Spirituality"
+          2:
+            url: "https://www.tsunagujapan.com/japans-pilgrimage-roads-the-kumano-kodou/"
+            text: "Experience the Kumano Kodo - A Complete Guide to Hiking One of Japan’s Great Pilgrimage Routes"
+          3:
+            url: "https://www.tsunagujapan.com/osaka-shotengai-shopping-streets/"
+            text: "Osaka’s Best Bargains: “Shotengai” Shopping Streets in the City of Merchants"
+          4:
+            url: "https://www.tsunagujapan.com/10-customs-unique-to-kyoto/"
+            text: "10 Unique Kyoto Customs That Even Japanese People Find Confusing"
+          5:
+            url: "https://www.tsunagujapan.com/kansai-useful-one-day-transport-passes/"
+            text: "A Complete Guide to Kansai Transportation: 9 One-Day Passes of Great Value"
+          6:
+            url: "https://www.tsunagujapan.com/5-ways-to-explore-the-kansai-region-on-bicycle/"
+            text: "5 Ways to Explore the Kansai Region on Bicycle"
+      chubu:
+        title: "Chubu Feature"
+        description: "This page introduces all sorts of articles on how to enjoy your time in Chubu, including top accommodations, national parks, outdoor activities and tours, retro townscapes, and more."
+        top: "Chubu"
+        article:
+          1:
+            title_html: "About Chubu"
+            text_html: "Encompassing the central area of mainland Japan, the Chubu region is home to a wealth of sightseeing attractions, including Mt. Fuji, the former castletown of Kanazawa; the historic World Heritage mountain villages of Shirakawa-go and Gokayama; and the leading mountain resort Kamikochi. In this article, we cover all the basics you need to know about the Chubu region, from what makes it special to its climate and how to get there."
+            url: "https://www.tsunagujapan.com/all-about-chubu/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to places to stay in the Chubu region that we think you’ll absolutely love. Spend a night at a long-established “ryokan” inn situated in the Chaya District of Kanazawa in Ishikawa Prefecture, enjoy an all-you-can-eat fresh seafood buffet at another inn with hot spring baths in Toyama, admire the designer furniture and modern art decorating a refurbished townhouse in Niigata Prefecture, or maybe even gaze at Mt. Fuji from the windows of a resort hotel built close to Lake Kawaguchi in Yamanashi Prefecture!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chubu-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Have a thrilling adventure in the Chubu region with these fun outdoor activities and gorgeous nature scenery! Admire Mie’s vibrant surroundings while standup paddleboarding, raft your way down Nagara River in Gifu, or ride around on a snowmobile in Hida Takayama. Alternatively, go fishing and eat what you catch or bungee jump from a height of 215 meters! The opportunities are endless!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chubu/"
+          4:
+            title_html: "National Parks"
+            text_html: "Many tall mountains can be found within the national parks of the Chubu region, making them amazing places for those seeking out challenging mountain climbs, winter ski adventures, hot springs, or an escape from the sweltering summer heat. In this article, we cover all five of the national parks in Chubu in detail, going over some of the top reasons why they make such great places to explore. Encounter the wild snow monkeys of Joshin’etsukogen National Park, relax at the leading mountain resort of Kamikochi in Chubusangaku National Park, and pay a visit to the 2,000-year-old Ise Jingu shrine within Ise-Shima National Park."
+            url: "https://www.tsunagujapan.com/national-park-in-chubu/"
+          5:
+            title_html: "Retro Townscapes"
+            text_html: "The Chubu region is rich in traditional Japanese townscapes, and we want you to see the best of them! There’s the gorgeous Higashi Chaya District in Kanazawa, Ishikawa Prefecture, with its cobblestone streets and stunning historical architecture. Then you have Toyama’s Gokayama, a historical mountain village registered as a World Heritage Site; Nagoya’s Arimatsu, a merchant town renowned in the tie-dyeing industry; Fukui’s Kumagawa-juku, a post town born from trade with Kyoto; and far more!"
+            url: "https://www.tsunagujapan.com/chubu-area-traditional-retro-townscapes/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Chubu. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/10-tea-houses-in-kanazawa/"
+            text: "Top 10 Tea Houses in Kanazawa's Tea House District to Wind Down In"
+          2:
+            url: "https://www.tsunagujapan.com/6-high-class-ryokan-around-lake-kawaguchi/"
+            text: "6 High-Class Ryokan Around Lake Kawaguchi to Enjoy a Magnificent View of Mt. Fuji"
+          3:
+            url: "https://www.tsunagujapan.com/discover-karuizawa-rental-bicycle/"
+            text: "Discover the Best of Karuizawa via Rental Bicycles"
+          4:
+            url: "https://www.tsunagujapan.com/2-day-autumn-trip-in-toyama-kurobe-uozu/"
+            text: "Fall Bliss in Toyama: A 2-Day Road Trip in Kurobe and Uozu"
+          5:
+            url: "https://www.tsunagujapan.com/2-day-trip-in-okazaki/"
+            text: "Spend a 2-Day Trip in Okazaki, a Hidden Gem in Aichi Prefecture"
+          6:
+            url: "https://www.tsunagujapan.com/deep-snow-an-hour-from-tokyo-relishing-the-midwinter-bounties-of-niigata/"
+            text: "Deep Snow an Hour From Tokyo: Relishing the Midwinter Bounties of Niigata"
+      chugoku:
+        title: "Chugoku Feature"
+        description: "On this page, you’ll find a collection of articles about the Chugoku region, covering everything from top accommodations to national parks, adventure tours, and its many and varied historic structures."
+        top: "Chugoku"
+        article:
+          1:
+            title_html: "About Chugoku"
+            text_html: "Encompassing the westernmost part of Japan’s main island of Honshu, the Chugoku region is filled with historic, cultural, and scenic delights. Some examples include Itsukushima Shrine, registered as a World Heritage Site; the historic townscapes of Hagi Castle Town; and the Tottori Sand Dunes, the largest formations of their kind in all of Japan. If you're planning a trip to Chugoku, then here's everything you'll need to know about the region, including information on its weather, the best places to visit, and how to get there."
+            url: "https://www.tsunagujapan.com/a-trip-through-chugoku-region-the-land-of-myths-and-memories/"
+          2:
+            title_html: "Luxury Accommodations"
+            text_html: "Let us introduce you to some really enthralling and unforgettable stays in the Chugoku region: a 400-year-old resort hotel near Itsukushima Shrine, a Hiroshima “ryokan” inn with open-air baths in every room, a long-established inn situated right within the Kurashiki Bikan Historical Quarter of Okayama Prefecture, a Yamaguchi hot spring inn boasting a large bath with gorgeous views of a nearby mountain stream, a Tottori inn where you can stuff yourself with fresh Sea of Japan delicacies such as crab, and more!"
+            url: "https://www.tsunagujapan.com/trustworthy-luxury-accommodations-in-japans-chugoku-area/"
+          3:
+            title_html: "Adventure Tourism"
+            text_html: "Go on thrilling adventures in the Chugoku area! Ride across the Tottori Sand Dunes on an off-road “fat bike” or fly high above them on a paraglider. Paddle up close to Itsukushima Shrine’s giant torii gate in a sea kayak. SUP around Yamaguchi’s Suo-Oshima Island. Take a hot spring dip at Yuki Onsen or enjoy some shower climbing in Hiroshima. There is always something fun to do in Chugoku!"
+            url: "https://www.tsunagujapan.com/adventure-tourism-in-chugoku/"
+          4:
+            title_html: "National Parks"
+            text_html: "The Chugoku region is home to two national parks: Setonaikai National Park, the largest national park in Japan partially made up of the 1,000 islands on the Seto Inland Sea, and Daisen-Oki National Park, where you can find Izumo Taisha—a grand shrine that features as the setting of various Japanese myths and legends—as well as mountains like Mt. Daisen and lovely coastline scenery shaped from the rough waves of the Sea of Japan. Come discover these two nature wonderlands with us."
+            url: "https://www.tsunagujapan.com/national-park-in-chugoku/"
+          5:
+            title_html: "Historic Structures"
+            text_html: "Admire the many architectural marvels of the Chugoku region, such as the giant torii gate of Itsukushima Shrine, a registered World Heritage Site, standing in the middle of the sea. There are also the white-walled warehouses and willow-lined avenues of the Kurashiki Bikan Historical Quarter; the wooden 200-meter-long Kintai Bridge featuring five arches; and Mitokusan Sanbutsuji Temple's Nageire Hall, a national treasure built right into a cliff face cavern."
+            url: "https://www.tsunagujapan.com/chugoku-unique-historic-structures/"
+        read_more: "Discover more"
+        related_articles:
+          title: "関連記事"
+          lead: "We have many more fantastic articles about Chugoku. Feel free to take a look!"
+          1:
+            url: "https://www.tsunagujapan.com/filming-location-in-hiroshima-drive-my-car/"
+            text: "\"Drive My Car\" Hiroshima Filming Locations - Step Into the World of Haruki Murakami!"
+          2:
+            url: "https://www.tsunagujapan.com/7-photogenic-spots-in-tottori-full-of-nature-and-culture/"
+            text: "7 Photogenic Spots in Tottori, a Prefecture Full of Nature and Culture"
+          3:
+            url: "https://www.tsunagujapan.com/only-1-hour-from-osaka-15-awesome-photogenic-spots-in-okayama/"
+            text: "Only 1 Hour From Osaka! 15 Awesome Photogenic Spots in Okayama"
+          4:
+            url: "https://www.tsunagujapan.com/shimanami-kaido-cycle-across-the-seto-inland-sea/"
+            text: "The Shimanami Kaido: Japan's Best Cycling Adventure!"
+          5:
+            url: "https://www.tsunagujapan.com/25-things-to-do-hiroshima/"
+            text: "25 Amazing Things To Do in Hiroshima: A Complete Travel Guide to Enjoying Its History, Culture, and Nature"
+          6:
+            url: "https://www.tsunagujapan.com/rabbit-island-okunoshima/"
+            text: "A Must-Visit for Rabbit Lovers! Okunoshima, an Island Removed from the Maps"
+  planning_trip:
+    page_title: "Your Complete Guide to Planning a Trip to Japan"
+    page_description: "On this page, we’ve collected several articles that we think will help you plan your trip to Japan. From transportation to money, manners, and what to do in an emergency situation, we’ve got you covered. Enjoy a safe and convenient trip around Japan!"
+    title_html: "Your Complete Guide to Planning a Trip to Japan"
+    description: "On this page, we’ve collected several articles that we think will help you plan your trip to Japan. From transportation to money, manners, and what to do in an emergency situation, we’ve got you covered. Enjoy a safe and convenient trip around Japan!"
+    articles:
+      1:
+        title: "Transportation"
+        description: "How to take public transportation, how to use the different types of transit IC cards, and other information relating to transportation in Japan."
+        1:
+          text: "Narita vs Haneda: A Guide to Tokyo's International Airports"
+          url: "https://www.tsunagujapan.com/narita-vs-haneda-a-guide-to-tokyo-s-international-airports/"
+        2:
+          text: "Save Money and Travel Japan in Style With Suica, Japan's Most-Used Transit IC Card"
+          url: "https://www.tsunagujapan.com/suica-japans-most-popular-ic-card/"
+        3:
+          text: "Watch Out for Jam-Packed Trains! Make Your Journey More Comfortable By Avoiding Tokyo's Rush-Hour Traffic"
+          url: "https://www.tsunagujapan.com/tokyo-traffic-rushtime/"
+        4:
+          text: "10 Things to Know When Riding Trains in Japan"
+          url: "https://www.tsunagujapan.com/10-things-to-know-when-riding-trains-in-japan/"
+        5:
+          text: "Ways to Travel for Cheap Across Japan: Low-Cost Airlines, Night Buses, and More"
+          url: "https://www.tsunagujapan.com/ways-to-travel-for-cheap-across-japan/"
+      2:
+        title: "Money"
+        description: "How to use cashless services, how to exchange to Japanese currency, and other information relating to money in Japan."
+        1:
+          text: "Where and How to Exchange, Withdraw, and Cash-in Japanese Yen"
+          url: "https://www.tsunagujapan.com/where-to-exchange-money-in-japan/"
+        2:
+          text: "A Guide to Japanese Money: Coins and Bills"
+          url: "https://www.tsunagujapan.com/a-guide-to-japanese-money-coins-and-bills/"
+        3:
+          text: "Can You Survive Without Cash in Japan? The 12 Top Cashless Payment Options in Japan Examined"
+          url: "https://www.tsunagujapan.com/top-cashless-payment-options-japan/"
+        4:
+          text: "7 Ways to Save Substantially When Shopping in Japan that Only Locals Know!"
+          url: "https://www.tsunagujapan.com/7-useful-tips-on-how-to-shop-like-a-local-in-japan/"
+        5:
+          text: "The 5 Best Ways to Spend Your Last 1,000 Yen in Japan"
+          url: "https://www.tsunagujapan.com/the-5-best-ways-to-spend-your-last-1-000-yen-in-japan/"
+      3:
+        title: "Manners"
+        description: "Useful Japanese phrases you can use, social norms you'll only find in Japan, and other information relating to manners in Japan."
+        1:
+          text: "10 Things You Should Avoid Doing While in Japan"
+          url: "https://www.tsunagujapan.com/10-things-youre-probably-doing-that-you-probably-shouldnt-in-japan/"
+        2:
+          text: "10 Japanese Customs You Should Know Before You Visit Japan"
+          url: "https://www.tsunagujapan.com/10-japanese-customs-you-should-know-before-you-visit-japan/"
+        3:
+          text: "10 Things You Should Avoid Doing When Using Chopsticks in Japan"
+          url: "https://www.tsunagujapan.com/10-things-you-should-avoid-doing-when-using-chopsticks-in-japan/"
+        4:
+          text: "Did I Order This…?! 7 Things at an Izakaya That Surprise Foreign Residents in Japan"
+          url: "https://www.tsunagujapan.com/7-terrific-things-about-japanese-izakaya-that-surprise-foreigners/"
+        5:
+          text: "Everything You Need to Know About Garbage and Recycling in Japan"
+          url: "https://www.tsunagujapan.com/everything-you-need-to-know-about-garbage-in-japan/"
+      4:
+        title: "Interesting Facts"
+        description: "Various trivia that might come in useful and enrich your trip to Japan."
+        1:
+          text: "17 Facts You Probably Don't Know About Sakura, Japan's Nationally Beloved Flower"
+          url: "https://www.tsunagujapan.com/17-facts-you-probably-didnt-know-about-sakura/"
+        2:
+          text: "13 Fun Facts About the Yamanote Line, the Beating Heart of Tokyo"
+          url: "https://www.tsunagujapan.com/13-things-you-didn-t-know-about-the-yamanote-line/"
+        3:
+          text: "11 Secrets About Mt. Fuji That Even Locals Don't Know"
+          url: "https://www.tsunagujapan.com/12-little-known-secrets-on-mt-fuji/"
+        4:
+          text: "Tokyo Tower - Everything You Need To Know About Tokyo's Most Famous Landmark"
+          url: "https://www.tsunagujapan.com/all-about-tokyo-tower/"
+        5:
+          text: "Yukata vs Kimono, The Secret Culture Behind The Japanese National Dress"
+          url: "https://www.tsunagujapan.com/yukata-vs-kimono-the-secret-culture-behind-the-japanese-national-dress/"
+      5:
+        title: "Emergencies (Medical, Legal, Natural Disasters)"
+        description: "What to do if you find yourself in an emergency while in Japan, such as getting injured or sick, or even a natural disaster."
+        1:
+          text: "Practical Tips and Advice For Staying Safe in the Event of a Natural Disaster in Japan"
+          url: "https://www.tsunagujapan.com/tips-and-advice-staying-safe-natural-disasters-japan/"
+        2:
+          text: "What Is the Legal Drinking Age in Japan? 8 Laws You Should Know Before Coming to Japan"
+          url: "https://www.tsunagujapan.com/8-laws-you-should-know-japan/"
+        3:
+          text: "From Potential Theft to Huge Fines: 8 Situations to Be Aware of When Visiting Japan"
+          url: "https://www.tsunagujapan.com/8-situations-to-be-aware-of-when-visiting-japan/"
+        4:
+          text: "8 Kinds of Questions You May Have About Getting Sick or Injured in Japan, Answered by Japanese People!"
+          url: "https://www.tsunagujapan.com/what-to-do-when-you-get-sick-or-injured-according-to-locals/"
+        5:
+          text: "In Case of Emergency: Which Japanese Hospitals Can Accommodate Foreigners?"
+          url: "https://www.tsunagujapan.com/multilingual-hospitals-clinics-japan/"
+  article:
+    title: "記事一覧"
+    desc: ""
+    translator: "Translator"
+    author: "Author"
+    travelSite:
+      heading: "編集部お勧めの旅館・商品・体験コンテンツ"
+    banner:
+      travel: "tsunagu Japan Travel - tsunagu Japanライターお薦め観光コンテンツはこちら！ CLICK Here！"
+      travel1: "tsunagu Japanライターお薦め観光コンテンツはこちら！"
+      travel2: "絶対外せない！日本旅行なら当サイトでホテル・ツアー・体験を予約！"
+      travel3: "日本の旅行なら、まずはここをチェック！ホテルやツアー、体験などの情報がいっぱい！"
+      travel4: "tsunagu Japanライターが思い出に残る旅をプロデュースするヒントがいっぱい！"
+      travel5: "新しい旅の発見が待っている！お薦めのホテルや体験など、トレンドをいち早くキャッチ！"
+      travel6: "日本の旅をもっと深く、もっと楽しく。旅行プランニングのヒントや最新情報を手軽にGET！"
+      text: "tsunagu Japanライターお薦め観光コンテンツはこちら！"
+  hotel:
+    name1: "Agoda"
+    short1: "A"
+    name2: "Booking.com"
+    short2: "B"
+    bookWith1: "Agodaで予約"
+    bookWith2: "Booking.comで予約"
+    bookWith3: "Reluxで予約"
+  hotelpage:
+    labels:
+      name: "ホテル名"
+      desc: "詳細"
+      price: "価格"
+      location: "住所"
+      reference: "出典"
+      book: "book at"
+      info: "情報"
+  source: "出典:"
+  img_source: "Image Credit:"
+  sns:
+    share: "share"
+    pin: "pin"
+    tweet: "tweet"
+  lang:
+    zh-hant: "繁体字"
+    zh-hans: "簡体字"
+    en: "英語"
+    ja: "日本語"
+    th: "タイ語"
+    ko: "韓国語"
+    vi: "ベトナム語"
+    id: "インドネシア語"
+  footer:
+    about: "tsunagu Japanとは"
+    tsunagudesc: "tsunagu Japanは訪日旅行者のための情報プラットフォームです。訪日旅行者が日本での旅行体験を素晴らしいものにしてもらうために、観光、グルメ、ショッピング、ハウツーなど様々な情報を発信しています。"
+    contact: "問い合わせ"
+    login: "ログイン"
+    logout: "ログアウト"
+    company: "会社概要"
+    privacy: "プライバシーポリシー"
+    terms: "利用規約"
+    tradelaw: "特定商取引法に基づく表示"
+  email_html: "tsunagu Japan <br>
+<a href=\"https://www.tsunagujapan.com/\">https://www.tsunagujapan.com/</a><br>
+株式会社D2C X<br>
+東京都港区東新橋1−9−1 東京汐留ビルディング<br>
+<a href=\"https://www.d2cx.co.jp/\">https://www.d2cx.co.jp/</a>"
+  static:
+    terms:
+      headline: "利用規約"
+      text_html: "<p><b>利用規約 (2013/10/1)</b></p>
+<p>この規約（以下「本規約」といいます。）は、株式会社D2C X（以下「当社」といいます。）が提供するすべてのウェブサイト、ソフトウェア、アプリケーション、プロダクト、ドキュメントその他一切の製品およびサービス（以下「本サービス」といいます。）の利用に関する条件を、本サービスを利用するすべてのお客様（以下「利用者」といいます。）と当社との間で定めるものです。</p>
+<br><br>
+<p><b>第1条（規約への同意）</b></p>
+<p>利用者は、本規約の定めに従って本サービスを利用しなければなりません。利用者は、本規約に有効かつ取消不能な同意をしないかぎり本サービスを利用できません。</p>
+<p>利用者が未成年者である場合は、親権者など法定代理人の同意を得たうえで本サービスを利用してください。</p>
+<p>利用者は、本サービスを実際に利用することによって本規約に有効かつ取消不能な同意をしたものとみなされます。</p>
+<br><br>
+<p><b>第2条（情報の取扱い）</b></p>
+<p>利用者は、本サービスの利用に際して利用者ご本人に関する情報を当社に対して提供する場合、真実、正確かつ完全な情報を提供しなければなりません。</p>
+<p>利用者は、本サービスの利用に際して登録するパスワードを不正に利用されないよう自らの責任で厳重に管理しなければなりません。当社は、登録されたパスワードを利用して行なわれた一切の行為を、利用者ご本人の行為とみなすことができます。</p>
+<p>利用者の個人情報の取扱いに関しては、本規約のほか、当社のプライバシーポリシーおよびサービス別のプライバシー保護に従います。</p>
+<br><br>
+<p><b>第3条（禁止事項）</b></p>
+<p>利用者は、本サービスの利用に際して、以下に記載することを行なってはならず、また、以下の記載事項をおこなわないことを保証します。</p>
+<p>（1）法令、裁判所の判決、決定もしくは命令、または法令上拘束力のある行政措置に違反する行為。</p>
+<p>（2）公の秩序または善良の風俗を害するおそれのある行為（過度に暴力的な表現、露骨な性的表現、モザイク、ぼかしの有無、美術性に係わらず、下着姿を含む露出度の高いヌード、胸や臀部等のアップや性器が露出した写真等、その他卑猥と判断される画像・映像（動画）・イラスト・絵画の掲載、および性行為や性器に該当する言葉、その他猥褻的な表現の掲載行為、その他反社会的な内容を含み他人に不快感を与える表現を投稿、掲載、公開、送信する行為などを含みます）。</p>
+<p>（3）当社または第三者の権利（著作権、商標権、特許権等の知的財産権、名誉権、プライバシー権、その他法令上または契約上の権利を広く含みます。）を侵害する行為。</p>
+<p>（4）当社または第三者になりすます行為または意図的に虚偽の情報を流布させる行為。</p>
+<p>（5）当社の事前の同意を得ずに営利を目的として本サービスを利用する行為、異性との出会い、交際等を希望することが主な目的と認められる行為、その他本サービスが予定している利用目的と異なる目的で本サービスを利用する行為。</p>
+<p>（6）反社会的勢力に対する利益供与その他の協力行為。</p>
+<p>（7）宗教活動または宗教団体への勧誘行為。</p>
+<p>（8）許諾なく第三者の個人情報、登録情報、利用履歴情報などを収集、開示または提供する行為。</p>
+<p>（9）当社による本サービスの運営または他の利用者による本サービスの利用を妨害し、これらに支障を与える行為。</p>
+<p>（10）上記（1）から（9）のいずれかに該当する行為を援助または助長する行為。</p>
+<p>（11）その他、当社が不適当と判断した行為。</p>
+<br><br>
+<p><b>第4条（コンテンツの取扱い）</b></p>
+<p>本規約において、「コンテンツ」とは、文章、音楽、画像、動画、プログラム、コードその他の情報のことをいい、「本コンテンツ」とは、本サービスを通じてアクセスすることができるコンテンツのことをいい、「投稿コンテンツ」とは、利用者が本サービスに投稿、送信、アップロードするなどして当社の管理するサーバに保存させたコンテンツのことをいい、「公開投稿コンテンツ」とは、本サービスにおいて、他の利用者一般による閲覧またはアクセスが可能な投稿コンテンツのことをいいます。</p>
+<p>利用者は、公開投稿コンテンツを含むすべての投稿コンテンツに対して有する権利を従前どおり保持し、当社がかかる権利を取得することはありません。ただし、利用者は、本サービスの利用により、当社に対し、公開投稿コンテンツを利用する権利（営利目的の有無を問わず、複製、上演、演奏、上映、公衆送信、公衆伝達、口述、展示、頒布、譲渡、貸与、翻訳、翻案、（当社が事業目的上必要とみなす範囲で）改変する権利を含みます。また、これらの権利を第三者に再許諾する権利を含みます。）を無償でかつ無期限に、地域の限定なく許諾したこととなり、当社はかかる利用権を取得します。この場合、利用者は、公開投稿コンテンツに関する著作者人格権を当社または当社の指定する第三者による上記範囲での利用に対して行使しないことにも同意したこととなります。</p>
+<p>利用者は、本コンテンツを、本サービスが当然に予定している利用態様を超えて利用（複製、送信、転載、改変などの行為を含みます。）してはなりません。ただし、当社および本コンテンツの権利者から事前の承諾を受けた場合はこの限りではありません。</p>
+<p>当社は、法令または本規約の遵守状況などを確認する必要がある場合、投稿コンテンツの内容を確認することができます。ただし、当社はかかる確認を行なう義務を負うものではありません。</p>
+<p>当社は、利用者が投稿コンテンツなどに関し法令もしくは本規約に違反しまたは違反するおそれのあると当社が認めた場合、その他業務上の必要性がある場合には、あらかじめ利用者に通知することなく、当社の管理するサーバから投稿コンテンツを削除するなどの方法により、本サービスまたは投稿コンテンツを利用できないようにすることができます。そのため、利用者は常に投稿コンテンツのバックアップを作成しておくことが推奨されます。</p>
+<br><br>
+<p><b>第5条（当社に対する補償）</b></p>
+<p>利用者は、利用者が法令または本規約に違反して本サービスを利用したことに起因して（かかる趣旨のクレームを第三者より当社が受けた場合を含みます。）、当社が直接的もしくは間接的に何らかの損害、損失または費用負担（弁護士費用の負担を含みます。）を被った場合、当社の請求にしたがって直ちにこれを賠償または補償しなければなりません。</p>
+<br><br>
+<p><b>第6条（本サービスの提供、無保証、変更、中止）</b></p>
+<p>利用者は、本サービスを利用するにあたり、必要なパーソナルコン1ピュータ、携帯電話機、通信機器、オペレーションシステム、通信手段および電力などを、利用者の費用と責任で用意しなければなりません。</p>
+<p>当社は、本サービスの提供を受けることができる利用者を、会員登録の有無、年齢、ご本人確認の有無、その他、当社が必要と判断する条件を満たしたお客様に限定することができるものとします。</p>
+<p>当社は、本サービスに当社または第三者の広告を掲載することができるものとします。</p>
+<p>当社は、当社が必要と判断する場合、あらかじめ利用者に通知することなく、いつでも、本サービスの全部または一部の内容を変更し、また、その提供を中止することができるものとします。</p>
+<p>当社は、本サービス（本コンテンツを含みます。）に事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みますが、これらに限りません。）がないことを保証しておりません。当社は、利用者に対して、かかる瑕疵を除去して本サービスを提供する義務を負いません。ただし、有償で提供される本サービスに関する当社と利用者との間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、当該本サービスの隠れた瑕疵により利用者に生じた損害を賠償する当社の責任の全部を免除するものではありません。この場合の損害の賠償については、第7条第2項を準用します。</p>
+<p>当社は、利用者が本規約に違反して本サービスを利用していると認めた場合、当社が必要かつ適切と判断する措置を講じます。ただし、当社は、利用者および第三者に対して、利用者その他の者が本規約に違反しないことを保証するものではありません。また、当社は、利用者および第三者に対して、かかる違反を防止または是正する義務を負いません。</p>
+<br><br>
+<p><b>第7条（当社の責任の免除）</b></p>
+<p>当社は、本サービスに起因して利用者に生じたあらゆる損害について一切の責任を負いません。ただし、本サービスに関する当社と利用者との間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、本項の免責規定は適用されません。</p>
+<p>前項ただし書に定める場合であっても、当社は、当社の過失（重過失を除きます。以下、本項において同じ。）による債務不履行または不法行為により利用者に生じた損害のうち特別な事情から生じた損害（当社または利用者が損害発生につき予見し、または予見し得た場合を含みます。）について一切の責任を負いません。また、当社の過失による債務不履行または不法行為により利用者に生じた損害の賠償は以下に定める金額を上限とします。</p>
+<p>（1）有償で提供される本サービスに起因して利用者に生じた損害については、当社が当該利用者から当該損害が発生した月に受領した利用料の額。</p>
+<p>（2）無償で提供される本サービスに起因して利用者に生じた損害については、当該利用者が当該本サービスの利用に際して当該損害が発生した月に費消した回線費用の額。</p>
+<br><br>
+<p><b>第8条（退会、利用停止等）</b></p>
+<p>本サービスに会員登録した利用者は、いつでもアカウントを削除して退会することができます。この場合、当社が保有する利用者ご本人に関する情報は、個人情報保護法その他の関連法規およびプライバシーポリシーに従い処理されます。なお、第4条第2項に基づき当社が取得した公開投稿コンテンツの利用権は、利用者の退会後も有効に存続します。</p>
+<p>当社は、利用者が本規約に違反しまたは違反するおそれがあると認めた場合、あらかじめ利用者に通知することなく、アカウントを停止または廃止することができます。</p>
+<p>他の事業者が提供するアカウント（以下「他社アカウント」といいます。）で本サービスにログインする利用者は、当該他社アカウントが削除される等により、当該他社アカウントがこれを提供する事業者によって認証されなくなった場合、当該他社アカウントにより本サービスにログインして、本サービスを利用することはできなくなりますのでご注意ください。</p>
+<br><br>
+<p><b>第9条（通知または連絡の方法）</b></p>
+<p>本サービスに関する当社から利用者への通知または連絡は、当社が運営するウェブサイト内の適宜の場所への掲示その他、当社が適当と判断する方法により行ないます。</p>
+<p>本サービスに関する利用者から当社への通知または連絡は、当社が運営するウェブサイト内の適宜の場所に設置するお問い合わせフォームの送信または当社が指定する方法により行っていただきます。</p>
+<br><br>
+<p><b>第10条（個別利用規約との関係）</b></p>
+<p>本サービスに関して、本規約とは別に「利用規約」、「ガイドライン」、「ポリシー」などの名称で当社が配布または掲載している文書（以下「個別利用規約」といいます。）がある場合、利用者は、本規約のほか個別利用規約の定めにも従って本サービスを利用しなければなりません。</p>
+<p>個別利用規約と本規約とで矛盾する内容が規定されている場合、矛盾する箇所に限り、個別利用規約の内容が優先して適用されます。</p>
+<br><br>
+<p><b>第11条（本規約等の変更）</b></p>
+<p>当社は、当社が必要と判断する場合、あらかじめ利用者に通知することなく、いつでも、本規約および個別利用規約を変更できるものとします。変更後の本規約および個別利用規約は、当社が運営するウェブサイト内の適宜の場所に掲示された時点からその効力を生じるものとし、利用者は本規約および個別利用規約の変更後も本サービスを使い続けることにより、変更後の本規約および適用のある個別利用規約に対する有効かつ取消不能な同意をしたものとみなされます。かかる変更の内容を利用者の皆様に個別に通知することはいたしかねますので、本サービスをご利用の際には、随時、最新の本規約および適用のある個別利用規約をご参照ください。</p>
+<br><br>
+<p><b>第12条（準拠法、裁判管轄）</b></p>
+<p>本規約は日本語を正文とし、その準拠法は日本法とします。本サービスに起因または関連して利用者と当社との間に生じた紛争については東京地方裁判所または東京簡易裁判所を第一審の専属的合意管轄裁判所とします。かかる管轄裁判所で得られた勝訴判決は、いずれの国の裁判所においても執行可能とします。</p>
+<br><br>
+<p>以 上<br><br>
+2013年10月1日 制定</p>"
+    privacy:
+      headline: "プライバシーポリシー"
+      section1:
+        title: "プライバシーとCookie"
+        text_html: "<section>
+<h3>プライバシーポリシー</h3>
+<p>D2C X Inc.（以下「当社」）は、お客様および雇用者の氏名、住所、電話番号、メールアドレスなど、個人を特定できる個人情報を「tsunagu Japan」（以下「当サイト」）の運営のために収集し、利用いたします。当社は、お客様の個人情報の保護が重要な義務であることを認識しており、この義務を果たすために個人情報保護法に基づいてこのプライバシーポリシーを規定いたしました。</p>
+<p>当社は、個人情報保護法およびそれに関連する法を遵守し、個人情報を適切に取り扱い、個人情報の取り扱いの改善に常に努めて参ります。</p>
+<p>当社のすべての執行役員および従業員は、個人情報取り扱い義務に精通しております。</p>
+<p>個人情報を収集する際には、その利用目的を明記および通知し、利用目的に応じて取り扱います。</p>
+<p>当社は、個人情報の漏えい、紛失、改ざん等を防止するため、必要な措置を講じ、情報の適切な管理を行います。</p>
+<p>当社は、お客様からの当社が保有する個人情報の開示または削除のご要望を所定の方法で承諾し、誠意を持って対応いたします。</p>
+</section>
+<section>
+<h3>個人情報の利用目的</h3>
+<p>個人情報の利用目的は、以下のとおりです。当社が個人情報を以下の目的以外に利用することはございません。</p>
+<ul>
+<li>お客様がサービスを円滑に利用できるようにするため。</li>
+<li>サービスの使用に関する統計データを作成するため。</li>
+<li>キャンペーンの賞品や製品等を発送するため。</li>
+<li>アンケート、インタビュー、キャンペーンへのご参加またはご招待のため。</li>
+<li>サービス等に関する情報、当社以外の広告スポンサーからの広告や情報をメールマガジン等で公表するため。</li>
+<li>必要に応じて、サービスに関する重要な情報を伝達するため。</li>
+<li>お問い合わせへの対応のため。</li>
+</ul>
+</section>
+<section>
+<h3>個人情報の提供に関する制限</h3>
+<p>当社は、個人情報保護法およびそれに関連する法で認められている場合、また下記の場合を除き、お客様の許可なく利用目的を超越して個人情報を取り扱うことはございません。</p>
+<ul>
+<li>法律に基づく場合</li>
+<li>人の生命、健康または資産を保護する必要があるが、お客様の許可を得ることが困難な場合。</li>
+<li>公衆衛生の向上や子どもの健全な発達の促進が必要であるが、お客様の許可を得ることが難しい場合。</li>
+<li>政府機関、地域の公的機関、またはこれらの機関から委任された者と協力して法律で定められた業務を遂行する必要があり、お客様の許可を得ることにより、本業務の遂行に支障をきたす場合。</li>
+</ul>
+</section>
+<section>
+<h3>個人情報の利用目的の変更</h3>
+<p>当社は、関連する適正な範囲内で、個人情報の使用目的を変更する場合がございます。利用目的を変更した場合は、お客様に通知し、変更内容をお知らせいたします。</p>
+</section>
+<section>
+<h3>第三者への情報開示と情報提供</h3>
+<p>当社は、原則として、お客様から受け取った個人情報を第三者に開示することはございません。ただし、以下の場合、当社は、お客様の同意なしに、関連する法律に違反しない範囲でお客様の個人情報を提供することができます。</p>
+<ul>
+<li>第三者がお客様に不利益をもたらすことはないと判断された場合。</li>
+<li>裁判所、警察、その他同様の権限を有する機関から個人情報の開示を求められた場合。</li>
+<li>情報の開示または情報の提供が法律で許可されている場合。</li>
+</ul>
+</section>
+<section>
+<h3>情報の共有利用</h3>
+<p>当社がお客様に本サービスを提供する際、取引先と共同で作業を行う必要がある場合には、お客様の個人情報を取引先と共同で利用することがございます。この場合、当社は、取引先名、業種、管理職の肩書きを発表した上で、共同で情報を利用いたします。</p>
+</section>
+<section>
+<h3>免責事項</h3>
+<p>下記の第三者によるお客様の個人情報の取得について、当社は金銭的または精神的危害を含め、一切の責任を負わず、紛争が発生した場合は、当該事業者及びお客様及び当社が解決しなければならず、当社は仲介役を務めません。</p>
+<ul>
+<li>お客様が、意図または誤りにかかわらず、サイトを通じて出会った企業または個人に個人情報を提供した場合。</li>
+<li>当サイトで公開されている企業または個人が、意図または誤りにかかわらず、当サイトを通じて出会ったお客様の情報を開示または漏えいした場合。</li>
+<li>お客様のメールアドレス、ID、パスワード等が第三者に取得された場合。</li>
+<li>個人情報の漏えいが自然災害、通信障害、故障、不正アクセス、ハッキング、ウイルス、その他の不測の事態によるものである場合。</li>
+</ul>
+</section>
+<section>
+<h3>個人情報の変更および削除</h3>
+<p>お客様は、サイトに登録されている個人情報を表示、変更、および必要に応じて削除することができます。会員様が個人情報の削除を求めた場合は、退会とみなし、当社指定の連絡先に連絡することにより、会員様は迅速に個人情報の削除を請求することができます。</p>
+</section>
+<section>
+<h3>個人情報の正確性</h3>
+<p>お客様は、サイトで提供されるコンテンツの正確性と最新性を自ら判断する必要がございます。</p>
+</section>
+<section>
+<h3>個人情報の管理について</h3>
+<p>当社は、当サイトで取得した個人情報の紛失、流用、改ざんを防止するため、適切なセキュリティ対策を講じております。具体的には、SSL暗号化送信を利用し、アクセス権の管理を個人情報データベースに限定することで、データを安全に保管しております。</p>
+</section>
+<section>
+<h3>本人確認について</h3>
+<p>当社は、個人情報の開示、変更、削除のご要望に応じ、お客様の身元を特定できる情報により、お客様の身元を確認いたします。当社は、第三者がお客様を特定できる情報を取得・利用した場合の責任は負いかねます。</p>
+</section>
+<section>
+<h3>プライバシーポリシーの変更</h3>
+<p>プライバシーポリシーの目的は個人情報を適切に管理および保護することであるため、当社は随時プライバシーポリシーを変更することができます。変更されたプライバシーポリシーの内容がサイトに公開された時点で、すべてのお客様と会員様が変更されたプライバシーポリシーに同意したものと見なされます。</p>
+</section>
+<section>
+<h3>Cookieポリシー</h3>
+<p>当サイトでは、以下の目的のためにCookieおよび類似技術を使用して一定の情報を収集します。</p>
+<h4>Cookieの利用について</h4>
+<p>(1) サービス利用のためのCookieの利用<br>
+(2) アクセス状況等の解析等のためのCookieおよび類似技術の利用<br>
+(3) 広告配信のためのCookieの利用<br>
+(4) ソーシャルメディアの投稿のためのCookieの利用</p>
+<p>本Cookieポリシーでは、これらの利用目的のためのCookieおよび類似技術の説明をした上で、利用目的の詳細な説明、Cookieおよび類似技術についての拒否方法（オプトアウト）について説明します。</p>
+<h4>Cookieおよび類似技術について</h4>
+<p>「Cookie」とは、お客様がウェブサイトにアクセスした時に、ウェブサーバからお客様のコンピューターまたはモバイルデバイス（以下、あわせて「デバイス」といいます）のブラウザに送信され、デバイスのハードディスクドライブに保存される小さなテキストファイルです。</p>
+<p>Cookieは、一般的に「1st Party Cookie（ファーストパーティクッキー）」と「3rd Party Cookie（サードパーティクッキー）」という2種類のカテゴリーに大別されます。</p>
+<h5>1. 1st Party Cookie</h5>
+<p>「1st Party Cookie」は、当サイトによって設定されます。このCookieは、ほとんどの場合、当社ウェブサイト上で提供される機能を利用するために設けられており、利用を拒否することによってウェブサイトが正常に機能しない場合があります。</p>
+<h5>2. 3rd Party Cookie</h5>
+<p>「3rd Party Cookie」は、当社ではなく、当社が提携する第三者（3rd Party）によって設定されます。例えば、3rd Party Cookieの一部は、当社が提携する広告配信サービス提供会社によって、適切なオンライン広告を適切な場所に掲載することができるようお客様のブラウジング活動を追跡するために設定されることがあります。</p>
+<h4>Cookieおよび類似技術の利用目的</h4>
+<h5>(1) サービス利用のためのCookieの利用</h5>
+<p>上述のCookieのうち、1st Party Cookieは、一般的にお客様がインターネット閲覧を行う際、または特定のウェブサービスを利用する際に、自動的にお客様のデバイスを識別し、お客様が同じ情報を繰り返し入力することなく、前回の続きとしてサービスを利用できるために用いられています。</p>
+<h5>(2) アクセス状況等の解析等のためのCookieおよび類似技術の利用</h5>
+<br>当サイトでは、Cookieおよび類似技術を使用して収集した情報を利用して、お客様のウェブサイトの利用状況（アクセス状況、トラフィック、ルーティング等）を分析し、ウェブサイト自体のパフォーマンス改善や、ウェブサイトを通じて当社からお客様に提供するサービスの向上、改善のために使用することがあります。この場合のCookieは、アクセス状況等を解析する事業者から設定される3rd Party Cookieが用いられます。</br>
+この分析にあたっては主に以下のツールが利用されますが、ツール提供者にも上記の情報が提供され、お客様に対する広告配信等に利用されることがあります。</p>
+<p>Google Analytics<br>
+ツール提供者: Google LLC<br>
+利用規約: <a href=\"https://marketingplatform.google.com/about/analytics/terms/jp/\" target=\"_blank\">https://marketingplatform.google.com/about/analytics/terms/jp/</a><br>
+プライバシーポリシー: <a href=\"https://policies.google.com/privacy?hl=ja\" target=\"_blank\">https://policies.google.com/privacy?hl=ja</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況(アクセス状況、トラフィック、ルーティング等)</p>
+<p>Google Search Console<br>
+ツール提供者: Google LLC<br>
+利用規約: <a href=\"https://policies.google.com/terms?hl=ja\" target=\"_blank\">https://policies.google.com/terms?hl=ja</a><br>
+プライバシーポリシー: <a href=\"https://policies.google.com/privacy?hl=ja\" target=\"_blank\">https://policies.google.com/privacy?hl=ja</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況(アクセス状況、トラフィック、ルーティング等)</p>
+<p>Microsoft Clarity<br>
+ツール提供者: Microsoft Co., Ltd.<br>
+利用規約: <a href=\"https://clarity.microsoft.com/terms\" target=\"_blank\">https://clarity.microsoft.com/terms</a><br>
+プライバシーポリシー: <a href=\"https://privacy.microsoft.com/ja-jp/privacystatement\" target=\"_blank\">https://privacy.microsoft.com/ja-jp/privacystatement</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況(アクセス状況、トラフィック、ルーティング等)</p>
+<p>Bing Webmaster Tools<br>
+ツール提供者: Microsoft Co., Ltd.<br>
+利用規約: <a href=\"https://www.microsoft.com/ja-jp/servicesagreement/\" target=\"_blank\">https://www.microsoft.com/ja-jp/servicesagreement/</a><br>
+プライバシーポリシー: <a href=\"https://privacy.microsoft.com/ja-jp/privacystatement\" target=\"_blank\">https://privacy.microsoft.com/ja-jp/privacystatement</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況(アクセス状況、トラフィック、ルーティング等)</p>
+<p>Naver Webmaster Tools<br>
+ツール提供者: NAVER Corp.<br>
+利用規約: <a href=\"https://searchadvisor.naver.com/policy/terms\" target=\"_blank\">https://searchadvisor.naver.com/policy/terms</a><br>
+プライバシーポリシー: <a href=\"https://policy.naver.com/policy/privacy_jp.html\" target=\"_blank\">https://policy.naver.com/policy/privacy_jp.html</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況(アクセス状況、トラフィック、ルーティング等)</p>
+<p>Naver Analytics<br>
+ツール提供者: NAVER Corp.<br>
+利用規約: <a href=\"https://analytics.naver.com/popup/termofuse.html\" target=\"_blank\">https://analytics.naver.com/popup/termofuse.html</a><br>
+プライバシーポリシー: <a href=\"https://policy.naver.com/policy/privacy_jp.html\" target=\"_blank\">https://policy.naver.com/policy/privacy_jp.html</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況(アクセス状況、トラフィック、ルーティング等)</p>
+<p>これらのツールへの情報提供を停止するための方法については、「Cookieおよび類似技術の拒否方法」をご確認ください。</p>
+<h5>(3) 広告配信のためのCookieの利用</h5>
+<p>3rd Party Cookieはお客様のブラウジング活動を追跡し、お客様のブラウザの表示画面に適切な広告を表示するためにも用いられています。当サイトにアクセスすることにより、次条の広告配信サービス提供会社から3rd Party Cookieが送信されます。当社が送信する1st Party Cookieは、各広告配信サービス提供会社が送信する3rd Party Cookieと共にそれぞれの広告配信サービス提供会社のサーバに保存され、それぞれのプライバシーポリシーに従って取り扱われます。行動ターゲティング広告の配信停止方法等については、次条をご確認ください。</p>
+<h5>(4) ソーシャルメディアの投稿のためのCookieの利用</h5>
+<p>3rd Party Cookieは、ソーシャルメディアの共有ボタン等を使用して情報を共有する場合、当サイトに訪れたお客様のアカウントをソーシャルメディアにリンクする場合、またはFacebook、Xなどのソーシャルネットワーク上において、もしくはそれを通じて当サイト上のコンテンツと係わる場合に使用されます。ソーシャルネットワークは、当サイトのお客様の上記の行動を記録します。これらのCookieにより収集される情報は、ターゲティングおよび広告活動に使用されることがあります。Cookieを設定している可能性のある各ソーシャルメディアのプライバシーポリシー等は下記からご確認ください。</p>
+<p>Facebook<br>
+ツール提供者：Meta<br>
+Facebook データに関するポリシー: <a href=\"https://www.facebook.com/privacy/explanation\" target=\"_blank\">https://www.facebook.com/privacy/explanation</a><br>
+Facebook Cookieポリシー: <a href=\"https://www.facebook.com/policies/cookies/\" target=\"_blank\">https://www.facebook.com/policies/cookies/</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況（アクセス状況、トラフィック、 ルーティング等）</p>
+<p>X<br>
+ツール提供者：X Corp.<br>
+Xプライバシーポリシー: <a href=\"https://x.com/ja/privacy\" target=\"_blank\">https://x.com/ja/privacy</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況（アクセス状況、トラフィック、 ルーティング等）</p>
+<p>Pinterest<br>
+ツール提供者：Pinterest, Inc.<br>
+Pinterestプライバシーポリシー: <a href=\"https://policy.pinterest.com/ja/privacy-policy\" target=\"_blank\">https://policy.pinterest.com/ja/privacy-policy</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況（アクセス状況、トラフィック、 ルーティング等）</p>
+<p>Weibo<br>
+ツール提供者：SINA Corporation<br>
+Weiboプライバシーポリシー: <a href=\"https://weibo.com/signup/v5/privacy\" target=\"_blank\">https://weibo.com/signup/v5/privacy</a><br>
+ツールを通して収集される情報: お客様のウェブサイトの利用状況（アクセス状況、トラフィック、 ルーティング等）</p>
+<h4>Cookieおよび類似技術の拒否方法</h4>
+<h5>1. 全てのCookieを拒否する方法</h5>
+<p>お客様のデバイス上のCookieは、お客様が自ら削除されるか、または一定の有効期限が切れるまでデバイスに残ります。ほとんどのブラウザではデフォルトで自動的にCookieの受け入れを有効にしていますが、お客様がブラウザの設定を変更することによりCookieを無効にすることが可能です。ただし、Cookieを無効にした場合、サービス利用のためのCookieの利用との関係では、一部のウェブサイトの機能が使用できなくなったり、一部のページが正しく表示されなくなる場合がありますのでご留意ください。<br>
+一般的に普及しているブラウザについての情報と、Cookieの設定の変更方法については、以下のリンク先をご参照ください</p>
+<ul>
+<li><a href=\"https://www.apple.com/legal/privacy/jp/cookies/\" target=\"_blank\">Apple Safari</a></li>
+<li><a href=\"https://support.google.com/chrome/answer/95647\" target=\"_blank\">Google Chrome</a></li>
+<li><a href=\"https://support.microsoft.com/ja-jp/microsoft-edge/microsoft-edge-%E3%81%A7-cookie-%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B-63947406-40ac-c3b8-57b9-2a946a29ae09\" target=\"_blank\">Microsoft Edge</a></li>
+<li><a href=\"https://support.mozilla.org/ja/kb/cookies-information-websites-store-on-your-computer\" target=\"_blank\">Mozilla Firefox</a></li>
+</ul>
+<h5>2. 特定のCookieを拒否する方法</h5>
+<p>前条(2)項に記載するツールへの情報提供を停止するための方法は以下に記載するリンク先にそれぞれ記載されています。ただし、これらのCookie（3rd Party Cookie）情報をすべて削除した場合には、各社が提供する製品やサービスを活用するうえでの制約を受けることがあることにご留意ください。</p>
+<p>ツール提供会社: Google LLC<br>
+プライバシーポリシー: <a href=\"https://policies.google.com/privacy?hl=ja\" target=\"_blank\">https://policies.google.com/privacy?hl=ja</a><br>
+情報送信停止の方法: <a href=\"https://support.google.com/analytics/answer/181881?hl=ja\" target=\"_blank\">https://support.google.com/analytics/answer/181881?hl=ja</a></p>
+<p>ツール提供会社: Microsoft Co., Ltd<br>
+プライバシーポリシー: <a href=\"https://privacy.microsoft.com/ja-jp/privacystatement\" target=\"_blank\">https://privacy.microsoft.com/ja-jp/privacystatement</a><br>
+オプトアウト: <a href=\"https://go.microsoft.com/fwlink/?LinkID=286759\" target=\"_blank\">https://go.microsoft.com/fwlink/?LinkID=286759</a></p>
+<p>前条(3)項に記載する行動ターゲティング広告に関しては、以下に記載する広告配信サービス提供会社のURLに配信停止の方法が記載されています。ただし、これらのCookie情報をすべて削除した場合には、各社が提供する製品やサービスを活用するうえでの制約を受けることがあることにご留意ください。なお、以下の広告配信サービス提供会社のうち、Facebook Japan合同会社につきましては、お客様が同社の登録ユーザーである場合には、ウェブサイトの閲覧履歴は、お客様の登録情報に紐づく形で管理されることになります。</p>
+<p>ツール提供会社: グーグル合同会社およびGoogleネットワーク<br>
+プライバシーポリシー: <a href=\"https://policies.google.com/privacy?hl=ja\" target=\"_blank\">https://policies.google.com/privacy?hl=ja</a><br>
+情報送信停止の方法: <a href=\"https://support.google.com/My-Ad-Center-Help/answer/12155764?hl=ja\" target=\"_blank\">https://support.google.com/My-Ad-Center-Help/answer/12155764?hl=ja</a></p>
+<p>ツール提供会社: タブーラ・ジャパン株式会社<br>
+プライバシーポリシー: <a href=\"https://www.taboola.com/ja/policies/%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc\" target=\"_blank\">https://www.taboola.com/ja/policies/%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc</a><br>
+情報送信停止の方法: <a href=\"https://www.taboola.com/ja/policies/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E9%81%B8%E6%8A%9E%E5%8F%8A%E3%81%B3%E3%82%AA%E3%83%97%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88\" target=\"_blank\">https://www.taboola.com/ja/policies/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E9%81%B8%E6%8A%9E%E5%8F%8A%E3%81%B3%E3%82%AA%E3%83%97%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88</a></p>
+</section>
+<section>
+<h3>お問い合わせ</h3>
+<p>プライバシーポリシーおよびCookieポリシーに関するお問い合わせ、または本サービスにおける個人情報の取り扱いに関するご質問、苦情、またはご相談は、お問い合わせフォームから当社までご連絡ください。</p>
+</section>
+<section>
+<h3>個人情報担当マネージャー</h3>
+<p>個人情報相談窓口（登録情報の削除・退会）および個人情報担当マネージャーは、当社の社長です。</p>
+<p class=\"text-right\"> 2023年6月15日 更新</p>
+</section>"
+      section2:
+          title: "D2CXのGDPRに関する個人情報保護方針"
+          text_html: "<section>
+<h3>1. 当社の個人情報保護に関する声明</h3>
+<p>この個人情報保護方針（以下「本方針」といいます）は、D2CX（以下「当社」といいます）が、データ管理者として、お客様が当社に提供または開示する個人情報を、どのように収集し処理するかについてご説明するものです。当社は、EU所在のお客様の個人情報をデータ管理者として、直接にまたは第三者を通じて受領し、処理する場合があります。その際、当社は、適用されるEUおよびEU加盟国のデータ保護に関する規制、特にデータ保護に関する一般データ保護規則第2016/679号（以下「GDPR」といいます）に従って当該個人情報を処理します。</p>
+<p>本方針は、「D2CXプライバシーポリシー」に加えて、特にGDPRが適用される個人情報の取扱いに関する方針を示すものです。</p>
+<p>お客様におかれましては、本方針をご確認いただきますようお願い申し上げます。当社がお客様の個人情報を本方針に記載されているように使用することをご希望にならない場合は、当社に個人情報をご提供にならないようお願い申し上げます。なお、その場合、当社は当社のサービスをご提供できない場合があること、お客様がTsunaguJapanサイトの一部の機能にアクセスできない、および／またはその機能を使用できない場合があること、ならびにお客様の顧客満足度に影響を及ぼす可能性があることにご注意ください。</p>
+</section>
+<section>
+<h3>2. お客様の個人情報の使用について</h3>
+<p>当社は、常に、GDPRに規定されている法的根拠（GDPR第6条および第7条）のうち、本人の同意、契約締結のために必要な場合、または正当な利益がある場合において、お客様の個人情報を処理します。</p>
+<p>当社は、正当な利益を追求し、お客様に適切なサービスを提供するために必要な、以下の目的でお客様の個人情報を収集し、処理することがあります。</p>
+<ul>
+<li>当社のサービスの変更についてお客様にお知らせする。</li>
+<li>お客様のアカウントを管理する。</li>
+<li>当社のサービスをお客様に提供する。</li>
+<li>当社の方針と規約についてお客様にお知らせする。</li>
+<li>不正行為の監視や、疑わしい行為もしくは潜在的な違法行為、または当社の方針や規約への違反行為の調査等により安全性やセキュリティを向上する。</li>
+<li>サービス、および広告を提供、改善、および創出する。</li>
+<li>データ分析、調査、監査などの目的で個人情報を使用する。</li>
+</ul>
+<p>当社では、上記の特定された、明確かつ正当な目的のためにお客様のデータを処理し、これらの目的に適合しない方法でそのデータをさらに処理することはありません。当社において、当初ある目的のために収集したデータを、別の目的のために処理しようとする場合、必ず変更後の目的をお客様にお知らせします。当社は、当社の法的義務を遵守するため、適切なサービスを確実に提供するため、または当社の事業活動を維持するために必要である場合に限り、お客様の個人情報を保持します。</p>
+</section>
+<section>
+<h3>3. 使用する個人情報の種類</h3>
+<p>本方針に明記されている目的のために、当社は以下のカテゴリーの個人情報を収集することがあります。</p>
+<ul>
+<li>氏名</li>
+<li>住所</li>
+<li>Eメールアドレス</li>
+<li>電話番号</li>
+<li>オンライン識別子（IPアドレス、クッキー識別子）</li>
+</ul>
+<p>当社は、お客様が当社に個人情報を提供することを決定される場合（すなわち、お客様がウェブサイトに表示されるフォームにご記入になる場合）には、お客様から直接お客様の個人情報を取得いたします。当社は、処理される個人情報が、処理の目的に関連して必要であるものに適合し、関連し、また限定されるように、個人情報の処理を徹底します。</p>
+</section>
+<section>
+<h3>4. 個人情報の第三者開示について</h3>
+<p>当社は、GDPRに従い、お客様の個人情報をD2Cグループ（<a href=\"https://www.d2c.co.jp/company/group/\" target=\"_blank\">https://www.d2c.co.jp/company/group/</a>）、またはお客様の同意を事前にいただくことを条件に、お客様の個人情報は、当社と共同で当社のサービスを提供し、当社と適切な契約関係を有する、顧客へのマーケティングを支援するパートナー会社に対して移転され、パートナー会社によって保管され、されに処理されることがあります。当社がお客様の個人情報をパートナー会社に開示するのは、当社のサービス、および広告を提供し、またはこれらを改善する場合に限ります。<br>
+お客様の個人情報をデータ処理者に開示する場合、当社は、当該データ処理者との間でデータ処理に関する適切な契約を締結します。さらに、お客様の個人情報をEEA域外の組織に開示する場合、当社は、そのようなデータの移転および処理を対象とする適切な法的枠組み、すなわちお客様の同意、欧州委員会の十分性認定、または欧州委員会により承認された管理者間の標準契約条項を適切に整えることで、適法に個人情報の域外移転を行います。</p>
+</section>
+<section>
+<h3>5. 法令遵守とセキュリティ</h3>
+<p>法律、法的手続、訴訟、および／またはお客様の居住国内外の公的機関および政府当局の要請により、当社がお客様の個人情報を開示する必要が生じる場合があります。当社は、国家の安全保障、法執行その他社会的に重要な課題ゆえに、開示が必要または適切であると判断した場合にも、お客様の個人情報を開示することがあります。</p>
+<p>当社はこのほか、当社の権利を保護し、利用できる救済措置を求め、当社の利用規約を執行し、不正を調査し、または当社の事業もしくはユーザーを保護するために、開示が合理的に必要であると誠実に判断した場合にも、お客様の個人情報を開示することがあります。</p>
+</section>
+<section>
+<h3>6. セキュリティ対策</h3>
+<p>当社は、適切なセキュリティ（権限の無いまたは違法な処理、偶発的な喪失、破棄、または破損に対する保護などを含みます）を確保した方法でお客様の個人情報を処理します。かかる水準の保護を達成するため、当社は、適切な技術的または組織的対策を講じます。</p>
+<p>法律上、より長期の保管期間が要求されている、または許されている場合を除き、当社は、本方針で概説された目的を達成するのに必要な期間に限り、お客様の個人情報を保管します。</p>
+<p>当社における個人情報の取扱いに疑義がある場合には、当社は、助言および提案を受けるため、所管のデータ保護監督当局に連絡します。</p>
+</section>
+<section>
+<h3>7. お客様の権利</h3>
+<p>お客様には、当社が収集し、処理する個人データに関して以下の権利があります。</p>
+<p>お客様のデータの処理に関する情報：お客様は、お客様に関係する当社のデータ処理行為に関してすべての必要情報を当社から取得することができます。<br>
+個人情報へのアクセス：お客様は、お客様に関係する個人情報が処理されているか否かについて、当社に確認をとることができ、処理されている場合には、個人情報および関連情報にアクセスすることができます。<br>
+個人情報の訂正または消去：お客様は、お客様に関係する不正確な個人情報を不当な遅滞なく訂正させることができ、また、不完全な個人情報があればこれを完全なものにすることができます。また、GDPRが定める要件を満たす場合には、お客様に関係する個人情報を不当な遅滞なく消去させることもできます。<br>
+個人情報の処理の制限：GDPRが定める要件を満たす場合には、お客様は、当社に個人情報の処理を制限させることができます。<br>
+個人情報の処理に対する異議：GDPRが定める要件を満たす場合には、お客様は、お客様の特定の状況を理由に、いつでも、お客様に関係する個人情報の処理に異議を唱えることができます。<br>
+個人情報のデータポータビリティ：GDPRが定める要件を満たす場合には、お客様は、構造化され、一般に利用され、かつ機械で読み取り可能な形式でお客様の個人情報を受領することができ、また、そのようなデータを、当社の妨害なく別の管理者に転送することができます。<br>
+自動化された意思決定の対象とならないこと：GDPRが定める要件を満たす場合は、お客様は、お客様に法的効果または同等の効果を及ぼす、個人情報の処理に基づく自動化された意思決定（プロファイリングを含みます。）の対象にならないことができる場合があります。<br>
+上記の権利をお客様が行使される場合は、連絡先についての項をご参照ください。</p>
+<p>お客様からのご要望に対する当社の対応にご不満がある場合、または当社によるお客様の個人情報の処理方法について苦情がある場合、お客様は、データ保護監督当局に苦情を申し立てることができます。</p>
+</section>
+<section>
+<h3>8. 子供について</h3>
+<p>当社は、16歳未満の子供に関する情報を、親の許可と同意なしに、故意に収集し、処理することはありません。 当社は、16歳未満の、またはEU加盟国法によって異なるGDPRと同趣旨の最低年齢に達しない子供の個人情報を直接収集し、処理していたことを発見した場合は、できるだけ速やかに情報を消去する措置を講じます。 16歳未満の子供が当社に個人情報を提供したことにお気付きの場合は、本方針に記載した連絡先を利用して直ちに当社にご連絡ください。</p>
+</section>
+<section>
+<h3>9. 他のサイトへのリンク</h3>
+<p>当社は、本方針が掲載されたウェブサイトから第三者のウェブサイトまたはインターネットソースへのハイパーテキストリンクを提案することがあります。当社は、第三者の個人データ保護に関する実際の取扱および内容を管理しておらず、また、それらに関して責任を負うことはできません。当該第三者の個人データ保護に関する方針を注意深くお読みいただき、当該第三者がお客様の個人データをどのように収集し、処理するかをご確認下さいますようお願いいたします。</p>
+</section>
+<section>
+<h3>10. 本方針の更新</h3>
+<p>当社では、本方針を随時改定または更新することがあります。本方針の変更は、本方針の改訂版を掲示すると同時に有効となります。当社が重要と考える変更を行う場合、お客様に対してウェブサイトを通じて可能な範囲でお知らせし、場合によってはお客様の同意をお願いすることがあります。</p>
+<p>本方針に関するご質問やご要望は、下記にお問い合わせください。<br>
+〒105-7314　東京都港区東新橋1-9-1　東京汐留ビルディング<br>
+メール: privacy-info&#64;d2cx.co.jp</p>
+</section>
+<section>
+<h3>11. 代理人</h3>
+<p>当社は、データ主体のプライバシーと権利を重視し、Prighter Group通して以下の地域に現地の窓口となる代理人を選任しております。</p>
+<ul>
+<li>イギリス (UK)</li>
+<li>欧州連合（EU）</li>
+</ul>
+<p>Prighterは、データのアクセス権やデータの削除要求などのプライバシーに関する権利請求のツールを提供しています。代理人であるPrighterを通じてお問い合わせをされる場合、またはデータ主体の権利を行使されたい場合は、以下のリンクよりお願いいたします。<a href=\"https://app.prighter.com/portal/15425421363\" target=\"_blank\">https://app.prighter.com/portal/15425421363</a></p>
+<p class=\"text-right\">株式会社D2CX<br>
+代表取締役社長　中西恭大<br>
+制定日：2025年1月10日</p>
+</section>"
+    tradelaw:
+      headline: "特定商取引法に基づく表示"
+      text_html: "<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">販売事業者</h2>
+  <p>株式会社 D2CX</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">運営統括責任者</h2>
+  <p>萩原良</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">所在地</h2>
+  <p>〒105-7314 東京都港区東新橋1-9-1 東京汐留ビルディング</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">お問合せ先</h2>
+  <p>電話番号： +81-3-6263-8244<br>問い合わせ受付用メール：shopper@d2cx.co.jp</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">営業時間・休業日</h2>
+  <p>電話受付時間：10時～17時30分（日本時間）<br>※土日祝日、及び弊社が定めた休業日を除く</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">サービス内容</h2>
+  <p>購入代行サービス</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">販売価格</h2>
+  <p>各商品の決済ページにて表示</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">送料・手数料など付帯費用</h2>
+  <p>サービス手数料<br>決済手数料<br>国内送料<br>海外送料<br>その他オプションサービス費用</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">代金の支払方法</h2>
+  <p>クレジットカード<br>PayPal</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">代金の支払時期</h2>
+  <p>代金の請求は2回に分けて行われます。<br><br>
+    1回目： 商品購入時又は落札時:<br>
+    商品代金<br><br>
+    2回目： 商品の弊社到着後:<br>
+    サービス手数料＋国内送料＋海外送料＋決済手数料＋その他オプションサービス費用</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">商品の引渡時期</h2>
+  <p>2回目の請求の入金確認後、速やかに発送いたします。</p>
+</section>
+<section class=\"staticPages_sect\">
+  <h2 class=\"staticPages_ttl\">返品について</h2>
+  <p>商品等の特性上、原則として返品は出来ません。</p>
+</section>
+"
+  wowjapan:
+    desc: "訪日旅行者向け観光メディアWOW! JAPANは2021年9月15日にサービス終了となりました。<br><br>こちらのページではWOW! JAPANで過去に人気だった記事の一部を公開しています。"
+  covid:
+    subtitle: "A list of places in Japan taking proper COVID-19 precautions"
+    desc: "Planning to visit Japan? Let us introduce you to stores and facilities in the country taking proper coronavirus precautions so that you can fully and safely enjoy your trip."
+    search_button: "Search for stores and facilities"
+    how:
+      title: "How Japan Battles COVID-19"
+      sub: "Avoid the three Cs!"
+      desc_html: "In addition to following proper cough and hand-washing etiquette, the Japanese government has called for everyone to avoid the three Cs in order to prevent the spread of the coronavirus."
+      1:
+        repletion: "Places with bad ventilation"
+        keyword_html: "<span>C</span>losed spaces"
+      2:
+        repletion: "Many people in one place"
+        keyword_html: "<span>C</span>rowded places"
+      3:
+        repletion: "Talking from a close distance"
+        keyword_html: "<span>C</span>lose-contact settings"
+      additional_html: "For more information, please check the <a href='https://corona.go.jp/en/' target='_blank'>Cabinet Secretariat's COVID-19 Information and Resources</a> page."
+    about:
+      title: "What You Need to Know About COVID-19 in Japan"
+      1:
+        text: "Countries/regions with restrictions on entry into Japan, quarantine measures upon entering Japan, Japan visa restrictions, etc.:"
+        url1_title: "Ministry of Foreign Affairs of Japan Overseas Safety Page"
+        url1: "https://www.anzen.mofa.go.jp/"
+        url2_title: "Ministry of Justice Immigration Services Agency of Japan"
+        url2: "https://www.isa.go.jp/en/nyuukokukanri01_00151.html"
+        desc: "*Entry restrictions, quarantine measures, etc. are frequently updated, often times without advance notice. Please view the above websites for the latest information."
+      2:
+        text: "Info on entry restrictions (certificates to be presented, apps that need to be installed, etc.):"
+        url1_title: "Ministry of Health, Labour and Welfare"
+        url1: "https://www.mhlw.go.jp/stf/covid-19/bordercontrol.html"
+      3:
+        text: "Japan's COVID-19 Vaccination Situation"
+        url1_title: "Prime Minister of Japan and His Cabinet (Japanese)"
+        url1: "https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html"
+        url2_title: "Prime Minister of Japan and His Cabinet (English)"
+        url2: "https://japan.kantei.go.jp/ongoingtopics/vaccine.html"
+    place_list:
+      title: "Places Taking Proper COVID-19 Precautions"
+      all: "All Category"
+      transport: "Transportation"
+      hotel: "Hotels"
+      shop: "Shops"
+      restaurant: "Restaurants"
+      sightseeing: "Sightseeing"
+      other: "Activities/Others"
+      category: "Category"
+      category_ph: "Search by category"
+      area: "Area"
+      area_ph: "Search by area"
+      add_area: "Add area"
+    result:
+      count_total: " results"
+      #      current_count_html: "Showing <span class='count_start'></span>~<span class='count_end'></span> results (Alphabetical order)"
+      current_count_html: "(Alphabetical order)"
+      title: "Search results"
+      unit: "results"
+      icon:
+        title: "COVID-19 Prevention Measure Icons"
+        cashless: "Cashless payment OK"
+        distance: "Proper social distancing observed"
+        gargle: "Staff regularly gargle"
+        hand: "Staff regularly disinfect hands"
+        mask: "Staff wear masks"
+        sanitizer: "Hand sanitizer available"
+        sheet: "Partitions installed"
+        spray: "Regular disinfection of facility"
+        temperature: "Regular staff temperature checks"
+        thermograph: "Body temperature checkers installed"
+        tray: "Use of coin trays"
+        vent: "Good ventilation"
+      show_more_html: "<i class='fas fa-plus'></i>  Show more"
+      show_less_html: "<i class='fas fa-minus'></i>  Show less"
+      read_more: "Show more"
+      read_less: "Show less"
+      website: "Official Website"
+    featured_articles: "Featured Articles"
+    more_info: "Below is a list of coronavirus prevention measures implemented by specific businesses across Japan."
+    details:
+      description: "Facility Information"
+      safety_description: "Health and Safety Measures"
+      benefit: "Special Offer"
+      disclaimer: "この記事に掲載されている情報は、公開時点のものです。"
+      headline: "Safety Measures in Japan to Curb the Spread of the Coronavirus"
+      teaser_desc_html: "The Japanese government has recommended avoiding the \"three Cs\ as part of their anti-coronavirus strategy. The three Cs are: poorly-ventilated \"closed spaces\" \"crowded places\", where many people gather; and \"close-contact settings\", where people converse up close. Situations where these three conditions are present should be avoided. This page will inform you on the specific steps Japanese businesses are taking to follow the government's calls and ensure public health and safety in the face of the coronavirus."
+      menu:
+        headline: "How Japanese Businesses Are Combating the Coronavirus"
+        transport: "Transportation"
+        accommodate: "Hotels"
+        restaurant: "Restaurants"
+        shops: "Shops"
+        sightseeing: "Sightseeing"
+        other: "Activities/Others"
+      descs:
+        transport: "Airports, which welcome arrivals from and departures to the rest of the world, and public transit like trains and buses, which we rely on to get around, can be vectors for transmitting the coronavirus. Here, we'll cover the stringent health and safety measures in place to prevent the spread of the coronavirus in Japan's airports and on public transit systems."
+        accommodate: "From sightseeing to dining, there are so many things to enjoy when traveling. Your choice of accommodation, too, is an important factor that can add color to your trip.
+        Accommodation is where we rest and relax, so we all want to stay somewhere that feels safe.
+        In this section, we'll cover health and safety measures that hotels and other accommodations have in place to prevent the spread of the coronavirus."
+        restaurant: "Many people consider food to be the best part of a holiday.
+        Sharing a table with your friends or family while you experience the local food culture can be the highlight of any trip. However, as close contact and the risk of droplet transmission are concerns, dining out can also be considered high risk. Check out these anti-coronavirus measures at restaurants to enjoy a fun and safe meal!"
+        shops: "Browsing for souvenirs and unique local items is an unmissable part of any trip.
+        Let's look at the health and safety measures, like sanitation and ventilation, in place at busy shopping areas. "
+        sightseeing: "From theme parks to museums, shrines, temples, and castles, many people look forward to enjoying Japanese culture and history when they visit Japan. However, these kinds of crowded places can also induce some unease.
+        In this section, we'll look at health and safety measures that crowded sightseeing spots have put in place to prevent the spread of the coronavirus."
+        other: "Many people want to experience Japanese culture during their visit. Check out the health and safety measures in place for these activities, so you can enjoy your valuable cultural experiences with peace of mind.
+        We'll also introduce other anti-coronavirus strategies in place throughout Japan during your visit."
+    teaster:
+      headline_html: "Traveling Safely in Japan"
+      headline_m_html: "Traveling Safely<br>in Japan"
+      sub: "A list of places in Japan taking proper COVID-19 precautions."
+    information:
+      headline: "What You Should Read Now, In the Midst of the Coronavirus"
+    safety:
+      headline: "Safety Measures in Japan to Curb the Spread of the Coronavirus"
+      sub: "Below is a list of coronavirus prevention measures implemented by various Japanese industries."
+      content:
+        h3: "Public Transportation"
+        sub: "While people are refraining from travel, Japanese public transport such as buses or trains are implementing such prevention measures as airing out the insides of the vehicles, disinfecting surfaces, and equipping all workers with face masks."
+      info:
+        mask:
+          headline: "Wearing masks"
+          sub: "Staff required to wear masks to prevent droplet contact infection"
+        hand_san:
+          headline: "Hand sanitizer is available"
+          sub: "Hand-sanitizing stations are set up throughout the premises"
+        temp:
+          headline: "Health monitoring"
+          sub: "Thorough staff health monitoring"
+        sheets:
+          headline: "Infection prevention sheets"
+          sub: "Are set up to prevent droplet contact infection"
+        distance:
+          headline: "Social distancing"
+          sub: "Staff keep a healthy social distance from customers"
+        first:
+          headline: "Ventilation"
+          sub: "Opening the windows to air out the insides of vehicles"
+        second:
+          headline: "Disinfection"
+          sub: "Wiping down and disinfecting all equipment and surfaces"
+        third:
+          headline: "Face Masks"
+          sub: "Equipping staff with face masks to prevent droplet infections"
+      outgoing:
+        headline: "For more information, please refer to each organization’s official website."
+        link1: "JR East"
+        link2: "Tokyo Metro"
+        link3: "Toei Subway"
+        link4: "Keikyu"
+        link5: "Keisei Electric Railway"
+        link6: "Tokyo Monorail"
+        link7: "Hankyu Railway"
+        link8: "Nankai Electric Railway"
+        link13: "Keihan Electric Railway"
+        link9: "Osaka Metro"
+        link10: "Airport Buses"
+        link11: "Large Taxi Companies"
+        link12: "JR Central"
+    forward:
+      headline: "Links to More Info About the Coronavirus in Japan"
+      sub: "For the latest information about the coronavirus in Japan, please refer to each organization’s official website."
+      link1: "Tokyo Metropolitan Government"
+      link2: "Ministry of Health, Labour and Welfare"
+      link3: "Ministry of Foreign Affairs, Overseas Safety Page"
+    learning:
+      headline_html: "Learning &amp; Planning"
+      learning: "Learning"
+      planing: "Planning"
+      sub: "Do you want to virtually travel Japan from the comfort of your own home? Here's some quality Japan-related content carefully selected by our Japan-based staff! You'll find all kinds of info, including famous spots you might not know about yet, gorgeous sights worth visiting more than once, and all kinds of trivia on Japanese culture."
+  feature:
+    feature_label: "特集"
+    index:
+      description: "tsunagu Japanの特集一覧ページ。日本で活躍する“人”に焦点をあてた特集、日本各地の魅力を伝える特集、食文化・伝統文化・ポップカルチャーを紹介する特集など、独自の視点で掘り下げ記事をご覧ください。"
+      poj:
+        description: "「People of Japan」は、伝統文化の職人、新進気鋭のアーティスト、独自のアイディアで社会を変える起業家、人気店のオーナーなど、日本で活躍するさまざまな “人” に焦点を当てた特集です。彼らが生み出す商品やサービスの特徴、開発秘話、関わる人々の思い、今後の展望などを発信しています。"
+        theme1_html: "今、注目してほしいあの人に聞いた！活動にかける想い"
+      aoj:
+        description: "「Area of Japan」は、多国籍な編集スタッフが独自の視点で厳選した、日本各地のあまり知られていない “エリアやスポット” を紹介する企画です。実際に現地で感じたことや、その場所の魅力、オススメの楽しみ方などをご紹介しますので、日本旅行のヒントにお役立てください。"
+        theme1_html: "一日時間ができたとき、私はここに行く！〜東京編〜"
+        theme2_html: "友人や身内をぜひ案内したい！とっておきのスポット 〜東京編〜"
+        theme3_html: "ローカルな魅力満載！中央線沿線のスポットを巡ってみよう"
+        theme4_html: "京王井の頭線に乗っていく！おすすめの沿線スポット"
+        theme5_html: "東京のおすすめ日帰り旅行エリア"
+      coj:
+        description: "「Culture of Japan」は、日本独自の “文化” を紹介する企画です。食文化、伝統文化、ポップカルチャーなど、日本が世界に誇れるさまざまな文化を、日本人を含めた多国籍なスタッフが徹底的に掘り下げます。底なしの魅力に包まれた日本文化の世界をどうぞご覧ください。"
+        theme1_html: ""
+        theme2_html: "専門家に聞いた！あの日本グルメの楽しみ方"
+        theme3_html: "日本を訪れたならぜひ食べて欲しい！健康的な伝統日本食"
+        theme4_html: "日本の伝統工芸･文化、その奥深い魅力を探る"
+        theme5_html: "簡単に体験できる日本の伝統文化"
+        theme6_html: "深淵なる日本のサブカルチャーを覗いてみよう"
+    read_more: "続きを読む"
+    poj:
+      title: "People of Japan"
+      sub_title: "今、注目してほしいあの人に聞いた！活動にかける想い"
+      description: "「People of Japan」は、伝統文化の職人、新進気鋭のアーティスト、独自のアイディアで社会を変える起業家、人気店のオーナーなど、日本で活躍するさまざまな人物を紹介する企画です。tsunagu Japan 編集部が実際にインタビューをして、彼らが生み出す商品やサービスの特徴はもちろんのこと、開発秘話、関わる人々の思い、今後の展望などをじっくりと聞き出します！他のメディアではなかなか出会えない深い情報をぜひご覧ください。"
+      article1:
+        url: "https://www.tsunagujapan.com/ja/onigiri-bongo-ukon-yumiko/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/475/thumb/A5B61446-0CF5-4B15-BD93-980778AA8496.jpeg?2022&d=400x400"
+        area: "東京"
+        date: "Jul 19, 2022"
+        title: "東京の大人気おにぎり屋「ぼんご」ができるまで ~店主･右近由美子さんの波乱万丈物語"
+      article2:
+        url: "https://www.tsunagujapan.com/ja/justin-potts-changing-the-face-of-japan-through-sake/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/461/thumb/Thumb_Justin_Ponshukan2.jpg?2022&d=400x400"
+        area: "全国"
+        date: "Jun 29, 2022"
+        title: "日本酒を通して日本の真髄を伝える！ポッドキャスト「Sake On Air」MC ジャスティン・ポッツさんの活動とは"
+      article3:
+        url: "https://www.tsunagujapan.com/ja/makoto-komai-sharing-the-charms-of-japanese-art-in-a-familiar-format/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/395/thumb/POJ_thumbnail_2.jpg?2022&d=400x400"
+        area: "静岡"
+        date: "Jun 03, 2022"
+        title: "アートTシャツで日本の芸術を身近に感じてもらいたい！駒井 慎さんの製作活動とその想い"
+      article4:
+        url: "https://www.tsunagujapan.com/ja/shonan-soy-studio-onoka-keita/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/415/thumb/FotoJet.jpg?2022&d=400x400"
+        area: "神奈川"
+        date: "May 20, 2022"
+        title: "「コーヒー納豆」で世界を変える！納豆起業家・小野岡圭太さんの想いと働き方"
+      article5:
+        url: "https://www.tsunagujapan.com/ja/mia-mia-vaughan-and-rie-allison/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/394/thumb/MIA_MIA.jpg?2022&d=400x400"
+        area: "東京"
+        date: "Apr 19, 2022"
+        title: "コーヒーとアートを通して交流を育む！ヴォーン・アリソンさんとリエ・アリソンさんが語る地域コミュニティの作り方"
+      article6:
+        url: "https://www.tsunagujapan.com/ja/upcycling-antique-kimono-into-cushions-foa-chitose-abe/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/419/thumb/IMG_5816a.jpeg?2022&d=400x400"
+        area: "全国"
+        date: "Apr 17, 2022"
+        title: "使われなくなった着物の帯をクッションに！「F.O.A」デザイナー、阿部千登勢さんの起業ストーリー"
+      article7:
+        url: "https://www.tsunagujapan.com/ja/discover-japanese-cuisine-pro-vietnamese-chef-nguyen-ba-phuoc/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/401/thumb/anh_bia.jpeg?2022&d=400x400"
+        area: "全国"
+        date: "Mar 24, 2022"
+        title: "日本でプロの日本料理人になった若きベトナム人男性グエン・バー・フックさんの旅を通して、日本料理の真髄を深めていきましょう！"
+      article8:
+        url: "https://www.tsunagujapan.com/ja/dragon-farm-owner-interview/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/374/thumb/tsunagu-EVEE6409.jpeg?2022&d=400x400"
+        area: "千葉"
+        date: "Mar 23, 2022"
+        title: "イチゴ狩りで人気のドラゴンファーム！オーナー内田かほるさんに聞いた、多くの人に愛され続ける秘密とは？"
+      article9:
+        url: "https://www.tsunagujapan.com/ja/yuko-matsumoto-kimono-shop-manager-tokyo-yanaka/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/041/265/thumb/ezgif.com-gif-maker.jpg?2022&d=400x400"
+        area: "東京"
+        date: "Dec 13, 2021"
+        title: "東京の谷中で着物レンタル店を営む松本由布子さんに聞いた、着物を着る喜びとは？"
+      article10:
+        url: "https://www.tsunagujapan.com/ja/katsura-fukuryu-professional-rakugoka/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/686/original/0A5A0438-1.jpg?2023&d=400x400"
+        area: "大阪"
+        date: "Jun 05, 2023"
+        title: "カナダ人落語家、桂福龍 〜日本の伝統芸能に新たな道を切り開く"
+      article11:
+        url: "https://www.tsunagujapan.com/ja/hirata-tantojo-the-japanese-swordsmith-power-couple-keeping-katana-making-traditions-alive/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/713/original/hirata-tantojo-poj_1.jpg?2023&d=400x400"
+        area: "東京"
+        date: "Sep 27, 2023"
+        title: "【平田鍛刀場】今もなお刀作りの伝統を守り続ける職人夫婦"
+      article12:
+        url: "https://www.tsunagujapan.com/ja/nebuta-artisan-takenami-hiroo/"
+        image: "https://ENV_CLOUDFRONT_DOMAIN/articles/title_images/000/044/746/original/%E7%AB%B9%E6%B5%AA%E6%AF%94%E5%91%82%E5%A4%AE_231007.jpg?2024&d=400x400"
+        area: "青森"
+        date: "Jan 30, 2024"
+        title: "紙と光の無限の可能性、青森第７代ねぶた名人・竹浪比呂央、ねぶたへの大願"
+    aoj:
+      theme1:
+        title: "一日時間ができたとき、私はここに行く！〜東京編〜"
+        description: "あなたは東京で一日時間ができたら何をしたいですか？こちらの特集では、東京や東京近郊で暮らしている多国籍なメンバーが、「東京で一日時間ができたら行きたい場所」をご紹介！実際に現地を取材し、旅行者ではなかなか気がつかない独自の視点で、おすすめポイントや楽しみ方をお伝えします。"
+        article1:
+          title: "日本文学、歴史建築、民芸品を堪能する1日！東京の駒場公園内外の施設を巡ってきました"
+          description: "あなたは日本の歴史建築や文学、民芸品に興味はありますか？東京の駒場公園の内外には、そのようなテーマが好きな人におすすめしたい素敵な施設がいくつかあります。この記事ではアート好きなライターが、駒場公園を散策しながらアートも満喫してきましたので、その様子をご紹介します！"
+          url: "https://www.tsunagujapan.com/ja/a-day-of-literature-and-art-in-komaba-park/"
+          writer:
+            name: "Dawn"
+            country: "台湾"
+            profile: "日本各地の芸術祭、美術館を訪れるのが好きで、日本のアートツーリズムの魅力を広げたいです。今後は東京と台北の二拠点生活を実現したいです。"
+        article2:
+          title: "こだわりの店が集結！コーヒーの街・清澄白河でゆっくりとした1日を楽しもう"
+          description: "個人経営のおしゃれで落ち着くカフェが集結する場所として近年注目されている、東京の清澄白河を知っていますか？清澄白河に良い店がたくさん集まる理由を探る​ため、そしてもちろん美味しいコーヒーを味わうために、カフェ好きのライターが現地を徹底取材した様子をお届けします！"
+          url: "https://www.tsunagujapan.com/ja/a-day-of-coffee-tasting-in-kiyosumi-shirakawa/"
+          writer:
+            name: "Kinoko"
+            country: "ベトナム"
+            profile: "東京在住。日本の新たな土地や人々について探索することが好き。私の体験を届けて、たくさんの人を日本に近づけたいです。"
+        article3:
+          title: "初心者でも楽しめるディープな日本！大井競馬場で昼から夜まで遊ぼう"
+          description: "皆さんは日本の競馬場がどんな様子かご存知ですか？日本では公営ギャンブルとして競馬を楽しむことが認められており、人々が気軽に楽しんでいます。でも、行ったことがない人にはちょっと敷居が高いイメージがありますよね？この記事では競馬初心者のライターが初めて競馬場で1日遊び倒した様子をお伝えします。"
+          url: "https://www.tsunagujapan.com/ja/one-day-in-tokyo-city-keiba-oi-keibajo/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+        article4:
+          title: "他の東京の街とは一味違う？独特な発展を遂げた月島の街を楽しもう"
+          description: "隅田川の河口に埋立地として作られた月島。海の目の前にありながら高層ビルや近代的な建造物が立ち並び、同時に下町の雰囲気も漂うユニークな街です。東京の名物グルメ「もんじゃ焼き」が味わえる場所としても知られています。東京でちょっと気分を変えて他とは違う雰囲気の場所に行ってみたくなったら、月島を訪れてみるのはいかがでしょうか？"
+          url: "https://www.tsunagujapan.com/ja/unique-retro-downtown-neighborhood-tsukishima/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りしながら伝統的でレトロな場所や穴場を探しています。"
+        article5:
+          title: "柴又 〜大都市・東京の中で古き味わいを感じられる街！"
+          description: "東京の葛飾区に位置する柴又。庶民が暮らす町並みが今も残る魅力的な下町で、旅行で訪ねてみてもじゅうぶんに楽しめる場所です。良き時代の面影が感じられるレトロな建物や、柴又ならではのちょっとしたグルメが味わえる食堂があり、訪れる人を穏やかな気持ちにしてくれます。東京の知られざる一面を知りたい人、歴史ある場所で一日を過ごしたい人は、今回柴又を歩き取材たこの記事をぜひご参考ください！"
+          url: "https://www.tsunagujapan.com/ja/shibamata-a-vintage-nook-in-tokyo-that-doesn-t-look-anything-like-the-big-city/"
+          writer:
+            name: "Stefania Sabia"
+            country: "イタリア"
+            profile: "東京在住。レトロなスポットと穴場、日本の伝統が好き。子供の頃から日本文化に憧れがあり、来日後は全国を探索してInstagramで日本の魅力を紹介しています。"
+      theme2:
+        title: "友人や身内をぜひ案内したい！とっておきのスポット〜東京編〜"
+        description: "海外から自分が住んでいる国に友人や身内が遊びに来た時、「どこを紹介したら楽しんでくれるかな？」と悩んだ経験はありませんか？こちらの特集では、東京で暮らしている様々な国のメンバーが「東京に遊びに来る友人や身内をぜひ案内したい！とっておきのスポット」を紹介！実際に現地を足を運び、観光客だけではなかなか気がつかないような楽しみ方までお伝えします。"
+        article1:
+          title: "思う存分ガシャポンを満喫！3000面のガシャポンマシンがある「ガシャポンのデパート池袋総本店」に案内します！"
+          description: "皆さんは、日本でガシャポンマシンを見かけたことはありますか？日本各地で目にするガシャポンは、人気アニメからミニチュアモデル、光るものまでたくさんの種類があります。この記事では、tsunagu Japan編集部ライターが3000面を超えるガシャポンマシンが並ぶ「ガシャポンのデパート池袋総本店」へ皆さんをお連れします。"
+          url: "https://www.tsunagujapan.com/ja/gashapon-department-store-ikebukuro-capsule-toy-galore/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+        article2:
+          title: "家族と一緒にゆったり自然に溶け込める 「町田薬師池公園 四季彩の杜」"
+          description: "都会の喧騒から離れ、自然の中で癒されたいと思うことはないでしょうか。この記事では、東京郊外でそんな時間を過ごせる「町田薬師池公園 四季彩の杜」を紹介します。公園には、豊かな自然や緑があるだけではなく、地元の特産物がある直売所、カフェやレストラン、歴史的建造物など、見所がたくさんあります。都心とは一味違った雰囲気を味わいにぜひ訪れてみてください。"
+          url: "https://www.tsunagujapan.com/ja/machida-yakushiike-park-shikisai-no-mori/"
+          writer:
+            name: "Kinoko"
+            country: "ベトナム"
+            profile: "東京在住。日本の新たな土地や人々について探索することが好き。私の体験を届けて、たくさんの人を日本に近づけたいです。"
+        article3:
+          title: "古き良き物との出会い、人との出会い 〜東京大江戸骨董市を見て回ろう～"
+          description: "日本最大級の露天骨董市である「大江戸骨董市」。この骨董市では、時代、年代、言語、そして国境を越え、歴史を感じさせる骨董品にたくさん出会うことができます。食器やおもちゃ、絵画、着物など多種多様な骨董品の中からお気に入りの骨董品を見つけに「大江戸骨董市」へ訪れてみるのはいかがでしょうか？"
+          url: "https://www.tsunagujapan.com/ja/treasure-hunting-at-the-oedo-antique-market/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "グルメの街、台南出身。料理と手仕事の器が好き。「自然を尊重し、旬を楽しむ」という日本の食文化に感動し、その魅力を届けるために発信しています。"
+        article4:
+          title: "夕日の丘商店街 ～昭和のエネルギーが溢れる街で、1960年代の日本にいるような感覚を味わう～"
+          description: "テーマパーク「西武園ゆうえんち」内には、日本の昭和時代にタイムスリップできる「夕日の丘商店街」があります。「夕日の丘商店街」は日本の昭和時代ならではの懐かしさや遊び心に溢れ、昭和時代に親しまれていたグルメや撮影スポットを楽しむことができます。ぜひ皆さんも園内にいる活気あふれる地元民たちと共に昭和の暮らしの温もりに触れてみませんか？"
+          url: "https://www.tsunagujapan.com/ja/yuhi-no-oka-shopping-street-feel-as-if-you-are-in-1960-s-japan-at-this-town-bursting-with-the-energy-of-the-showa-era/"
+          writer:
+            name: "Stefania Sabia"
+            country: "イタリア"
+            profile: "東京在住。レトロなスポットと穴場、日本の伝統が好き。子供の頃から日本文化に憧れがあり、来日後は全国を探索してInstagramで日本の魅力を紹介しています。"
+        article5:
+          title: "都心で見つけたオアシス、旧朝倉家住宅"
+          description: "都会の喧騒の中にある、静かで隠れ家のようなオアシス「旧朝倉家住宅」。大正期の数少ない建築物の一つとして、その典型的な和風建築が評価されている、国の重要文化財です。1歩足を踏み入れると、そこにはまるで20世紀初頭の日本にタイムスリップしたかのような空間が広がっています。この記事では、そんな伝統的な日本建築「旧朝倉家住宅」について紹介します。"
+          url: "https://www.tsunagujapan.com/ja/traditional-kyu-asakura-house-in-metropolitan-tokyo/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りしながら伝統的でレトロな場所や穴場を探しています。"
+      theme3:
+        title: "ローカルな魅力満載！中央線沿線のスポットを巡ってみよう"
+        description: "東京駅を始点に、東京西部の八王子市の方まで横断する「JR中央線」。その沿線にはとてもローカルで地元の人に愛されている街が点在します。今回、tsunagu Japanの特集記事「Area of Japan」では、中央線の駅である高円寺、阿佐ヶ谷、荻窪、西荻窪を中心に、このエリアの魅力的なスポットを紹介します。"
+        article1:
+          title: "中央線沿線の地元感溢れる商店街、一日かけてたっぷり堪能しよう！"
+          description: "日本の地元の人々の生活が感じられる場所「商店街」。近年、ショッピングセンターの発展により、数は減ってきていますが、中央線沿線には、その土地ならではの多種多様な商店街が存在しています。商店街ならではのグルメや古着、骨董品など魅力いっぱいの商店街にぜひ訪れてみてください。"
+          url: "https://www.tsunagujapan.com/ja/enjoying-the-local-shopping-street-along-the-tokyo-chuo-line/"
+          writer:
+            name: "Kinoko"
+            country: "ベトナム"
+            profile: "東京在住。日本の新たな土地や人々について探索することが好き。私の体験を届けて、たくさんの人を日本に近づけたいです。"
+        article2:
+          title: "レトロな東京がここに！ノスタルジーを感じる喫茶店や雑貨など、中央線ならではのカルチャーを体験しよう"
+          description: "近年、レトロブームが再来していますが、日本には「演出されたレトロ」ではなく、時代を重ねてきた本物のレトロがいまだに存在します。特に中央線沿線にはレトロスポットが多く、昔ながらの喫茶店や古着屋、そして味のある商店街などを総称して『中央線カルチャー』と呼ばれたりしているのです。この記事では、荻窪、阿佐ヶ谷、高円寺駅周辺でレトロやノスタルジーを感じられるスポットを訪ねてまわります。"
+          url: "https://www.tsunagujapan.com/ja/experience-the-unique-chuo-line-culture-old-time-tokyo/"
+          writer:
+            name: "Shirley"
+            country: "台湾"
+            profile: "東京在住の元客室乗務員で、次の旅の目的地をいつも楽しみにしている。日本のさまざまな空港へフライトで巡り、その土地の美しさを発見するのが好き。地域の文化や深い旅記の執筆・共有をたくさんしていきたい。"
+        article3:
+          title: "中央線が通る杉並区エリアの魅力 ~美しい昭和の面影を辿って散策する1日"
+          description: "東京の中心部のやや西側に位置する杉並区。大都会の新宿とお洒落で閑静な吉祥寺の間に位置するエリアであり、ディープで独特な雰囲気を醸し出しています。観光客が多く訪れる場所ではありませんが、実際に歩いてみれば、きっと楽しい発見があることでしょう。この記事では、JR中央線沿いの高円寺や荻窪などを中心に、散歩したくなるようなスポットを実際に巡って紹介します。"
+          url: "https://www.tsunagujapan.com/ja/a-day-of-strolling-along-the-remnants-of-showa-era-by-chuo-line/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+        article4:
+          title: "ドラマ『孤独のグルメ』の聖地を巡る中央線の旅  〜ハワイアンオックステールスープ、焼き鳥、モロッコタジン"
+          description: "日本に実在するレストランを舞台したドラマ「孤独のグルメ」。ローカルテレビ局で深夜ドラマとして始まりましたが、今や海外で賞をもらうほど高い評価を得ています。中央線沿線には、このドラマに登場したレストランが何店舗かあり、今回はtsunagu Japanライターが実際にドラマに登場したレストランを訪問しました。果たして、実際の味はどうなのか、、、あなたも東京を訪れた際は、この記事を参考にして「孤独のグルメ」の聖地巡礼をしてみてください。"
+          url: "https://www.tsunagujapan.com/ja/a-pilgrimage-to-the-drama-kodoku-no-gourmet-places-by-jr-chuo-line/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "グルメの街、台南出身。料理と手仕事の器が好き。「自然を尊重し、旬を楽しむ」という日本の食文化に感動し、その魅力を届けるために発信しています。"
+      theme4:
+        title: "京王井の頭線に乗っていく！おすすめの沿線スポット"
+        description: "京王井の頭線は東京で最も人気のある路線のひとつです。有名な観光地「渋谷」と、東京西郊にあるショッピングやグルメで人気の「吉祥寺」を結ぶだけでなく、沿線には有名なエリアがいくつもあります。この特集では、沿線にある私たちのお気に入りの街と、特におすすめのスポットをご紹介します。"
+        article1:
+          title: "永福町 〜京王井の頭線沿線の閑静な住宅街で日本文化を味わう"
+          description: "渋谷と吉祥寺という二大観光地に挟まれた静かな街、永福町が日本の日常を垣間見せてくれるとは信じがたいことでしょう。この記事では、都会の喧騒から解放されながら、日本文化を表すあまり知られていない逸品を見つけるために、この静かな隠れ家を訪ねました。"
+          url: "https://www.tsunagujapan.com/ja/eifukucho-japanese-culture-keio-inokashira-line/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りしながら伝統的でレトロな場所や穴場を探しています。"
+        article2:
+          title: "吉祥寺 ～京王井の頭線沿線エリアでジブリの世界に浸って過ごす"
+          description: "あなたはスタジオジブリのファンですか？そして日本で思い出に残る一日を過ごしたいですか？この記事の旅程では、絵のように美しい吉祥寺の中心部へお連れします。東京で最も愛されている街のひとつである吉祥寺には、色彩豊かなのカフェや自然の中に佇む茶室、ジブリ映画のワンシーンを一瞬で思い起こさせる隠れ家的なお店がたくさんあります！"
+          url: "https://www.tsunagujapan.com/ja/kichijoji-spend-a-day-immersed-in-the-world-of-studio-ghibli-along-the-keio-inokashira-line/"
+          writer:
+            name: "Stefania Sabia"
+            country: "イタリア"
+            profile: "東京在住。レトロなスポットと穴場、日本の伝統が好き。子供の頃から日本文化に憧れがあり、来日後は全国を探索してInstagramで日本の魅力を紹介しています。"
+        article3:
+          title: "下北沢の隣駅・新代田：京王井の頭線沿いで緑を楽しむぶらり旅"
+          description: "京王電鉄の井の頭線は、繁華街の渋谷から三鷹の森ジブリ美術館がある吉祥寺を結びます。この人気路線の中で下北沢のすぐ隣にあるのが「新代田」です。緑あふれる散歩道には、カフェ・ベーカリー・雑貨屋・カレー屋・花屋など生活に根差したお店が集まっており、静かで優雅な雰囲気が、一瞬東京にいることを忘れさせることでしょう。"
+          url: "https://www.tsunagujapan.com/ja/spend-a-day-in-shindaita-surrounded-by-greenery/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "台南出身。料理と手仕事の器が好き。"
+        article4:
+          title: "可愛らしさ、ファッション性、上質感を兼ね備えた下北沢雑貨店巡り"
+          description: "東京は世界屈指のファッション都市ですが、地域ごとに特色があります。「個性的」で上質な生活雑貨を探しているなら、「下北沢」があなたにとって最もふさわしい場所になります。京王井の頭線に乗って、トレンドの聖地・渋谷から電車でわずか3分、さまざまな文化が交錯する下北沢界隈で、生活の楽しさと質を向上させる雑貨店を探してみましょう。"
+          url: "https://www.tsunagujapan.com/ja/shimokitazawa_zakka_groceries/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+      theme5:
+        title: "東京のおすすめ日帰り旅行エリア"
+        description: "東京は世界でも有数の鉄道網を持つ都市なので、賑やかな都心部だけに留まるのではなく、東京近郊を散策して旅を満喫してみてはいかがでしょうか。この「Area Of Japan」シリーズでは、首都圏（千葉県、群馬県、茨城県、神奈川県、埼玉県、栃木県、山梨県）とその郊外にあるおすすめの場所をご紹介します。いずれも公共交通機関を使えば1～2時間で行けるので、日帰り旅行には最適です！豊かな歴史と文化、昔ながらの街並み、そして豊かな自然があなたを待っています。"
+        article1:
+          title: "新宿発バス日帰りツアー！富士山の美しい景色、御殿場ショッピング、箱根海賊船を満喫"
+          description: "編集部が実際に東京・新宿発のバス1日コースを体験しました。自分で交通手配をする必要なく充実した一日を過ごすことができました。山梨県の忍野八海、静岡県の御殿場、神奈川県の箱根大涌谷などの人気観光地からさまざまな角度の富士山を鑑賞し、芦ノ湖では箱根海賊船にも乗ってきましたよ！"
+          url: "https://www.tsunagujapan.com/ja/fuji-hakone-one-day-bus-trip/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+        article2:
+          title: "栃木県日光の日帰り旅行：日光東照宮から湯波料理まで魅力溢れる世界遺産の町"
+          description: "栃木県の北西部に位置する日光市は、東京浅草から電車に乗り、2時間足らずでアクセスできる観光地。山々に囲まれた、この賑やかな街には、いくら見ても見たりないほどの美しい風景があるだけでなく、日光東照宮・神橋などの歴史遺跡を巡り、荘厳で美しい世界遺産を楽しむこともでき、またご当地ならではの美味しい湯波料理も味わえます。これだけの魅力を兼ね備えた日光市は、関東地方の日帰り旅行には最適な場所の一つです。"
+          url: "https://www.tsunagujapan.com/ja/from-toshogu-shrine-to-yuba-cuisine-tochigi-nikko-one-day-trip-from-tokyo/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "台南出身。料理と手仕事の器が好き。"
+        article3:
+          title: "佐原：東京と成田空港に近い江戸時代からの水郷の町"
+          description: "千葉県北東部に位置する佐原は、東京や成田国際空港から2時間弱で行ける、レトロな風景が魅力的な江戸時代の風情が残る川沿いの町です。混雑を気にすることなく、伝統的な日本の精神と美しさを体験できる佐原は、まさに隠れた宝石です！華やかな着物に身を包み、完璧に保存された歴史的建造物を徒歩や船で散策しながら、佐原の郷土料理を味わい、昔の日本を彷彿とさせる風景に浸ってみませんか？"
+          url: "https://www.tsunagujapan.com/ja/sawara-the-edo-period-river-town-close-to-tokyo-and-narita-airport/"
+          writer:
+            name: "Stefania Sabia"
+            country: "イタリア"
+            profile: "東京在住。レトロなスポットと穴場、日本の伝統が好き。子供の頃から日本文化に憧れがあり、来日後は全国を探索してInstagramで日本の魅力を紹介しています。"
+        article4:
+          title: "東京から1時間！海辺の街、鎌倉で日本風情あふれる景色を満喫"
+          description: "東京から電車でわずかな距離に、レトロな町並みと伝統的な雰囲気に満ちた魅力的な海岸都市の鎌倉があります。美しい景色、象徴的な観光スポット、おいしいグルメなど、誰もが楽しめる何かがここにはあるのです。東京の喧騒から離れ、日帰りで楽しめる鎌倉をご紹介します！"
+          url: "https://www.tsunagujapan.com/ja/traditional-japanese-scenery-at-the-coastal-town-of-kamakura/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りをしながら伝統的でレトロな場所や穴場を探しています。"
+    coj:
+      theme2:
+        title: "専門家に聞いた！あの日本グルメの楽しみ方"
+        description: "日本に来た人に、最大限日本のグルメを楽しんで欲しい！私たちのそんな思いから今回の特集ができました。おにぎり、和菓子、日本酒に加えて、生卵など日本独自のグルメにも焦点を当てて、各専門店で聞いた「おすすめの食べ方」「材料や作り方に隠された秘密」などを徹底的にご紹介します。"
+        article1:
+          title: "創業60年以上の名店が教える！美味しいおにぎり作りのポイント"
+          description: "皆さんは、日本でおにぎりを食べたことはありますか？コンビニの商品として思い浮かべる人もいるかもしれませんが、おにぎりはもともと日本人が日常的に親しんできた家庭食です。シンプルな料理なので、自分で作ることも難しくはありません。この記事では東京の人気おにぎり屋「ぼんご」の店主さんに、美味しいおにぎりの作り方を教えてもらってきたのでご紹介します！"
+          url: "https://www.tsunagujapan.com/ja/tips-for-making-perfect-onigiri-from-master/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "グルメの街、台南出身。料理と手仕事の器が好き。「自然を尊重し、旬を楽しむ」という日本の食文化に感動し、その魅力を届けるために発信しています。"
+        article2:
+          title: "伝統を受け継ぐ和菓子屋に聞く、食べるアート「上生菓子」の魅力"
+          description: "伝統的な日本グルメの一つである「和菓子」。いくつかの種類がありますが、特に美しく小さな芸術作品のようなジャンルが「上生菓子」です。この記事では、老舗和菓子店「鶴屋吉信」の職人さんの話をもとに、「上生菓子」の魅力や楽しみ方についてお話を伺ってきました。"
+          url: "https://www.tsunagujapan.com/ja/jo-namagashi-edible-works-of-art/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りしながら伝統的でレトロな場所や穴場を探しています。"
+        article3:
+          title: "こだわりの卵専門店に聞いた！日本の生卵の美味しい食べ方"
+          description: "日本では肉や魚以外にも生で卵を食べる習慣があります。生卵をご飯にのせた卵かけご飯やすき焼きのつけダレなど、さまざまな料理に生卵を使うのです。一方、外国人は衛生面の心配もあり、卵を生で食べることに抵抗感を持つ人もいるようです。今回の記事では日本人は生卵をどうやって食べるのかを、安心して食べられるのかなどを、東京の卵料理専門店「喜三郎農場」の店主に教えてもらいました。"
+          url: "https://www.tsunagujapan.com/ja/how-to-eat-deliciously-japanese-raw-eggs/"
+          writer:
+            name: "Kinoko"
+            country: "ベトナム"
+            profile: "東京在住。日本の新たな土地や人々について探索することが好き。私の体験を届けて、たくさんの人を日本に近づけたいです。"
+        article4:
+          title: "創業100年を迎える老舗海苔店が教える、「海苔」をより美味しく食べるコツ"
+          description: "日本の伝統食品の一つである海苔は、島国日本が誇る海の宝です。栄養価の高い海苔が寿司やおにぎりなどに使われるほか、多くの日本人は子供の頃からそのまま食べていました。観光のお土産にも向いた食材ですが、どのように選べぶのがよいでしょうか。また、どうやって食べるのがより美味しいのでしょうか。今回の記事では築地で長年営業をしている老舗「伊藤海苔店」の専門家に、海苔についての話を聞いてきました！"
+          url: "https://www.tsunagujapan.com/ja/a-guide-to-japanese-seaweed-nori/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "グルメの街、台南出身。料理と手仕事の器が好き。「自然を尊重し、旬を楽しむ」という日本の食文化に感動し、その魅力を届けるために発信しています。"
+        article5:
+          title: "250年の歴史を持つ酒蔵の職人に、日本酒の味について学ぼう"
+          description: "初心者が日本酒を楽しむ為には、ただ飲み続けるだけでなく、普段から日本酒の知識を学んでおくことが大切です。今回は日本酒を学びたい人の為に、250年の歴史を持つ酒蔵である「今代司酒造」を訪れ、職人さんの指導のもとで利き酒を体験してきました。この記事を通して、あなたも日本酒の奥深さに触れてみませんか？"
+          url: "https://www.tsunagujapan.com/ja/learning-to-taste-sake-with-an-expert-at-a-250-year-old-brewery/"
+          writer:
+            name: "Steve Csorgo"
+            country: "オーストラリア"
+            profile: "コーヒーの都、メルボルン出身。アニメ、日本酒、ものづくりで日本に魅了されました。現在は、日本酒の都、新潟市在住。"
+      theme3:
+        title: "日本に来たら、ぜひ食べて欲しい！健康的な伝統日本食"
+        description: "皆さんは日本食にどのようなイメージを持っていますか？近年ではラーメンやとんかつ、天ぷらなど、かなりカロリーの高いものが人気を集めていますが、伝統的な日本食材はとてもヘルシーなものが多いのです。今回、tsunagu Japanの特集記事「Culture of Japan」では、醤油や味噌、豆腐など、昔から日本人に親しまれてきた食材の魅力をお伝えします。これらの食材を堪能できるお店もあわせて紹介致します！"
+        article1:
+          title: "ただの調味料ではない！100年の歴史を持つ醸造所で「味噌」の多様性とメリットを知る"
+          description: "日本の伝統的な調味料、味噌をご存知でしょうか。お味噌汁やラーメン、おにぎりなど様々な料理に欠かせない発行調味料で、何百年もの間、日本で愛され続けています。この記事では味噌と何か、その栄養価、そして歴史ある味噌醸造の紹をします。味噌の新たな一面を知り、より一層日本食を楽しみましょう！"
+          url: "https://www.tsunagujapan.com/ja/unpacking-the-versatility-and-benefits-of-miso-at-a-100-year-old-brewery/"
+          writer:
+            name: "Steve Csorgo"
+            country: "オーストラリア"
+            profile: "コーヒーの都、メルボルン出身。アニメ、日本酒、ものづくりで日本に魅了されました。現在は、日本酒の都、新潟市在住。"
+        article2:
+          title: "素朴ながら高い健康効果を誇る日本の漬物！ ご当地漬物専門店「やなぎに桜」を訪問"
+          description: "日本で定食を注文すると、よく出てくる「漬物」。料理を彩る彩りとしての役割だけでなく、栄養価が高くヘルシーであることも、漬物が重宝される理由の1つです。漬物は、使われる食材、製造方法などによって多種多様な種類があり、全国各地によっても種類は様々です。この記事ではご当地漬物専門店を訪問し、そんな漬物の知られざる不思議に迫ります！"
+          url: "https://www.tsunagujapan.com/ja/tsukemono-healthy-japanese-pickles/"
+          writer:
+            name: "Kinoko"
+            country: "ベトナム"
+            profile: "東京在住。日本の新たな土地や人々について探索することが好き。私の体験を届けて、たくさんの人を日本に近づけたいです。"
+        article3:
+          title: "お醤油のある暮らし：専門のセレクトショップで職人から「醤油」の無限の可能性を知る"
+          description: "海外から日本の空港に降り立った瞬間、「なんだか醤油の臭いがするな」と感じる人がいるくらい、醤油は和食の基本となっている調味料です。大豆を原料として発酵させた醤油は、基本的に黒くてしょっぱい味をイメージされる人が多いでしょうが、実は地域や作り方によって種類が様々です。この記事では、醤油のセレクトショップに訪れ、その種類と魅力に迫っていきます。"
+          url: "https://www.tsunagujapan.com/ja/life-with-soy-sauce-learn-the-infinite-possibilities-of-soy-sauce-from-specialty-store/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "グルメの街、台南出身。料理と手仕事の器が好き。「自然を尊重し、旬を楽しむ」という日本の食文化に感動し、その魅力を届けるために発信しています。"
+        article4:
+          title: "日本料理の万能食材・豆腐 〜豆腐職人にその魅力を聞く"
+          description: "素朴な味で、どんな料理にも合いやすい日本の伝統食材、豆腐。大豆を原料としながら高タンパクで、近年では海外のベジタリアンの間でも高い人気を集めていると言います。ところで、皆さんは豆腐がどのように作られているかご存知ですか？意外と手間がかかるその作り方と、より美味しく食べる方法など、この記事では豆腐専門店へのインタビューも交えて紹介していきます。"
+          url: "https://www.tsunagujapan.com/ja/tofu-a-versatile-staple-in-japanese-cuisine/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りしながら伝統的でレトロな場所や穴場を探しています。"
+      theme4:
+        title: "日本の伝統工芸･文化、その奥深い魅力を探る"
+        description: "ようやく日本に到着し、日本を満喫しているあなた。旅の思い出に、あるいは家族や友人へのお土産に、何を買おうか迷っていることでしょう。そこで、日本の伝統工芸品はいかがでしょうか？今回のCulture of Japanシリーズでは、おすすめの日本の伝統工芸品を紹介するとともに、実際に伝統工芸品を作っている職人さんにインタビューをし、その魅力に迫りました。"
+        article1:
+          title: "古くから愛され続ける「鎚起銅器」〜カンカンと響く音から探る日本の伝統工芸"
+          description: "美しい光沢を帯びた銅器。鋳造技術で作られたお寺の鐘から、打ち出し技法で作られた鎚起銅器などの道具まで、銅器は、古くから日本の至るところで使用されてきました。なぜ銅器は幅広い分野で活躍することができるのでしょうか。今回は東京都奥浅草に訪れて、40年以上の経験を持つ銅器職人の話を聞きながら、鎚起銅器の秘密に迫ります。"
+          url: "https://www.tsunagujapan.com/ja/japans-traditional-craft-of-hand-hammered-tsuiki-copperware/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "台南出身。料理と手仕事の器が好き。"
+        article2:
+          title: "木版画の世界を覗く　～世界で評価される日本の伝統芸術"
+          description: "北斎の「神奈川沖浪裏」は、日本美術の代表作として世界的に知られています。この作品は、有名な「浮世絵」のジャンルに属する他の多くの作品とともに、「木版画（もくはんが）」と呼ばれるものです。この記事では、アダチ版画研究所を訪ね、木版画の魅力に迫るとともに、木版画が後世にどのように受け継がれていくのかについて学びました。"
+          url: "https://www.tsunagujapan.com/ja/mokuhanga-traditional-japanese-woodblock-prints/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りしながら伝統的でレトロな場所や穴場を探しています。"
+        article3:
+          title: "日本の漆器工芸 ～伝統の技が生み出す永遠の名品"
+          description: "何千年もの間、日本を代表する伝統工芸品として存続してきた漆器ですが、その複雑さゆえに単純に定義することはできません。この記事では、新潟県村上市を訪れ、日本の伝統工芸士から直接漆芸について話を聞きました。"
+          url: "https://www.tsunagujapan.com/ja/the-art-of-japanese-lacquerware-ancient-techniques-crafting-timeless-masterpieces/"
+          writer:
+            name: "Steve Csorgo"
+            country: "オーストラリア"
+            profile: "コーヒーの都、メルボルン出身。アニメ、日本酒、ものづくりで日本に魅了されました。現在は、日本酒の都、新潟市在住。"
+        article4:
+          title: "単なる武器ではない−刀工「平田鍛刀場」が解き明かす刀と日本刀の世界−"
+          description: "日本の侍が使う武器として世界中に知られている刀は、ヒットした日本映画やアニメに登場することで、今日では日本のシンボルのひとつとなっています。しかし、その複雑な歴史と複雑な製造工程について、どこまで知っているでしょうか？この記事では、日本刀作りのすばらしさをより深く知るために、伝統的な鍛造方法を採用する日本最後の刀職人に会うために、東京の境界線まで足を運びました！"
+          url: "https://www.tsunagujapan.com/ja/more-than-a-sword-for-samurai-the-world-of-katana-and-nihonto-explained-by-swordsmith-hirata-tantojo/"
+          writer:
+            name: "Stefania Sabia"
+            country: "イタリア"
+            profile: "東京在住。レトロなスポットと穴場、日本の伝統が好き。子供の頃から日本文化に憧れがあり、来日後は全国を探索してInstagramで日本の魅力を紹介しています。"
+        article5:
+          title: "形状や素材に限定されず、変化を続ける鋳物の世界を探索しましょう"
+          description: "「鋳物」の用途は非常に広く、道端でよく見かけるポストやマンホールの蓋から、日用品、美術作品、精細な自動車部品、さらには世界的に有名な奈良の大仏まで、実はすべて鋳造という方法によって作られた「鋳物」なのです。日本は世界第4位の鋳物生産大国であり、今回の「Culture of Japan」特集シリーズでは、日本の鋳物について学んだことをご紹介します。"
+          url: "https://www.tsunagujapan.com/ja/traditional-crafts-casting-imono/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+      theme5:
+        title: "簡単に体験できる日本の伝統文化"
+        description: "大相撲観戦や本格的な茶道体験は、多くの旅行者のバケットリストに入っていますが、最適な体験場所を探すのは大変ですよね。そこで今回の「Culture Of Japan」シリーズでは、言葉や文化の壁を越えた素晴らしい文化活動をご紹介します。いずれも各分野の専門家が運営しているので、あなたの学習意欲もきっと満たされるはずです。"
+        article1:
+          title: "日本で本格的な茶道を体験する"
+          description: "美しい光沢を帯びた銅器。鋳造技術で作られたお寺の鐘から、打ち出し技法で作られた鎚起銅器などの道具まで、銅器は、古くから日本の至るところで使用されてきました。なぜ銅器は幅広い分野で活躍することができるのでしょうか。今回は東京都奥浅草に訪れて、40年以上の経験を持つ銅器職人の話を聞きながら、鎚起銅器の秘密に迫ります。"
+          url: "https://www.tsunagujapan.com/ja/experiencing-an-authentic-tea-ceremony-in-japan/"
+          writer:
+            name: "Kim"
+            country: "アメリカ合衆国"
+            profile: "東京在住。日本のコーヒー文化が大好きで休日はカフェ巡りをしながら、伝統的でレトロな場所や穴場を探しています。"
+        article2:
+          title: "黒、グレー、白のグラデーション世界　日本の水墨画体験"
+          description: "書道も水墨画も、数千年の歴史を持つ中国の伝統文化であり、周辺の国はその影響を強く受けています。今回の「Culture of Japan」特集では、日本の伝統文化を広めるWabunkaの文化体験に参加して、東京・表参道近くの閑静な住宅地で日本の水墨画を学んできました。水墨画は日本に伝わって、果たしてどのように変わったのでしょうか。"
+          url: "https://www.tsunagujapan.com/ja/experience-course-of-japanese-ink-painting-suibokuga/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きで、ヲタ活をしながら日本での生活や旅行を満喫しています。"
+        article3:
+          title: "日本の伝統工芸「金継ぎ」 ：傷を修復する中で見せる不完全な美しさ"
+          description: "「金継ぎ」とは日本に古くから伝わる伝統工芸で、専門的な材料を用いて、割れたり欠けたりした器を修復する技術です。出来る限り「美しく修復する」ことが金継ぎの重要な側面ですが、さらにモノに新たな命を与え、日本特有の美しさを表すこともできます。今回は東京・南青山のワークショップを訪れ、金継ぎの由来を学び、職人の指導の下、非常に興味深い金継ぎ体験を行い、最後には記念に自分の作品を持ち帰りました。"
+          url: "https://www.tsunagujapan.com/ja/imperfect-beauty-of-japanese-traditional-craft-kintsugi/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "台南出身。料理と手仕事の器が好き。"
+        article4:
+          title: "野菜江戸前寿司コースを堪能： 東京スタイルの寿司のユニークな楽しみ方"
+          description: "本格的な寿司を体験したくて日本を訪れる人も多いことでしょう。しかし、寿司の種類や店が多すぎて、何から食べればいいのか、誰に頼めばいいのか迷ってしまうかもしれません。そんな人は、東京独自の寿司スタイル「江戸前寿司」を体験し、日本の新鮮な野菜や魚介類を使った洗練された寿司コースを堪能してみてはいかがですか？好みに合わせて自由に注文できるので、ベジタリアンやビーガンの方にもおすすめです！"
+          url: "https://www.tsunagujapan.com/ja/indulge-in-a-vegetable-edomae-sushi-course-a-unique-way-to-eat-tokyo-style-sushi/"
+          writer:
+            name: "Stefania Sabia"
+            country: "イタリア"
+            profile: "東京在住。レトロなスポットと穴場、日本の伝統が好き。子供の頃から日本文化に憧れがあり、来日後は全国を探索してInstagramで日本の魅力を紹介しています。"
+      theme6:
+        title: "深淵なる日本のサブカルチャーを覗いてみよう"
+        description: "コンセプトカフェやビビッドなファッションスタイルなど、日本中に溢れているサブカルチャーの多くは世界を席巻しています。今回のCulture of Japanシリーズでは、サブカルチャーの普及と発展のために精力的に活動している内部関係者の協力を得て、これらのサブカルチャーのいくつかを探っていきます。"
+        article1:
+          title: "新潟：知られざるアニメ・マンガの聖地"
+          description: "本場でアニメやマンガ文化を楽しむために日本を訪れる旅行者がかつてないほどに増えています。多くの人が秋葉原に足を運びますが、実は新潟も見逃せない重要なスポットなのです。新潟が日本のアニメ・マンガ文化にどのように貢献しているか、訪れた人はどうすれば最大限に楽しむことができるのか、新潟市マンガ・アニメ情報館を訪れてみました。"
+          url: "https://www.tsunagujapan.com/ja/niigata-a-hidden-anime-and-manga-hotspot/"
+          writer:
+            name: "Steve Csorgo"
+            country: "オーストラリア"
+            profile: "コーヒーの都、メルボルン出身。アニメ、日本酒、ものづくりで日本に魅了されました。現在は、日本酒の都、新潟市在住。"
+        article2:
+          title: "日本のファッションアーティスト3人が語る原宿ファッション"
+          description: "原宿ファッションは、日本の最新トレンドを反映しています。しかし、原宿ファッションはどのように誕生し、その真の意味は何なのでしょうか？今回の「Culture of Japan」シリーズでは、原宿ファッションに精通したアーティストにインタビューを行い、その答えを探りました！"
+          url: "https://www.tsunagujapan.com/ja/harajuku-fashion-according-to-3-top-japanese-fashion-artists/"
+          writer:
+            name: "Stefania Sabia"
+            country: "イタリア"
+            profile: "東京在住。レトロなスポットと穴場、日本の伝統が好き。子供の頃から日本文化に憧れがあり、来日後は全国を探索してInstagramで日本の魅力を紹介しています。"
+        article3:
+          title: "執事ブームの先駆け！池袋「執事喫茶スワロウテイル」でお嬢様になろう"
+          description: "東京・池袋にある「執事喫茶スワロウテイル」は日本で最初の執事コンセプトカフェです。英国ビクトリア朝時代の貴族のティーサロンをコンセプトにして、美しい空間と執事たちの優雅で、至れり尽くせりのサービスを組み合わせ、究極の「お嬢様体験」を提供します。今回はこの「執事喫茶スワロウテイル」の人気の秘密を探っていきましょう！"
+          url: "https://www.tsunagujapan.com/ja/butlers-cafe-swallowtail/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+        article4:
+          title: "プラモデルのアート：Tamiya Plamodel Factory Tokyoで、プラモデルの魅力を体感しよう"
+          description: "長い歴史を誇る日本のプラモデルは、プラモデル界に技術の進歩と革新をもたらし、世界中にいる数万人のファンを魅了し続けてきました。日本の模型文化を語る上で欠かせないのが、世界的に有名なプラモデルメーカータミヤです。今回は東京にあるTamiya Plamodel Factory Tokyoを訪れ、模型制作の魅力を探ってみましょう！"
+          url: "https://www.tsunagujapan.com/ja/tamiya-plamodel-factory-tokyo/"
+          writer:
+            name: "Shirley"
+            country: "台湾"
+            profile: "東京在住の元客室乗務員で、次の旅の目的地をいつも楽しみにしている。日本のさまざまな空港へフライトで巡り、その土地の美しさを発見するのが好き。地域の文化や深い旅記の執筆・共有をたくさんしていきたい。"
+        article5:
+          title: "400台以上のクレーンゲームが一堂に大集結！迷子になりそうな東京の大規模クレーンゲーム専門店「タイトーステーション 府中くるる店」"
+          description: "東京都府中市にある「Taito Station府中くるる店」には、400台以上ものクレーンゲームが設置されているクレーンゲーム専門店。オープン早々、クレーンゲームの設置台数が最も多いとして、ギネス世界記録にも認定され話題を集めました。近年、多くのメーカーが様々な新しいクレーンゲームを出すだけでなく、景品の種類もますます豊富になってきています。一度試してみたいと始めたばかりの人はもちろん、経験豊富なゲームの達人も、いつでも無限の楽しみを見出すことができます。"
+          url: "https://www.tsunagujapan.com/ja/tokyo-claw-crane-game-specialty-center-taito-station-fuchu-kururu/"
+          writer:
+            name: "Pan"
+            country: "台湾"
+            profile: "台南出身。料理と手仕事の器が好き。"
+        article6:
+          title: "萌え萌えきゅーん！日本のメイドカフェで初めての「ご帰宅」を全攻略"
+          description: "秋葉原の「メイドカフェ」は日本のオタクの聖地の一つです！白いエプロンを身につけメイドに扮した女の子たちが、自分のためにお給仕してくれる姿はとてもかわいらしく、日本を代表する「萌え文化」の1つと言えます。そこで今回は編集部が実際に秋葉原の超有名メイドカフェ「あっとほぉーむカフェ」に足を運んだ経験をもとによりスムーズにメイドたちと交流し、より深く楽しむためのTipsを伝授いたします！"
+          url: "https://www.tsunagujapan.com/ja/maid-cafe-at-home-akihabara/"
+          writer:
+            name: "Lu"
+            country: "台湾"
+            profile: "台北出身、東京在住。サブカルが好きでヲタ活しながら日本での生活や旅行を満喫しています。"
+        article7:
+          title: "人生が変わるほどの究極の趣味・コレクション。トレーディングカードゲームをご存じですか！"
+          description: "世界中で人気を集めているホビーの一つ、トレーディングカードゲームとは一体どんなものなのでしょうか？たかが趣味にも関わらず、人はなぜありえないほどの大金を払ってしまうのかなど、その魅力について紹介いたします。"
+          url: "https://www.tsunagujapan.com/ja/trading-card-game/"
+          writer:
+            name: "Mew"
+            country: "タイ"
+            profile: "バンコク出身、東京在住。食べることと日本酒が好き。"
+  cookieconsent:
+    message: "本サイトでは、お客様に快適にご利用いただくために、Cookieを使用しています。"
+    dismiss: "同意する"
+    link: "詳細はこちら"
+    href: "https://www.tsunagujapan.com/ja/privacy/"

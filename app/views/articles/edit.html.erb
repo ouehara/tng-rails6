@@ -1,0 +1,37 @@
+<div class="container <%= 'restore-edit' if !@article.paper_trail.live? %>">
+<% if !@article.paper_trail.live? %>
+  <h1 class="editor-title">Restoring Article</h1>
+  <p class="editor-version">Version from <%= @article.updated_at.to_time.strftime("%d.%m.%Y %H:%M  ") %></p>
+<%else%>
+  <h1 class="editor-title">Editing Article</h1>
+<%end%>
+<%= react_component('Editor', {v: @article.paper_trail.live?, canonical: @article.canonical, relatedArticles: @pickups,promotional: @article.promo_article.find_by_lang(I18n.locale),article: {article: @article,area: @article.area,article_group: !@article.article_groups.nil? ? @article.article_groups.pluck(:id) : [0,0,0,0],
+lang_image: {en: @article.title_image_en,ja: @article.title_image_ja,"zh-hant": @article.title_image_zh_hant,"zh-hans": @article.title_image_zh_hans,"th": @article.title_image_th },
+tagGroups: @article.tag_groups,slug_id: @article.slug_id,slug_ko: @article.slug_ko,slug_vi: @article.slug_vi,slug_ja: @article.slug_ja,slug_en: @article.slug_en, "slug_zh-hant":@article.slug_zh_hant,"slug_th":@article.slug_th,"slug_zh-hans":@article.slug_zh_hans ,tags: @article.lang_tags, title_image: @article.title_image.url(:medium)},
+category:@category,tagGroups: @tag_groups, editor: true, tags: search_admin_tags_path(":param",:format => :json),tagPath: tag_path(":param"), area: @area,
+user: @article.user,translator:@article.translators, user_select: User.where("role > #{User.roles['registered']}"),editUrl: edit_article_path(":lang", @article)
+})
+%>
+</div>
+<div class="container">
+<% if @article.paper_trail.live? %>
+<hr />
+<div class="version-list">
+<h3>Previous Edits</h3>
+<div class="col-xs-6 well well-sm">
+  <% @article.get_versions.each.with_index do |article, index| %>
+  <div class="col-xs-6">
+    <%= link_to article_version_show_url(@article.id, article[:id]), :target => "_blank" do %>
+      <%=  article[:date].to_time.strftime("%d.%m.%Y %H:%M  ") %>
+    <%end%>
+  </div>
+  <% end %>
+</div>
+</div>
+<% end %>
+</div>
+<% if !@article.paper_trail.live? %>
+<script type="text/javascript">
+document.querySelector("body").classList.add("restore-edit")
+</script>
+<%end%>

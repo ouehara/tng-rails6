@@ -1,0 +1,13 @@
+# A sample Bowerfile
+# Check out https,//github.com/42dev/bower-rails#ruby-dsl-configuration for more options
+
+asset 'font-awesome', "fontawesome#^4.6.1"
+asset 'fastclick', "^1.0.6"
+asset "nprogress", "^0.2.0"
+asset "bootstrap-progressbar", "^0.9.0"
+asset "normalize-css", "^4.1.1"
+asset "animate.css", "^3.5.1"
+asset "simple-line-icons"
+asset "flag-icon-css"
+asset "bootstrap-tagsinput"
+asset "fabric"

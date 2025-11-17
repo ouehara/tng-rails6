@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.9.8
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<h1 id="label-tsunagu+japan">tsunagu japan</h1>
+
+<p>current <a
+href="http://staging.efm8vxr3aq.ap-northeast-1.elasticbeanstalk.com/">staging</a></p>
+
+<h2 id="label-System+overview">System overview</h2>
+
+<p>| item | description | |—————————— |———————————————- | | Framework | Ruby
+on Rails 4.2.6 | | Ruby Version | 2.3.1 | | Front end package management |
+bower bower-rails with Bowerfile | | Database | PostgreSQL | | Issue
+management | Github | | Project management | basic issue management | |
+Infrastructure | AWS ElasticBeanstalk |</p>
+
+<h2 id="label-Setting+up+database">Setting up database</h2>
+
+<p>Create tsunagu_japan_dev and tsunagu_japan_test database. And set up
+tsunagu role.</p>
+
+<pre class="code ruby"><code class="ruby">
+brew install postgres
+
+$ psql postgres
+postgres=# create role tsunagu login createdb;
+postgres=# create database tsunagu_japan_dev owner tsunagu;
+CREATE DATABASE
+
+$ psql tsunagu_japan_dev
+tsunagu_japan_dev=# alter role tsunagu with Superuser;
+tsunagu_japan_dev=# alter role tsunagu LOGIN;
+tsunagu_japan_dev=# \du
+                                   List of roles
+ Role name |                         Attributes                         | Member of
+-----------+------------------------------------------------------------+-----------
+ root      |                                                            | {}
+ shiro     | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ tsunagu   | Superuser                                                  | {}
+
+# Install PGroonga for full text search
+
+ $ brew install pgroonga</code></pre>
+
+<h2 id="label-Running+software">Running software</h2>
+
+<pre class="code ruby"><code class="ruby"># RAILS_ENV=development
+
+# Clone
+git clone git@github.com:chan-shiro/tsunagu_japan.git
+cd tsunagu_japan
+
+# Install ruby version
+rbenv install
+
+# Install gem
+bundle install
+
+# Set up DB
+bundle exec rake db:create
+bundle exec rake db:migrate
+
+# Install bower components =&gt; Optional
+# but bower_components are included in this repository, this is not necessary
+bundle exec rake bower:install
+bundle exec rake bower:resolve
+
+# Running server
+bundle exec rails server -b0.0.0.0</code></pre>
+
+<p>then visit <code>localhost:3000/admin/</code>, which shows administrators
+view mock.</p>
+
+<h2 id="label-Managing+front+end+packages">Managing front end packages</h2>
+
+<h3 id="label-Manage+with+Bower-rails">Manage with Bower-rails</h3>
+
+<p>All Bower components are located under
+<code>vendor/assets/bower_components</code>. If you want to use some
+packages which not provided with Bower, locate them to
+<code>vendor/packages/</code>.</p>
+
+<blockquote>
+<h4 id="label-Bowerfile">Bowerfile</h4>
+
+<p>DSL for bower-rails. We do not love DSL so much, but Bowerfile is very
+simple and provides us usefull commands.</p>
+</blockquote>
+
+<h3 id="label-How+to+add+a+package.">How to add a package.</h3>
+<ol><li>
+<p>Edit <code>vim Bowerfile</code>. For example, <code>+asset
+&#39;font-awesome&#39;, &quot;fontawesome#^4.6.1&quot;</code></p>
+</li><li>
+<p>Install bower packages, <code>bundle exec rake bower:install</code></p>
+</li><li>
+<p>Resolve relative path of components, <code>bundle exec rake
+bower:resolve</code></p>
+</li><li>
+<p>Add require to <code>app/assets/javascripts/application.coffee</code></p>
+</li><li>
+<p>Add <code>@import</code> to
+<code>app/assets/stylesheets/application.scss</code></p>
+</li></ol>
+
+<h2 id="label-Test+Driven+development+with+RSpec">Test Driven development with RSpec</h2>
+
+<p>Writing…</p>
+
+<h2 id="label-Issue+management+flow">Issue management flow</h2>
+
+<p>Basic flow is described below. However, you don&#39;t have to think this as
+very strict. This workflow is flexible and sometimes other approach would
+be taken.</p>
+
+<h3 id="label-Creating+an+Issue">Creating an Issue</h3>
+<ol><li>
+<p>Submit issue</p>
+</li><li>
+<p>Discussion about issue and define specs</p>
+</li><li>
+<p>Estimate workloads</p>
+</li><li>
+<p>Assign member</p>
+</li><li>
+<p>Start development</p>
+</li></ol>
+
+<h3 id="label-Develop+and+fix+issue">Develop and fix issue</h3>
+<ol><li>
+<p>Create new branch for the Issue (eg. feature/user-sign-in#1)</p>
+</li><li>
+<p>Write test code (optional but highly recommended)</p>
+</li><li>
+<p>Implement code</p>
+</li><li>
+<p>Testing</p>
+</li><li>
+<p>Send Pull Request to master branch with comment (eg. add user sign in
+feature. this fixes #1.)</p>
+</li><li>
+<p>Code review and merge PR</p>
+</li></ol>
+
+<h2 id="label-ElasticBeanstalk+Configuration">ElasticBeanstalk Configuration</h2>
+
+<p><strong>Do not run ElasticBeanstalk section yet! Still under
+construction</strong></p>
+
+<h3 id="label-aws+cli">aws cli</h3>
+
+<p>Install aws cli 1. pip 2. Homebrew</p>
+
+<h4 id="label-Install+with+pip">Install with pip</h4>
+
+<pre class="code ruby"><code class="ruby">$ pip install awsebcli
+
+// upgrading
+$ pip install --upgrade awsebcli
+
+// when some erros occured
+$ pip uninstall awsebcli
+$ pip install awsebcli</code></pre>
+
+<h4 id="label-Install+with+Homebrew">Install with Homebrew</h4>
+
+<pre class="code ruby"><code class="ruby">$ brew install awsebcli</code></pre>
+
+<h4 id="label-Check">Check</h4>
+
+<pre class="code ruby"><code class="ruby">$ eb --version
+EB CLI 3.7.3 (Python 2.7.1)</code></pre>
+
+<h3 id="label-ElasticBeanstalk+Configuration">ElasticBeanstalk Configuration</h3>
+
+<h4 id="label-Create+new+profile+with+Tsunagu">Create new profile with Tsunagu</h4>
+
+<pre class="code ruby"><code class="ruby">$ aws configure --profile tsunagu
+AWS Access Key ID [None]: [AccessKeyID]
+AWS Secret Access Key [None]: [SecretAccessKey]
+Default region name [None]: ap-northeast-1 // Tokyo
+Default output format [None]: // optional
+
+// Check
+$ cat .aws/credentials
+Shiros-MacBook-Pro:~ shiro$ cat .aws/credentials
+[default]
+aws_access_key_id = [FILTERED]
+aws_secret_access_key = [FILTERED]
+[tsunagu]
+aws_access_key_id = [FILTERED]
+aws_secret_access_key = [FILTERED]</code></pre>
+
+<h4 id="label-ElasticBeanstalk+initialization">ElasticBeanstalk initialization</h4>
+
+<p>With <code>tsunagu</code> profile,</p>
+
+<pre class="code ruby"><code class="ruby">
+$ eb init --profile tsunagu
+
+Select a default region
+1) us-east-1 : US East (N. Virginia)
+2) us-west-1 : US West (N. California)
+3) us-west-2 : US West (Oregon)
+4) eu-west-1 : EU (Ireland)
+5) eu-central-1 : EU (Frankfurt)
+6) ap-south-1 : Asia Pacific (Mumbai)
+7) ap-southeast-1 : Asia Pacific (Singapore)
+8) ap-southeast-2 : Asia Pacific (Sydney)
+9) ap-northeast-1 : Asia Pacific (Tokyo)
+10) ap-northeast-2 : Asia Pacific (Seoul)
+11) sa-east-1 : South America (Sao Paulo)
+12) cn-north-1 : China (Beijing)
+(default is 3): 9
+
+Select an application to use
+1) Tsunagu Japan
+2) [ Create new Application ]
+(default is 2): 1
+
+It appears you are using Ruby. Is this correct?
+(y/n): y
+
+Select a platform version.
+1) Ruby 2.3 (Puma)
+2) Ruby 2.2 (Puma)
+3) Ruby 2.1 (Puma)
+4) Ruby 2.0 (Puma)
+5) Ruby 2.3 (Passenger Standalone)
+6) Ruby 2.2 (Passenger Standalone)
+7) Ruby 2.1 (Passenger Standalone)
+8) Ruby 2.0 (Passenger Standalone)
+9) Ruby 1.9.3
+(default is 1): 1
+Do you want to set up SSH for your instances?
+(y/n): y
+
+Select a keypair.
+1) tsunagujapan
+2) [ Create new KeyPair ]
+(default is 3): 1</code></pre>
+
+<p>Finished all configuration.</p>
+
+<blockquote>
+<p>TODO : Create new key pair tsunagujapan</p>
+</blockquote>
+
+<h4 id="label-ElasticBeanstalk+check+configuration">ElasticBeanstalk check configuration</h4>
+
+<p>Open <code>.elasticbeanstalk/config.yml</code></p>
+
+<pre class="code ruby"><code class="ruby">branch-defaults:
+  master:
+    environment: TsunaguJapan-Staging
+global:
+  application_name: Tsunagu Japan
+  default_ec2_keyname: tsunagujapan
+  default_platform: Ruby 2.3 (Puma)
+  default_region: ap-northeast-1
+  profile: tsunagu
+  sc: git</code></pre>
+
+<p><code>branch-defaults</code> sets which branch to which environment. In
+this case, <code>master</code> branch will be deployed to
+<code>TsunaguJapan-Staging</code> environment</p>
+
+<h3 id="label-Deploy+to+ElasticBeanstalk">Deploy to ElasticBeanstalk</h3>
+
+<p>Deploy <code>master</code> branch to <code>TsunaguJapan-Staging</code>
+environment.</p>
+
+<pre class="code ruby"><code class="ruby">$ eb deploy</code></pre>
+
+<h3 id="label-ElasticBeanstalk+Environment+variables">ElasticBeanstalk Environment variables</h3>
+
+<p>Set secret configurations as system environment variables.</p>
+
+<pre class="code ruby"><code class="ruby">$ eb printenv
+Environment Variables:
+     #  Rails
+     RAILS_ENV = staging
+     RACK_ENV = staging
+     SECRET_KEY_BASE = xxxx
+     RAILS_SKIP_ASSET_COMPILATION = false
+     RAILS_SKIP_MIGRATIONS = false
+     BUNDLE_WITHOUT = xxxx
+     #  RDS
+     RDS_HOST_NAME = xxxx
+     RDS_USER_NAME = xxxx
+     RDS_DB_NAME = xxxx
+     RDS_DB_PASSWORD = xxxx
+     #  For Mailer
+     TNG_SENDER_ADDRESS=xxxx
+     TNG_SENDER_DOMAIN=xxxx
+     TNG_SENDER_PASSWORD=xxxx
+     TNG_SENDER_USERNAME=xxxx
+     #  API
+     TNG_TWITTER_CONSUMER_KEY=xxxx
+     TNG_TWITTER_CONSUMER_SECRET=xxxx
+     TNG_FACEBOOK_APP_ID=xxxx
+     TNG_FACEBOOK_APP_SECRET=xxxx
+
+     #  AWS
+     TNG_AWS_ACCESS_KEY_ID=xxxx
+     TNG_AWS_SECRET_ACCESS_KEY=xxxx
+     #  AWS S3
+     TNG_S3_BUCKET=xxxx
+     TNG_AWS_S3_REGION=xxxx
+     #  AWS CLOUDSEARCH
+     TNG_CLOUD_SEARCH_ENDPOINT_DOCUMENT=xxxx
+     TNG_CLOUD_SEARCH_ENDPOINT_SEARCH=xxxx
+     TNG_CLOUD_SEARCH_REGION=xxx</code></pre>
+
+<h3 id="label-React+Js">React Js</h3>
+
+<p>creating a component via rails generate.</p>
+
+<pre class="code ruby"><code class="ruby">rails generate react:component ComponentName title:string --es6</code></pre>
+
+<p>usage “`javascript //page_title.es6.jsx</p>
+
+<p>class PageTitle extends React.Component {  render () {  return (  &lt;div
+className=“page-title”&gt;  &lt;div className=“title_left”&gt; 
+&lt;h3&gt;thisthis.propsthis.props.title&lt;/h3&gt;  &lt;/div&gt;  &lt;/div&gt;  );  }
+}</p>
+
+<p>PageTitle.propTypes = {  title: React.PropTypes.string };</p>
+
+<pre class="code ruby"><code class="ruby">
+</code></pre>
+
+<p>html //index.html.erb &lt;%= react_component(&#39;PageTitle&#39;, title:
+&#39;Admin::Dashboard#index&#39;) %&gt; &lt;!– or prerendered !–&gt; &lt;%=
+react_component(&#39;PageTitle&#39;,&#39;Admin::Dashboard#index&#39; , true) %&gt;</p>
+<div class="clearfix"></div>
+<p>&lt;div class=“row”&gt;  &lt;div class=“x_panel”&gt;  &lt;div
+class=“x_title”&gt;  &lt;h2&gt;Dashboard#index&lt;/h2&gt;  &lt;div
+class=“clearfix”&gt;&lt;/div&gt;  &lt;/div&gt;  &lt;div
+class=“x_content”&gt;  &lt;p&gt;Find me in
+app/views/admin/dashboard/index.html.erb&lt;/p&gt;  &lt;/div&gt;</p>
+
+<p>&lt;/div&gt; “`</p>
+
+<p>rendering components instead of views</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>class</span> <span class='const'>Controller</span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></span>
+  <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
+    <span class='id identifier rubyid_render'>render</span> <span class='label'>component:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PageTitle</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>props:</span> <span class='lbrace'>{</span> <span class='label'>title:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>title</span><span class='tstring_end'>&quot;</span></span> <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span>
+</code></pre>
+</div></div>
+
+      <div id="footer">
+  Generated on Fri Apr 21 17:52:54 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.8 (ruby-2.3.1).
+</div>
+
+    </div>
+  </body>
+</html>

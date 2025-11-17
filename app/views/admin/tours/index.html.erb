@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Tour</h2>
+      <%= form_tag admin_tours_url, :method => :get,:class => 'locale' do %>
+        <%= select_tag 'locale',  options_for_select( I18n.available_locales, :selected => params[:locale]), :onchange => 'this.form.submit()' %>
+        <% end %>
+      <%= link_to new_admin_tour_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title">image</th>
+              <th class="column-title">name</th>
+              <th class="column-title">translations</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody data-role="activerecord_sortable">
+            <% @tours.each do |tour| %>
+            <tr class="pointer" data-role="category<%= tour.id %>" data-move-url="<%= move_admin_tour_url(tour.id) %>" data-position=<%= tour.position %>">
+              <td><%= image_tag tour.banner.url(:original), style: "width: 120px;" if tour.banner.exists? %></td>
+              <td><%= link_to tour.title, [:admin, tour] %></td>
+              
+              <td>
+                <% tour.translated_locales.each do |l| %>
+                  <%= l %>
+                <%end%>
+              </td>
+              <td><%= link_to 'Show', [:admin, tour] %></td>
+              <td><%= link_to 'Edit', edit_admin_tour_path(tour) %></td>
+              <td><%= link_to 'Delete', [:admin, tour], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('*[data-role=activerecord_sortable]').activerecord_sortable();
+});
+</script>

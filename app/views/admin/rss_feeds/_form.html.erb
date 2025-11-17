@@ -1,0 +1,16 @@
+<%= form_for([:admin, @feed], html: { class: "form", :multipart => true }) do |f| %>
+<div class="field">
+    <%= f.label :article_id %><br>
+    <%= f.text_field :article_id %>
+</div>
+<div class="field">
+  <%= f.label :action %><br>
+  <%= f.select :action, RssFeed.actions.keys %>
+</div>
+<div class="field">
+<%= f.label :locale %><br>
+<%= f.select 'locale',  options_for_select(I18n.available_locales, :selected =>I18n.locale) %>
+</div>
+<%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

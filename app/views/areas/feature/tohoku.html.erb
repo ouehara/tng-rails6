@@ -1,0 +1,135 @@
+<% body_class "area index lang_" + I18n.locale.to_s %>
+<% set_meta_tags title: t('area.feature.tohoku.title'),
+                description: t('area.feature.tohoku.description'),
+                og: {
+                  image:  ActionController::Base.helpers.asset_pack_path("media/images/area/feature/tohoku/hero_mob.jpg", host: CdnConfig.cloudfront_url)
+                } %>
+
+<main id="top" class="main">
+  <div class="area-hero tohoku">
+    <div id="teaser" class="teaser">
+      <h1><%= t('area.feature.tohoku.top') %></h1>
+    </div>
+  </div><!-- /.area-hero -->
+
+  <nav id="nav-local" class="nav-local">
+    <ul>
+      <li>
+        <a href="#sec1">
+          <p class="num">01</p>
+          <p class="nav-ttl"><%= t('area.feature.tohoku.article.1.title_html') %></p>
+          <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/01.jpg') %>" alt=""></div>
+        </a>
+      </li>
+      <li>
+        <a href="#sec2">
+          <p class="num">02</p>
+          <p class="nav-ttl"><%= t('area.feature.tohoku.article.2.title_html') %></p>
+          <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/02.jpg') %>" alt=""></div>
+        </a>
+      </li>
+      <li>
+        <a href="#sec3">
+          <p class="num">03</p>
+          <p class="nav-ttl"><%= t('area.feature.tohoku.article.3.title_html') %></p>
+          <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/03.jpg') %>" alt=""></div>
+        </a>
+      </li>
+      <li>
+        <a href="#sec4">
+          <p class="num">04</p>
+          <p class="nav-ttl"><%= t('area.feature.tohoku.article.4.title_html') %></p>
+          <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/04.jpg') %>" alt=""></div>
+        </a>
+      </li>
+      <li>
+        <a href="#sec5">
+          <p class="num">05</p>
+          <p class="nav-ttl"><%= t('area.feature.tohoku.article.5.title_html') %></p>
+          <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/05.jpg') %>" alt=""></div>
+        </a>
+      </li>
+    </ul>
+  </nav><!-- /.nav-local -->
+
+  <div class="area-contents">
+    <section id="sec1" class="sec">
+      <article class="txt-block">
+        <p class="num">01</p>
+        <h2><%= t('area.feature.tohoku.article.1.title_html') %></h2>
+        <p class="txt"><%= t('area.feature.tohoku.article.1.text_html') %></p>
+        <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/01.jpg') %>" alt=""></div>
+        <div class="btn"><a href="<%= t('area.feature.tohoku.article.1.url') %>"><%= t('area.feature.tohoku.read_more') %></a></div>
+      </article>
+    </section>
+    <!-- /#sec1 -->
+
+    <section id="sec2" class="sec">
+      <article class="txt-block">
+        <p class="num">02</p>
+        <h2><%= t('area.feature.tohoku.article.2.title_html') %></h2>
+        <p class="txt"><%= t('area.feature.tohoku.article.2.text_html') %></p>
+        <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/02.jpg') %>" alt=""></div>
+        <div class="btn"><a href="<%= t('area.feature.tohoku.article.2.url') %>"><%= t('area.feature.tohoku.read_more') %></a></div>
+      </article>
+    </section>
+    <!-- /#sec2 -->
+
+    <section id="sec3" class="sec">
+      <article class="txt-block">
+        <p class="num">03</p>
+        <h2><%= t('area.feature.tohoku.article.3.title_html') %></h2>
+        <p class="txt"><%= t('area.feature.tohoku.article.3.text_html') %></p>
+        <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/03.jpg') %>" alt=""></div>
+        <div class="btn"><a href="<%= t('area.feature.tohoku.article.3.url') %>"><%= t('area.feature.tohoku.read_more') %></a></div>
+      </article>
+    </section>
+    <!-- /#sec3 -->
+
+    <section id="sec4" class="sec">
+      <article class="txt-block">
+        <p class="num">04</p>
+        <h2><%= t('area.feature.tohoku.article.4.title_html') %></h2>
+        <p class="txt"><%= t('area.feature.tohoku.article.4.text_html') %></p>
+        <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/04.jpg') %>" alt=""></div>
+        <div class="btn"><a href="<%= t('area.feature.tohoku.article.4.url') %>"><%= t('area.feature.tohoku.read_more') %></a></div>
+      </article>
+    </section>
+    <!-- /#sec4 -->
+
+    <section id="sec5" class="sec">
+      <article class="txt-block">
+        <p class="num">05</p>
+        <h2><%= t('area.feature.tohoku.article.5.title_html') %></h2>
+        <p class="txt"><%= t('area.feature.tohoku.article.5.text_html') %></p>
+        <div class="pic"><img class="obj-fit" src="<%= asset_pack_path('media/images/area/feature/tohoku/05.jpg') %>" alt=""></div>
+        <div class="btn"><a href="<%= t('area.feature.tohoku.article.5.url') %>"><%= t('area.feature.tohoku.read_more') %></a></div>
+      </article>
+    </section>
+    <!-- /#sec5 -->
+
+    <section id="service">
+      <h2><%= t('area.feature.tohoku.related_articles.title') %></h2>
+      <p class="lead"><%= t('area.feature.tohoku.related_articles.lead') %></p>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="<%= t('area.feature.tohoku.related_articles.1.url') %>"><img src="<%= asset_pack_path("media/images/area/feature/tohoku/related/#{I18n.locale.to_s}/1.jpg") %>" class="img-fluid"><div><%= t('area.feature.tohoku.related_articles.1.text') %></div></a></div>
+          <div class="swiper-slide"><a href="<%= t('area.feature.tohoku.related_articles.2.url') %>"><img src="<%= asset_pack_path("media/images/area/feature/tohoku/related/#{I18n.locale.to_s}/2.jpg") %>" class="img-fluid"><div><%= t('area.feature.tohoku.related_articles.2.text') %></div></a></div>
+          <div class="swiper-slide"><a href="<%= t('area.feature.tohoku.related_articles.3.url') %>"><img src="<%= asset_pack_path("media/images/area/feature/tohoku/related/#{I18n.locale.to_s}/3.jpg") %>" class="img-fluid"><div><%= t('area.feature.tohoku.related_articles.3.text') %></div></a></div>
+          <div class="swiper-slide"><a href="<%= t('area.feature.tohoku.related_articles.4.url') %>"><img src="<%= asset_pack_path("media/images/area/feature/tohoku/related/#{I18n.locale.to_s}/4.jpg") %>" class="img-fluid"><div><%= t('area.feature.tohoku.related_articles.4.text') %></div></a></div>
+          <div class="swiper-slide"><a href="<%= t('area.feature.tohoku.related_articles.5.url') %>"><img src="<%= asset_pack_path("media/images/area/feature/tohoku/related/#{I18n.locale.to_s}/5.jpg") %>" class="img-fluid"><div><%= t('area.feature.tohoku.related_articles.5.text') %></div></a></div>
+          <div class="swiper-slide"><a href="<%= t('area.feature.tohoku.related_articles.6.url') %>"><img src="<%= asset_pack_path("media/images/area/feature/tohoku/related/#{I18n.locale.to_s}/6.jpg") %>" class="img-fluid"><div><%= t('area.feature.tohoku.related_articles.6.text') %></div></a></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="num"><span class="now">01</span>/06</div>
+    </section>
+  </div><!-- /.area-contents -->
+</main><!-- /.main -->
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

@@ -1,0 +1,11 @@
+<div class="root-category-block">
+<a class="root-category-block-element"  href="<%= area_listing_path() %>">
+    <img src="<%= asset_pack_path('media/images/category/area.svg') %>" />
+    <h3>Area</h3>
+</a>
+<% @categories.each do |cat| %>
+    <a class="root-category-block-element"  href="<%= category_path(cat)%>">
+        <img src="<%= asset_pack_path('media/images/category/'+cat.slug+'.svg') %>" />
+        <h3><%= cat.name %></h3>
+    </a>
+<% end %></div>

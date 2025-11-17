@@ -1,0 +1,46 @@
+id,category_id,name_en,name_zh_hant,name_zh_hans,name_th,name_ko,name_vi,position
+1,2,Onsen,溫泉,温泉,ออนเซ็น,온천,Onsen (Suối nước nóng),1
+2,2,Temples & Shrines,神社・寺廟,神社・寺庙,"วัด, ศาลเจ้า",절ㆍ신사,Đền và Điện thờ,2
+3,2,Outdoor Activities,體驗,体验,กิจกรรมเอ้าท์ดอร์,야외 활동,Các Hoạt động Ngoài trời,3
+4,2,"Aquariums, Zoos, Amusement Parks",水族館・動物園・遊樂園,水族馆・动物园・游乐园,"พิพิธภัณฑ์สัตว์น้ำ, สวนสัตว์, สวนสนุก",수족관ㆍ동물원ㆍ유원지,"Thủy cung, Sở thú, Công viên giải trí",4
+5,2,Events & Festivals,活動・祭典,活动・祭典,"เทศกาล, อีเวนต์",이벤트ㆍ축제,Sự kiện & Lễ hội,5
+6,2,Museums,美術館・博物館・建築,美术馆・博物馆,พิพิธภัณฑ์,미술관ㆍ박물관ㆍ건축,Bảo tàng,6
+7,2,Scenic Spots,絕景・打卡景點,绝景・打卡景点,วิวสวย,절경,Điểm ngắm cảnh,7
+8,2,World Heritage Sites,世界遺產・古蹟,世界遗产・古蹟,มรดกโลก,세계 유산,Di sản thế giới,8
+9,2,Suggested Travel Itineraries,示範行程,示范行程,แพลนเที่ยวยอดนิยม,추천 코스,Hành trình du lịch được đề xuất,9
+10,2,Other,tsunagu精選,tsunagu精选,อื่นๆ,요약 기사,Khác,10
+11,1,Ramen,拉麵,拉麵,ราเมง,라멘(면류),Mì Ramen,11
+12,1,Sushi & Sashimi,壽司・生魚片,寿司・生鱼片,ซูชิและซาชิมิ,스시ㆍ회,Sushi & Sashimi,12
+13,1,Japanese BBQ & Steak,燒肉・牛排,烧肉・牛排,เนื้อย่างและเสต็ก,야키니쿠ㆍ스테이크,BBQ & Steak Nhật Bản,13
+14,1,Sake & Other Alcoholic Drinks,酒,酒,"เหล้า, สาเก, แอลกอฮอล์",일본주ㆍ일본소주ㆍ맥주ㆍ와인,Sake & Đồ uống Có cồn khác,14
+15,1,"Desserts, Snacks, Sweets",咖啡廳・甜點・零食・冰品,咖啡厅・甜点・零食・冰品,"ขนม, ของหวาน, คาเฟ่",디저트ㆍ스낵ㆍ아이스크림,"Món tráng miệng, Đồ ăn nhẹ, Đồ ngọt",15
+16,1,Sukiyaki & Shabu Shabu,壽喜燒・火鍋,寿喜烧・火锅,"สุกี้ยากี้, ชาบูชาบู",스키야키ㆍ샤부샤부,Lẩu Sukiyaki & Shabu Shabu,16
+17,1,Okonomiyaki & Takoyaki,御好燒・章魚章,御好烧・章鱼章,"โอโคโนมิยากิ, ทาโกยากิ",오코노미야키(분식),Okonomiyaki và Takoyaki,17
+18,1,All-You-Can-Eat-and-Drink,吃到飽・喝到飽,吃到饱・喝到饱,บุฟเฟ่ต์,음식 무제한ㆍ음료 무제한,Tất cả các bạn có thể ăn và uống,18
+19,1,"Izakaya, Bars, Pubs",居酒屋,居酒屋,"อิซากายะ, บาร์, ผับ",이자카야,"Izakaya, Bars, Pubs",19
+20,1,Other Japanese Food,日本料理・和食,日本料理・和食,อาหารญี่ปุ่นอื่นๆ,일본 요리,Thực phẩm Nhật Bản khác,20
+21,1,"Vegetarian, Vegan, Halal Food",素食・穆斯林餐,素食・穆斯林餐,"มังสวิรัติ, วีแกน, ฮาลาล",채식주의자ㆍ할랄,"Thức ăn chay, thuần chay, Halal",21
+22,3,Budget Hotels,商務旅館,商务旅馆,โรงแรมราคาประหยัด,비즈니스 호텔,Khách sạn Budget,23
+23,3,Ryokan,旅館,旅馆,เรียวคัง,료칸,Nhà nghỉ,22
+24,3,Capsule Hotels,膠囊旅館,胶囊旅馆,โรงแรมแคปซูล,캡슐 호텔,Khách sạn Capsule,24
+25,3,Resort Hotels,度假村,度假村,รีสอร์ต,리조트 호텔,Khách sạn Nghỉ dưỡng,25
+26,3,Love Hotels,情趣旅館,情趣旅馆,เลิฟโฮเต็ล,모텔,Khách sạn Tình yêu,26
+27,3,Guest Houses,民宿,民宿,เกสต์เฮ้าส์,민박,Nhà Khách,27
+28,3,Hostels,青年旅館・背包客,青年旅馆・背包客,โฮสเทล,게스트하우스,Nhà trọ,28
+29,3,Luxury Hotels,高級旅館,高级旅馆,โรงแรมหรู,고급 호텔,Khách sạn hạng sang,29
+30,4,Beauty & Health,藥妝,药妆,"เครื่องสำอาง, ยา",화장품ㆍ의약품,Sắc đẹp và Sức khỏe,30
+31,4,"Stationery, Toys, Games",文具・玩具・電玩,文具・玩具・电玩,"เครื่องเขียน, ของเล่น, เกมส์",문구ㆍ장난감ㆍ게임,"Văn phòng phẩm, đồ chơi, trò chơi",31
+32,4,Apparel & Accessories,時尚,时尚,"แฟชั่น, เสื้อผ้า",패션,Trang phục & Phụ kiện,32
+33,4,Household Appliances,家電,家电,เครื่องใช้ไฟฟ้า,가전,Thiết bị gia dụng,33
+34,4,Foodstuff,食物,食物,อาหาร,식품,Thực phẩm,34
+35,4,General Goods,雜貨・日用品,杂货・日用品,ของใช้ทั่วไป,잡화ㆍ일용품,Hàng hoá tổng hợp,35
+36,4,Souvenirs,伴手禮,伴手礼,ของฝาก,선물,Những món quà lưu niệm,36
+37,5,Manners & Etiquette,禮儀・規範,礼仪・规范,มารยาท ข้อควรปฏิบัติ,매너,Manners & Etiquette,37
+38,5,Weather & Climate,氣候,气候,สภาพอากาศ,기후,Thời tiết & Khí hậu,38
+39,5,Transportation,交通,交通,การเดินทาง,교통,Vận chuyển,39
+40,5,Emergency Situations,緊急事故,紧急事故,การรับมือสถานการณ์ฉุกเฉิน,긴급시의 대응,Tình huống khẩn cấp,40
+41,5,Sponsored Content,廣告・文宣,广告・文宣,บทความจากผู้สนับสนุน,알뜰 정보,Nội dung được tài trợ,41
+42,5,Tips & How-To,攻略・指南・小知識,攻略・指南・小知识,"เคล็ดลับ, ข้อควรรู้",조언ㆍ정보,Mẹo và Cách làm,42
+43,6,History & Culture,歷史・藝文,历史・艺文,"ประวัติศาสตร์, วัฒนธรรม",문화ㆍ역사,Lịch sử & Văn hóa,43
+44,6,Seasonal Info,季節,季节,ข้อมูลฤดูกาล,계절,Thông tin theo mùa,44
+45,6,Japanese Language,實用日語,实用日语,ภาษาญี่ปุ่น,일본어,Ngôn ngữ tiếng Nhật,45

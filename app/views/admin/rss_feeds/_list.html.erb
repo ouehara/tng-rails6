@@ -1,0 +1,17 @@
+
+<% articles.each do |top| %>
+    <div class="d-top-art row">
+
+    <div class="col-xs-11">
+        <%= link_to top.article,  target: "_blank" do %>
+        <%= top.article.disp_title[I18n.locale.to_s]%>
+        <br />
+        <small><%= top.locale%> </small>
+        
+        <% end %>
+    </div>
+    <div class="col-xs-1">
+        <%= link_to 'x', [:admin, top], method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    </div>
+    <% end %>

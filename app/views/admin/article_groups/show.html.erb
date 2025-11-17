@@ -1,0 +1,44 @@
+<h1><%= @article_group.title %></h1>
+<div class="row">
+  <div class="x_panel">
+    <div class="form-group">
+      <%= link_to "Pick an article", pick_article_admin_article_groups_path, class: "btn btn-default", remote: true %>
+    </div>
+    <div class="x_content">
+        <div class="table-responsive">
+          <%= form_tag admin_article_group_url(@article_group),  {:method => :get} do%>
+          <%= select_tag :filter_1,options_for_select(@items,(params[:filter_1] if params[:filter_1].present?) ), :include_blank => true %>
+          <%= select_tag :filter_2,options_for_select(@items, (params[:filter_2] if params[:filter_2].present?)), :include_blank => true %>
+          <%= select_tag :filter_3,options_for_select(@items, (params[:filter_3] if params[:filter_3].present?)), :include_blank => true %>
+          <%= submit_tag "Filter" %>
+          <%end%>
+          
+          <table class="article_list table table-striped jambo_table">
+            <thead>
+              <tr class="headings">
+                <th class="column-title">Title</th>
+                <th class="column-title">Action</th>
+              </tr>
+            </thead>
+            <% @articles.each do |a|  %>
+              <tr>
+                <td><%= a.title %></td>
+                <td>
+                  <%= link_to 'Delete', admin_article_group_article_grouping_url(@article_group, a.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+                </td>
+              </tr>
+            <%end%>
+          </table>
+          <%= form_tag add_articles_admin_article_groups_url, {:class => "add_article_form"} do%>
+            <input type="hidden" name="article_groups[]" value="<%= @article_group.id %>">
+            <input type="hidden" name="article_groups[]" value="<%= (params[:filter_1] if params[:filter_1].present?)  %>">
+            <input type="hidden" name="article_groups[]" value="<%= (params[:filter_1] if params[:filter_1].present?)  %>">
+            <input type="hidden" name="article_groups[]" value="<%= (params[:filter_1] if params[:filter_1].present?)  %>">
+            <%= submit_tag "Save", {:class => "add_article_submit",:style => "display:none;"} %>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

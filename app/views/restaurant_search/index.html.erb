@@ -1,0 +1,174 @@
+  <div class="hero restaurant-hero">
+    <div class="hero_title restaurant-hero_title">
+      <h1 class="title"><%= t("savor.restaurant_search")%></h1>
+    </div>
+    <%= render "shared/breadcrumb" %>
+    <div class="container">
+      <div class="btn-anchor_link">
+        <a href="#popular_area"><%= t("savor.search_by") %></a>
+      </div>
+    </div>
+  </div><!-- /hero -->
+
+    <section class="section restaurant-keyword">
+      <div class="container">
+        <h2 class="section_heading restaurant-keyword_heading"><%=t("savor.sidebar.s_keyword") %></h2>
+        <p class="restaurant-keyword_sub">
+          <span class="sub_text">Powered by</span>
+          <span class="sub_logo">SAVOR JAPAN</span>
+        </p>
+        <p class="restaurant-keyword_intro">
+
+        </p>
+        <%= form_tag({controller: "restaurant_search", action: "search"}, method: "get", class: "kwd-form") do%>
+          <input name="utf8" type="hidden" value="✓">
+          <div class="row kwd-form_row">
+            <div class="kwd-form_group col-sm-6 col-xs-12">
+              <label class="kwd-form_label" for="location"><%=t("savor.sidebar.location") %></label>
+              <input type="text" name="location" id="location" class="form-control kwd-form_input" placeholder="<%=t("savor.sidebar.placeholder_city") %>" autocomplete="off">
+              <input type="hidden" name="loc_type" value="" />
+            </div>
+            <div class="kwd-form_group col-sm-6 col-xs-12">
+              <label class="kwd-form_label" for="cuisine"><%=t("savor.sidebar.cuisine")%></label>
+              <input type="text" name="cuisine" id="cuisine" class="form-control kwd-form_input" placeholder="<%= t("savor.sidebar.placeholder_cuisine") %>" autocomplete="off">
+            </div>
+          </div>
+          <div class="row kwd-form_row">
+            <div class="kwd-form_group col-sm-6 col-xs-12">
+              <p class="kwd-form_label"><%=t("savor.sidebar.budget")%></p>
+              <div class="kwd-form_wrap">
+                <div class="radio-inline kwd-form_radio radio_dinner">
+                  <input type="radio" name="budget" id="budget_dinner" value="dinner" checked>
+                  <label for="budget_dinner"><%=t("savor.sidebar.dinner")%></label>
+                </div>
+                <div class="radio-inline kwd-form_radio radio_lunch">
+                  <input type="radio" name="budget" id="radio_lunch" value="lunch">
+                  <label for="radio_lunch"><%=t("savor.sidebar.lunch")%></label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="kwd-form_flex">
+                <div class="kwd-form_flex__item">
+                  <label for="budget_from" class="sr-only">From</label>
+                  <select name="budget_from" id="budget_from" class="form-control kwd-form_select">
+                    <option value="-1" selected></option>
+                    <option value="1000">1,000</option>
+                    <option value="2000">2,000</option>
+                    <option value="3000">3,000</option>
+                    <option value="4000">4,000</option>
+                    <option value="5000">5,000</option>
+                    <option value="10000">10,000</option>
+                  </select>
+                </div>
+                <div class="kwd-form_flex__text">~</div>
+                <div class="kwd-form_flex__item">
+                  <label for="budget_to" class="sr-only">To</label>
+                  <select name="budget_to" id="budget_to" class="form-control kwd-form_select">
+                    <option value="-1" selected></option>
+                    <option value="1000">1,000</option>
+                    <option value="2000">2,000</option>
+                    <option value="3000">3,000</option>
+                    <option value="4000">4,000</option>
+                    <option value="5000">5,000</option>
+                    <option value="10000">10,000</option>
+                  </select>
+                </div>
+                <div class="kwd-form_flex__text">JPY</div>
+              </div>
+            </div>
+          </div>
+          <div class="row kwd-form_row">
+            <div class="kwd-form_group col-sm-12">
+              <p class="kwd-form_label kwd-pc_align__top"><%=t("savor.sidebar.extras")%></p>
+              <div class="kwd-form_checkList">
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="no_smoking" id="no_smoking" value="1">
+                  <label for="no_smoking"><%= t("savor.filter.no_smoking") %></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="menu" id="menu" value="1">
+                  <label for="menu"><%=t("savor.filter.menu")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="languages_available" id="languages_available" value="1">
+                  <label for="languages_available"><%=t("savor.filter.staff")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="late_night_service" id="late_night_service" value="1">
+                  <label for="late_night_service"><%=t("savor.filter.late_night")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="special_diet" id="special_diet" value="1">
+                  <label for="special_diet"><%=t("savor.filter.diet")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="western_cutlery" id="western_cutlery" value="1">
+                  <label for="western_cutlery"><%=t("savor.filter.western_cutlery")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="lunch_menu" id="lunch_menu" value="1">
+                  <label for="lunch_menu"><%=t("savor.filter.lunch")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="free_wifi_available" id="free_wifi_available" value="1">
+                  <label for="free_wifi_available"><%=t("savor.filter.wifi")%></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row kwd-form_row">
+            <div class="kwd-form_group col-sm-12">
+              <p class="kwd-form_label"><%=t("savor.sidebar.cc")%></p>
+              <div class="kwd-form_cardList">
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="visa" id="visa" value="1">
+                  <label for="visa" class="card_visa"><%=t("savor.filter.visa")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="master_card" id="master_card" value="1">
+                  <label for="master_card" class="card_master"><%=t("savor.filter.master_card")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="american_express" id="american_express" value="1">
+                  <label for="american_express" class="card_amex"><%=t("savor.filter.anex")%></label>
+                </div>
+                <div class="kwd-form_check">
+                  <input type="checkbox" name="diners_club" id="diners_club" value="1">
+                  <label for="diners_club" class="card_diners"><%=t("savor.filter.diners")%></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row kwd-form_row">
+            <div class="kwd-form_group col-sm-12">
+              <label class="kwd-form_label" for="keywords"><%=t("savor.sidebar.keywords")%></label>
+              <input type="text" name="keywords" id="keywords" class="form-control kwd-form_input" placeholder="<%=t("savor.sidebar.placeholder_keyword") %>">
+            </div>
+          </div>
+          <div class="kwd-form_submit">
+            <button class="btn btn-block kwd-form_btn">
+              <span class="kwd-form_btn__search"><%=t("savor.sidebar.search")%></span>
+            </button>
+          </div>
+          <% end %>
+      </div>
+    </section><!-- /keyword -->
+
+    <section class="section" id="popular_area">
+    <div class="container">
+      <h2 class="section_heading"><%=  t("savor.search_by") %> <br class="visible-xs-block">Area</h2>
+      <%= react_component('restaurant_list/restaurant_list_view',{elements:
+      @restaurantList}) %>
+    </div>
+  </section><!-- /Search by Popular  Area -->
+  <section class="section">
+      <div class="container">
+        <h2 class="section_heading">Pick Up Restaurant <br class="visible-xs-block">Info</h2>
+        <%= react_component('article_list/article_list_swiper',{
+          elements:JSON.parse(@articles),
+          articlePath: article_path(":param")
+          }) %>
+      </div>
+    </section><!-- /Pick Up Restaurant Info -->
+</div>

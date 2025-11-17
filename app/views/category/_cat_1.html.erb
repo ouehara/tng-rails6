@@ -1,0 +1,15 @@
+    <div class="area-list-flex">
+      <% @areaList.each do |area| %>
+        <% if area.slug != "nationwide" %>
+          <dl>
+            <dt class="black-border-small"><%= area.name %></dt>
+            <% area.children.order(:pos).each do |child| %>
+              <dd class="<%= @availAreas.include?(child.id) ? child.root.slug.downcase+' area-sorting-button active' : 'area-sorting-button' %>" >
+                <%= link_to_unless !@availAreas.include?(child.id), child.name, categoryListing_path(@category, child)%>
+              </dd>
+            <% end %>
+          </dl> 
+        <% end %>
+      <% end %>
+    </div>
+    <div class="visible-xs visible-sm more-mobile">show more</div>  

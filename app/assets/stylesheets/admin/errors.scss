@@ -1,0 +1,19 @@
+// Extend Bootstrap
+.field_with_errors {
+  label {
+    color: $theme-red;
+  }
+  @extend .has-error;
+  .form-control {
+    border-color: $theme-red !important;
+    border-width: 3px !important;
+  }
+}
+
+#error_explanation {
+  @extend .alert;
+  @extend .alert-danger;
+
+  text-align: left;
+  text-shadow: none;
+}

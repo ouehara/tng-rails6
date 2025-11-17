@@ -1,0 +1,429 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/en/traveling-safely-in-japan/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/traveling-safely-in-japan/">
+<link rel="alternate" hreflang="zh-cmn-Hans" href="https://www.tsunagujapan.com/zh-hans/traveling-safely-in-japan/">
+<link rel="alternate" hreflang="th" href="https://www.tsunagujapan.com/th/traveling-safely-in-japan/">
+<link rel="alternate" hreflang="vi" href="https://www.tsunagujapan.com/vi/traveling-safely-in-japan/">
+<link rel="alternate" hreflang="ko" href="https://www.tsunagujapan.com/ko/traveling-safely-in-japan/">
+<link rel="alternate" hreflang="id" href="https://www.tsunagujapan.com/id/traveling-safely-in-japan/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/traveling-safely-in-japan/">
+<% end %>
+<% set_meta_tags title: t("covid.teaster.headline_html"),
+description: t("covid.teaster.sub") %>
+<div class="main_container">
+  <header>
+    <div id="logo">
+      <a class="nav_link" href="<%= root_path(I18n.locale) %>">
+        <%  if !browser.device.mobile? %>
+        <%= react_component('icon/logo_sp') %>
+        <%  else %>
+        <%= react_component('icon/logo_pc') %>
+        <% end %>
+      </a>
+    </div>
+    <div id="teaser">
+      <img class="img-responsive" src="<%= asset_pack_path('media/images/covid/teaser_title.png') %>" alt="<%= t "covid.teaster.headline_html" %>" style="filter:drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));"/>
+
+      <%#  if !browser.device.mobile? %>
+          <p style="filter:drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));"><%= t "covid.subtitle" %></p>
+      <%#  end %>
+    </div>
+  </header>
+  <%#  if browser.device.mobile? %>
+<!--    <p id="teaser_text"><%#= t "covid.teaster.sub" %></p>-->
+    <%#  end %>
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="desc"><%= t "covid.desc" %></p>
+            <a href="#category" class="search_button center-block"><%= t "covid.search_button" %></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="how">
+      <h2><%= t "covid.how.title" %></h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <p class="sub"><%= t "covid.how.sub" %></p>
+            <p class="desc"><%= t "covid.how.desc_html" %></p>
+
+            <div class="table-block">
+              <div class="tr">
+                <div class="td">
+                  <img class="img-responsive" src="<%= asset_pack_path('media/images/covid/cs/closed_spaces.png') %>" alt="<%= sanitize t "covid.how.1.keyword_html" %>"/>
+                  <p class="repletion"><%= t "covid.how.1.repletion" %></p>
+                  <p class="keyword"><%= t "covid.how.1.keyword_html" %></p>
+                </div>
+                <div class="td">
+                  <img class="img-responsive" src="<%= asset_pack_path('media/images/covid/cs/crowded_places.png') %>" alt="<%= sanitize t "covid.how.2.keyword_html" %>"/>
+                  <p class="repletion"><%= t "covid.how.2.repletion" %></p>
+                  <p class="keyword"><%= t "covid.how.2.keyword_html" %></p>
+                </div>
+                <div class="td">
+                  <img class="img-responsive" src="<%= asset_pack_path('media/images/covid/cs/close-contact_settings.png') %>" alt="<%= sanitize t "covid.how.3.keyword_html" %>"/>
+                  <p class="repletion"><%= t "covid.how.3.repletion" %></p>
+                  <p class="keyword"><%= t "covid.how.3.keyword_html" %></p>
+                </div>
+              </div>
+            </div>
+            <p class="additional"><%= t "covid.how.additional_html" %></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about">
+      <h2><%= t "covid.about.title" %></h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li>
+                <div><%= t "covid.about.1.text" %></div>
+                <a href="<%= t "covid.about.1.url1" %>" target="_blank"><%= t "covid.about.1.url1_title" %></a><br>
+                <a href="<%= t "covid.about.1.url2" %>" target="_blank"><%= t "covid.about.1.url2_title" %></a><br>
+                <div class="description"><%= t "covid.about.1.desc" %></div>
+              </li>
+              <li>
+                <div><%= t "covid.about.2.text" %></div>
+                <a href="<%= t "covid.about.2.url1" %>" target="_blank"><%= t "covid.about.2.url1_title" %></a>
+              </li>
+              <li>
+                <div><%= t "covid.about.3.text" %></div>
+                <a href="<%= t "covid.about.3.url1" %>" target="_blank"><%= t "covid.about.3.url1_title" %></a><br>
+                <a href="<%= t "covid.about.3.url2" %>" target="_blank"><%= t "covid.about.3.url2_title" %></a><br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="category">
+      <h2><%= t "covid.place_list.title" %></h2>
+
+      <%= render :partial => 'corona/category_list' %>
+
+      <div class="loading icon-hide"></div>
+      <div id="place_list"></div>
+
+    </section>
+
+    <section id="featured_articles">
+      <h2 class="center-margin"><%= t "covid.featured_articles" %></h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <% @featured.each do |featrued|%>
+                <a href="<%= featrued.get_path %>">
+                <div class="featured_articles">
+                  <div class="tr">
+                    <div class="td_image">
+                      <img src="<%= featrued.thumb_url %>?d=400x400" class="img-responsive featured_image">
+                    </div>
+                    <div class="td">
+                      <div class="meta">
+                        <div class="area"><span><%= featrued.cached_area.name %></span></div>
+                        <div class="date"><%= featrued.schedule[I18n.locale.to_s].to_time.strftime("%b %d, %Y") %></div>
+                      </div>
+                      <div class="featured_title"><%= featrued.disp_title %></div>
+                      <%
+                        sum = [featrued.excerpt[0..240], featrued.excerpt[240..-1]]
+                      %>
+                      <%if !sum[1].nil?  %>
+                        <div class="featured_excerpt"><%= sum[0] %>...</div>
+                      <%else%>
+                        <div class="featured_excerpt"><%= featrued.excerpt %>...</div>
+                      <%end%>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%= react_component('article_new/article_sns', {
+        locale: I18n.locale,
+        position: 'bottom',
+        elements: {
+          page_url: request.original_url,
+          page_title: @title,
+          type: [
+            {
+              "name": "weibo",
+              "link_text": "Share",
+              "class_name": "weibo"
+            },
+            {
+              "name": "facebook",
+              "link_text": "Share",
+              "class_name": "fb"
+            },
+            {
+              "name": "X",
+              "link_text": "Post",
+              "class_name": "x"
+            },
+            {
+              "name": "pinterest",
+              "link_text": "Pin",
+              "class_name": "pn"
+            }
+          ]
+        }
+    }) %>
+
+    <footer>
+      <div class="container">
+      &copy; tsunagu Japan, All Rights Reserved.
+      </div>
+    </footer>
+</div>
+<div data-no-turbolink>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<%= javascript_include_tag "paginathing", 'data-turbolinks-track': 'reload' %>
+<link rel="stylesheet" href="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.css">
+<script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
+<%= javascript_include_tag "readmore", 'data-turbolinks-track': 'reload' %>
+<script src="https://kit.fontawesome.com/07f4ccbd13.js" crossorigin="anonymous"></script>
+</div>
+<script>
+jQuery(document).on('turbolinks:load', function() {
+
+    jQuery('#category_select').multipleSelect({});
+
+    categorySelect();
+
+
+    jQuery("#category_select").on('change', function (e) {
+        let v = jQuery("option:selected", this).val();
+        categorySelect(v);
+    });
+
+    jQuery('#show_icon_btn').on('click', function() {
+        if(jQuery("#icon_hide").is(":hidden")) {
+            jQuery("#icon_hide").slideDown();
+            jQuery(this).html("<%= t("covid.result.show_less_html") %>");
+        } else {
+            jQuery("#icon_hide").slideUp();
+            jQuery(this).html("<%= t("covid.result.show_more_html") %>");
+        }
+
+    });
+
+    jQuery('a[href^="#"]').on('click', function(){
+      let speed = 500;
+      let href= $(this).attr("href");
+      let target = $(href == "#" || href == "" ? 'html' : href);
+      let position = target.offset().top;
+      jQuery("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+    });
+
+});
+
+<%# // icon list %>
+function showMore(e) {
+    let more = '.icon-lists-hide';
+    let btn = '#show-more-btn'
+    if(jQuery(more).css('display') == 'none') {
+        jQuery(more).slideToggle('fast');
+        jQuery(btn).html("<%= t("covid.result.show_less_html") %>");
+    } else {
+        jQuery(more).slideToggle('fast');
+        jQuery(btn).html("<%= t("covid.result.show_more_html") %>");
+    }
+}
+
+<%# // カテゴリー選択時の挙動 %>
+function categorySelect(v){
+    if(v == '') {
+        str = "";
+        $('.category_filter > .ms-parent > button.ms-choice').addClass('category_ph');
+    } else {
+        $('.category_filter > .ms-parent > button.ms-choice').removeClass('category_ph');
+    }
+
+    jQuery.ajax({
+        url: '/<%= I18n.locale.to_s %>/traveling-safely-in-japan/category/' + v,
+        type: 'GET',
+        dataType : 'html',
+
+        beforeSend: function(){
+            jQuery('.loading').removeClass('icon-hide');
+        }
+
+    }).then(function(data){
+        var out_html = jQuery($.parseHTML(data));//parse
+
+        jQuery("#place_list").empty().append(out_html);
+
+        jQuery('#area_filter').multipleSelect({
+            placeholder: '<%= I18n.t("covid.place_list.area_ph") %>',
+        });
+
+        // handleReadmore();
+
+        areaFilter();
+
+        jQuery('.loading').addClass('icon-hide');
+
+    },function(jqXHR, textStatus) {
+        jQuery('.loading').addClass('icon-hide');
+        if(textStatus!=="success") {
+            console.log('Can not load data.');
+        }
+    });
+}
+<%# // エリア選択時の挙動 %>
+function areaFilter() {
+    var selected = [];
+
+    jQuery("#area_filter :selected").each(function(){
+        selected.push(Number($(this).val()));
+    });
+
+    var count = 0;
+    if(Object.keys(selected).length === 0) {
+
+        jQuery(".search_result_list > li").each(function(index, value){
+
+          jQuery(value).removeClass("hidden");
+          jQuery(value).addClass("page");
+
+          if(jQuery('#category_select option:selected').val()) {
+            count++;
+          }
+
+        });
+    } else {
+
+        jQuery(".search_result_list > li").each(function(idx, element){
+
+            var area = jQuery(element).data("area");
+
+            var display = false;
+            jQuery.each(area, function(i, v) {
+                let is_exist = jQuery.inArray( Number(v), selected );
+
+                if(is_exist !== -1) {
+                    display = true;
+                    return false;
+                }
+            });
+
+            if (display) {
+                jQuery(element).removeClass("hidden");
+                jQuery(element).addClass("page");
+                if(count === 0) {
+                    jQuery(element).addClass('no_border');
+                } else {
+                    jQuery(element).removeClass('no_border');
+                }
+                count++;
+            } else {
+                jQuery(element).addClass("hidden");
+                jQuery(element).removeClass("page");
+            }
+
+        });
+
+    }
+    if (count) {
+        var str = "<span>" + count + " <%= t 'covid.result.count_total' %></span>";
+    } else {
+        var str = "";
+    }
+    jQuery("#count_total").html(str);
+
+    jQuery('.result_pager').each(function(idx, elm) { jQuery(elm).remove()});
+
+    jQuery('.search_result_list').paginathing({
+        perPage: 10,
+        prevText:'<i class="icon-arrow-left icons"></i>',
+        nextText:'<i class="icon-arrow-right icons"></i>',
+        activeClass: 'active',
+        firstLast: false,
+        containerClass: 'result_pager',
+        ulClass: 'result_pagination',
+        liClass: 'page',
+        pageNumbers: true,
+        insertAfter: '.page_nav',
+    })
+
+    var perPage = 10;
+    var txt = jQuery('.pageNumbers a').text();
+    var current = txt.substr(5, 1);
+    var total = txt.substr(7, 1);
+
+    var num = 'Page ' + current + '/' + total;
+    jQuery('.page_status').html(num);
+
+    if(count / perPage < current) {
+        var start = perPage * (current - 1) + 1;
+        var end = perPage * current;
+    } else {
+        var start = perPage * (current - 1) + 1;
+        var end = count % perPage + start;
+    }
+
+    jQuery(".count_start").html(start);
+    jQuery(".count_end").html(end);
+
+}
+
+function clickPagination(e) {
+    let speed = 500;
+    let target = jQuery("#results");
+    let position = target.offset().top;
+    jQuery("html, body").animate({scrollTop:position}, speed, "swing");
+
+
+
+    return false;
+
+}
+
+function handleReadmore() {
+    jQuery('.hotel-area-box').each(function(i, el) {
+        if(jQuery(el).height() > 40) {
+          jQuery(el).readmore({
+              speed: 75,
+              collapsedHeight: 35,
+              moreLink: '<a href="#" style="width:100%;text-align:center;display:block;"><%= t "covid.result.read_more" %>  <i class="fas fa-angle-double-right"></i></a>',
+              lessLink: '<a href="#" style="width:100%;text-align:center;display:block;"><%= t "covid.result.read_less" %>  <i class="fas fa-angle-double-up"></i></a>',
+          });
+        }
+    });
+
+    jQuery('div.desc-wrap').each(function(i, el) {
+
+        jQuery(el).readmore({
+            // speed: 300,
+            // collapsedHeight: 600,
+            moreLink: '<a href="#" style="margin:15px 0 20px 0;width:100%;text-align:center;display:block;"><%= t "covid.result.read_more" %>  <i class="fas fa-angle-double-right"></i></a>',
+            lessLink: '<a href="#" style="margin:15px 0 20px 0;width:100%;text-align:center;display:block;"><%= t "covid.result.read_less" %>  <i class="fas fa-angle-double-up"></i></a>',
+        });
+
+    });
+}
+
+</script>
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

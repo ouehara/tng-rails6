@@ -1,0 +1,183 @@
+.top-restaurantList {
+  margin: -6px;
+  display: flex;
+  flex-direction: column;
+  @include mq(sm) {
+    margin: -10px;
+    flex-direction: row;
+  }
+  &:before,
+  &:after {
+    display: none; // for Safari
+  }
+
+  &_grid {
+    display: grid;
+    display: -ms-grid;
+    height: vw(390);
+    padding: 6px;
+    @include mq(sm) {
+      height: vw(350, 1035);
+      max-height: 350px;
+      padding: 10px;
+    }
+    &.is-grid_01 {
+      // autoprefixer が -ms- を解決しないためまとめて記述
+      /* autoprefixer grid: autoplace */
+      gap: 12px;
+      -ms-grid-rows: 1fr 12px 1fr;
+      -ms-grid-columns: 1fr 12px 1fr;
+      grid-template:
+        "area_01 area_02" 1fr
+        "area_01 area_03" 1fr /
+        1fr 1fr;
+      @include mq(sm) {
+        // autoprefixer が -ms- を解決しないためまとめて記述
+        gap: 20px;
+        grid-template:
+          "area_01 area_02" 1fr
+          "area_01 area_03" 1fr /
+          1fr 1fr;
+        -ms-grid-rows: 1fr 20px 1fr;
+        -ms-grid-columns: 1fr 20px 1fr;
+      }
+    }
+    &.is-grid_02 {
+      // autoprefixer が -ms- を解決しないためまとめて記述
+      gap: 12px;
+      -ms-grid-rows: 1fr 12px 1fr;
+      -ms-grid-columns: 1fr 12px 1fr;
+      grid-template:
+        "area_04 area_04" 1fr
+        "area_05 area_06" 1fr /
+        1fr 1fr;
+      @include mq(sm) {
+        // autoprefixer が -ms- を解決しないためまとめて記述
+        gap: 20px;
+        -ms-grid-rows: 1fr 20px 1fr;
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template:
+          "area_04 area_04" 1fr
+          "area_05 area_06" 1fr /
+          1fr 1fr;
+        -ms-grid-rows: 1fr 20px 1fr;
+        -ms-grid-columns: 1fr 20px 1fr;
+      }
+    }
+  }
+
+  // 連番でエリアを指定
+  @for $i from 1 through 6 {
+    $num: "";
+
+    @if $i < 10 {
+      $num: "0#{$i}";
+    } @else {
+      $num: $i;
+    }
+
+    &_item.is-area_#{$num} {
+      grid-area: area_#{$num};
+    }
+  }
+  .is-area_01 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .is-area_02 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .is-area_03 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .is-area_04 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .is-area_05 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .is-area_06 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  &_item a {
+    display: block;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 2px;
+    word-break: normal;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      transition: background ease-out 0.2s;
+    }
+    &:hover {
+      .top-restaurantList_image {
+        transform: scale(1.03) translate3d(0, 0, 0);
+        opacity: 0.8;
+      }
+    }
+  }
+  &_item img {
+    width: 100%;
+    height: auto;
+    transform: scale(1) translate3d(0, 0, 0);
+    transition: transform ease-out 0.2s, opacity ease-out 0.4s;
+  }
+  &_image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: scale(1) translate3d(0, 0, 0);
+    transition: transform ease-out 0.2s, opacity ease-out 0.4s;
+  }
+  &_text {
+    display: inline-block;
+    max-width: 90%;
+    padding-left: rem(17);
+    color: #fff;
+    font-size: rem(15);
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    @include mq(sm) {
+      padding-left: rem(30);
+      font-size: rem(24);
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: rem(13);
+      height: rem(18);
+      background: url("../images/shared/icon_area_white.png") no-repeat 0 0;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @include mq(sm) {
+        width: rem(23);
+        height: rem(32);
+      }
+    }
+  }
+}

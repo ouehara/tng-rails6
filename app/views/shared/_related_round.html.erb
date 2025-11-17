@@ -1,0 +1,15 @@
+<section>
+    <div class="container">
+        <h2><%= title %></h2>
+        <div class="related-round">
+            <% elements.each do |el| %>
+                <a href="<%= el['link'] %>">
+                    <div class="img-container">
+                        <img src="<%= el['image_url'] %>" />
+                    </div>
+                    <h3><%= el["title"] %></h3>
+                </a>
+            <% end %>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,52 @@
+<% body_class (@category.css_class.nil? ? "" : @category.css_class)+" "+@pagetype %>
+
+<% set_meta_tags title: @metaTitle,
+      description: @category_desc %>
+
+<%= react_component('hero/hero_view',{elements:{category: @category.root.css_class,
+"category_full": @title,"page_type": @pagetype,
+"sp_bg_img": asset_pack_path("media/images/area/"+ (@areaslug !="" ? "area_"+@areaslug+"M400" : @category.root.slug) +".jpg"),
+"pc_bg_img": asset_pack_path("media/images/area/"+ (@areaslug !="" ? "area_"+@areaslug+"M400" : @category.root.slug) +".jpg"),
+"ad": JSON.parse(@catad),
+"intro_text": @desc,
+"area": @area,
+"map_img": '',
+"weather": @weather,
+},
+}) %>
+<%= render "shared/breadcrumb" %>
+<div class="container">
+  <p class="hero_intro">
+    <%= @desc %>
+  </p>
+</div>
+
+<%= render "shared/selects", areas: @select_area,
+cur_cat: @category,show_area:true, categories: @category.children.joins(:articles).distinct,
+title: title = I18n.t("narrow_down_by_int_area")  %>
+<section class="section">
+  <div class="container">
+    <h2 class="section_heading"><%=I18n.t("newest_article_on", area: @category.name ) %></h2>
+    <%= render "articles/list", articles: @pagination %>
+  </div>
+</section>
+<div>
+  <section>
+    <div class="container">
+      <h2 class="section_heading"><%= I18n.t("other_interests") %></h2>
+      <%= render "shared/root_category_block" %>
+    <div>
+  </section>
+  <%= render "shared/recommended_area", {category: @category, area: @a, show_search: true} %>
+</div>
+<!-- /Recommended Area -->
+<!-- Advertisement -->
+<%= render "shared/ads" %>
+<%= render "shared/sns" %>
+<!-- /Advertisement -->
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

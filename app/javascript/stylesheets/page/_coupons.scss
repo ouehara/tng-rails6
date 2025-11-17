@@ -1,0 +1,21 @@
+.coupon {
+  display: grid;
+  gap: 20px 0;
+  grid-template-columns: 1fr;
+
+  @include mq(sm) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &_item {}
+
+  &_link {
+    display: block;
+  }
+
+  &_none {
+    padding: 2em 0;
+    text-align: center;
+  }
+}

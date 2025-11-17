@@ -1,0 +1,94 @@
+# ========================
+# Rails / Bundler 関連
+# ========================
+/.bundle
+/vendor/bundle
+/vendor/cache
+
+# ========================
+# ログ / キャッシュ / 一時ファイル
+# ========================
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/.keep
+/storage/*
+/.sass-cache
+/tmp/cache/assets
+/tmp/cache/bootsnap
+
+# ========================
+# アセット関連（ビルド済みはイメージに含めない）
+# ========================
+/public/assets
+/public/packs
+/public/packs-test
+/app/assets/builds
+
+# ========================
+# Node.js / Yarn 関連
+# ========================
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# ========================
+# Secrets / 環境変数ファイル
+# ========================
+/.env*
+/config/master.key
+/config/credentials/*.key
+/config/credentials.yml.enc
+
+# ========================
+# テスト・開発関連
+# ========================
+/coverage
+/spec
+/test
+/features
+.byebug_history
+.rspec
+
+# ========================
+# ドキュメント
+# ========================
+/doc
+README.md
+*.md
+
+# ========================
+# Git / CI 関連
+# ========================
+.git
+.gitattributes
+.gitignore
+/.github
+/.circleci
+/.gitlab-ci.yml
+
+# ========================
+# AWS / インフラ関連
+# ========================
+/.elasticbeanstalk
+/terraform
+
+# ========================
+# OS / IDE 関連
+# ========================
+.DS_Store
+*.swp
+*.swo
+*~
+*.orig
+/.idea
+/.vscode
+*.sublime-workspace
+*.sublime-project
+
+# ========================
+# その他
+# ========================
+/build.log
+/bench_rails_memory_usage.rb

@@ -1,0 +1,41 @@
+    <% if request.path.include?('/area/kyushu') %>
+      <div class="banner-areaFeature">
+        <%= link_to image_tag(asset_pack_path("media/images/area/feature/kyushu/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.kyushu.title'), :size => "820x160"), area_kyushu_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-kyushu", class:"banner-areaFeature-link" %>
+      </div>
+    <% elsif request.path.include?('/area/hokkaido-region') then %>
+      <div class="banner-areaFeature">
+        <%= link_to image_tag(asset_pack_path("media/images/area/feature/hokkaido/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.hokkaido.title'), :size => "820x160"), area_hokkaido_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-hokkaido", class:"banner-areaFeature-link" %>
+      </div>
+    <% elsif request.path.include?('/area/tohoku') then %>
+      <div class="banner-areaFeature">
+        <%= link_to image_tag(asset_pack_path("media/images/area/feature/tohoku/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.tohoku.title'), :size => "820x160"), area_tohoku_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-tohoku", class:"banner-areaFeature-link" %>
+      </div>
+    <% elsif request.path.include?('/area/okinawa-region') then %>
+      <div class="banner-areaFeature">
+        <%= link_to image_tag(asset_pack_path("media/images/area/feature/okinawa/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.okinawa.title'), :size => "820x160"), area_okinawa_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-okinawa", class:"banner-areaFeature-link" %>
+      </div>
+    <% elsif request.path.include?('/area/shikoku') then %>
+      <div class="banner-areaFeature">
+        <%= link_to image_tag(asset_pack_path("media/images/area/feature/shikoku/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.shikoku.title'), :size => "820x160"), area_shikoku_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-shikoku", class:"banner-areaFeature-link" %>
+      </div>
+    <% elsif request.path.include?('/area/kanto') then %>
+      <div class="banner-areaFeature">
+        <%= link_to image_tag(asset_pack_path("media/images/area/feature/kanto/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.kanto.title'), :size => "820x160"), area_kanto_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-kanto", class:"banner-areaFeature-link" %>
+      </div>
+    <% end %>
+    <% if(I18n.locale.to_s != "zh-hans"&& I18n.locale.to_s != "ko" && I18n.locale.to_s != "id") %>
+      <% if request.path.include?('/area/kansai') then %>
+        <div class="banner-areaFeature">
+          <%= link_to image_tag(asset_pack_path("media/images/area/feature/kansai/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.kansai.title'), :size => "820x160"), area_kansai_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-kansai", class:"banner-areaFeature-link" %>
+        </div>
+      <% elsif request.path.include?('/area/chubu') then %>
+        <div class="banner-areaFeature">
+          <%= link_to image_tag(asset_pack_path("media/images/area/feature/chubu/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.chubu.title'), :size => "820x160"), area_chubu_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-chubu", class:"banner-areaFeature-link" %>
+        </div>
+      <% elsif request.path.include?('/area/chugoku') then %>
+        <div class="banner-areaFeature">
+          <%= link_to image_tag(asset_pack_path("media/images/area/feature/chugoku/banner/#{I18n.locale.to_s}.jpg"), class:"img-responsive center-block", alt:t('area.feature.chugoku.title'), :size => "820x160"), area_chugoku_feature_path, id:"#{I18n.locale.to_s}_banner-areaFeature-link-chugoku", class:"banner-areaFeature-link" %>
+        </div>
+      <% end %>
+    <% end %>
+    <!-- /.banner-areaFeature -->

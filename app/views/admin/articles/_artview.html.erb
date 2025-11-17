@@ -1,0 +1,54 @@
+<td><input type="checkbox" name="bulkAction[]" value="<%= article.id %>"></td>
+<td>
+  <% if article.article_editor.exists? && article.article_editor.order("updated_at desc").first.is_locked %>
+    <i class="menu-icon icon-lock" title="<%=  article.article_editor.first.user.username %> is editing"></i>
+  <% end %>
+  <%= article.id %>
+</td>
+
+<td title="<%=article.title %>">
+  <%=
+  if article.disp_title[@lang] == nil
+    title = ""
+    ["en", "ja", "zh-hant", "zh-hans", "th", "vi", "ko", "id"].each do |l|
+      if article.disp_title[l] != nil
+        title = article.disp_title[l]
+        break
+      end
+    end
+    title.truncate(60)
+  else
+    article.disp_title[@lang] != nil ? article.disp_title[@lang].truncate(60) : article.disp_title[@lang]
+  end
+  %>
+</td>
+<td><%= article.created_at.strftime("%F %T") %></td>
+<td><%= article.updated_at.strftime("%F %T") %></td>
+<td><%= !article.category.nil? ? article.category.name : "-" %></td>
+<td><%= !article.area.nil? ? article.area.name : "-" %></td>
+<td><%= article.all_tag_groups %></td>
+<td><%= article.all_tags %></td>
+<td><%= link_to 'Show', article_path(id:article.id), {target: "_blank"} %></td>
+<td><%= link_to 'Duplicate', duplicate_admin_articles_path(id:article.id), data: { confirm: 'Do you want to duplicate this post?' } %></td>
+<td><%= link_to 'Delete', [:admin, article], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<td>
+  <% article.is_translated.each do |key,value| %>
+  <%= image_tag("icons/"+key +".png", size: "16") %>
+  <select class="change-state" data-id="<%=article.id %>" data-url="<%= change_state_admin_articles_url %>" data-lang="<%=key %>" >
+    <option data-state="publish" <%= value == "publish" ? "selected" : ""%>> published</option>
+    <option data-state="future" <%= value == "future" ? "selected" : ""%>> future</option>
+    <option data-state="draft" <%= value != "publish" && value != "future" ? "selected" : ""%>> draft</option>
+  </select>
+  <br>
+  <% end %>
+</td>
+<td>
+<% article.is_translated.each do |key,value| %>
+  <%if article.article_editor.where(:lang => key).exists? && article.article_editor.where(:lang => key).order("updated_at desc").first.is_locked %>
+    <%= link_to image_tag("icons/"+key +".png", size: "16"), edit_article_path(key,article, :force => 1), target: "_blank", data: {confirm: article.article_editor.first.user.username + " is editing, do you really want to continue" } %>
+  <%else%>
+    <%= link_to image_tag("icons/"+key +".png", size: "16"), edit_article_path(key,article), target: "_blank" %>
+  <% end %>
+  <br>
+<% end %>
+</td>

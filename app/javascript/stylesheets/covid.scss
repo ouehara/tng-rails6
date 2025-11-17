@@ -1,0 +1,24 @@
+@import "base/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "base/function";
+@import "base/mixins";
+@import "base/common";
+
+@import "layout/section";
+@import "layout/container";
+@import "partials/footer";
+@import "partials/search";
+@import "partials/header";
+@import "layout/hero";
+@import "page/top/hero";
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
+@import "partials/carousel";
+@import "partials/advertisement";
+@import "partials/critical";
+
+@import "partials/article_list";
+@import "partials/sns_links";
+@import "partials/modal";
+@import "partials/head_banner";
+@import "partials/cookieconsent";
+@import "page/covid";

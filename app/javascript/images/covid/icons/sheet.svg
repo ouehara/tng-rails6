@@ -1,0 +1,25 @@
+<svg id="icon1" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_3" data-name="Group 3">
+    <circle id="Oval_Copy_3" data-name="Oval Copy 3" cx="22.5" cy="22.5" r="22.5" fill="#188e9d"/>
+    <g id="Group_20" data-name="Group 20" transform="translate(9.396 12.857)">
+      <g id="Group_19" data-name="Group 19">
+        <g id="Combined_Shape" data-name="Combined Shape" fill="none" stroke-miterlimit="10">
+          <path d="M.957,0h23.8a.957.957,0,0,1,.957.957V14.867a.957.957,0,0,1-.957.957H.957A.957.957,0,0,1,0,14.867V.957A.957.957,0,0,1,.957,0Z" stroke="none"/>
+          <path d="M 1.250001907348633 1.249998092651367 L 1.250001907348633 14.57417774200439 L 24.46428298950195 14.57417774200439 L 24.46428298950195 1.249998092651367 L 1.250001907348633 1.249998092651367 M 0.9574432373046875 -1.9073486328125e-06 L 24.75683212280273 -1.9073486328125e-06 C 25.28562164306641 -1.9073486328125e-06 25.71428298950195 0.4286680221557617 25.71428298950195 0.9574480056762695 L 25.71428298950195 14.86672782897949 C 25.71428298950195 15.3955078125 25.28562164306641 15.82417774200439 24.75683212280273 15.82417774200439 L 0.9574432373046875 15.82417774200439 C 0.4286632537841797 15.82417774200439 1.9073486328125e-06 15.3955078125 1.9073486328125e-06 14.86672782897949 L 1.9073486328125e-06 0.9574480056762695 C 1.9073486328125e-06 0.4286680221557617 0.4286632537841797 -1.9073486328125e-06 0.9574432373046875 -1.9073486328125e-06 Z" stroke="none" fill="#fff"/>
+        </g>
+        <g id="Oval" transform="translate(9.89 3.956)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.25">
+          <circle cx="3.214" cy="3.214" r="3.214" stroke="none"/>
+          <circle cx="3.214" cy="3.214" r="2.589" fill="none"/>
+        </g>
+        <path id="Line_2" data-name="Line 2" d="M.247.247H24.973" transform="translate(0.495 19.286)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_4" data-name="Line 4" d="M3.956,0,0,5.44" transform="translate(3.805 2.158) rotate(2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_4_Copy_2" data-name="Line 4 Copy 2" d="M3.956,0,0,5.44" transform="translate(18.64 7.103) rotate(2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_4_Copy" data-name="Line 4 Copy" d="M2.446,0,0,3.478" transform="translate(2.253 1.645) rotate(2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_4_Copy_3" data-name="Line 4 Copy 3" d="M2.446,0,0,3.478" transform="translate(21.539 9.557) rotate(2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      </g>
+      <path id="Rectangle" d="M0,3.783V2.394A2.394,2.394,0,0,1,2.394,0H4.035A2.394,2.394,0,0,1,6.429,2.394V3.956" transform="translate(9.89 10.879)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      <path id="Line_3" data-name="Line 3" d="M.247,0V2.967" transform="translate(16.096 16.566)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      <path id="Line_3_Copy" data-name="Line 3 Copy" d="M.247,0V2.967" transform="translate(9.668 16.566)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+    </g>
+  </g>
+</svg>

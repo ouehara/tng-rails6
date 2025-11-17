@@ -1,0 +1,78 @@
+.sidebar {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 45px;
+
+  @include mq(sm) {
+    // display: block;
+  }
+
+  @include mq(mm) {
+    max-width: 330px;
+    margin-bottom: 0;
+  }
+
+  &_searchbox {
+    display: none;
+    margin-bottom: 10px;
+
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &_adsense {
+    text-align: center;
+    width: 100%;
+
+    @include mq(sm) {
+      margin-bottom: 10px;
+    }
+
+    .ads_img {
+      width: 300px;
+      height: 250px;
+    }
+  }
+
+  &_advertisements {
+    display: none;
+
+    @include mq(sm) {
+      display: block;
+    }
+
+    @include mq(mm) {}
+  }
+
+  &_advertisement {
+    .ad_item {}
+
+    .swiper-slide {
+      @include mq(sm) {
+        margin-top: 10px;
+      }
+    }
+
+    a {
+      display: block;
+      background-color: #000;
+
+      &>img {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: opacity ease-out 0.2s;
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

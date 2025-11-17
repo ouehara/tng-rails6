@@ -1,0 +1,54 @@
+[
+  {
+    "type": "is-grid_01",
+    "item": [
+      {
+        "id": "r_hokkaido",
+        "disp_title": "savor.hokkaido",
+        "grid_name": "is-area_01",
+        "url": "/restaurant/search/?loc_type=prefectures&location=Hokkaido",
+        "thumbnail": "/assets/top/pic_restaurant_01.jpg"
+      },
+      {
+        "id": "r_kyoto",
+        "disp_title": "savor.kyoto_sub.kyoto",
+        "grid_name": "is-area_02",
+        "url": "/restaurant/search/?loc_type=prefectures&location=Kyoto",
+        "thumbnail": "/assets/top/pic_restaurant_02.jpg"
+      },
+      {
+        "id": "r_osaka",
+        "disp_title": "savor.kyoto_sub.osaka",
+        "grid_name": "is-area_03",
+        "url": "/restaurant/search/?loc_type=prefectures&location=Osaka",
+        "thumbnail": "/assets/top/pic_restaurant_03.jpg"
+      }
+    ]
+  },
+  {
+    "type": "is-grid_02",
+    "item": [
+      {
+        "id": "r_tokyo",
+        "disp_title": "savor.tokyo",
+        "grid_name": "is-area_04",
+        "url": "/restaurant/search/?loc_type=prefectures&location=Tokyo",
+        "thumbnail": "/assets/top/pic_restaurant_04.jpg"
+      },
+      {
+        "id": "r_fukuoka",
+        "disp_title": "savor.kyushu_sub.fukuoka",
+        "grid_name": "is-area_05",
+        "url": "/restaurant/search/?loc_type=prefectures&location=Fukuoka",
+        "thumbnail": "/assets/top/pic_restaurant_05.jpg"
+      },
+      {
+        "id": "r_okinawa",
+        "disp_title": "savor.okinawa",
+        "grid_name": "is-area_06",
+        "url": "/restaurant/search/?loc_type=prefectures&location=Okinawa",
+        "thumbnail": "/assets/top/pic_restaurant_06.jpg"
+      }
+    ]
+  }
+]

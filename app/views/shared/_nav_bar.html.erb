@@ -1,0 +1,249 @@
+<nav class="header_nav">
+  <ul class="menu container">
+    <li class="header_logo">
+      <% if current_page?(controller: '/index', action: 'index', locale: nil) or current_page?(controller: '/index', action: 'index', locale: I18n.locale) %>
+        <h1 class="header_logo-area">
+          <a class="nav_link nav_logo" href="<%= root_url %>">
+            <span class="isvg">
+            <%=react_component('icon/logo_sp') %>
+            </span>
+          </a>
+        </h1>
+      <% else %>
+        <div class="header_logo-area">
+          <a class="nav_link nav_logo" href="<%= root_url %>">
+            <span class="isvg">
+            <%=react_component('icon/logo_sp') %>
+            </span>
+          </a>
+        </div>
+      <% end %>
+    </li>
+    <li class="item clips">
+      <a href="<%= clips_url %>" style="font-size: initial;">
+        <span class="isvg">
+        <%=react_component('icon/clip') %>
+        </span>
+        <span class="nav_clip_num">0</span>
+      </a>
+    </li>
+<% if false %>
+    <% if I18n.locale.to_s == "en" %>
+      <li class="item"><a href="">SUBSCRIBE</a></li>
+    <% end %>
+<% end %>
+    <li class="item search has-submenu">
+      <span class="isvg item_click" data-attr-overlay="true">
+        <%=react_component('icon/search') %>
+      </span>
+      <ul class="submenu_click">
+        <li>
+          <form onSubmit="return handleSearchSubmit(event)">
+            <div class="search-input-wrapper">
+              <input
+                type="text"
+                placeholder="Search"
+                id="g_search"
+              />
+            </div>
+            <span class="close-header" id="close-form"></span>
+          </form>
+        </li>
+      </ul>
+    </li>
+    <li class="item language has-submenu" <% if browser.device.mobile? %>data-attr-overlay="mobile"<% end %>>
+      <span class="current_language">
+      <% if browser.device.mobile? %>
+        Language
+      <% else %>
+        <%= I18n.t I18n.locale.to_s %>
+      <% end %>
+      </span>
+      <ul class="submenu">
+        <% if browser.device.mobile? %>
+        <li id="c-lang"><span class="close-header" id="close-lang"></span></li>
+        <li class="current_language_black"><%= I18n.t I18n.locale.to_s %></li>
+        <% end %>
+        <% alternate_locales do |l| %>
+          <%var = I18n.t l.to_s %>
+          <% if l.to_s != "en" %>
+            <li> <%= link_to(var ,{ :locale=>l } ) %></li>
+          <% else %>
+            <li> <%= link_to(var ,{ :locale=>nil } ) %></li>
+          <% end %>
+        <% end %>
+      </ul>
+    </li>
+    <% if I18n.locale.to_s != "zh-hans" && I18n.locale.to_s != "ko" && I18n.locale.to_s != "id" %>
+      <li class="item item-feature">
+        <a href="<%= category_feature_index_path() %>"><%= I18n.t "feature.feature_label" %></a>
+      </li>
+    <% end %>
+    <li class="item item-area">
+      <a href="<%= area_listing_path() %>"><%= I18n.t "area.area" %></a>
+    </li>
+    <% if !browser.device.mobile?
+      cats = @categories.pop(3)
+    end
+    @categories.each do |cat| %>
+      <li class="item has-submenu">
+        <% if browser.device.mobile? %>
+          <% if I18n.locale.to_s != "ja" %>
+            <span class="menu_toggle"> <%= cat.name %> <i class="arrow right"></i></span>
+          <% else %>
+            <a href="<%= category_path(cat)%>"> <%= cat.name %> </a>
+          <% end %>
+        <% else %>
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="<%= category_path(cat)%>"> <%= cat.name %> </a>
+        <% end %>
+        <% if I18n.locale.to_s != "ja" %>
+          <div class="submenu">
+            <ul>
+              <%if browser.device.mobile? %>
+              <li class="subitem">
+                <a href="<%= category_path(cat)%>"> <%= cat.name %> Top </a>
+              </li>
+              <% end %>
+              <% cat.children.each do |child_cat| %>
+                <li class="subitem">
+                  <a href="<%= category_path(child_cat)%>"> <%= child_cat.name %> </a>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+    <% if !browser.device.mobile? %>
+      <li class="item has-submenu more-menu">
+        <span class="menu_toggle more_toggle item_click"><%= I18n.t("menu_more") %> <i class="arrow right"></i></span>
+          <ul  class="submenu_click" >
+            <% cats.each do |child_cat| %>
+              <li class="subitem">
+                <a href="<%= category_path(child_cat)%>"> <%= child_cat.name %> </a>
+              </li>
+            <% end %>
+          </ul>
+      </li>
+    <% else %>
+      <li class="item has-submenu">
+        <a href="<%= video_index_path%>"> <%= I18n.t "video" %> </a>
+      </li>
+    <% end %>
+      <li class="toggle">
+        <a href="#" class="toggle-area">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+<script>
+  function handleSearchSubmit(e) {
+    e.preventDefault();
+    var val = document.querySelector("#g_search").value
+    if (val != "") {
+      location.href = "/<%= I18n.locale%>/search/" + val;
+    }
+    return false
+  }
+
+  function ready(callback){
+    // in case the document is already rendered
+    if (document.readyState!='loading') callback();
+    // modern browsers
+    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+    // IE <= 8
+    else document.attachEvent('onreadystatechange', function(){
+        if (document.readyState=='complete') callback();
+    });
+  }
+
+  ready(function(){
+
+    const toggle = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+    const items = document.querySelectorAll(".item, .item_click");
+
+    /* Toggle mobile menu */
+    function toggleMenu() {
+      <% if browser.device.mobile? %>
+      if (menu.classList.contains("active")) {
+        toggle.classList.remove("active");
+        menu.classList.remove("active");
+      } else {
+        toggle.classList.add("active");
+        menu.classList.add("active");
+      }
+      <% else %>
+        menu.parentNode.classList.remove("scroll_header");
+      <% end %>
+    }
+
+    <% if !browser.device.mobile? %>
+      window.addEventListener('scroll', function(e) {
+        if (window.pageYOffset > 100 &&  !menu.parentNode.classList.contains("scroll_header")) {
+          window.requestAnimationFrame(function() {
+            menu.parentNode.classList.add("scroll_header");
+          });
+        }
+        if (window.pageYOffset < 100 &&  menu.parentNode.classList.contains("scroll_header")) {
+          menu.parentNode.classList.remove("scroll_header");
+        }
+      });
+    <% end %>
+
+    /* Activate Submenu */
+    function toggleItem() {
+      if (this.classList.contains("submenu-active")) {
+        this.classList.remove("submenu-active");
+        document.querySelector(".active-overlay").classList.remove("active-overlay");
+      } else if (menu.querySelector(".submenu-active")) {
+        menu.querySelector(".submenu-active").classList.remove("submenu-active");
+        this.classList.add("submenu-active");
+      } else {
+        this.classList.add("submenu-active");
+        if(this.getAttribute("data-attr-overlay") == "true") {
+          document.querySelector(".l-main").classList.add("active-overlay");
+        }
+        if(this.getAttribute("data-attr-overlay") == "mobile") {
+          menu.classList.add("active-overlay");
+        }
+      }
+    }
+
+    /* Close Submenu From Anywhere */
+    function closeSubmenu(e) {
+      let isClickInside = menu.contains(e.target);
+
+      if (!isClickInside && menu.querySelector(".submenu-active")) {
+        document.querySelector(".active-overlay").classList.remove("active-overlay");
+        menu.querySelector(".submenu-active").classList.remove("submenu-active");
+      }
+    }
+
+    /* Event Listeners */
+    toggle.addEventListener("click", toggleMenu, false);
+    for (let item of items) {
+      if (item.querySelector(".submenu") || item.nextElementSibling.classList.contains("submenu_click")) {
+        item.addEventListener("click", toggleItem, false);
+      }
+    }
+
+    document.querySelector(".close-header").addEventListener("click", function() {
+      document.querySelector(".submenu-active").classList.remove("submenu-active")
+      document.querySelector(".active-overlay").classList.remove("active-overlay");
+    })
+
+    var item = localStorage.getItem("clips");
+    try {
+      return JSON.parse(item);
+    } catch (e) {
+      return {};
+    }
+    document.querySelector(".nav_clip_num").innerText = Object.keys(clipped).length;
+    document.addEventListener("click", closeSubmenu, false);
+  });
+</script>

@@ -1,0 +1,33 @@
+<%= form_tag({controller: "articles", action: "bulk_save"}, method: "patch") do %>
+
+<form action=<%= bulk_save_admin_articles_path %> method="patch" >
+<div class="col-xs-4">
+  <p>Select category</p>
+  <select name="article[category_id]">
+    <% @categories.each do |cat| %>
+      <option value=<%= cat.id %>><%= cat.name %></option>
+    <% end %>
+  </select>
+</div>
+<div class="col-xs-4">
+  <p> Select area </p>
+  <select name="article[area_id]" class="sel-area">
+                    <% @areas.each do |a| %>
+                      <option value=<%= a.id %> <%= article.area != nil && a.id == article.area.id ? "selected" : "" %>><%= a.name %></option>
+                      <% a.children.each do |sub_area| %>
+                      <option value=<%= sub_area.id %> <%= article.area != nil && sub_area.id == article.area.id ? "selected" : "" %>><%= sub_area.name %></option>
+                        <% sub_area.children.each do |final_area| %>
+                          <option value=<%= final_area.id %> <%= article.area != nil && final_area.id == article.area.id ? "selected" : "" %>><%= final_area.name %></option>
+                        <% end %>
+                      <% end %>
+                      <option disabled>-----------</option>
+                    <% end %>
+                  </select>
+</div>
+<div class="col-xs-4">
+  <p> Tags (comma seperated) </p>
+  <textarea name="article[all_tags]"></textarea>
+</div>
+<input type="hidden" value='<%= @articles %>' name="article[ids]" />
+<input type="submit" />
+<% end %>

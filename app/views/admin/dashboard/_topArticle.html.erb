@@ -1,0 +1,8 @@
+
+<% topArticle.each do |top| %>
+<div class="d-top-art">
+    <%= link_to top,  target: "_blank" do %>
+    <%= top.title%>
+    <% end %>
+</div>
+<% end %>

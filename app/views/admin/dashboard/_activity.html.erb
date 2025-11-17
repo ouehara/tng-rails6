@@ -1,0 +1,9 @@
+<% activities.each do |activity| %>
+  <div class="activity">
+  <div class="activty-icon">
+  <%= render partial: activity.event+"_icon", locals: { activity: activity} %>
+  </div>
+  <%= activity.user.username if activity.user %>
+    <%= render partial: activity.event, locals: { activity: activity} %>
+  </div>
+<% end %>

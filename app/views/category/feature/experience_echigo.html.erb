@@ -1,0 +1,67 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/experience-echigo/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/experience-echigo/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/experience-echigo/">
+<% end %>
+<% body_class "feature lang_" + I18n.locale.to_s %>
+<% set_meta_tags  title: t('echigo.title'),
+                  description: t('echigo.description'),
+                  og: {
+                    image: ActionController::Base.helpers.asset_pack_path('media/images/category/feature/echigo/og-echigo.png', host: CdnConfig.cloudfront_url)
+                  }
+%>
+<main id="top" class="main">
+  <div class="feature-hero echigo">
+    <div class="feature-hero-inner"></div>
+  </div><!-- /.feature-hero -->
+  <div class="feature-contents echigo">
+    <div class="feature-description container">
+      <h1 class="echigo_title"><%= t('echigo.title') %></h1>
+      <p><%= t('echigo.lead_html') %></p>
+    </div>
+    <div class="feature-sections">
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/echigo/kashiwazaki.gif") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <h2 class="echigo_desc-title"><span class="echigo_desc-num">01</span><%= t('echigo.article1.title') %></h2>
+          <h3 class="echigo_desc-subtitle"><%= t('echigo.article1.subtitle') %></h3>
+          <p class="feature-desc-text"><%= t('echigo.article1.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('echigo.article1.url') %>" class="echigo_desc-action"><%= t('echigo.read_more') %></a>
+          </div>
+        </div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/echigo/nagaoka.gif") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <h2 class="echigo_desc-title"><span class="echigo_desc-num">02</span><%= t('echigo.article2.title') %></h2>
+          <h3 class="echigo_desc-subtitle"><%= t('echigo.article2.subtitle') %></h3>
+          <p class="feature-desc-text"><%= t('echigo.article2.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('echigo.article2.url') %>" class="echigo_desc-action"><%= t('echigo.read_more') %></a>
+          </div>
+        </div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/echigo/ojiya.gif") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <h2 class="echigo_desc-title"><span class="echigo_desc-num">03</span><%= t('echigo.article3.title') %></h2>
+          <h3 class="echigo_desc-subtitle"><%= t('echigo.article3.subtitle') %></h3>
+          <p class="feature-desc-text"><%= t('echigo.article3.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('echigo.article3.url') %>" class="echigo_desc-action"><%= t('echigo.read_more') %></a>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+    </div>
+  </div>
+</main>
+
+<% content_for :foot do %>
+<% end %>

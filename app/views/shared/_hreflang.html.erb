@@ -1,0 +1,27 @@
+<% if @availLanguages.nil? %>
+  <% I18n.available_locales.each do |locale| %>
+    <%# ①他言語版ページのURL（1つ以上） %>
+    <%# ②当該ページのURL（1つだけ） %>
+    <% if locale.to_s == "zh-hans" %>
+      <link rel="alternate" hreflang="zh-cmn-Hans" href="<%= url_for(locale: locale, only_path: false) %>">
+    <% elsif locale.to_s == "zh-hant" %>
+      <link rel="alternate" hreflang="zh-cmn-Hant" href="<%= url_for(locale: locale, only_path: false) %>">
+    <% else %>
+      <link rel="alternate" hreflang="<%= locale %>" href="<%= url_for(locale: locale, only_path: false) %>">
+    <% end %>
+  <% end %>
+<% else %>
+  <% @availLanguages.each_key do |locale| %>
+    <%# ①他言語版ページのURL（1つ以上） %>
+    <%# ②当該ページのURL（1つだけ） %>
+    <% if locale == "zh-hans" %>
+      <link rel="alternate" hreflang="zh-cmn-Hans" href="<%= url_for(locale: locale, only_path: false) %>">
+    <% elsif locale == "zh-hant" %>
+      <link rel="alternate" hreflang="zh-cmn-Hant" href="<%= url_for(locale: locale, only_path: false) %>">
+    <% else %>
+      <link rel="alternate" hreflang="<%= locale %>" href="<%= url_for(locale: locale, only_path: false) %>">
+    <% end %>
+  <% end %>
+<% end %>
+<%# ③デフォルト言語ページのURL（1つだけ） %>
+<link rel="alternate" hreflang="x-default" href="<%= url_for(only_path: false) %>">

@@ -1,0 +1,9 @@
+<div class="form-group">
+  <%= f.label :btn %>
+  <%= f.text_field :btn,class: "form-control", placeholder: "button text" %>
+
+  <%= f.label :link %>
+  <%= f.text_field :link,class: "form-control", placeholder: "Affiliate link" %>
+  <%= f.hidden_field :_destroy %>
+  <%= link_to "remove", '#', class: "remove_fields" %>
+</div>

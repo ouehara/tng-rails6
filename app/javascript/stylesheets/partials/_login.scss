@@ -1,0 +1,25 @@
+// login
+.loginPage {
+  width: 100%;
+  max-width: 100%;
+  padding: 40px 15px 60px;
+  margin: 0 auto;
+
+  @include mq(sm) {
+    max-width: 630px;
+    padding: 60px 20px 80px;
+  }
+
+  &_heading {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin: 0 0 1em;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    @include mq(sm) {
+      font-size: 2.4rem;
+    }
+  }
+}

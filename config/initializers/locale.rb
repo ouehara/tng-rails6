@@ -1,0 +1,1 @@
+I18n.available_locales = [:en,"ja","zh-hant","zh-hans","th", "vi", "ko", "id"]

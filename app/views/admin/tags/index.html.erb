@@ -1,0 +1,71 @@
+
+<div class="row">
+<div class='well'>
+<h2>Import from csv</h2>
+<%= form_for @tag, url: import_admin_tags_path, html: { multipart: true, } do |f| %>
+  <%= f.file_field :import_file %>
+  <%= f.submit 'Import', :class=> 'btn btn-default' %>
+<% end %>
+</div>
+<%= link_to "Export to CSV", admin_tags_path(format: :csv) %>
+</div>
+<%= render 'page_title' %>
+
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index <%= "filter by : #{params[:query]}" if params[:query] %></h2>
+      <%= link_to new_admin_tag_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <%= link_to merge_admin_tags_path, class: "pull-right btn btn-default" do %>
+        <i class="icon-book-open"></i> Merge
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title" style="width: 10%;">ID</th>
+              <th class="column-title">Name en</th>
+              <th class="column-title">Name zh-hant</th>
+              <th class="column-title">Name zh-hans</th>
+              <th class="column-title">Name ja</th>
+              <th class="column-title">Name th</th>
+              <th class="column-title">Name id</th>
+              <th class="column-title">Articles count</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @tags.each do |tag| %>
+            <tr class="pointer">
+              <td><%= tag.id %></td>
+              <td><%= link_to tag.name_en, [:admin, tag] if tag.name_en.present?%></td>
+              <td><%= link_to tag.name_zh_hant, [:admin, tag] if tag.name_zh_hant.present? %></td>
+              <td><%= link_to tag.name_zh_hans, [:admin, tag] if tag.name_zh_hans.present? %></td>
+              <td><%= link_to tag.name_ja, [:admin, tag] if tag.name_ja.present? %></td>
+              <td><%= link_to tag.name_th, [:admin, tag] if tag.name_th.present?%></td>
+              <td><%= link_to tag.name_id, [:admin, tag] if tag.name_id.present?%></td>
+              <td><%= link_to admin_articles_path(:tag => tag.slug) do %>
+              <%= tag.articles.count %>
+              <%end%>
+              </td>
+              <td><%= link_to 'Show', [:admin, tag] %></td>
+              <td><%= link_to 'Edit', edit_admin_tag_path(tag) %></td>
+              <td><%= link_to 'Delete', [:admin, tag], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <div class="paginate">
+          <%= paginate @tags %>
+        </div>
+
+      </div>
+    </div>
+  </div>

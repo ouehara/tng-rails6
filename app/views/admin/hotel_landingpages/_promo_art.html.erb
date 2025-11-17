@@ -1,0 +1,11 @@
+<div class="promo-placeholder">
+  <%= 
+  link_to delete_pickup_admin_hotel_landingpages_path(I18n.locale,promo.pickup_hotel_lp.find_by_lang(@lang)), :method => :delete, class: "del-art" do 
+  %>
+  <span class="glyphicon glyphicon-remove"></span>
+  <%
+  end
+  %>
+  <img src=<%= promo.hotel_images[0].image.url(:medium)%> class="img-responsive" />
+  <h3> <%= promo.name %></h3>
+</div>

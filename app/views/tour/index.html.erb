@@ -1,0 +1,30 @@
+<% body_class @pagetype %>
+<%= react_component('hero/hero_view',{elements:{category: "tour",
+"category_full": I18n.t('tours.tour'),"page_type": @pagetype,
+"sp_bg_img": asset_pack_path('media/images/shutterstock_1168325623.jpg'),
+"pc_bg_img": asset_pack_path('media/images/shutterstock_1168325623.jpg'),
+"map_img":'',
+"intro_text": @desc,
+"area": '',
+"ad": {},
+"weather": {},
+},
+}) %>
+<%= render "shared/breadcrumb" %>
+<section class="section">
+  <div class="container">
+    <div class="tour-wrapper">
+      <% @tours.each do |tour| %>
+          <div class="tour-child">
+            <%= react_component('tour/tour',
+            {title:tour.title,
+            money:tour.price, area: tour.area.nil? ? "" : tour.area.name, duration: tour.duration, details: tour.details,
+            buttons: tour.buttons, image: tour.banner.url(:thumb)}) %>
+          </div>
+      <% end %>
+    </div>
+    <div class="paginate">
+      <%= paginate @tours, window: browser.device.mobile? ? 1 : 4  %>
+    </div>
+  </div>
+</section>

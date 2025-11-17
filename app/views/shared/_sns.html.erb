@@ -1,0 +1,87 @@
+<%
+# SNSリンク設定をロケール別に構造化
+sns_config = {
+  # デフォルト設定（英語）
+  'en' => {
+    facebook: 'https://www.facebook.com/tngjp/',
+    twitter: 'https://x.com/tsunagu_Japan',
+    instagram: 'https://www.instagram.com/tsunagujapan/',
+    youtube: 'https://www.youtube.com/channel/UCGXfiVBiOjsmgfpin44tbgA',
+    pinterest: 'http://www.pinterest.com/tsunagujapan/'
+  },
+  'ja' => {
+    facebook: 'https://www.facebook.com/tngjp/',
+    twitter: 'https://x.com/tsunagu_Japan',
+    instagram: 'https://www.instagram.com/tsunagujapan/',
+    youtube: 'https://www.youtube.com/channel/UCGXfiVBiOjsmgfpin44tbgA'
+  },
+  'th' => {
+    facebook: 'https://www.facebook.com/tsunaguthai/',
+    twitter: 'https://x.com/TsunagujapanTH',
+    instagram: 'https://www.instagram.com/tsunagujapanth/',
+    youtube: 'https://www.youtube.com/channel/UCjH1hV3ACluostPovRQZBpg'
+  },
+  'zh-hant' => {
+    facebook: 'https://www.facebook.com/tngcn/',
+    instagram: 'https://www.instagram.com/tsunagujapantw/',
+    youtube: 'https://www.youtube.com/channel/UCu5bPZuSe4gBvwtIdgQRStw'
+  },
+  'zh-hans' => {
+    youtube: 'https://www.youtube.com/channel/UCu5bPZuSe4gBvwtIdgQRStw',
+    weibo: 'https://www.weibo.com/p/1006067183527272/'
+  },
+  'vi' => {
+    facebook: 'https://www.facebook.com/tsunaguvn/'
+  },
+  'ko' => {
+    facebook: 'https://www.facebook.com/tsunagu.japan.korea/'
+  },
+  'id' => {
+    facebook: 'https://www.facebook.com/tngid'
+  }
+}
+
+# 現在のロケールとデフォルト設定を取得
+current_locale = I18n.locale.to_s
+default_config = sns_config['en']
+locale_config = sns_config[current_locale] || {}
+
+# SNSリンクを取得（ロケール固有 > デフォルト の優先順位）
+def get_sns_url(locale_config, default_config, platform)
+  locale_config[platform] || default_config[platform]
+end
+
+# 各SNSプラットフォームのURL取得
+fb = get_sns_url(locale_config, default_config, :facebook)
+twitter = get_sns_url(locale_config, default_config, :twitter)
+insta = get_sns_url(locale_config, default_config, :instagram)
+yt = get_sns_url(locale_config, default_config, :youtube)
+pinterest = get_sns_url(locale_config, default_config, :pinterest)
+weibo = locale_config[:weibo] # Weiboは中国語簡体字のみ
+
+%>
+<div class="sns_links">
+  <ul class="sns_links-list">
+    <% if weibo %>
+      <li class="sns_links-item weibo"><a href="<%= weibo %>" target="_blank" id="f_weibo">Weibo</a></li>
+    <% end %>
+    <% if twitter %>
+      <li class="sns_links-item x"><a href="<%= twitter %>" target="_blank" id="f_tw">X</a></li>
+    <% end %>
+    <% if fb %>
+      <li class="sns_links-item fb"><a href="<%= fb %>" target="_blank" id="f_fb">Facebook</a></li>
+    <% end %>
+    <% if insta %>
+      <li class="sns_links-item insta"><a href="<%= insta %>" target="_blank" id="f_insta">Instagram</a></li>
+    <% end %>
+    <% if pinterest %>
+      <li class="sns_links-item pn"><a href="<%= pinterest %>" target="_blank" id="f_pn">Pinterest</a></li>
+    <% end %>
+    <% if yt %>
+      <li class="sns_links-item yt"><a href="<%= yt %>" target="_blank" id="f_yt">YouTube</a></li>
+    <% end %>
+  </ul>
+  <% if current_locale == "en" %>
+    <p class="sns_links-newsletter"><a href="https://www.tsunagujapan.com/newsletter/">Subscribe to the tsunagu Japan Newsletter</a></p>
+  <% end %>
+</div>

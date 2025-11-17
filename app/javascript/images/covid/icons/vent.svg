@@ -1,0 +1,24 @@
+<svg id="icon11" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_31" data-name="Group 31">
+    <circle id="Oval_Copy_12" data-name="Oval Copy 12" cx="22.5" cy="22.5" r="22.5" fill="#188e9d"/>
+    <g id="Group_25" data-name="Group 25" transform="translate(7.176 15.187)">
+      <g id="Rectangle" transform="translate(6.374)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.25">
+        <rect width="18.901" height="15.385" rx="1.324" stroke="none"/>
+        <rect x="0.625" y="0.625" width="17.651" height="14.135" rx="0.699" fill="none"/>
+      </g>
+      <g id="Group_15" data-name="Group 15" transform="translate(0 2.874)">
+        <path id="Line_5" data-name="Line 5" d="M0,0A14.249,14.249,0,0,0,5.874,1.176,11.874,11.874,0,0,0,11.429,0" transform="translate(0 1.302)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_7" data-name="Line 7" d="M0,0,1.419,1.137,0,2.275" transform="matrix(0.848, -0.53, 0.53, 0.848, 9.835, 0.752)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      </g>
+      <g id="Group_15_Copy" data-name="Group 15 Copy" transform="translate(0 7.874)">
+        <path id="Line_5-2" data-name="Line 5" d="M0,0A14.249,14.249,0,0,1-5.874,1.176,11.874,11.874,0,0,1-11.429,0" transform="translate(12.244 1.302)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_7-2" data-name="Line 7" d="M1.419,0,0,1.137,1.419,2.275" transform="matrix(0.848, 0.53, -0.53, 0.848, 1.205, 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      </g>
+      <path id="Line_9" data-name="Line 9" d="M.22.22V14.286" transform="translate(15.604 0.44)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      <g id="Group_16" data-name="Group 16" transform="matrix(-0.574, 0.819, -0.819, -0.574, 23.643, 8.811)">
+        <path id="Line_8" data-name="Line 8" d="M0,0H3.956" transform="translate(1.872 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Line_8_Copy" data-name="Line 8 Copy" d="M0,0H6.593" transform="translate(0 1.847)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.25"/>
+      </g>
+    </g>
+  </g>
+</svg>

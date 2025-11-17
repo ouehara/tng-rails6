@@ -1,0 +1,22 @@
+<%= render 'page_title' %>
+
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Edit</h2>
+      <%= link_to admin_pickups_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-list"></i>
+      Index
+      <% end %>
+      <%= link_to [:admin, @pickup], class: "pull-right btn btn-default" do %>
+      <i class="icon-eye"></i>
+      Show
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+
+    <%= render 'form' %>
+
+  </div>
+</div>

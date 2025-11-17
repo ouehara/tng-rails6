@@ -1,0 +1,1863 @@
+id,name_ja,name_en,name_zh_hant,name_zh_hans,name_th,name_ko,name_vi
+1,全国,nationwide,全國,全国,ทั่วประเทศ,전국,toàn quốc
+2,北海道,hokkaido,北海道,北海道,ฮอกไกโด,홋카이도,hokkaido
+3,関東,kanto,關東,关东,คันโต,간토,kanto
+4,中部,chubu,中部,中部,ชูบุ,주부,chubu
+5,関西,kansai,關西,关西,คันไซ,간사이,kansai
+6,中国,chugoku,中國,中国,ชูโกคุ,주고쿠,chugoku
+7,四国,shikoku,四國,四国,ชิโคคุ,시코쿠,shikoku
+8,九州,kyushu,九州,九州,คิวชู,규슈,kyushu
+9,東日本,eastern japan,東日本,东日本,ญี่ปุ่นฝั่งตะวันออก,동일본,đông Nhật Bản
+10,西日本,western japan,西日本,西日本,ญี่ปุ่นฝั่งตะวันตก,서일본,tây Nhật Bản
+11,北陸,hokuriku,北陸,北陆,โฮคุริคุ,호쿠리쿠,hokuriku
+12,東北,tohoku,東北,东北,โทโฮคุ,도호쿠,tohoku
+13,神居古潭(カムイコタン),kamui kotan,神居古潭,神居古潭,คะมุยโคะทัง,카무이코탄,kamui kotan
+14,十勝,tokachi,十勝,十胜,โทคะจิ,토카치,tokachi
+15,ニセコ,niseko,新雪谷,新雪谷,นิเซโกะ,니세코,niseko
+16,旭川,asahikawa,旭川,旭川,อาซาฮิคาวะ,아사히카와,asahikawa
+17,すすきの,susukino,薄野,薄野,ซุซุกิโนะ,스스키노,susukino
+18,稚内,wakkanai,稚内,稚内,วัคคะไน,왓카나이,wakkanai
+19,室蘭,muroran,室蘭,室兰,มุโรรัน,무로란,muroran
+20,札幌,sapporo,札幌,札幌,ซัปโปโร,삿포로,sapporo
+21,登別,noboribetsu,登別,登别,โนโบริเบทสึ,노보리베츠,noboribetsu
+22,小樽,otaru,小樽,小樽,โอตารุ,오타루,otaru
+23,富良野,furano,富良野,富良野,ฟุราโนะ,후라노,furano
+24,美瑛,biei,美瑛,美瑛,บิเอ,비에이,biei
+25,網走,abashiri,網走,网走,อาบาชิริ,아바시리,abashiri
+26,千歳,chitose,千歲,千岁,ชิโตเซะ,치토세,chitose
+27,帯広,obihiro,帶廣,带广,โอบิฮิโระ,오비히로,obihiro
+28,山形,yamagata,山形,山形,ยามากาตะ,야마가타,yamagata
+29,盛岡,morioka,盛岡,盛冈,โมริโอกะ,모리오카,morioka
+30,蔵王,zao,藏王,藏王,ซาโอะ,자오,zao
+31,弘前,hirosaki,弘前,弘前,ฮิโรซากิ,히로사키,hirosaki
+32,横手,yokote,橫手,横手,โยโกเตะ,요코테,yokote
+33,いわき,iwaki,岩木,岩木,อิวาคิ,이와키,iwaki
+34,松島,matsushima,松島,松岛,มัตสึชิม่า,마츠시마,matsushima
+35,角館,kakunodate,角館,角馆,คะคุโนะดาเตะ,카쿠노다테,kakunodate
+36,会津,aizu,會津,会津,ไอสุ,아이즈,aizu
+37,青森,aomori,青森,青森,อาโมโมริ,아오모리,aomori
+38,岩手,iwate,岩手,岩手,อิวาเตะ,이와테,iwate
+39,福島,fukushima,福島,福岛,ฟุคุชิมะ,후쿠시마,fukushima
+40,秋田,akita,秋田,秋田,อาคิตะ,아키타,akita
+41,仙台,sendai,仙台,仙台,เซนได,센다이,sendai
+42,八戸,hachinohe,八戶,八户,ฮาชิโนเฮะ,하치노헤,hachinohe
+43,宮城,miyagi,宮城,宫城,มิยางิ,미야기,miyagi
+44,湘南,shonan,湘南,湘南,โชนัน,쇼난,shonan
+45,箱根,hakone,箱根,箱根,ฮาโกเน่,하코네,hakone
+46,千代田,chiyoda,千代田,千代田,ชิโยดะ,치요다,chiyoda
+47,関内,kannai,關內,关内,คันไน,칸나이,kannai
+48,銀座,ginza,銀座,银座,กินซ่า,긴자,ginza
+49,品川,shinagawa,品川,品川,ชินากาว่า,시나가와,shinagawa
+50,赤坂,akasaka,赤坂,赤坂,อาคาซากะ,아카사카,akasaka
+51,秋葉原,akihabara,秋葉原,秋叶原,อากิฮาบาระ,아키하바라,akihabara
+52,青山,aoyama,青山,青山,อาโอยาม่า,아오야마,aoyama
+53,馬車道,bashamichi,馬車道,马车道,บะฉะมิจิ,바샤미치,bashamichi
+54,浅草,asakusa,淺草,浅草,อาซากุสะ,아사쿠사,asakusa
+55,西島,nishijima,西島,西岛,นิชิจิม่า,니시지마,nishijima
+56,八王子,hachioji,八王子,八王子,ฮาชิโอจิ,하치오지,hachioji
+57,千葉,chiba,千葉,千叶,ชิบะ,치바,chiba
+58,飯田橋,iidabashi,飯田橋,饭田桥,อีดะบาชิ,이이다바시,iidabashi
+59,三軒茶屋,sangenjaya,三軒茶屋,三轩茶屋,ซันเกงจะยะ,산겐쟈야,sangenjaya
+60,元町,motomachi,元町,元町,โมโตมาจิ,모토마치,motomachi
+61,新宿,shinjuku,新宿,新宿,ชินจูกุ,신주쿠,shinjuku
+62,築地,tsukiji,築地,筑地,สึคิจิ,츠키지,tsukiji
+63,吉祥寺,kichijoji,吉祥寺,吉祥寺,คิชิโจจิ,키치죠지,kichijoji
+64,伊豆大島,izu oshima,伊豆大島,伊豆大岛,เกาะอิสุโอชิมะ,이즈오시마,izu oshima
+65,小笠原,ogasawara,小笠原島,小笠原岛,โอกะซะวะระ,오가사와라,ogasawara
+66,赤羽,akabane,赤羽,赤羽,อะคะบะเนะ,아카바네,akabane
+67,強羅,gora,強羅,强罗,โกระ,고라,gora
+68,鎌倉,kamakura,鎌倉,鎌仓,คามาคุระ,카마쿠라,kamakura
+69,みなとみらい,minatomirai,港未來,港未来,มินาโตะมิไร,미나토미라이,minatomirai
+70,上野,ueno,上野,上野,อุเอโนะ,우에노,ueno
+71,高田馬場,takadanobaba,高田馬場,高田马场,ทาคาดะโนะบะบะ,타카다노바바,takadanobaba
+72,表参道,omotesando,表參道,表参道,โอโมเตะซันโด,오모테산도,omotesando
+73,御徒町,okachimachi,御徒町,御徒町,โอคาชิมาจิ,오카치마치,okachimachi
+74,川崎,kawasaki,川崎,川崎,คาวาซากิ,카와사키,kawasaki
+75,永田町,nagatacho,永田町,永田町,นากาตะโจ,나다타쵸,nagatacho
+76,入谷,iriya,入谷,入谷,อิริยะ,이리야,iriya
+77,桜木町,sakuragicho,櫻木町,樱木町,ซากุระกิโจ,사쿠라기쵸,sakuragicho
+78,塔ノ沢,tonosawa,塔之澤,塔之泽,โทโนะซาว่า,토노사와,tonosawa
+79,藤沢,fujisawa,藤澤,藤泽,ฟูจิซาว่า,후지사와,fujisawa
+80,二宮,ninomiya,二之宮,二之宫,นิโนะมิยะ,니노미야,ninomiya
+81,新大久保,shinokubo,新大久保,新大久保,ชินโอคุโบะ,신오쿠보,shinokubo
+82,幕張,makuhari,幕張,幕张,มาคุฮาริ,마쿠하리,makuhari
+83,さいたま,saitama,埼玉,埼玉,ไซตามะ,사이타마,saitama
+84,箱根湯本,hakone yumoto,箱根湯本,箱根汤本,ฮาโกเน่ยูโมโตะ,하코네 유모토,hakone yumoto
+85,甲州,koshu,甲州,甲州,โคชู,코슈,koshu
+86,自由が丘,jiyugaoka,自由之丘,自由之丘,จิยูกาโอกะ,지유가오카,jiyugaoka
+87,両国,ryogoku,兩國,两国,เรียวโกคุ,료고쿠,ryogoku
+88,宇都宮,utsunomiya,宇都宮,宇都宫,อุสึโนะมิยะ,우츠노미야,utsunomiya
+89,御茶ノ水,ochanomizu,御茶水,御茶水,โอฉะโนะมิสึ,오챠노미즈,ochanomizu
+90,東京,tokyo,東京,东京,โตเกียว,도쿄,tokyo
+91,日本橋,nihonbashi,日本橋,日本桥,นิฮงบาชิ,니혼바시,nihonbashi
+92,神保町,jimbocho,神保町,神保町,จิมโบโช,진보쵸,jimbocho
+93,田原町,tawaramachi,田原町,田原町,ทาวาระมาจิ,타와라마치,tawaramachi
+94,羽田,haneda,羽田,羽田,ฮาเนดะ,하네다,haneda
+95,新橋,shimbashi,新橋,新桥,ชิมบาชิ,신바시,shimbashi
+96,合羽橋,kappabashi,合羽橋,合羽桥,กัปปะบาชิ,캇파바시,kappabashi
+97,神楽坂,kagurazaka,神樂坂,神乐坂,คากุระซากะ,카구라자카,kagurazaka
+98,大宮,omiya,大宮,大宫,โอมิยะ,오미야,omiya
+99,秩父,chichibu,秩父,秩父,ชิชิบุ,치치부,chichibu
+100,汐留,shiodome,汐留,汐留,ชิโอโดเมะ,시오도메,shiodome
+101,代官山,daikanyama,代官山,代官山,ไดคังยามะ,다이칸야마,daikanyama
+102,麻布,azabu,麻布,麻布,อะซาบุ,아자부,azabu
+103,田園調布,denenchofu,田園調布,田园调布,เดนเอนโชฟุ,덴엔쵸후,denenchofu
+104,荻窪,ogikubo,荻窪,荻洼,โอกิคุโบะ,오기쿠보,ogikubo
+105,蔵前,kuramae,藏前,藏前,คุระมาเอะ,쿠라마에,kuramae
+106,本郷,hongo,本鄉,本乡,ฮงโก,혼고,hongo
+107,群馬,gunma,群馬,群马,กุนมะ,군마,gunma
+108,川越,kawagoe,川越,川越,คาวาโกเอะ,카와고에,kawagoe
+109,奥多摩,okutama,奥多摩,奥多摩,โอคุทามะ,오쿠타마,okutama
+110,葉山,hayama,葉山,叶山,ฮายามะ,하야마,hayama
+111,お台場,odaiba,台場,台场,โอไดบะ,오다이바,odaiba
+112,中目黒,nakameguro,中目黑,中目黑,นาคาเมกุโระ,나카메구로,nakameguro
+113,成田,narita,成田,成田,นาริตะ,나리타,narita
+114,日光,nikko,日光,日光,นิกโก้,닛코,nikko
+115,錦糸町,kinshicho,錦糸町,锦糸町,คินชิโช,킨시쵸,kinshicho
+116,月島,tsukishima,月島,月岛,สึคิชิม่า,츠키시마,tsukishima
+117,六本木,roppongi,六本木,六本木,รปปงงิ,롯폰기,roppongi
+118,清澄白河,kiyosumi shirakawa,清澄白河,清澄白河,คิโยสุมิชิราคาว่า,키요스미시라카와,kiyosumi shirakawa
+119,押上,oshiage,押上,押上,โอชิอาเกะ,오시아게,oshiage
+120,大手町,otemachi,大手町,大手町,โอเทะมาจิ,오테마치,otemachi
+121,有楽町,yurakucho,有樂町,有乐町,ยูราคุโจ,유라쿠쵸,yurakucho
+122,恵比寿,ebisu,惠比壽,惠比寿,เอบิสึ,에비스,ebisu
+123,神田,kanda,神田,神田,คันดะ,칸다,kanda
+124,池袋,ikebukuro,池袋,池袋,อิเคะบุคุโระ,이케부쿠로,ikebukuro
+125,丸の内,marunouchi,丸之內,丸之内,มารุโนะอุจิ,마루노우치,marunouchi
+126,舞浜,maihama,舞濱,舞滨,ไมฮามะ,마이하마,maihama
+127,原宿,harajuku,原宿,原宿,ฮาราจูกุ,하라쥬쿠,harajuku
+128,下北沢,shimokitazawa,下北澤,下北泽,ชิโมะคิตะซาว่า,시모키타자와,shimokitazawa
+129,渋谷,shibuya,澀谷,涩谷,ชิบูย่า,시부야,shibuya
+130,有明,ariake,有明,有明,อะริอาเคะ,아리아케,ariake
+131,栃木,tochigi,櫪木,枥木,โทชิกิ,도치기,tochigi
+132,横浜,yokohama,橫濱,横滨,โยโกฮาม่า,요코하마,yokohama
+133,伊豆半島,izu peninsula,伊豆半島,伊豆半岛,คาบสมุทรอิสุ,이즈 반도,izu peninsula
+134,中野,nakano,中野,中野,นากาโนะ,나카노,nakano
+135,西葛西,nishi-kasai,西葛西,西葛西,นิชิคาซาอิ,니시카사이,nishi-kasai
+136,浜松町,hamamatsucho,濱松町,滨松町,ฮามามัตสึโจ,하마마츠쵸,hamamatsucho
+137,長南町,chonan,長南町,长南町,โชนันมาจิ,쵸난쵸,chonan
+138,人形町,ningyocho,人形町,人形町,นินเกียวโช,닌교쵸,ningyocho
+139,三ノ輪,minowa,三之輪,三之轮,มิโนวะ,미노와,minowa
+140,茨城,ibaraki,茨城,茨城,อิบารากิ,이바라키,ibaraki
+141,三鷹,mikata,三鷹,三鹰,มิตากะ,미타카,mikata
+142,辻堂,tsujido,辻堂,辻堂,สึจิโด,츠지도,tsujido
+143,四ツ谷,yotsuya,四谷,四谷,ยตสึยะ,요츠야,yotsuya
+144,世田谷,setagaya,世田谷,世田谷,เซตะกายะ,세타가야,setagaya
+145,高松,takamatsu,高松,高松,ทาคามัตสึ,타카마츠,takamatsu
+146,鬼怒川,kinugawa,鬼怒川,鬼怒川,คินุกาว่า,키누가와,kinugawa
+147,麻布十番,azabujuban,麻布十番,麻布十番,อะซะบุจูบัง,아자부쥬반,azabujuban
+148,水戸,mito,水戶,水户,มิโตะ,미토,mito
+149,日比谷,hibiya,日比谷,日比谷,ฮิบิยะ,히비야,hibiya
+150,那須,nasu,那須,那须,นาสึ,나스,nasu
+151,佐原,sawara,佐原,佐原,ซะวะระ,사와라,sawara
+152,厚木,atsugi,厚木,厚木,อะสึกิ,아츠기,atsugi
+153,仙石原,sengokuhara,仙石原,仙石原,ทุ่งหญ้าเซ็นโกคุฮาระ,센고쿠하라,sengokuhara
+154,佐久島,sakushima,佐久島,佐久岛,ซะคุชิม่า,사쿠시마,sakushima
+155,岡崎,okazaki,岡崎,冈崎,โอคาซากิ,오카자키,okazaki
+156,加賀,kaga,加賀,加贺,คากะ,카가,kaga
+157,常滑,tokoname,常滑,常滑,โทโกนาเมะ,토코나메,tokoname
+158,越後湯沢,yuzawa,越後湯澤,越后汤泽,เอจิโกะยูซาว่า,에치고유자와,yuzawa
+159,福井,fukui,福井,福井,ฟุคุอิ,후쿠이,fukui
+160,白馬,hakuba,白馬,白马,ฮาคุบะ,하쿠바,hakuba
+161,伊豆,izu,伊豆,伊豆,อิสุ,이즈,izu
+162,飛騨,hida,飛驒,飞驒,ฮิดะ,히다,hida
+163,浜松,hamamatsu,濱松,滨松,ฮามะมัตสึ,하마마츠,hamamatsu
+164,高山,takayama,高山,高山,ทาคายาม่า,타카야마,takayama
+165,新潟,niigata,新潟,新潟,นีกาตะ,니가타,niigata
+166,小布施,obuse,小布施,小布施,โอบุเสะ,오부세,obuse
+167,熱海,atami,熱海,热海,อะตะมิ,아타미,atami
+168,静岡,shizuoka,靜岡,静冈,ชิซูโอกะ,시즈오카,shizuoka
+169,軽井沢,karuizawa,輕井澤,轻井泽,คารุอิซาว่า,카루이자와,karuizawa
+170,金沢,kanazawa,金澤,金泽,คานาซาว่า,카나자와,kanazawa
+171,名古屋,nagoya,名古屋,名古屋,นาโกย่า,나고야,nagoya
+172,戸隠,togakushi,戶隱,户隐,โทกะคุชิ,토가쿠시,togakushi
+173,愛知,aichi,愛知,爱知,ไอจิ,아이치,aichi
+174,石川,ishikawa,石川,石川,อิชิคาว่า,이시카와,ishikawa
+175,美濃,mino,美濃,美浓,มิโน,미노,mino
+176,野沢,nozawa,野澤,野泽,โนซาว่า,노자와,nozawa
+177,山梨,yamanashi,山梨,山梨,ยามานาชิ,야마나시,yamanashi
+178,富山,toyama,富山,富山,โทยาม่า,토야마,toyama
+179,御殿場,gotenba,御殿場,御殿场,โกะเทมบะ,고텐바,gotenba
+180,掛塚,kaketsuka,掛塚,挂塚,คาเคสึกะ,카케츠카,kaketsuka
+181,黒部立山,kurobe tateyama,黑部立山,黑部立山,คุโรเบะทาเทยามะ,쿠로베 타테야마,kurobe tateyama
+182,大阪,osaka,大阪,大坂,โอซาก้า,오사카,osaka
+183,嵐山,arashiyama,嵐山,岚山,อาราชิยามะ,아라시야마,arashiyama
+184,梅田,umeda,梅田,梅田,อุเมดะ,우메다,umeda
+185,宇治,uji,宇治,宇治,อุจิ,우지,uji
+186,枚方,hirakata,枚方,枚方,ฮิราคาตะ,히라카타,hirakata
+187,神戸,kobe,神戶,神户,โกเบ,코베,kobe
+188,四条,shijo,四條,四条,ชิโจ,시죠,shijo
+189,祇園,gion,祇園,祇园,กิอง,기온,gion
+190,東山,higashiyama,東山,东山,โทซัน,히가시야마,higashiyama
+191,烏丸,karasuma,烏丸,乌丸,คาราสุมะ,카라스마,karasuma
+192,宮ノ下,miyanoshita,宮之下,宫之下,มิยะโนะชิตะ,미야노시타,miyanoshita
+193,心斎橋,shinsaibashi,心齋橋,心斋桥,ชินไซบาชิ,신사이바시,shinsaibashi
+194,伏見,fushimi,伏見,伏见,ฟูชิมิ,후시미,fushimi
+195,鶴橋,tsuruhashi,鶴橋,鹤桥,สึรุฮาชิ,츠루하시,tsuruhashi
+196,天王寺,tennoji,天王寺,天王寺,เทนโนจิ,텐노지,tennoji
+197,鈴鹿,suzuka,鈴鹿,铃鹿,ซุซุกะ,스즈카,suzuka
+198,阪神,hanshin,阪神,坂神,ฮันชิน,한신,hanshin
+199,大谷,otani,大谷,大谷,โอทานิ,오타니,otani
+200,嵯峨野,sagano,嵯峨野,嵯峨野,ซะกะโนะ,사가노,sagano
+201,奈良,nara,奈良,奈良,นารา,나라,nara
+202,近江八幡,omihachiman,近江八幡,近江八幡,โอะมิฮะชิมัง,오미하치만,omihachiman
+203,姫路,himeji,姬路,姬路,ฮิเมจิ,히메지,himeji
+204,三船,mifune,三船,三船,มิฟุเนะ,미후네,mifune
+205,三重,mie,三重,三重,มิเอะ,미에,mie
+206,兵庫,hyogo,兵庫,兵库,เฮียวโกะ,효고,hyogo
+207,河原町,kawaramachi,河原町,河原町,คาวาระมาจิ,카와라마치,kawaramachi
+208,伊根,ine,伊根,伊根,อิเนะ,이네,ine
+209,西陣,nishijin,西陣,西阵,คิชิจิน,니시진,nishijin
+210,二寧坂,ninenzaka,二寧坂,二宁坂,นิเนนซากะ,니넨자카,ninenzaka
+211,京都,kyoto,京都,京都,เกียวโต,교토,kyoto
+212,和歌山,wakayama,和歌山,和歌山,วากายาม่า,와카야마,wakayama
+213,道頓堀,dotonbori,道頓堀,道顿堀,โดทงโบริ,도톤보리,dotonbori
+214,難波,namba,難波,难波,นัมบะ,난바,namba
+215,彦根,hikone,彥根,彦根,ฮิโคเนะ,히코네,hikone
+216,広島,hiroshima,廣島,广岛,ฮิโรชิม่า,히로시마,hiroshima
+217,倉敷,kurashiki,倉敷,仓敷,คุระชิคิ,쿠라시키,kurashiki
+218,出雲,izumo,出雲,出云,อิซูโมะ,이즈모,izumo
+219,男木島,ogijima,男木島,男木岛,เกาะโอกิจิม่า,오기지마,ogijima
+220,尾道,onomichi,尾道,尾道,โอโนะมิจิ,오노미치,onomichi
+221,今治,imabari,今治,今治,อิมะบะริ,이마바리,imabari
+222,仙酔島,sensuijima,仙醉島,仙醉岛,เซนซุยจิม่า,센스이지마,sensuijima
+223,竹原,takehara,竹原,竹原,ทะเคะฮาระ,타케하라,takehara
+224,宮島,miyajima,宮島,宫岛,มิยาจิม่า,미야지마,miyajima
+225,鳥取,tottori,鳥取,鸟取,ทตโตริ,돗토리,tottori
+226,岡山,okayama,岡山,冈山,โอคายาม่า,오카야마,okayama
+227,小豆島,shodoshima,小豆島,小豆岛,เกาะโชโดะชิมะ,쇼도시마,shodoshima
+228,松山,matsuyama,松山,松山,มัตสึยามะ,마츠야마,matsuyama
+229,徳島,tokushima,德島,德岛,โทคุชิม่า,도쿠시마,tokushima
+230,高知,kochi,高知,高知,โคจิ,고치,kochi
+231,愛媛,ehime,愛媛,爱媛,เอฮิเมะ,에히메,ehime
+232,香川,kagawa,香川,香川,คากาว่า,가가와,kagawa
+233,博多,hakata,博多,博多,ฮากาตะ,하카타,hakata
+234,阿蘇,aso,阿蘇,阿苏,อะโซ,아소,aso
+235,熊本,kumamoto,熊本,熊本,คุมาโมโตะ,구마모토,kumamoto
+236,読谷村,yomitan,讀谷村,读谷村,หมู่บ้านโยมิตัน,요미탄,yomitan
+237,国頭,kunigami,國頭,国头,คุนิกามิ,쿠니가미,kunigami
+238,竹富島,taketomi island,竹富島,竹富岛,เกาะทะเคะโทมิ,타케토미지마,taketomi island
+239,桜島,sakurajima,櫻島,樱岛,ซากุระจิมะ,사쿠라지마,sakurajima
+240,北九州,kita kyushu,北九州,北九州,คิตะคิวชู,키타큐슈,kita kyushu
+241,長崎,nagasaki,長崎,长崎,นางาซากิ,나가사키,nagasaki
+242,那覇,naha,那霸,那霸,นะฮะ,나하,naha
+243,石垣島,ishigaki island,石垣島,石垣岛,เกาะอิชิกะคิ,이시가키지마,ishigaki island
+244,屋久島,yakushima,屋久島,屋久岛,เกาะยาคุชิม่า,야쿠시마,yakushima
+245,大分,oita,大分,大分,โออิตะ,오이타,oita
+246,別府,beppu,別府,别府,เบปปุ,벳푸,beppu
+247,小倉,kokura,小倉,小仓,โคคุระ,코쿠라,kokura
+248,西表島,iriomote-jima island,西表島,西表岛,เกาะอิริโอโมเตะจิม่า,이리오모테지마,iriomote-jima island
+249,福岡,fukuoka,福岡,福冈,ฟุกุโอกะ,후쿠오카,fukuoka
+250,奄美大島,amami oshima,奄美大島,奄美大岛,เกาะอะมะมิโอชิมะ,아마미오시마,amami oshima
+251,指宿,ibusuki,指宿,指宿,อิบุสุคิ,이부스키,ibusuki
+252,宮崎,miyazaki,宮崎,宫崎,มิยาซากิ,미야자키,miyazaki
+253,宮古島,miyakojima,宮古島,宫古岛,มิยาโคะจิม่า,미야코지마,miyakojima
+254,久米島,kumejima,久米島,久米岛,คุเมะจิม่า,쿠메지마,kumejima
+255,慶良間諸島,kerama islands,慶良間諸島,庆良间诸岛,เกาะเครามะ,케라마 제도,kerama islands
+256,小笠原群島,ogasawara islands,小笠原群島,小笠原群岛,หมู่เกาะโอกะซะวะระ,오가사와라 제도,ogasawara islands
+257,工場,factory,,工厂,โรงงาน,공장,nhà máy
+258,シュノーケリング,snorkeling,浮潛(シュノーケリング),浮潜(シュノーケリング),snorkeling,스노클링,lặn với ống thở
+259,ビリヤード,billiards,,,บิลเลียด,당구,bi-da
+260,ジョギング,jogging,,,จ๊อกกิ้ง,조깅,chạy bộ
+261,フリートラベル,free exploration,,,เที่ยวอิสระ,자유 여행,khám phá tự do
+262,美容サロン,beauty salon,美容院(美容サロン),美容沙龙,ซาลอนเสริมความงาม,뷰티 살롱,thẩm mỹ viện
+263,絶景,gorgeous scenery,,,วิวทิวทัศน์,절경,phong cảnh tuyệt đẹp
+264,滝,waterfalls,瀑布,瀑布,น้ำตก,폭포,thác nước
+265,展望台,observatory,觀景台,观景台,จุดชมวิว,전망대,đài quan sát
+266,登山,mountaineering,登山,登山,ปีนเขา,등산,leo núi
+267,花見,hanami,賞花,赏花,ฮานามิ,꽃놀이,hanami (ngắm hoa)
+268,能,noh,,能剧,ละครโน,노,(kịch) Noh
+269,教会,church,教堂,教堂,โบสถ์,교회,nhà thờ
+270,庭園,garden,庭園,庭园,สวน,정원,vườn
+271,映画,theater,電影院,电影院,ภาพยนตร์,영화,rạp hát
+272,演劇,plays,,,การแสดง,연극,những vở kịch
+273,ナイトライフ,nightlife,夜生活,夜生活,เที่ยวกลางคืน,밤문화,cuộc sống về đêm
+274,足湯,footbaths,足湯,足汤,ออนเซ็นเท้า,족욕탕,bồn ngâm chân
+275,スパ,spa,SPA,SPA,สปา,스파,spa
+276,神輿,mikoshi,,,เกี้ยวมิโคชิ,미코시,(kiệu) mikoshi
+277,プール,pool,游泳池,游泳池,สระน้ำ,수영장,hồ bơi
+278,屋形船,pleasure boat,,屋形船,เรือยะกะตะ,유람선,du thuyền giải trí
+279,フルーツ狩り,fruit picking,,,เก็บผลไม้,과일 따기 체험,hái trái cây
+280,日帰り旅行,day trip,一日遊,一日游,วันเดย์ทริป,당일치기 여행,chuyến đi trong ngày
+281,露天風呂,open-air baths,露天溫泉,露天温泉,บ่อน้ำร้อนกลางแจ้ง,노천탕,phòng tắm ngoài trời
+282,美容院,hair salon,美容院,美容院,ร้านเสริมสวย,미용실,tiệm làm tóc
+283,野球観戦,watch baseball,,棒球赛,ชมการแข่งขันเบสบอล,야구 관전,xem bóng chày
+284,ピクニック,picnic,,野餐,ปิคนิค,피크닉,đi chơi picnic
+285,釣り,fishing,,钓鱼,ตกปลา,낚시,câu cá
+286,道の駅,michi no eki,,,จุดแวะพักริมทาง,휴게소,trạm dừng chân
+287,朝市,morning market,朝市,朝市,ตลาดเช้า,아침시장,chợ buổi sáng
+288,イルミネーション,illuminations,燈飾,灯饰,อิลลูมิเนชั่น,일루미네이션,hoa đăng chiếu sáng
+289,聖地巡礼,pilgrimage,聖地巡禮,圣地巡礼,ย้อนรอยสถานที่สำคัญจากภาพยนตร์,성지순례,đi hành hương
+290,市場,market,市場,市场,ตลาด,시장,chợ
+291,カラオケ,karaoke,KTV,KTV,คาราโอเกะ,노래방,karaoke
+292,スキューバダイビング,scuba diving,浮潛(スキューバダイビング),浮潜(スキューバダイビング),ดำน้ำลึก,스쿠버다이빙,môn lặn
+293,藤,wisteria,紫藤,紫藤,วิสทีเรีย,등나무,hoa Fuji (tử đằng)
+294,キャンプ,camp,露營,露营,แคมป์,캠프,cắm trại
+295,フェリー,ferry,,,เฟอร์รี่,페리,phà
+296,星,stars,觀星,观星,ดวงดาว,별,những vì sao
+297,ナイトスポット,night spots,,,ที่เที่ยวกลางคืน,야경 명소,những địa điểm ban đêm
+298,料理教室,cooking class,,,เรียนทำอาหาร,요리 교실,lớp học nấu ăn
+299,パワースポット,power spots,能量景點,能量景点,power spots,파워스폿,các điểm (tham quan) năng lượng
+300,公園,parks,公園,公园,สวนสาธารณะ,공원,những công viên
+301,歌舞伎,kabuki,歌舞伎,歌舞伎,คาบุกิ,가부키,Kịch kabuki (ca vũ kỹ)
+302,動物園,zoo,動物園,动物园,สวนสัตว์,동물원,sở thú
+303,スキー,ski,滑雪,滑雪,สกี,스키,trượt tuyết
+304,スノーボード,snowboard,,滑雪板,สโนว์บอร์ด,스노우보드,ván trượt tuyết
+305,浮世絵,ukiyoe,浮世繪,浮世绘,ukiyoe,우키요에,tranh phù thế
+306,ラフティング,rafting,泛舟,泛舟,ล่องแพ,래프팅,đi bè
+307,ハイキング,hiking,健行,健行,,하이킹,đi bộ đường dài
+308,書道,calligraphy,,书法,ศิลปะเขียนพู่กัน,서예,thư pháp
+309,ウォーキング,walking,,,เดินเท้า,워킹,đi dạo
+310,建築,architecture,建築,建筑,สถาปัตยกรรม,건축,kiến trúc
+311,夜景,night view,夜景,夜景,วิวกลางคืน,야경,cảnh đêm
+312,紅葉,autumn leaves,楓葉,枫叶,ใบไม้เปลี่ยนสี,단풍,lá mùa thu
+313,伝統工芸,traditional crafts,傳統工藝,传统工艺,หัตถกรรมพื้นบ้าน,전통공예,nghề thủ công truyền thống
+314,クルーズ,cruise,遊船,游船,เรือสำราญ,크루즈,du thuyền
+315,相撲,sumo,相撲,相扑,ซูโม่,스모,sumo
+316,水族館,aquarium,水族館,水族馆,พิพิธภัณฑ์สัตว์น้ำ,수족관,thủy cung
+317,スポーツ,sports,運動,运动,กีฬา,스포츠,các môn thể thao
+318,遊園地,amusement park,遊樂園,游乐园,สวนสนุก,유원지,công viên giải trí
+319,城,castle,城堡,城堡,ปราสาท,성,lâu đài
+320,アニメ,anime,,动画,อนิเมะ,애니메이션,phim hoạt hình (anime)
+321,世界遺産,world heritage site,世界遺產,世界遗产,มรดกโลก,세계 유산,di sản thế giới
+322,サイクリング,cycling,自行車(サイクリング),自行车(サイクリング),ปั่นจักรยาน,사이클링,đạp xe
+323,銭湯,sento,錢湯,钱汤,โรงอาบน้ำ,공중 목욕탕,nhà tắm công cộng (sento)
+324,コンセプトカフェ,themed cafe,主題咖啡,主题咖啡,คาเฟ่ธีม,컨셉 카페,quán cà phê theo chủ đề
+325,寺,temple,寺廟,寺庙,วัด,절,ngôi đền
+326,神社,shrine,神社,神社,ศาลเจ้า,신사,"điện, miếu thờ"
+327,座禅,meditation,,,นั่งสมาธิ,좌선,sự thiền định
+328,温泉,hot spring,溫泉,温泉,ออนเซ็น,온천,suối nước nóng
+329,忍者,ninja,忍者,忍者,นินจา,닌자,ninja
+330,着物,kimono,和服(着物),和服(着物),กิโมโน,기모노,kimono
+331,スタジアム,stadium,,,สนามกีฬา,경기장,sân vận động
+332,古い町並み,retro townscape,,,เมืองเก่า,옛 거리,cảnh quan hoài cổ của thị trấn
+333,池,lake,,,บ่อน้ำ,연못,hồ
+334,沼,marsh,,,บึง,늪,đầm lầy
+335,海,sea,海景,海景,ทะเล,바다,biển
+336,プラネタリウム,planetarium,,,ท้องฟ้าจำลอง,플라네타리움,trạm thiên văn
+337,博物館,museum,博物館,博物馆,พิพิธภัณฑ์,박물관,viện bảo tàng
+338,牧場,farm,牧場,牧场,ฟาร์ม,목장,nông trại
+339,湖,,湖,湖,ทะเลสาบ,호수,
+340,折り紙,origami,,,โอริกามิ,종이접기,origami (xếp giấy)
+341,吊り橋,suspension bridge,吊橋,吊桥,สะพานแขวน,현수교,cầu treo
+342,洞,cave,,,ถ้ำ,동굴,hang động
+343,動物,animals,,,สัตว์,동물,động vật
+344,ジム,gym,,,ยิม,체육관,phòng thể dục
+345,競馬,horse races,賽馬,赛马,แข่งม้า,경마,cuộc đua ngựa
+346,脱出ゲーム,escape games,,,escape games,탈출 게임,trò chơi trốn thoát
+347,武道,martial arts,,,ศิลปะการต่อสู้,무도,võ thuật
+348,陶芸工房,ceramics workshop,,,โรงเครื่องปั้นดินเผา,도예 공방,xưởng gốm
+349,下町,working class areas,下町,下町,ดาวน์ทาวน์,시타마치,khu vực tầng lớp lao động
+350,文化財,cultural assets,文化財產,文化财产,มรดกทางวัฒนธรรม,문화재,tài sản văn hóa
+351,和室,japanese-style room,和室,和室,ห้องสไตล์ญี่ปุ่น,일본식 방,phòng kiểu Nhật
+352,日本三景,japan's three famous sights,日本三景,日本三景,สามสุดยอดทิวทัศน์ในญี่ปุ่น,일본 3경,ba điểm tham quan nổi tiếng của Nhật Bản
+353,美術館,art gallery,美術館,美术馆,พิพิธภัณฑ์ศิลปะ,미술관,triển lãm nghệ thuật
+354,海水浴場,beach,海水浴場,海水浴场,ชายหาด,해수욕장,bờ biển
+355,音楽祭,music festival,音樂祭,音乐祭,เทศกาลดนตรี,음악제,lễ hội âm nhạc
+356,鍾乳洞,solutional cave,鐘乳石洞,钟乳石洞,ถ้ำหินปูน,종유동,hang động thạch nhũ
+357,買い物,shopping,購物,购物,ช็อปปิ้ง,쇼핑,mua sắm
+358,お化け屋敷,haunted house,,鬼屋,บ้านผีสิง,유령의 집,ngôi nhà ma
+359,ライトアップ,,點燈,点灯,ไลท์อัพ,야간 조명 행사,
+360,本屋,bookstore,書店,书店,ร้านหนังสือ,서점,hiệu sách
+361,見学施設,factory tour,觀光工廠,观光工厂,ทัศนศึกษา,견학 시설,tham quan nhà máy
+362,サーキット,race track,賽車場,赛车场,สนามแข่งรถ,서킷,đường đua
+363,観覧車,ferris wheel,摩天輪,摩天轮,ชิงช้าสวรรค์,관람차,bánh xe đu quay
+364,気球,hot air balloon,熱氣球,热气球,บอลลูน,기구,khinh khí cầu
+365,マリンスポーツ,water sports,水上活動,水上活动,กีฬาทางน้ำ,해양 스포츠,thể thao dưới nước
+366,離島,,島,岛,เกาะกลางทะเล,낙도,
+367,自然,nature,自然,自然,ธรรมชาติ,자연,thiên nhiên
+368,鳥居,,鳥居,鸟居,โทริอิ,토리이,
+369,蚤の市,,市集,市集,ตลาดนัด,플리마켓,
+7914,モデルコース,travel itinerary,示範行程,示范行程,แพลนเที่ยวยอดฮิต,기본 관광 코스,hành trình du lịch
+7934,イベント,events,活動,活动,อีเวนต์,이벤트,sự kiện
+370,屋台,street food,路邊攤,路边摊,ยะไต,노점,thức ăn đường phố
+371,から揚げ,karaage,,,คาราอาเกะ,가라아게,gà chiên Karaage
+372,煎茶,japanese tea,,,ชาญี่ปุ่น,녹차,trà Nhật bản
+373,レストラン,restaurant,,,ร้านอาหาร,레스토랑,nhà hàng
+374,デザート,sweets,甜點,甜点,ของหวาน,디저트,kẹo bánh
+375,牡蠣,oysters,,牡蛎,หอยนางรม,굴,hàu
+376,焼きそば,yakisoba,,炒面,ยากิโซบะ,야키소바,mì xào yakisoba
+377,ベジタリアン,vegetarian,素食,素食,มังสวิรัติ,채식주의자,ăn chay
+378,ビール,beer,啤酒,啤酒,เบียร์,맥주,bia
+379,カレー,curry,咖哩,咖哩,แกงกะหรี่,카레,cà ri
+380,鍋,hot pot,火鍋,火锅,หม้อไฟ,전골,lẩu
+381,抹茶,matcha,抹茶,抹茶,มัทฉะ,말차,Trà xanh matcha
+382,海鮮丼,kaisendon,海鮮丼,海鲜丼,ไคเซนด้ง,해산물 덮밥,cơm hải sản (kaisendon)
+383,ディナー,dinner,晚餐,晚餐,อาหารเย็น,디너,bữa tối
+384,マグロ,tuna,,鲔鱼,มากุโระ,참치,cá tuna
+385,オーガニック,organic,,,ออร์แกนิค,유기농,hữu cơ
+386,とんかつ,tonkatsu,炸豬排,炸猪排,ทงคัตสึ,돈가스,thịt lợn chiên bột (tonkatsu)
+387,定食,set meal,定食,定食,อาหารชุด,정식,đặt bữa ăn
+388,インスタントラーメン,instant ramen,泡麵,泡麵,บะหมี่กึ่งสำเร็จรูป,인스턴트 라면,mỳ ramen ăn liền
+389,醤油ラーメン,shoyu ramen,,,โชยุราเมง,쇼유 라멘,mỳ ramen shoyu
+390,ほうじ茶,hojicha,,,ชาโฮจิ,호지차,bồi trà (hojicha)
+391,居酒屋,izakaya,居酒屋,居酒屋,อิซากายะ,이자카야,quán nhậu
+392,いちご,strawberry,,草莓,สตรอเบอร์รี่,딸기,dâu tây
+393,天ぷら,tempura,天婦羅,天妇罗,เทมปุระ,덴푸라,tempura
+394,神戸牛,kobe beef,,,เนื้อโกเบ,고베 소고기,thịt bò Kobe
+395,刺身,sashimi,生魚片,生鱼片,ซาชิมิ,회,món cá sống (sashimi)
+396,松坂牛,matsusaka beef,,,เนื้อมัตสึซากะ,마츠사카 소고기,thịt bò Matsusaka
+397,駅弁,ekiben,,铁路便当,ข้าวกล่องรถไฟ,에키벤 도시락,cơm hộp bán tại ga
+398,塩ラーメン,salt ramen,,,ราเมงเกลือ,시오 라멘,mỳ ramen muối
+399,味噌ラーメン,miso ramen,,,มิโซะราเมง,미소 라멘,mỳ ramen miso
+400,豚骨ラーメン,tonkotsu ramen,,,ทงคตสึราเมง,돈코츠 라멘,mỳ ramen hầm xương
+401,和牛,wagyu,和牛,和牛,วากิว,와규,bò Nhật Bản
+402,天丼,tendon,,天丼,เทนด้ง,일식 튀김 덮밥,cơm tempura (tendon)
+403,軽食,,,轻食,ของว่าง,간단한 식사,
+404,サラダ,salad,,沙拉,สลัด,샐러드,sa lát
+405,豚肉,pork,豬肉,猪肉,เนื้อหมู,돼지고기,thịt heo
+406,牛タン,beef tongue,牛舌,牛舌,ลิ้นวัว,우설,lưỡi bò
+407,精進料理,buddhist cuisine,,精进料理,อาหารมังสวิรัติ,사찰요리,ẩm thực phật giáo
+408,ケーキ,cake,蛋糕,蛋糕,เค้ก,케이크,bánh ngọt
+409,かに,crab,螃蟹,螃蟹,ปู,게,cua
+410,ワッフル,waffle,,,วาฟเฟิล,와플,bánh quế (waffle)
+411,伊勢海老,spiny lobster,,,กุ้งอิเสะ,닭새우,tôm rồng
+412,ピザ,pizza,披薩,披萨,พิซซ่า,피자,pizza
+413,餃子,gyoza,餃子,饺子,เกี๊ยวซ่า,만두,sủi cảo
+414,ビーガン,vegan,,纯素食,วีแกน,비건,thuần chay
+415,カフェ,cafe,咖啡廳,咖啡厅,คาเฟ่,카페,quán cà phê
+416,パン,bread,麵包,麵包,ขนมปัง,빵,bánh mỳ
+417,お米,rice,米,米,ข้าว,쌀,cơm
+418,焼酎,shochu,燒酒,烧酒,โชจู,일본소주,rượu shochu
+419,おにぎり,onigiri,飯糰,饭糰,โอนิกิริ,주먹밥,cơm nắm (onigiri)
+420,うなぎ,unagi,鰻魚,鳗鱼,ปลาไหล,장어,lươn
+421,納豆,natto,納豆,纳豆,นัตโตะ,낫토,đậu hũ thúi (natto)
+422,お好み焼き,okonomiyaki,御好燒,御好烧,โอโคโนมิยากิ,오코노미야키,bánh xèo kiểu Nhật (okonomiyaki)
+423,たこ焼き,takoyaki,章魚燒,章鱼烧,ทาโกยากิ,타코야키,bạch tuộc chiên bột (takoyaki)
+424,馬肉,horse meat,,马肉,เนื้อม้า,말고기,thịt ngựa
+425,すき焼,sukiyaki,壽喜燒,寿喜烧,สุกี้ยากี้,스키야키,lẩu sukiyaki
+426,日本酒,japanese alcohol,日本酒,日本酒,เหล้าญี่ปุ่น,일본주,rượu Nhật
+427,ハンバーガー,hamburger,漢堡,汉堡,แฮมเบอร์เกอร์,햄버거,hamburger
+428,丼ぶり,rice bowl dishes,丼飯,丼饭,ดงบุริ,덮밥,bát cơm
+429,サンドウィッチ,sandwich,三明治,三明治,แซนด์วิช,샌드위치,bánh mì sandwich
+430,ちゃんこ鍋,chanko,相撲火鍋,相扑火锅,จังโกะ,챤코나베,lẩu sumo (chanko)
+431,揚げ物,fried foods,炸物,炸物,ของทอด,튀김,đồ ăn chiên
+432,フルーツ,fruit,水果,水果,ผลไม้,과일,trái cây
+433,懐石料理,kaiseki,懷石料理,怀石料理,อาหารไคเซกิ,가이세키 요리,ẩm thực kaiseki
+434,ハラル,halal,清真,清真,ฮาลาล,할랄,halal
+435,ファーストフード,fast food,速食,速食,ฟาสต์ฟู้ด,패스트 푸드,đồ ăn nhanh
+436,和食,japanese food,和食,和食,อาหารญี่ปุ่น,일식,đồ ăn Nhật Bản
+437,ファミレス,family restaurant,家庭餐廳,家庭餐厅,family restaurant,패밀리 레스토랑,quán ăn gia đình
+438,チーズフォンデュ,cheese fondue,,起司锅,ฟองดูชีส,치즈 퐁듀,món Fondue phô mai
+439,おでん,oden,關東煮,关东煮,โอเด้ง,오뎅,oden
+440,うどん,udon,烏龍麵,乌龙麵,อุด้ง,우동,mỳ udon
+441,ウニ,sea urchin,海膽,海胆,หอยเม่น,성게,nhím biển
+442,昼食,lunch,午餐,午餐,อาหารกลางวัน,점심,bữa trưa
+443,ミシュラン,michelin,米其林,米其林,มิชลิน,미슐랭,sao michelin
+444,お菓子,snacks,零食,零食,ขนม,과자,đồ ăn nhẹ
+445,ウイスキー,whisky,,威士忌,วิสกี้,위스키,whisky
+446,チョコレート,chocolate,巧克力,巧克力,ช็อกโกแลต,초콜릿,sô cô la
+447,酎ハイ,chuhai,,碳酸酒,ชูไฮ,츄하이,rượu chuhai
+448,和菓子,wagashi,和菓子,和菓子,ขนมญี่ปุ่น,화과자,bánh kẹo Nhật Bản (wagashi)
+449,蕎麦,soba,蕎麥麵,荞麦麵,โซบะ,메밀국수,mỳ soba
+450,焼き鳥,yakitori,烤雞肉串,烤鸡肉串,ยากิโทริ,닭꼬치,thịt gà xiên nướng (yakitori)
+451,ビュッフェ,buffet,,自助餐,บุฟเฟ่ต์,뷔페,tiệc đứng
+452,郷土料理,local cuisine,鄉土料理,乡土料理,อาหารท้องถิ่น,향토요리,ẩm thực địa phương
+453,朝食,breakfast,早餐,早餐,อาหารเช้า,조식,bữa ăn sáng
+454,アイスクリーム,ice cream,冰品,冰品,ไอศกรีม,아이스크림,kem
+455,コーヒー,coffee,咖啡,咖啡,กาแฟ,커피,cà phê
+456,パンケーキ,pancake,鬆餅,鬆饼,แพนเค้ก,팬케이크,bánh kếp
+457,オムライス,omurice,,蛋包饭,ข้าวห่อไข่,오므라이스,cơm cuộn trứng
+458,ナポリタン,napolitan,,,napolitan,나폴리탄 스파게티,mỳ Ý Napolitan
+459,エビフライ,fried shrimp,,炸虾,กุ้งทอด,새우 튀김,tôm chiên
+460,親子丼,oyako-don,,亲子丼,โอยาโกะด้ง,오야코돈,cơm oyako-don
+461,ラーメン,ramen,拉麵,拉麵,ราเมง,라멘,mỳ ramen
+462,酒,alcohol,酒,酒,เหล้า,술,"rượu, có cồn"
+463,食堂,cafeteria,食堂,食堂,โรงอาหาร,식당,quán cà phê
+464,鉄板焼き,teppanyaki,鐵板燒,铁板烧,เทปปังยากิ,철판구이,món nướng teppanyaki
+465,マカロン,macaron,,马卡龙,มาการอง,마카롱,bánh macaron
+466,グミ,gummies,,软糖,เยลลี่,젤리,kẹo dẻo
+467,弁当,bento,便當,便当,เบนโตะ,도시락,cơm hộp (bento)
+468,焼肉,yakiniku,燒肉,烧肉,ยากินิคุ,야키니쿠,thịt nướng (yakiniku)
+469,ラムネ,ramune,,,รามูเนะ,라무네,nước ngọt (ramune)
+470,ふりかけ,furikake,,,ผงโรยข้าว,후리카케,thức ăn rắc lên cơm (furikake)
+471,かき氷,shaved ice,,,น้ำแข็งไส,빙수,đá bào
+472,お茶漬け,ochazuke,,茶泡饭,โอฉะสึเกะ,오챠즈케,chè/ trà trộn vào cơm
+473,ミルク,milk,,牛奶,นม,밀크,sữa
+474,寿司,sushi,壽司,寿司,ซูชิ,초밥,sushi
+475,豆腐,tofu,,豆腐,เต้าหู้,두부,đậu hũ
+476,豆乳,soy milk,,豆浆,น้ำเต้าหู้,두유,sữa đậu nành
+477,あんこ,anko,,,ถั่วแดงกวน,팥소,bánh anko
+478,もち,mochi,,麻糬,โมจิ,떡,nếp
+479,緑茶,green tea,,绿茶,ชาเขียว,녹차,trà xanh
+480,枝豆,edamame,,,ถั่วแระญี่ปุ่น,에다마메,đậu nành non
+481,味噌,miso,,味噌,มิโซะ,미소,tương miso
+482,醤油,soy sauce,,酱油,โชยุ,간장,nước tương
+483,海鮮,seafood,海鮮,海鲜,อาหารทะเล,해산물,đồ ăn biển
+484,虫,bugs,,,แมลง,벌레,nhộng
+485,パルフェ・パフェ,parfait,,,พาเฟ่ต์,파르페,món kem trái cây parfait
+486,ズワイガニ,snow crab,,,ปูหิมะ,바다참게,cua tuyết
+487,こばこかに,kobako crab,,,ปูโคบาโกะ,대게,cua kobako
+488,治部煮,jibuni,,,จิบุนิ,지부니,món nấu jibuni
+489,しゃぶしゃぶ,shabu-shabu,,涮涮锅,ชาบูชาบู,샤부샤부,lẩu shabu-shabu
+490,牛丼,gyudon,,牛丼,ข้าวหน้าเนื้อ,소고기 덮밥,cơm thịt bò gyudon
+491,うな丼,unadon,,,ข้าวหน้าปลาไหล,장어 덮밥,cơm lươn unadon
+492,カツ丼,katsudon,,,คัตสึด้ง,돈가스 덮밥,cơm thịt lợn chiên bột katsudon
+493,フグ,blowfish,,河豚,ปลาปักเป้า,복어,cá bơn
+494,チーズケーキ,cheesecake,,,ชีสเค้ก,치즈 케이크,bánh pho mát
+495,バウムクーヘン,baumkuchen,,,บามคูเฮง,바움쿠헨,bánh baumkuchen
+496,スープカレー,soup curry,,汤咖哩,ซุปแกงกะหรี่,스프 카레,súp cà ri
+497,そうめん,somen noodles,,,โซเมง,소면,mì somen
+498,柿,persimmon,,,ลูกพลับ,감,hồng
+499,たこ,octopus,,章鱼,หมึกยักษ์,문어,bạch tuộc
+500,いか,squid,,,หมึก,오징어,mực ống
+501,どら焼き,dorayaki,,铜锣烧,โดรายากิ,도라야키,bánh rán dorayaki
+502,プリン,pudding,,布丁,พุดดิ้ง,푸딩,kem flan
+503,ハンバーグ,hamburg steak,,,แฮมเบิร์ก,햄버그,bít tết hamburg
+504,串カツ,pork skewers,,,คุชิคัตสึ,쿠시카츠,xiên thịt lợn
+505,メイド喫茶,maid cafe,,,เมดคาเฟ่,메이드 카페,quán cà phê hầu gái
+506,回転寿司,sushi train,迴轉壽司,迴转寿司,ซูชิสายพาน,회전 초밥,sushi băng chuyền
+507,広島風お好み焼き,hiroshima style okonomiyaki,,广岛烧,ฮิโรชิม่ายากิ,히로시마식 오코노미야키,bánh xèo okonomiyaki kiểu Hiroshima
+508,煎餅,rice cracker,仙貝,仙贝,เซมเบ้,센베이 과자,bánh gạo
+509,もんじゃ焼き,monjayaki,文字燒,文字烧,มอนจายากิ,몬쟈야키,bánh xèo monjayaki
+510,パスタ,pasta,義大利麵,义大利麵,พาสต้า,파스타,mỳ pasta
+511,コロッケ,croquettes,,可乐饼,โคร็อคเกะ,고로케,món viên cờ rốc kê
+512,バー,bar,酒吧,酒吧,บาร์,바,bar
+513,ステーキ,steak,牛排,牛排,สเต็ก,스테이크,steak
+514,大阪風お好み焼き,osaka-style okonomiyaki,,大坂烧,โอโคโนมิยากิสไตล์โอซาก้า,오사카식 오코노미야키,bánh xèo okonomiyaki kiểu Osaka
+515,ヘアケア,haircare,,,haircare,헤어케어,chăm sóc tóc
+516,文房具,stationery,文具,文具,เครื่องเขียน,문방구,văn phòng phẩm
+517,美容液,beauty serums,,,เซรั่มเสริมความงาม,미용액,serum làm đẹp
+518,お箸,chopsticks,,筷子,ตะเกียบ,젓가락,đũa
+519,香水,perfume,,香氛,น้ำหอม,향수,nước hoa
+520,スーパーマーケット,supermarket,超市,超市,ซูเปอร์มาร์เก็ต,슈퍼마켓,siêu thị
+521,カメラ,camera,相機,相机,กล้อง,카메라,máy ảnh
+522,中古店,secondhand store,二手商店,二手商店,ร้านมือสอง,중고품점,cửa hàng bán đồ đã qua sử dụng
+523,スキンケア,skincare,,,ผลิตภัณฑ์บำรุงผิว,스킨케어,chăm sóc da
+524,薬局,drugstore,藥妝店,药妆店,ร้านขายยา,약국,nhà thuốc
+525,お金,money,,钱,เงิน,돈,tiền bạc
+526,100円ショップ,100 yen shop,百圓商店,百圆商店,ร้านร้อยเยน,100엔숍,cửa hàng 100 yên
+527,薬,medicine,藥,药,ยา,약,dược phẩm
+528,コンビニ,convenience store,便利商店,便利商店,ร้านสะดวกซื้อ,편의점,cửa hàng tiện dụng
+529,おもちゃ,toy,玩具,玩具,ของเล่น,장난감,đồ chơi
+530,眼鏡,glasses,,眼镜,แว่นตา,안경,mắt kính
+531,デパート,department stores,百貨公司,百货公司,ห้างสรรพสินค้า,백화점,cửa hàng bách hóa
+532,お土産,souvenirs,伴手禮,伴手礼,ของฝาก,기념품,những món quà lưu niệm
+533,商店街,shopping street,商店街,商店街,ย่านร้านค้า,상점가,phố mua sắm
+534,洋服,clothes,衣服,衣服,เครื่องแต่งกาย,옷,quần áo
+535,コスメ,makeup,,美妆,,코스메틱,trang điểm
+536,浴衣,yukata,浴衣,浴衣,ยูกาตะ,유카타,kimono mùa hè (yukata)
+537,ファッション小物,accessories,,,เครื่องประดับ,패션 소품,phụ kiện
+538,電気製品,electronics,電器,电器,เครื่องใช้ไฟฟ้า,전기제품,thiết bị điện tử
+539,アウトレット,outlet store,outlet,outlet,เอ้าเลท,아웃렛,cửa hàng giảm giá outlet
+540,炊飯器,rice cookers,,电子锅,หม้อหุงข้าว,전기밥솥,nồi cơm điện
+541,食料品,groceries,雜貨,杂货,ของกิน,식료품,cửa hàng tạp hóa
+542,薬用化粧品,medicated cosmetics,藥妝,药妆,เครื่องสำอางบำรุง,약용 화장품,mỹ phẩm thuốc
+543,和服,japanese clothing,和服,和服,เสื้อผ้าสไตล์ญี่ปุ่น,일본 의상,quần áo Nhật Bản
+544,化粧品,cosmetics,,化妆品,เครื่องสำอาง,화장품,mỹ phẩm
+545,ファッション,fashion,時尚,時尚,แฟชั่น,패션,thời trang
+546,アパートメントホテル,apartment hotel,公寓式飯店,公寓式酒店,apartment hotel,레지던스 호텔,khách sạn căn hộ
+547,宿坊,shukubo,,,ชุคุโบ,템플스테이,nghỉ trọ tại chùa
+548,キッチン付きホテル,hotels with kitchens,,,โรงแรมพร้อมห้องครัว,주방이 있는 호텔,khách sạn có bếp
+549,ラブホテル,love hotel,情趣旅館,情人旅馆,เลิฟโฮเต็ล,러브호텔,khách sạn tình yêu
+550,ゲストハウス,guest house,民宿,民宿,เกสต์เฮ้าส์,게스트하우스,nhà khách
+551,ホステル,hostel,青年旅館,青年旅社,โฮสเทล,호스텔,khách sạn
+552,旅館,ryokan,旅館,旅馆,เรียวคัง,료칸,lữ quán (nhà trọ kiểu Nhật)
+553,注文,order,,,สั่งซื้อ,주문,gọi món
+554,おもてなし,hospitality,,,omotenashi,접대,lòng hiếu khách
+555,挨拶,greetings,,问候语,การทักทาย,인사,lời chào hỏi
+556,駅,train station,車站,车站,สถานี,역,ga xe lửa
+557,地下鉄,subway,地下鐵,地下铁,รถไฟใต้ดิน,지하철,xe điện ngầm
+558,喫煙所,smoking area,,吸菸场所,ที่สูบบุหรี่,흡연구역,khu vực hút thuốc
+559,インターネット,internet,,网路,อินเตอร์เน็ต,인터넷,internet
+560,台風,typhoon,,颱风,ไต้ฝุ่น,태풍,bão
+561,空港,airport,機場,机场,สนามบิน,공항,sân bay
+562,結婚式,wedding,,婚礼,งานแต่งงาน,결혼식,lễ cưới
+563,免税,duty free,免稅,免税,ปลอดภาษี,면세,miễn thuế
+564,自転車,bicycle,自行車(自転車),自行车(自転車),จักรยาน,자전거,xe đạp
+565,新幹線,bullet train,新幹線,新干线,ชินคันเซ็น,신칸센,tàu cao tốc
+566,車,car,車,车,รถยนต์,자동차,xe hơi
+567,東京メトロ,tokyo metro,東京Metro地鐵,东京Metro地铁,tokyo metro,도쿄 메트로,tàu điện ngầm tokyo
+568,レンタカー,rent a car,租車,租车,รถเช่า,렌터카,thuê một chiếc xe
+569,wifi,wifi,wifi,wifi,wifi,wifi,wifi
+570,クーポン,coupon,優惠券,优惠券,คูปอง,쿠폰,phiếugiảm giá
+571,アプリ,app,app,app,แอปพลิเคชั่น,앱,app
+572,フリーパス,free pass,優惠套票,周游券,ฟรีพาส,프리패스,vé miễn phí
+573,ロッカー,locker,置物櫃,置物柜,ล็อกเกอร์,로커,khóa
+574,タクシー,taxis,,计程车,แท็กซี่,택시,taxi
+575,路面電車,trams,,路面电车,รถแทรม,노면전차,xe điện
+576,電車,trains,電車,电车,รถไฟ,전철,tàu điện
+577,鉄道,railway,鐵道,铁道,ทางรถไฟ,철도,đường sắt
+578,バリアフリー,accessibility,無障礙,无障碍,Barrier free,장애인 배려시설,khả năng tiếp cận
+579,バス,bus,巴士,公交,รถบัส,버스,xe buýt
+5564,天候,weather,氣候,气候,สภาพอากาศ,날씨,thời tiết
+7923,低予算旅行,budget travel,低預算旅行,低预算旅行,ประหยัด,저예산여행,ngân sách du lịch
+7939,交通,transportation,交通,交通,การเดินทาง,교통,vận chuyển
+7940,マナー,manners,禮儀,礼仪,มารยาท,매너,"tác phong, phép ứng xử"
+580,冬,winter,冬,冬,ฤดูหนาว,겨울,mùa đông
+581,秋,autumn,秋,秋,ฤดูใบไม้ร่วง,가을,mùa thu
+582,春,spring,春,春,ฤดูใบไม้ผลิ,봄,mùa xuân
+583,夏,summer,夏,夏,ฤดูร้อน,여름,mùa hè
+584,雪まつり,snow festival,雪祭,雪祭,เทศกาลหิมะ,눈 축제,lễ hội tuyết
+585,ひな祭り,hinamatsuri,女兒節,女儿节,เทศกาลฮินะ,히나마츠리,lễ hội búp bê
+586,メイド,maids,女僕,女僕,เมดสาว,메이드,người giúp việc
+587,花火大会,fireworks,煙火大會,烟火大会,การแสดงจุดดอกไม้ไฟ,불꽃놀이 대회,pháo hoa
+588,芸者,geisha,藝伎,艺伎,เกอิชา,게이샤,geisha
+589,舞妓,maiko,舞伎,舞伎,ไมโกะ,마이코,maiko
+590,桜,sakura,櫻花,樱花,ซากุระ,벚꽃,sakura
+591,展覧会,exhibition,展覽,展览,นิทรรศการ,전람회,triển lãm
+592,アート,art,藝術,艺术,ศิลปะ,아트,nghệ thuật
+593,アイドル,idol,偶像明星,偶像明星,ไอดอล,아이돌,thần tượng
+594,学校,school,學校,学校,โรงเรียน,학교,trường học
+595,盆栽,bonsai,盆栽,盆栽,บอนไซ,분재,bonsai
+596,日本語,japanese,日文,日文,ภาษาญี่ปุ่น,일본어,tiếng Nhật
+597,楽器,instruments,樂器,乐器,เครื่องดนตรี,악기,dụng cụ
+598,ゲーム,video games,遊戲,游戏,เกม,게임,trò chơi điện tử
+599,本,books,書,书,หนังสือ,책,sách
+600,祭り,festival,祭典,祭典,เทศกาล,마츠리,lễ hội
+601,マスコット,mascots,,,มาสค็อต,마스코트,linh vật
+602,クリスマス,christmas,聖誕節,圣诞节,คริสต์มาส,크리스마스,giáng sinh
+603,トレンド,trends,,,เทรนด์,트렌드,xu hướng
+604,梅,ume,,梅花,บ๊วย,매실,mơ
+605,ラベンダー,lavender,,薰衣草,ลาเวนเดอร์,라벤더,hoa oải hương
+606,野球,baseball,棒球,棒球,เบสบอล,야구,bóng chày
+607,ひまわり,sunflowers,,向日葵,ดอกทานตะวัน,해바라기,hoa hướng dương
+608,安い,cheap,,高CP值,ราคาถูก,저렴한,rẻ
+609,銀杏,ginkgo,銀杏,银杏,แปะก๊วย,은행,bạch quả
+610,オタク,otaku,宅文化,宅文化,โอตาคุ,오타쿠,người hâm mô truyện tranh và phim hoạt hình (otaku)
+611,南部鐵器,nambu tekki ironware,,,เครื่องโลหะนันบุ,남부 철기,đồ sắt nambu
+612,袴,hakama,,袴,ฮากามะ,하카마,quần ống rộng hakama
+613,金箔,gold leaf,,金箔,ทองคำเปลว,금박,lá vàng
+614,あじさい,hydrangeas,繡球花,绣球花,อาจิไซ,수국,hoa cẩm tú cầu
+615,御朱印,goshuin,御朱印,御朱印,ตราชูอิน,고슈인,"châu ấn (goshuin) tại đền, chùa"
+616,ゴールデンウィーク,golden week,黃金週,黄金週,โกลเด้นวีค,골든위크,tuần lễ vàng
+617,お守り,charm,御守,御守,เครื่องราง,부적,quyến rũ
+618,東京タワー,tokyo tower,東京鐵塔,东京铁塔,โตเกียวทาวเวอร์,도쿄타워,tháp Tokyo
+619,アンパンマンこどもミュージアム,,,,พิพิธภัณฑ์อันปังแมน,호빵맨 어린이 박물관,
+620,高知県立坂本龍馬記念館,the sakamoto ryoma memorial museum,,,พิพิธภัณฑ์อนุสรณ์สถานซากาโมโตะ เรียวมะ,고치 현립 사카모토 료마 기념관,bảo tàng tưởng niệm Sakamoto Ryoma
+621,熱田神宮,atsuta shrine,熱田神宮,热田神宫,ศาลเจ้าอะสึตะ,아츠타 신궁,điện thờ Atsuta
+622,お台場海浜公園,odaiba marine park,台場海濱公園,台场海滨公园,สวนโอไดบะไคฮิน,오다이바 해변공원,Công viên hàng hải Odaiba
+623,富士急ハイランド,fuji-q highland,富士急樂園,富士急乐园,ฟูจิคิวไฮแลนด์,후지큐 하이랜드,công viên trên cao Fuji-q
+624,東映太秦映画村,toei kyoto studio park,,,กองถ่ายภาพยนตร์โทเออิเกียวโต,토에이 우즈마사 에이가무라,công viên Toei Kyoto Studio
+625,吾妻橋,,,,สะพานอะสุมะบาชิ,아즈마바시 다리,
+626,上野動物園,ueno zoo,上野動物園,上野动物园,สวนสัตว์อุเอโนะ,우에노 동물원,sở thú Ueno
+627,よこはまコスモワールド,,,,โยโกฮาม่าคอสโม่เวิร์ล,요코하마 코스모월드,
+628,水木しげる記念館,mizuki shigeru museum,,,พิพิธภัณฑ์มิสุกิชิเกะรุ,미즈키 시게루 기념관,bảo tàng Mizuki Shigeru
+629,ナガシマスパーランド,,,,นากาชิมะสปาแลนด์,나가시마 스파 랜드,
+630,琴林公園,,,,สวนคินริน,긴린 공원,
+631,江戶東京建築園,edo-tokyo open air architectural museum,,,พิพิธภัณฑ์กลางแจ้งเอโดะ,에도 도쿄 다테모노엔,bảo tàng kiến trúc ngoài trời Edo-Tokyo
+632,すみだ水族館,sumida aquarium,,,พิพิธภัณฑ์สัตว์น้ำซุมิดะ,스미다 수족관,thủy cung Sumida
+633,サントリー美術館,,,,หอศิลป์ซันโทรี่,산토리 미술관,
+634,山下公園,,,,สวนยามาชิตะ,야마시타 공원,
+635,東京スカイツリー,tokyo skytree,晴空塔,晴空塔,โตเกียวสกายทรี,도쿄 스카이트리,Tokyo skytree
+636,帝國城,,,,ปราสาทเทโคคุ,,
+637,中部国際空港,chubu centrair international airport,中部國際機場,中部国际机场,สนามบินนานาชาติชูบุ,주부 국제공항,sân bay quốc tế trung tâm Chubu
+638,東京ドームシティ,tokyo dome city,,,โตเกียวโดมซิตี้,도쿄 돔 시티,Tokyo Dome city
+639,スヌーピーミュージアム,snoopy museum,,,พิพิธภัณฑ์สนูปปี้,스누피 뮤지엄,bảo tàng Snoopy
+640,六本木ヒルズ,roppongi hills,六本木新城,六本木新城,รปปงงิฮิลส์,롯폰기 힐스,Roppongi hills
+641,あべのハルカス,abeno harukas,,,อาเบะโนะฮะรุคะสุ,아베노 하루카스,tòa cao ốc Abeno Harukas
+642,新横浜ラーメン博物館,shin-yokohama raumen museum,,,พิพิธภัณฑ์ราเมงชินโยโกฮาม่า,신요코하마 라멘 박물관,bảo tàng mỳ ramen Shin-Yokohama
+643,サンシャイン水族館,sunshine aquarium,,,พิพิธภัณฑ์สัตว์น้ำซันไชน์,선샤인 수족관,thủy cung Sunshine
+644,梅田スカイビル,umeda sky building,梅田藍天大廈,梅田蓝天大厦,อาคารชมวิวอุเมดะสกาย,우메다 스카이빌딩,tòa nhà Umeda sky
+645,横浜赤レンガ倉庫,yokohama red brick warehouse,橫濱紅磚倉庫,横滨红砖仓库,ตึกแดงโยโกฮาม่า,요코하마 아카렌가 창고,khu nhà gạch đỏ Yokohama
+646,レオマリゾート,reoma resort,雷歐瑪渡假村,雷欧玛渡假村,เรโอมะรีสอร์ต,레오마 리조트,khu nghỉ dưỡng Reoma
+647,東京ジョイポリス,tokyo joypolis,,,โตเกียวจอยโพลิส,도쿄 조이폴리스,trung tâm giải trí Tokyo Joypolis
+648,後樂園,korakuen,後樂園,后乐园,สวนโคราคุเอน,고라쿠엔,Korakuen
+649,鈴鹿サーキット,suzuka circuit,鈴鹿賽車場,铃鹿赛车场,สนามแข่งรถซุซุกะ,스즈카 서킷,trường đua xe Suzuka
+650,東京都庁,tokyo metropolitan government building,東京都廳,东京都厅,สำนักงานบริหารมหานครโตเกียว,도쿄 도청,tòa nhà thị chính Tokyo
+651,新江ノ島水族館,,,,พิพิธภัณฑ์สัตว์น้ำชินเอโนชิมะ,신에노시마 수족관,
+652,歌舞伎座,kabuki-za theatre,,,โรงละครคาบุกิซะ,가부키자,nhà hát Kabuki-za
+653,首里城,shurijo castle,首里城,首里城,ปราสาทชูริ,슈리성,lâu đài Shurijo
+654,沖縄美ら海水族館,,,,พิพิธภัณฑ์สัตว์น้ำชุราอูมิ,오키나와 추라우미 수족관,
+655,金沢21世紀美術館,21st century museum of contemporary art,,,พิพิธภัณฑ์ศิลปะศตวรรษที่ 21,가나자와 21세기 미술관,bảo tàng nghệ thuật đương đại thế kỷ 21
+656,レゴランド・ディスカバリー・センター東京,legoland discovery center,樂高樂園,乐高乐园,เลโก้แลนด์ดิสคัฟเวอร์รี่เซ็นเตอร์,레고랜드 디스커버리 센터 도쿄,trung tâm khám phá Legoland
+657,東京ドーム,tokyo dome,東京巨蛋,东京巨蛋,โตเกียวโดม,도쿄 돔,mái vòm Tokyo
+658,海遊館,osaka aquarium kaiyukan,,,พิพิธภัณฑ์สัตว์น้ำไคยูคัง,가이유칸,thủy cung Osaka kaiyukan
+659,関西国際空港,kansai international airport,關西機場,关西机场,สนามบินคันไซ,간사이 국제공항,sân bay quốc tế Kansai
+660,成田国際空港,narita airport,成田機場,成田机场,สนามบินนาริตะ,나리타 국제공항,sân bay Narita
+661,東京ディズニーシー,disney sea,迪士尼樂園,东京迪士尼,โตเกียวดิสนีย์ซี,도쿄 디즈니씨,Disney Sea
+662,新千歳空港,shin-chitose airport,新千歲機場,新千岁机场,สนามบินชินชิโตเซะ,신치토세 공항,sân bay Shin-Chitose
+663,羽田空港,haneda airport,羽田機場,羽田机场,สนามบินฮาเนดะ,하네다 공항,sân bay Haneda
+664,東京ディズニーランド,disneyland,迪士尼樂園,东京迪士尼,โตเกียวดิสนีย์แลนด์,도쿄 디즈니랜드,Disneyland
+665,ユニバーサル・スタジオ・ジャパン™,universal studios japan,環球影城,环球影城,ยูนิเวิร์ลซัล สตูดิโอ,유니버설 스튜디오 재팬,Universal Studios Japan
+666,箱根 芦ノ湖遊覧船,,,,เรือโจรสลัดฮาโกเน่,하코네 아시노코 유람선,
+667,カップヌードルミュージアム,cup noodles museum,,,พิพิธภัณฑ์คัพนู้ดเดิ้ล,컵라면 박물관,bảo tàng mì cốc
+668,旭山動物園,asahiyama zoo,,,สวนสัตว์อาซาฮิยามะ,아사히야마 동물원,sở thú Asahiyama
+669,那須りんどう湖ファミリー牧場,,,,ฟาร์มทะเลสาบนาซุรินโด,나스 린도코 호수 패밀리 목장,
+670,河内藤園,kawachi wisteria garden,,,อุโมงค์ดอกวิสทีเรียคาวาชิ,카와치 등나무원,vườn hoa tử đằng Kawachi
+671,日光江戸村,,,,หมู่บ้านนิกโก้เอโดะ,닛코 에도 원더랜드,
+672,通天閣,tsutenkaku,通天閣,通天阁,หอคอยซึเทนคะคุ,쓰텐카쿠,tháp Tsutenkaku
+673,両国国技館,,,,อาคารแข่งขันซูโม่เรียวโงกุ,료고쿠 국기관,
+674,ハウステンボス,huis ten bosch,豪斯登堡,豪斯登堡,เฮาส์เทนบอช,하우스텐보스,công viên chủ đề Huis Ten Bosch
+675,すみだ北斎美術館,,,,,스미다 호쿠사이 미술관,
+676,静岡県立美術館,,,,หอศิลป์ประจำจังหวัดชิซูโอกะ,시즈오카 현립 미술관,
+677,サンシャインシティ,sunshine city,太陽城,太阳城,ซันไชน์ซิตี้,선샤인시티,Sunshine City
+678,表参道ヒルズ,omotesando hills,,,โอโมเตะซันโด ฮิลส์,오모테산도 힐즈,Omotesando Hills
+679,ららぽーと,,,,lalaport,라라포트,
+680,コピス吉祥寺,,,,coppice kichijoji,코피스 키치죠지,
+681,アクアシティお台場,,,,aqua city odaiba,아쿠아시티 오다이바,
+682,国立科学博物館,,,,พิพิธภัณฑ์ธรรมชาติและวิทยาศาสตร์แห่งชาติ,국립 과학 박물관,
+683,浅草花やしき,,,,สวนสนุกอาซากุสะฮานะยะชิคิ,아사쿠사 하나야시키,
+684,東京クルーズ,,,,tokyo cruise,도쿄 크루즈,
+685,多慶屋,,,,ทาเคยะ,타케야,
+686,幕張メッセ,makuhari messe,,,,마쿠하리 멧세,Makuhari Messe
+687,横浜アリーナ,yokohama arena,,,,요코하마 아레나,Yokohama Arena
+688,東京国際フォーラム,,,,,도쿄 국제 포럼,
+689,味の素スタジアム,ajinomoto stadium,,,,아지노모토 스타디움,sân vận động Ajinomoto
+690,名古屋市科学館,,,,พิพิธภัณฑ์วิทยาศาสตร์นาโกย่า,나고야시 과학관,
+691,豊川稲荷,,,,,토요카와 이나리,
+692,八丁味噌の郷,hatcho miso museum,,,พิพิธภัณฑ์ฮัชโชมิโซะ,핫쵸미소노 미야코,bảo tàng Hatcho Miso
+693,京都タワー,kyoto tower,京都塔,京都塔,เกียวโตทาวเวอร์,교토 타워,tháp Kyoto
+694,上野恩賜公園,ueno park,,,สวนอุเอโนะ,우에노 온시 공원,công viên Ueno
+695,宮島水族館,miyajima aquarium,,,พิพิธภัณฑ์สัตว์น้ำมิยาจิม่า,미야지마 수족관,thủy cung Miyajima
+696,宮島ロープウエー,miyajima ropeway,,,มิยาจิม่าโรปเวย์,미야지마 로프웨이,Cáp treo Miyajima
+697,宮島歴史民俗資料館,,,,พิพิธภัณฑ์พื้นบ้านและประวัติศาสตร์มิยาจิม่า,미야지마 역사 민속 자료관,
+698,SKY CIRCUS サンシャイン60展望台,,,,,SKY CIRCUS 선샤인 60 전망대,
+699,プラネタリウム“満天”,,,,,"플라네타리움 ""만텐""",
+700,東京芸術劇場,tokyo metropolitan theatre,,,,도쿄 예술극장,nhà hát đô thị Tokyo
+701,高崎山自然動物園,,,,,타카사키야마 자연동물원,
+702,野毛山動物園,,,,,노게야마 동물원,
+703,adventure world,adventure world,,,adventure world,adventure world,thế giới phiêu lưu
+704,富士サファリパーク,fuji safari park,,,ฟูจิซาฟารีพาร์ค,후지 사파리 파크,công viên Safari Fuji
+705,多摩動物公園,tama zoological park,,,สวนสัตว์ทามะ,타마 동물원,công viên động vật Tama
+706,アフリカサファリ,,,,,아프리카 사파리,
+707,世界淡水魚園水族館,,,,,세계 담수어원 수족관,
+708,アクアマリンふくしま,,,,,아쿠아마린 후쿠시마,
+709,マクセル アクアパーク品川,,,,อควาปาร์คชินากาว่า,맥셀 아쿠아 파크 시나가와,
+710,横浜・八景島シーパラダイス,,,,,요코하마・핫케이지마 씨파라다이스,
+711,鴨川シーワールド,kamogawa sea world,,,kamogawa sea world,카모가와 시월드,thế giới biển Kamogawa
+712,名古屋港水族館,,,,พิพิธภัณฑ์สัตว์น้ำท่าเรือนาโกย่า,나고야항 수족관,
+713,別子銅山記念館,,,,,벳시 구리 광산 기념관,
+714,うみてらす14,,,,,우미테라스 14,
+715,八幡製鐵所,,,,,야하타 제철소,
+716,千葉ポートタワー,,,,,치바 포트 타워,
+717,北海道大学植物園,,,,สวนพฤกษศาสตร์มหาวิทยาลัยฮอกไกโด,홋카이도 대학 식물원,
+718,東京国立博物館,tokyo national museum,,,พิพิธภัณฑสถานแห่งชาติโตเกียว,도쿄 국립 박물관,bảo tàng quốc gia Tokyo
+719,zepp東京,zepp tokyo,,,zepp tokyo,zepp 도쿄,Zepp Tokyo
+720,星の王子さまミュージアム,the little prince museum,,,พิพิธภัณฑ์เจ้าชายน้อย,어린왕자 박물관,bảo tàng hoàng tử nhỏ
+721,コニカミノルタプラネタリウム,,,,,코니카 미놀타 플라네타리움,
+722,ナンジャタウン,,,,,난쟈타운,
+723,j-world tokyo,j-world tokyo,,,,j-world tokyo,J-world Tokyo
+724,サンシャイン劇場,sunshine theatre,,,,선샤인 극장,nhà hát Sunshine
+725,古代オリエント博物館,,,,,고대 오리엔트 박물관,
+726,南山大学,,,,,난잔 대학,
+727,日テレタワー,,,,,닛테레 타워,
+728,NHKスタジオパーク,,,,,NHK 스튜디오 파크,
+729,東京大学,,,,มหาวิทยาลัยโตเกียว,도쿄 대학,
+730,京都大学,,,,มหาวิทยาลัยเกียวโต,교토 대학,
+731,名古屋大学,,,,มหาวิทยาลัยนาโกย่า,나고야 대학,
+732,知恩院,,,,,지온인 절,
+733,醍醐寺,,,,วัดไดโงจิ,다이고지 절,
+734,光明寺,,,,,고묘지 절,
+735,アーツ千代田 3331,,,,,아트 치요다 3331,
+736,トーキョーワンダーサイト,,,,,도쿄 원더 사이트,
+737,森美術館,mori art museum,,,พิพิธภัณฑ์ศิลปะโมริ,모리 미술관,bảo tàng nghệ thuật Mori
+738,東京都写真美術館,,,,พิพิธภัณฑ์ภาพถ่ายมหานครโตเกียว,도쿄도 사진 미술관,
+739,アートフェア東京,,,,,아트 페어 도쿄,
+740,GEISAI,,,,,GEISAI,
+741,中之条ビエンナーレ,,,,,나카노죠 비엔날레,
+742,十和田市現代美術館,,,,,토와다 아트 센터,
+743,霧島アートの森,kirishima open air museum,,,,키리시마 아트의 숲,bảo tàng ngoài trời Kirishima
+744,広島平和記念資料館,hiroshima peace memorial museum,,,พิพิธภัณฑ์อนุสรณ์สถานฮิโรชิม่า,히로시마 평화 기념 자료관,bảo tàng tưởng niệm hòa bình Hiroshima
+745,サッポロビール博物館,sapporo beer museum,,,พิพิธภัณฑ์เบียร์ซัปโปโร,삿포로 맥주 박물관,bảo tàng bia Sapporo
+746,おもちゃのまち バンダイミュージアム,bandai museum,,,พิพิธภัณฑ์บันได,반다이 뮤지엄,bảo tàng Bandai
+747,ツインリンクもてぎ,,,,,트윈 링 모테기,
+748,江戸東京博物館,edo tokyo museum,,,พิพิธภัณฑ์เอโดะโตเกียว,에도 도쿄 박물관,bảo tàng Edo Tokyo
+749,三鷹の森ジブリ美術館,ghibli museum mitaka,,,พิพิธภัณฑ์จิบลิมิตากะ,미타카의 숲 지브리 미술관,bảo tàng Ghibli Mitaka
+750,東京ソラマチ,tokyo solamachi,東京晴空街道,东京晴空街道,tokyo solamachi,도쿄 소라마치,Tokyo Solamachi
+751,東京ディズニーリゾート,tokyo disney resort,迪士尼樂園,东京迪士尼,โตเกียวดิสนีย์รีสอร์ต,도쿄 디즈니 리조트,khu nghỉ mát Tokyo Disney
+752,サンリオピューロランド,sanrio puroland,,,ซานริโอพูโรแลนด์,산리오 퓨로랜드,công viên chủ đề Sanrio Puroland
+753,東京サマーランド,tokyo summer land,,,tokyo summer land,도쿄 서머랜드,Tokyo Summer Land
+754,ときわ公園,,,,สวนสาธารณะโทคิวะ,도키와 공원,
+755,国営アルプスあづみの公園,,,,National Alps Azumi Field Park,국영 알프스 아즈미노 공원,
+756,よみうりランド,yomiuri land,,,สวนสนุกโยมิอุริแลนด์,요미우리 랜드,Yomiuri Land
+757,あしかがフラワーパーク,ashikaga flower park,,,สวนดอกไม้อาชิคากะ,아시카가 플라워 파크,công viên hoa Ashikaga
+758,地中美術館,chichu art museum,,,พิพิธภัณฑ์ศิลปะชิชู,치츄 미술관,bảo tàng nghệ thuật Chichu
+759,としまえん,,,,,토시마엔,
+760,日本科学未来館,miraikan,,,มิไรคัง,일본 과학 미래관,Miraikan
+761,福井県立恐竜博物館,fukui prefectual dinosaur museum,,,,후쿠이 현립 공룡 박물관,bảo tàng khủng long tỉnh Fukui
+762,城島高原パーク,,,,คิจิม่าโคเก็นพาร์ค,키지마 코겐 파크,
+763,三井グリーンランド,,,,มิตสึอิกรีนแลนด์,미츠이 그린랜드,
+764,ルスツリゾート,,,,rusutsu resort,루스츠 리조트,
+765,のぼりべつクマ牧場,,,,สวนหมีโนโบริเบทสึ,노보리베쓰 곰목장,
+766,ホースガーデンMURANAKA,,,,horse garden MURANAKA,호스 가든 MURANAKA,
+767,ファームイン アニマの里,,,,ฟาร์มอินน์อะนิมะโนะซาโตะ,팜 인 아니마노사토,
+768,北きつね牧場,,,,ฟาร์มคิตะคิทสึเนะ,키타키츠네 목장,
+769,オホーツク シマリス公園,,,,สวนชิปมังก์โอค็อตส์,오호츠크 시마리스 공원,
+770,ほろのべトナカイ観光牧場,,,,ฟาร์มเรนเดียร์โฮโรโนเบะ,호로노베 순록 관광 목장,
+771,はこだて明治館,,,,ฮาโกดาเตะเมจิคัง,하코다테 메이지칸,
+772,金森赤レンガ倉庫,,,,โกดังอิฐแดงคาเนโมริ,카네모리 아카렌가 창고,
+773,函館市熱帯植物園,,,,สวนพฤษศาสตร์เขตร้อนฮาโกดาเตะ,하코다테시 열대식물원,
+774,函館ハリストス正教会,,,,โบสถ์ออร์โธดอกซ์ฮาโกดาเตะ,하코다테 하리스트스 정교회,
+775,函館朝市,hakodate morning market,,,ตลาดเช้าฮาโกดาเตะ,하코다테 새벽시장,chợ buổi sáng Hakodate
+776,旧函館区公会堂,,,,ศาลาประชาคมเก่าฮาโกดาเตะ,구 하코다테구 공회당,
+777,国立国際美術館,,,,พิพิธภัณฑ์ศิลปะแห่งชาติโอซาก้า,국립 국제 미술관,
+778,大阪市立美術館,,,,พิพิธภัณฑ์ศิลปะโอซาก้า,오사카 시립 미술관,
+779,あべのハルカス美術館,abeno harukas art museum,,,พิพิธภัณฑ์ศิลปะอาเบโนะฮารุคัส,아베노하루카스 미술관,bảo tàng nghệ thuật Abeno Harukas
+780,大阪市立科学館,osaka science museum,,,พิพิธภัณฑ์วิทยาศาสตร์โอซาก้า,오사카 시립 과학관,bảo tàng khoa học Osaka
+781,大阪市立自然史博物館,,,,พิพิธภัณฑ์ประวัติศาสตร์ธรรมชาติโอซาก้า,오사카 시립 자연사 박물관,
+782,大阪市立東洋陶磁美術館,,,,พิพิธภัณฑ์เซรามิกตะวันออกโอซาก้า,오사카 시립 동양도자미술관,
+783,山王美術館,,,,พิพิธภัณฑ์ศิลปะซันโน,산노 미술관,
+784,東京都葛西臨海水族園,tokyo sea life park,,,โตเกียวซีไลฟ์ปาร์ค,도쿄도 카사이 린카이 수족원,công viên sinh vật biển Tokyo
+785,しながわ水族館,shinagawa aquarium,,,พิพิธภัณฑ์สัตว์น้ำชินากาว่า,시나가와 수족관,thủy cung Shinagawa
+786,足立区生物園,,,,พิพิธภัณฑ์สิ่งมีชีวิตอาดาจิ,아다치구 생물원,
+787,グリーンドームねったいかん,,,,กรีนโดมเนทไทคัง,열대환경식물관,
+788,井の頭自然文化園水生物館,inokashira park zoo,,,พิพิธภัณฑ์ธรรมชาติและวัฒนธรรมอิโนะคาชิระ,이노카시라 자연 문화원 수생물관,vườn thú công viên Inokashira
+789,横浜ランドマークタワー,yokohama landmark tower,,,โยโกฮาม่าแลนด์มาร์คทาวเวอร์,오코하마 랜드마크 타워,tòa tháp Yokohama landmark
+790,氷川丸,,,,เรือรบฮิคาวะมารุ,히카와마루,
+791,横浜マリンタワー,,,,yokohama marine tower,요코하마 마린 타워,
+792,横浜人形の家,,,,พิพิธภัณฑ์ตุ๊กตาโยโกฮาม่า,요코하마 인형의 집,
+793,八景島シーパラダイス,,,,ฮักเคจิม่า ซีพาราไดซ์,핫케이지마 씨 파라다이스,
+794,キリンビール 横浜工場,kirin beer yokohama factory,,,โรงงานเบียร์คิรินโยโกฮาม่า,기린 맥주 요코하마 공장,nhà máy bia Kirin Yokohama
+795,よこはま動物園ズーラシア,,,,สวนสัตว์โยโกฮาม่าซูราเชีย,요코하마 동물원 주라시아,
+796,横浜スタジアム,yokohama stadium,,,สนามกีฬาโยโกฮาม่าสเตเดียม,요코하마 스타디움,sân vận động Yokohama
+797,エゾジカファーム,,,,ฟาร์มเอโสะจิคะ,에조 시카 팜,
+798,大倉山ジャンプ競技場,,,,สนามสกีกระโดดไกลโอคุระยามะ,오쿠라야마 점프 경기장,
+799,世界貿易センタービル,world trade center building,,,เวิลด์เทรดเซ็นเตอร์,세계 무역 센터 빌딩,tòa nhà trung tâm thương mại thế giới
+800,神戸市役所,,,,ที่ว่าการเมืองโกเบ,고베 시청,
+801,白馬ジャンプ競技場,,,,สนามสกีกระโดดไกลฮาคุบะ,하쿠바 점프 경기장,
+802,ギア専用劇場,,,,โรงละครเกียร์,기어 전용 극장,
+803,ユネッサン,yunessun,,,ยูเนสซัน,유넷산,Yunessun
+804,鉄道博物館,the railway museum,,,พิพิธภัณฑ์รถไฟ,철도 박물관,bảo tàng đường sắt
+805,国立新美術館,national art center tokyo,,,ศูนย์ศิลปะแห่งชาติโตเกียว,국립 신 미술관,trung tâm nghệ thuật quốc gia Tokyo
+806,森アーツセンターギャラリー,mori arts center gallery,,,mori arts center gallery,모리 아트 센터 갤러리,phòng trưng bày trung tâm nghệ thuật Mori
+807,泉ガーデンタワー,,,,izumi garden tower,이즈미 가든 타워,
+808,郵政博物館,postal museum japan,,,พิพิธภัณฑ์ไปรษณีย์,우정 박물관,bảo tàng bưu chính Nhật Bản
+809,柳橋歩道橋,,,,สะพานลอยยานากิบาชิ,야나기바시 육교,
+810,TKPガーデンシティ大阪梅田,,,,TKP garden city osaka umeda,TKP 가든 시티 오사카 우메다,
+811,すみだ江戸切子館,,,,ซุมิดะเอโดะคิริโกะคัง,스미다 에도 키리코관,
+812,大嶋屋恩田,,,,โอชิมายะอนดะ,오시마야 온다,
+813,ASAKUSA ZANMAI 99 TIMES,,,,asakusa zanmai 99 times,ASAKUSA ZANMAI 99 TIMES,
+814,ポーラ美術館,,,,พิพิธภัณฑ์ศิลปะโพล่า,폴라 미술관,
+815,岡田美術館,,,,พิพิธภัณฑ์ศิลปะโอคาดะ,오카다 미술관,
+816,御殿場アウトレットモール,gotemba premium outlet,,,เอาท์เลทโกะเทมบะ,고텐바 프리미엄 아웃렛,cửa hàng giảm giá cao cấp Gotemba
+817,はままつフルーツパーク時之栖,,,,สวนผลไม้ฮามามัตสึโทคิโนะสุมิคะ,하마마츠 프루츠 파크 토키노스미카,
+818,後藤純男美術館,,,,พิพิธภัณฑ์ศิลปะโกะโทสุมิโอะ,고토스미오 미술관,
+819,天童市美術館,,,,พิพิธภัณฑ์ศิลปะเขตเทนโด,텐도시 미술관,
+820,山種美術館,,,,พิพิธภัณฑ์ศิลปะยามะทาเนะ,야마타네 미술관,
+821,郷さくら美術館,,,,พิพิธภัณฑ์ศิลปะซาโตะซากุระ,사토 사쿠라 미술관,
+822,玉堂美術館,,,,พิพิธภัณฑ์ศิลปะเกียวคุโด,교쿠도 미술관,
+823,鏑木清方記念美術館,,,,พิพิธภัณฑ์อนุสรณ์ศิลป์คาบุระคิคิโยะคาตะ,가부라키 기요카타 기념 미술관,
+824,成川美術館,,,,พิพิธภัณฑ์ศิลปะนาริคาวะ,나루카와 미술관,
+825,水野美術館,,,,พิพิธภัณฑ์ศิลปะมิซุโนะ,미즈노 미술관,
+826,メナード美術館,,,,พิพิธภัณฑ์ศิลปะเมนาร์ด,메나드 미술관,
+827,名都美術館,,,,พิพิธภัณฑ์ศิลปะเมโตะ,메이토 미술관,
+828,新見美術館,,,,พิพิธภัณฑ์ศิลปะนีมิ,니이미 미술관,
+829,足立美術館,,,,พิพิธภัณฑ์ศิลปะอาดาจิ,아다치 미술관,
+830,平山郁夫美術館,,,,พิพิธภัณฑ์ศิลปะฮิรายามะอิคุโอะ,히라야마 이쿠오 미술관,
+831,トヨタ産業技術記念館,toyota commemorative museum of industry and technology,,,พิพิธภัณฑ์อนุสรณ์อุตสาหกรรมและเทคโนโลยีโตโยต้า,토요타 산업기술 기념관,bảo tàng kỷ niệm Toyota của ngành công nghiệp và công nghệ
+832,徳川美術館,tokugawa art museum,,,พิพิธภัณฑ์ศิลปะโทคุกาว่า,도쿠가와 미술관,bảo tàng nghệ thuật Tokugawa
+833,リニア・鉄道館,scmaglev and railway park,,,พิพิธภัณฑ์รถไฟนาโกย่า,리니어 철도관,công viên bảo tàng SCMaglev và Railway
+834,東山動植物園,higashiyama zoo and botanical gardens,,,สวนสัตว์และสวนพฤกษศาสตร์ฮิกาชิยามะ,히가시야마 동식물원,sở thú và vườn thực vật Higashiyama
+835,JRセントラルタワーズ,jr central towers,,,JRเซ็นทรัลทาวเวอร์,JR 센트럴 타워스,tháp trung tâm JR
+836,ミッドランドスクエア,,,,มิดแลนแสควร์,미들랜드 스퀘어,
+837,オアシス21,oasis 21,,,โอเอซิส21,오아시스 21,ốc đảo 21
+838,博物館明治村,meiji mura,,,พิพิธภัณฑ์หมู่บ้านเมจิ,박물관 메이지무라,làng Meiji
+839,大谷石地下採掘場跡,,,,พิพิธภัณฑ์หินโอยะ,오야이시 지하 채굴장터,
+840,中銀カプセルタワー,nakagin capsule tower,,,แคปซูลทาวเวอร์นาคากิน,나카긴 캡슐 타워,tháp viên nang (capsule) Nakagin
+841,円山動物園,maruyama zoo,,,สวนสัตว์มารุยาม่า,마루야마 동물원,sở thú Maruyama
+842,博物館網走監獄,,,,พิพิธภัณฑ์เรือนจำอะบาชิริ,박물관 아바시리 감옥,
+843,養老天命反転地,,,,yoro site of reversible destiny,요로 텐메이한텐치,
+844,札幌国際スキー場,sapporo kokusai ski resort,,,ลานสกีนานาชาติซัปโปโร,삿포로 고쿠사이 스키장,khu nghỉ dưỡng trượt tuyết quốc tế Sapporo
+845,サッポロテイネスキー場,,,,ลานสกี sapporo teine,삿포로 테이네 스키장,
+846,小樽天狗山スキー場,,,,ลานสกีโอตารุเทนกู,오타루 텐구산 스키장,
+847,富良野スキー場,furano ski resort,,,ลานสกีฟุราโนะ,후라노 스키장,khu nghỉ dưỡng trượt tuyết Furano
+848,伊賀流忍者博物館,ninja museum of igaryu,,,พิพิธภัณฑ์นินจาอิกะริว,이가류 닌자 박물관,bảo tàng Ninja phái Igaryu
+849,斎宮歴史博物館,,,,พิพิธภัณฑ์ประวัติศาสตร์ไซกุ,사이쿠 역사 박물관,
+850,明智平ロープウェイ,,,,โรปเวย์อะเคจิไดระ,아케치다이라 로프웨이,
+851,日光自然博物館,,,,พิพิธภัณฑ์ธรรมชาตินิกโก้,닛코 자연 박물관,
+852,大浦天主堂,,,,โบสถ์โออุระ,오우라 천주당,
+853,江戸川区自然動物園,,,,สวนสัตว์เอโดะกาว่า,에도가와구 자연 동물원,
+854,国立西洋美術館,national museum of western art,,,พิพิธภัณฑ์ศิลปะตะวันตกแห่งชาติ,국립 서양 미술관,bảo tàng quốc gia nghệ thuật phương Tây
+855,bunkamura,bunkamura,,,บุนคะมุระ,bunkamura,làng văn hóa (Bunkamura)
+856,東京都美術館,tokyo metropolitan art museum,,,พิพิธภัณฑ์ศิลปะมหานครโตเกียว,도쿄도 미술관,bảo tàng nghệ thuật đô thị Tokyo
+857,東京都庭園美術館,tokyo metropolitan teien art museum,,,พิพิธภัณฑ์ศิลปะเทเอ็นมหานครโตเกียว,도쿄도 정원 미술관,bảo tàng nghệ thuật teien đô thị Tokyo
+858,東京国立近代美術館,national museum of modern art tokyo,,,พิพิธภัณฑ์ศิลปะสมัยใหม่แห่งชาติโตเกียว,도쿄 국립 근대 미술관,bảo tàng quốc gia nghệ thuật hiện đại Tokyo
+859,長崎原爆資料館,nagasaki atomic bomb museum,,,พิพิธภัณฑ์ระเบิดปรมาณูนางาซากิ,나가사키 원폭 자료관,bảo tàng bom nguyên tử Nagasaki
+860,志賀高原スキー場,shigakogen ski park,,,ลานสกีชิกะโคเกง,시가 코겐 스키장,công viên trượt tuyết Shigakogen
+861,京都御苑,kyoto gyoen national garden,,,สวนแห่งชาติเกียวโตเกียวเอ็น,교토 교엔,vườn quốc gia Kyoto Gyoen
+862,仲見世,nakamise,,,นาคามิเสะ,나카미세,Nakamise
+863,関門海峡,,,,ช่องแคบคันมง,칸몬 해협,
+864,奥入瀬渓流,,,,หุบเขาโออิระเสะ,오이라세 계류,
+865,奈良公園,nara park,奈良公園,奈良公园,สวนสาธารณะนารา,나라 공원,công viên Nara
+866,長谷寺,hasedera,長谷寺,长谷寺,วัดฮาเสะ,하세데라 절,Hasedera
+867,四万十川,,四萬十川,四万十川,แม่น้ำชิมันโต,시만토 강,
+868,金毘羅温泉,,,,คงปิระออนเซ็น,콘피라 온천,
+869,太宰府天満宮,dazaifu tenmangu shrine,太宰府天滿宮,太宰府天满宫,ดะไซฟุ เทนมังกุ,다자이후텐만구,điện thờ Dazaifu Tenmangu
+870,門司港レトロ,,,,โมจิโค เรโทร,모지코 레트로,
+871,城崎温泉,kinosaki onsen,城崎溫泉,城崎温泉,คิโนะซากิออนเซ็น,키노사키 온천,Kinosaki onsen
+872,アメ横,ameyoko,阿美橫丁,阿美横丁,ตลาดอะเมโยโกะ,아메요코,Ameyoko
+873,日光東照宮,nikko toshogu,東照宮,东照宫,นิกโก้โทโชกู,닛코 토쇼구,Nikko Toshogu
+874,立山黒部アルペンルート,tateyama kurobe alpine route,立山黑部阿爾卑斯,立山黑部阿尔卑斯,kurobe alpine route,다테야마 구로베 알펜 루트,tuyến đường núi Tateyama Kurobe
+875,金閣寺,kinkakuji,,,วัดคินคะคุจิ,금각사,Kinkakuji
+876,清水寺,kiyomizu-dera temple,,,คิโยมิสึเดระ,키요미즈데라 절,đền Kiyomizu-dera
+877,ひがし茶屋街,higashichaya district,東茶屋街,东茶屋街,ฮิกาชิชายะมาจิ,히가시 챠야가이,khu phố (quận) Higashichaya
+878,中善寺,,,,ชูเซนจิ(中善寺),츄젠지 절,
+879,雷門,kaminarimon,,,คามินาริมง,카미나리몬,Kaminarimon
+880,雷電,,,,ไรเดน,라이덴,
+881,三宅八幡神社,,,,ศาลเจ้ามิยาเกะ ฮาจิมังกู,미야케 하치만 신사,
+882,東京大神宮,,,,โตเกียวไดจิงกู,도쿄 다이진구 신사,
+883,フジテレビ,,,,fuji tv,후지 텔레비전,
+884,高松城,,,,ปราสาททาคามัตสึ,타카마츠 성,
+885,修善寺,,,,ชูเซนจิ(修善寺),슈젠지 절,
+886,修善寺温泉,,,,ชูเซนจิออนเซ็น,슈젠지 온천,
+887,高尾山,mt. takao,高尾山,高尾山,ภูเขาทาคาโอะ,타카오 산,Núi Takao
+888,熊本城,kumamoto castle,熊本城,熊本城,ปราสาทคุมาโมโตะ,구마모토 성,lâu đài Kumamoto
+889,銭洗弁財天,,,,ศาลเจ้าเซนอิอาราอิ,제니아라이 벤자이텐 신사,
+890,旭山記念公園,,,,สวนอาซาฮิยามะ,아사히야마 기념 공원,
+891,伊勢神宮,ise jingu,伊勢神宮,伊势神宫,ศาลเจ้าอิเสะ,이세진구 신사,Ise Jingu
+892,不忍池,,,,บ่อน้ำชิโนบาสุ,시노바즈노이케 연못,
+893,近江町市場,omicho market,,,ตลาดโอมิโช,오미쵸 시장,chợ Omicho
+894,宝戒寺,,,,วัดโฮไคจิ,호카이지 절,
+895,壽福寺,,,,วัดจูฟุคุ,쥬후쿠지 절,
+896,英勝寺,,,,วัดเออิโช,에이쇼지 절,
+897,霜降ノ滝,,,,นำ้ตกคิริฟูริ,키리후리노타키 폭포,
+898,鶴岡八幡宮,tsurugaoka hachimangu,鶴岡八幡宮,鹤冈八幡宫,ศาลเจ้าทสึรุงะโอกะฮะจิมังงู,츠루오카하치만구 신사,Tsurugaoka Hachimangu
+899,奥の細道,,,,โอะกุโนะโฮโซะมิชิ,오쿠노 호소미치,
+900,川越氷川神社,,,,ศาลเจ้าคาวาโกเอะฮิคาวะ,카와고에 히카와 신사,
+901,白川郷,shirakawago,白川鄉,白川乡,ชิราคาวาโกะ,시라카와고,Shirakawago
+902,旭川ラーメン村,,,,หมู่บ้านราเมงอาซาฮิกาวะ,아사히카와 라멘무라,
+903,川越八幡宮,,,,ศาลเจ้าคาวาโกเอะฮะจิมังงู,카와고에 하치만구 신사,
+904,法善寺,,,,วัดโฮเซนจิ,호젠지 절,
+905,羊山公園,,,,สวนฮิซึจิยามะ,히츠지야마 공원,
+906,成就院,,,,วัดโจจูอิน,죠쥬인 절,
+907,安養院,,,,วัดอันโยอิน,안요인 절,
+908,横浜みなとみらい21,minato mirai 21,,,โยโกฮาม่ามินาโตะมิไร 21,요코하마 미나토미라이 21,Minato Mirai 21
+909,築地市場,tsukiji market,,,ตลาดปลาสึคิจิ,츠키지 시장,chợ Tsukiji
+910,秩父神社,chichibu shrine,,,ศาลเจ้าชิชิบุ,치치부 신사,điện thờ Chichibu
+911,秩父華厳の滝,,,,น้ำตกตกชิชิบุเคง่อน,치치부 케곤노타키 폭포,
+912,ジャンジャン横丁,jan jan yokocho,,,จังจังโยโกะโช,쟌쟌 요코쵸,Jan jan Yokocho
+913,華厳の滝,,,,น้ำตกเคง่อน,케곤노타키 폭포,
+914,備中松山城,bitchu matsuyama castle,,,ปราสาทบิชูมัตสึยาม่า,빗츄 마츠야마 성,lâu đài Bitchu Matsuyama
+915,倉敷美観地区,kurashiki bikan historical quarter,倉敷美觀,仓敷美观,เขตเมืองเก่าคุราชิกิบิคัง,쿠라시키 미관 지구,khu phố lịch sử Kurashiki
+916,松山城,matsuyama castle,,,ปราสาทมัตสึยาม่า,마츠야마 성,lâu đài Matsuyama
+917,上野大仏,,,,อุเอโนะไดบุตสึ,우에노 다이부츠,
+918,宍道湖,,,,ทะเลสาบชินจิ,신지코 호수,
+919,鳴門海峽,naruto strait,鳴門海峽,鸣门海峡,ช่องแคบนารูโตะ,나루토 해협,eo biển Naruto
+920,花園神社,,,,ศาลเจ้าฮานะโซโนะ,하나조노 신사,
+921,白兔神社,,,,ศาลเจ้าฮาคุโตะ,하쿠토 신사,
+922,妖怪神社,,,,ศาลเจ้าโยไค,요카이 신사,
+923,大山,,,,ภูเขาไดเซน,다이센 산,
+924,小倉城,,,,ปราสาทโคคุระ,코쿠라 성,
+925,象の鼻パーク,,,,สวนโซโนะฮานะ,조노하나 파크,
+926,上賀茂神社,,,,ศาลเจ้าคามิกาโมะ,카미가모 신사,
+927,竹田城,,竹田城,竹田城,ปราสาททาเคดะ,타케다 성,
+928,岡崎神社,,,,ศาลเจ้าโอคาซากิ,오카자키 신사,
+929,栗林公園,ritsurin garden,,,สวนริสึริน,리츠린 공원,vườn Ritsurin
+930,菓子屋橫丁,kashiya yokocho,,,คะชิยะ โยโกะโช,카시야 요코쵸,Kashiya Yokocho
+931,戦場ヶ原,senjogahara,戰場之原,战场之原,เซนโจกะฮาระ,센죠가하라,Senjogahara
+932,中野ブロードウェイ,nakano broadway,,,นาคาโนะบรอดเวย์,나카노 브로드웨이,đường lớn Nakano
+933,レインボーブリッジ,rainbow bridge,,,สะพานเรนโบว์บริดจ์,레인보우 브리지,cầu Rainbow
+934,皇居,imperial palace,皇居,皇居,พระราชวังหลวง,고쿄,hoàng cung
+935,仁淀川,,,,แม่น้ำนิโยะโด,니요도가와 강,
+936,高知城,kochi castle,高知城,高知城,ปราสาทโคจิ,코치 성,lâu đài Kochi
+937,平等院,byodoin temple,平等院,平等院,วัดเบียวโดอิน,뵤도인,đền Byodoin
+938,ハルニレテラス,,,,Harunire Terrace,하루니레 테라스,
+939,桂浜,,,,ชายหาดคัตสึระ,카츠라하마 해변,
+940,築地場外市場,tsukiji outer market,築地場外市場,筑地场外市场,ตลาดปลาสึคิจิส่วนนอก,츠키지 장외 시장,chợ ngoài trời Tsukiji
+941,竹林寺,,,,วัดชิคุริน,치쿠린지 절,
+942,モネの庭,,,,สวนโมเน่,모네노 니와,
+943,芦ノ湖,lake ashi,蘆之湖,芦之湖,ทะเลสาบอาชิ,아시노코 호수,hồ Ashi
+944,明治神宮,meiji jingu shrine,明治神宮,明治神宫,ศาลเจ้าเมจิ,메이지진구 신사,điện thờ Meiji Jingu
+945,金沢城,kanazawa castle,金澤城,金泽城,ปราสาทคานาซาว่า,카나자와 성,lâu đài Kanazawa
+946,毛利庭園,,,,สวนโมริ,모리 정원,
+947,白山洞門,,,,ฮะคุซันโดมง,하쿠산 도몬,
+948,夫婦岩,,,,หินเมะโอะโตะอิวะ,메오토 바위,
+949,足摺岬,,,,แหลมอะชิสึริ,아시즈리 곶,
+950,大阪駅,osaka station,大阪站,大阪站,สถานีโอซาก้า,오사카역,ga Osaka
+951,露天神社,,,,ศาลเจ้าโระเทน,츠유노텐 신사,
+952,高瀬峡,,,,หุบเขาทาคาเสะ,타카세 협곡,
+953,最上川,,,,แม่น้ำโมกามิ,모가미 강,
+954,祖母の滝,,,,น้ำตกโซโบะ,소보산 폭포,
+955,唐戸市場,karato market,唐戶市場,唐户市场,ตลาดคาราโตะ,카라토 시장,chợ Karato
+956,薬師寺,,,,วัดยะคุชิจิ,야쿠시지 절,
+957,法隆寺,horyuji temple,法隆寺,法隆寺,วัดโฮริวจิ,호류지 절,đền thờ Horyuji
+958,兼六園,kenrokuen garden,兼六園,兼六园,สวนเค็นโรคุเอ็น,겐로쿠엔,vườn Kenrokuen
+959,鎌倉大仏殿高徳院,kotokuin,鎌倉大佛,鎌仓大佛,วัดพระใหญ่โคโตคุอิน,카마쿠라 대불전 고토쿠인 절,Kotokuin
+960,大船観音寺,,,,โอฟุนะคันนน,오후나 칸논지 절,
+961,北海道神宮,,,,ศาลเจ้าฮอกไกโด,홋카이도진구 신사,
+962,青島神社,,,,ศาลเจ้าอาโอชิม่า,아오시마 신사,
+963,高千穗峽,takachiho gorge,高千穗,高千穗,หุบเขาทาคาชิโฮะ,타카치호 협곡,hẻm núi Takachiho
+964,名古屋城,nagoya castle,名古屋城,名古屋城,ปราสาทนาโกย่า,나고야 성,lâu đài Nagoya
+965,秋保大滝,,,,น้ำตกอะคิอุ,아키우 오타키 폭포,
+966,山中溫泉,,,,ยามานากะออนเซ็น,야마나카 온천,
+967,曹洞宗 熊谷山 報恩寺,,,,วัดโฮองจิ,조동종 유코쿠잔 호온지 절,
+968,歌舞伎町,kabukicho,歌舞伎町,歌舞伎町,คาบุกิโจ,가부키쵸,Kabukicho
+969,湯鄉溫泉,,,,ยุโนะโกออนเซ็น,유노고 온천,
+970,湯原温泉,,,,ยุบาระออนเซ็น,유바라 온천,
+971,真賀温泉,,,,มากะออนเซ็น,마가 온천,
+972,奧津溫泉,,,,โอคุสึออนเซ็น,오쿠츠 온천,
+973,江戸東京たてもの園,,,,พิพิธภัณฑ์กลางแจ้งเอโดะโตเกียว,에도 도쿄 건축박물관,
+974,黒部ダム,,,,เขื่อนคุโรเบะ,구로베 댐,
+975,下灘駅,,下灘站,下滩站,สถานีชิโมนาดะ,시모나다역,
+976,瀬戸内しまなみ海道,,,,ชิโมนามิไคโด,세토우치 시마나미 해도,
+977,臥龍山荘,,,,กะริวซันโซ,가류 산장,
+978,南禅寺,nanzenji temple,南禪寺,南禅寺,วัดนันเซนจิ,난젠지 절,đền Nanzenji
+979,和歌山城,wakayama castle,,,ปราสาทวาคายาม่า,와카야마 성,lâu đài Wakayama
+980,雪の大谷,snow wall,,,กำแพงหิมะ,눈의 대계곡,bức tường tuyết
+981,松本城,matsumoto castle,松本城,松本城,ปราสาทมัตสึโมโตะ,마츠모토 성,lâu đài Matsumoto
+982,愛宕神社,,,,ศาลเจ้าอะทะโกะ,아타고 신사,
+983,五箇山,,,,โกคายาม่า,고카야마,
+984,黒部峡谷,kurobe gorge,,,หุบเขาคุโรเบะ,구로베 협곡,hẻm núi Kurobe
+985,熊野本宮大社,,,,ศาลเจ้าคุมาโนะฮงกูไทฉะ,쿠마노혼구 타이샤 절,
+986,犬山城,inuyama castle,犬山城,犬山城,ปราสาทอินุยามะ,이누야마 성,lâu đài Inuyama
+987,高野山,mt. koya,,,ภูเขาโคยะซัง,고야산,núi Koya
+988,皿倉山,,,,ภูเขาซาราคุระ,사쿠라야마 산,
+989,大涌谷,owakudani,,,หุบเขาโอวาคุดะนิ,오와쿠다니,Owakudani
+990,東丸神社,,,,ศาลเจ้าอะสึมะมะโระ,아즈마마로 신사,
+991,霧島神宮,,,,ศาลเจ้าคิริชิม่า,키리시마진구 신사,
+992,米原ビーチ,,,,ชายหาดโยเนะฮาระ,요네하라 해변,
+993,通潤橋,,,,สะพานซือจุน,쓰준쿄,
+994,夫婦滝,,,,น้ำตกเมโอโตะดาคิ,메오토 폭포,
+995,新宿御苑,shinjuku gyoen national garden,,,สวนชินจูกุเกียวเอ็น,신주쿠 교엔,vườn quốc gia Shinjuku Gyoen
+996,思い出横丁,omoide yokocho,,,โอโมอิเดะโยโกะโช,오모이데 요코쵸,Omoide Yokocho
+997,江の島神社,enoshima shrine,,,ศาลเจ้าเอโนะชิม่า,에노시마 신사,điện thờ Enoshima
+998,江の島展望台,,,,จุดชมวิวเอโนะชิม่า,에노시마 전망대,
+999,縮景園,,,,สวนชุคเคเอ็น,슛케이엔,
+1000,片山津温泉,,,,คาตะยามะซุออนเซ็น,카타야마즈 온천,
+1001,有馬温泉,arima onsen,,,อาริมะออนเซ็น,아리마 온천,Arima onsen
+1002,秋芳洞,,,,ถ้ำอะคิโยชิโด,아키요시 동굴,
+1003,鍋ケ滝,,,,น้ำตกนาเบะกะทาคิ,나베가타키 폭포,
+1004,阿蘇山,mt. aso,阿蘇山,阿苏山,ภูเขาอาโซะ,아소산,Núi Aso
+1005,生田神社,,,,ศาลเจ้าอิคุตะ,이쿠타 신사,
+1006,中禅寺湖,lake chuzenji,中禪寺湖,中禅寺湖,ทะเลสาบชูเซนจิ,츄젠지 호수,Hồ Chuzenji
+1007,嵐山温泉,,,,อาราชิยามะออนเซ็น,아라시야마 온천,
+1008,くらま温泉,,,,คุรามะออนเซ็น,쿠라마 온천,
+1009,竹下通り,takeshita street,竹下通,竹下通,ถนนทาเคชิตะ,다케시타도리,Phố Takeshita
+1010,アメリカ村,americamura,美國村,美国村,อเมริกามุระ,아메리카무라,làng Mỹ
+1011,東大寺,todaiji temple,,,วัดโทไดจิ,도다이지 절,đền Todaiji
+1012,亀岩の洞窟,,,,,카메이와 동굴,
+1013,縄文杉,jomonsugi,,,จูมงซุกิ,조몬스기,Jomonsugi
+1014,屋久杉,yakusugi,,,ยะคุซุกิ,야쿠스기,Yakusugi
+1015,春日大社,kasuga taisha,,,ศาลเจ้าคาซุกะ,가스가타이샤 신사,Kasuga Taisha
+1016,軍艦島,,,,เกาะฮะชิมะ,군함도,
+1017,天橋立,amanohashidate,天橋立,天桥立,อะมะโนะฮาชิดาเตะ,아마노하시다테,Amanohashidate
+1018,地主神社,,,,ศาลเจ้าจิชุ,지슈 신사,
+1019,小倉庭園,,,,สวนปราสาทโคคุระ,고쿠라성 정원,
+1020,諏訪神社,,,,ศาลเจ้าซุวะ,스와 신사,
+1021,箱根神社,hakone shrine,,,ศาลเจ้าฮาโกเน่,하코네 신사,điện thờ Hakone
+1022,しまなみ海道,,,,ชิมะนามิไคโด,시마나미 해도,
+1023,千光寺,,,,วัดเซนโคจิ(千光寺),센코지 절,
+1024,文學の小径,,,,ทางเดินบุนกะคุโนะโคมิจิ,분가쿠노코미치,
+1025,雲場池,,,,บ่อน้ำคุโมบะ,쿠모바이케 호수,
+1026,八坂神社,yasaka shrine,,,ศาลเจ้ายาซากะ,야사카 신사,điện thờ Yasaka
+1027,御寺 泉涌寺,,,,วัดเซนนิวจิ,미테라 센뉴지 절,
+1028,湯本茶屋,,,,ยูโมโตะฉะยะ,유모토챠야,
+1029,馬籠宿,,,,มาโกเมะจูคุ,마고메주쿠,
+1030,二ノ平,,,,นิโนะไทระ,니노타이라,
+1031,花畑牧場,,,,ฟาร์มปศุสัตว์ฮานาบะทาเคะ,하나바타케 목장,
+1032,幸福駅,,,,สถานีโคฟุกุ,코후쿠역,
+1033,愛国駅,,,,สถานีไอโคคุ,아이코쿠역,
+1034,淡路島,awaji island,淡路島,淡路岛,เกาะอาวาจิ,아와지 섬,đảo Awaji
+1035,鳴門大橋,,,,สะพานนารุโตะ,나루토 대교,
+1036,東京大江戸温泉物語,odaiba tokyo oedo-onsen monogatari,大江戶溫泉物語,大江户温泉物语,โอเอโดะออนเซ็นโมโนกาตาริ,오에도 온천이야기,Odaiba Tokyo Oedo-onsen Monogatari
+1037,紫野 今宮神社,,,,ศาลเจ้าอิมามิยะ,무라사키노 이마미야 신사,
+1038,野宮神社,,,,ศาลเจ้าโนะโนะมิยะ,노노미야 신사,
+1039,雨晴海岸,,,,ชายฝั่งอามะฮาราชิ,아마하라시 해안,
+1040,軽井沢タリアセン,,,,คารุยซาว่า,카루이자와 탈리에신,
+1041,伊香保温泉,,,,อิคาโฮะออนเซ็น,이카호 온천,
+1042,水澤寺,,,,วัดมิสึซาวะ,미즈사와 절,
+1043,姫路城,himeji castle,姬路城,姬路城,ปราสาทฮิเมจิ,히메지 성,lâu đài Himeji
+1044,黒壁スクエア,,,,คุโรคาเบะแสควร์,쿠로카베 스퀘어,
+1045,延曆寺,,,,วัดเอ็นเรียคุจิ,엔랴쿠지 절,
+1046,河口湖,,,,ทะเลสาบคาวากุจิโกะ,카와구치 호수,
+1047,伏見稲荷大社,fushimi inari taisha shrine,伏見稻荷大社,伏见稻荷大社,ศาลเจ้าฟูชิมิอินาริ,후시미이나리타이샤 신사,điện thờ Fushimi Inari Taisha
+1048,国営ひたち海浜公園,hitachi seaside park,,,สวนริมทะเลฮิตาจิ,국영 히타치 해변 공원,công viên ven biển Hitachi
+1049,大阪城,osaka castle,大阪城,大阪城,ปราสาทโอซาก้า,오사카 성,lâu đài Osaka
+1050,五稜郭,,,,โกเรียวคาคุ,고료카쿠,
+1051,八坂庚申堂,,,,ยาซากะโคชินโด,야사카코신도 절,
+1052,渡月橋,,,,สะพานโทะเก็ตสึเคียว,도게츠교,
+1053,湯川温泉,,,,ยูกาวะออนเซ็น,유카와 온천,
+1054,龍泉洞,,,,ถ้ำริวเซ็นโด,류센 동굴,
+1055,玉泉洞,,,,ถ้ำเกียวคุเซนโด,교쿠센 동굴,
+1056,上野駅,ueno station,,,สถานีอุเอโนะ,우에노역,ga Ueno
+1057,出雲大社,izumo taisha shrine,出雲大社,出云大社,ศาลเจ้าอิสุโมะไทฉะ,이즈모타이샤 신사,điện thờ Izumo Taisha
+1058,熱海温泉,,,,อาตามิออนเซ็น,아타미 온천,
+1059,琵琶湖,lake biwa,琵琶湖,琵琶湖,ทะเลสาบบิวะ,비와코 호수,hồ Biwa
+1060,鋸山,,,,ภูเขาโนโคกิริ,노코기리 산,
+1061,松江城,,,,ปราสาทมัตสึเอะ,마츠에 성,
+1062,比叡山,,比叡山,比叡山,ภูเขาฮิเอ,히에이 산,
+1063,佐川美術館,,,,พิพิธภัณฑ์ศิลปะซากาว่า,사가와 미술관,
+1064,八幡堀,,,,ฮาจิมังโบริ,하치만보리,
+1065,蠑螺堂,,,,ซาซาเอะโด,사자에당,
+1066,鞍馬寺,,,,วัดคุรามะ,쿠라마데라 절,
+1067,貴船神社,,貴船神社,贵船神社,ศาลเจ้าคิฟุเนะ,키후네 신사,
+1068,東福寺,,東福寺,东福寺,วัดโทฟุคุจิ,도후쿠지 절,
+1069,鈴虫寺,,,,วัดเคกงจิ,스즈무시데라 절,
+1070,北野天満宮,,,,ศาลเจ้าคิตาโนะเทนมังกู,키타노텐만구 신사,
+1071,日吉大社,,,,ศาลเจ้าฮิโยชิ,히요시타이샤 신사,
+1072,おごと(雄琴)温泉,,,,โอโกโตะออนเซ็น,오고토 온천,
+1073,久能山東照宮,,,,ศาลเจ้าคุโนซังโทโชกู,쿠노잔 토쇼구 신사,
+1074,平安神宮,heian jingu shrine,,,ศาลเจ้าเฮอันจิงกู,헤이안진구 신사,điện thờ Heian Jingu
+1075,鶴城天守閣,,,,คาคุโจเทนชุคาคุ,츠루가 성 천수각,
+1076,シルクロード文明博物館,,,,พิพิธภัณฑ์เส้นทางสายไหม,실크로드 문명관,
+1077,滝沢本陣,,,,,타키자와 혼진,
+1078,背炙山,,,,,세아부리 산,
+1079,東山温泉,,,,ฮิกาชิยามะออนเซ็น,히가시야마 온천,
+1080,七日町商店街,,,,ย่านร้านค้านาโนกะมาจิ,나누카마치 상점가,
+1081,圓教寺,,,,วัดเอ็นเกียวจิ,엔교지 절,
+1082,小樽出抜小路,,,,โอตารุเดนุคิ,오타루 데누키 코미치,
+1083,鬼怒川溫泉,,,,คินุกาว่าออนเซ็น,기누가와 온천,
+1084,萬世橋,,,,สะพานมันเซ,만세이바시 다리,
+1085,神田川,,,,แม่น้ำคันดะ,칸다가와,
+1086,桃太郎神社,,,,ศาลเจ้าโมโมทาโร่,모모타로 신사,
+1087,瀬戸大橋,seto ohashi bridge,,,สะพานเซโตะโอฮาชิ,세토 대교,cầu Seto Ohashi
+1088,青池,blue pond,青池(青森),青池(青森),บ่อน้ำสีฟ้าชิโรกาเนะ,아오이케 호수,ao xanh
+1089,国際通り,kokusai street,國際通,国际通,ถนนโคคุไซ,국제 거리,phố Kokusai
+1090,波上宮,,,,นามิโนะอุเอะกู,나미노우에구 신사,
+1091,富士五湖,fuji five lakes,富士五湖,富士五湖,ทะเลสาบฟูจิทั้งห้า,후지 5호,năm hồ Fuji
+1092,臨怪荘,,,,โรงแรมรินไคโซ,린카이소,
+1093,函館山,mt hakodate,,,ภูเขาฮาโกดาเตะ,하코다테 산,núi Hakodate
+1094,眼鏡橋,,,,สะพานเมกาเนะ,메가네바시 다리,
+1095,小樽運河,otaru canal,,,คลองโอตารุ,오타루 운하,kênh Otaru
+1096,平泉,,,,ฮิไรสุมิ,히라이즈미,
+1097,湯布院,yufuin,湯布院,汤布院,วัดยูฟุอิน,유후인,Yufuin
+1098,道後温泉,dogo onsen,道後溫泉,道后温泉,โดโกะออนเซ็น,도고 온천,Dogo onsen
+1099,江の島,enoshima,江之島,江之岛,เอโนะชิม่า,에노시마 섬,Enoshima
+1100,新大阪駅,shin-osaka station,,,สถานีชินโอซาก้า,신오사카역,ga Shin-osaka
+1101,由比ヶ浜,yuigahama,,,หาดยุยกะฮามะ,유이가하마 해변,Yuigahama
+1102,直島,naoshima,直島,直岛,เกาะนาโอชิม่า,나오시마 섬,Naoshima
+1103,谷中,yanaka,,,ยานาคะ,야나카,Yanaka
+1104,根津,nezu,,,เนสุ,네즈,Nezu
+1105,千駄木,sendagi,,,เซนดากิ,센다기,Sendagi
+1106,地獄谷野猿公苑,jigokudani yaen koen,,,ออนเซ็นลิง จิโกคุดะนิ,지고쿠다니 야생 원숭이 공원,công viên Jigokudani Yaen
+1107,野沢温泉,,,,โนซาว่าออนเซ็น,노자와 온천,
+1108,草津温泉,kusatsu onsen,草津溫泉,草津温泉,คุซัตสึออนเซ็น,쿠사츠 온천,Kusatsu onsen
+1109,谷根千,yanesen,,,ยาเนะเซ็น,야네센,Yanesen
+1110,日本アルプス,,,,เจแปนแอลป์,일본 알프스,
+1111,富士山,mt. fuji,富士山,富士山,ภูเขาไฟฟูจิ,후지산,núi Fuji
+1112,飛騨高山,hida takayama,飛驒高山,飞驒高山,ฮิดะ ทาคายามะ,히다 다카야마,Hida Takayama
+1113,東京駅,tokyo station,東京車站,东京车站,สถานีโตเกียว,도쿄역,ga Tokyo
+1114,枚方公園,,,,สวนฮิราคาตะ,히라카타 공원,
+1115,淀川,,,,แม่น้ำโยโดะ,요도가와 강,
+1116,大阪城公園,osaka castle park,,,สวนปราสาทโอซาก้า,오사카성 공원,công viên lâu đài Osaka
+1117,厳島神社,itsukushima shrine,嚴島神社,严岛神社,ศาลเจ้าอิตสึกุชิมะ,이츠쿠시마 신사,điện thờ Itsukushima
+1118,住吉大社,sumiyoshi taisha shrine,住吉大社,住吉大社,ศาลเจ้าซุมิโยชิ,스미요시타이샤 신사,điện thờ Sumiyoshi Taisha
+1119,先斗町,ponto-cho,,,พอนโตะโช,폰토쵸,Ponto-cho
+1120,田舎館村,,,,หมู่บ้านอินาคะดาเตะ,이나카다테 마을,
+1121,野毛町,,,,โนเกะโช,노게쵸,
+1122,高湯温泉,,,,ทาคายุออนเซ็น,타카유 온천,
+1123,京町家,,,,เคียวมาจิยะ,쿄마치야,
+1124,新宿駅,shinjuku station,新宿車站,新宿车站,สถานีชินจูกุ,신주쿠역,ga Shinjuku
+1125,主計町,,,,,카즈에마치,
+1126,京都駅,kyoto station,京都車站,京都车站,สถานีเกียวโต,교토역,ga Kyoto
+1127,梅田駅,umeda station,,,สถานีอุเมดะ,우메다역,ga Umeda
+1128,大久野島,,,,เกาะโอคุโนะชิมะ,오쿠노시마 섬,
+1129,鳥取砂丘,tottori sand dunes,鳥取砂丘,鸟取砂丘,เนินทรายทตโตริ,돗토리 사구,cồn cát Tottori
+1130,瀬戸内海,seto inland sea,瀨戶內海,濑户内海,ทะเลเซโตะใน,세토 내해,biển nội địa Seto
+1131,阿蘇神社,,,,ศาลเจ้าอะโซะ,아소 신사,
+1132,オランダ坂,,,,เนินฮอลันดา,오란다자카,
+1133,出島,,,,เกาะเดจิม่า,데지마,
+1134,中山道,,,,ถนนนาคายามะ,나카센도,
+1135,なんばウォーク,,,,นัมบะ วอล์ค,난바 워크,
+1136,難波御堂筋商店街,namba midosuji shopping street,,,ย่านร้านค้านัมบะมิโดสึจิ,난바 미도스지 상점가,phố mua sắm Namba Midosuji
+1137,鴨川納涼床,,,,โนะเรียวยูคะคาโมะกาว่า,카모가와 노료유카,
+1138,輪島朝市,,,,ตลาดเช้าวาจิม่า,와지마 아침 시장,
+1139,坊ちゃん列車,,,,รถไฟโบจัง,봇짱열차,
+1140,石部桜,,,,อิชิเบะซากุระ,이시베자쿠라,
+1141,ハチ公,hachiko,,,ฮาจิโค,하치코,Hachiko
+1142,横浜中華街,yokohama chinatown,,,โยโกฮาม่าไชน่าทาวน์,요코하마 차이나타운,phố Trung Quốc Yokohama
+1143,黒川温泉,,,,คุโรคาว่าออนเซ็น,쿠로카와 온천,
+1144,建長寺,,,,วัดเคนโชจิ,켄쵸지 절,
+1145,円覚寺,,,,วัดเอนกะคุจิ,엔가쿠지 절,
+1146,東京禅センター,,,,tokyo zen center,묘신지 절,
+1147,大雪山,,,,ภูเขาไทเซ็ตสึ,다이세츠 산,
+1148,有珠山,,,,ภูเขาอุซุ,우스 산,
+1149,磐梯山,,,,ภูเขาบันได,반다이 산,
+1150,浅間山,,,,ภูเขาอาซามะ,아사마 산,
+1151,箱根山,,,,ภูเขาฮาโกเน่,하코네 산,
+1152,九重山,,,,ภูเขาคุจู,쿠쥬 산,
+1153,岡崎城,,,,ปราสาทโอคาซากิ,오카자키 성,
+1154,和田塚,,,,วาดะสึกะ,와다즈카,
+1155,極楽寺,,,,โกคุราคุจิ,고쿠라쿠지,
+1156,稲村ヶ崎,,,,อินะมุระกะซาคิ,이나무라가사키,
+1157,七里ヶ浜,,,,ชิจิริกะฮามะ,시치리가하마 해변,
+1158,鎌倉高校前,,,,คามาคุระโคโคมาเอะ,카마쿠라 코코마에,
+1159,腰越,,,,โคชิโกเอะ,코시고에,
+1160,早雲山,,,,ภูเขาโซอุนซัน,소운산,
+1161,彫刻の森美術館,,,,พิพิธภัณฑ์กลางแจ้งฮาโกเน่,조각의 숲 미술관,
+1162,満濃池,,,,ทะเลสาบมันโน,만노이케 저수지,
+1163,加佐の岬,,,,แหลมคาสะ,카사노 곶,
+1164,橋立港,,,,ท่าเรือฮาชิดาเทะ,하시다테항,
+1165,雪の科学館,,,,พิพิธภัณฑ์หิมะและน้ำแข็ง,눈의 과학관,
+1166,愛染寺,,,,วัดไอเซนจิ,아이젠지 절,
+1167,鵜戸神宮,,,,ศาลเจ้าอุโดจิงกู,우도진구 신사,
+1168,関之尾の滝,,,,น้ำตกเซคิโนะโอ,세키노오 폭포,
+1169,天岩戸神社,,,,ศาลเจ้าอะมาโนะอิวาโตะ,아마노이와토 신사,
+1170,飫肥城下町,,,,โอบิโจคะมาจิ,오비 성하 마을,
+1171,霧島ファクトリーガーデン,,,,kirishima factory garden,키리시마 팩토리 가든,
+1172,えびの高原,,,,ที่ราบสูงเอบิโนะ,에비노 고원,
+1173,都井岬,,,,แหลมโทอิมิ,도이 곶,
+1174,塩江温泉,,,,ชิโอะโนเอะออนเซ็น,시오노에 온천,
+1175,鈍川温泉,,,,นิบุคาว่าออนเซ็น,니부카와 온천,
+1176,足摺温泉,,,,อะชิซุริออนเซ็น,아시즈리 온천,
+1177,大歩危温泉,,,,โอโบะเคะออนเซ็น,오보케 온천,
+1178,奥道後温泉,,,,โอคุโดโกะออนเซ็น,오쿠도고 온천,
+1179,田貫湖,,,,ทะเลสาบทานุคิ,타누키 호수,
+1180,三保の松原,,,,มิโฮะโนะมัตสึบาระ,미호노마츠하라,
+1181,沼津港深海水族館,,,,พิพิธภัณฑ์สัตว์น้ำทะเลลึกท่าเรือนุมะสึ,누마즈항 심해수족관,
+1182,白糸の滝,,,,น้ำตกชิระอิโตะ,시라이토 폭포,
+1183,音止めの滝,,,,น้ำตกโอโตะโดเมะ,오토도메 폭포,
+1184,奥大井湖上駅,,,,สถานีโอคุโออิโคะโจ,오쿠오이코죠역,
+1185,清水観音堂,,,,คิโยมิสึคันนนโด,키요미즈 관음당,
+1186,上野東照宮,ueno toshogu shrine,,,อุเอโนะโทโชกู,우에노 도쇼구 신궁,điện thờ Ueno Toshogu
+1187,下谷神社,,,,ศาลเจ้าชิตะยะจินจะ,시타야 신사,
+1188,今戸神社,,,,ศาลเจ้าอิมะโด,이마도 신사,
+1189,忍野八海,,,,หมู่บ้านน้ำใส,오시노 핫카이,
+1190,赤羽八幡神社,,,,ศาลเจ้าอาคาบาเนะฮาจิมัง,아카바네 하치만 신사,
+1191,小野神社,,,,ศาลเจ้าโอโนะ,오노 신사,
+1192,二宮神社,,,,ศาลเจ้านิโนะมิยะ,니노미야 신사,
+1193,松本神社,,,,ศาลเจ้ามัตสึโมโตะ,마츠모토 신사,
+1194,相葉神社,,,,ศาลเจ้าไอบะ,아이바 신사,
+1195,沼の平,,,,นุมะโนะไทระ,누마노타이라,
+1196,摩周湖,,,,ทะเลสาบมาชู,마슈 호수,
+1197,支笏湖,,支笏湖,支笏湖,ทะเลสาบชิคทสึ,시코츠 호수,
+1198,青い池,,青池(北海道),青池(北海道),บ่อน้ำสีน้ำเงิน,청의 호수,
+1199,阿寒湖,,,,ทะเลสาบอากัง,아칸 호수,
+1200,小川原湖,,,,ทะเลสาบโอกะวาระ,오가와라 호수,
+1201,田沢湖,,,,ทะเลสาบทาซาว่า,타자와 호수,
+1202,五色沼,,,,,고시키 늪,
+1203,猪苗代湖,,,,,이나와시로 호수,
+1204,龍ヶ窪,,,,,류가쿠보,
+1205,香嵐渓,,,,,고란케이 계곡,
+1206,日間賀島,,,,,히마카지마 섬,
+1207,やきもの散歩道,,,,,도자기 산책로,
+1208,護王神社,,,,ศาลเจ้าโกโอ,고오 신사,
+1209,鴨川,kamogawa,,,แม่น้ำคาโมกาว่า,카모가와,Kamogawa
+1210,花見小路通り,hanamikoji-dori,,,ถนนฮานะมิโคจิโดริ,하나미코지 거리,đường Hanamikoji
+1211,嵐山駅,arashiyama station,,,สถานีอาราชิยามะ,아라시야마역,ga Arashiyama
+1212,下鴨神社,shimogamo shrine,,,ศาลเจ้าชิโมกาโมะ,시모가모 신사,điện thờ Shimogamo
+1213,千両ヶ辻,senryougatsuji,,,เซนเรียวกะสึจื,센료가츠지,Senryougatsuji
+1214,鞍馬口通,kuchimaguchi-dori,,,ถนนคุรามะกุจิ,쿠라마구치 거리,đường Kuchimaguchi
+1215,二条城,nijo castle,二条城,二条城,ปราสาทนิโจ,니조 성,lâu đài Nijo
+1216,京都三条会商店街,kyoto sanjo shopping street,,,ย่านร้านค้าซันโจไค,교토 산죠회 상점가,phố mua sắm Kyoto Sanjo
+1217,京都文化博物館,the museum of kyoto,,,พิพิธภัณฑ์เกียวโต,교토 문화박물관,bảo tàng Kyoto
+1218,新京極通り,shinkyogoku-dori,,,ถนนชินเคียวโกคุ,신쿄고쿠 거리,đường Shinkyogoku
+1219,三宅八幡宮,miyake-hachimangu shrine,,,ศาลเจ้ามิยาเกะฮาจิมังกู,미야케하치만구 신사,điện thờ Miyake-Hachimangu
+1220,渋谷肉横丁,shibuya niku yokocho,,,ตรอกชิบูย่านิคุโยโกะโจ,시부야 니쿠요코초,Shibuya Niku Yokocho
+1221,恐山,mt osore,,,ภูเขาโอโซเระ,오소레 산,núi Osore
+1222,釧路湿原,kushiro shitsugen,,,หนองน้ำคุชิโระ,쿠시로 습원,Kushiro Shitsugen
+1223,雲海テラス,unkai terrace,,,ระเบียงหมอกอุนไคเทอเรส,운카이 테라스,thiên đường mây Unkai Terrace
+1224,堂ヶ島,dougashima,,,เกาะโดกะชิมะ,도가시마,Dougashima
+1225,白鬚神社,shirahige shrine,,,ศาลเจ้าชิระฮิเกะ,시라히게 신사,điện thờ Shirahige
+1226,丸山千枚田,maruyama senmaida,,,ทุ่งมารุยาม่าเซนไมดะ,마루야마 센마이다,Maruyama Senmaida
+1227,熊野古道,kumano kodo,熊野古道,熊野古道,คุมะโนะ โคโด,구마노 고도,Kumano Kodo
+1228,ヒリゾ浜,hirizo beach,,,ชายหาดฮิริโสะ,히리조 바닷가,bãi biển Hirizo
+1229,九十浜海水浴場,kujuppama beach,,,ที่เล่นน้ำทะเลคุจุปปามะ,쿠줏파마 해수욕장,bãi biển Kujuppama
+1230,白浜大浜海水浴場,shirahama beach,,,ที่เล่นน้ำหาดชิราฮามะ,시라하마오하마 해수욕장,bãi biển Shirahama
+1231,田子瀬浜海水浴場,tagosebama beach,,,ที่เล่นน้ำหาดทาโกเซฮามะ,타고세바마 해수욕장,bãi biển Tagosebama
+1232,長浜海水浴場,nagahama beach,,,ที่เล่นน้ำหาดนากาฮามะ,나가하마 해수욕장,bãi biển Nagahama
+1233,大瀬海水浴場,osekai beach,,,ที่เล่นน้ำทะเลโอเซ,오세 해수욕장,bãi biển Osekai
+1234,浮島海岸,futo coast,,,ชายหาดฟุโต,후토 해안,bờ biển Futo
+1235,スクランブル交差点,scramble crossing,,,ห้าแยกชิบูย่า,스크램블 교차로,ngã tư Scrambe Crossing (ngã tư Shibuya)
+1236,センター街,center-gai,,,ถนนเซนเตอร์ไก,센터가이,center-gai
+1237,目黒川,meguro river,,,แม่น้ำเมกุโระ,메구로 강,sông Meguro
+1238,千鳥ヶ淵,chidorigafuchi,,,บ่อน้ำชิโดริกะฟุจิ,치도리가후치,Chidorigafuchi
+1239,靖国神社,yasukuni shrine,靖國神社,靖国神社,ศาลเจ้ายาซุคุนิ,야스쿠니 신사,điện thờ Yasukuni
+1240,飛鳥山公園,asukayama park,,,สวนอะซุคะยามะ,아스카야마 공원,công viên Asukayama
+1241,隅田公園,sumida park,,,สวนซุมิดะ,스미다 공원,công viên Sumida
+1242,芝公園,shiba park,,,สวนชิบะ,시바 공원,công viên Shiba
+1243,鳥越神社,torikoe shrine,,,ศาลเจ้าโทริโกเอะ,토리코에 신사,điện thờ Torikoe
+1244,増上寺,zoujo-ji temple,,,วัดโซโจจิ,조죠지 절,đền Zoujo-ji
+1245,高尾山薬王院有喜寺,takaosan yakuoin temple,,,วัดทาคาโอะซังยาคุโออิงยูคิจิ,다카오 산 야쿠오인 우키지 절,đền Takaosan Yakuoin
+1246,築地本願寺,tsukiji hongwanji,,,วัดสึคิจิฮงกันจิ,쓰키지 혼간지 절,Tsukiji Hongwanji
+1247,大国魂神社,ookunitama shrine,,,ศาลเจ้าโอคุนิทามะ,오쿠니타마 신사,điện thờ Ookunitama
+1248,池上本門寺,ikegami honmon-ji temple,,,วัดอิเคกามิฮงมงจิ,이케가미 혼몬지 절,đền Ikegami Honmon-ji
+1249,装束稲荷神社,shozoku inari shrine,,,ศาลเจ้าโชโซคุอินาริ,쇼조쿠 이나리 신사,điện thờ Shozoku Inari
+1250,天開稲荷神社,tenkai inari shrine,,,ศาลเจ้าเทนคะอินาริ,텐카이 이나리 신사,điện thờ Tenkai Inari
+1251,櫛田神社,kushidan shrine,,,ศาลเจ้าคุชิดะ,쿠시다 신사,điện thờ Kushidan
+1252,香椎宮,kashiigu shrine,,,ศาลเจ้าคะชีกู,카시구 신사,điện thờ Kashiigu
+1253,宮地嶽神社,miyajidake shrine,,,ศาลเจ้ามิยาจิดาเคะ,미야지다케 신사,điện thờ Miyajidake
+1254,宗像大社,munakata taisha shrine,,,ศาลเจ้ามุนาคาตะไทฉะ,무나카타타이샤 신사,điện thờ Munakata Taisha
+1255,高良大社,kora taisha shrine,,,ศาลเจ้าโคระไทฉะ,코라타이샤 신사,điện thờ Kora Taisha
+1256,筥崎宮,hakozaki shrine,,,ศาลเจ้าฮาโคซากิกู,하코자키구 신사,điện thờ Hakozaki
+1257,恋木神社,mizuta tenmangu shrine,,,ศาลเจ้าโคอิโนะ,코이노키 신사,điện thờ Mizuta Tenmangu
+1258,英彦山神宮,hikosan jingu,,,ศาลเจ้าฮิโคะซังจิงกู,히코산진구 신사,Hikosan Jingu
+1259,櫻井神社,sakurai shrine,,,ศาลเจ้าซากุระอิ,사쿠라이 신사,điện thờ Sakurai
+1260,忍者寺,ninja temple,,,วัดนินจา,닌자데라 절,đền Ninja
+1261,大雪山系旭岳,asahidake ropeway,,,เทือกเขาอาซาฮิดาเกะ,다이세츠 산 아사히다케,đường dây cáp Asahidake
+1262,然別湖,lake shikaribetsu,,,ทะเลสาบชิคาริเบ็ตสึ,시카리베츠 호수,hồ Shikaribetsu
+1263,層雲峡,sounkyo,,,หุบเขาโซอุนเคียว,소운쿄 협곡,Sounkyo
+1264,白ひげの滝,shirahige falls,,,น้ำตกชิราฮิเกะ,흰수염 폭포,thác Shirahige
+1265,鶴居村,tsurui village,,,หมู่บ้านสึรุอิ,츠루이무라,làng Tsurui
+1266,カジカ沢の滝,,,,น้ำตกคาจิกาซาวะ,카지카자와 폭포,
+1267,オンネトー,lake onneto,,,ทะเลสาบออนเนโต,온네토 호수,hồ Onneto
+1268,屈斜路湖,lake kussharo,,,ทะเลสาบคุชชะโระ,쿳샤로 호수,hồ Kussharo
+1269,赤坂氷川神社,akasaka hikawa shrine,,,ศาลเจ้าอาคาซากะฮิคาวะ,아카사카 히카와 신사,điện thờ Akasaka Hikawa
+1270,芝大神宮,shibadai jingu shrine,,,ศาลเจ้าชิบะไดจิงกู,시바다이진구 신사,điện thờ Shibadai
+1271,白山神社,hakusan shrine,,,ศาลเจ้าชิรายามะ,하쿠산 신사,điện thờ Hakusan
+1272,妙義神社,myogi shrine,,,ศาลเจ้าเมียวกิ,묘기 신사,điện thờ Myogi
+1273,夫婦木神社,meotogi shrine,,,ศาลเจ้าเมะโอโทกิ,메오토기 신사,điện thờ Meotogi
+1274,タワー大神宮,tower daijingu shrine,,,ศาลเจ้าทาวเวอร์ไดจิงกู,타워 다이진구 신사,điện thờ tòa tháp Daijingu
+1275,大宮八幡宮,omiya hachimangu shrine,,,ศาลเจ้าโอมิยะฮาจิมังกู,오미야 하치만구 신사,điện thờ Omiya Hachimangu
+1276,紅葉谷公園,momijidani park,,,สวนโมมิจิดานิ,모미지다니 공원,công viên Momijidani
+1277,五重塔,goju-no-to,,,เจดีย์ห้าชั้น,오중탑,Goju-no-to
+1278,大聖院,daishoin temple,,,วัดไดโชอิน,다이쇼인 절,đền Daishoin
+1279,大元神社,omoto shrine,,,ศาลเจ้าโอโมโตะ,오모토 신사,điện thờ Omoto
+1280,大元公園,omoto park,,,สวนโอโมโตะ,오모토 공원,công viên Omoto
+1281,荒胡子神社,araebisu shrine,,,ศาลเจ้าอาราเอะบิซุ,아라에비스 신사,điện thờ Araebisu
+1282,獅子岩展望台,shishiiwa observatory,,,จุดชมวิวชิชิอิวะ,시시이와 전망대,đài quan sát Shishiiwa
+1283,宮島表参道商店街,miyajima omotesando shopping street,,,ย่านร้านค้ามิยาจิม่าโอโมเตะซันโด,미야지마 오모테산도 상점가,phố mua sắm Miyajima Omote Sando
+1284,弥山,mt. misen,,,ภูเขามิเซน,미센 산,núi Misen
+1285,護国寺,gokokuji temple,,,วัดโกโคคุจิ,고코쿠지 절,đền Gokokuji
+1286,正雲寺,shounji temple,,,วัดโชอุนจิ,쇼운지 절,đền Shounji
+1287,正法院,shohoin temple,,,วัดโชโฮอิน,쇼호인 절,đền Shohoin
+1288,妙厳寺,taeganji temple,,,วัดทะเอะกันจิ,묘곤지 절,đền Taeganji
+1289,本覚院,hongakuin temple,,,วัดฮงกะคุอิน,혼가쿠인 절,đền Hongakuin
+1290,那谷寺,nata temple,,,วัดนาตะ,나타데라 절,đền Nata
+1291,箸蔵寺,hashikuraji temple,,,วัดฮาชิคุระจิ,하시쿠라지 절,đền Hashikuraji
+1292,妙教寺,myokoji temple,,,วัดเมียวโคจิ,묘쿄지 절,đền Myokoji
+1293,文殊仙寺,monjusenji temple,,,วัดมงจูเซนจิ,몬쥬센지 절,đền Monjusenji
+1294,明治神宮外苑,meijijingu gaien,,,อุทยานชั้นนอกเมจิจิงกูไกเอ็น,메이지진구 가이엔,Meijijingu Gaien
+1295,大田黒公園,otaguro park,,,สวนโอตากุโระ,오타구로 공원,công viên Otaguro
+1296,殿ヶ谷戸庭園,tonogayato garden,,,สวนโทโนกายาโตะ,토노가야토 정원,vườn Tonogayato
+1297,井の頭公園,inokashira park,,,สวนอิโนะคาชิระ,이노카시라 공원,công viên Inokashira
+1298,六義園,rikugien,六義園,六义园,สวนริคุกิเอ็น,리쿠기엔,Rikugien
+1299,箕面大滝,mino falls,,,น้ำตกมิโนโอทากิ,미노오 폭포,thác Mino
+1300,勝尾寺,katsuoji,,,วัดคัตสึโอจิ,카츠오지 절,Katsuoji
+1301,大威徳寺,daiitokuji,,,วัดไดอิโทคุจิ,다이이토쿠지 절,Daiitokuji
+1302,犬鳴山,mt. inunaki,,,ภูเขาอินุนากิซัง,이누나키 산,núi Inunaki
+1303,金剛山,mt. kongo,,,ภูเขาคอนโกซัง,콘고 산,núi Kongo
+1304,御堂筋,midosuji,,,ถนนมิโดสุจิ,미도스지,Midosuji
+1305,大仙公園,daisen park,,,สวนไดเซน,다이센 공원,công viên Daisen
+1306,善光寺,zenkoji temple,,,วัดเซนโคจิ(善光寺),젠코지 절,đền Zenkoji
+1307,妙心寺,myoshinji temple,,,วัดเมียวชินจิ,묘신지 절,đền Myoshinji
+1308,吉祥閣,,,,คิชโชคาคุ,킷쇼카쿠,
+1309,大陽寺,taiyoji temple,,,วัดไทโยจิ,타이요지 절,đền Taiyoji
+1310,戸隠神社,togakushi shrine,,,ศาลเจ้าโทคาคุชิจินจะ,토가쿠시 신사,điện thờ Togakushi
+1311,浄蓮華院,iorengein temple,,,วัดโจเรงเกอิน,죠렌게인 절,đền Iorengein
+1312,江戸川,edogawa river,,,แม่น้ำเอโดะกาว่า,에도가와 강,sông Edogawa
+1313,柴又,shibamata,,,ชิมะบาตะ,시바마타,Shibamata
+1314,東京ベイエリア,tokyo bay area,,,อ่าวโตเกียว,도쿄 베이 에리어,khu vực vịnh Tokyo
+1315,宇和島城,uwajima castle,,,ปราสาทอุวะจิม่า,우와지마 성,lâu đài Uwajima
+1316,今治城,imabari castle,,,ปราสาทอิมะบาริ,이마바리 성,lâu đài Imabari
+1317,観自在寺,kanjizai temple,,,วัดคันจิไซ,칸지자이지 절,đền Kanjizai
+1318,三角寺,sankaku temple,,,วัดซังคะคุ,산카쿠지 절,đền Sankaku
+1319,香積寺(隻手薬師),koshaku temple,,,วัดโคชะคุ,코샤쿠지 절,đền Koshaku
+1320,多賀神社,taga shrine,,,วัดทากะ,타가 신사,điện thờ Taga
+1321,大宝寺,taihou temple,,,วัดไทโฮจิ,다이호지 절,đền Taihou
+1322,上黒岩岩陰遺跡,kamikuroiwa site,,,,카미쿠로이와 바위그늘,khu Kamikuroiwa
+1323,仁和寺,burakuji temple,,,วัดบุราคุจิ,닌나지 절,đền Burakuji
+1324,最御崎寺,hotsumisakiji temple,,,วัดโฮสึมิซากิ,호츠미사키지 절,đền Hotsumisakiji
+1325,延光寺,enkoji temple(延光寺),,,วัดเอ็นโคจิ,엔코지 절,đền Enkoji (延光 寺)
+1326,龍河洞,ryugado cave,,,ถ้ำริวกะโด,류가도 동굴,hang Ryugado
+1327,岡豊城,oko castle,,,ปราสาทโอโค,오코 성,lâu đài Oko
+1328,岩崎弥太郎生家,birthplace of iwasaki yataro,,,,이와사키 야타로 생가,nơi sinh của Iwasaki Yataro
+1329,金刀比羅宮,kotohira-gu,,,,코토히라구 신사,Kotohira-gu
+1330,神谷神社,,,,ศาลเจ้าคันดะนิ,칸다니 신사,
+1331,雲辺寺,unpenji temple,,,วัดอุนเพ็นจิ,운펜지 절,đền Unpenji
+1332,本山寺,motoyamaji temple,,,วัดโมโตยามะจิ,모토야마지 절,đền Motoyamaji
+1333,善通寺,zentsuji temple,,,วัดเซ็นสึจิ,젠츠지 절,đền Zentsuji
+1334,大窪寺,okuboji temple,,,วัดโอคุโบะจิ,오쿠보지 절,đền Okuboji
+1335,丸亀城,marugame castle,,,ปราสาทมารุกาเมะ,마루가메 성,lâu đài Marugame
+1336,銭形砂絵,zenigata sunae,,,,제니가타 스나에,Zenigata Sunae
+1337,鬼ヶ島大洞窟,onigashima cave,,,ถ้ำโอนิกะชิม่า,오니가시마 대동굴,hang động Onigashima
+1338,東扇島東公園,higashiogishima east park,,,สวนฮิกาชิโอกิชิม่า,히가시오기시마 히가시 공원,công viên phía đông Higashiogishima
+1339,大正橋,taishobashi bridge,,,สะพานไทโช,타이쇼바시 다리,cầu Taishobashi
+1340,筑波研究学園都市,tsukuba science city,,,,츠쿠바 연구 학원 도시,thành phố khoa học Tsukuba
+1341,晴海親水公園,harumi water park,,,,하루미 친수공원,công viên nước Harumi
+1342,砂山都市緑地,sunayama toshi ryokuchi park,,,,스나야마 도시 녹지,công viên Sunayama Toshi Ryokuchi
+1343,浜寺公園,hamadera park,,,สวนฮามะเดระ,하마데라 공원,công viên Hamadera
+1344,網干なぎさ公園,aboshi nagisa park,,,,아보시 나기사 공원,công viên Aboshi Nagisa
+1345,鷲羽山展望台,washuzan observatory,,,,와슈잔 전망대,đài quan sát Washuzan
+1346,知床国立公園,shiretoko national park,,,สวนอุทยานแห่งชาติชิเรโทโกะ,시레토코 국립공원,công viên quốc gia Shiretoko
+1347,中尊寺,chusonji temple,,,วัดชูซงจิ,주손지 절,đền Chusonji
+1348,鷲羽山,mt. washu,,,,와슈 산,núi Washu
+1349,広島平和記念公園,hiroshima peace memorial park,,,อนุสรณ์สถานสันติภาพฮิโรชิม่า,히로시마 평화기념공원,công viên tưởng niệm hòa bình Hiroshima
+1350,AKB48劇場,akb48 theatre,,,โรงละครAKB48,AKB48 극장,nhà hát akb48
+1351,銀閣寺,ginkakuji,,,วัดกินคะคุจิ,은각사,Ginkakuji
+1352,龍安寺,ryoanji,,,วัดเรียวอันจิ,료안지 절,Ryoanji
+1353,西芳寺,kokedera,,,วัดโคเคะเดระ,사이호지 절,Kokedera
+1354,東寺,toji,,,วัดโทจิ,토지 절,Toji
+1355,山中湖,yamanakako lake,,,ทะเลสาบยามะนากะ,야마나카 호수,hồ Yamanakako
+1356,小安峡,oyasu ravine,,,หุบเขาโอยาซุ,오야스쿄 협곡,khe núi Oyasu
+1357,三十三間堂,sanjusangendo,,,วัดซันจูซันเกงโด,산쥬산겐도,Sanjusangendo
+1358,原爆ドーム,atomic bomb dome,,,อนุสรณ์สันติภาพฮิโรชิม่า,원폭 돔,vòm bom nguyên tử
+1359,白い恋人パーク,shiroi koibito park,,,shiroi koibito park,시로이코이비토 파크,công viên Shiroi Koibito
+1360,浜離宮恩賜庭園,hamarikyu gardens,,,,하마리큐온시 정원,vườn Hamarikyu
+1361,東京ミッドタウン,tokyo midtown,,,โตเกียวมิดทาวน์,도쿄 미드타운,trung tâm thành phố Tokyo
+1362,けやき坂,keyakizaka,,,เคยากิซากะ,케야키자카,Keyakizaka
+1363,日本銀行旧小樽支店金融資料館,the bank of japan otaru museum,,,พิพิธภัณฑ์ธนาคารแห่งประเทศญี่ปุ่นสาขาโอตารุ,일본은행 구 오타루지점 금융자료관,"bảo tàng Otaru, Ngân hàng Nhật Bản"
+1364,小樽オルゴール堂本館,otaru music box museum,,,พิพิธภัณฑ์กล่องดนตรีโอตารุ,오타루 오르골당 본관,bảo tàng hộp nhạc Otaru
+1365,天狗山,mt. tengu,,,ภูเขาเทงกูยามะ,텐구 산,núi Tengu
+1366,田中酒造亀甲蔵,tanaka sake brewery kikkogura,,,โรงกลั่นสุราทานากะ คิกโคกุระ,다나카 주조 킷코구라,nhà máy rượu sake Tanaka Kikkogura
+1367,小樽貴賓館,old aoyama villa,,,คฤหาสน์ตระกูลอาโอยาม่า,오타루 귀빈관,biệt thự Aoyama cũ
+1368,南樽市場,nantaru market,,,ตลาดนันทารุ,난타루 시장,chợ Nantaru
+1369,オシンコシンの滝,oshinkoshin falls,,,น้ำตกโอชินโคชิน,오신코신 폭포,thác Oshinkoshin
+1370,オロンコ岩,oronko rock,,,หินโอรนโคะ,오론코 바위,đá Oronko
+1371,夕陽台展望台,yuhidai lookout,,,จุดชมวิวยูฮิได,유히다이 전망대,Yuhidai Lookout
+1372,プユニ岬,cape puyuni,,,แหลมพุยุนิ,푸유니 곶,mũi Puyuni
+1373,フレペの滝,frepe waterfall,,,น้ำตกฟุรุเพะ,후레페 폭포,thác nước Frepe
+1374,知床峠,shiretoko pass,,,สันเขาชิเรโทโกะ,시레토코 고개,đèo Shiretoko
+1375,知床五湖,shiretoko goko lakes,,,ทะเลสาบชิเรโทโกะทั้งห้า,시레토코 5호,hồ Shiretoko Goko
+1376,カムイワッカ湯の滝,kamuiwakka waterfall,,,น้ำตกคะมุยวักกะยุ,카무이왓카유 폭포,thác Kamuiwakka
+1377,浅草寺,sensoji temple,淺草寺,浅草寺,วัดอาซากุสะ,센소지 절,đền Sensoji
+1378,友ヶ島,tomoga island,,,เกาะโทโมกะชิมะ,토모가 섬,đảo Tomoga
+1379,円月島,engetsu island,,,เกาะเอ็นเก็ตสึชิมะ,엔게츠도,đảo Engetsu
+1380,那智の滝,nachi falls,,,น้ำตกนะชิ,나치 폭포,thác Nachi
+1381,谷瀬の吊り橋,tanize suspension bridge,,,สะพานแขวนทะนิเสะ,타니제 현수교,cầu treo Tanize
+1382,明石海峡大橋,akashi kaikyo bridge,,,สะพานอะคาชิไคเคียว,아카시 해협 대교,cầu Akashi Kaikyo
+1383,瀞峡,dorokyo gorge,,,ช่องแคบโดโระเคียว,도로 협곡,hẻm núi Dorokyo
+1384,高雄神護寺,jingoji temple,,,วัดทาคาโอะจินโกจิ,타카오 진고지 절,đền Jingoji
+1385,車折神社,kurumazaki shrine,,,ศาลเจ้าคุรามาซากิ,쿠루마자키 신사,điện thờ Kurumazaki
+1386,直指庵,jikishian temple,,,วัดจิคิชิอัน,지키시안 절,đền Jikishian
+1387,圓光寺,enkoji temple(圓光寺),,,วัดเอนโคจิ,엔코지 절,đền Enkoji (圓 光寺)
+1388,高台寺,kodaiji temple,,,วัดโคไดจิ,코다이지 절,đền Kodaiji
+1389,端島,hashima island,,,เกาะฮาชิมะ,군함도,đảo Hashima
+1390,稲積水中鍾乳洞,inazumi underwater cave,,,ถ้ำหินปูนใต้น้ำอินะซุมิ,이나즈미 수중 종유동,hang dưới nước Inazumi
+1391,稲佐山,mt. inasa,,,ภูเขาอินาสะ,이나사 산,núi Inasa
+1392,ラピュタロード,road to laputa,,,ถนนลาพิวต้า,라퓨타 로드,đường đến Laputa
+1393,河内農園,kawachi fuji gardens,,,สวนคาวาจิ,카와치 후지엔,vườn Kawachi Fuji
+1394,御船山楽園,mifuneyama rakuen garden,,,สวนมิฟุเนะยามะราคุเอน,미후네야마 라쿠엔,vườn Mifuneyama Rakuen
+1395,青ヶ島,aogashima,,,เกาะอาโอกะชิมะ,아오가 섬,Aogashima
+1396,袋田の滝,fukuroda falls,,,น้ำตกฟุคุโรดะ,후쿠로다 폭포,thác Fukuroda
+1397,もみじ谷大吊橋,momijidani suspension bridge,,,สะพานแขวนโมมิจิดานิ,모미지다니 대현수교,cầu treo Momijidani
+1398,白根山,mt. shirane,,,ภูเขาชิราเนะ,시라네 산,núi Shirane
+1399,吹割の滝,fukiware falls,,,น้ำตกฟุคิวาเระ,후키와레 폭포,thác Fukiware
+1400,梅村庭園,umemura garden,,,สวนอุเมมุระ,우메무라 정원,vườn Umemura
+1401,旧蔵内邸庭園,,,,สวนคฤหาสน์เก่าตระกูลคุราอุจิ,구 이와사키 저택 정원,
+1402,盛岡市中央公民館庭園,,,,สวนศาลาประชาคมกลางเมืองโมริโอกะ,모리오카시 중앙 공민관 정원,
+1403,不老仙館庭園,,,,สวนฟุโรเซนคัง,후로센칸 정원,
+1404,鳥潟会館庭園,,,,สวนหอประชุมโทริกาตะ,토리가타 회관 정원,
+1405,鍋島家住宅庭園,,,,สวนคฤหาสน์ตระกูลนาเบชิมะ,나베시마 저택 정원,
+1406,寄暢亭庭園,,,,สวนคิโจเท,키쵸테이 정원,
+1407,内藤記念館庭園,,,,สวนพิพิธภัณฑ์อนุสรณ์ไนโต้,나이토 기념관 정원,
+1408,福島県迎賓館庭園,,,,สวนเรือนรับรองแขกจังหวัดฟุกุชิมะ,후쿠오카현 영빈관 정원,
+1409,天竜院庭園,,,,สวนเท็นริวอิน,텐류인 정원,
+1410,福山市福寿会館庭園,,,,สวนหอประชุมฟุกุจุเมืองฟุคุยามะ,후쿠야마시 후쿠쥬 회관 정원,
+1411,中島知久平邸庭園,,,,สวนคฤหาสน์ของนากาจิมะชิคุเฮ,나카지마 치쿠헤이 저택 정원,
+1412,千葉大学園芸学部庭園,,,,สวนคณะพฤกษศาสตร์มหาวิทยาลัยชิบะ,치바 대학 원예학부 정원,
+1413,旧堀田正倫別邸庭園,,,,สวนในเรือนแยกเก่าของฮตตะมาซาโทโมะ,구 홋타 저택 정원,
+1414,根津美術館,,,,พิพิธภัณฑ์เนสึ,네즈 미술관,
+1415,旧安田楠雄邸庭園,,,,สวนคฤหาสน์เก่าของยาซุดะคุซุโอะ,구 야스다 쿠스오 저택 정원,
+1416,懐徳館庭園,,,,สวนไคโตคุคัง,카이토쿠칸 정원,
+1417,椿山荘庭園,,,,สวนจินซันโซ,친잔소 정원,
+1418,清澄庭園,kiyosumi garden,,,สวนคิโยซุมิ,키요스미 정원,vườn Kyosumi
+1419,旧渋沢栄一邸庭園,,,,สวนคฤหาสน์เก่าของชิบุซาวะเออิจิ,구 시부사와 에이이치 저택 정원,
+1420,山本亭庭園,,,,สวนยามาโมโตะเท,야마모토테이 정원,
+1421,古稀庵庭園,,,,สวนโคคิอัง,코키안 정원,
+1422,北方文化博物館庭園,,,,สวนพิพิธภัณฑ์วัฒนธรรมภาคเหนือ,홋포 분카 박물관 정원,
+1423,教算坊庭園,,,,สวนเคียวซังโบ,쿄산보 정원,
+1424,中田氏の庭園,,,,สวนของตระกูลนาคาดะ,나카타 씨 정원,
+1425,東山荘庭園,,,,สวนโทซันโซ,토잔소 정원,
+1426,清流亭庭園,,,,สวนเซริวเท,세이류테이 정원,
+1427,爲三郎記念館庭園,,,,สวนหออนุสรณ์ทาเมซาบุโร่,타메자부로 기념관 정원,
+1428,諸戸徳成邸庭園,,,,สวนคฤหาสน์โมโรโตะโทคุนาริ,모로토 토쿠나리 저택 정원,
+1429,洛翠庭園,,,,สวนราคุซุย,라쿠스이 정원,
+1430,長府庭園,chofu garden,,,สวนโจฟุ,쵸후 정원,vườn Chophu
+1431,有隣荘庭園,,,,สวนยูรินโซ,유린소 정원,
+1432,元町商店街,motomachi shipping street,,,ย่านร้านค้าโมโตมาจิ,모토마치 상점가,phố mua sắm Motomachi
+1433,クイーンズスクエア横浜,queens square yokohama,,,ควีนสแควร์โยโกฮามา,퀸즈 스퀘어 요코하마,quảng trường Queens Yokohama
+1434,港の見える丘公園,harbor view park,,,harbor view park,항구가 보이는 언덕 공원,công viên bến cảng
+1435,三溪園,yokohama sankeien garden,,,สวนซังเคเอ็น,산케이엔,vườn Yokohama Sankeien
+1436,北竜のひまわりの里,hokuryu sunflower village,,,หมู่บ้านดอกทานตะวันโฮคุเรียว,호쿠류 해바라기 마을,làng hoa hướng dương Hokuryu
+1437,羊蹄山,mt. yotei,,,ภูเขาโยเท,요테이 산,núi Yotei
+1438,昭和新山,mt. showashin,,,ภูเขาโชวะชิน,쇼와신 산,núi Showashin
+1439,富良野のラベンダー畑,furano lavender fields,,,ทุ่งดอกลาเวนเดอร์ฟุราโนะ,후라노 라벤더 밭,cánh đồng hoa oải hương Furano
+1440,カンカネ洞,kankane cave,,,ถ้ำคังคะเนะโด,칸카네 동굴,hang Kankane
+1441,あぶくま洞,abukuma cave,,,ถ้ำอะบุคุมะโด,아부쿠마 동굴,hang Abukuma
+1442,鳴沢氷穴,narusawa ice cave,,,ถ้ำน้ำแข็งนารุซาว่า,나루사와 얼음 동굴,hang băng Narusawa
+1443,天窓洞,,,,ถ้ำเทนโซโด,텐소 동굴,
+1444,飛騨大鍾乳洞,hida great limestone cave,,,ถ้ำหินปูนใหญ่ฮิดะ,히다 대종유동,hida hang đá vôi lớn
+1445,浄土ケ浜,jodogahama beach,,,โจโดกะฮามะ,죠도가하마 해변,bãi biển Jodogahama
+1446,水晶浜,suishohama beach,,,ซุยโชฮามะ,스이쇼하마 해변,bãi biển Suishoween
+1447,百合ヶ浜,yurigahama beach,,,ยูริกะฮามะ,유리가하마 해변,bãi biển Yurigahama
+1448,人津久海水浴場,,,,ชายหาดฮิโตสึคุ,히토츠쿠 해수욕장,
+1449,ニシ浜ビーチ,nishihama beach,,,ชายหาดนิชิฮามะ,니시하마 해변,bãi biển Nishihama
+1450,はての浜,hatenohama beach,,,ฮาเทโนะฮามะ,하테노하마 해변,bãi biển Hatenoween
+1451,古宇利島,korijima islnad,,,เกาะโคอุริจิมะ,코우리 섬,đảo Korijima
+1452,瀬底ビーチ,seseko beach,,,ชายหาดเซโซโกะ,세소코 해변,bãi biển Seseko
+1453,糸島,itoshima,,,อิโตะชิม่า,이토시마,Itoshima
+1454,能古島,nokonoshima,,,เกาะโนโกะโนะชิม่า,노코시마 섬,Nokonoshima
+1455,呼子朝市,yobuko morning market,,,ตลาดเช้าโยบุโกะ,요부코 아침시장,chợ buổi sáng Yobuko
+1456,肥前夢街道,ninja village hizenyumekaidou,,,ฮิเซ็นยูเมะไคโด,히젠유메카이도,làng ninja hizenyumekaidou
+1457,吉野ヶ里,yoshinogari,,,สวนประวัติศาสตร์โยชิโนะกะริ,요시노가리,yoshinogari
+1458,唐津城,karatsu castle,,,ปราสาทคาราสึ,카라츠 성,lâu đài Karatsu
+1459,嬉野温泉,ureshino onsen,,,อุเรชิโนะออนเซ็น,우레시노 온천,Ureshino onsen
+1460,くじゅう花公園,kuju flower park,,,สวนดอกไม้คุจู,쿠쥬 꽃 공원,công viên hoa Kuju
+1461,九重夢大吊橋,kokonoe yume suspension bridge,,,สะพานแขวนโคโคโนะจูยูเมะ,고코노에 유메 오쓰리바시 현수교,cầu treo Kokonoe Yume
+1462,由布院,yufuin onsen,,,ยูฟุอินออนเซ็น,유후인,Yufuin onsen
+1463,別府温泉,beppu onsen,,,เบปปุออนเซ็น,벳푸 온천,Beppu onsen
+1464,菊池渓谷,kikuchi gorge,,,หุบเขาคิคุจิ,기쿠치 계곡,hẻm núi Kikuchi
+1465,角島大橋,tsunoshima bridge,,,สะพานสึโนะชิม่า,츠노시마 대교,cầu Tsunoshima
+1466,巌流島,ganryu-jima,,,เกาะกังริวจิม่า,간류 섬,ganryu-jima
+1467,亀老山展望公園,kirosan observatory park,,,อุทยานและหอสังเกตการณ์ภูเขาคิโร,키로 섬 전망공원,công viên đài quan sát Kirosan
+1468,玉取崎,cape tamatori,,,แหลมทามะโทริซากิ,타마토리 곶,mũi tamatori
+1469,立石寺,rissyakuji,,,วัดริชชะคุจิ,릿샤쿠지 절,Rissyakuji
+1470,鏡山,mt. kagami,,,ภูเขาคากามิ,카가미야마 산,núi Kagami
+1471,平安名崎灯台,hennasaki lighthouse,,,ประภาคารเฮนนะซากิ,헨나사키 등대,hải đăng Hennasaki
+1472,新勝寺,naritasan shinshoji temple,,,วัดชินโชจิ,신쇼지 절,đền Shinitasoji Naritasan
+1473,白谷雲水峡,shiratani unsuikyo ravine,,,หุบเขาชิราทานิอุนซุย,시라타니운스이 협곡,khe núi Shiratani unsuikyo
+1474,永観堂,eikando,,,วัดเอคังโด,에이칸도,Eikando
+1475,穴守稲荷神社,anamori inari shrine,,,ศาลเจ้าอะนะโมริอินาริ,아나모리 이나리 신사,điện thờ Anamori Inari
+1476,神宮外苑いちょう並木,meijijingu gaien ginkgo avenue,,,ทางเดินต้นแปะก๊วยนอกศาลเจ้าเมจิ,메이지진구 가이엔 은행나무 가로수길,đường Meijijingu Gaien cây bạch quả
+1477,天神橋筋商店街,tenjinbashi shopping street,,,ย่านร้านค้าเทนจินบาชิ,텐신바시스지 상점가,phố mua sắm Tenjinbashi
+1478,万博記念公園,expo'70 commemorative park,,,สวนอนุสรณ์งานเอ็กซ์โป 70,만국박람회 기념공원,công viên kỷ niệm triển lãm ‘70
+1479,蔵王キツネ村,zao fox village,,,หมูู่บ้านสุนัขจิ้งจอกซาโอะ,자오 여우마을,làng cáo Zao
+1480,かっぱ橋道具街,kappabashi dougu street,,,ถนนขายของใช้กัปปะบาชิ,갓파바시 도구거리,phố Kappabashi Dougu
+1481,岡山城,okayama castle,,,ปราสาทโอคายาม่า,오카야마 성,lâu đài Okayama
+1482,神田明神,kanda myojin shrine,,,ศาลเจ้าคันดะ,칸다묘진 신사,điện thờ Kanda Myojin
+1483,波除神社,namiyoke shrine,,,ศาลเจ้านามิโยเคะ,나미요케 신사,điện thờ Namiyoke
+1484,赤城神社,akagi shrine,,,ศาลเจ้าอาคากิ,아카기 신사,điện thờ Akagi
+1485,小網神社,koami shrine,,,ศาลเจ้าโคอามิ,코아미 신사,điện thờ Koami
+1486,武蔵御嶽神社,musashi mitake shrine,,,ศาลเจ้ามุซาชิมิตาเกะ,무사시미타케 신사,điện thờ Musashi
+1487,六本木横丁,roppongi yokocho,,,รปปงงิโยโกะโช,롯폰기 요코쵸,Roppongi Yokocho
+1488,首都圏外郭放水路,metropolitan area outer underground discharge channel,,,ทางระบายน้ำนอกรอบเขตเมืองหลวง,수도권 외곽 방수로,khu vực đô thị bên ngoài kênh xả ngầm
+1489,大仙陵古墳,daisen kofun,,,สุสานโบราณไดเซ็นเรียว,다이센 고분,Daisen Kofun
+1490,祖谷渓,iya valley,,,หุบเขาอิยะ,이야 계곡,thung lũng Iya
+1491,種子島宇宙センター,tanegashima space center,,,ศูนย์อวกาศทาเนะงาชิมะ,타네가시마 우주 센터,trung tâm không gian Tanegashima
+1492,御釜,okama crater,,,โอคามะ,오카마 분화구,miệng núi lửa Okama
+1493,鬼押出し園,onioshidashi park,,,สวนโอนิโอชิดาชิ,오니오시다시 공원,công viên Onioshidashi
+1494,千畳敷カール,senjojiki cirque,,,วงแหวนเซนโจจิกิ,센죠지키 카르,vùng đất trũng Senjojiki
+1495,三仏寺,sanbutsuji,,,วัดซันบุทสึ,산부츠지 절,Sanbutsuji
+1496,大歩危峡,oboke gorge,,,ช่องเขาโอโบเคะ,오보케 협곡,hẻm núi Oboke
+1497,原尻の滝,harajiri falls,,,น้ำตกฮาราจิริ,하라지리 폭포,thác Harajiri
+1498,トーフ岩,,,,หินโทฟุอิวะ,두부바위,
+1499,奥日立きららの里,okuhitachi kirara no sato,,,โอะคุฮิตาจิคิระระโนะซาโตะ,오쿠히타치 키라라노사토,Okuhitachi Kirara No Sato
+1500,花貫渓谷,hananuki valley,,,หุบเขาฮานะนุคิ,하나누키 계곡,thung lũng Hananuki
+1501,いろは坂,irohazaka,,,เนินอิโระฮะ,이로하자카 언덕길,Irohazaka
+1502,那須岳,mt. nasu,,,ภูเขานาสึ,나스 산,núi Nasu
+1503,元渕江公園,motofuchie park,,,สวนสาธารณะโมโตะฟุจิเอะ,모토후치에 공원,công viên Motofuchie
+1504,上千葉砂原公園,kamichiba sunahara park,,,สวนสาธารณะคามิชิบะซุนาฮาระ,카미치바 스나하라 공원,công viên Sunamara Kamichiba
+1505,碑文谷公園,himonya park,,,สวนสาธารณะฮิมอนยะ,히몬야 공원,công viên Himonya
+1506,羽村市動物公園,hamura zoo,,,สวนสัตว์โฮมุระ,하무라시 동물공원,sở thú Hamura
+1507,国営昭和記念公園,showa kinen park,,,สวนสาธารณะโชวะ,국영 쇼와 기념공원,công viên Showa Kinen
+1508,強羅公園,gora park,,,สวนสาธารณะโกระ,고라 공원,công viên Gora
+1509,グリンピア牧之原,grinpia maki no hara,,,สวนใบชากรินเปีย,그린피아 마키노하라,Grinpia Maki No Hara
+1510,黒根岩温泉,,,,คุโรเนะอิวะออนเซ็น,쿠로네이와 온천,
+1511,大室山,mt. omuro,,,ภููเขาโอมุโระ,오무로 산,núi Omuro
+1512,法金剛院,hokongoin temple,,,วัดโฮคงโกอิน,호콘고인 절,đền Hokongoin
+1513,三室戸寺,mimurotoji temple,,,วัดมิมุโรโตะ,미무로토지 절,đền Mimurotoji
+1514,吉野山,mt. yoshino,,,ภูเขาโยชิโนะ,요시노 산,núi Yoshino
+1515,播州山崎花菖蒲園,banshu yamasaki iris garden,,,สวนไอริสบันชูยามาซากิ,반슈 야마사키 붓꽃원,vườn Banshu Yamasaki Iris
+1516,仙酔峡,sensui valley,,,หุบเขาเซนซุย,센스이 협곡,thung lũng Sensui
+1517,桜橋,sakurabashi bridge,,,สะพานซากุระบาชิ,사쿠라바시 다리,cầu Sakurabashi
+1518,八丈小島,hachijo island,,,เกาะฮาชิโจโคจิม่า,하치조코지마 섬,đảo Hachijo
+1519,北温泉,kita onsen,,,คิตะออนเซ็น,키타 온천,Kita onsen
+1520,ファーム富田,farm tomita,,,ฟาร์มโทมิตะ,팜 토미타,trang trại Tomita
+1521,花見山,mt. hanami,,,ภูเขาฮานามิยามะ,하나미 산,núi Hanami
+1522,尾瀬ヶ原,oze marshland,,,โอเสะกะฮาระ,오제가하라,đầm lầy Oze
+1523,根津神社,nezu shrine,,,ศาลเจ้าเนสึ,네즈 신사,điện thờ Nezu
+1524,笛吹市,fuefuki,,,ฟุเอฟุคิ,후에후키시,Fuefuki
+1525,小田原城,odawara castle,,,ปราสาทโอดะวาระ,오다와라 성,lâu đài Odawara
+1526,白鳥庭園,shirotori garden,,,สวนชิโรโทริ,시로토리 정원,vườn Shirotori
+1527,大須観音,osu kanon temple,,,วัดโอซุคันนน,오스 관음,đền Osu Kanon
+1528,徳川園,tokugawa garden,,,สวนโทคุกาว่า,도쿠가와엔,vườn Tokugawa
+1529,有楽苑,urakuen garden,,,สวนอุราคุเอ็น,유라쿠엔,vườn Urakuen
+1530,道明寺天満宮,domyoji tenmangu shrine,,,ศาลเจ้าโดเมียวจิเทนมังกู,도묘지 텐만구 신사,điện thờ Domyoji Tenmangu
+1531,御津自然観察公園,minabe nature park,,,สวนสาธารณะมิสึจิเซ็นคังซัทสึ,미츠 자연 관찰 공원,công viên thiên nhiên Minabe
+1532,城南宮,jonangu shrine,,,ศาลเจ้าโจนันกู,죠난구 신사,điện thờ Jonangu
+1533,南部梅林,minabe plum forest,,,ป่าบ๊วยนันบุ,미나베 매화나무숲,rừng mận Minabe
+1534,彦根城,hikone castle,,,ปราสาทฮิโคเนะ,히코네 성,lâu đài Hikone
+1535,下栗の郷,,,,หมู่บ้านชิโมกุริ,시모구리노사토,
+1536,白馬岳,mt shirouma,,,ภูเขาชิโรอุมะ,시로우마다케,núi Shirouma
+1537,赤目四十八滝,akame 48 falls,,,น้ำตกอาคาเมะ48,아카메 48 폭포,thác Akame 48
+1538,青島,akashima island,,,เกาะอาโอชิม่า,아오시마 섬,đảo Akashima
+1539,豪徳寺,gotokuji temple,,,วัดโกโทคุจิ,고토쿠지 절,đền Gotokuji
+1540,代々木公園,yoyogi park,代代木公園,代代木公园,สวนโยโยกิ,요요기 공원,công viên Yoyogi
+1541,秋川渓谷,akigawa valley,,,หุบเขาอากิกาวะ,아키가와 계곡,thung lũng Akigawa
+1542,養老渓谷,yoro valley,,,หุบเขาโยโรเคโคคุ,요로 계곡,thung lũng Yoro
+1543,長瀞,nagatoro,,,นากาโทโระ,나가토로,Nagatoro
+1544,大池寺,daichiji temple,,,วัดไดชิจิ,다이치지 절,đền Daichiji
+1545,天龍寺,tenryuji temple,,,วัดเท็นริวจิ,텐류지 절,đền Tenryuji
+1546,西方寺,saihoji temple,,,วัดไซโฮจิ,사이호지 절,chùa Saihoji
+1547,圓通寺,entsuji temple,,,วัดเอ็นซือจิ,엔츠지 절,đền Entsuji
+1548,岡山後楽園,okayama korakuen,,,สวนโอคายาม่าโคราคุเอ็น,오카야마 코라쿠엔,Okayama Korakuen
+1549,藻岩山,mt. moiwa,,,ภูเขาโมอิวะ,모이와 산,núi Moiwa
+1550,豊平峡温泉,hoheikyo onsen,,,โฮเฮเคียวออนเซ็น,호헤이쿄 온천,Hoheikyo onsen
+1551,モエレ沼公園,moerenuma park,,,สวนโมเอเระนุมะ,모에레누마 공원,công viên Moerenuma
+1552,金刀比羅神社,konpira shrine,,,ศาลเจ้าโคโตฮิระ,코토히라 신사,điện thờ Konpira
+1553,姥神大神宮,ubagami shrine,,,ศาลเจ้าอุบะกะมิ,우바가미 다이진구 신사,điện thờ Ubagami
+1554,層雲峡温泉,sounkyo onsen,,,โซอุนเคียวออนเซ็น,소운쿄 온천,Sounkyo onsen
+1555,中町こみせ通り,nakamachi komise street,,,ถนนนาคามิจิโคะมิเสะ,나카마치 코미세 거리,phố Kakamachi có các cửa hàng nhỏ
+1556,遠野ふるさと村,tono furusato village,,,หมู่บ้านโทโนะฟุรุซาโตะ,토노후루사토무라,làng Tono Furusato
+1557,みなかみ,minakami,,,มินาคามิ,미나카미,Minakami
+1558,上高地,kamikochi,,,คามิโคจิ,카미코치,Kamikochi
+1559,吉野川,yoshino river,,,แม่น้ำโยชิโนะ,요시노 강,sông Yoshino
+1560,出羽三山神社,dewa sanzan shrine,,,ศาลเจ้าเดวะซันซัน,데와산잔 신사,điện thờ Dewa Sanzan
+1561,みちのく公園,michinoku park,,,สวนมิจิโนะคุ,미치노쿠 공원,công viên Michinoku
+1562,奥尻島,okushiri island,,,เกาะโอคุชิริ,오쿠시리 섬,đảo Okushiri
+1563,礼文島,rebun island,,,เกาะเรบุน,레분 섬,đảo Rebun
+1564,利尻島,rishiri island,,,เกาะริชิริ,리시리 섬,đảo Rishiri
+1565,大雪山国立公園,daisetsuzan national park,,,อุทยานแห่งชาติไดเซ็ตสึซัง,다이세츠잔 국립공원,công viên quốc gia Daisetsuzan
+1566,耶馬溪,yabakei gorge,,,ยาบะเค,야바 계곡,hẻm núi Yabakei
+1567,登別温泉,noboribetsu onsen,,,โนโบริเบทสึออนเซ็น,노보리베츠 온천,Noboribetsu onsen
+1568,乳頭温泉,nyuto onsen,乳頭溫泉,乳头温泉,นิวโทออนเซ็น,뉴토 온천,Nyuto onsen
+1569,蔵王温泉,zao onsen,,,ซาโอะออนเซ็น,자오 온천,Zao onsen
+1570,小野川温泉,onogawa onsen,,,โอโนะกาว่าออนเซ็น,오노가와 온천,Onogawa onsen
+1571,奥鬼怒温泉,okukinu onsen,,,โอคุคินุออนเซ็น,오쿠키누 온천,Okukinu onsen
+1572,万座温泉,manza onsen,,,มังสะออนเซ็น,만자 온천,Manza onsen
+1573,白骨温泉,shirahone onsen,,,ชิราโฮเนะออนเซ็น,시라호네 온천,Shirahone onsen
+1574,奥飛騨温泉,okuhida onsen,,,โอคุฮิดะออนเซ็น,오쿠히다 온천,Okuhida onsen
+1575,雲の上温泉,kumo no ue onsen,,,คุโมะโนะอุเอะออนเซ็น,쿠모노우에 온천,Kumo no ue onsen
+1576,まっかり温泉,makkari onsen,,,มัคคาริออนเซ็น,맛카리 온천,Makkari onsen
+1577,水無海浜温泉,mizunashi kaihin onsen,,,มิสึนะชิไคฮินออนเซ็น,미즈나시 해변 온천,Mizunashi kaihin onsen
+1578,コタン温泉,kotan onsen,,,โคตังออนเซ็น,코탄 온천,Kotan onsen
+1579,天人峡温泉,tenninkyo onsen,,,เทนนินเคียวออนเซ็น,텐닌쿄 온천,Tenninkyo onsen
+1580,養老牛温泉,yoroushi onsen,,,โยโรอุชิออนเซ็น,요로우시 온천,Yioushi onsen
+1581,平磯温泉,hiraiso onsen,,,ฮิไรโซะออนเซ็น,히라이소 온천,Hiraiso onsen
+1582,神の子池,kaminoko pond,,,บ่อน้ำคามิโนะโคะ,카미노코 연못,ao Kaminoko
+1583,神威岬,cape kamui,,,แหลมคามุย,카무이 곶,mũi Kamui
+1584,美瑛の丘,biei hills,,,เนินเขาบิเอ,비에이 언덕,đồi Biei
+1585,東藻琴芝桜公園,higashimokoto shibazakura park,,,สวนชิบะซากุระฮิกาชิโมโคโตะ,히가시모코토 시바자쿠라 공원,công viên Higashimokoto Shigazakura
+1586,阿寒国立公園,akan mashu national park,,,อุุทยานแห่งชาติอะคัง,아칸 국립공원,công viên quốc gia Akan Mashu
+1587,オホーツク海,sea of okhotsk,,,ทะเลโอค็อตส์,오호츠크해,biển Okhotsk
+1588,三国峠,mikune ridge,,,สันเขามิคุนิ,미쿠니 고개,sườn núi Mikune
+1589,熊取湖,lake notoro,,,ทะเลสาบโนะโตโระ,노토로코 호수,hồ Notoro
+1590,サッポロさとらんど,sapporo satoland,,,ซัปโปโรซาโตะแลนด์,삿포로 사토랜드,Sapporo Satoland
+1591,さっぽろ羊ヶ丘展望台,hitsujigaoka observation hill,,,หอชมวิวซัปโปโรฮิสึจิกะโอกะ,히츠지가오카 전망대,đồi quan sát Hitujigaoka
+1592,前田森林公園,maeda forest park,,,สวนมาเอดะชินริน,마에다 삼림공원,công viên rừng Maeda
+1593,北海道開拓の村,historical village of hokkaido,,,หมู่บ้านประวัติศาสตร์ฮอกไกโด,홋카이도 개척마을,làng lịch sử Hokkaido
+1594,札幌芸術の森,sapporo art park,,,อุทยานศิลปะซัปโปโร,삿포로 예술의 숲,công viên nghệ thuật Sapporo
+1595,中島公園,nakajima park,,,สวนนาคาจิม่า,나카지마 공원,công viên Nakajima
+1596,えこりん村,ecorin village,,,เอโคะรินมุระ,에코린무라,làng Ecorin
+1597,新田神社,nitta shrine,,,ศาลเจ้านิตตะ,닛타 신사,điện thờ Nitta
+1598,錦天満宮,nishiki tenmangu shrine,,,ศาลเจ้านิชิกิเทนมังกู,니시키텐만구,điện thờ Nishiki Tenmangu
+1599,六角堂,rokkakudo temple,,,รคคาคุโด,롯카쿠도,đền Rokkakudo
+1600,安井金毘羅宮,yasui konpira-gu shrine,,,ศาลเจ้ายาสุอิคงปิระกู,야스이 콘피라구,điện thờ Yasui Konpira-gu
+1601,道祖神社,doso shrine,,,ศาลเจ้าโดโซะ,도소 신사,điện thờ Doso
+1602,多賀大社,taga-taisha shrine,,,ศาลเจ้าทะกะไทฉะ,다가타이샤,điện thờ Taga-taisha
+1603,西野神社,nishino shrine,,,ศาลเจ้านิชิโนะ,니시노 신사,điện thờ Nishino
+1604,三皇熊野神社,sanko kumano shrine,,,ศาลเจ้าซันโคคุมะโนะ,산코 쿠마노 신사,điện thờ sanko kumano
+1605,恋の水神社,koinomizu shrine,,,ศาลเจ้าโคอิโนะมิสึ,코이노미즈 신사,điện thờ Koinomizu
+1606,城山八幡宮,shiroyama hachimangu shrine,,,ศาลเจ้าชิโรยามะฮาจิมังกู,시로야마 하치만구,điện thờ Shiroyama Hachimangu
+1607,気多大社,keta taisha shrine,,,ศาลเจ้าเคตะไทฉะ,게타 타이샤,điện thờ Keta Taisha
+1608,熊野速玉大社,kumano hayatama taisha shrine,,,ศาลเจ้าคุมะโนะฮายาทามะไทฉะ,쿠마노하야타마 타이샤,điện thờ Kumano Hayatama Taisha
+1609,竈門神社,koinoki shrine,,,ศาลเจ้าคามะโด,카마도 신사,điện thờ Koinoki
+1610,白兎神社,hakuto shrine,,,ศาลเจ้าฮาคุโต,하쿠토 신사,điện thờ Hakuto
+1611,八重垣神社,yaegaki shrine,,,ศาลเจ้ายาเอะกะคิ,야에가키 신사,điện thờ Yaegaki
+1612,佐渡島,sado island,,,เกาะซะโดะชิม่า,사도시마,đảo Sado
+1613,真鍋島,manabeshima island,,,เกาะมะนาเบะชิม่า,마나베 섬,đảo Manabeshima
+1614,新島,nijima island,,,เกาะนีจิม่า,니지마,đảo Nijima
+1615,角島,tsunoshima island,,,เกาะสึโนะชิม่า,츠노 섬,đảo Tsunoshima
+1616,神島,kamishima island,,,เกาะคามิชิม่า,카미시마,đảo Kamishima
+1617,竹生島,chikubu island,,,เกาะชิคุบุชิม่า,치쿠부 섬,đảo Chikubu
+1618,大通公園,odori park,大通公園,大通公园,สวนสาธารณะโอโดริ,오도리 공원,công viên Odori
+1619,二条市場,nijo market,,,ตลาดนิโจ,니죠 시장,chợ Nijo
+1620,新世界,shinsekai,,,ชินเซไค,신세카이,Shinsekai
+1621,中之島公園,nakanoshima park,,,สวนนากาโนะชิมะ,나카노시마 공원,công viên Nakanoshima
+1622,黒門市場,kuromon ichiba market,,,ตลาดคุโรมง,쿠로몬 시장,thị trường Kuromon ichiba
+1623,紀州東照宮,kishu toshogu shrine,,,ศาลเจ้าคิชุโทโชกู,기슈 도쇼구,điện thờ Kishu Toshogu
+1624,和歌浦天満宮,wakaura tenmangu shrine,,,ศาลเจ้าวาคาโนอุระเทนมังกู,와카우라 텐만구,điện thờ Wakaura Tenmangu
+1625,紀三井寺,kimii-dera temple,,,วัดคิมิอิเดระ,키미이데라,đền Kimii-dera
+1626,那智の見晴台,,,,หอคอยนาจิ,나치 미하라시다이,
+1627,長保寺,chohoij temple,,,วัดโชโฮจิ,쵸호지,đền Chohoij
+1628,善福院,zenpukuin temple,,,วัดเซ็นปุคุอิน,젠푸쿠인,đền Zenpukuin
+1629,金剛峯寺,kongobuji temple,,,วัดคงโกบุอิน,콘고부지,đền Kongobuji
+1630,根来寺,negoroji temple,,,วัดเนะโคโระ,네고로지,đền Negoroji
+1631,木曽村,kiso,,,หมู่บ้านคิโซะ,기소 촌,Kiso
+1632,北塩原村,kitashiobara,,,หมู่บ้านคิตะชิโอะบาระ,키타시오바라무라,Kitashiobara
+1633,六合村,kuni,,,หมู่บ้านคุนิ,구니 촌,Kuni
+1634,南小国町,minamioguni,,,มินามิโอกุนิ,미나미오구니 정,Minamioguni
+1635,高原町,takaharu,,,ทาคาฮารุ,타카하라쵸,Takaharu
+1636,綾町,aya,,,อายะ,아야쵸,Aya
+1637,十津川村,totsukawa,,,หมู่บ้านโทสึคาวะ,토츠카와무라,Totsukawa
+1638,吉野町,yoshino,,,โยชิโนะ,요시노쵸,Yoshino
+1639,東成瀬村,higashinaruse,,,หมู่บ้านฮิกาชินารุเสะ,히가시나루세 촌,Higashinaruse
+1640,岐阜城,gifu castle,,,ปราสาทกิฟุ,기후 성,lâu đài Gifu
+1641,関ヶ原古戦場跡,sekigahara battlefield,,,ทุ่งสนามรบเซกิกาฮาระ,세키가하라 전쟁터,chiến trường Sekigahara
+1642,根尾谷断層,neodani fault,,,รอยเลื่อนเนะโอดานิ,네오다니 단층,điểm đứt gãy Neodani
+1643,墨俣城,sunomata castle,,,ปราสาทซุโนะมาตะ,스노마타 성,lâu đài Sunomata
+1644,養老公園,yoro park,,,สวนโยโร,요로 공원,công viên Yoro
+1645,大垣城,ogaki castle,,,ปราสาทโอกาคิ,오가키 성,lâu đài Ogaki
+1646,郡上八幡城,gujo hachiman castle,,,ปราสาทกุโจฮาจิมัง,구조 하치만 성,lâu đài Gujo Hachiman
+1647,永保寺,eiho-ji temple,,,วัดเอโฮจิ,에이호지,đền Eiho-ji
+1648,岩村城,iwamura castle,,,ปราสาทอิวะมุระ,이와무라 성,lâu đài Iwamura
+1649,安国寺,ankokuji temple,,,วัดอังโคคุจิ,안코쿠지,đền Ankokuji
+1650,南宮大社,nangu taisha shrine,,,วัดนันกูไทฉะ,난구타이샤,điện thờ Nangu Taisha
+1651,鹿苑寺,rokuon-ji temple,,,วัดโรคุอง,로쿠온지,đền Rokuon-ji
+1652,護国之寺,gokokushi-ji temple,,,วัดโกะโคคุชิ,고코쿠시지,đền Gokokushi-ji
+1653,新長谷寺,shinhase-dera temple,,,วัดชินโจโคคุ,신하세데라,đền Shinhase-dera
+1654,下呂温泉,gero onsen,,,เกโระออนเซ็น,게로 온천,Gero onsen
+1655,上野城,ueno castle,,,ปราสาทอุเอโนะ,우에노 성,lâu đài Ueno
+1656,津城,tsu castle,,,ปราสาทสึโจ,츠죠,lâu đài Tsu
+1657,松阪城跡,matsusaka castle,,,ร่องรอยปราสาทมัตสึซากะ,마츠사카 성터,lâu đài Matsusaka
+1658,桑名宗社,kuwana sosha,,,ศาลเจ้าคุวานะโซฉะ,쿠와나 종사,Kuwana Sosha
+1659,椿大神社,tsubaki grand shrine,,,ศาลเจ้าสึบากิ,츠바키 오카미야시로,điện thờ lớn Tsubaki
+1660,鬼ヶ城,onigajo,,,กำแพงหินโอนิกะโจ,오니가죠,Onigajo
+1661,鍋石温泉,,,,นาเบะอิชิออนเซ็น,나베이시 온천,
+1662,竜頭の滝,ryuzu falls,,,น้ำตกริวสึ,류즈 폭포,thác Ryuzu
+1663,奥日光湯元温泉,nikko yumoto onsen,,,โอคุนิกโก้ยูโมโตะออนเซ็น,오쿠닛코 유모토 온천,Nikko yumoto onsen
+1664,広島城,hiroshima castle,,,ปราสาทฮิโรชิม่า,히로시마 성,lâu đài Hiroshima
+1665,福山城,fukuyama castle,,,ปราสาทฟุคุยามะ,후쿠야마 성,lâu đài Fukuyama
+1666,帝釈峡,taishaku valley,,,หุบเขาไทชาคุ,타이샤쿠 협곡,thung lũng Taishaku
+1667,高千穂神社,takachiho shrine,,,ศาลเจ้าทาคาชิโฮะ,타카치호 신사,điện thờ Takachiho
+1668,富貴寺,fukiji temple,,,วัดฟุคิจิ,후키지,đền Fukiji
+1669,白神山地,shirakami-sanchi,,,เทือกเขาชิราคามิ,시라카미 산지,Shirakami-Sanchi
+1670,真駒内公園,makomanai park,,,สวนมาโคมะไน,마코마나이 공원,công viên Makomanai
+1671,弘前公園,hirosaki park,,,สวนฮิโรซากิ,히로사키 공원,công viên Hirosaki
+1672,高遠城,takato castle,,,ปราสาทาคาโท,타카토 성,lâu đài Takato
+1673,高田公園,takada park,,,สวนทาคาดะ,타카다 공원,công viên Takada
+1674,岡崎公園,okazaki park,,,สวนโอคาซากิ,오카자키 공원,công viên Okazaki
+1675,谷中霊園,yanaka cemetery,,,สุสานยานากะ,야나카 영원,nghĩa trang Yanaka
+1676,谷中商店街,yanaka ginza shopping street,,,ย่านร้านค้ายานากะ,야나카 긴자 상점가,phố mua sắm Yanaka Ginza
+1677,興福寺,kofukuji temple,,,วัดโคฟุคุ,코후쿠지,đền Kofukuji
+1678,唐招提寺,toshodaiji temple,,,วัดโทโชได,토쇼다이지,đền Toshodaiji
+1679,平城京,heijo-kyo,,,พระราชวังเฮโจ,헤이죠쿄,Heijo-Kyo
+1680,錦市場,nishiki market,,,ตลาดนิชิกิ,니시키 시장,chợ Nishiki
+1681,北野異人館,kobe kitano ijinkan,北野異人館,北野异人馆,บ้านคิตาโนะอิจินคัง,키타노 이진칸,Kobe Kitano Ijinkan
+1682,合掌村,gassho village,合掌村,合掌村,หมู่บ้านกัชโชมุระ,갓쇼무라,làng Gassho
+1683,指宿溫泉,ibusuki onsen,,,อิบุซุคิออนเซ็น,이부스키 온천,Ibusuki onsen
+1684,嵐山竹林の小径,arashiyama bamboo forest,,,ทางเดินป่าไผ่,아라시야마 대나무숲길,rừng tre Arashiyama
+1685,弘前城,hirosaki castle,,,ปราสาทฮิโรซากิ,히로사키 성,lâu đài Hirosaki
+1686,中城城,nakagusuku castle,,,ปราสาทนาคากุสุคุ,나카구스쿠 성,lâu đài Nakagusuku
+1687,江戸城,edo castle,,,ปราสาทเอโดะ,에도 성,lâu đài Edo
+1688,勝連城,katsuren castle,,,ปราสาทคัตสึเรน,카츠렌 성,lâu đài Katsuren
+1689,若松城,wakamatsu castle,,,ปราสาทวาคามัตสึ,와카마츠 성,lâu đài Wakamatsu
+1690,安曇野,azumi basin,,,อะสุมิโนะ,아즈미노,lưu vực Azumi
+1691,上田城,ueda castle,,,ปราสาทอุเอดะ,우에다 성,lâu đài Ueda
+1692,上諏訪温泉,kamisuwa onsen,,,คามิซุวะออนเซ็น,카미스와 온천,Kamisuwa onsen
+1693,下諏訪温泉,shimosuwa onsen,,,ชิโมซุวะออนเซ็น,시모스와 온천,Shimosuwa onsen
+1694,金沢駅,kanazawa station,,,สถานีคานาซาว่า,카나자와역,ga Kanazawa
+1695,妙立寺,myoryuji temple,,,วัดเมียวริวจิ,묘류지,đền Myoryuji
+1696,湯野上温泉,yunokami onsen,,,ยุโนะกะมิออนเซ็น,유노카미 온천,Yunokami onsen
+1697,会津若松,aizuwakamatsu,,,ไอสุวากามัตสึ,아이즈 와카마츠,Aizuwakamatsu
+1698,ホテルニューオータニ,hotel new otani,,,hotel new otani,호텔 뉴 오타니,khách sạn New Otani
+1699,星のや,hoshinoya,星野(星のや),星野(星のや),hoshinoya,호시노야,Hoshinoya
+1700,星野リゾート,hoshino resorts,星野(星野リゾート),星野(星野リゾート),hoshino resorts,호시노 리조트,khu nghỉ dưỡng Hoshino
+1701,アパホテル,apa hotel,apa hotel,apa hotel,apa hotel,아파 호텔,khách sạn Apa
+1702,浅草ビューホテル,asakusa view hotel,,,,아사쿠사 뷰 호텔,khách sạn Asakusa view
+1703,京王プラザホテル,keio plaza hotel,,,,게이오 프라자 호텔,khách sạn Keio Plaza
+1704,ヒルトンホテル,hilton,希爾頓酒店,希尔顿酒店,hilton,힐튼 호텔,Hilton
+1705,プリンスホテル,prince hotel,王子大飯店,王子大饭店,prince hotel,프린스 호텔,khách sạn Prince
+1706,帝国ホテル,imperial hotel,帝國飯店,帝国饭店,imperial hotel,임페리얼 호텔,khách sạn Imperial
+1707,ザ・リッツ・カールトン,the ritz-carlton,麗思卡爾頓酒店,丽思卡尔顿酒店,the ritz-carlton,리츠칼튼,Ritz-carlton
+1708,9h ninehours,ninehours,,,ninehours,나인아워스,9 tiếng
+1709,ファーストキャビン,first cabin,,,first cabin,퍼스트 캐빈,cabin đầu tiên
+1710,センチュリオンホテル,centurion,,,centurion,센츄리온 호텔,Centurion
+1711,マイステイズホテルズ,hotel mystays,hotel mystays,hotel mystays,hotel mystays,마이스테이즈 호텔,khách sạn mystays
+1712,マリオットホテル,marriott hotel,萬豪酒店,万豪酒店,marriott hotel,메리어트 호텔,khách sạn Marriott
+1713,サンルートホテル,sunroute hotel,燦路都大飯店,灿路都大饭店,sunroute hotel,선루트 호텔,khách sạn Sunroute
+1714,ANAクラウンプラザホテル,ana crown plaza hotel,ANA皇冠假日酒店,ANA皇冠假日酒店,ana crown plaza hotel,ANA 크라운 플라자 호텔,khách sạn Ana Crown Plaza
+1715,インターコンチネンタルホテル,intercontinental hotel,洲際酒店,洲际酒店,intercontinental hotel,인터컨티넨탈 호텔,khách sạn Intercontiental
+1716,日航ホテル,hotel nikko,日航酒店,日航酒店,hotel nikko,호텔 닛코,khách sạn Nikko
+1717,三井ガーデンホテル,mitsui garden hotel,三井花園飯店,三井花园饭店,mitsui garden hotel,미츠이 가든 호텔,khách sạn vườn Mitsui
+1718,ホテルオークラ,hotel okura,大倉飯店,大仓饭店,hotel okura,호텔 오쿠라,khách sạn Okura
+1719,グランドハイアットホテル,grand hyatt hotel,君悅酒店,君悦酒店,grand hyatt hotel,그랜드 하얏트 호텔,khách sạn Grand Hyatt
+1720,マンダリンオリエンタルホテル,mandarin oriental hotel,文華東方酒店,文华东方酒店,mandarin oriental hotel,만다린 오리엔탈 호텔,khách sạn Mandarin Oriental
+1721,シェラトン,sheraton hotel,喜來登酒店,喜来登酒店,,쉐라톤,khách sạn sheraton
+1722,ほろよい,horoyoi,,,horoyoi,호로요이,Horoyoi
+1723,ポッキー,pocky,pocky,pocky,ป็อกกี้,포키,Pocky
+1724,PASHADELIC,pashadelic,,,pashadelic,PASHADELIC,Pashadel
+1725,トトロ,totoro,,龙猫,โตโตโร่,토토로,Totoro
+1726,ハローキティ,hello kitty,,hello kitty,hello kitty,헬로키티,Hello Kitty
+1727,グリコ,glico,,固力果,กูลิโกะ,글리코,Glico
+1728,ハーゲンダッツ,haagen-dazs,,,haagen-dazs,하겐다즈,Haagen-dazs
+1729,ポケモン,pokemon,寶可夢,宝可梦,โปเกมอน,포켓몬,Pokemon
+1730,カルビー,calbee,卡樂比,卡乐比,คาลบี้,가루비,Calbee
+1731,白い恋人,shiroi koibito,,,shiroi koibito,시로이 코이비토,Shiroi Koibito
+1732,六花亭,rokkatei,六花亭,六花亭,rokkatei,로카테이,Rokkatei
+1733,うまい棒,umaibou,,,umaibo,우마이봉,Umaibou (bánh phòng phành gậy)
+1734,Airbnb,airbnb,airbnb,airbnb,airbnb,에어비앤비,Airbnb
+1735,ジブリ,ghibli,吉卜力,吉卜力,จิบลิ,지브리,Ghibli
+1736,キットカット,kitkat,kitkat,kitkat,คิทแคท,킷캣,Kitkat
+1737,ポテトチップス,potato chips,洋芋片,洋芋片,มันฝรั่งทอดกรอบ,감자칩,khoai tây chiên
+1738,シートマスク,face masks,面膜,面膜,มาสก์หน้า,마스크팩,mặt nạ
+1739,スカジャン,sukajan,,,,자수 항공점퍼,Sukajan
+1740,サマンサタバサ,samantha thavasa,,,samantha thavasa,사만사타바사,Samantha Thavasa
+1741,肌ラボ,Hada Labo,,,ฮาดะลาโบะ,하다라보,Hada Labo
+1742,ロイズ,royce,Royce,Royce,รอยซ์,로이스,Royce
+1743,富士フイルム,fujifilm,富士軟片,富士软片,ฟูจิฟิล์ม,후지필름,Fujifilm
+1744,伊勢丹,isetan,,,อิเซตัน,이세탄,Isetan
+1745,ローソン,lawson,,,ลอว์สัน,로손,Lawson
+1746,鳥貴族,torikizoku,,,torikizoku,토리키조쿠,Torikizoku
+1747,ロフト,loft,LOFT,LOFT,ลอฟต์,로프트,gác xép
+1748,ロボットレストラン,robot restaurant,,,robot restaurant,로봇 레스토랑,nhà hàng robot
+1749,無印良品,muji,無印良品,无印良品,มูจิ,MUJI,Muji
+1750,ドン・キホーテ,donki,唐吉軻德,唐吉轲德,ดองกิโฮเต้,돈키호테,Donki
+1751,スターバックス,starbucks,星巴克,星巴克,สตาร์บัคส์,스타벅스,Starbucks
+1752,東急HANDS,tokyu hands,東急手創,东急手创,Tokyu hands,도큐핸즈,Tokyu Hands
+1753,軽井沢プリンスショッピングプラザ,karuizawa prince shopping plaza,輕井澤王子購物廣場,轻井泽王子购物广场,Karuizawa Prince Shopping Plaza,가루이자와ㆍ프린스 쇼핑 플라자,Trung tâm mua sắm Karuizawa prince shopping plaza
+1754,PLAZA,plaza,,,PLAZA,플라자,plaza
+1755,Francfranc,francfranc,,,Francfranc,프랑프랑,Francfranc
+1756,北菓楼(北海道土産),kitakaro (hokkaido souvenirs),,,Kitakarou,키타카로(홋카이도 기념품 과자점),Kitakaro (quà lưu niệm hokkaido)
+1757,セブンイレブン,seven eleven,,,เซเว่น อีเลฟเว่น,세븐일레븐,Seven Eleven
+1758,ファミリーマート,familymart,,,แฟมิลี่มาร์ท,훼미리마트,Familymart
+1759,ミニストップ,mini stop,,,มินิสต็อป,미니스톱,Mini stop
+1760,マツモトキヨシ,matsumoto kiyoshi,,,มัตสึโมโตะคิโยชิ,마츠모토키요시,Matsumoto Kiyoshi
+1761,イオン,aeon,,,อิออน,이온,Aeon
+1762,丸井,marui,,,Marui,마루이,Marui
+1763,GINZA SIX,ginza six,,,GINZA SIX,GINZA SIX,Ginza Six
+1764,shibuya109,shibuya109,,,SHIBUYA109,SHIBUYA109,Shibuya109
+1765,東急PLAZA,tokyu plaza,東急PLAZA,东急PLAZA,โตคิวพลาซ่า,도큐플라자,Tokyu Plaza
+1766,coucou,coucou,,,coucou,CouCou,Coucou
+1767,三越,mitsukoshi,,,มิตสึโคชิ,미츠코시,Mitsukoshi
+1768,高島屋,takashimaya,,,ทาคาชิมายะ,타카시마야,Takashimaya
+1769,東武百貨店,tobu,,,โทบุ,토부 백화점,Tobu
+1770,大丸,daimaru,,,ไดมารู,다이마루,Daimaru
+1771,京王百貨店,keio,,,เคโอ,게이오 백화점,Keio
+1772,ヨドバシ,yodobashi,,,โยโดบาชิ,요도바시,Yodobashi
+1773,ビックカメラ,bic camera,,,bic camera,빅카메라,Bic camera
+1774,ユニクロ,uniqlo,,,ยูนิโคล่,유니클로,Uniqlo
+1775,夢庵,yumean,,,ยูเมะอัง,유메안,Yumean
+1776,華屋与兵衛,hanaya yohei,,,ฮานายะโยเฮ,하나야 요헤이,Hanaya Yohei
+1777,とんでん,tonden,,,,톤덴,Tonden
+1778,和食さと,washoku sato,,,,와쇼쿠 사토,Washoku Sato
+1779,藍屋,aiya,,,,아이야,Aiya
+1780,bookoff,bookoff,,,bookoff,북오프,Bookoff
+1781,アニメイト,animate,,,animate,애니메이트,Animate
+1782,ジェラートピケ,gelato pique,,,gelato pique,젤라토 피케,Gelato Pique
+1783,モスバーガー,mos burger,,,mos burger,모스버거,Mos Burger
+1784,サークルケイサンクス,circle k,,,circle k,서클K 상크스,Circle K
+1785,タイガー魔法瓶,tiger,,,ไทเกอร์,타이거,Tiger
+1786,象印,zojirushi,,,zojirushi,조지루시,Zojirushi
+1787,東芝,toshiba,,,โตชิบา,도시바,Toshiba
+1788,日立,hitachi,,,ฮิตาชิ,히타치,Hitachi
+1789,パナソニック,panasonic,,,พานาโซนิค,파나소닉,Panasonic
+1790,サーモス,thermos,,,thermos,써모스,Thermos
+1791,資生堂,shiseido,,,ชิเซโด้,시세이도,Shiseido
+1792,カネボウ,kanebo,,,คาเนโบะ,가네보,Kanebo
+1793,コーセー,kose,,,โคเซ่,코세,Kose
+1794,東急百貨店,tokyu,,,โตคิว,도큐 백화점,Tokyu
+1795,西武百貨店,seibu,,,เซบุ,세이부 백화점,Seibu
+1796,ダイソー,daiso,,,ไดโซะ,다이소,Daiso
+1797,まんだらけ,mandarake,,,mandarake,만다라케,Mandarake
+1798,スシロー,sushiro,,,sushiro,스시로,Sushiro
+1799,ケンタッキー,kfc,,,เคเอฟซี,KFC,Kfc
+1800,マクドナルド,mcdonald's,,,แม็คโดนัล,맥도날드,Mcdonald
+1801,ディズニー,disney,,,ดิสนีย์,디즈니,Disney
+1802,ディオール,dior,,,dior,디올,Dior
+1803,Can Do,can do,,,Can Do,Can Do,can do
+1804,ガスト,gusto,,,กัสโตะ,가스토,gusto
+1805,サイゼリヤ,saizeriya,,,saizeriya,사이제리야,Saizeriya
+1806,ココス,coco's,,,coco's,코코스,Coco
+1807,ジョナサン,jonathan's,,,jonathan's,조나산,Jonathan
+1808,デニーズ,denny's,,,denny's,데니스,Denny’s
+1809,lush,lush,,,lush,lush,Lush
+1810,ロッテ,lotte,,,ลอตเต้,롯데,Lotte
+1811,すきやばし 次郎,sukiyabashi jiro,,,,스키야바시 지로,Sukiyabashi Jiro
+1812,コスプレ,cosplay,,,คอสเพลย์,코스프레,Cosplay
+1813,スラムダンク,slam dunk,,,Slam dunk,슬램덩크,Slam Dunk
+1814,名探偵コナン,detective conan,,,โคนัน,명탐정 코난,thám tử Conan
+1815,プリクラ,purikura,,大头贴,purikura,스티커 사진,Purikura
+1816,ネイルアート,nail art,,美甲,แต่งเล็บ,네일 아트,nghệ thuật làm móng
+1817,撮影スポット,photo spot,,,จุดถ่ายรูป,촬영 장소,điểm chụp ảnh
+1818,古民家,kominka,古民家,古民家,kominka,고민가,Kominka
+1819,マンガ,manga,,,มังงะ,만화,Manga
+1820,梅雨,rainy season,梅雨,梅雨,ฤดูฝน,장마,mùa mưa
+1821,七夕,tanabata,,,ทานาบาตะ,칠석,Tanabata
+1822,バレンタインデー,valentines day,情人節,情人节,วันวาเลนไทน์,발렌타인 데이,ngày lễ tình nhân
+1823,節分,setsubun,,,เซ็ตสึบุน,절분,Setsubun
+1824,大晦日,new year's eve,,,วันสิ้นปี,12월 31일,giao thừa
+1825,お正月,new year's,,,วันปีใหม่,설날,năm mới
+1826,ハロウィン,halloween,,,ฮาโลวีน,핼러윈,lễ hội Halloween
+1827,新年,new year,新年,新年,ปีใหม่,신년,năm mới
+1828,ドラマ,drama,日劇,日剧,ละคร,드라마,phim truyền hình
+1829,風鈴祭り,wind chime festival,,,เทศกาลกระดิ่งลม,풍경 축제,lễ hội chuông gió
+1830,阿波踊り祭り,awa-odori folk dance festival,,,,아와오도리 축제,lễ hội múa dân gian Awa-odori
+1831,山鹿吐露祭,yamaga toro festival,,,,야마가 등롱 축제,lễ hội Yamaga Toro
+1832,せともの祭,setomono festival,,,,세토모노 축제,lễ hội Setomono
+1833,西大寺会陽裸祭り,saidaiji eyo hadaka festival,,,,사이다이지 에요 알몸 축제,Lễ hội Saidaiji Eyo Hadaka
+1834,村上春樹,haruki murakami,,,,무라카미 하루키,Haruki Murakami
+1835,コミケット,comiket,,,comiket,코믹 마켓,hội chợ truyện tranh
+1836,祇園祭,gion festival,,,เทศกาลกิอง,기온마쓰리,lễ hội Gion
+1837,ドラえもん,doraemon,,,โดราเอมอน,도라에몽,Doraemon
+1838,初音ミク,hatsune miku,,,ฮัตสึเนะ มิกุ,하츠네 미쿠,Hatune Miku
+1839,リラックマ,rilakkuma,,,รีแลกคุมะ,리락쿠마,Rilakkuma
+1840,五山送り火,gozan no okuribi,,,โกะซังโอคุริบิ,고잔노 오쿠리비,Gozan No Okuribi
+1841,時代祭り,jidai matsuri,,,เทศกาลจิได,지다이 축제,lễ hội Jidai
+1842,草間彌生,yayoi kusama,草間彌生,草间弥生,,쿠사마 야요이,Yayoi Kusama
+1843,河津桜,kawazu zakura,,,,카와즈 벚꽃,Kawazu Zakura
+1844,安藤忠雄,tadao ando,安藤忠雄,安藤忠雄,,안도 타다오,Tadao Ando
+1845,隈研吾,kengo kuma,隈研吾,隈研吾,,쿠마 켄고,Kengo Kuma
+1846,オリンピック,olympics,,东京奥运会,โอลิมปิก,올림픽,Olympics
+1847,フォトジェニック,photogenic,打卡景點,打卡景点,,포토제닉,ăn ảnh
+1848,ランキング,ranking,排行,排行,จัดอันดับ,랭킹,xếp hạng
+1849,インスタ映え,instagrammable,網美景點,网红景点,instagram,인스타각,chụp ảnh đăng instagram
+1850,日本限定,only in japan,日本限定,本限定,เฉพาะในญี่ปุ่น,일본 한정,chỉ ở Nhật Bản
+1851,ひとり旅,solo trip,一人旅,一人旅,เที่ยวคนเดียว,나홀로 여행,chuyến đi một mình
+1852,家族向け,family orientated,,,,가족용,thiên về gia đình
+1853,家族旅行,family trips,家族旅行,家族旅行,ทริปครอบครัว,가족 여행,chuyến đi gia đình
+1854,カップル,couples,情侶,情侣,คู่รัก,커플,các cặp vợ chồng
+1855,カスタマイズ,customized,客製化,客製化,ปรับได้ตามใจชอบ,커스터마이즈,tùy chỉnh
+1856,親子,parents and kids,親子,亲子,,부모자식,cha mẹ và con cái

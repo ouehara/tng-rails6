@@ -1,0 +1,52 @@
+<svg id="グループ_14" data-name="グループ 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="パス_2" data-name="パス 2" d="M22.5,0A22.5,22.5,0,0,0,45-22.5,22.5,22.5,0,0,0,22.5-45,22.5,22.5,0,0,0,0-22.5,22.5,22.5,0,0,0,22.5,0Z" transform="translate(0 45)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="パス_6" data-name="パス 6" d="M10.5-23A1.5,1.5,0,0,0,12-24.5,1.5,1.5,0,0,0,10.5-26,1.5,1.5,0,0,0,9-24.5,1.5,1.5,0,0,0,10.5-23Z" transform="translate(-9 26)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="パス_8" data-name="パス 8" d="M14.5-26A2.5,2.5,0,0,0,17-28.5,2.5,2.5,0,0,0,14.5-31,2.5,2.5,0,0,0,12-28.5,2.5,2.5,0,0,0,14.5-26Z" transform="translate(-12 31)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="パス_10" data-name="パス 10" d="M12.5-31A1.5,1.5,0,0,0,14-32.5,1.5,1.5,0,0,0,12.5-34,1.5,1.5,0,0,0,11-32.5,1.5,1.5,0,0,0,12.5-31Z" transform="translate(-11 34)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_1" data-name="グループ 1" clip-path="url(#clip-path)">
+    <path id="パス_1" data-name="パス 1" d="M-1-46H46V1H-1Z" transform="translate(0 45)" fill="#188e9d"/>
+  </g>
+  <g id="グループ_2" data-name="グループ 2" transform="translate(13.288 18.372)">
+    <path id="パス_3" data-name="パス 3" d="M0,6A5.208,5.208,0,0,1,1.128,4.239a3.35,3.35,0,0,1,1.692-.587Q2.887.751,5.344.129A2.935,2.935,0,0,1,9,1.89" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+  </g>
+  <g id="グループ_3" data-name="グループ 3" transform="translate(24.099 19.012)">
+    <path id="パス_4" data-name="パス 4" d="M0,.41A2.248,2.248,0,0,1,2.076.15a2.463,2.463,0,0,1,1.1,1.25,2.123,2.123,0,0,1,1.734.226c.991.711.479,2.213.479,2.213" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+  </g>
+  <g id="グループ_5" data-name="グループ 5" transform="translate(9 19)" clip-path="url(#clip-path-2)">
+    <g id="グループ_4" data-name="グループ 4">
+      <path id="パス_5" data-name="パス 5" d="M1.5,3A1.5,1.5,0,1,0,0,1.5,1.5,1.5,0,0,0,1.5,3Z" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="グループ_7" data-name="グループ 7" transform="translate(12 14)" clip-path="url(#clip-path-3)">
+    <g id="グループ_6" data-name="グループ 6">
+      <path id="パス_7" data-name="パス 7" d="M2.5,5A2.5,2.5,0,1,0,0,2.5,2.5,2.5,0,0,0,2.5,5Z" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="グループ_9" data-name="グループ 9" transform="translate(11 11)" clip-path="url(#clip-path-4)">
+    <g id="グループ_8" data-name="グループ 8">
+      <path id="パス_9" data-name="パス 9" d="M1.5,3A1.5,1.5,0,1,0,0,1.5,1.5,1.5,0,0,0,1.5,3Z" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="グループ_10" data-name="グループ 10" transform="translate(19.264 11.27)">
+    <path id="パス_11" data-name="パス 11" d="M12.912,0H10.875a4,4,0,0,0-1.02.132l-8.8,2.32A1.416,1.416,0,0,0,0,3.821,1.091,1.091,0,0,0,1.091,4.912H4.551L2.566,6.3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+  </g>
+  <g id="グループ_11" data-name="グループ 11" transform="translate(30.992 12.867)">
+    <path id="パス_12" data-name="パス 12" d="M0,10.383,4.161,5.635a2,2,0,0,0,.218-.3A3.98,3.98,0,0,0,3.822,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+  </g>
+  <g id="グループ_12" data-name="グループ 12" transform="translate(24.099 16.385)">
+    <path id="パス_13" data-name="パス 13" d="M0,.195A9.09,9.09,0,0,0,2.761.805,9.09,9.09,0,0,0,5.521.195" transform="translate(0 -0.195)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+  </g>
+  <g id="グループ_13" data-name="グループ 13" transform="translate(13 21.361)">
+    <path id="パス_14" data-name="パス 14" d="M18.793,12.048H4.852a1.064,1.064,0,0,1,0-2.129H2.62a1.132,1.132,0,1,1,0-2.264H1a1,1,0,0,1-1-1V6.569a.921.921,0,0,1,.921-.921H2.456a.968.968,0,0,1,0-1.936H9.624L7.461,2.288A1.039,1.039,0,0,1,7.155.863,1.082,1.082,0,0,1,8.6.5l8.4,4.688h2.256" transform="translate(0 -0.361)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+  </g>
+</svg>

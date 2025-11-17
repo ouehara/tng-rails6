@@ -1,0 +1,121 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/category/feature/coj-healthy-traditional-japanese-foods/">
+<link rel="alternate" hreflang="ja" href="https://www.tsunagujapan.com/ja/category/feature/coj-healthy-traditional-japanese-foods/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/category/feature/coj-healthy-traditional-japanese-foods/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/category/feature/coj-healthy-traditional-japanese-foods/">
+<% end %>
+<% body_class "feature lang_" + I18n.locale.to_s %>
+<% set_meta_tags  title: t('feature.coj.theme3.title'),
+                  description: t('feature.coj.theme3.description'),
+                  og: {
+                    image: ActionController::Base.helpers.asset_pack_path('media/images/category/feature/coj_c/og-coj_c.png', host: CdnConfig.cloudfront_url)
+                  }
+%>
+<main id="top" class="main">
+  <div class="feature-hero coj-c">
+    <div class="feature-hero-inner">
+      <h1 class="feature-hero-logo coj-c"><img src="<%= asset_pack_path("media/images/category/feature/coj_c/logo-coj-#{I18n.locale.to_s}.svg") %>" alt="Culture of Japan - <%= t('feature.coj.theme3.title') %>" class=""></h1>
+    </div>
+  </div><!-- /.feature-hero -->
+  <div class="feature-contents coj">
+    <div class="feature-description container">
+      <p><%= t('feature.coj.theme3.description') %></p>
+    </div>
+    <div class="feature-sections">
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/coj_c/coj_c-1.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">01</p>
+          <h2 class="feature-desc-title"><%= t('feature.coj.theme3.article1.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.coj.theme3.article1.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.coj.theme3.article1.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-steve.jpg') %>" alt="<%= t('feature.coj.theme3.article1.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.coj.theme3.article1.writer.name') %> - <%= t('feature.coj.theme3.article1.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.coj.theme3.article1.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/coj_c/coj_c-2.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">02</p>
+          <h2 class="feature-desc-title"><%= t('feature.coj.theme3.article2.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.coj.theme3.article2.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.coj.theme3.article2.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-kinoko.jpg') %>" alt="<%= t('feature.coj.theme3.article2.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.coj.theme3.article2.writer.name') %> - <%= t('feature.coj.theme3.article2.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.coj.theme3.article2.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/coj_c/coj_c-3.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">03</p>
+          <h2 class="feature-desc-title"><%= t('feature.coj.theme3.article3.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.coj.theme3.article3.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.coj.theme3.article3.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-pan.jpg') %>" alt="<%= t('feature.coj.theme3.article3.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.coj.theme3.article3.writer.name') %> - <%= t('feature.coj.theme3.article3.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.coj.theme3.article3.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+      <div class="feature-section">
+        <div class="feature-images">
+          <div class="feature-image" style="background-image: url(<%= asset_pack_path("media/images/category/feature/coj_c/coj_c-4.jpg") %>)"></div>
+        </div>
+        <div class="feature-desc">
+          <p class="feature-desc-num">04</p>
+          <h2 class="feature-desc-title"><%= t('feature.coj.theme3.article4.title') %></h2>
+          <p class="feature-desc-text"><%= t('feature.coj.theme3.article4.description') %></p>
+          <div class="feature-desc-actions">
+            <a href="<%= t('feature.coj.theme3.article4.url') %>" class="feature-desc-action"><%= t('feature.read_more') %></a>
+          </div>
+          <div class="feature-profile">
+            <div class="feature-profile-image">
+              <img class="obj-fit" src="<%= asset_pack_path('media/images/category/feature/profile/profile-kim.jpg') %>" alt="<%= t('feature.coj.theme3.article4.writer.name') %>">
+            </div>
+            <div class="feature-profile-detail">
+              <p class="feature-profile-name"><%= t('feature.coj.theme3.article4.writer.name') %> - <%= t('feature.coj.theme3.article4.writer.country') %></p>
+              <p class="feature-profile-desc"><%= t('feature.coj.theme3.article4.writer.profile') %></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.feature-section -->
+    </div>
+  </div><!-- /.feature-contents -->
+</main>
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

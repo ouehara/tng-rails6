@@ -1,0 +1,27 @@
+//
+// Container
+// --------------------------------------------------
+.container {
+  width: 100%;
+  // max-width: 750px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include mq(sm) {
+    // max-width: 1075px;
+  }
+
+  @include mq(mm) {
+    max-width: $base_width_pc;
+  }
+}
+
+// main
+.l-main {
+  width: 100%;
+  overflow: hidden;
+
+  @include mq(mm) {
+    padding-top: 115px;
+  }
+}

@@ -1,0 +1,18 @@
+  <%= render "admin/blocks/menu_section" %>
+  <% if @article %>
+    <ul class="nav side-menu">
+    <li>
+        <%if @article_editor && @article_editor.is_locked  %>
+          
+          <%= link_to edit_article_path(I18n.locale,@article, :force => 1), target: "_blank", data: {confirm: @article_editor.user.username + " is editing, do you really want to continue" } do%>
+            <i class="menu-icon icon-lock" title="<%=  @article_editor.user.username %> is editing"></i> Edit
+          <% end%>
+        <%else%>
+          <%= link_to edit_article_path(I18n.locale,@article), target: "_blank" do%>
+          <i class="menu-icon icon-doc"></i> Edit
+          <% end %>
+        <% end %>
+    </li>  
+    </ul>
+  <% end %>
+  <%= render "admin/blocks/user_section" %>

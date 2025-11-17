@@ -1,0 +1,217 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/en/area/gunma/feature/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/area/gunma/feature/">
+<% end %>
+<% body_class "area index lang_" + I18n.locale.to_s %>
+<% set_meta_tags title: t('area.feature.gunma.title'),
+                description: t('area.feature.gunma.description'),
+                og: {
+                  image:  ActionController::Base.helpers.asset_pack_path("media/images/area/feature/prefecture/gunma/hero.png", host: CdnConfig.cloudfront_url)
+                } %>
+
+<main id="top" class="main">
+  <a class="feature_pageLogo" href="<%=root_url %>">
+    <span class="isvg">
+    <%=react_component('icon/logo_sp') %>
+    </span>
+  </a>
+
+  <div class="area-hero gunma">
+    <div id="teaser" class="teaser">
+      <h1><%= t('area.feature.gunma.title') %></h1>
+      <h2><%= t('area.feature.gunma.sub') %></h2>
+    </div>
+  </div><!-- /.area-hero -->
+
+  <section class="feature_about">
+    <div>
+      <h3><%= t('area.feature.gunma.about.title') %></h3>
+      <p>
+        <%=raw sanitize  I18n.t "area.feature.gunma.about.desc", tags: %w(h2 p strong em a img), attributes: %w(id class href src) %>
+      </p>
+    </div>
+
+    <div>
+      <img class="feature_about_map" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/map.png') %>" usemap="#ImageMap" alt="Abount Gunma">
+      <map name="ImageMap">
+        <area shape="rect" coords="470,173,591,243" href="#<%= t('area.feature.gunma.area.1.section') %>" alt="<%= t('area.feature.gunma.area.1.section') %>" />
+        <area shape="rect" coords="619,106,669,177" href="#<%= t('area.feature.gunma.area.2.section') %>" alt="<%= t('area.feature.gunma.area.2.section') %>" />
+        <area shape="rect" coords="356,265,453,346" href="#<%= t('area.feature.gunma.area.3.section') %>" alt="<%= t('area.feature.gunma.area.3.section') %>" />
+        <area shape="rect" coords="247,303,345,377" href="#<%= t('area.feature.gunma.area.4.section') %>" alt="<%= t('area.feature.gunma.area.4.section') %>" />
+        <area shape="rect" coords="469,348,541,422" href="#<%= t('area.feature.gunma.area.5.section') %>" alt="<%= t('area.feature.gunma.area.5.section') %>" />
+        <area shape="rect" coords="552,428,716,467" href="#<%= t('area.feature.gunma.area.6.section') %>" alt="<%= t('area.feature.gunma.area.6.section') %>" />
+        <area shape="rect" coords="490,483,666,531" href="#<%= t('area.feature.gunma.area.7.section') %>" alt="takasaki" />
+        <area shape="rect" coords="402,533,512,598" href="#<%= t('area.feature.gunma.area.7.section') %>" alt="tomioka" />
+      </map>
+    </div>
+  </section>
+
+  <section class="feature_howto">
+    <div>
+      <h3><%= t('area.feature.gunma.howtoget.title') %></h3>
+      <p>
+          <%=raw sanitize I18n.t "area.feature.gunma.howtoget.desc", tags: %w(h2 p strong em a img), attributes: %w(id class href src) %>
+      </p>
+    </div>
+
+    <div>
+      <img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/line.png') %>" alt="How to get to Gunma">
+    </div>
+  </section>
+
+  <section class="feature_area_name" id="<%= t('area.feature.gunma.area.1.section') %>">
+    <h4><%= t('area.feature.gunma.area.1.name') %></h4>
+    <p><%= t('area.feature.gunma.area.1.desc') %></p>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/1.png') %>" alt="Abount Minakami"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.1.article.1.title') %></p>
+      <p><%= t('area.feature.gunma.area.1.article.1.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.1.article.1.link') %>" class="feature_learn_more_btn color1" target="_blank"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c1.png') %>" alt="JapanTravel">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_name" id="<%= t('area.feature.gunma.area.2.section') %>">
+    <h4><%= t('area.feature.gunma.area.2.name') %></h4>
+    <p><%= t('area.feature.gunma.area.2.desc') %></p>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/2.jpg') %>" alt="Abount Oze"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.2.article.1.title') %></p>
+      <p><%= t('area.feature.gunma.area.2.article.1.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.2.article.1.link') %>" class="feature_learn_more_btn color2" target="_blank"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c2.png') %>" alt="MATCHA">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_name" id="<%= t('area.feature.gunma.area.3.section') %>">
+    <h4><%= t('area.feature.gunma.area.3.name') %></h4>
+    <p><%= t('area.feature.gunma.area.3.desc') %></p>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/3.png') %>" alt="Abount Shima"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.3.article.1.title') %></p>
+      <p><%= t('area.feature.gunma.area.3.article.1.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.3.article.1.link') %>" class="feature_learn_more_btn color3" target="_blank"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c3.png') %>" alt="japan-guide.com">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_name" id="<%= t('area.feature.gunma.area.4.section') %>">
+    <h4><%= t('area.feature.gunma.area.4.name') %></h4>
+    <p><%= t('area.feature.gunma.area.4.desc') %></p>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/4.png') %>" alt="Abount Kusatsu"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.4.article.1.title') %></p>
+      <p><%= t('area.feature.gunma.area.4.article.1.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.4.article.1.link') %>" class="feature_learn_more_btn color4"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c4.png') %>" alt="tsunagu Japan">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_name" id="<%= t('area.feature.gunma.area.5.section') %>">
+    <h4><%= t('area.feature.gunma.area.5.name') %></h4>
+    <p><%= t('area.feature.gunma.area.5.desc') %></p>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/5.png') %>" alt="Abount Ikaho"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.5.article.1.title') %></p>
+      <p><%= t('area.feature.gunma.area.5.article.1.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.5.article.1.link') %>" class="feature_learn_more_btn color5"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c4.png') %>" alt="tsunagu Japan">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_name" id="<%= t('area.feature.gunma.area.6.section') %>">
+    <h4><%= t('area.feature.gunma.area.6.name') %></h4>
+    <p><%= t('area.feature.gunma.area.6.desc') %></p>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/6.png') %>" alt="Abount Ikaho"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.6.article.1.title') %></p>
+      <p><%= t('area.feature.gunma.area.6.article.1.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.6.article.1.link') %>" class="feature_learn_more_btn color6" target="_blank"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c1.png') %>" alt="JapanTravel">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_name" id="<%= t('area.feature.gunma.area.7.section') %>">
+    <h4><%= t('area.feature.gunma.area.7.name') %></h4>
+    <p><%= t('area.feature.gunma.area.7.desc') %></p>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/7.png') %>" alt="Abount Takasaki"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.7.article.1.title') %></p>
+      <p><%= t('area.feature.gunma.area.7.article.1.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.7.article.1.link') %>" class="feature_learn_more_btn color7" target="_blank"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c3.png') %>" alt="japan-guide.com">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_detail">
+    <div><img class="feature_howto_line" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/8.png') %>" alt="Abount Tomioka"></div>
+    <div class="feature_area_detail_text">
+      <p class="feature_area_detail_title"><%= t('area.feature.gunma.area.7.article.2.title') %></p>
+      <p><%= t('area.feature.gunma.area.7.article.2.desc') %></p>
+      <a href="<%= t('area.feature.gunma.area.7.article.2.link') %>" class="feature_learn_more_btn color7" target="_blank"><i class="feature_learn_more_icon fas fa-chevron-circle-right"></i>Learn more</a>
+      <div class="feature_area_credit">
+        <span>Credit</span>
+        <img class="feature_area_credit_logo" src="<%= asset_pack_path('media/images/area/feature/prefecture/gunma/c2.png') %>" alt="MATCHA">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area_related">
+    <div class="feature_area_related_bannerArea">
+      <a href="https://www.visit-gunma.jp/en/?utm_medium=paid&utm_source=tsunagu-japan&utm_campaign=vguph2-spon-ad&utm_content=spon_story_LP&utm_term=61221" onclick="ga('send', 'event', 'gunma_feature', 'click', 'gunma_feature');" class="feature_area_related_banner">
+        <img src="<%= asset_pack_path("media/images/area/feature/prefecture/gunma/banner.png")%>" class="img-responsive">
+      </a>
+    </div>
+    <h3 class="related_articles newest-top-scroll-to"><%= I18n.t("area.feature.gunma.related")%></h3>
+    <%= render "articles/list", articles: @featured, isTop: true %>
+  </section>
+
+</main><!-- /.main -->

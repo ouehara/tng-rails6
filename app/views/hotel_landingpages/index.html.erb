@@ -1,0 +1,145 @@
+<% title  t("hotel-lp.meta_title")  %>
+<% description t("hotel-lp.meta_desc") %>
+<div class="hotel-lp">
+<%
+  mobile =  browser.device.mobile? ? "mobile" : "pc"
+  urlPath = asset_pack_path("media/images/keyVisual_#{mobile}_#{I18n.locale.to_s}.jpg")
+%>
+<div class="hotel-lp-header">
+    <img src="<%=urlPath%>" class="img-responsive" />
+</div>
+<div class="hotel-lp-titel">
+<div class="container nopadding-container">
+  <div class="col-xs-12 col-sm-12 ">
+    <h2><%= t("hotel-lp.desc_headline")   %></h2>
+    <p><%=  t("hotel-lp.desc") %></p>
+  </div>
+</div>
+</div>
+
+<div class="highlight-container">
+  <div class="container nopadding-container">
+    <div class="col-xs-12 col-sm-12 ">
+      <div class="highlight-container-headline">
+        <h2><%=  t("hotel-lp.pickup")   %></h2>
+      </div>
+      <div class="row">
+        <% @promoHotel.each.with_index do |hotel, index| %>
+        <div class="col-xs-12 col-sm-4">
+          <a href=<%= "#hotel#{hotel.pickup_hotel_lp.first["hotel_landingpages_id"]}"%>>
+            <div class="hotel-highlight-image icon-arrow-down icons">
+              <img src=<%= hotel.hotel_images[0].image.url(:medium) %>   class="img-responsive">
+            </div>
+          </a>
+          <div class="hotel-highlight-name">
+            <p><%= hotel.name %></p>
+          </div>
+        </div>
+        <% break if index == 2%>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container nopadding-container">
+
+  <div class="col-xs-12 col-sm-12 ">
+  <hr/>
+    <% @hotels.each.with_index do |hotel, index| %>
+    <div class="row" id=<%= "hotel#{hotel.id}"%>>
+      <div class="col-xs-12 hotel-header">
+          <div class="row">
+            <h3 class="col-xs-8 hotel-name"><%= hotel.name %></h3>
+            <% if !hotel.area.nil? %>
+            <div class="col-xs-4 hotel-lp-area" >
+              <a href="<%= hotelp_path(hotel.area) %>">
+                <%= hotel.area.name %>
+              </a>
+            </div>
+            <% end %>
+          </div>
+          <div class="hotel-location-wrapper">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p class="hotel-location"><%a =  hotel.address.split("\n") %><span class="bold"><%= a[0]%></span><%= a[1]%></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-7 hotel-images">
+          <%# VIA INN Hotel 対応 %>
+          <% if hotel.id == 96 %>
+            <div class="col-xs-12 nopadding" style="position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden;margin-bottom: 2rem;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Cu_L_HoPbPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute;top: 0;width: 100%;height: 100%;"></iframe>
+            </div>
+            <%hotel.hotel_images.each.with_index do |img, i|%>
+              <div class="col-xs-4 nopadding hotel-small">
+              <%= link_to img.image.url(:medium), :data => { "lightbox"=>"lb#{index}" } do%>
+                <%= image_tag img.image.url(:medium), class: "img-responsive hotel-image"%>
+              <%end%>
+              </div>
+            <%end%>
+          <% else %>
+            <%hotel.hotel_images.each.with_index do |img, i|%>
+              <% if i == 0%>
+                <div class="col-xs-12 nopadding">
+              <% else %>
+                <div class="col-xs-4 nopadding hotel-small">
+              <%end%>
+              <%= link_to img.image.url(:medium), :data => { "lightbox"=>"lb#{index}" } do%>
+                <%= image_tag img.image.url(:medium), class: "img-responsive hotel-image"%>
+              <%end%>
+              </div>
+            <%end%>
+          <% end %>
+          <div class="hotel-features col-xs-12">
+          <% hotel.hotel_features.each do |feature|%>
+            <div class="feature-icon-single-wrap" title="<%= t("hotel-lp.features."+feature.feature.to_s) %>" >
+              <div class=<%= "feature-icon"+feature[:feature].to_s %>>
+              </div>
+            </div>
+          <%end%>
+          </div>
+        </div>
+          <div class="col-xs-12 col-sm-5">
+            <p class="bold hotel-summary"><%= hotel.summary %></p>
+            <p class="hotel-description"><%= hotel.description%></p>
+            <p class="hotel-price col-xs-12 nopadding">
+            <%a =  hotel.price.split("\n") %><%= a[0]%>
+            <span class="small"><%= a[1]%></span>
+            </p>
+            <div class="row">
+              <div class="col-xs-12">
+                <a href="<%= hotel.url %>"
+                class="btn hotel-offical"
+                target="_blank"
+                onClick="ga('send', 'event', 'hotel_lp', 'click', '<%= I18n.locale.to_s+"."+hotel.name_en.parameterize("_") %>');">
+                  <img src=<%= asset_pack_path("media/images/hotel-icon-web.png")%> >
+                 <%= t("hotel-lp.website") %>
+                </a>
+                <%if hotel.official_text %>
+                <p class="website-sub bold"><%= t("hotel-lp.website_sub_html") %></p>
+                <%end%>
+                <%if hotel.recommend_text %>
+                <p class="website-sub bold"><%= t("hotel-lp.website_sub_recommend_text") %></p>
+                <%end%>
+              </div>
+            </div>
+          </div>
+      </div>
+      <hr/>
+    <%end%>
+    <div class="hotel-lp-notice">
+      <ul>
+      <li><%= t("hotel-lp.notice.change") %></li>
+      <li><%= t("hotel-lp.notice.estimated") %></li>
+      <li><%= t("hotel-lp.notice.communication") %></li>
+      <ul>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<link href='https://fonts.googleapis.com/css?family=Century'
+rel='stylesheet' type='text/css'>
+<%= stylesheet_link_tag 'custom_lightbox', media: 'all', 'data-turbolinks-track' => true %>

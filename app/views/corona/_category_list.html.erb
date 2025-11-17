@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="category_filter">
+        <label for="category_select"><%= I18n.t("covid.place_list.category") %>:</label>
+        <select name="category_select" class="" id="category_select" style="width:100%;">
+          <option value="" class="category_ph"><%= I18n.t("covid.place_list.category_ph") %></option>
+          <option value="transportation"><%= I18n.t("covid.place_list.transport") %></option>
+          <option value="hotels"><%= I18n.t("covid.place_list.hotel") %></option>
+          <option value="restaurants"><%= I18n.t("covid.place_list.restaurant") %></option>
+          <option value="shops"><%= I18n.t("covid.place_list.shop") %></option>
+          <option value="sightseeing"><%= I18n.t("covid.place_list.sightseeing") %></option>
+          <option value="others"><%= I18n.t("covid.place_list.other") %></option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>

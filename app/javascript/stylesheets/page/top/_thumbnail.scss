@@ -1,0 +1,158 @@
+.top-thumbnailList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -6px;
+  @include mq(sm) {
+    margin: -10px;
+  }
+  &:before,
+  &:after {
+    display: none; // for Safari
+  }
+
+  &_item {
+    padding: 6px;
+    @include mq(sm) {
+      padding: 10px;
+    }
+  }
+  &_item a {
+    display: block;
+    padding-top: percentage(260 / 410);
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 2px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+      position: absolute;
+      top: 0;
+      transition: background ease-out 0.2s;
+    }
+  }
+
+  // サムネイルのサイズ
+  &_item.is-travel a {
+    padding-top: percentage(260 / 410);
+  }
+  &_item.is-featured a {
+    padding-top: percentage(160 / 301);
+  }
+  &_item.is-area_lg a {
+    padding-top: 0;
+  }
+  &_item.is-area_md a {
+    padding-top: 0;
+  }
+  //0 7px 0 7px
+  //サムネイルの画像
+  &_item img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    transition: transform ease-out 0.2s, opacity ease-out 0.4s;
+  }
+
+  &_item.is-area_md img,
+  &_item.is-area_lg img {
+    position: relative;
+  }
+
+  &_item a:hover {
+    img {
+      opacity: 0.55;
+    }
+    img:not(.top-area_image) {
+      transform: scale(1.03) translate3d(0, 0, 0);
+    }
+  }
+  &_item.is-area_lg,
+  &_item.is-area_md {
+    img.top-area_map {
+      position: absolute;
+      width: auto;
+      height: 90%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: auto;
+      margin: auto;
+      z-index: 1;
+      transform-origin: 50% 50%;
+      transition: transform ease-in-out 0.2s, opacity ease-out 0.4s;
+
+      // 黄色エリアを基準に拡大
+      $map_w: 202;
+      $map_h: 217;
+      &[src*="_map_01"] {
+        transform-origin: percentage(161 / $map_w) percentage(38 / $map_h);
+      }
+      &[src*="_map_02"] {
+        transform-origin: percentage(128 / $map_w) percentage(148 / $map_h);
+      }
+      &[src*="_map_03"] {
+        transform-origin: percentage(82 / $map_w) percentage(152 / $map_h);
+      }
+      &[src*="_map_04"] {
+        transform-origin: percentage(126 / $map_w) percentage(149 / $map_h);
+      }
+      &[src*="_map_05"] {
+        transform-origin: percentage(82 / $map_w) percentage(159 / $map_h);
+      }
+      &[src*="_map_06"] {
+        transform-origin: percentage(24 / $map_w) percentage(172 / $map_h);
+      }
+      &[src*="_map_07"] {
+        transform-origin: percentage(57 / $map_w) percentage(66 / $map_h);
+      }
+      &[src*="_map_08"] {
+        transform-origin: percentage(95 / $map_w) percentage(148 / $map_h);
+      }
+    }
+    a:hover {
+      img.top-area_map {
+        opacity: 1;
+        transform: scale(1.12);
+      }
+    }
+  }
+
+  // サムネイルのテキスト
+  &_item p {
+    width: 100%;
+    margin: 0;
+    padding: 0 8px 4px;
+    color: #fff;
+    font-size: rem(15);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    @include mq(sm) {
+      padding: 0 20px 10px;
+      font-size: rem(24);
+      text-shadow: 0 0 13px rgba(0, 0, 0, 0.4);
+    }
+  }
+  &_item.is-featured p {
+    @include mq(sm) {
+      padding: 0 10px 10px;
+      font-size: rem(22);
+    }
+  }
+}

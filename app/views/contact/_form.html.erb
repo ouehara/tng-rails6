@@ -1,0 +1,39 @@
+<div class="contact-form">
+  <%= form_for @contact, url: contact_path, class: "form", html: { autocomplete: "off" } do |f| %>
+    <% if @contact.errors.any? %>
+      <%= render partial: 'shared/error_message', locals: { resource: @contact } %>
+    <% end %>
+    <div class="form-group">
+      <%= f.label(:name, "Name:") %>
+      <%= f.text_field(:name, class: "form-control") %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label(:email, "Email:") %>
+      <%= f.text_field(:email, class: "form-control") %>
+    </div>
+    <div class="form-group honeypot">
+      <%= text_field_tag("contact_us", nil) %>
+      <span class="help">Do not fill in this field. It is an anti-spam measure.</span> 
+    </div>
+
+    <div class="form-group">
+      <%= f.label(:title, "Title: ") %>
+      <%= f.text_field(:title, class: "form-control") %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label(:content, "Content: ") %>
+      <%= f.text_area(:content, class: "form-control") %>
+    </div>
+    <div class="form-group">
+      <%= f.check_box :agreement %> I agree to the <%= link_to 'Terms', "/terms" %>.
+    </div>
+    <div class="form-group">
+      <%= f.submit("Send", class: "form-control btn btn-blue") %>
+    </div>
+
+    
+
+  <% end %>
+  </div>

@@ -1,0 +1,299 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/tsunagu-japan-travel-dmc/">
+  <% if false %>
+  <link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/tsunagu-japan-travel-dmc/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/tsunagu-japan-travel-dmc/">
+  <% end %>
+<% end %>
+<% body_class "tj-dmc lang_" + I18n.locale.to_s %>
+<% set_meta_tags  title: t('dmc.title'),
+                  description: t('dmc.description'),
+                  og: {
+                    image: ActionController::Base.helpers.asset_pack_path('media/images/dmc/og-dmc.jpg', host: CdnConfig.cloudfront_url)
+                  }
+%>
+
+<div class="hero dmc_hero">
+  <div class="hero_title dmc_hero-title">
+    <div class="hero_container dmc_hero-container">
+      <h1 class="title">
+        <%= image_tag(asset_pack_path("media/images/dmc/logo-tj-travel.png"), class: "", alt: t('dmc.title'), :size => "") %>
+      </h1>
+      <p class="dmc_hero-lead"><%= t('dmc.lead_html') %></p>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/breadcrumb" %>
+
+<section class="section">
+  <div class="dmc_contents">
+    <div class="container">
+      <p class="dmc_description"><%= t('dmc.description') %></p>
+    </div>
+    <section class="container dmc_section dmc_service">
+      <h2 class="dmc_section-title"><%= t('dmc.service.title') %></h2>
+      <ul class="dmc_service-list">
+        <li class="dmc_service-item">
+          <div class="dmc_service-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/dmc_service-01.jpg"), class: "dmc_service-image", alt: t('dmc.service.theme1.title'), :size => "200x200") %>
+          </div>
+          <h3 class="dmc_service-title"><%= t('dmc.service.theme1.title') %></h3>
+          <p class="dmc_service-desc"><%= t('dmc.service.theme1.description_html') %></p>
+        </li>
+        <li class="dmc_service-item">
+          <div class="dmc_service-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/dmc_service-02.jpg"), class: "dmc_service-image", alt: t('dmc.service.theme2.title'), :size => "200x200") %>
+          </div>
+          <h3 class="dmc_service-title"><%= t('dmc.service.theme2.title') %></h3>
+          <p class="dmc_service-desc"><%= t('dmc.service.theme2.description_html') %></p>
+        </li>
+        <li class="dmc_service-item">
+          <div class="dmc_service-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/dmc_service-03.jpg"), class: "dmc_service-image", alt: t('dmc.service.theme3.title'), :size => "200x200") %>
+          </div>
+          <h3 class="dmc_service-title"><%= t('dmc.service.theme3.title') %></h3>
+          <p class="dmc_service-desc"><%= t('dmc.service.theme3.description_html') %></p>
+        </li>
+      </ul>
+    </section>
+    <section class="container dmc_section dmc_area">
+      <h2 class="dmc_section-title"><%= t('dmc.area.title') %></h2>
+      <p class="dmc_description"><%= t('dmc.area.description_top') %></p>
+      <div class="dmc_area-list">
+        <div class="dmc_area-item">
+          <%= link_to t('dmc.area.city.theme1.link'), id: "dmc_featureArea-tokyo" do %>
+            <%= image_tag(asset_pack_path("media/images/dmc/city-tokyo.jpg"), class: "dmc_area-image", alt: I18n.t("dmc.area.city.theme1.name"), :size => "290x290") %>
+            <p class="dmc_area-label"><%= I18n.t("dmc.area.city.theme1.name") %></p>
+          <% end %>
+        </div>
+        <div class="dmc_area-item">
+          <%= link_to t('dmc.area.city.theme2.link'), id: "dmc_featureArea-osaka" do %>
+            <%= image_tag(asset_pack_path("media/images/dmc/city-osaka.jpg"), class: "dmc_area-image", alt: I18n.t("dmc.area.city.theme2.name"), :size => "290x290") %>
+            <p class="dmc_area-label"><%= I18n.t("dmc.area.city.theme2.name") %></p>
+          <% end %>
+        </div>
+        <div class="dmc_area-item">
+          <%= link_to t('dmc.area.city.theme3.link'), id: "dmc_featureArea-kyoto" do %>
+            <%= image_tag(asset_pack_path("media/images/dmc/city-kyoto.jpg"), class: "dmc_area-image", alt: I18n.t("dmc.area.city.theme3.name"), :size => "290x290") %>
+            <p class="dmc_area-label"><%= I18n.t("dmc.area.city.theme3.name") %></p>
+          <% end %>
+        </div>
+      </div>
+      <%= render "index/area_feature_banner", page: "dmc" %>
+    </section>
+    <section class="container dmc_section dmc_contact">
+      <h2 class="dmc_section-title"><%= t('dmc.contact.title') %></h2>
+      <p class="dmc_description center"><%= t('dmc.contact.description2') %></p>
+      <div class="dmc_contact-action">
+        <%= link_to t('dmc.contact.label'), t('dmc.contact.link'), target: "_blank", id: "dmc_contectform-2", class: "dmc_contact-link" %>
+      </div>
+    </section>
+    <section class="container dmc_section dmc_team">
+      <h2 class="dmc_section-title"><%= t('dmc.team.title') %></h2>
+      <div class="dmc_team-list">
+        <div class="dmc_team-item">
+          <div class="dmc_team-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/member-01.jpg"), class: "dmc_team-image", alt: t('dmc.team.member1.name'), :size => "180x180") %>
+          </div>
+          <div class="dmc_team-cont">
+            <p class="dmc_team-name"><%= t('dmc.team.member1.name') %></p>
+            <p class="dmc_team-desc"><%= t('dmc.team.member1.profile_html') %></p>
+          </div>
+        </div>
+        <div class="dmc_team-item">
+          <div class="dmc_team-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/member-02.jpg"), class: "dmc_team-image", alt: t('dmc.team.member2.name'), :size => "180x180") %>
+          </div>
+          <div class="dmc_team-cont">
+            <p class="dmc_team-name"><%= t('dmc.team.member2.name') %></p>
+            <p class="dmc_team-desc"><%= t('dmc.team.member2.profile_html') %></p>
+          </div>
+        </div>
+        <div class="dmc_team-item">
+          <div class="dmc_team-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/member-03.jpg"), class: "dmc_team-image", alt: t('dmc.team.member3.name'), :size => "180x180") %>
+          </div>
+          <div class="dmc_team-cont">
+            <p class="dmc_team-name"><%= t('dmc.team.member3.name') %></p>
+            <p class="dmc_team-desc"><%= t('dmc.team.member3.profile_html') %></p>
+          </div>
+        </div>
+<% if false %>
+        <div class="dmc_team-item">
+          <div class="dmc_team-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/member-04.jpg"), class: "dmc_team-image", alt: t('dmc.team.member4.name'), :size => "180x180") %>
+          </div>
+          <div class="dmc_team-cont">
+            <p class="dmc_team-name"><%= t('dmc.team.member4.name') %></p>
+            <p class="dmc_team-desc"><%= t('dmc.team.member4.profile_html') %></p>
+          </div>
+        </div>
+<% end %>
+      </div>
+    </section>
+    <section class="container dmc_section dmc_tour">
+      <h2 class="dmc_section-title"><%= t('dmc.tour.title') %></h2>
+      <ul class="dmc_tour-list">
+        <li class="dmc_tour-item">
+          <div class="dmc_tour-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/tour-01.jpg"), class: "dmc_tour-image", alt: I18n.t("dmc.tour.plan1.title"), :size => "347x231") %>
+          </div>
+          <p class="dmc_tour-title"><%= t('dmc.tour.plan1.title') %></p>
+          <ul class="dmc_tour-point">
+            <%= t('dmc.tour.plan1.point_html') %>
+          </ul>
+          <div class="dmc_tour-action">
+            <%= link_to t('dmc.tour.label'), t('dmc.tour.plan1.link'), id: "dmc_tour-link1", class: "dmc_tour-link", :target => "_blank" %>
+          </div>
+        </li>
+        <li class="dmc_tour-item">
+          <div class="dmc_tour-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/tour-02.jpg"), class: "dmc_tour-image", alt: I18n.t("dmc.tour.plan2.title"), :size => "347x231") %>
+          </div>
+          <p class="dmc_tour-title"><%= t('dmc.tour.plan2.title') %></p>
+          <ul class="dmc_tour-point">
+            <%= t('dmc.tour.plan2.point_html') %>
+          </ul>
+          <div class="dmc_tour-action">
+            <%= link_to t('dmc.tour.label'), t('dmc.tour.plan2.link'), id: "dmc_tour-link2", class: "dmc_tour-link", :target => "_blank" %>
+          </div>
+        </li>
+        <li class="dmc_tour-item">
+          <div class="dmc_tour-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/tour-03.jpg"), class: "dmc_tour-image", alt: I18n.t("dmc.tour.plan3.title"), :size => "347x231") %>
+          </div>
+          <p class="dmc_tour-title"><%= t('dmc.tour.plan3.title') %></p>
+          <ul class="dmc_tour-point">
+            <%= t('dmc.tour.plan3.point_html') %>
+          </ul>
+          <div class="dmc_tour-action">
+            <%= link_to t('dmc.tour.label'), t('dmc.tour.plan3.link'), id: "dmc_tour-link3", class: "dmc_tour-link", :target => "_blank" %>
+          </div>
+        </li>
+        <li class="dmc_tour-item">
+          <div class="dmc_tour-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/tour-04.jpg"), class: "dmc_tour-image", alt: I18n.t("dmc.tour.plan4.title"), :size => "347x231") %>
+          </div>
+          <p class="dmc_tour-title"><%= t('dmc.tour.plan4.title') %></p>
+          <ul class="dmc_tour-point">
+            <%= t('dmc.tour.plan4.point_html') %>
+          </ul>
+          <div class="dmc_tour-action">
+            <%= link_to t('dmc.tour.label'), t('dmc.tour.plan4.link'), id: "dmc_tour-link4", class: "dmc_tour-link", :target => "_blank" %>
+          </div>
+        </li>
+        <li class="dmc_tour-item">
+          <div class="dmc_tour-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/tour-05.jpg"), class: "dmc_tour-image", alt: I18n.t("dmc.tour.plan5.title"), :size => "347x231") %>
+          </div>
+          <p class="dmc_tour-title"><%= t('dmc.tour.plan5.title') %></p>
+          <ul class="dmc_tour-point">
+            <%= t('dmc.tour.plan5.point_html') %>
+          </ul>
+          <div class="dmc_tour-action">
+            <%= link_to t('dmc.tour.label'), t('dmc.tour.plan5.link'), id: "dmc_tour-link5", class: "dmc_tour-link", :target => "_blank" %>
+          </div>
+        </li>
+        <li class="dmc_tour-item">
+          <div class="dmc_tour-box">
+            <%= image_tag(asset_pack_path("media/images/dmc/tour-06.jpg"), class: "dmc_tour-image", alt: I18n.t("dmc.tour.plan6.title"), :size => "347x231") %>
+          </div>
+          <p class="dmc_tour-title"><%= t('dmc.tour.plan6.title') %></p>
+          <ul class="dmc_tour-point">
+            <%= t('dmc.tour.plan6.point_html') %>
+          </ul>
+          <div class="dmc_tour-action">
+            <%= link_to t('dmc.tour.label'), t('dmc.tour.plan6.link'), id: "dmc_tour-link6", class: "dmc_tour-link", :target => "_blank" %>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="container dmc_section dmc_contact">
+      <h2 class="dmc_section-title"><%= t('dmc.contact.title') %></h2>
+      <p class="dmc_description"><%= t('dmc.contact.description') %></p>
+      <div class="dmc_contact-action">
+        <%= link_to t('dmc.contact.label'), t('dmc.contact.link'), target: "_blank", id: "dmc_contectform", class: "dmc_contact-link" %>
+      </div>
+<% if false %>
+      <div id="dmc_form" class="dmc_form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfE_35yB24XFkYD2ehF47yUBzrnW51d_eSxnci8-2jb7EuTUg/viewform?embedded=true" width="100%" height="1240" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      </div>
+
+      <section id="dmc_contact-sect" class="dmc_contact-sect">
+        <h3 class="dmc_contact-title"><%= t('dmc.form.title') %></h3>
+        <p class="dmc_contact-desc"><%= t('dmc.form.desc_html') %></p>
+        <div id="dmc_form" class="dmc_form">
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfE_35yB24XFkYD2ehF47yUBzrnW51d_eSxnci8-2jb7EuTUg/formResponse?embedded=true" method="POST">
+            <div class="dmc_form-box">
+              <p><em class="asterisk">*</em> <%= t('dmc.form.note') %></p>
+              <fieldset class="dmc_form-fieldset">
+                <input id="dmc_field1" class="dmc_form-input" type="text" name="entry.1035172484" required>
+                <label for="dmc_field1" for="dmc-field" class="dmc_form-label"><%= t('dmc.form.label1') %> <em class="asterisk">*</em></label>
+              </fieldset>
+            </div>
+            <div class="dmc_form-box">
+              <fieldset class="dmc_form-fieldset">
+                <input id="dmc_field2" class="dmc_form-input" type="url" name="entry.1855756816" required>
+                <label for="dmc_field2" class="dmc_form-label"><%= t('dmc.form.label2') %> <em class="asterisk">*</em></label>
+              </fieldset>
+            </div>
+            <div class="dmc_form-box">
+              <fieldset class="dmc_form-fieldset">
+                <input id="dmc_field3" class="dmc_form-input" type="text" name="entry.202013838" required>
+                <label for="dmc_field3" class="dmc_form-label"><%= t('dmc.form.label3') %> <em class="asterisk">*</em></label>
+              </fieldset>
+            </div>
+            <div class="dmc_form-box">
+              <fieldset class="dmc_form-fieldset">
+                <input id="dmc_field4" class="dmc_form-input" type="email" name="entry.821417083" required>
+                <label for="dmc_field4" class="dmc_form-label"><%= t('dmc.form.label4') %> <em class="asterisk">*</em></label>
+              </fieldset>
+            </div>
+            <div class="dmc_form-box">
+              <fieldset class="dmc_form-fieldset">
+                <input id="dmc_field5" class="dmc_form-input" type="text" name="entry.1881253539" required>
+                <label for="dmc_field5" class="dmc_form-label"><%= t('dmc.form.label5') %> <em class="asterisk">*</em></label>
+              </fieldset>
+            </div>
+            <div class="dmc_form-action">
+               <button type="submit"><%= t('dmc.form.action') %></button>
+            </div>
+          </form>
+        </div>
+      </section>
+<% end %>
+      <p class="dmc_contact-info"><%= t('dmc.registration.info') %></p>
+    </section>
+  </div>
+</section>
+
+<!-- sns -->
+<%= render "shared/sns" %>
+<!-- /sns -->
+
+<% content_for :foot do %>
+  <script>
+    const inputs = document.getElementsByClassName("dmc_form-input");
+    const completed = "completed";
+    // console.log(inputs);
+
+    for (let input of inputs) {
+        input.addEventListener(
+            "change",
+            () => {
+                if (input.value !== "") {
+                    input.nextElementSibling.classList.add(completed);
+                } else {
+                    input.nextElementSibling.classList.remove(completed);
+                }
+                // console.log(input.nextElementSibling);
+            },
+            false
+        );
+    }
+  </script>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

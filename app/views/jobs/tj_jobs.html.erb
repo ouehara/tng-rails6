@@ -1,0 +1,103 @@
+<% content_for :head do %>
+<link rel="alternate" hreflang="en" href="https://www.tsunagujapan.com/tsunagu-japan-jobs/">
+<link rel="alternate" hreflang="zh-cmn-Hant" href="https://www.tsunagujapan.com/zh-hant/tsunagu-japan-jobs/">
+<link rel="alternate" hreflang="x-default" href="https://www.tsunagujapan.com/tsunagu-japan-jobs/">
+<% end %>
+<% body_class "tj-jobs lang_" + I18n.locale.to_s %>
+<% set_meta_tags  title: t('jobs.title'),
+                  description: t('jobs.description'),
+                  og: {
+                    image: ActionController::Base.helpers.asset_pack_path('media/images/jobs/og-jobs.jpg', host: CdnConfig.cloudfront_url)
+                  }
+%>
+<%= react_component('hero/hero_view',{elements:{category: "jobs",
+  "category_full": t('jobs.title'), "page_type": "index",
+  "sp_bg_img": asset_pack_path("media/images/jobs/jobs_hero_img.jpg"),
+  "pc_bg_img": asset_pack_path("media/images/jobs/jobs_hero_img.jpg"),
+  "intro_text": "",
+  "ad": {
+        "img": "",
+        "alt": "",
+        "url": ""
+      }
+  },
+}) %>
+<%= render "shared/breadcrumb" %>
+
+<section class="section">
+  <div class="jobs_contents">
+    <div class="jobs_description container top">
+      <p><%= t('jobs.top_lead_html') %></p>
+    </div>
+    <div class="jobs_sections">
+      <div class="jobs_section">
+        <div class="jobs_images">
+          <div class="jobs_image" style="background-image: url(<%= asset_pack_path("media/images/jobs/jobs-influencer-#{I18n.locale}.jpg") %>)"></div>
+        </div>
+        <div class="jobs_desc">
+          <h2 class="jobs_desc-title"><%= t('jobs.theme1.title') %></h2>
+          <p class="jobs_desc-text"><%= t('jobs.theme1.description_html') %></p>
+          <div class="jobs_desc-actions">
+            <%= link_to t('jobs.theme1.link1.label'), t('jobs.theme1.link1.url'), target: :_blank, class: "jobs_desc-action" %>
+          </div>
+        </div>
+      </div><!-- /.jobs_section -->
+      <div class="jobs_section">
+        <div class="jobs_images">
+          <div class="jobs_image" style="background-image: url(<%= asset_pack_path("media/images/jobs/jobs-writer-#{I18n.locale}.jpg") %>)"></div>
+        </div>
+        <div class="jobs_desc">
+          <h2 class="jobs_desc-title"><%= t('jobs.theme2.title') %></h2>
+          <p class="jobs_desc-text"><%= t('jobs.theme2.description_html') %></p>
+          <div class="jobs_desc-actions">
+            <%= link_to t('jobs.theme2.link1.label'), t('jobs.theme2.link1.url'), target: :_blank, class: "jobs_desc-action" %>
+          </div>
+          <% if I18n.locale.to_s == "zh-hant" %>
+            <div class="jobs_desc-actions">
+              <%= link_to t('jobs.theme2.link2.label'), t('jobs.theme2.link2.url'), target: :_blank, class: "jobs_desc-action" %>
+            </div>
+          <% end %>
+        </div>
+      </div><!-- /.jobs_section -->
+      <% if I18n.locale.to_s == "en" %>
+        <div class="jobs_section">
+          <div class="jobs_images">
+            <div class="jobs_image" style="background-image: url(<%= asset_pack_path("media/images/jobs/jobs-guide-#{I18n.locale}.jpg") %>)"></div>
+          </div>
+          <div class="jobs_desc">
+            <h2 class="jobs_desc-title"><%= t('jobs.theme3.title') %></h2>
+            <p class="jobs_desc-text"><%= t('jobs.theme3.description_html') %></p>
+            <div class="jobs_desc-actions">
+              <%= link_to t('jobs.theme3.link1.label'), t('jobs.theme3.link1.url'), target: :_blank, class: "jobs_desc-action" %>
+            </div>
+          </div>
+        </div><!-- /.jobs_section -->
+        <div class="jobs_section">
+          <div class="jobs_images">
+            <div class="jobs_image" style="background-image: url(<%= asset_pack_path("media/images/jobs/jobs-translator-#{I18n.locale}.jpg") %>)"></div>
+          </div>
+          <div class="jobs_desc">
+            <h2 class="jobs_desc-title"><%= t('jobs.theme4.title') %></h2>
+            <p class="jobs_desc-text"><%= t('jobs.theme4.description_html') %></p>
+            <div class="jobs_desc-actions">
+              <%= link_to t('jobs.theme4.link1.label'), t('jobs.theme4.link1.url'), target: :_blank, class: "jobs_desc-action" %>
+            </div>
+          </div>
+        </div><!-- /.jobs_section -->
+      <% end %>
+    </div>
+    <div class="jobs_description container bottom">
+      <%= t('jobs.bottom_lead_html') %>
+    </div>
+  </div>
+</section>
+
+<!-- sns -->
+<%= render "shared/sns" %>
+<!-- /sns -->
+
+<% content_for :foot do %>
+  <% if I18n.locale.to_s == "en" %>
+    <%= render "shared/modal_newsletter" %>
+  <% end %>
+<% end %>

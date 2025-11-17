@@ -1,0 +1,17 @@
+<p class="post_textLink">
+  <% if !browser.device.mobile? %>
+    <!-- Desktop -->
+    <% if I18n.locale.to_s == "en" || I18n.locale.to_s == "zh-hans" || I18n.locale.to_s == "id" %>
+      <%= link_to t('article.banner.text'), "https://travel.tsunagujapan.com/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_h3before_pc&utm_content=text_#{I18n.locale.to_s}", target: :_blank, id: "post_h3brefore-text-tjtravel-top-#{I18n.locale.to_s}", class: "post_h3brefore-text-tjtravel" %>
+    <% else %>
+      <%= link_to t('article.banner.text'), "https://travel.tsunagujapan.com/#{I18n.locale.to_s}/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_h3before_pc&utm_content=text_#{I18n.locale.to_s}", target: :_blank, id: "post_h3brefore-text-tjtravel-top-#{I18n.locale.to_s}", class: "post_h3brefore-text-tjtravel" %>
+    <% end %>
+  <% else %>
+  <!-- mobile -->
+    <% if I18n.locale.to_s == "en" || I18n.locale.to_s == "zh-hans" || I18n.locale.to_s == "id" %>
+      <%= link_to t('article.banner.text'), "https://travel.tsunagujapan.com/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_h3before_sp&utm_content=text_#{I18n.locale.to_s}", target: :_blank, id: "post_h3brefore-text-tjtravel-top-#{I18n.locale.to_s}", class: "post_h3brefore-text-tjtravel" %>
+    <% else %>
+      <%= link_to t('article.banner.text'), "https://travel.tsunagujapan.com/#{I18n.locale.to_s}/?utm_source=tsunagujapan&utm_medium=referral&utm_campaign=article_h3before_sp&utm_content=text_#{I18n.locale.to_s}", target: :_blank, id: "post_h3brefore-text-tjtravel-top-#{I18n.locale.to_s}", class: "post_h3brefore-text-tjtravel" %>
+    <% end %>
+  <% end %>
+</p>

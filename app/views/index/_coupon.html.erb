@@ -1,0 +1,28 @@
+<% if !@sections.nil?%>
+  <% @sections.each do |section| %>
+    <section class="section">
+      <div class="container">
+        <h2 class="section_heading"><%= section.title %></h2>
+
+        <% if section.selected_template == TopPageSection.selected_templates[:slider] %>
+          <aside class="advertisement video-slider">
+            <%= react_component('ads/section',{elements: JSON.parse(section.top_page_sections_element.with_translations(I18n.locale).order(:position).to_json(:methods => [:image_url])), mobile: browser.device.mobile?}) %>
+          </aside>
+        <% end %>
+        <% if section.selected_template == TopPageSection.selected_templates[:grid] ||  section.selected_template == TopPageSection.selected_templates[:grid_full_width_header_image] ||section.selected_template == TopPageSection.selected_templates[:grid_small]%>
+          <%= render "shared/grid", elements: section.top_page_sections_element.with_translations(I18n.locale).order(:position), type: TopPageSection.selected_templates.key(section.selected_template) %>
+        <% end %>
+        <% if section.selected_template == TopPageSection.selected_templates[:circle]%>
+
+          <%= render "shared/section_round", elements: section.top_page_sections_element.with_translations(I18n.locale).order(:position) %>
+        <% end %>
+        <% if !section.more_btn_text.empty? %>
+          <p class="section_button">
+            <a href="<%= section.more_btn_link%>" id="tips_all"><%= section.more_btn_text%></a>
+          </p>
+        <% end %>
+      </div>
+    </section>
+  <% end %>
+
+<% end %>

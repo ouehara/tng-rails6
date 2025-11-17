@@ -1,0 +1,13 @@
+<div class="container staticPages partner">
+  <h1 class="staticPages_heading"><%= title I18n.t "partner" %></h1>
+  <ul class="partner__lists">
+    <% @partners.each do |partner| %>
+    <li class="partner__list">
+      <a href="<%= partner.link %>" target="_blank">
+        <img src="<%= partner.banner.url(:thumb) %>" class="img-responsive partner__img">
+        <p class="partner__name"><%= partner.title %></p>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+</div>

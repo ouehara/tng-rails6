@@ -1,0 +1,18 @@
+<div class="col-xs-12 col-sm-4 sidebar-scroll">
+  <% curArea = @curArea != nil ? @curArea.name : "tokyo" %>
+  <div class="sidebar">
+    <div class="theiaStickySidebar">
+      <%= react_component('sidebar/Sidebar',{ ads:@sidebar[:ads], spotlight: @sidebar[:spotlight],pickup: @sidebar[:pickup],pickupPath: pickup_path(":param"),article:{article: @sidebar[:topArticles]},
+      articlePath: article_path(":param"), tags:@sidebar[:tags], tagsPath: tag_path(":param"),
+      areas: @sidebar[:areas], areaPath: area_path(":param"), curArea: curArea}) %>
+      <div className="sidebar-element agoda" id="agoda-search" data-turbolinks-permanent>
+        <h4 class="black-border"><%= t("sidebar.book_agoda") %></h4>
+        <script type="text/javascript">
+          agoda_ad_client = "1755750_74288";
+          agoda_ad_width = 300;
+          agoda_ad_height = 250;
+        </script>
+      </div>
+    </div>
+  </div>
+</div>

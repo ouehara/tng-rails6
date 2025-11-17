@@ -1,0 +1,18 @@
+<div class="container">
+<%= form_tag url_for(params.permit!), :method => :get,:class => 'locale' do %>
+<%= select_tag 'set_locale',  options_for_select( I18n.available_locales, :selected => params[:set_locale]), :onchange => 'this.form.submit()' %>
+<% end %>
+  
+  <% @newestArticle.each do |a|%>
+    <div class="col-xs-6">
+      <%= render partial: 'promo_art', locals: { article: a} %> 
+    </div>
+  <% end %>
+
+  <% if @newestArticle.length < 11 %>
+  <div class="col-xs-6">
+  <%= render partial: 'placeholder' %> 
+  </div>
+  <% end %>
+
+</div>

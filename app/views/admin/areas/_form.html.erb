@@ -1,0 +1,23 @@
+<%= form_for([:admin, @area], html: { class: "form" }) do |f| %>
+  <% if @area.errors.any? %>
+    <%= render partial: 'admin/shared/error_message', locals: { resource: @area } %>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control", placeholder: "area name", autocomplete: "off" %>
+    <%= f.label :slug %>
+    <%= f.text_field :slug, class: "form-control", placeholder: "slug", autocomplete: "off" %>
+    <%= f.label :description %>
+    <%= f.text_area :description, class: "form-control", placeholder: "description", autocomplete: "off" %>
+    <%= f.label :map_position %>
+    <%= f.text_field :map_position, class: "form-control", placeholder: "map id", autocomplete: "off" %>
+    <input type="hidden" value="<%=I18n.locale %>" name="lang">
+    <label>
+    <%= f.check_box :in_sidebar, autocomplete: "off" %>
+    Sidebar
+    </label>
+  </div>
+  <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

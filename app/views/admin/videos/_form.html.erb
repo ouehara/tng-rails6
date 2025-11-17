@@ -1,0 +1,36 @@
+<%= form_for([:admin, @video], html: { class: "form"}) do |f| %>
+<% if @video.errors.any? %>
+<%= render partial: 'admin/shared/error_message', locals: { resource: @video } %>
+<% end %>
+<select class="lang-select">
+<% selected_locale = I18n.locale%>
+<% I18n.available_locales.each do |locale| %>
+  <%I18n.with_locale(locale) do%>
+  <%= locale%>
+    <option <%= locale == selected_locale ? "selected" : "" %> value="<%= url_for(locale: locale) %>"><%=locale%></option>
+  <%end%>
+<%end%>
+</select>
+<script type="text/javascript">
+$(".lang-select").on("change", function(ev){
+  window.location.href = $(this).val()
+})
+</script>
+<div class="form-group">
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control", placeholder: "Title", autocomplete: "off" %>
+</div>
+<div class="form-group">
+  <%= f.label :user %>
+  <%= f.text_field :user, class: "form-control", placeholder: "User", autocomplete: "off" %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :link %>
+  <%= f.text_field :link, class: "form-control", placeholder: "youtube video id", autocomplete: "off" %>
+</div>
+
+<%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+<% end %>

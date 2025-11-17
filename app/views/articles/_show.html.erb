@@ -1,0 +1,246 @@
+<div class="blog-entry">
+<%
+  lst = getLastRender(@article.contents,@page)
+  pageamount= pgAmount(@article.contents)
+%>
+<%
+  @headingCounter = 0
+  @subHeadingCounter = 0
+  @travelbnrH2Counter = 0
+  @travelbnrH3Counter = 0
+  @gridCounter = 1
+  @article.contents[(lst)..-1].each do |content|
+%>
+  <%if content["type"] != "Page" && content["content"].nil?
+    next
+  end %>
+  <%if content["type"].downcase == "text" %>
+    <%= raw(content["content"]["text"]) %>
+  <% elsif content["type"] == "Title" %>
+    <%if content["content"]["headingType"] == "heading"%>
+      <% if !@article.sponsored_content %>
+        <% @headingCounter+=1 %>
+        <% if @headingCounter <= 50 %>
+          <% if @headingCounter == 6 || @headingCounter%10 == 0 %>
+            <%= render "banner/adsens_h2before" %>
+          <% else %>
+            <% if @headingCounter > 3 && @headingCounter <= 12 && @headingCounter%2 == 0 && @headingCounter != 5 %>
+              <% @travelbnrH2Counter+= 1 %>
+              <% if @travelbnrH2Counter == 3 %>
+                <%= render "banner/post_affiliate", {position: "h2before_banner3"} %>
+              <% else %>
+                <%= render "banner/travel_h2before" %>
+              <% end %>
+            <% elsif @headingCounter == 2 %>
+              <% if @article.cached_category.root.slug == "travel-tips" || @article.cached_category.root.slug == "japanese-culture" || @article.cached_category.root.slug == "currency-money" || @article.cached_category.root.slug == "visas-immigration" || @article.cached_category.root.slug == "climate-seasons" || @article.cached_category.root.slug == "pocket-wifi-hotspots" || @article.cached_category.root.slug == "smoking-drinking" || @article.cached_category.root.slug == "rules-laws" || @article.cached_category.root.slug == "manners-ettiquette" || @article.cached_category.root.slug == "traveling-with-kids" || @article.cached_category.root.slug == "couples" || @article.cached_category.root.slug == "traveling-alone" || @article.cached_category.root.slug == "japan-on-a-budget" || @article.cached_category.root.slug == "apps" || @article.cached_category.root.slug == "travel-itineraries" || @article.cached_category.root.slug == "anime-manga" || @article.cached_category.root.slug == "ninja" || @article.cached_category.root.slug == "origami-washi" || @article.cached_category.root.slug == "kimono-yukata" || @article.cached_category.root.slug == "bonsai" || @article.cached_category.root.slug == "geisha-maiko" || @article.cached_category.root.slug == "japanese-language" || @article.cached_category.root.slug == "art" || @article.cached_category.root.slug == "school-education-system" || @article.cached_category.root.slug == "architecture" || @article.cached_category.root.slug == "traditional-culture" || @article.cached_category.root.slug == "modern-culture" || @article.cached_category.root.slug == "weather" || @article.cached_category.root.slug == "typhoons" || @article.cached_category.root.slug == "earthquakes" || @article.cached_category.root.slug == "rainy-season" || @article.cached_category.root.slug == "winter" || @article.cached_category.root.slug == "spring" || @article.cached_category.root.slug == "summer" || @article.cached_category.root.slug == "autumn" || @article.cached_category.root.slug == "japanese-rock-visual-kei" || @article.cached_category.root.slug == "idols-japanese-pop" || @article.cached_category.root.slug == "cosplay" || @article.cached_category.root.slug == "purikura" || @article.cached_category.root.slug == "tv-shows" || @article.cached_category.root.slug == "mascots" || @article.cached_category.root.slug == "nail-art" || @article.cached_category.root.slug == "video-games" || @article.cached_category.root.slug == "trends" || @article.cached_category.root.slug == "kabuki" || @article.cached_category.root.slug == "noh" || @article.cached_category.root.slug == "music-instruments" || @article.cached_category.root.slug == "japanese-calligraphy" || @article.cached_category.root.slug == "japanese-tea-ceremony" || @article.cached_category.root.slug == "theater-plays" || @article.cached_category.root.slug == "chopstics" || @article.cached_category.root.slug == "japanese-style-rooms" || @article.cached_category.root.slug == "traditional-crafts" %>
+                <%= render "banner/adsens_h2before" %>
+              <% else %>
+                <%= react_component('article/travel_contents_view', {
+                    locale: I18n.locale,
+                    currentCateSlug: @article.cached_category.root.slug,
+                    currentAreaDepth: @article.cached_area.names_depth_cache,
+                    position: 'h2before'
+                  }
+                ) %>
+              <% end %>
+            <% elsif @headingCounter == 3 %>
+              <% if I18n.locale.to_s == "en" %>
+                <%= render "banner/travel_contact", {position: "h2_before", url: "https://www.tsunagujapan.com/tsunagu-japan-travel-dmc/?utm_source=internal&utm_medium=banner&utm_campaign=article_inline_banner&utm_content=variation_a", eleId: "post_travelLink-h2b"} %>
+              <% end %>
+            <% elsif @headingCounter == 5 %>
+              <%= render "banner/post_affiliate", {position: "h2before_5th"} %>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+      <h2 class="article-heading" id="hl<%=content["id"]%>"><%=content["content"]["text"]%></h2>
+    <% elsif content["content"]["headingType"]  === "h4"%>
+      <h4 id="hl<%=content["id"]%>"><%=content["content"]["text"]%></h4>
+    <% else %>
+      <% if !@article.sponsored_content %>
+        <% @subHeadingCounter+= 1 %>
+        <% if @subHeadingCounter <= 30 %>
+          <% if @subHeadingCounter%5 == 0 %>
+            <%= render "banner/adsens_h3before" %>
+          <% else %>
+            <% if @subHeadingCounter > 4 && @subHeadingCounter <= 15 && @subHeadingCounter%2 == 0 && @subHeadingCounter != 6 %>
+              <% @travelbnrH3Counter+= 1 %>
+              <% if @travelbnrH3Counter == 3 %>
+                <%= render "banner/post_affiliate", {position: "h3before_banner3"} %>
+              <% end %>
+            <% elsif @subHeadingCounter == 6 %>
+              <%= render "banner/post_affiliate", {position: "h3before_6th"} %>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+      <h3 id="hl<%=content["id"]%>"><%=content["content"]["text"]%></h3>
+    <% end %>
+  <% elsif content["type"].downcase == "images"%>
+    <%
+      mainDivclass, gc = getImageClass(content["content"]["grid"],@gridCounter)
+      @gridCounter = gc
+    %>
+    <div class="<%= mainDivclass %>">
+      <%=react_component('article/image_view', {
+            locale:I18n.locale,
+            key:content["id"],
+            alt: content["content"]["alt"] || "",
+            imageAttributes:content["content"]["imageAttributes"] || "",
+            grid:content["content"]["grid"],
+            analyticsCategory:content["content"]["analyticsCategory"],
+            analyticsLabel:content["content"]["analyticsLabel"],
+            savorAdState:content["content"]["savorAdState"],
+            editor:false,
+            boxLink:content["content"]["boxLink"] || "",
+            ad:content["content"]["ad"],
+            mobile:browser.device.mobile?,
+            image:content["content"]["image"],
+            src:content["content"]["src"],
+            searchRes: content["content"]["searchRes"]}
+      )%>
+    </div>
+  <% elsif content["type"].downcase == "link"%>
+    <%=react_component('article/link_view', {
+          locale:I18n.locale,
+          mobile:browser.device.mobile?,
+          img: content["content"]["imgPreview"] || "",
+          title: content["content"]["title"] || "",
+          key: content["id"],
+          desc: content["content"]["desc"] || "",
+          url: content["content"]["url"] || ""}
+    )%>
+  <% elsif content["type"].downcase == "artnav" %>
+    <%=react_component('article/navigation', {
+          locale:I18n.locale,
+          key: content["id"],
+          content:  content["content"]}
+    )%>
+  <% elsif content["type"].downcase == "quote"%>
+    <%=react_component('article/quote_view', {
+          locale:I18n.locale,
+          key: content["id"],
+          quote:  content["content"]["quote"],
+          url:  content["content"]["url"] || ""}
+    )%>
+  <% elsif content["type"].downcase == "video"%>
+    <%=react_component('article/video_view', {
+                      locale:I18n.locale,
+                      key: content["id"],
+                      video:  content["content"]["video"],
+                      videoType:  content["content"]["videoType"] || ""}
+                      )%>
+  <% elsif content["type"].downcase == "instagramvideo"%>
+    <%=react_component('article/instagram_video_view', {
+                      locale:I18n.locale,
+                      url:content["content"]["url"] || "",
+                      pos:content["position"],
+                      key: content["id"]
+                      }
+                      )%>
+  <% elsif content["type"].downcase == "maps"%>
+    <%=react_component('article/map_view', {
+                locale:I18n.locale,
+                key: content["id"],
+                location: content["content"]["location"] || "",
+                name: content["content"]["name"] || ""
+                }
+                )%>
+  <% elsif content["type"].downcase == "basicinformation"%>
+    <%=react_component('article/information_view', {
+          locale:I18n.locale,
+          key: content["id"],
+          elements: content["content"]["elements"] || {}
+          }
+          )%>
+  <% elsif content["type"].downcase == "flowlist"%>
+    <%=react_component('article/flow_list_view', {
+          locale:I18n.locale,
+          key: content["id"],
+          elements: content["content"]["elements"] || {}
+          }
+          )%>
+  <% elsif content["type"].downcase == "relatedarticles"%>
+    <%=react_component('article/related_articles_view', {
+          locale:I18n.locale,
+          mobile:browser.device.mobile?,
+          key: content["id"],
+          elements: content["content"]["elements"] || {}
+          }
+          )%>
+  <% elsif content["type"].downcase == "legacy"%>
+    <%= content["content"].instance_of?(String) ? raw(content["content"]):raw(content["content"]["text"])  %>
+  <% elsif content["type"].downcase == "editorbuttons"%>
+    <%=react_component('article/button_view', {
+          locale:I18n.locale,
+          key: content["id"],
+          rel: content["content"]["rel"] || "",
+          size: content["content"]["size"] || "btn-normal",
+          type: content["content"]["type"] || "",
+          url: content["content"]["url"] || "",
+          text: content["content"]["text"] || "",
+          analyticsText: content["content"]["analyticsText"] || "",
+          analyticsCat: content["content"]["analyticsCat"] || "",
+          position: content["content"]["position"] || ""
+          }
+          )%>
+  <% elsif content["type"].downcase == "page"%>
+    <% break %>
+  <% elsif content["type"].downcase == "otomo"%>
+    <%=react_component('article/otomo_widget_view', {
+                  otomoId: content["content"]["otomoId"],
+                  }
+                  )%>
+  <% elsif content["type"].downcase == "twitter"%>
+    <%=react_component('article/twitter_view', {
+                  id: content["content"]["tweet"],
+                  index: "tweet-view"+content["content"]["tweet"],
+                  }
+                  )%>
+  <% else %>
+    <%=content["type"] %>
+  <% end %>
+<% end %>
+
+<% if pageamount > 1 %>
+  <% content_for :head do %>
+    <% link = article_path(@article) %>
+    <% if @page.to_i > 1
+        if ( @page.to_i - 1 > 1)
+          link = link+(@page.to_i - 1).to_s+"/"
+        end
+    %>
+      <link rel="prev" href="<%= link %>">
+    <% end %>
+    <% if pageamount > @page.to_i %>
+      <link rel="next" href="<%= link + (@page.to_i + 1).to_s + "/" %>">
+    <% end %>
+  <% end %>
+  <nav class="pagination">
+    <div class="page-list">
+      <% for i in 1..pageamount %>
+        <% if i == @page.to_i %>
+          <span class="page current">
+            <%= i %>
+          </span>
+        <% else %>
+        <%
+          link = article_path(@article)
+          if (i > 1)
+                link = link+i.to_s+"/"
+        end %>
+        <span class="page">
+          <a
+          rel="<%= i > @page.to_i ? "next" : "prev" %>"
+          href="<%= link %>"
+          class="page"
+          >
+            <%= i %>
+          </a>
+        </span>
+      <% end %>
+    <% end %>
+    </div>
+  </nav>
+<% end %>
+</div>

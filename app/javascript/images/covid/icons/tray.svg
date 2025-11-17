@@ -1,0 +1,31 @@
+<svg id="icon12" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_38" data-name="Group 38">
+    <path id="Oval_Copy_13" data-name="Oval Copy 13" d="M22.5,0A22.5,22.5,0,1,1,0,22.5,22.5,22.5,0,0,1,22.5,0Z" fill="#188e9d"/>
+    <g id="Group_26" data-name="Group 26" transform="translate(9.154 11.001)">
+      <g id="Group_22" data-name="Group 22" transform="translate(4.842)">
+        <g id="Group_21" data-name="Group 21" transform="matrix(1, -0.017, 0.017, 1, 0, 0.291)">
+          <g id="Group_39" data-name="Group 39">
+            <g id="Oval" transform="translate(3.986 10.614)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.25">
+              <ellipse cx="4.071" cy="4.048" rx="4.071" ry="4.048" stroke="none"/>
+              <ellipse cx="4.071" cy="4.048" rx="3.446" ry="3.423" fill="none"/>
+            </g>
+            <g id="Group_7" data-name="Group 7" transform="translate(7.584)">
+              <g id="Oval_Copy_15" data-name="Oval Copy 15" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.25">
+                <ellipse cx="4.549" cy="4.584" rx="4.549" ry="4.584" stroke="none"/>
+                <ellipse cx="4.549" cy="4.584" rx="3.924" ry="3.959" fill="none"/>
+              </g>
+              <path id="Fill_7_Copy_2" data-name="Fill 7 Copy 2" d="M2.388,2.2H1.672V1.961h.716a.319.319,0,0,0,.341-.29.318.318,0,0,0-.341-.289H1.867c.18-.3.426-.708.585-.953A.268.268,0,0,0,2.318.036.374.374,0,0,0,1.855.15c-.146.225-.359.574-.532.862C1.144.724.932.376.823.171A.369.369,0,0,0,.372.025.274.274,0,0,0,.2.409c.13.245.386.663.58.973H.341A.318.318,0,0,0,0,1.672a.319.319,0,0,0,.341.29H.99V2.2H.341A.319.319,0,0,0,0,2.492a.319.319,0,0,0,.341.29H.99v.6a.319.319,0,0,0,.341.29.319.319,0,0,0,.341-.29v-.6h.716a.319.319,0,0,0,.341-.29.319.319,0,0,0-.341-.29" transform="translate(3.389 3.461)" fill="#fff"/>
+            </g>
+            <path id="Fill_7" data-name="Fill 7" d="M2.137,1.945H1.5V1.732h.641a.284.284,0,0,0,.305-.256.284.284,0,0,0-.305-.256H1.671C1.833.954,2.053.6,2.195.379a.235.235,0,0,0-.12-.347.337.337,0,0,0-.415.1c-.131.2-.321.507-.476.761C1.024.639.834.332.737.151a.333.333,0,0,0-.4-.128A.241.241,0,0,0,.18.361C.3.577.525.946.7,1.22H.305A.284.284,0,0,0,0,1.476a.284.284,0,0,0,.305.256H.886v.213H.305A.284.284,0,0,0,0,2.2a.284.284,0,0,0,.305.256H.886v.526a.284.284,0,0,0,.305.256A.284.284,0,0,0,1.5,2.982V2.456h.641A.284.284,0,0,0,2.442,2.2a.284.284,0,0,0-.305-.256" transform="translate(7.243 13.05)" fill="#fff"/>
+            <path id="Oval_Copy" data-name="Oval Copy" d="M3.956,8.395A4.016,4.016,0,0,0,7.866,4.221,4.128,4.128,0,0,0,3.909,0,4.016,4.016,0,0,0,0,4.174" transform="matrix(0.087, -0.996, 0.996, 0.087, 0, 14.319)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.25"/>
+            <path id="Fill_7_Copy" data-name="Fill 7 Copy" d="M2.137,1.945H1.5V1.732h.641a.284.284,0,0,0,.305-.256.284.284,0,0,0-.305-.256H1.671C1.833.954,2.053.6,2.195.379a.235.235,0,0,0-.12-.347.337.337,0,0,0-.415.1c-.131.2-.321.507-.476.761C1.024.639.834.332.737.151a.333.333,0,0,0-.4-.128A.241.241,0,0,0,.18.361C.3.577.525.946.7,1.22H.305A.284.284,0,0,0,0,1.476a.284.284,0,0,0,.305.256H.886v.213H.305A.284.284,0,0,0,0,2.2a.284.284,0,0,0,.305.256H.886v.526a.284.284,0,0,0,.305.256A.284.284,0,0,0,1.5,2.982V2.456h.641A.284.284,0,0,0,2.442,2.2a.284.284,0,0,0-.305-.256" transform="translate(3.244 8.932)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_8" data-name="Group 8" transform="translate(0 10.142)">
+        <path id="Combined_Shape" data-name="Combined Shape" d="M15.873,0h9.1a.882.882,0,0,1,.882.882V11a.882.882,0,0,1-.882.882H.882A.882.882,0,0,1,0,11V.882A.882.882,0,0,1,.882,0H3.558" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.25"/>
+        <path id="Combined_Shape_Copy" data-name="Combined Shape Copy" d="M15.319,0h5.8A.882.882,0,0,1,22,.882V7.118A.882.882,0,0,1,21.118,8H.882A.882.882,0,0,1,0,7.118V.845A.845.845,0,0,1,.845,0h.845" transform="translate(2 2)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.25"/>
+      </g>
+    </g>
+  </g>
+</svg>

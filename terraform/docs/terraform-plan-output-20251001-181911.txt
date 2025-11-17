@@ -1,0 +1,2696 @@
+[0m[1mdata.terraform_remote_state.common: Reading...[0m[0m
+[0m[1mdata.terraform_remote_state.common: Read complete after 0s[0m
+[0m[1maws_acm_certificate.alb_cert: Refreshing state... [id=arn:aws:acm:ap-northeast-1:412742703218:certificate/116769b7-ff29-401c-9e85-da2a0602ce8a][0m
+[0m[1maws_acm_certificate.cloudfront_cert: Refreshing state... [id=arn:aws:acm:us-east-1:412742703218:certificate/c64f1497-f75b-4e85-9b3f-b15a8e24d35c][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+ [36m<=[0m read (data resources)[0m
+
+Terraform will perform the following actions:
+
+[1m  # data.aws_iam_policy_document.s3_policy_cloudfront[0m will be read during apply
+  # (config refers to values not yet known)
+[0m [36m<=[0m[0m data "aws_iam_policy_document" "s3_policy_cloudfront" {
+      [32m+[0m[0m id            = (known after apply)
+      [32m+[0m[0m json          = (known after apply)
+      [32m+[0m[0m minified_json = (known after apply)
+
+      [32m+[0m[0m statement {
+          [32m+[0m[0m actions   = [
+              [32m+[0m[0m "s3:GetObject",
+            ]
+          [32m+[0m[0m resources = [
+              [32m+[0m[0m (known after apply),
+            ]
+
+          [32m+[0m[0m condition {
+              [32m+[0m[0m test     = "StringEquals"
+              [32m+[0m[0m values   = [
+                  [32m+[0m[0m (known after apply),
+                ]
+              [32m+[0m[0m variable = "AWS:SourceArn"
+            }
+
+          [32m+[0m[0m principals {
+              [32m+[0m[0m identifiers = [
+                  [32m+[0m[0m "cloudfront.amazonaws.com",
+                ]
+              [32m+[0m[0m type        = "Service"
+            }
+        }
+      [32m+[0m[0m statement {
+          [32m+[0m[0m actions   = [
+              [32m+[0m[0m "s3:DeleteObject",
+              [32m+[0m[0m "s3:GetObject",
+              [32m+[0m[0m "s3:ListBucket",
+              [32m+[0m[0m "s3:PutObject",
+            ]
+          [32m+[0m[0m effect    = "Allow"
+          [32m+[0m[0m resources = [
+              [32m+[0m[0m (known after apply),
+              [32m+[0m[0m (known after apply),
+            ]
+          [32m+[0m[0m sid       = "AllowDeveloperIPAccess"
+
+          [32m+[0m[0m condition {
+              [32m+[0m[0m test     = "IpAddress"
+              [32m+[0m[0m values   = [
+                  [32m+[0m[0m "59.158.122.86/32",
+                  [32m+[0m[0m "182.169.67.143/32",
+                  [32m+[0m[0m "219.104.120.111/32",
+                  [32m+[0m[0m "175.130.50.153/32",
+                  [32m+[0m[0m "106.72.159.1/32",
+                  [32m+[0m[0m "126.91.154.7/32",
+                  [32m+[0m[0m "113.43.206.226/32",
+                  [32m+[0m[0m "219.59.48.186/32",
+                  [32m+[0m[0m "113.43.206.210/32",
+                  [32m+[0m[0m "165.225.110.0/23",
+                  [32m+[0m[0m "165.225.96.0/23",
+                  [32m+[0m[0m "147.161.198.0/23",
+                  [32m+[0m[0m "136.226.238.0/23",
+                  [32m+[0m[0m "167.103.28.0/23",
+                  [32m+[0m[0m "167.103.42.0/23",
+                  [32m+[0m[0m "147.161.192.0/23",
+                  [32m+[0m[0m "147.161.194.0/23",
+                  [32m+[0m[0m "147.161.196.0/23",
+                  [32m+[0m[0m "167.103.44.0/23",
+                  [32m+[0m[0m "167.103.46.0/23",
+                ]
+              [32m+[0m[0m variable = "aws:SourceIp"
+            }
+
+          [32m+[0m[0m principals {
+              [32m+[0m[0m identifiers = [
+                  [32m+[0m[0m "*",
+                ]
+              [32m+[0m[0m type        = "*"
+            }
+        }
+      [32m+[0m[0m statement {
+          [32m+[0m[0m actions   = [
+              [32m+[0m[0m "s3:DeleteObject",
+              [32m+[0m[0m "s3:GetBucketLocation",
+              [32m+[0m[0m "s3:GetObject",
+              [32m+[0m[0m "s3:GetObjectAcl",
+              [32m+[0m[0m "s3:ListBucket",
+              [32m+[0m[0m "s3:PutObject",
+              [32m+[0m[0m "s3:PutObjectAcl",
+            ]
+          [32m+[0m[0m effect    = "Allow"
+          [32m+[0m[0m resources = [
+              [32m+[0m[0m (known after apply),
+              [32m+[0m[0m (known after apply),
+            ]
+          [32m+[0m[0m sid       = "AllowIAMUserAccess"
+
+          [32m+[0m[0m principals {
+              [32m+[0m[0m identifiers = [
+                  [32m+[0m[0m (known after apply),
+                ]
+              [32m+[0m[0m type        = "AWS"
+            }
+        }
+    }
+
+[1m  # aws_acm_certificate_validation.alb_cert_validation[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_acm_certificate_validation" "alb_cert_validation" {
+      [32m+[0m[0m certificate_arn         = "arn:aws:acm:ap-northeast-1:412742703218:certificate/116769b7-ff29-401c-9e85-da2a0602ce8a"
+      [32m+[0m[0m id                      = (known after apply)
+      [32m+[0m[0m region                  = "ap-northeast-1"
+      [32m+[0m[0m validation_record_fqdns = [
+          [32m+[0m[0m "_589303b80d2cab7fd0932d54a3700c9b.alb-stg2.tsunagujapan.com.",
+        ]
+
+      [32m+[0m[0m timeouts {
+          [32m+[0m[0m create = "5m"
+        }
+    }
+
+[1m  # aws_acm_certificate_validation.cloudfront_cert_validation[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_acm_certificate_validation" "cloudfront_cert_validation" {
+      [32m+[0m[0m certificate_arn = "arn:aws:acm:us-east-1:412742703218:certificate/c64f1497-f75b-4e85-9b3f-b15a8e24d35c"
+      [32m+[0m[0m id              = (known after apply)
+      [32m+[0m[0m region          = "us-east-1"
+
+      [32m+[0m[0m timeouts {
+          [32m+[0m[0m create = "5m"
+        }
+    }
+
+[1m  # aws_cloudfront_distribution.s3_distribution[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudfront_distribution" "s3_distribution" {
+      [32m+[0m[0m aliases                         = [
+          [32m+[0m[0m "stg2.tsunagujapan.com",
+        ]
+      [32m+[0m[0m arn                             = (known after apply)
+      [32m+[0m[0m caller_reference                = (known after apply)
+      [32m+[0m[0m comment                         = "CloudFront distribution for v-rails-1001 dev static assets"
+      [32m+[0m[0m continuous_deployment_policy_id = (known after apply)
+      [32m+[0m[0m domain_name                     = (known after apply)
+      [32m+[0m[0m enabled                         = true
+      [32m+[0m[0m etag                            = (known after apply)
+      [32m+[0m[0m hosted_zone_id                  = (known after apply)
+      [32m+[0m[0m http_version                    = "http2"
+      [32m+[0m[0m id                              = (known after apply)
+      [32m+[0m[0m in_progress_validation_batches  = (known after apply)
+      [32m+[0m[0m is_ipv6_enabled                 = true
+      [32m+[0m[0m last_modified_time              = (known after apply)
+      [32m+[0m[0m price_class                     = "PriceClass_100"
+      [32m+[0m[0m retain_on_delete                = false
+      [32m+[0m[0m staging                         = false
+      [32m+[0m[0m status                          = (known after apply)
+      [32m+[0m[0m tags                            = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "cloudfront-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "static-assets-cdn"
+        }
+      [32m+[0m[0m tags_all                        = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "cloudfront-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "static-assets-cdn"
+        }
+      [32m+[0m[0m trusted_key_groups              = (known after apply)
+      [32m+[0m[0m trusted_signers                 = (known after apply)
+      [32m+[0m[0m wait_for_deployment             = true
+      [32m+[0m[0m web_acl_id                      = (known after apply)
+
+      [32m+[0m[0m default_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "DELETE",
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+              [32m+[0m[0m "PATCH",
+              [32m+[0m[0m "POST",
+              [32m+[0m[0m "PUT",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 0
+          [32m+[0m[0m max_ttl                = 0
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m target_origin_id       = "VPC-ALB-Rails"
+          [32m+[0m[0m trusted_key_groups     = (known after apply)
+          [32m+[0m[0m trusted_signers        = (known after apply)
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "*",
+                ]
+              [32m+[0m[0m query_string            = true
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward           = "all"
+                  [32m+[0m[0m whitelisted_names = (known after apply)
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "DELETE",
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+              [32m+[0m[0m "PATCH",
+              [32m+[0m[0m "POST",
+              [32m+[0m[0m "PUT",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+            ]
+          [32m+[0m[0m compress               = false
+          [32m+[0m[0m default_ttl            = 0
+          [32m+[0m[0m max_ttl                = 0
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "/admin1500011/*"
+          [32m+[0m[0m target_origin_id       = "VPC-ALB-Rails"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "*",
+                ]
+              [32m+[0m[0m query_string            = true
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "all"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "DELETE",
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+              [32m+[0m[0m "PATCH",
+              [32m+[0m[0m "POST",
+              [32m+[0m[0m "PUT",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+            ]
+          [32m+[0m[0m compress               = false
+          [32m+[0m[0m default_ttl            = 0
+          [32m+[0m[0m max_ttl                = 0
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "/users/*"
+          [32m+[0m[0m target_origin_id       = "VPC-ALB-Rails"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "*",
+                ]
+              [32m+[0m[0m query_string            = true
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "all"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 31536000
+          [32m+[0m[0m max_ttl                = 31536000
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "/assets/*"
+          [32m+[0m[0m target_origin_id       = "S3-Primary"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "Accept",
+                  [32m+[0m[0m "Accept-Encoding",
+                  [32m+[0m[0m "Origin",
+                  [32m+[0m[0m "User-Agent",
+                ]
+              [32m+[0m[0m query_string            = false
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "none"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 86400
+          [32m+[0m[0m max_ttl                = 31536000
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "/articles/title_images/*"
+          [32m+[0m[0m target_origin_id       = "OldCDN-Fallback"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "Origin",
+                ]
+              [32m+[0m[0m query_string            = true
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "none"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 86400
+          [32m+[0m[0m max_ttl                = 31536000
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "/images/imgs/*"
+          [32m+[0m[0m target_origin_id       = "OldCDN-Fallback"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "Origin",
+                ]
+              [32m+[0m[0m query_string            = true
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "none"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 31536000
+          [32m+[0m[0m max_ttl                = 31536000
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "/packs/*"
+          [32m+[0m[0m target_origin_id       = "S3-Primary"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "Accept",
+                  [32m+[0m[0m "Accept-Encoding",
+                  [32m+[0m[0m "Origin",
+                  [32m+[0m[0m "User-Agent",
+                ]
+              [32m+[0m[0m query_string            = false
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "none"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 3600
+          [32m+[0m[0m max_ttl                = 86400
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "/feed/*"
+          [32m+[0m[0m target_origin_id       = "OldCDN-Fallback"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "Origin",
+                ]
+              [32m+[0m[0m query_string            = false
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "none"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 86400
+          [32m+[0m[0m max_ttl                = 31536000
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "*.jpg"
+          [32m+[0m[0m target_origin_id       = "S3-Primary"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "Origin",
+                ]
+              [32m+[0m[0m query_string            = false
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "none"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+      [32m+[0m[0m ordered_cache_behavior {
+          [32m+[0m[0m allowed_methods        = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m cached_methods         = [
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "OPTIONS",
+            ]
+          [32m+[0m[0m compress               = true
+          [32m+[0m[0m default_ttl            = 86400
+          [32m+[0m[0m max_ttl                = 31536000
+          [32m+[0m[0m min_ttl                = 0
+          [32m+[0m[0m path_pattern           = "*.png"
+          [32m+[0m[0m target_origin_id       = "S3-Primary"
+          [32m+[0m[0m viewer_protocol_policy = "redirect-to-https"
+
+          [32m+[0m[0m forwarded_values {
+              [32m+[0m[0m headers                 = [
+                  [32m+[0m[0m "Origin",
+                ]
+              [32m+[0m[0m query_string            = false
+              [32m+[0m[0m query_string_cache_keys = (known after apply)
+
+              [32m+[0m[0m cookies {
+                  [32m+[0m[0m forward = "none"
+                }
+            }
+
+          [32m+[0m[0m grpc_config (known after apply)
+        }
+
+      [32m+[0m[0m origin {
+          [32m+[0m[0m connection_attempts         = 3
+          [32m+[0m[0m connection_timeout          = 10
+          [32m+[0m[0m domain_name                 = "d20aeo683mqd6t.cloudfront.net"
+          [32m+[0m[0m origin_id                   = "OldCDN-Fallback"
+          [32m+[0m[0m response_completion_timeout = (known after apply)
+            [90m# (2 unchanged attributes hidden)[0m[0m
+
+          [32m+[0m[0m custom_origin_config {
+              [32m+[0m[0m http_port                = 80
+              [32m+[0m[0m https_port               = 443
+              [32m+[0m[0m origin_keepalive_timeout = 5
+              [32m+[0m[0m origin_protocol_policy   = "https-only"
+              [32m+[0m[0m origin_read_timeout      = 30
+              [32m+[0m[0m origin_ssl_protocols     = [
+                  [32m+[0m[0m "TLSv1.2",
+                ]
+            }
+        }
+      [32m+[0m[0m origin {
+          [32m+[0m[0m connection_attempts         = 3
+          [32m+[0m[0m connection_timeout          = 10
+          [32m+[0m[0m domain_name                 = "alb-stg2.tsunagujapan.com"
+          [32m+[0m[0m origin_id                   = "VPC-ALB-Rails"
+          [32m+[0m[0m response_completion_timeout = (known after apply)
+            [90m# (2 unchanged attributes hidden)[0m[0m
+
+          [32m+[0m[0m vpc_origin_config {
+              [32m+[0m[0m origin_keepalive_timeout = 5
+              [32m+[0m[0m origin_read_timeout      = 30
+              [32m+[0m[0m vpc_origin_id            = (known after apply)
+            }
+        }
+      [32m+[0m[0m origin {
+          [32m+[0m[0m connection_attempts         = 3
+          [32m+[0m[0m connection_timeout          = 10
+          [32m+[0m[0m domain_name                 = (known after apply)
+          [32m+[0m[0m origin_access_control_id    = (known after apply)
+          [32m+[0m[0m origin_id                   = "S3-Primary"
+          [32m+[0m[0m response_completion_timeout = (known after apply)
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+
+      [32m+[0m[0m restrictions {
+          [32m+[0m[0m geo_restriction {
+              [32m+[0m[0m locations        = (known after apply)
+              [32m+[0m[0m restriction_type = "none"
+            }
+        }
+
+      [32m+[0m[0m viewer_certificate {
+          [32m+[0m[0m acm_certificate_arn            = "arn:aws:acm:us-east-1:412742703218:certificate/c64f1497-f75b-4e85-9b3f-b15a8e24d35c"
+          [32m+[0m[0m cloudfront_default_certificate = false
+          [32m+[0m[0m minimum_protocol_version       = "TLSv1.2_2021"
+          [32m+[0m[0m ssl_support_method             = "sni-only"
+        }
+    }
+
+[1m  # aws_cloudfront_origin_access_control.s3_oac[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudfront_origin_access_control" "s3_oac" {
+      [32m+[0m[0m arn                               = (known after apply)
+      [32m+[0m[0m description                       = "OAC for S3 static assets bucket"
+      [32m+[0m[0m etag                              = (known after apply)
+      [32m+[0m[0m id                                = (known after apply)
+      [32m+[0m[0m name                              = "v-rails-1001-dev-apn1-s3-oac"
+      [32m+[0m[0m origin_access_control_origin_type = "s3"
+      [32m+[0m[0m signing_behavior                  = "always"
+      [32m+[0m[0m signing_protocol                  = "sigv4"
+    }
+
+[1m  # aws_cloudfront_vpc_origin.alb_vpc_origin[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudfront_vpc_origin" "alb_vpc_origin" {
+      [32m+[0m[0m arn      = (known after apply)
+      [32m+[0m[0m etag     = (known after apply)
+      [32m+[0m[0m id       = (known after apply)
+      [32m+[0m[0m tags     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "vpc-origin-v-rails-1001-dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "alb-private-access"
+        }
+      [32m+[0m[0m tags_all = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "vpc-origin-v-rails-1001-dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "alb-private-access"
+        }
+
+      [32m+[0m[0m timeouts {
+          [32m+[0m[0m create = "30m"
+        }
+
+      [32m+[0m[0m vpc_origin_endpoint_config {
+          [32m+[0m[0m arn                    = (known after apply)
+          [32m+[0m[0m http_port              = 80
+          [32m+[0m[0m https_port             = 443
+          [32m+[0m[0m name                   = "v-rails-1001-dev-alb-vpc-origin"
+          [32m+[0m[0m origin_protocol_policy = "https-only"
+
+          [32m+[0m[0m origin_ssl_protocols {
+              [32m+[0m[0m items    = [
+                  [32m+[0m[0m "TLSv1.2",
+                ]
+              [32m+[0m[0m quantity = 1
+            }
+        }
+    }
+
+[1m  # aws_cloudwatch_event_rule.missing_images_schedule[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_event_rule" "missing_images_schedule" {
+      [32m+[0m[0m arn                 = (known after apply)
+      [32m+[0m[0m description         = "Schedule for missing images check batch processing"
+      [32m+[0m[0m event_bus_name      = "default"
+      [32m+[0m[0m force_destroy       = false
+      [32m+[0m[0m id                  = (known after apply)
+      [32m+[0m[0m name                = "v-rails-1001-dev-apn1-missing-images-schedule"
+      [32m+[0m[0m name_prefix         = (known after apply)
+      [32m+[0m[0m region              = "ap-northeast-1"
+      [32m+[0m[0m schedule_expression = "cron(0 23 * * ? *)"
+      [32m+[0m[0m tags                = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all            = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+    }
+
+[1m  # aws_cloudwatch_event_rule.sitemap_refresh_schedule[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_event_rule" "sitemap_refresh_schedule" {
+      [32m+[0m[0m arn                 = (known after apply)
+      [32m+[0m[0m description         = "Schedule for sitemap refresh batch processing"
+      [32m+[0m[0m event_bus_name      = "default"
+      [32m+[0m[0m force_destroy       = false
+      [32m+[0m[0m id                  = (known after apply)
+      [32m+[0m[0m name                = "v-rails-1001-dev-apn1-sitemap-refresh-schedule"
+      [32m+[0m[0m name_prefix         = (known after apply)
+      [32m+[0m[0m region              = "ap-northeast-1"
+      [32m+[0m[0m schedule_expression = "cron(0 21 * * ? *)"
+      [32m+[0m[0m tags                = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all            = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+    }
+
+[1m  # aws_cloudwatch_event_rule.xml_articles_schedule[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_event_rule" "xml_articles_schedule" {
+      [32m+[0m[0m arn                 = (known after apply)
+      [32m+[0m[0m description         = "Schedule for XML articles batch processing"
+      [32m+[0m[0m event_bus_name      = "default"
+      [32m+[0m[0m force_destroy       = false
+      [32m+[0m[0m id                  = (known after apply)
+      [32m+[0m[0m name                = "v-rails-1001-dev-apn1-xml-articles-schedule"
+      [32m+[0m[0m name_prefix         = (known after apply)
+      [32m+[0m[0m region              = "ap-northeast-1"
+      [32m+[0m[0m schedule_expression = "cron(0 22 * * ? *)"
+      [32m+[0m[0m tags                = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all            = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+    }
+
+[1m  # aws_cloudwatch_event_target.missing_images_target[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_event_target" "missing_images_target" {
+      [32m+[0m[0m arn            = (known after apply)
+      [32m+[0m[0m event_bus_name = "default"
+      [32m+[0m[0m force_destroy  = false
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "ap-northeast-1"
+      [32m+[0m[0m role_arn       = (known after apply)
+      [32m+[0m[0m rule           = (known after apply)
+      [32m+[0m[0m target_id      = "MissingImagesBatchTarget"
+
+      [32m+[0m[0m ecs_target {
+          [32m+[0m[0m enable_ecs_managed_tags = false
+          [32m+[0m[0m enable_execute_command  = false
+          [32m+[0m[0m launch_type             = "FARGATE"
+          [32m+[0m[0m platform_version        = "LATEST"
+          [32m+[0m[0m task_count              = 1
+          [32m+[0m[0m task_definition_arn     = (known after apply)
+
+          [32m+[0m[0m network_configuration {
+              [32m+[0m[0m assign_public_ip = false
+              [32m+[0m[0m security_groups  = (known after apply)
+              [32m+[0m[0m subnets          = (known after apply)
+            }
+        }
+    }
+
+[1m  # aws_cloudwatch_event_target.sitemap_refresh_target[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_event_target" "sitemap_refresh_target" {
+      [32m+[0m[0m arn            = (known after apply)
+      [32m+[0m[0m event_bus_name = "default"
+      [32m+[0m[0m force_destroy  = false
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "ap-northeast-1"
+      [32m+[0m[0m role_arn       = (known after apply)
+      [32m+[0m[0m rule           = (known after apply)
+      [32m+[0m[0m target_id      = "SitemapRefreshBatchTarget"
+
+      [32m+[0m[0m ecs_target {
+          [32m+[0m[0m enable_ecs_managed_tags = false
+          [32m+[0m[0m enable_execute_command  = false
+          [32m+[0m[0m launch_type             = "FARGATE"
+          [32m+[0m[0m platform_version        = "LATEST"
+          [32m+[0m[0m task_count              = 1
+          [32m+[0m[0m task_definition_arn     = (known after apply)
+
+          [32m+[0m[0m network_configuration {
+              [32m+[0m[0m assign_public_ip = false
+              [32m+[0m[0m security_groups  = (known after apply)
+              [32m+[0m[0m subnets          = (known after apply)
+            }
+        }
+    }
+
+[1m  # aws_cloudwatch_event_target.xml_articles_target[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_event_target" "xml_articles_target" {
+      [32m+[0m[0m arn            = (known after apply)
+      [32m+[0m[0m event_bus_name = "default"
+      [32m+[0m[0m force_destroy  = false
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "ap-northeast-1"
+      [32m+[0m[0m role_arn       = (known after apply)
+      [32m+[0m[0m rule           = (known after apply)
+      [32m+[0m[0m target_id      = "XmlArticlesBatchTarget"
+
+      [32m+[0m[0m ecs_target {
+          [32m+[0m[0m enable_ecs_managed_tags = false
+          [32m+[0m[0m enable_execute_command  = false
+          [32m+[0m[0m launch_type             = "FARGATE"
+          [32m+[0m[0m platform_version        = "LATEST"
+          [32m+[0m[0m task_count              = 1
+          [32m+[0m[0m task_definition_arn     = (known after apply)
+
+          [32m+[0m[0m network_configuration {
+              [32m+[0m[0m assign_public_ip = false
+              [32m+[0m[0m security_groups  = (known after apply)
+              [32m+[0m[0m subnets          = (known after apply)
+            }
+        }
+    }
+
+[1m  # aws_cloudwatch_log_group.ecs_task_logs[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_log_group" "ecs_task_logs" {
+      [32m+[0m[0m arn               = (known after apply)
+      [32m+[0m[0m id                = (known after apply)
+      [32m+[0m[0m log_group_class   = (known after apply)
+      [32m+[0m[0m name              = "/ecs/v-rails-1001-dev-apn1-task"
+      [32m+[0m[0m name_prefix       = (known after apply)
+      [32m+[0m[0m region            = "ap-northeast-1"
+      [32m+[0m[0m retention_in_days = 7
+      [32m+[0m[0m skip_destroy      = false
+      [32m+[0m[0m tags              = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all          = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+    }
+
+[1m  # aws_cloudwatch_log_group.rails_batch_logs[0m will be created
+[0m  [32m+[0m[0m resource "aws_cloudwatch_log_group" "rails_batch_logs" {
+      [32m+[0m[0m arn               = (known after apply)
+      [32m+[0m[0m id                = (known after apply)
+      [32m+[0m[0m log_group_class   = (known after apply)
+      [32m+[0m[0m name              = "/ecs/v-rails-1001-dev-apn1-batch-tasks"
+      [32m+[0m[0m name_prefix       = (known after apply)
+      [32m+[0m[0m region            = "ap-northeast-1"
+      [32m+[0m[0m retention_in_days = 30
+      [32m+[0m[0m skip_destroy      = false
+      [32m+[0m[0m tags              = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all          = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+    }
+
+[1m  # aws_db_instance.rds_instance[0m will be created
+[0m  [32m+[0m[0m resource "aws_db_instance" "rds_instance" {
+      [32m+[0m[0m address                               = (known after apply)
+      [32m+[0m[0m allocated_storage                     = 40
+      [32m+[0m[0m apply_immediately                     = false
+      [32m+[0m[0m arn                                   = (known after apply)
+      [32m+[0m[0m auto_minor_version_upgrade            = true
+      [32m+[0m[0m availability_zone                     = (known after apply)
+      [32m+[0m[0m backup_retention_period               = 3
+      [32m+[0m[0m backup_target                         = (known after apply)
+      [32m+[0m[0m backup_window                         = "13:15-13:45"
+      [32m+[0m[0m ca_cert_identifier                    = (known after apply)
+      [32m+[0m[0m character_set_name                    = (known after apply)
+      [32m+[0m[0m copy_tags_to_snapshot                 = false
+      [32m+[0m[0m database_insights_mode                = (known after apply)
+      [32m+[0m[0m db_name                               = "mydatabasev2"
+      [32m+[0m[0m db_subnet_group_name                  = (known after apply)
+      [32m+[0m[0m dedicated_log_volume                  = false
+      [32m+[0m[0m delete_automated_backups              = true
+      [32m+[0m[0m deletion_protection                   = true
+      [32m+[0m[0m domain_fqdn                           = (known after apply)
+      [32m+[0m[0m endpoint                              = (known after apply)
+      [32m+[0m[0m engine                                = "postgres"
+      [32m+[0m[0m engine_lifecycle_support              = (known after apply)
+      [32m+[0m[0m engine_version                        = "13.20"
+      [32m+[0m[0m engine_version_actual                 = (known after apply)
+      [32m+[0m[0m final_snapshot_identifier             = "v-rails-1001-dev-final-snapshot"
+      [32m+[0m[0m hosted_zone_id                        = (known after apply)
+      [32m+[0m[0m id                                    = (known after apply)
+      [32m+[0m[0m identifier                            = "v-rails-1001-dev-apn1-db-v2"
+      [32m+[0m[0m identifier_prefix                     = (known after apply)
+      [32m+[0m[0m instance_class                        = "db.t3.micro"
+      [32m+[0m[0m iops                                  = (known after apply)
+      [32m+[0m[0m kms_key_id                            = (known after apply)
+      [32m+[0m[0m latest_restorable_time                = (known after apply)
+      [32m+[0m[0m license_model                         = (known after apply)
+      [32m+[0m[0m listener_endpoint                     = (known after apply)
+      [32m+[0m[0m maintenance_window                    = "wed:16:20-wed:16:50"
+      [32m+[0m[0m master_user_secret                    = (known after apply)
+      [32m+[0m[0m master_user_secret_kms_key_id         = (known after apply)
+      [32m+[0m[0m monitoring_interval                   = 0
+      [32m+[0m[0m monitoring_role_arn                   = (known after apply)
+      [32m+[0m[0m multi_az                              = (known after apply)
+      [32m+[0m[0m nchar_character_set_name              = (known after apply)
+      [32m+[0m[0m network_type                          = (known after apply)
+      [32m+[0m[0m option_group_name                     = (known after apply)
+      [32m+[0m[0m parameter_group_name                  = "default.postgres13"
+      [32m+[0m[0m password                              = (sensitive value)
+      [32m+[0m[0m password_wo                           = (write-only attribute)
+      [32m+[0m[0m performance_insights_enabled          = false
+      [32m+[0m[0m performance_insights_kms_key_id       = (known after apply)
+      [32m+[0m[0m performance_insights_retention_period = (known after apply)
+      [32m+[0m[0m port                                  = (known after apply)
+      [32m+[0m[0m publicly_accessible                   = false
+      [32m+[0m[0m region                                = "ap-northeast-1"
+      [32m+[0m[0m replica_mode                          = (known after apply)
+      [32m+[0m[0m replicas                              = (known after apply)
+      [32m+[0m[0m resource_id                           = (known after apply)
+      [32m+[0m[0m skip_final_snapshot                   = false
+      [32m+[0m[0m snapshot_identifier                   = (known after apply)
+      [32m+[0m[0m status                                = (known after apply)
+      [32m+[0m[0m storage_encrypted                     = true
+      [32m+[0m[0m storage_throughput                    = (known after apply)
+      [32m+[0m[0m storage_type                          = (known after apply)
+      [32m+[0m[0m tags                                  = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                              = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m timezone                              = (known after apply)
+      [32m+[0m[0m username                              = "postgres"
+      [32m+[0m[0m vpc_security_group_ids                = (known after apply)
+    }
+
+[1m  # aws_db_subnet_group.db_subnet[0m will be created
+[0m  [32m+[0m[0m resource "aws_db_subnet_group" "db_subnet" {
+      [32m+[0m[0m arn                     = (known after apply)
+      [32m+[0m[0m description             = "Managed by Terraform"
+      [32m+[0m[0m id                      = (known after apply)
+      [32m+[0m[0m name                    = "v-rails-1001-dev-apn1-dbsubnet"
+      [32m+[0m[0m name_prefix             = (known after apply)
+      [32m+[0m[0m region                  = "ap-northeast-1"
+      [32m+[0m[0m subnet_ids              = (known after apply)
+      [32m+[0m[0m supported_network_types = (known after apply)
+      [32m+[0m[0m tags                    = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                  = (known after apply)
+    }
+
+[1m  # aws_ecs_cluster.app_cluster[0m will be created
+[0m  [32m+[0m[0m resource "aws_ecs_cluster" "app_cluster" {
+      [32m+[0m[0m arn      = (known after apply)
+      [32m+[0m[0m id       = (known after apply)
+      [32m+[0m[0m name     = "v-rails-1001-dev-apn1-cluster"
+      [32m+[0m[0m region   = "ap-northeast-1"
+      [32m+[0m[0m tags     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+
+      [32m+[0m[0m configuration {
+          [32m+[0m[0m execute_command_configuration {
+              [32m+[0m[0m logging = "DEFAULT"
+            }
+        }
+
+      [32m+[0m[0m setting (known after apply)
+    }
+
+[1m  # aws_ecs_service.rails_app_service[0m will be created
+[0m  [32m+[0m[0m resource "aws_ecs_service" "rails_app_service" {
+      [32m+[0m[0m arn                                = (known after apply)
+      [32m+[0m[0m availability_zone_rebalancing      = (known after apply)
+      [32m+[0m[0m cluster                            = (known after apply)
+      [32m+[0m[0m deployment_maximum_percent         = 200
+      [32m+[0m[0m deployment_minimum_healthy_percent = 100
+      [32m+[0m[0m desired_count                      = 1
+      [32m+[0m[0m enable_ecs_managed_tags            = false
+      [32m+[0m[0m enable_execute_command             = true
+      [32m+[0m[0m health_check_grace_period_seconds  = 120
+      [32m+[0m[0m iam_role                           = (known after apply)
+      [32m+[0m[0m id                                 = (known after apply)
+      [32m+[0m[0m launch_type                        = "FARGATE"
+      [32m+[0m[0m name                               = "v-rails-1001-dev-apn1-service"
+      [32m+[0m[0m platform_version                   = (known after apply)
+      [32m+[0m[0m region                             = "ap-northeast-1"
+      [32m+[0m[0m scheduling_strategy                = "REPLICA"
+      [32m+[0m[0m tags                               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                           = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m task_definition                    = (known after apply)
+      [32m+[0m[0m triggers                           = (known after apply)
+      [32m+[0m[0m wait_for_steady_state              = false
+
+      [32m+[0m[0m deployment_configuration (known after apply)
+
+      [32m+[0m[0m load_balancer {
+          [32m+[0m[0m container_name   = "rails-app-container"
+          [32m+[0m[0m container_port   = 3000
+          [32m+[0m[0m target_group_arn = (known after apply)
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+
+      [32m+[0m[0m network_configuration {
+          [32m+[0m[0m assign_public_ip = false
+          [32m+[0m[0m security_groups  = (known after apply)
+          [32m+[0m[0m subnets          = (known after apply)
+        }
+    }
+
+[1m  # aws_ecs_task_definition.rails_app_task[0m will be created
+[0m  [32m+[0m[0m resource "aws_ecs_task_definition" "rails_app_task" {
+      [32m+[0m[0m arn                      = (known after apply)
+      [32m+[0m[0m arn_without_revision     = (known after apply)
+      [32m+[0m[0m container_definitions    = (sensitive value)
+      [32m+[0m[0m cpu                      = "1024"
+      [32m+[0m[0m enable_fault_injection   = (known after apply)
+      [32m+[0m[0m execution_role_arn       = (known after apply)
+      [32m+[0m[0m family                   = "v-rails-1001-dev-apn1-rails-app-task"
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m memory                   = "2048"
+      [32m+[0m[0m network_mode             = "awsvpc"
+      [32m+[0m[0m region                   = "ap-northeast-1"
+      [32m+[0m[0m requires_compatibilities = [
+          [32m+[0m[0m "FARGATE",
+        ]
+      [32m+[0m[0m revision                 = (known after apply)
+      [32m+[0m[0m skip_destroy             = false
+      [32m+[0m[0m tags                     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                 = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m task_role_arn            = (known after apply)
+      [32m+[0m[0m track_latest             = false
+    }
+
+[1m  # aws_ecs_task_definition.rails_batch_missing_images[0m will be created
+[0m  [32m+[0m[0m resource "aws_ecs_task_definition" "rails_batch_missing_images" {
+      [32m+[0m[0m arn                      = (known after apply)
+      [32m+[0m[0m arn_without_revision     = (known after apply)
+      [32m+[0m[0m container_definitions    = (sensitive value)
+      [32m+[0m[0m cpu                      = "256"
+      [32m+[0m[0m enable_fault_injection   = (known after apply)
+      [32m+[0m[0m execution_role_arn       = (known after apply)
+      [32m+[0m[0m family                   = "v-rails-1001-dev-apn1-batch-missing-images"
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m memory                   = "512"
+      [32m+[0m[0m network_mode             = "awsvpc"
+      [32m+[0m[0m region                   = "ap-northeast-1"
+      [32m+[0m[0m requires_compatibilities = [
+          [32m+[0m[0m "FARGATE",
+        ]
+      [32m+[0m[0m revision                 = (known after apply)
+      [32m+[0m[0m skip_destroy             = false
+      [32m+[0m[0m tags                     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                 = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m task_role_arn            = (known after apply)
+      [32m+[0m[0m track_latest             = false
+    }
+
+[1m  # aws_ecs_task_definition.rails_batch_sitemap_refresh[0m will be created
+[0m  [32m+[0m[0m resource "aws_ecs_task_definition" "rails_batch_sitemap_refresh" {
+      [32m+[0m[0m arn                      = (known after apply)
+      [32m+[0m[0m arn_without_revision     = (known after apply)
+      [32m+[0m[0m container_definitions    = (sensitive value)
+      [32m+[0m[0m cpu                      = "256"
+      [32m+[0m[0m enable_fault_injection   = (known after apply)
+      [32m+[0m[0m execution_role_arn       = (known after apply)
+      [32m+[0m[0m family                   = "v-rails-1001-dev-apn1-batch-sitemap-refresh"
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m memory                   = "512"
+      [32m+[0m[0m network_mode             = "awsvpc"
+      [32m+[0m[0m region                   = "ap-northeast-1"
+      [32m+[0m[0m requires_compatibilities = [
+          [32m+[0m[0m "FARGATE",
+        ]
+      [32m+[0m[0m revision                 = (known after apply)
+      [32m+[0m[0m skip_destroy             = false
+      [32m+[0m[0m tags                     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                 = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m task_role_arn            = (known after apply)
+      [32m+[0m[0m track_latest             = false
+    }
+
+[1m  # aws_ecs_task_definition.rails_batch_xml_articles[0m will be created
+[0m  [32m+[0m[0m resource "aws_ecs_task_definition" "rails_batch_xml_articles" {
+      [32m+[0m[0m arn                      = (known after apply)
+      [32m+[0m[0m arn_without_revision     = (known after apply)
+      [32m+[0m[0m container_definitions    = (sensitive value)
+      [32m+[0m[0m cpu                      = "256"
+      [32m+[0m[0m enable_fault_injection   = (known after apply)
+      [32m+[0m[0m execution_role_arn       = (known after apply)
+      [32m+[0m[0m family                   = "v-rails-1001-dev-apn1-batch-xml-articles"
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m memory                   = "512"
+      [32m+[0m[0m network_mode             = "awsvpc"
+      [32m+[0m[0m region                   = "ap-northeast-1"
+      [32m+[0m[0m requires_compatibilities = [
+          [32m+[0m[0m "FARGATE",
+        ]
+      [32m+[0m[0m revision                 = (known after apply)
+      [32m+[0m[0m skip_destroy             = false
+      [32m+[0m[0m tags                     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                 = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m task_role_arn            = (known after apply)
+      [32m+[0m[0m track_latest             = false
+    }
+
+[1m  # aws_elasticache_cluster.memcached[0m will be created
+[0m  [32m+[0m[0m resource "aws_elasticache_cluster" "memcached" {
+      [32m+[0m[0m apply_immediately          = (known after apply)
+      [32m+[0m[0m arn                        = (known after apply)
+      [32m+[0m[0m auto_minor_version_upgrade = "true"
+      [32m+[0m[0m availability_zone          = (known after apply)
+      [32m+[0m[0m az_mode                    = (known after apply)
+      [32m+[0m[0m cache_nodes                = (known after apply)
+      [32m+[0m[0m cluster_address            = (known after apply)
+      [32m+[0m[0m cluster_id                 = "v-rails-1001-dev-apn1-memcached"
+      [32m+[0m[0m configuration_endpoint     = (known after apply)
+      [32m+[0m[0m engine                     = "memcached"
+      [32m+[0m[0m engine_version             = "1.6.22"
+      [32m+[0m[0m engine_version_actual      = (known after apply)
+      [32m+[0m[0m id                         = (known after apply)
+      [32m+[0m[0m ip_discovery               = (known after apply)
+      [32m+[0m[0m maintenance_window         = "sun:05:00-sun:06:00"
+      [32m+[0m[0m network_type               = (known after apply)
+      [32m+[0m[0m node_type                  = "cache.t3.micro"
+      [32m+[0m[0m num_cache_nodes            = 1
+      [32m+[0m[0m parameter_group_name       = (known after apply)
+      [32m+[0m[0m port                       = 11211
+      [32m+[0m[0m preferred_outpost_arn      = (known after apply)
+      [32m+[0m[0m region                     = "ap-northeast-1"
+      [32m+[0m[0m replication_group_id       = (known after apply)
+      [32m+[0m[0m security_group_ids         = (known after apply)
+      [32m+[0m[0m snapshot_window            = (known after apply)
+      [32m+[0m[0m subnet_group_name          = (known after apply)
+      [32m+[0m[0m tags                       = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "elasticache-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-cluster"
+        }
+      [32m+[0m[0m tags_all                   = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "elasticache-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-cluster"
+        }
+      [32m+[0m[0m transit_encryption_enabled = (known after apply)
+    }
+
+[1m  # aws_elasticache_parameter_group.memcached_params[0m will be created
+[0m  [32m+[0m[0m resource "aws_elasticache_parameter_group" "memcached_params" {
+      [32m+[0m[0m arn         = (known after apply)
+      [32m+[0m[0m description = "Managed by Terraform"
+      [32m+[0m[0m family      = "memcached1.6"
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m name        = "v-rails-1001-dev-apn1-memcached-params"
+      [32m+[0m[0m region      = "ap-northeast-1"
+      [32m+[0m[0m tags        = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "elasticache-params-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-parameters"
+        }
+      [32m+[0m[0m tags_all    = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "elasticache-params-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-parameters"
+        }
+
+      [32m+[0m[0m parameter {
+          [32m+[0m[0m name  = "max_item_size"
+          [32m+[0m[0m value = "1048576"
+        }
+    }
+
+[1m  # aws_elasticache_subnet_group.memcached_subnet_group[0m will be created
+[0m  [32m+[0m[0m resource "aws_elasticache_subnet_group" "memcached_subnet_group" {
+      [32m+[0m[0m arn         = (known after apply)
+      [32m+[0m[0m description = "Managed by Terraform"
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m name        = "v-rails-1001-dev-apn1-memcached-subnet-group"
+      [32m+[0m[0m region      = "ap-northeast-1"
+      [32m+[0m[0m subnet_ids  = (known after apply)
+      [32m+[0m[0m tags        = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "elasticache-subnet-group-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-subnet-group"
+        }
+      [32m+[0m[0m tags_all    = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "elasticache-subnet-group-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-subnet-group"
+        }
+      [32m+[0m[0m vpc_id      = (known after apply)
+    }
+
+[1m  # aws_iam_access_key.s3_static_assets_access_key[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_access_key" "s3_static_assets_access_key" {
+      [32m+[0m[0m create_date                    = (known after apply)
+      [32m+[0m[0m encrypted_secret               = (known after apply)
+      [32m+[0m[0m encrypted_ses_smtp_password_v4 = (known after apply)
+      [32m+[0m[0m id                             = (known after apply)
+      [32m+[0m[0m key_fingerprint                = (known after apply)
+      [32m+[0m[0m secret                         = (sensitive value)
+      [32m+[0m[0m ses_smtp_password_v4           = (sensitive value)
+      [32m+[0m[0m status                         = "Active"
+      [32m+[0m[0m user                           = (known after apply)
+    }
+
+[1m  # aws_iam_policy.ecs_cloudwatch_logs_limited[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_policy" "ecs_cloudwatch_logs_limited" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m attachment_count = (known after apply)
+      [32m+[0m[0m description      = "Limited CloudWatch Logs permissions for ECS tasks"
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m name             = "v-rails-1001-dev-ecs-cloudwatch-logs-limited"
+      [32m+[0m[0m name_prefix      = (known after apply)
+      [32m+[0m[0m path             = "/"
+      [32m+[0m[0m policy           = (known after apply)
+      [32m+[0m[0m policy_id        = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "ecs-cloudwatch-logs-limited"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "ecs-logging"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "ecs-cloudwatch-logs-limited"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "ecs-logging"
+        }
+    }
+
+[1m  # aws_iam_policy.ecs_ssm_exec_limited[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_policy" "ecs_ssm_exec_limited" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m attachment_count = (known after apply)
+      [32m+[0m[0m description      = "Limited SSM permissions for ECS Exec functionality"
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m name             = "v-rails-1001-dev-ecs-ssm-exec-limited"
+      [32m+[0m[0m name_prefix      = (known after apply)
+      [32m+[0m[0m path             = "/"
+      [32m+[0m[0m policy           = jsonencode(
+            {
+              [32m+[0m[0m Statement = [
+                  [32m+[0m[0m {
+                      [32m+[0m[0m Action   = [
+                          [32m+[0m[0m "ssmmessages:CreateControlChannel",
+                          [32m+[0m[0m "ssmmessages:CreateDataChannel",
+                          [32m+[0m[0m "ssmmessages:OpenControlChannel",
+                          [32m+[0m[0m "ssmmessages:OpenDataChannel",
+                        ]
+                      [32m+[0m[0m Effect   = "Allow"
+                      [32m+[0m[0m Resource = "*"
+                    },
+                ]
+              [32m+[0m[0m Version   = "2012-10-17"
+            }
+        )
+      [32m+[0m[0m policy_id        = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "ecs-ssm-exec-limited"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "ecs-exec-only"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "ecs-ssm-exec-limited"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "ecs-exec-only"
+        }
+    }
+
+[1m  # aws_iam_policy.github_actions_s3_assets_policy[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_policy" "github_actions_s3_assets_policy" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m attachment_count = (known after apply)
+      [32m+[0m[0m description      = "GitHub Actions S3 assets upload policy for dev environment"
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m name             = "v-rails-1001-dev-apn1-github-actions-s3-assets-policy"
+      [32m+[0m[0m name_prefix      = (known after apply)
+      [32m+[0m[0m path             = "/"
+      [32m+[0m[0m policy           = (known after apply)
+      [32m+[0m[0m policy_id        = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "iam-policy-v-rails-1001-dev-apn1-github-actions-s3-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "github-actions-s3-assets-access"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "iam-policy-v-rails-1001-dev-apn1-github-actions-s3-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "github-actions-s3-assets-access"
+        }
+    }
+
+[1m  # aws_iam_policy.s3_static_assets_policy[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_policy" "s3_static_assets_policy" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m attachment_count = (known after apply)
+      [32m+[0m[0m description      = "IAM policy for S3 static assets access in dev environment"
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m name             = "v-rails-1001-dev-apn1-s3-static-assets-policy"
+      [32m+[0m[0m name_prefix      = (known after apply)
+      [32m+[0m[0m path             = "/"
+      [32m+[0m[0m policy           = (known after apply)
+      [32m+[0m[0m policy_id        = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "iam-policy-v-rails-1001-dev-apn1-s3-static-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "s3-static-assets-access"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "iam-policy-v-rails-1001-dev-apn1-s3-static-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "s3-static-assets-access"
+        }
+    }
+
+[1m  # aws_iam_role.ecs_execution_role[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role" "ecs_execution_role" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m assume_role_policy    = jsonencode(
+            {
+              [32m+[0m[0m Statement = [
+                  [32m+[0m[0m {
+                      [32m+[0m[0m Action    = "sts:AssumeRole"
+                      [32m+[0m[0m Effect    = "Allow"
+                      [32m+[0m[0m Principal = {
+                          [32m+[0m[0m Service = "ecs-tasks.amazonaws.com"
+                        }
+                    },
+                ]
+              [32m+[0m[0m Version   = "2012-10-17"
+            }
+        )
+      [32m+[0m[0m create_date           = (known after apply)
+      [32m+[0m[0m force_detach_policies = true
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m managed_policy_arns   = (known after apply)
+      [32m+[0m[0m max_session_duration  = 3600
+      [32m+[0m[0m name                  = "v-rails-1001-dev-apn1-task-execution-role"
+      [32m+[0m[0m name_prefix           = (known after apply)
+      [32m+[0m[0m path                  = "/"
+      [32m+[0m[0m tags                  = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all              = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m unique_id             = (known after apply)
+
+      [32m+[0m[0m inline_policy (known after apply)
+    }
+
+[1m  # aws_iam_role.ecs_task_role[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role" "ecs_task_role" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m assume_role_policy    = jsonencode(
+            {
+              [32m+[0m[0m Statement = [
+                  [32m+[0m[0m {
+                      [32m+[0m[0m Action    = "sts:AssumeRole"
+                      [32m+[0m[0m Effect    = "Allow"
+                      [32m+[0m[0m Principal = {
+                          [32m+[0m[0m Service = "ecs-tasks.amazonaws.com"
+                        }
+                    },
+                ]
+              [32m+[0m[0m Version   = "2012-10-17"
+            }
+        )
+      [32m+[0m[0m create_date           = (known after apply)
+      [32m+[0m[0m force_detach_policies = false
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m managed_policy_arns   = (known after apply)
+      [32m+[0m[0m max_session_duration  = 3600
+      [32m+[0m[0m name                  = "v-rails-1001-dev-apn1-task-role"
+      [32m+[0m[0m name_prefix           = (known after apply)
+      [32m+[0m[0m path                  = "/"
+      [32m+[0m[0m tags                  = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all              = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m unique_id             = (known after apply)
+
+      [32m+[0m[0m inline_policy (known after apply)
+    }
+
+[1m  # aws_iam_role.eventbridge_ecs_role[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role" "eventbridge_ecs_role" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m assume_role_policy    = jsonencode(
+            {
+              [32m+[0m[0m Statement = [
+                  [32m+[0m[0m {
+                      [32m+[0m[0m Action    = "sts:AssumeRole"
+                      [32m+[0m[0m Effect    = "Allow"
+                      [32m+[0m[0m Principal = {
+                          [32m+[0m[0m Service = "events.amazonaws.com"
+                        }
+                    },
+                ]
+              [32m+[0m[0m Version   = "2012-10-17"
+            }
+        )
+      [32m+[0m[0m create_date           = (known after apply)
+      [32m+[0m[0m force_detach_policies = false
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m managed_policy_arns   = (known after apply)
+      [32m+[0m[0m max_session_duration  = 3600
+      [32m+[0m[0m name                  = "v-rails-1001-dev-apn1-eventbridge-ecs-role"
+      [32m+[0m[0m name_prefix           = (known after apply)
+      [32m+[0m[0m path                  = "/"
+      [32m+[0m[0m tags                  = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all              = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m unique_id             = (known after apply)
+
+      [32m+[0m[0m inline_policy (known after apply)
+    }
+
+[1m  # aws_iam_role_policy.eventbridge_ecs_policy[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy" "eventbridge_ecs_policy" {
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m name        = "v-rails-1001-dev-apn1-eventbridge-ecs-policy"
+      [32m+[0m[0m name_prefix = (known after apply)
+      [32m+[0m[0m policy      = (known after apply)
+      [32m+[0m[0m role        = (known after apply)
+    }
+
+[1m  # aws_iam_role_policy_attachment.ecs_execution_role_attach[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy_attachment" "ecs_execution_role_attach" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+      [32m+[0m[0m role       = (known after apply)
+    }
+
+[1m  # aws_iam_role_policy_attachment.ecs_execution_role_cloudwatch_logs[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy_attachment" "ecs_execution_role_cloudwatch_logs" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = (known after apply)
+      [32m+[0m[0m role       = (known after apply)
+    }
+
+[1m  # aws_iam_role_policy_attachment.ecs_execution_role_ecr_attach[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy_attachment" "ecs_execution_role_ecr_attach" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+      [32m+[0m[0m role       = (known after apply)
+    }
+
+[1m  # aws_iam_role_policy_attachment.ecs_execution_role_ssm[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy_attachment" "ecs_execution_role_ssm" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+      [32m+[0m[0m role       = (known after apply)
+    }
+
+[1m  # aws_iam_role_policy_attachment.ecs_task_role_attach[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy_attachment" "ecs_task_role_attach" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = (known after apply)
+      [32m+[0m[0m role       = (known after apply)
+    }
+
+[1m  # aws_iam_role_policy_attachment.ecs_task_role_ssm_exec[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy_attachment" "ecs_task_role_ssm_exec" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+      [32m+[0m[0m role       = (known after apply)
+    }
+
+[1m  # aws_iam_role_policy_attachment.github_actions_s3_assets[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_role_policy_attachment" "github_actions_s3_assets" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = (known after apply)
+      [32m+[0m[0m role       = "v-rails-1001-GitHubActionsOIDCRole"
+    }
+
+[1m  # aws_iam_user.s3_static_assets_user[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_user" "s3_static_assets_user" {
+      [32m+[0m[0m arn           = (known after apply)
+      [32m+[0m[0m force_destroy = false
+      [32m+[0m[0m id            = (known after apply)
+      [32m+[0m[0m name          = "v-rails-1001-dev-apn1-s3-static-assets-user"
+      [32m+[0m[0m path          = "/"
+      [32m+[0m[0m tags          = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "iam-user-v-rails-1001-dev-apn1-s3-static-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "s3-static-assets-access"
+        }
+      [32m+[0m[0m tags_all      = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "iam-user-v-rails-1001-dev-apn1-s3-static-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "s3-static-assets-access"
+        }
+      [32m+[0m[0m unique_id     = (known after apply)
+    }
+
+[1m  # aws_iam_user_policy_attachment.s3_static_assets_policy_attachment[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_user_policy_attachment" "s3_static_assets_policy_attachment" {
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m policy_arn = (known after apply)
+      [32m+[0m[0m user       = (known after apply)
+    }
+
+[1m  # aws_internet_gateway.igw[0m will be created
+[0m  [32m+[0m[0m resource "aws_internet_gateway" "igw" {
+      [32m+[0m[0m arn      = (known after apply)
+      [32m+[0m[0m id       = (known after apply)
+      [32m+[0m[0m owner_id = (known after apply)
+      [32m+[0m[0m region   = "ap-northeast-1"
+      [32m+[0m[0m tags     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "igw-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "igw-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id   = (known after apply)
+    }
+
+[1m  # aws_lb.alb[0m will be created
+[0m  [32m+[0m[0m resource "aws_lb" "alb" {
+      [32m+[0m[0m arn                                                          = (known after apply)
+      [32m+[0m[0m arn_suffix                                                   = (known after apply)
+      [32m+[0m[0m client_keep_alive                                            = 3600
+      [32m+[0m[0m desync_mitigation_mode                                       = "defensive"
+      [32m+[0m[0m dns_name                                                     = (known after apply)
+      [32m+[0m[0m drop_invalid_header_fields                                   = false
+      [32m+[0m[0m enable_deletion_protection                                   = false
+      [32m+[0m[0m enable_http2                                                 = true
+      [32m+[0m[0m enable_tls_version_and_cipher_suite_headers                  = false
+      [32m+[0m[0m enable_waf_fail_open                                         = false
+      [32m+[0m[0m enable_xff_client_port                                       = false
+      [32m+[0m[0m enable_zonal_shift                                           = false
+      [32m+[0m[0m enforce_security_group_inbound_rules_on_private_link_traffic = (known after apply)
+      [32m+[0m[0m id                                                           = (known after apply)
+      [32m+[0m[0m idle_timeout                                                 = 180
+      [32m+[0m[0m internal                                                     = true
+      [32m+[0m[0m ip_address_type                                              = (known after apply)
+      [32m+[0m[0m load_balancer_type                                           = "application"
+      [32m+[0m[0m name                                                         = "v-rails-1001-dev-apn1-alb"
+      [32m+[0m[0m name_prefix                                                  = (known after apply)
+      [32m+[0m[0m preserve_host_header                                         = false
+      [32m+[0m[0m region                                                       = "ap-northeast-1"
+      [32m+[0m[0m secondary_ips_auto_assigned_per_subnet                       = (known after apply)
+      [32m+[0m[0m security_groups                                              = (known after apply)
+      [32m+[0m[0m subnets                                                      = (known after apply)
+      [32m+[0m[0m tags                                                         = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                                                     = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                                                       = (known after apply)
+      [32m+[0m[0m xff_header_processing_mode                                   = "append"
+      [32m+[0m[0m zone_id                                                      = (known after apply)
+
+      [32m+[0m[0m subnet_mapping (known after apply)
+    }
+
+[1m  # aws_lb_listener.alb_listener_https[0m will be created
+[0m  [32m+[0m[0m resource "aws_lb_listener" "alb_listener_https" {
+      [32m+[0m[0m arn                                                                   = (known after apply)
+      [32m+[0m[0m certificate_arn                                                       = "arn:aws:acm:ap-northeast-1:412742703218:certificate/116769b7-ff29-401c-9e85-da2a0602ce8a"
+      [32m+[0m[0m id                                                                    = (known after apply)
+      [32m+[0m[0m load_balancer_arn                                                     = (known after apply)
+      [32m+[0m[0m port                                                                  = 443
+      [32m+[0m[0m protocol                                                              = "HTTPS"
+      [32m+[0m[0m region                                                                = "ap-northeast-1"
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_header_name               = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_issuer_header_name        = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_leaf_header_name          = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_subject_header_name       = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_validity_header_name      = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_tls_cipher_suite_header_name              = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_tls_version_header_name                   = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_credentials_header_value   = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_headers_header_value       = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_methods_header_value       = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_origin_header_value        = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_expose_headers_header_value      = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_max_age_header_value             = (known after apply)
+      [32m+[0m[0m routing_http_response_content_security_policy_header_value            = (known after apply)
+      [32m+[0m[0m routing_http_response_server_enabled                                  = (known after apply)
+      [32m+[0m[0m routing_http_response_strict_transport_security_header_value          = (known after apply)
+      [32m+[0m[0m routing_http_response_x_content_type_options_header_value             = (known after apply)
+      [32m+[0m[0m routing_http_response_x_frame_options_header_value                    = (known after apply)
+      [32m+[0m[0m ssl_policy                                                            = "ELBSecurityPolicy-TLS-1-2-2017-01"
+      [32m+[0m[0m tags                                                                  = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "v-rails-1001-dev-alb-https-listener"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                                                              = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "v-rails-1001-dev-alb-https-listener"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tcp_idle_timeout_seconds                                              = (known after apply)
+
+      [32m+[0m[0m default_action {
+          [32m+[0m[0m order            = (known after apply)
+          [32m+[0m[0m target_group_arn = (known after apply)
+          [32m+[0m[0m type             = "forward"
+        }
+
+      [32m+[0m[0m mutual_authentication (known after apply)
+    }
+
+[1m  # aws_lb_target_group.alb_tg[0m will be created
+[0m  [32m+[0m[0m resource "aws_lb_target_group" "alb_tg" {
+      [32m+[0m[0m arn                                = (known after apply)
+      [32m+[0m[0m arn_suffix                         = (known after apply)
+      [32m+[0m[0m connection_termination             = (known after apply)
+      [32m+[0m[0m deregistration_delay               = "300"
+      [32m+[0m[0m id                                 = (known after apply)
+      [32m+[0m[0m ip_address_type                    = (known after apply)
+      [32m+[0m[0m lambda_multi_value_headers_enabled = false
+      [32m+[0m[0m load_balancer_arns                 = (known after apply)
+      [32m+[0m[0m load_balancing_algorithm_type      = (known after apply)
+      [32m+[0m[0m load_balancing_anomaly_mitigation  = (known after apply)
+      [32m+[0m[0m load_balancing_cross_zone_enabled  = (known after apply)
+      [32m+[0m[0m name                               = "v-rails-1001-dev-apn1-alb-tg"
+      [32m+[0m[0m name_prefix                        = (known after apply)
+      [32m+[0m[0m port                               = 3000
+      [32m+[0m[0m preserve_client_ip                 = (known after apply)
+      [32m+[0m[0m protocol                           = "HTTP"
+      [32m+[0m[0m protocol_version                   = (known after apply)
+      [32m+[0m[0m proxy_protocol_v2                  = false
+      [32m+[0m[0m region                             = "ap-northeast-1"
+      [32m+[0m[0m slow_start                         = 0
+      [32m+[0m[0m tags                               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                           = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m target_type                        = "ip"
+      [32m+[0m[0m vpc_id                             = (known after apply)
+
+      [32m+[0m[0m health_check {
+          [32m+[0m[0m enabled             = true
+          [32m+[0m[0m healthy_threshold   = 2
+          [32m+[0m[0m interval            = 10
+          [32m+[0m[0m matcher             = "200-299"
+          [32m+[0m[0m path                = "/health"
+          [32m+[0m[0m port                = "traffic-port"
+          [32m+[0m[0m protocol            = "HTTP"
+          [32m+[0m[0m timeout             = 5
+          [32m+[0m[0m unhealthy_threshold = 8
+        }
+
+      [32m+[0m[0m stickiness (known after apply)
+
+      [32m+[0m[0m target_failover (known after apply)
+
+      [32m+[0m[0m target_group_health (known after apply)
+
+      [32m+[0m[0m target_health_state (known after apply)
+    }
+
+[1m  # aws_route_table.private_rt[0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "private_rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "ap-northeast-1"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "private-rt-v-rails-1001-dev-apn1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "private-rt-v-rails-1001-dev-apn1"
+        }
+      [32m+[0m[0m vpc_id           = (known after apply)
+    }
+
+[1m  # aws_route_table_association.private_rta[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "private_rta" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "ap-northeast-1"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = (known after apply)
+    }
+
+[1m  # aws_route_table_association.private_rta[1][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "private_rta" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "ap-northeast-1"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = (known after apply)
+    }
+
+[1m  # aws_s3_bucket.static_assets[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket" "static_assets" {
+      [32m+[0m[0m acceleration_status         = (known after apply)
+      [32m+[0m[0m acl                         = (known after apply)
+      [32m+[0m[0m arn                         = (known after apply)
+      [32m+[0m[0m bucket                      = (known after apply)
+      [32m+[0m[0m bucket_domain_name          = (known after apply)
+      [32m+[0m[0m bucket_prefix               = (known after apply)
+      [32m+[0m[0m bucket_region               = (known after apply)
+      [32m+[0m[0m bucket_regional_domain_name = (known after apply)
+      [32m+[0m[0m force_destroy               = false
+      [32m+[0m[0m hosted_zone_id              = (known after apply)
+      [32m+[0m[0m id                          = (known after apply)
+      [32m+[0m[0m object_lock_enabled         = (known after apply)
+      [32m+[0m[0m policy                      = (known after apply)
+      [32m+[0m[0m region                      = "ap-northeast-1"
+      [32m+[0m[0m request_payer               = (known after apply)
+      [32m+[0m[0m tags                        = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "s3-v-rails-1001-dev-apn1-static-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "static-assets"
+        }
+      [32m+[0m[0m tags_all                    = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "s3-v-rails-1001-dev-apn1-static-assets"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "static-assets"
+        }
+      [32m+[0m[0m website_domain              = (known after apply)
+      [32m+[0m[0m website_endpoint            = (known after apply)
+
+      [32m+[0m[0m cors_rule (known after apply)
+
+      [32m+[0m[0m grant (known after apply)
+
+      [32m+[0m[0m lifecycle_rule (known after apply)
+
+      [32m+[0m[0m logging (known after apply)
+
+      [32m+[0m[0m object_lock_configuration (known after apply)
+
+      [32m+[0m[0m replication_configuration (known after apply)
+
+      [32m+[0m[0m server_side_encryption_configuration (known after apply)
+
+      [32m+[0m[0m versioning (known after apply)
+
+      [32m+[0m[0m website (known after apply)
+    }
+
+[1m  # aws_s3_bucket_cors_configuration.static_assets_cors[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_cors_configuration" "static_assets_cors" {
+      [32m+[0m[0m bucket = (known after apply)
+      [32m+[0m[0m id     = (known after apply)
+      [32m+[0m[0m region = "ap-northeast-1"
+
+      [32m+[0m[0m cors_rule {
+          [32m+[0m[0m allowed_headers = [
+              [32m+[0m[0m "*",
+            ]
+          [32m+[0m[0m allowed_methods = [
+              [32m+[0m[0m "DELETE",
+              [32m+[0m[0m "GET",
+              [32m+[0m[0m "HEAD",
+              [32m+[0m[0m "POST",
+              [32m+[0m[0m "PUT",
+            ]
+          [32m+[0m[0m allowed_origins = [
+              [32m+[0m[0m "*",
+            ]
+          [32m+[0m[0m expose_headers  = [
+              [32m+[0m[0m "ETag",
+            ]
+            id              = [90mnull[0m[0m
+          [32m+[0m[0m max_age_seconds = 3000
+        }
+    }
+
+[1m  # aws_s3_bucket_lifecycle_configuration.static_assets_lifecycle[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_lifecycle_configuration" "static_assets_lifecycle" {
+      [32m+[0m[0m bucket                                 = (known after apply)
+      [32m+[0m[0m expected_bucket_owner                  = (known after apply)
+      [32m+[0m[0m id                                     = (known after apply)
+      [32m+[0m[0m region                                 = "ap-northeast-1"
+      [32m+[0m[0m transition_default_minimum_object_size = "all_storage_classes_128K"
+
+      [32m+[0m[0m rule {
+          [32m+[0m[0m id     = "delete_incomplete_multipart_uploads"
+          [32m+[0m[0m status = "Enabled"
+            [90m# (1 unchanged attribute hidden)[0m[0m
+
+          [32m+[0m[0m abort_incomplete_multipart_upload {
+              [32m+[0m[0m days_after_initiation = 7
+            }
+
+          [32m+[0m[0m filter {
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+        }
+      [32m+[0m[0m rule {
+          [32m+[0m[0m id     = "delete_old_versions"
+          [32m+[0m[0m status = "Enabled"
+            [90m# (1 unchanged attribute hidden)[0m[0m
+
+          [32m+[0m[0m filter {
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+
+          [32m+[0m[0m noncurrent_version_expiration {
+              [32m+[0m[0m noncurrent_days = 30
+            }
+        }
+    }
+
+[1m  # aws_s3_bucket_ownership_controls.static_assets_ownership[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_ownership_controls" "static_assets_ownership" {
+      [32m+[0m[0m bucket = (known after apply)
+      [32m+[0m[0m id     = (known after apply)
+      [32m+[0m[0m region = "ap-northeast-1"
+
+      [32m+[0m[0m rule {
+          [32m+[0m[0m object_ownership = "BucketOwnerPreferred"
+        }
+    }
+
+[1m  # aws_s3_bucket_policy.static_assets_policy_with_cloudfront[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_policy" "static_assets_policy_with_cloudfront" {
+      [32m+[0m[0m bucket = (known after apply)
+      [32m+[0m[0m id     = (known after apply)
+      [32m+[0m[0m policy = (known after apply)
+      [32m+[0m[0m region = "ap-northeast-1"
+    }
+
+[1m  # aws_s3_bucket_public_access_block.static_assets_pab[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_public_access_block" "static_assets_pab" {
+      [32m+[0m[0m block_public_acls       = false
+      [32m+[0m[0m block_public_policy     = false
+      [32m+[0m[0m bucket                  = (known after apply)
+      [32m+[0m[0m id                      = (known after apply)
+      [32m+[0m[0m ignore_public_acls      = true
+      [32m+[0m[0m region                  = "ap-northeast-1"
+      [32m+[0m[0m restrict_public_buckets = true
+    }
+
+[1m  # aws_s3_bucket_server_side_encryption_configuration.static_assets_encryption[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_server_side_encryption_configuration" "static_assets_encryption" {
+      [32m+[0m[0m bucket = (known after apply)
+      [32m+[0m[0m id     = (known after apply)
+      [32m+[0m[0m region = "ap-northeast-1"
+
+      [32m+[0m[0m rule {
+          [32m+[0m[0m bucket_key_enabled = true
+
+          [32m+[0m[0m apply_server_side_encryption_by_default {
+              [32m+[0m[0m sse_algorithm     = "AES256"
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+        }
+    }
+
+[1m  # aws_s3_bucket_versioning.static_assets_versioning[0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_versioning" "static_assets_versioning" {
+      [32m+[0m[0m bucket = (known after apply)
+      [32m+[0m[0m id     = (known after apply)
+      [32m+[0m[0m region = "ap-northeast-1"
+
+      [32m+[0m[0m versioning_configuration {
+          [32m+[0m[0m mfa_delete = (known after apply)
+          [32m+[0m[0m status     = "Enabled"
+        }
+    }
+
+[1m  # aws_security_group.alb_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "alb_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "ALB SG - CloudFront and private subnet access only"
+      [32m+[0m[0m egress                 = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = [
+                  [32m+[0m[0m "0.0.0.0/0",
+                ]
+              [32m+[0m[0m from_port        = 0
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "-1"
+              [32m+[0m[0m security_groups  = []
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 0
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ]
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = [
+                  [32m+[0m[0m "0.0.0.0/0",
+                ]
+              [32m+[0m[0m description      = "CloudFront VPC Origin HTTP access"
+              [32m+[0m[0m from_port        = 80
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "tcp"
+              [32m+[0m[0m security_groups  = []
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 80
+            },
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = []
+              [32m+[0m[0m description      = "CloudFront VPC Origin HTTPS access"
+              [32m+[0m[0m from_port        = 443
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = [
+                  [32m+[0m[0m "pl-58a04531",
+                ]
+              [32m+[0m[0m protocol         = "tcp"
+              [32m+[0m[0m security_groups  = []
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 443
+            },
+        ]
+      [32m+[0m[0m name                   = "alb-sg-v-rails-1001-dev-apn1"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m region                 = "ap-northeast-1"
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group.ecs_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "ecs_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "ECS SG"
+      [32m+[0m[0m egress                 = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = [
+                  [32m+[0m[0m "0.0.0.0/0",
+                ]
+              [32m+[0m[0m from_port        = 0
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "-1"
+              [32m+[0m[0m security_groups  = []
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 0
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ]
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = []
+              [32m+[0m[0m from_port        = 3000
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "tcp"
+              [32m+[0m[0m security_groups  = (known after apply)
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 3000
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ]
+      [32m+[0m[0m name                   = "ecs-sg-v-rails-1001-dev-apn1"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m region                 = "ap-northeast-1"
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group.memcached_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "memcached_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "Security group for ElastiCache Memcached cluster"
+      [32m+[0m[0m egress                 = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = [
+                  [32m+[0m[0m "0.0.0.0/0",
+                ]
+              [32m+[0m[0m description      = "Allow all outbound traffic"
+              [32m+[0m[0m from_port        = 0
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "-1"
+              [32m+[0m[0m security_groups  = []
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 0
+            },
+        ]
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = []
+              [32m+[0m[0m description      = "Allow Memcached access from ECS tasks"
+              [32m+[0m[0m from_port        = 11211
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "tcp"
+              [32m+[0m[0m security_groups  = (known after apply)
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 11211
+            },
+        ]
+      [32m+[0m[0m name                   = "memcached-sg-v-rails-1001-dev-apn1"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m region                 = "ap-northeast-1"
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "sg-memcached-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-access-control"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "sg-memcached-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "memcached-access-control"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group.rds_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "rds_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "RDS Security Group"
+      [32m+[0m[0m egress                 = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = [
+                  [32m+[0m[0m "0.0.0.0/0",
+                ]
+              [32m+[0m[0m from_port        = 0
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "-1"
+              [32m+[0m[0m security_groups  = []
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 0
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ]
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = (known after apply)
+      [32m+[0m[0m name                   = "rds-sg-v-rails-1001-dev-apn1"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m region                 = "ap-northeast-1"
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group.vpc_endpoint_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "vpc_endpoint_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "Security group for VPC endpoints"
+      [32m+[0m[0m egress                 = [
+          [32m+[0m[0m {
+              [32m+[0m[0m cidr_blocks      = [
+                  [32m+[0m[0m "0.0.0.0/0",
+                ]
+              [32m+[0m[0m from_port        = 0
+              [32m+[0m[0m ipv6_cidr_blocks = []
+              [32m+[0m[0m prefix_list_ids  = []
+              [32m+[0m[0m protocol         = "-1"
+              [32m+[0m[0m security_groups  = []
+              [32m+[0m[0m self             = false
+              [32m+[0m[0m to_port          = 0
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ]
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = (known after apply)
+      [32m+[0m[0m name                   = "vpc-endpoint-sg-v-rails-1001-dev-apn1"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m region                 = "ap-northeast-1"
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group_rule.ecs_to_rds[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "ecs_to_rds" {
+      [32m+[0m[0m description              = "Allow ECS access to RDS"
+      [32m+[0m[0m from_port                = 5432
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "tcp"
+      [32m+[0m[0m region                   = "ap-northeast-1"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 5432
+      [32m+[0m[0m type                     = "ingress"
+    }
+
+[1m  # aws_security_group_rule.ecs_to_vpc_endpoint[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "ecs_to_vpc_endpoint" {
+      [32m+[0m[0m from_port                = 443
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "tcp"
+      [32m+[0m[0m region                   = "ap-northeast-1"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 443
+      [32m+[0m[0m type                     = "ingress"
+    }
+
+[1m  # aws_subnet.private_subnet[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "private_subnet" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "ap-northeast-1a"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.0.2.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m region                                         = "ap-northeast-1"
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "private-subnet-v-rails-1001-dev-apn1-0"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "private-subnet-v-rails-1001-dev-apn1-0"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.private_subnet[1][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "private_subnet" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "ap-northeast-1c"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.0.3.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m region                                         = "ap-northeast-1"
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "private-subnet-v-rails-1001-dev-apn1-1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "private-subnet-v-rails-1001-dev-apn1-1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_vpc.vpc[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc" "vpc" {
+      [32m+[0m[0m arn                                  = (known after apply)
+      [32m+[0m[0m cidr_block                           = "10.0.0.0/16"
+      [32m+[0m[0m default_network_acl_id               = (known after apply)
+      [32m+[0m[0m default_route_table_id               = (known after apply)
+      [32m+[0m[0m default_security_group_id            = (known after apply)
+      [32m+[0m[0m dhcp_options_id                      = (known after apply)
+      [32m+[0m[0m enable_dns_hostnames                 = true
+      [32m+[0m[0m enable_dns_support                   = true
+      [32m+[0m[0m enable_network_address_usage_metrics = (known after apply)
+      [32m+[0m[0m id                                   = (known after apply)
+      [32m+[0m[0m instance_tenancy                     = "default"
+      [32m+[0m[0m ipv6_association_id                  = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block                      = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_network_border_group = (known after apply)
+      [32m+[0m[0m main_route_table_id                  = (known after apply)
+      [32m+[0m[0m owner_id                             = (known after apply)
+      [32m+[0m[0m region                               = "ap-northeast-1"
+      [32m+[0m[0m tags                                 = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "vpc-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+      [32m+[0m[0m tags_all                             = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "vpc-v-rails-1001-dev-apn1"
+          [32m+[0m[0m "Owner"       = "d2cx"
+        }
+    }
+
+[1m  # aws_vpc_endpoint.cloudwatch_logs[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_endpoint" "cloudwatch_logs" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m cidr_blocks           = (known after apply)
+      [32m+[0m[0m dns_entry             = (known after apply)
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m ip_address_type       = (known after apply)
+      [32m+[0m[0m network_interface_ids = (known after apply)
+      [32m+[0m[0m owner_id              = (known after apply)
+      [32m+[0m[0m policy                = (known after apply)
+      [32m+[0m[0m prefix_list_id        = (known after apply)
+      [32m+[0m[0m private_dns_enabled   = true
+      [32m+[0m[0m region                = "ap-northeast-1"
+      [32m+[0m[0m requester_managed     = (known after apply)
+      [32m+[0m[0m route_table_ids       = (known after apply)
+      [32m+[0m[0m security_group_ids    = (known after apply)
+      [32m+[0m[0m service_name          = "com.amazonaws.ap-northeast-1.logs"
+      [32m+[0m[0m service_region        = (known after apply)
+      [32m+[0m[0m state                 = (known after apply)
+      [32m+[0m[0m subnet_ids            = (known after apply)
+      [32m+[0m[0m tags_all              = (known after apply)
+      [32m+[0m[0m vpc_endpoint_type     = "Interface"
+      [32m+[0m[0m vpc_id                = (known after apply)
+
+      [32m+[0m[0m dns_options (known after apply)
+
+      [32m+[0m[0m subnet_configuration (known after apply)
+    }
+
+[1m  # aws_vpc_endpoint.ec2messages[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_endpoint" "ec2messages" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m cidr_blocks           = (known after apply)
+      [32m+[0m[0m dns_entry             = (known after apply)
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m ip_address_type       = (known after apply)
+      [32m+[0m[0m network_interface_ids = (known after apply)
+      [32m+[0m[0m owner_id              = (known after apply)
+      [32m+[0m[0m policy                = (known after apply)
+      [32m+[0m[0m prefix_list_id        = (known after apply)
+      [32m+[0m[0m private_dns_enabled   = true
+      [32m+[0m[0m region                = "ap-northeast-1"
+      [32m+[0m[0m requester_managed     = (known after apply)
+      [32m+[0m[0m route_table_ids       = (known after apply)
+      [32m+[0m[0m security_group_ids    = (known after apply)
+      [32m+[0m[0m service_name          = "com.amazonaws.ap-northeast-1.ec2messages"
+      [32m+[0m[0m service_region        = (known after apply)
+      [32m+[0m[0m state                 = (known after apply)
+      [32m+[0m[0m subnet_ids            = (known after apply)
+      [32m+[0m[0m tags_all              = (known after apply)
+      [32m+[0m[0m vpc_endpoint_type     = "Interface"
+      [32m+[0m[0m vpc_id                = (known after apply)
+
+      [32m+[0m[0m dns_options (known after apply)
+
+      [32m+[0m[0m subnet_configuration (known after apply)
+    }
+
+[1m  # aws_vpc_endpoint.ecr_api[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_endpoint" "ecr_api" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m cidr_blocks           = (known after apply)
+      [32m+[0m[0m dns_entry             = (known after apply)
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m ip_address_type       = (known after apply)
+      [32m+[0m[0m network_interface_ids = (known after apply)
+      [32m+[0m[0m owner_id              = (known after apply)
+      [32m+[0m[0m policy                = (known after apply)
+      [32m+[0m[0m prefix_list_id        = (known after apply)
+      [32m+[0m[0m private_dns_enabled   = true
+      [32m+[0m[0m region                = "ap-northeast-1"
+      [32m+[0m[0m requester_managed     = (known after apply)
+      [32m+[0m[0m route_table_ids       = (known after apply)
+      [32m+[0m[0m security_group_ids    = (known after apply)
+      [32m+[0m[0m service_name          = "com.amazonaws.ap-northeast-1.ecr.api"
+      [32m+[0m[0m service_region        = (known after apply)
+      [32m+[0m[0m state                 = (known after apply)
+      [32m+[0m[0m subnet_ids            = (known after apply)
+      [32m+[0m[0m tags_all              = (known after apply)
+      [32m+[0m[0m vpc_endpoint_type     = "Interface"
+      [32m+[0m[0m vpc_id                = (known after apply)
+
+      [32m+[0m[0m dns_options (known after apply)
+
+      [32m+[0m[0m subnet_configuration (known after apply)
+    }
+
+[1m  # aws_vpc_endpoint.ecr_dkr[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_endpoint" "ecr_dkr" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m cidr_blocks           = (known after apply)
+      [32m+[0m[0m dns_entry             = (known after apply)
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m ip_address_type       = (known after apply)
+      [32m+[0m[0m network_interface_ids = (known after apply)
+      [32m+[0m[0m owner_id              = (known after apply)
+      [32m+[0m[0m policy                = (known after apply)
+      [32m+[0m[0m prefix_list_id        = (known after apply)
+      [32m+[0m[0m private_dns_enabled   = true
+      [32m+[0m[0m region                = "ap-northeast-1"
+      [32m+[0m[0m requester_managed     = (known after apply)
+      [32m+[0m[0m route_table_ids       = (known after apply)
+      [32m+[0m[0m security_group_ids    = (known after apply)
+      [32m+[0m[0m service_name          = "com.amazonaws.ap-northeast-1.ecr.dkr"
+      [32m+[0m[0m service_region        = (known after apply)
+      [32m+[0m[0m state                 = (known after apply)
+      [32m+[0m[0m subnet_ids            = (known after apply)
+      [32m+[0m[0m tags_all              = (known after apply)
+      [32m+[0m[0m vpc_endpoint_type     = "Interface"
+      [32m+[0m[0m vpc_id                = (known after apply)
+
+      [32m+[0m[0m dns_options (known after apply)
+
+      [32m+[0m[0m subnet_configuration (known after apply)
+    }
+
+[1m  # aws_vpc_endpoint.s3[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_endpoint" "s3" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m cidr_blocks           = (known after apply)
+      [32m+[0m[0m dns_entry             = (known after apply)
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m ip_address_type       = (known after apply)
+      [32m+[0m[0m network_interface_ids = (known after apply)
+      [32m+[0m[0m owner_id              = (known after apply)
+      [32m+[0m[0m policy                = (known after apply)
+      [32m+[0m[0m prefix_list_id        = (known after apply)
+      [32m+[0m[0m private_dns_enabled   = (known after apply)
+      [32m+[0m[0m region                = "ap-northeast-1"
+      [32m+[0m[0m requester_managed     = (known after apply)
+      [32m+[0m[0m route_table_ids       = (known after apply)
+      [32m+[0m[0m security_group_ids    = (known after apply)
+      [32m+[0m[0m service_name          = "com.amazonaws.ap-northeast-1.s3"
+      [32m+[0m[0m service_region        = (known after apply)
+      [32m+[0m[0m state                 = (known after apply)
+      [32m+[0m[0m subnet_ids            = (known after apply)
+      [32m+[0m[0m tags_all              = (known after apply)
+      [32m+[0m[0m vpc_endpoint_type     = "Gateway"
+      [32m+[0m[0m vpc_id                = (known after apply)
+
+      [32m+[0m[0m dns_options (known after apply)
+
+      [32m+[0m[0m subnet_configuration (known after apply)
+    }
+
+[1m  # aws_vpc_endpoint.ssm[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_endpoint" "ssm" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m cidr_blocks           = (known after apply)
+      [32m+[0m[0m dns_entry             = (known after apply)
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m ip_address_type       = (known after apply)
+      [32m+[0m[0m network_interface_ids = (known after apply)
+      [32m+[0m[0m owner_id              = (known after apply)
+      [32m+[0m[0m policy                = (known after apply)
+      [32m+[0m[0m prefix_list_id        = (known after apply)
+      [32m+[0m[0m private_dns_enabled   = true
+      [32m+[0m[0m region                = "ap-northeast-1"
+      [32m+[0m[0m requester_managed     = (known after apply)
+      [32m+[0m[0m route_table_ids       = (known after apply)
+      [32m+[0m[0m security_group_ids    = (known after apply)
+      [32m+[0m[0m service_name          = "com.amazonaws.ap-northeast-1.ssm"
+      [32m+[0m[0m service_region        = (known after apply)
+      [32m+[0m[0m state                 = (known after apply)
+      [32m+[0m[0m subnet_ids            = (known after apply)
+      [32m+[0m[0m tags_all              = (known after apply)
+      [32m+[0m[0m vpc_endpoint_type     = "Interface"
+      [32m+[0m[0m vpc_id                = (known after apply)
+
+      [32m+[0m[0m dns_options (known after apply)
+
+      [32m+[0m[0m subnet_configuration (known after apply)
+    }
+
+[1m  # aws_vpc_endpoint.ssmmessages[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_endpoint" "ssmmessages" {
+      [32m+[0m[0m arn                   = (known after apply)
+      [32m+[0m[0m cidr_blocks           = (known after apply)
+      [32m+[0m[0m dns_entry             = (known after apply)
+      [32m+[0m[0m id                    = (known after apply)
+      [32m+[0m[0m ip_address_type       = (known after apply)
+      [32m+[0m[0m network_interface_ids = (known after apply)
+      [32m+[0m[0m owner_id              = (known after apply)
+      [32m+[0m[0m policy                = (known after apply)
+      [32m+[0m[0m prefix_list_id        = (known after apply)
+      [32m+[0m[0m private_dns_enabled   = true
+      [32m+[0m[0m region                = "ap-northeast-1"
+      [32m+[0m[0m requester_managed     = (known after apply)
+      [32m+[0m[0m route_table_ids       = (known after apply)
+      [32m+[0m[0m security_group_ids    = (known after apply)
+      [32m+[0m[0m service_name          = "com.amazonaws.ap-northeast-1.ssmmessages"
+      [32m+[0m[0m service_region        = (known after apply)
+      [32m+[0m[0m state                 = (known after apply)
+      [32m+[0m[0m subnet_ids            = (known after apply)
+      [32m+[0m[0m tags_all              = (known after apply)
+      [32m+[0m[0m vpc_endpoint_type     = "Interface"
+      [32m+[0m[0m vpc_id                = (known after apply)
+
+      [32m+[0m[0m dns_options (known after apply)
+
+      [32m+[0m[0m subnet_configuration (known after apply)
+    }
+
+[1m  # aws_wafv2_ip_set.developer_ip_whitelist[0m will be created
+[0m  [32m+[0m[0m resource "aws_wafv2_ip_set" "developer_ip_whitelist" {
+      [32m+[0m[0m addresses          = [
+          [32m+[0m[0m "106.72.159.1/32",
+          [32m+[0m[0m "113.43.206.210/32",
+          [32m+[0m[0m "113.43.206.226/32",
+          [32m+[0m[0m "126.91.154.7/32",
+          [32m+[0m[0m "136.226.238.0/23",
+          [32m+[0m[0m "147.161.192.0/23",
+          [32m+[0m[0m "147.161.194.0/23",
+          [32m+[0m[0m "147.161.196.0/23",
+          [32m+[0m[0m "147.161.198.0/23",
+          [32m+[0m[0m "165.225.110.0/23",
+          [32m+[0m[0m "165.225.96.0/23",
+          [32m+[0m[0m "167.103.28.0/23",
+          [32m+[0m[0m "167.103.42.0/23",
+          [32m+[0m[0m "167.103.44.0/23",
+          [32m+[0m[0m "167.103.46.0/23",
+          [32m+[0m[0m "175.130.50.153/32",
+          [32m+[0m[0m "182.169.67.143/32",
+          [32m+[0m[0m "219.104.120.111/32",
+          [32m+[0m[0m "219.59.48.186/32",
+          [32m+[0m[0m "59.158.122.86/32",
+        ]
+      [32m+[0m[0m arn                = (known after apply)
+      [32m+[0m[0m description        = "Developer IP whitelist for v-rails-1001 dev environment"
+      [32m+[0m[0m id                 = (known after apply)
+      [32m+[0m[0m ip_address_version = "IPV4"
+      [32m+[0m[0m lock_token         = (known after apply)
+      [32m+[0m[0m name               = "v-rails-1001-dev-apn1-developer-ip-whitelist"
+      [32m+[0m[0m name_prefix        = (known after apply)
+      [32m+[0m[0m region             = "us-east-1"
+      [32m+[0m[0m scope              = "CLOUDFRONT"
+      [32m+[0m[0m tags               = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "waf-ipset-v-rails-1001-dev-apn1-developers"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "developer-ip-whitelist"
+        }
+      [32m+[0m[0m tags_all           = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "waf-ipset-v-rails-1001-dev-apn1-developers"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "developer-ip-whitelist"
+        }
+    }
+
+[1m  # aws_wafv2_web_acl.cloudfront_waf[0m will be created
+[0m  [32m+[0m[0m resource "aws_wafv2_web_acl" "cloudfront_waf" {
+      [32m+[0m[0m application_integration_url = (known after apply)
+      [32m+[0m[0m arn                         = (known after apply)
+      [32m+[0m[0m capacity                    = (known after apply)
+      [32m+[0m[0m description                 = "WAF for CloudFront distribution - Developer IP restriction"
+      [32m+[0m[0m id                          = (known after apply)
+      [32m+[0m[0m lock_token                  = (known after apply)
+      [32m+[0m[0m name                        = "v-rails-1001-dev-apn1-cloudfront-waf"
+      [32m+[0m[0m name_prefix                 = (known after apply)
+      [32m+[0m[0m region                      = "us-east-1"
+      [32m+[0m[0m scope                       = "CLOUDFRONT"
+      [32m+[0m[0m tags                        = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "waf-webacl-v-rails-1001-dev-apn1-cloudfront"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "cloudfront-access-control"
+        }
+      [32m+[0m[0m tags_all                    = {
+          [32m+[0m[0m "App"         = "v-rails-1001"
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "waf-webacl-v-rails-1001-dev-apn1-cloudfront"
+          [32m+[0m[0m "Owner"       = "d2cx"
+          [32m+[0m[0m "Purpose"     = "cloudfront-access-control"
+        }
+
+      [32m+[0m[0m default_action {
+          [32m+[0m[0m block {
+            }
+        }
+
+      [32m+[0m[0m rule {
+          [32m+[0m[0m name     = "AllowDeveloperIPs"
+          [32m+[0m[0m priority = 1
+
+          [32m+[0m[0m action {
+              [32m+[0m[0m allow {
+                }
+            }
+
+          [32m+[0m[0m statement {
+              [32m+[0m[0m ip_set_reference_statement {
+                  [32m+[0m[0m arn = (known after apply)
+                }
+            }
+
+          [32m+[0m[0m visibility_config {
+              [32m+[0m[0m cloudwatch_metrics_enabled = true
+              [32m+[0m[0m metric_name                = "v-rails-1001-dev-AllowDeveloperIPs"
+              [32m+[0m[0m sampled_requests_enabled   = true
+            }
+        }
+
+      [32m+[0m[0m visibility_config {
+          [32m+[0m[0m cloudwatch_metrics_enabled = true
+          [32m+[0m[0m metric_name                = "v-rails-1001-dev-CloudFrontWAF"
+          [32m+[0m[0m sampled_requests_enabled   = true
+        }
+    }
+
+[1m  # random_string.bucket_suffix[0m will be created
+[0m  [32m+[0m[0m resource "random_string" "bucket_suffix" {
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m keepers     = {
+          [32m+[0m[0m "bucket_purpose" = "static-assets"
+        }
+      [32m+[0m[0m length      = 8
+      [32m+[0m[0m lower       = true
+      [32m+[0m[0m min_lower   = 0
+      [32m+[0m[0m min_numeric = 0
+      [32m+[0m[0m min_special = 0
+      [32m+[0m[0m min_upper   = 0
+      [32m+[0m[0m number      = true
+      [32m+[0m[0m numeric     = true
+      [32m+[0m[0m result      = (known after apply)
+      [32m+[0m[0m special     = false
+      [32m+[0m[0m upper       = false
+    }
+
+[1mPlan:[0m 77 to add, 0 to change, 0 to destroy.
+[0m
+Changes to Outputs:
+  [32m+[0m[0m alb_dns_name                   = (known after apply)
+  [32m+[0m[0m alb_domain_url                 = "https://stg2.tsunagujapan.com"
+  [32m+[0m[0m alb_listener_arn               = (known after apply)
+  [32m+[0m[0m alb_security_group_id          = (known after apply)
+  [32m+[0m[0m alb_target_group_arn           = (known after apply)
+  [32m+[0m[0m cloudfront_domain_name         = (known after apply)
+  [32m+[0m[0m private_subnet_ids             = [
+      [32m+[0m[0m (known after apply),
+      [32m+[0m[0m (known after apply),
+    ]
+  [32m+[0m[0m rds_database_name              = "mydatabasev2"
+  [32m+[0m[0m rds_endpoint                   = (known after apply)
+  [32m+[0m[0m rds_security_group_id          = (known after apply)
+  [32m+[0m[0m vpc_endpoint_sg_id             = (known after apply)
+  [32m+[0m[0m vpc_id                         = (known after apply)
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.

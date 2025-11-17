@@ -1,0 +1,26 @@
+<% body_class 'index' %>
+<% set_meta_tags title: @meta_title,
+   description: @meta_desc %>
+<%= react_component('hero/hero_view',{elements:{category: "tags",
+    "category_full": @title,"page_type": "index",
+    "sp_bg_img": asset_pack_path("media/images/banner/wowjapan/hero.jpg"),
+    "pc_bg_img": asset_pack_path("media/images/banner/wowjapan/hero.jpg"),
+    "intro_text": @desc,
+    "area": "",
+    "weather": {},
+    "ad": {
+      "img": "",
+      "alt": "",
+      "url": ""
+    }
+  },
+}) %>
+<%= render "shared/breadcrumb" %>
+<section>
+  <div class="container">
+    <h2><%=I18n.t("tags.list_title", tag: @title ) %></h2>
+    <%= render "articles/list", articles: @articles %>
+  </div>
+</section>
+<%= render "shared/ads" %>
+<%= render "shared/sns" %>

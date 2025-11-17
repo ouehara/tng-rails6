@@ -1,0 +1,1280 @@
+$green1: #2c9d92;
+$green2: #cde8eb;
+
+section+section {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------------------------
+main
+----------------------------------------------------------*/
+.area-hero {
+  position: relative;
+  display: flex;
+
+  &.gunma {
+    /* (画像の高さ / 画像の横幅) × 100 */
+    width: 100%;
+    height: 0;
+    padding-top: 85.10638297%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/area/feature/prefecture/gunma/hero.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include mq(sm) {
+      /* (画像の高さ / 画像の横幅) × 100 */
+      padding-top: 35%;
+    }
+  }
+
+  &.setouchi {
+    width: 100%;
+    height: 0;
+    padding-top: 85.10638297%;
+    background-image: url("../images/newsletter/setouchi/hero_mob.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include mq(md) {
+      background-image: url("../images/newsletter/setouchi/hero.jpg");
+      padding-top: 35%;
+    }
+  }
+
+  .excellence {}
+
+  #teaser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+
+    h1 {
+      display: inline-block;
+      font-size: 40px;
+      text-shadow: 1px 1px 3px #444;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 22px;
+      display: inline-block;
+      text-shadow: 1px 1px 3px #444;
+    }
+
+    @include mq(sm) {
+      display: inline;
+
+      h1 {
+        display: inline;
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 40px;
+        display: inline;
+      }
+    }
+
+  }
+
+  &_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: left;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+
+    @include mq(md) {
+      padding: 0;
+    }
+  }
+
+  &_lead {
+    font-size: 30px;
+    text-shadow:
+      1px 1px 0px #079bdd,
+      -1px -1px 0px #079bdd,
+      -1px 1px 0px #079bdd,
+      1px -1px 0px #079bdd,
+      1px 0px 0px #079bdd,
+      -1px -0px 0px #079bdd,
+      0px 1px 0px #079bdd,
+      0px -1px 0px #079bdd,
+      1px 1px 3px #444;
+    margin: 0;
+
+    @include mq(md) {
+      font-size: 42px;
+      letter-spacing: .08em;
+      text-shadow:
+        2px 2px 0px #079bdd,
+        -2px -2px 0px #079bdd,
+        -2px 2px 0px #079bdd,
+        2px -2px 0px #079bdd,
+        2px 0px 0px #079bdd,
+        -2px -0px 0px #079bdd,
+        0px 2px 0px #079bdd,
+        0px -2px 0px #079bdd,
+        2px 2px 4px #444;
+    }
+  }
+}
+
+.feature {
+  &_pageLogo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 220px;
+    fill: white;
+    z-index: 100;
+  }
+
+  &_abouts {
+    background-color: #48b3eb;
+    color: white;
+    padding: 40px 20px;
+
+    @include mq(md) {
+      padding: 50px 60px;
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto 1em;
+      color: #fff;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    &-maps {
+      width: 100%;
+      padding-top: 20px;
+
+      @include mq(md) {
+        padding-top: 40px;
+        display: flex;
+      }
+    }
+
+    &-map {
+      width: 100%;
+
+      @include mq(md) {
+        width: 50%;
+      }
+
+      &>img {
+        width: 100%;
+        display: block;
+      }
+
+      &:first-child {
+        &>img {
+          border: 2px solid #a1d1e2;
+        }
+      }
+
+      &:last-of-type {
+        padding-top: 40px;
+
+        @include mq(md) {
+          padding-top: 0;
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+
+  &_newsletter {
+    background-color: #9dc3e6;
+    padding: 50px 20px;
+
+    @include mq(md) {
+      padding: 50px 0;
+    }
+
+    &-actions {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+
+      @include mq(md) {
+        width: 100%;
+        max-width: 688px;
+      }
+    }
+
+    &-action {
+      display: block;
+      width: 100%;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      transition: .5s;
+      padding: 10px 40px 5px;
+      background-color: #f7931e;
+
+      @include mq(md) {
+        border-radius: 8px;
+        border-width: 4px;
+        padding: 15px 60px 5px;
+      }
+
+      &:hover {
+        border-color: #48b3eb;
+        background-color: #48b3eb;
+      }
+
+      &>img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_introduce {
+    padding-top: 40px;
+    padding-bottom: 0;
+
+    @include mq(md) {
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      color: #48b3eb;
+      text-align: center;
+      margin: 0 20px 1.5em;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+        margin: 0 auto 1em;
+      }
+    }
+  }
+
+  &_area {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+
+    @include mq(md) {
+      padding-top: 60px;
+
+      &:nth-of-type(even) {
+        .feature_area-images {
+          order: 1;
+        }
+
+        .feature_area-desc {}
+      }
+    }
+
+    &-images {
+      width: 100%;
+
+      @include mq(md) {
+        width: 50%;
+      }
+
+      &>img {
+        width: 100%;
+      }
+    }
+
+    &-desc {
+      width: 100%;
+      padding: 40px 20px;
+
+      @include mq(md) {
+        width: 50%;
+        padding: 50px;
+      }
+    }
+
+    &-title {
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto 1.5em;
+      font-size: 2.4rem !important;
+
+      @include mq(md) {
+        font-size: 3rem !important;
+      }
+    }
+
+    &-text {
+      font-weight: bold;
+      font-size: 1.5rem;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  &_closing {
+    background-color: #9dc3e6;
+    padding: 50px 20px 80px;
+    // padding: 50px 20px;
+
+    @include mq(md) {
+      padding: 50px 80px 120px;
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      text-align: center;
+      color: #fff;
+      margin: 0 auto 1em;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+      }
+    }
+
+    &-desc {
+      color: #fff;
+      font-size: 1.5rem;
+
+      @include mq(md) {
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        font-size: 1.6rem;
+      }
+    }
+
+    .feature_newsletter-actions {
+      margin-top: 40px;
+
+      @include mq(md) {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  &_campaign {
+    padding-bottom: 40px;
+
+    @include mq(md) {
+      padding-bottom: 75px;
+    }
+
+    &-head {
+      &>img {
+        width: 100%;
+      }
+    }
+
+    &-body {
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include mq(md) {
+        padding-top: 75px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+    }
+
+    &-desc {
+      font-size: 1.5rem;
+
+      @include mq(md) {
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        font-size: 1.6rem;
+      }
+    }
+
+    &-prize {}
+
+    &-period {
+      p {
+        font-size: 1.5em;
+        padding: 0 1em;
+      }
+    }
+
+    &-heading {
+      font-size: 2.8rem;
+      text-align: left;
+      margin: 2em auto 1em;
+      background: #48b3eb;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+        padding: 10px;
+      }
+    }
+
+    &-items {
+      list-style: none;
+      font-size: 1.5em;
+      padding: 0 1em;
+    }
+
+    &-item {
+      margin-top: 0.5em;
+    }
+
+    &-sns {
+      margin-top: 1em;
+      list-style: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 0 1em;
+    }
+  }
+}
+
+.feature_about {
+  background-color: #9bbd3e;
+  display: block;
+  color: white;
+
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    width: 100%;
+    padding: 30px;
+
+    @include mq(md) {
+      width: 50%;
+    }
+  }
+
+  .feature_about_map {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.feature_howto {
+  background-color: #e7e7ce;
+  display: block;
+  color: #706f5a;
+
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    width: 100%;
+    padding: 30px;
+
+    @include mq(md) {
+      width: 50%;
+    }
+  }
+
+  .feature_howto_line {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.feature_area_name {
+  background-color: #f7f7f8;
+  color: #939396;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  h4 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  p {
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.feature_area_detail {
+  background-color: #fff;
+  display: block;
+  color: #1d1e1e;
+
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    width: 100%;
+
+    @include mq(md) {
+      width: 50%;
+    }
+  }
+
+  .feature_area_detail_text {
+    padding: 30px;
+    font-size: 16px;
+  }
+
+  .feature_howto_line {
+    width: 100%;
+
+  }
+
+  .feature_area_detail_title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+
+  .feature_learn_more_btn {
+    //display:block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 45px;
+    font-weight: bold;
+
+    &.color1 {
+      background-color: #93d1ca;
+    }
+
+    &.color2 {
+      background-color: #b5da9e;
+    }
+
+    &.color3 {
+      background-color: #aeddef;
+    }
+
+    &.color4 {
+      background-color: #dde89a;
+    }
+
+    &.color5 {
+      background-color: #f19db2;
+    }
+
+    &.color6 {
+      background-color: #f2c6dc;
+    }
+
+    &.color7 {
+      background-color: #f9c9ab;
+    }
+
+    &.color8 {
+      background-color: #f9c9ab;
+    }
+  }
+
+  .feature_learn_more_icon {
+    color: white;
+    margin-right: 15px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .feature_area_credit {
+    margin-top: 45px;
+    text-align: center;
+    width: 100%;
+
+    span {
+      display: block;
+      color: #939396;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .feature_area_credit_logo {
+      max-width: 200px;
+    }
+
+  }
+
+}
+
+.feature_area_related {
+  padding: 45px 30px;
+  background-color: #f7f7f8;
+
+  &_bannerArea {
+    margin: 0 auto 25px;
+    max-width: 900px;
+  }
+
+  &_banner {
+    display: block;
+  }
+
+  h3.related_articles {
+    color: #939396;
+    font-size: 30px;
+    margin: 45px auto 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .article-list-item-ribbon {
+    display: none;
+  }
+}
+
+// Gunma FIT Promo
+$green1: #2c9d92;
+$green2: #cde8eb;
+
+.excellence {
+  &_hero {
+    position: relative;
+    // display: flex;
+    // 1080 : 650 = 100% : 60.185%
+    // 1130 : 636 = 100% : 56.283185840707965%
+    width: 100%;
+    height: 0;
+    padding-top: 56.28318584070796%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include mq(sm) {}
+
+    &.gunma-a {
+      background-image: url("../images/area/feature/prefecture/gunma_excellence/hero-a.png");
+
+    }
+
+    &.gunma-b {
+      background-image: url("../images/area/feature/prefecture/gunma_excellence/hero-b.png");
+    }
+  }
+
+  &_titleArea {
+    position: absolute;
+    width: calc(100% - 30px);
+
+    @include mq(sm) {
+      width: calc(100% - 50px);
+    }
+
+    &.gunma-a {
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq(sm) {
+        left: 50px;
+      }
+    }
+
+    &.gunma-b {
+      left: 20px;
+      bottom: 30px;
+
+      @include mq(sm) {
+        left: 50px;
+      }
+    }
+  }
+
+  &_title {
+    &>img {
+      width: 100%;
+    }
+
+    &.gunma-a {
+      width: 63.7%;
+
+      @include mq(sm) {
+        width: 53.7%;
+      }
+    }
+
+    &.gunma-b {
+      width: 74.4%;
+
+      @include mq(sm) {
+        width: 64.4%;
+      }
+    }
+  }
+
+  &_abouts {
+    background-color: $green1;
+
+    @include mq(sm) {}
+
+    &-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-desc {
+      width: 100%;
+      padding: 40px 0 30px;
+
+      @include mq(sm) {
+        width: 50%;
+        padding: 40px 25px 40px 0;
+      }
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto 1em;
+      color: #fff;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      color: #fff;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    &-map {
+      width: 100%;
+      padding: 0 0 40px;
+      text-align: center;
+
+      @include mq(sm) {
+        width: 50%;
+        padding: 40px 0 40px 25px;
+      }
+
+      &>img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_access {
+    background-color: $green2;
+
+    @include mq(sm) {}
+
+    &-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-desc {
+      width: 100%;
+      color: $green1;
+      padding: 40px 0 30px;
+
+      @include mq(sm) {
+        width: 50%;
+        padding: 50px 25px 50px 0;
+      }
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto 1em;
+      color: $green1;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    &-root {
+      width: 100%;
+      padding: 0 0 40px;
+
+      @include mq(sm) {
+        width: 50%;
+        padding: 50px 0 50px 25px;
+      }
+
+      &>img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_attractions {
+    padding-top: 40px;
+
+    @include mq(sm) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &.container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include mq(sm) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto 1em;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  &_attraction {
+    padding-top: 30px;
+
+    @include mq(sm) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 20px;
+    }
+
+    &:nth-of-type(odd) {
+      .excellence_attraction-circle {}
+
+      .excellence_attraction-desc {
+        @include mq(sm) {
+          padding-left: 70px;
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+      .excellence_attraction-desc {
+        @include mq(sm) {
+          padding-right: 70px;
+        }
+      }
+
+      .excellence_attraction-circle {
+        @include mq(sm) {
+          order: 1;
+        }
+      }
+    }
+
+    // &:not(:first-of-type) {
+    //   padding-top: 30px;
+
+    //   @include mq(sm) {
+    //     padding-top: 20px;
+    //   }
+    // }
+
+    &-desc {
+      @include mq(sm) {
+        width: 58%;
+      }
+    }
+
+    &-title {
+      font-size: 2.4rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 1em auto .8em;
+
+      @include mq(md) {
+        font-size: 3rem;
+        margin: 0 auto 1.5em;
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    &-circle {
+      width: 58.5vw;
+      margin: auto;
+
+      @include mq(sm) {
+        width: 42%;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      padding-top: 100%;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      &.onsen {
+        background-image: url("../images/area/feature/prefecture/gunma_excellence/attractions-onsen.jpg");
+      }
+
+      &.nature {
+        background-image: url("../images/area/feature/prefecture/gunma_excellence/attractions-nature.jpg");
+      }
+
+      &.food {
+        background-image: url("../images/area/feature/prefecture/gunma_excellence/attractions-food.jpg");
+      }
+    }
+
+  }
+
+  &_stay {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include mq(sm) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &.container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include mq(sm) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto 1em;
+
+      @include mq(md) {
+        font-size: 3.6rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  &_articles {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+
+    @include mq(sm) {
+      margin-top: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+
+  &_article {
+    // display: grid;
+    // grid-template-columns: 128px 1fr;
+    // gap: 0 10px;
+
+    // @include mq(sm) {
+    //   display: block;
+    //   gap: 0;
+    // }
+
+    &-imgBox {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 63.6923%;
+
+      @include mq(sm) {}
+    }
+
+    &-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+    }
+
+    &-details {
+      width: 100%;
+      padding: 10px 0 0;
+
+      @include mq(sm) {
+        padding: 10px 15px 0;
+      }
+    }
+
+    &-sub {
+      display: flex;
+      justify-content: space-between;
+      color: #555;
+    }
+
+    &-area {
+      padding-left: 1.5em;
+      position: relative;
+
+      &::before {
+        content: "";
+        background: url("../images/icons/small_area_icon.png") no-repeat center center /contain;
+        width: 13px;
+        height: 17px;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @include mq(sm) {
+          top: 3px;
+        }
+      }
+    }
+
+    &-credit {
+      color: #337ab7;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 0.5em;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &-actions {
+      display: flex;
+      list-style: none;
+      margin-bottom: 0;
+      flex-wrap: wrap;
+
+      @include mq(sm) {
+        display: block;
+        margin-left: 0;
+      }
+    }
+
+    &-action {
+      margin-right: 10px;
+
+      @include mq(sm) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &_visit {
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    @include mq(sm) {
+      padding-top: 30px;
+      padding-bottom: 80px;
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+
+      @include mq(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+      }
+
+      &>br {
+        display: none;
+
+        @include mq(md) {
+          display: block;
+        }
+      }
+    }
+
+    &-content {
+      width: 100%;
+      margin-top: 20px;
+
+      @include mq(sm) {
+        margin-top: 40px;
+      }
+
+      // &+.excellence_visit-content {
+      //   margin-top: 20px;
+
+      //   @include mq(sm) {
+      //     margin-top: 40px;
+      //   }
+      // }
+    }
+
+    &-action {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+      &.banner {
+        max-width: 80%;
+
+        @include mq(sm) {
+          max-width: 350px;
+        }
+      }
+
+      &.logo {
+        max-width: 70%;
+
+        @include mq(sm) {
+          max-width: 230px;
+        }
+      }
+
+      &>img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+// footer
+.footer {
+  background: #1c1c1c;
+  padding-bottom: 15px;
+
+  &_sub_info {
+    margin-top: 15px;
+  }
+}

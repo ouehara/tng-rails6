@@ -1,0 +1,12 @@
+RewriteEngine On
+
+#Index Page
+RewriteCond %{THE_REQUEST} ^(GET|HEAD)
+RewriteCond %{DOCUMENT_ROOT}/cached_pages/index.html -f
+RewriteRule ^/$ /cached_pages/index.html [QSA]
+
+# Other Pages
+RewriteCond %{THE_REQUEST} ^(GET|HEAD)
+RewriteCond %{REQUEST_URI} ^([^.]+)/?$
+RewriteCond %{DOCUMENT_ROOT}/cached_pages/%1.html -f
+RewriteRule ^([^.]+)$ cached_pages/$1.html [QSA]

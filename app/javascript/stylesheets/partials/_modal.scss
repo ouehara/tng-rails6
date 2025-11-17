@@ -1,0 +1,322 @@
+.js-modal {
+  &_wrap {
+    opacity: 0;
+    // width: 100%;
+    // height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    // overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+
+    &.active {
+      animation: modalOpen 0.3s ease forwards;
+    }
+
+    &.active2 {
+      animation: modalClose 0.3s ease forwards;
+    }
+  }
+
+  &_overlay {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // z-index: 500;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  &_inner {
+    width: 100%;
+    margin: auto;
+    max-width: 100vw;
+    position: relative;
+    height: 100vh;
+
+    @include mq(sm) {
+      max-width: 600px;
+      height: auto;
+    }
+  }
+
+  &_contents {
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    height: 100vh;
+
+    @include mq(sm) {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      height: auto;
+      border-radius: 6px;
+    }
+
+    &-inner {
+      padding: 60px 20px;
+
+      @include mq(sm) {
+        padding: 48px;
+      }
+    }
+
+    &-title {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+
+      @include mq(sm) {
+        font-size: 3.2rem;
+        margin-bottom: 1em;
+      }
+    }
+
+    &-desc {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.6rem;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &-form {
+      margin-top: 30px;
+
+      &#mc_embed_signup div.mce_inline_error {
+        background-color: transparent;
+        color: #ff0000;
+      }
+
+      #mce-responses {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-top: 1em;
+
+        @include mq(sm) {
+          font-size: 1.8rem;
+        }
+
+        #mce-error-response {
+          color: #ff0000;
+        }
+
+        #mce-success-response {
+          color: #fff;
+        }
+      }
+    }
+
+    &-action {
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background: #f2a900;
+        color: #222;
+        border: none;
+        padding: 12px 0;
+        font-weight: bold;
+        margin-top: 20px;
+        border-radius: 2px;
+        font-size: 1.6rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &_close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    @include mq(sm) {}
+
+    &::before,
+    &::after {
+      content: "";
+      background-color: rgba(#222, 0.5);
+      position: absolute;
+      // top: -5px;
+      // right: 10px;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      position: absolute;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+@keyframes modalOpen {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 1000;
+  }
+}
+
+@keyframes modalClose {
+  0% {
+    opacity: 1;
+    z-index: 1000;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.js-modal_inner {
+  &.tj-travel {
+    margin: auto;
+    max-width: 80vw;
+    height: auto;
+
+    @include mq(sm) {
+      max-width: 600px;
+    }
+  }
+}
+
+.js-modal_contents {
+
+  // Newsletter Form
+  &.newsletter {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)),
+      url("../images/shared/bgi-js-model.jpg") no-repeat left bottom /cover;
+
+    .js-modal_close {
+
+      &::before,
+      &::after {
+        background-color: #fff;
+      }
+    }
+
+    .js-modal_contents-title {
+      color: #fff;
+    }
+
+    .js-modal_contents-desc {
+      color: #fff;
+    }
+
+    .js-modal_contents-form {
+
+      .indicates-required {
+        color: #fff;
+        text-align: right;
+      }
+
+      .asterisk {
+        color: #ff0000;
+      }
+
+      label {
+        color: #fff;
+      }
+
+      input[type="email"] {
+        width: 100%;
+        line-height: 36px;
+        display: block;
+      }
+    }
+  }
+
+  // Travel Contact Link
+  &.tj-travel {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)),
+      url("../images/shared/bgi-js-model-travel.jpg") no-repeat center center /cover;
+    height: auto;
+    border-radius: 6px;
+
+    .js-modal_close {
+
+      &::before,
+      &::after {
+        background-color: #fff;
+      }
+    }
+
+    .js-modal_contents-title {
+      color: #fff;
+      text-shadow: 1px 1px 3px #444;
+      font-size: 2.8rem;
+      margin-bottom: 1em;
+
+      @include mq(sm) {
+        font-size: 3.2rem;
+      }
+    }
+
+    .js-modal_contents-desc {
+      color: #fff;
+      font-size: 1.4rem;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+      }
+    }
+
+    .js-modal_contents-action {
+      width: 100%;
+      margin: 40px auto 0;
+
+      &>a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background: #f2a900;
+        color: #222;
+        border: none;
+        padding: 12px 0;
+        font-weight: bold;
+        border-radius: 2px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

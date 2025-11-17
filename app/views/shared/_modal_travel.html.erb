@@ -1,0 +1,89 @@
+<div class="js-modal_wrap" id="js-modalWrap" role="dialog" tabindex="-1">
+  <div class="js-modal_overlay" id="js-modalBG"></div>
+  <div id="js-modal_travel" class="js-modal_inner tj-travel" role="document">
+    <div class="js-modal_contents tj-travel">
+      <button type="button" class="js-modal_close" id="js-modalClose" aria-label="Close"></button>
+      <div class="js-modal_contents-inner">
+        <h2 class="js-modal_contents-title"><%= t("modalarea.travel.title") %></h2>
+        <p class="js-modal_contents-desc"><%= t("modalarea.travel.desc_html") %></p>
+        <div class="js-modal_contents-action">
+          <a href="<%= t("modalarea.travel.pageUrl") %>" id="js-modal_contents-travel"><%= t("modalarea.travel.link_label") %></a>
+        </div>
+      </div>
+    </div><!-- /.js-modal_contents -->
+  </div><!-- /.js-modal_inner -->
+</div><!-- /.js-modal_wrap -->
+
+<script>
+  // Modal Settings
+  const bodyEle = document.body;
+  const htmlEle = document.documentElement;
+  const modalWindow = document.getElementById('js-modalWrap');
+  const modalCloseBtn = document.getElementById('js-modalClose');
+  const modalBG = document.getElementById('js-modalBG');
+
+  // Modal Display Time
+  const dispTime = 15000; // 15s
+
+  // Limit Date Setting
+  const limitDate = 1; //日数を設定
+  let currentDate = new Date();
+  currentDate.setTime(currentDate.getTime() + (limitDate *24*60*60*1000)); //1日＝1000ms * 60s * 60min * 24h
+
+  // テスト用Cookie破棄設定 ○分後
+  //currentDate.setTime(currentDate.getTime() + (limitDate * 60 * 1000));
+
+  const expireDate = currentDate.toGMTString();
+  // console.log(expireDate);
+
+  // Modal Open
+  function modalOpen() {
+    bodyEle.classList.add('is-modalOpen');
+    htmlEle.classList.add('is-modalOpen');
+  }
+
+  // Modal Close
+  function modalClose() {
+    bodyEle.classList.remove('is-modalOpen');
+    htmlEle.classList.remove('is-modalOpen');
+  }
+
+  function modalLoad(e) {
+    if (document.cookie.indexOf('tj_travel_contact=first') === -1) {
+      document.cookie = 'tj_travel_contact=first; path=/' + ';expires=' + expireDate;
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          modalOpen();
+          modalWindow.classList.add('active');
+        }, dispTime);
+      });
+    } else {
+      window.addEventListener('load', () => {
+        modalClose();
+        modalWindow.classList.remove('active');
+      });
+    }
+    // console.log('769px or more');
+  }
+
+  modalLoad();
+
+  modalBG.addEventListener('click', () => {
+    modalWindow.classList.add('active2');
+    setTimeout(() => {
+      modalClose();
+      modalWindow.classList.remove('active');
+      modalWindow.classList.remove('active2');
+    }, 300);
+  });
+
+  modalCloseBtn.addEventListener('click', () => {
+    modalWindow.classList.add('active2');
+    setTimeout(() => {
+      modalClose();
+      modalWindow.classList.remove('active');
+      modalWindow.classList.remove('active2');
+    }, 300);
+  });
+
+</script>

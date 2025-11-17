@@ -1,0 +1,30 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Colors
+$color_yellow: #f2a900;
+$hov_yellow: darken($color_yellow, 5);
+$bg_black: #1c1c1c;
+$color_black: #333;
+$blue: #3facd6;
+
+// z-index
+$z_hdr: 900;
+$z_hdr_drawer: 910;
+$z_btn_pagetop: 500;
+
+// width
+// $base_width_pc: 1075px;
+$base_width_pc: 1130px;
+$base_width_tb: 750px;
+$base_width_sidebar: 330px;
+
+// Path
+$dir_image: "../images" !default;
+$dir_font: "../fonts" !default;
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+// icon
+$icomoon-font-family: "tj-ico" !default;
+$ico-star-full: "\e9d9";

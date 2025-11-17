@@ -1,0 +1,55 @@
+<div class="row">
+
+  <div class="x_panel">
+    <%= form_for([:admin, @new], html: { class: "form", :multipart => true }) do |f| %>
+
+      <div class="field">
+        <%= f.label :img %><br>
+        <%= f.file_field :img %>
+      </div>
+
+      <%= f.submit class: "btn btn-success pull-right", data: { disable_with: "Submitting..." } %>
+
+    <% end %>
+
+    <div class="x_title">
+      <h2>Image explorer</h2>
+    </div>
+    <div class="x_content">
+      <div class="images-wrapper">
+        <% @img.each do |i| %>
+          <div class="img-child" data-path="<%= i.original_url%>&d=750x750">
+            <img src="<%= i.medium_url %>" class="img-responsive" />
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="paginate">
+      <%= paginate @img, views_prefix: 'admin' %>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(".img-child").on("click", function(){
+    var a = this.getAttribute('data-path');
+    console.log(a);
+    var textArea = document.createElement("textarea");
+    textArea.value = a;
+    document.body.appendChild(textArea);
+    textArea.select();
+    try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful copied the path' : 'unsuccessful';
+    } catch (err) {
+        var msg = "Oops, unable to copy";
+        console.log('Oops, unable to copy');
+    }
+    $("body").append('<div style="position:fixed; width: 300px; right: 30px; bottom:30px;"><div class="alert alert-info alert-dismissible" >'+
+    msg+
+    '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>'+
+  '</div></div>')
+    $(".alert").addClass("fade in")
+    document.body.removeChild(textArea);
+  })
+</script>

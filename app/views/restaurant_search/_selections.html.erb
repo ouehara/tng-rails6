@@ -1,0 +1,20 @@
+<div class="savor-tags row">
+<p>Your selections</p>
+<% @search_params.each do |key, val| %>
+  <%
+    next if val == ""
+    if key == "location"
+      prm = params.except(key, :loc_type)
+    elsif key == "cuisine"
+      prm = params.except(key, :cuisine_id,:sub_cuisine_id)
+    else
+      prm  = params.except(key)
+    end
+  %>
+  <%= link_to search_restaurant_search_index_path(prm.permit!), :class => "savor-restaurant-tagging btn btn-sm" do %>
+    <%= (key != "location" &&
+    key != "cuisine" && key != "keywords") ? t("savor.filter.#{key.to_s}") : val%>
+    <i class="fa fa-times"></i>
+  <%end%>
+<%end%>
+</div>

@@ -1,0 +1,15 @@
+<section class="post-sub">
+  <h3 class="post-sub_heading"><%= I18n.t "about_author" %></h3>
+  <div class="post-sub_content post-sub_author">
+    <div class="post-sub_author__image">
+      <img
+        src=<%= !user.nil? ? user.avatar.url(:thumb) : "" %>
+        alt=<%= !user.nil? ? user.username : "" %>
+      >
+    </div>
+    <dl class="post-sub_author__content">
+      <dt class="content_name"><%= user.username %></dt>
+      <dd class="content_text"><%= user.description %></dd>
+    </dl>
+  </div>
+</section><!-- /.post-sub -->

@@ -1,0 +1,45 @@
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (document.querySelector(".cc-window")) {
+    return;
+  }
+
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "theme": "edgeless",
+    "content": {
+      "message": "<%= t('cookieconsent.message') %>",
+      "dismiss": "<%= t('cookieconsent.dismiss') %>",
+      "link": "<%= t('cookieconsent.link') %>",
+      "href": "<%= t('cookieconsent.href') %>"
+    },
+    // Microsoft Clarity Consent API v2統合
+    "onStatusChange": function(status, chosenBefore) {
+      if (typeof window.clarity !== 'undefined') {
+        if (status === 'allow') {
+          window.clarity('consent');
+        } else if (status === 'deny') {
+          window.clarity('consent', false);
+        }
+      }
+    },
+    "onInitialise": function(status) {
+      if (typeof window.clarity !== 'undefined') {
+        if (status === 'allow') {
+          window.clarity('consent');
+        } else if (status === 'deny') {
+          window.clarity('consent', false);
+        }
+      }
+    }
+  });
+});
+</script>

@@ -1,0 +1,50 @@
+<%= render 'page_title' %>
+
+<div class="row">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Index <%= "filter by : #{params[:query]}" if params[:query] %></h2>
+      <%= link_to new_admin_pickup_path, class: "pull-right btn btn-default" do %>
+      <i class="icon-note"></i> Add new
+      <% end %>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+        <table class="table table-striped jambo_table">
+          <thead>
+            <tr class="headings">
+              <th class="column-title" style="width: 10%;">ID</th>
+              <th class="column-title">Image</th>
+              <th class="column-title">Title</th>
+              <th class="column-title">Articles count</th>
+              <th class="column-title">Published</th>
+              <th class="column-title">Created</th>
+              <th class="column-title" colspan="3" style="width: 10%;">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @pickups.each do |pickup| %>
+            <tr class="pointer">
+              <td><%= pickup.id %></td>
+              <td><%= image_tag pickup.image.url(:thumb), style: "width: 120px;" if pickup.image.exists? %></td>
+              <td><%= link_to pickup.title, [:admin, pickup] %></td>
+              <td><%= pickup.articles.count %></td>
+              <td><%= pickup.published_at.try(:strftime,"%F %T") %></td>
+              <td><%= pickup.created_at.strftime("%F %T") %></td>
+              <td><%= link_to 'Show', [:admin, pickup] %></td>
+              <td><%= link_to 'Edit', edit_admin_pickup_path(pickup) %></td>
+              <td><%= link_to 'Delete', [:admin, pickup], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <div class="paginate">
+          <%= paginate @pickups %>
+        </div>
+
+      </div>
+    </div>
+  </div>

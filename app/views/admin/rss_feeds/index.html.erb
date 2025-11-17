@@ -1,0 +1,42 @@
+<div className="page-title">
+  <div className="title_left">
+    <h3>Feed Settings</h3>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="row">
+  <div class="d_panel col-xs-12">
+    <div class="x_title">
+      <h2>New</h2>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <%= render partial: 'form', locals: { articles: @force} %>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="d_panel col-xs-6">
+    <div class="x_title">
+      <h2>Feed promo</h2>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <%= render partial: 'list', locals: { articles: @force} %>
+    </div>
+  </div>
+
+  <div class="d_panel col-xs-6">
+    <div class="x_title">
+      <h2>Blacklist</h2>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <%= render partial: 'list', locals: { articles: @blacklist} %>
+    </div>
+  </div>
+</div>
